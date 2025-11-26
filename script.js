@@ -49,7 +49,6 @@ function lookupDepreciation(cat, years){
   return result;
 }
 
-function avgkm = years*15000
 
 function lookupCO2(price, co2){
   let bracket = "<14000";
@@ -89,6 +88,7 @@ function calculate(){
   const yearDep = lookupDepreciation(cat, years);
   const kmDep = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
+  const avgkm = years*15000
 
   const finalPrice = price * (1 - totalDep);
 
