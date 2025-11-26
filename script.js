@@ -49,6 +49,8 @@ function lookupDepreciation(cat, years){
   return result;
 }
 
+function avgkm = years*15000
+
 function lookupCO2(price, co2){
   let bracket = "<14000";
   if(price >=14000 && price<17000) bracket = "14-17k";
@@ -80,7 +82,6 @@ function calculate(){
   const cat = document.getElementById("category").value;
   const firstReg = parseDate(document.getElementById("firstReg").value);
   const importDate = parseDate(document.getElementById("importDate").value);
-  const avgKm = Number(years*15000);
   const mileage = Number(document.getElementById("mileage").value);
   const co2 = Number(document.getElementById("co2").value);
 
