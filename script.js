@@ -40,7 +40,9 @@ function yearsBetween(d1, d2){
   return Math.floor((d2 - d1) / (1000*60*60*24*365));
 }
 
-
+function autoAvgKm(years){
+  return years * 15000;
+}
 
 function lookupDepreciation(cat, years){
   const table = categories[cat];
@@ -90,12 +92,7 @@ function calculate(){
   const yearDep = lookupDepreciation(cat, years);
   const kmDep = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
-  
-  function calculateAvgKm(years) {
-  return years * 15000;
-}
-  const avgkm = years * 15000;
-  
+  const avgKm = autoAvgKm(years);  
   const finalPrice = price * (1 - totalDep);
 
   const co2coef = lookupCO2(price, co2);
@@ -104,6 +101,7 @@ function calculate(){
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
+    <p><strong>Μέσο Χιλιομέτρων (αυτόματο):</strong> ${avgKm} km</p>
     <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(2)}%</p>
     <p><strong>Απομείωση από χλμ:</strong> ${(kmDep*100).toFixed(4)}%</p>
     <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(2)}%</p>
