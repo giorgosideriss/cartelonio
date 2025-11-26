@@ -101,13 +101,13 @@ function calculate(){
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
-    <p><strong>Μέσο Χιλιομέτρων (αυτόματο):</strong> ${avgKm} km</p>
-    <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(2)}%</p>
-    <p><strong>Απομείωση από χλμ:</strong> ${(kmDep*100).toFixed(4)}%</p>
-    <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(2)}%</p>
-    <p><strong>Τιμή μετά απομείωσης:</strong> €${finalPrice.toFixed(2)}</p>
+    <p><strong>Χιλιομέτρα για Ηλικία:</strong> ${avgKm} km</p>
+    <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(0)}%</p>
+    <p><strong>Απομείωση από χλμ:</strong> ${(kmDep*100).toFixed(0)}%</p>
+    <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(0)}%</p>
+    <p><strong>Τιμή μετά απομείωσης:</strong> €${finalPrice.toFixed(0)}</p>
     <p><strong>Συντελεστής CO₂:</strong> ${co2coef}</p>
-    <h3>Τελικός Φόρος: €${tax.toFixed(2)}</h3>
+    <h3>Τελικός Φόρος: €${tax.toFixed(0)}</h3>
   `;
 }
 
