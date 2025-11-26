@@ -40,7 +40,7 @@ function yearsBetween(d1, d2){
   return Math.floor((d2 - d1) / (1000*60*60*24*365));
 }
 
-function autoAvgKm(yearsBetween){
+function autoAvgKm(years){
   return years * 15000;
 }
 
@@ -90,7 +90,7 @@ function calculate(){
 
   const years = yearsBetween(firstReg, importDate);
   const yearDep = lookupDepreciation(cat, years);
-  const avgKm = autoAvgKm(years *  15000);  
+  const avgKm = autoAvgKm(years);  
   const kmDep = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
   const finalPrice = price * (1 - totalDep);
