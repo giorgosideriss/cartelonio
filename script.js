@@ -100,16 +100,17 @@ const avgKm = autoAvgKm(years);
 
   const tax = finalPrice * co2coef;
 
-  document.getElementById("results").innerHTML = `
+document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
     <p><strong>Μέσο Χιλιομέτρων (αυτόματο):</strong> ${avgKm} km</p>
     <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(2)}%</p>
     <p><strong>Απομείωση από χλμ:</strong> ${(kmDep*100).toFixed(4)}%</p>
     <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(2)}%</p>
     <p><strong>Τιμή μετά απομείωσης:</strong> €${finalPrice.toFixed(2)}</p>
-    <p><strong>Συντελεστής CO₂:</strong> ${co2coef}</p>
+    <p><strong>Sυντελεστής CO₂:</strong> ${co2coef}</p>
     <h3>Τελικός Φόρος: €${tax.toFixed(2)}</h3>
-  `;
+`;
+
 }
 
 /* === Binding === */
