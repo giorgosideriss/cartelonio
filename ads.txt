@@ -1,2 +1,0 @@
-# Add your ad network seller IDs here
-google.com, pub-PUB-ID, DIRECT, f08c47fec0942fa0
