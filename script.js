@@ -49,6 +49,11 @@ function lookupDepreciation(cat, years){
   return result;
 }
 
+function autoAvgKm(years){
+  return years * 15000;
+}
+
+
 function lookupCO2(price, co2){
   let bracket = "<14000";
   if(price >=14000 && price<17000) bracket = "14-17k";
@@ -80,7 +85,7 @@ function calculate(){
   const cat = document.getElementById("category").value;
   const firstReg = parseDate(document.getElementById("firstReg").value);
   const importDate = parseDate(document.getElementById("importDate").value);
-  const avgKm = Number(document.getElementById("avgKm").value);
+const avgKm = autoAvgKm(years);
   const mileage = Number(document.getElementById("mileage").value);
   const co2 = Number(document.getElementById("co2").value);
 
@@ -97,6 +102,7 @@ function calculate(){
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
+    <p><strong>Μέσο Χιλιομέτρων (αυτόματο):</strong> ${avgKm} km</p>
     <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(2)}%</p>
     <p><strong>Απομείωση από χλμ:</strong> ${(kmDep*100).toFixed(4)}%</p>
     <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(2)}%</p>
