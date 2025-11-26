@@ -90,9 +90,9 @@ function calculate(){
 
   const years = yearsBetween(firstReg, importDate);
   const yearDep = lookupDepreciation(cat, years);
+  const avgKm = autoAvgKm(years *  15000);  
   const kmDep = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
-  const avgKm = autoAvgKm(years *  15000);  
   const finalPrice = price * (1 - totalDep);
 
   const co2coef = lookupCO2(price, co2);
