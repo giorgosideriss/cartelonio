@@ -80,7 +80,7 @@ function calculate(){
   const cat = document.getElementById("category").value;
   const firstReg = parseDate(document.getElementById("firstReg").value);
   const importDate = parseDate(document.getElementById("importDate").value);
-  const avgKm = Number(document.years*15000.value);
+  const avgKm = Number(years*15000);
   const mileage = Number(document.getElementById("mileage").value);
   const co2 = Number(document.getElementById("co2").value);
 
