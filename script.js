@@ -88,7 +88,9 @@ function calculate(){
   const mileage = Number(document.getElementById("mileage").value);
   const co2 = Number(document.getElementById("co2").value);
 
+  // must be BEFORE avgKm
   const years = yearsBetween(firstReg, importDate);
+
   const avgKm = autoAvgKm(years);
 
   const yearDep = lookupDepreciation(cat, years);
@@ -98,7 +100,6 @@ function calculate(){
   const finalPrice = price * (1 - totalDep);
 
   const co2coef = lookupCO2(price, co2);
-
   const tax = finalPrice * co2coef;
 
   document.getElementById("results").innerHTML = `
@@ -111,6 +112,8 @@ function calculate(){
     <p><strong>Sυντελεστής CO₂:</strong> ${co2coef}</p>
     <h3>Τελικός Φόρος: €${tax.toFixed(2)}</h3>
   `;
+}
+
 }
 
 
