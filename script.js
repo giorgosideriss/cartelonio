@@ -40,6 +40,9 @@ function yearsBetween(d1, d2){
   return Math.floor((d2 - d1) / (1000*60*60*24*365));
 }
 
+function autoAvgKm(yearsBetween){
+  return years * 15000;
+}
 
 function lookupDepreciation(cat, years){
   const table = categories[cat];
