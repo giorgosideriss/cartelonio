@@ -41,7 +41,7 @@ function yearsBetween(d1, d2){
 }
 
 function autoAvgKm(years){
-  return years * 15000;
+  return yearsBetween * 15000;
 }
 
 function lookupDepreciation(cat, years){
