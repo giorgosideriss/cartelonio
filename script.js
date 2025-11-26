@@ -85,11 +85,12 @@ function calculate(){
   const cat = document.getElementById("category").value;
   const firstReg = parseDate(document.getElementById("firstReg").value);
   const importDate = parseDate(document.getElementById("importDate").value);
-const avgKm = autoAvgKm(years);
   const mileage = Number(document.getElementById("mileage").value);
   const co2 = Number(document.getElementById("co2").value);
 
   const years = yearsBetween(firstReg, importDate);
+  const avgKm = autoAvgKm(years);
+
   const yearDep = lookupDepreciation(cat, years);
   const kmDep = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
@@ -100,7 +101,7 @@ const avgKm = autoAvgKm(years);
 
   const tax = finalPrice * co2coef;
 
-document.getElementById("results").innerHTML = `
+  document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
     <p><strong>Μέσο Χιλιομέτρων (αυτόματο):</strong> ${avgKm} km</p>
     <p><strong>Απομείωση από έτη:</strong> ${(yearDep*100).toFixed(2)}%</p>
@@ -109,7 +110,9 @@ document.getElementById("results").innerHTML = `
     <p><strong>Τιμή μετά απομείωσης:</strong> €${finalPrice.toFixed(2)}</p>
     <p><strong>Sυντελεστής CO₂:</strong> ${co2coef}</p>
     <h3>Τελικός Φόρος: €${tax.toFixed(2)}</h3>
-`;
+  `;
+}
+
 
 }
 
