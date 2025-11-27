@@ -1,0 +1,107 @@
+// Toyota 2021 pricelist dataset
+// (Parsed from official AADE PDF)
+
+window.toyota2021 = {
+  brand: "Toyota",
+  year: 2021,
+  models: {
+    "Yaris": [
+      {
+        code: "KSP211L-BHMRKW-A0",
+        name: "Yaris 1.0L 72hp Business",
+        engine: "1.0",
+        hp: 72,
+        co2: 127,
+        price_no_tax: 10232.26,
+        retail_price: 13080.00
+      },
+      {
+        code: "KSP211L-BHMRKW-A7",
+        name: "Yaris 1.0L 72hp Active",
+        engine: "1.0",
+        hp: 72,
+        co2: 127,
+        price_no_tax: 10641.62,
+        retail_price: 13600.00
+      },
+      {
+        code: "MXPA11L-BHFNBW-4D",
+        name: "Yaris 1.5lt 6MT Active Plus",
+        engine: "1.5",
+        hp: 125,
+        co2: 125,
+        price_no_tax: 12558.67,
+        retail_price: 16050.00
+      },
+      {
+        code: "MXPA11L-BHXNBW-UN",
+        name: "Yaris 1.5L 125hp Active CVT",
+        engine: "1.5",
+        hp: 125,
+        co2: 125,
+        price_no_tax: 13035.98,
+        retail_price: 16660.00
+      },
+      {
+        code: "NHP130L-CHXNBW-3S",
+        name: "Yaris HSD 1.5 Hybrid Active Plus",
+        engine: "1.5 HSD",
+        hp: 84,
+        co2: 84,
+        price_no_tax: 14259.62,
+        retail_price: 17980.00
+      }
+    ],
+
+    "Corolla": [
+      {
+        code: "ZRE210L-DEFDPW-0D",
+        name: "Corolla SDN 1.6 Live",
+        engine: "1.6",
+        hp: 143,
+        co2: 143,
+        price_no_tax: 13358.72,
+        retail_price: 17100.00
+      },
+      {
+        code: "MZEA11L-DEXNBW-DI",
+        name: "Corolla SDN 1.5 CVT Active",
+        engine: "1.5",
+        hp: 153,
+        co2: 153,
+        price_no_tax: 16419.99,
+        retail_price: 21550.00
+      },
+      {
+        code: "MZEA11L-DEXNBW-FF",
+        name: "Corolla SDN 1.5 CVT Style",
+        engine: "1.5",
+        hp: 157,
+        co2: 157,
+        price_no_tax: 17727.37,
+        retail_price: 23880.00
+      }
+    ],
+
+    "RAV4": [
+      {
+        code: "MXAA54L-ANFMBW-HV",
+        name: "RAV4 2.0 AWD MT Style",
+        engine: "2.0",
+        hp: 142,
+        co2: 142,
+        price_no_tax: 22295.69,
+        retail_price: 32000.00
+      },
+      {
+        code: "MXAA52L-ANXMBW-EI",
+        name: "RAV4 2.0 FWD CVT Style",
+        engine: "2.0",
+        hp: 158,
+        co2: 158,
+        price_no_tax: 22355.44,
+        retail_price: 32550.00
+      }
+    ]
+  }
+};
