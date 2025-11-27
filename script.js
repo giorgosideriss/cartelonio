@@ -156,6 +156,16 @@ function calculate(){
 
   const tax = finalPrice * co2coef;
 
+const dataset = window.toyota2021;
+
+if (!dataset || !dataset.models) {
+  console.error("Toyota dataset not loaded");
+} else {
+  loadBrandData();
+  loadModels();
+}
+
+  
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
     <p><strong>Μέσος όρος χιλιομέτρων για ηλικία:</strong> ${avgKm.toLocaleString("el-GR")} km</p>
