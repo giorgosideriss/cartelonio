@@ -1,4 +1,5 @@
 /* Full calculator logic converted from your Excel workbook */
+const dataset = window.toyota2021;
 
 /* === CATEGORY DEPRECIATION TABLES (from your Excel) === */
 const categories = {
@@ -36,6 +37,54 @@ Object.keys(categories).forEach(cat => {
 });
 
 /* === Helpers === */
+function loadBrandData() {
+  const brandSelect = document.getElementById("brandSelect");
+  brandSelect.innerHTML = `<option value="Toyota">Toyota</option>`;
+}
+
+function loadModels() {
+  const modelSelect = document.getElementById("modelSelect");
+  modelSelect.innerHTML = "";
+
+  Object.keys(dataset.models).forEach(model => {
+    const opt = document.createElement("option");
+    opt.value = model;
+    opt.textContent = model;
+    modelSelect.appendChild(opt);
+  });
+
+  loadVersions();
+}
+
+function loadVersions() {
+  const model = document.getElementById("modelSelect").value;
+  const versionSelect = document.getElementById("versionSelect");
+  versionSelect.innerHTML = "";
+
+  dataset.models[model].forEach(v => {
+    const opt = document.createElement("option");
+    opt.value = v.code;
+    opt.textContent = v.name;
+    versionSelect.appendChild(opt);
+  });
+
+  autoFillCarData();
+}
+
+function autoFillCarData() {
+  const model = document.getElementById("modelSelect").value;
+  const code = document.getElementById("versionSelect").value;
+
+  const version = dataset.models[model].find(v => v.code === code);
+
+  // Auto-fill fields
+  document.getElementById("price").value = version.price_no_tax;
+  document.getElementById("co2").value = version.co2;
+
+  // category auto-fill? (you tell me rules)
+}
+
+
 function parseDate(v){ return v ? new Date(v) : null; }
 
 function yearsBetween(d1, d2){
@@ -112,6 +161,13 @@ function calculate(){
     <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(2)}</h3>
   `;
 }
+document.addEventListener("DOMContentLoaded", () => {
+  loadBrandData();
+  loadModels();
+});
+
+document.getElementById("modelSelect").addEventListener("change", loadVersions);
+document.getElementById("versionSelect").addEventListener("change", autoFillCarData);
 
 /* === Binding === */
 document.getElementById("calcBtn").addEventListener("click", calculate);
