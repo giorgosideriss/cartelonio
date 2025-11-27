@@ -28,7 +28,7 @@ const coTable = {
 };
 
 async function loadToyotaData() {
-  const res = await fetch("data/toyota2021.json");
+  const res = await fetch('data/toyota/2021.json'));
   return await res.json();
 }
 
