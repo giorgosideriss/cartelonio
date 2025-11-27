@@ -27,6 +27,12 @@ const coTable = {
   ">25k":   [0.304,0.32,0.352,0.384,0.416,0.448,0.512,0.64]
 };
 
+async function loadToyotaData() {
+  const res = await fetch("data/toyota2021.json");
+  return await res.json();
+}
+
+
 /* === Populate category dropdown === */
 const categorySelect = document.getElementById("category");
 Object.keys(categories).forEach(cat => {
