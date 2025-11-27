@@ -101,13 +101,13 @@ function calculate(){
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
-    <p><strong>Μέσος Όρος χιλιομέτρων για Ηλικία:</strong> ${avgKm} km</p>
+    <p><strong>Μέσος Όρος χιλιομέτρων για Ηλικία:</strong> ${avgKm.toLocaleString("el-GR")} km</p>
     <p><strong>Απομείωση λόγω ηλικίας & κατηγορίας αμαξώματος:</strong> ${(yearDep*100).toFixed(0)}%</p>
     <p><strong>Απομείωση λόγω διανυθέντων χιλιομέτρων πλέον του μέσου όρου:</strong> ${(kmDep*100).toFixed(0)}%</p>
     <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(0)}%</p>
     <p><strong>Φορολογητέα Αξία (μετά την απομείωση):</strong> €${finalPrice.toFixed(0)}</p>
     <p><strong>Συντελεστής τέλους ταξινόμησης (CO₂):</strong> ${co2coef}</p>
-    <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(0)}</h3>
+    <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(2)}</h3>
   `;
 }
 
