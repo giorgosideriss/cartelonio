@@ -1,7 +1,16 @@
-/* Full calculator logic converted from your Excel workbook */
-const dataset = window.toyota2021;
+/* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
+// Εδώ δηλώνουμε από πού θα φορώνουμε δεδομένα για κάθε μάρκα/χρονιά.
+// Προς το παρόν έχουμε μόνο Toyota 2021.
+const DATA_SOURCES = {
+  "Toyota": {
+    "2021": "data/toyota/2021/2021.json"
+  }
+};
 
-/* === CATEGORY DEPRECIATION TABLES (from your Excel) === */
+// Τρέχον σετ δεδομένων (π.χ. Toyota 2021)
+let currentDataset = null;
+
+/* === CATEGORY DEPRECIATION TABLES (από Excel) === */
 const categories = {
   "Επιλέξτε Κατηγορία Αμαξώματος": [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],
   
@@ -18,7 +27,7 @@ const categories = {
   "MPV": [[0.5,0.09],[1,0.19],[1.5,0.23],[2,0.27],[2.5,0.33],[3,0.36],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.7],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]]
 };
 
-/* === CO2 TABLE (from your Excel) === */
+/* === CO2 TABLE (από Excel) === */
 const coTable = {
   "<14000": [0.038,0.04,0.044,0.048,0.052,0.056,0.064,0.08],
   "14-17k": [0.076,0.08,0.088,0.096,0.104,0.112,0.128,0.16],
@@ -27,73 +36,12 @@ const coTable = {
   ">25k":   [0.304,0.32,0.352,0.384,0.416,0.448,0.512,0.64]
 };
 
-async function loadToyotaData() {
-  const res = await fetch('data/toyota/2021/2021.json'));
-  return await res.json();
-}
-
-
-/* === Populate category dropdown === */
-const categorySelect = document.getElementById("category");
-Object.keys(categories).forEach(cat => {
-  const option = document.createElement("option");
-  option.value = cat;
-  option.textContent = cat;
-  categorySelect.appendChild(option);
-});
-
-/* === Helpers === */
-function loadBrandData() {
-  const brandSelect = document.getElementById("brandSelect");
-  brandSelect.innerHTML = `<option value="Toyota">Toyota</option>`;
-}
-
-function loadModels() {
-  const modelSelect = document.getElementById("modelSelect");
-  modelSelect.innerHTML = "";
-
-  Object.keys(dataset.models).forEach(model => {
-    const opt = document.createElement("option");
-    opt.value = model;
-    opt.textContent = model;
-    modelSelect.appendChild(opt);
-  });
-
-  loadVersions();
-}
-
-function loadVersions() {
-  const model = document.getElementById("modelSelect").value;
-  const versionSelect = document.getElementById("versionSelect");
-  versionSelect.innerHTML = "";
-
-  dataset.models[model].forEach(v => {
-    const opt = document.createElement("option");
-    opt.value = v.code;
-    opt.textContent = v.name;
-    versionSelect.appendChild(opt);
-  });
-
-  autoFillCarData();
-}
-
-function autoFillCarData() {
-  const model = document.getElementById("modelSelect").value;
-  const code = document.getElementById("versionSelect").value;
-
-  const version = dataset.models[model].find(v => v.code === code);
-
-  // Auto-fill fields
-  document.getElementById("price").value = version.price_no_tax;
-  document.getElementById("co2").value = version.co2;
-
-  // category auto-fill? (you tell me rules)
-}
-
+/* ========== ΒΟΗΘΗΤΙΚΕΣ ΣΥΝΑΡΤΗΣΕΙΣ ========== */
 
 function parseDate(v){ return v ? new Date(v) : null; }
 
 function yearsBetween(d1, d2){
+  if (!d1 || !d2) return 0;
   return Math.floor((d2 - d1) / (1000*60*60*24*365));
 }
 
@@ -103,13 +51,13 @@ function autoAvgKm(years){
 
 function lookupDepreciation(cat, years){
   const table = categories[cat];
+  if (!table) return 0;
   let result = table[0][1];
   for(let i=0;i<table.length;i++){
     if(years >= table[i][0]) result = table[i][1];
   }
   return result;
 }
-
 
 function lookupCO2(price, co2){
   let bracket = "<14000";
@@ -136,35 +84,195 @@ function mileageDep(avgKm, mileage){
   return ((mileage - avgKm)/500) * 0.001;
 }
 
-/* === Main Calculation === */
-function calculate(){
-  const price = Number(document.getElementById("price").value);
-  const cat = document.getElementById("category").value;
-  const firstReg = parseDate(document.getElementById("firstReg").value);
-  const importDate = parseDate(document.getElementById("importDate").value);
-  const mileage = Number(document.getElementById("mileage").value);
-  const co2 = Number(document.getElementById("co2").value);
+/* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΧΡΩΜΑ ========== */
 
-  const years = yearsBetween(firstReg, importDate);
+async function loadDatasetForSelection() {
+  const brandEl  = document.getElementById("brandSelect");
+  const yearEl   = document.getElementById("yearSelect");
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const brand = brandEl.value;
+  const year  = yearEl.value;
+
+  currentDataset = null;
+  modelEl.innerHTML  = '<option value="">Επιλέξτε Μοντέλο</option>';
+  verEl.innerHTML    = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML  = '<option value="">Επιλέξτε Χρώμα</option>';
+
+  if (!brand || !year) return;
+
+  const url = DATA_SOURCES[brand] && DATA_SOURCES[brand][year];
+  if (!url) {
+    console.warn("Δεν βρέθηκαν δεδομένα για", brand, year);
+    return;
+  }
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    currentDataset = await res.json();
+    populateModels();
+  } catch (err) {
+    console.error("Σφάλμα φόρτωσης δεδομένων:", err);
+  }
+}
+
+function populateBrandSelect() {
+  const brandEl = document.getElementById("brandSelect");
+  brandEl.innerHTML = '<option value="">Επιλέξτε Μάρκα</option>';
+
+  Object.keys(DATA_SOURCES).forEach(brand => {
+    const opt = document.createElement("option");
+    opt.value = brand;
+    opt.textContent = brand;
+    brandEl.appendChild(opt);
+  });
+}
+
+function populateYearSelect() {
+  const brandEl = document.getElementById("brandSelect");
+  const yearEl  = document.getElementById("yearSelect");
+  const brand   = brandEl.value;
+
+  yearEl.innerHTML = '<option value="">Επιλέξτε Χρονολογία</option>';
+
+  if (!brand || !DATA_SOURCES[brand]) return;
+
+  Object.keys(DATA_SOURCES[brand]).forEach(year => {
+    const opt = document.createElement("option");
+    opt.value = year;
+    opt.textContent = year;
+    yearEl.appendChild(opt);
+  });
+}
+
+function populateModels() {
+  const modelEl = document.getElementById("modelSelect");
+  const verEl   = document.getElementById("versionSelect");
+  const colorEl = document.getElementById("colorSelect");
+
+  modelEl.innerHTML = '<option value="">Επιλέξτε Μοντέλο</option>';
+  verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML = '<option value="">Επιλέξτε Χρώμα</option>';
+
+  if (!currentDataset || !currentDataset.models) return;
+
+  Object.keys(currentDataset.models).forEach(modelName => {
+    const opt = document.createElement("option");
+    opt.value = modelName;
+    opt.textContent = modelName;
+    modelEl.appendChild(opt);
+  });
+}
+
+function populateVersions() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+  const model    = modelEl.value;
+
+  verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML = '<option value="">Επιλέξτε Χρώμα</option>';
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+
+  const modelObj = currentDataset.models[model];
+  if (!modelObj || !Array.isArray(modelObj.editions)) return;
+
+  modelObj.editions.forEach((ed, index) => {
+    const opt = document.createElement("option");
+    opt.value = String(index); // index της έκδοσης
+    opt.textContent = ed.name;
+    verEl.appendChild(opt);
+  });
+}
+
+function populateColors() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const model    = modelEl.value;
+  const edIndex  = parseInt(verEl.value, 10);
+
+  colorEl.innerHTML = '<option value="">Επιλέξτε Χρώμα</option>';
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+  if (isNaN(edIndex)) return;
+
+  const modelObj = currentDataset.models[model];
+  const edition  = modelObj && modelObj.editions && modelObj.editions[edIndex];
+  if (!edition || !Array.isArray(edition.variants)) return;
+
+  edition.variants.forEach((variant, idx) => {
+    const opt = document.createElement("option");
+    opt.value = String(idx);
+    opt.textContent = variant.color;
+    colorEl.appendChild(opt);
+  });
+
+  // Μόλις γεμίσουν τα χρώματα, αν θέλουμε, διαλέγουμε το πρώτο και
+  // κάνουμε αυτόματη συμπλήρωση.
+  if (edition.variants.length > 0) {
+    colorEl.value = "0";
+    autoFillCarData();
+  }
+}
+
+function autoFillCarData() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const model    = modelEl.value;
+  const edIndex  = parseInt(verEl.value, 10);
+  const colorIdx = parseInt(colorEl.value, 10);
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+  if (isNaN(edIndex) || isNaN(colorIdx)) return;
+
+  const modelObj = currentDataset.models[model];
+  const edition  = modelObj && modelObj.editions && modelObj.editions[edIndex];
+  if (!edition) return;
+
+  const variant  = edition.variants && edition.variants[colorIdx];
+  if (!variant) return;
+
+  // Τιμή ΛΤΠΦ (προ φόρων)
+  document.getElementById("price").value = variant.priceNet;
+
+  // Εκπομπές CO2
+  if (edition.co2 != null) {
+    document.getElementById("co2").value = edition.co2;
+  }
+
+  // Κατηγορία αμαξώματος από το JSON
+  if (modelObj.category && categories[modelObj.category]) {
+    document.getElementById("category").value = modelObj.category;
+  }
+}
+
+/* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
+
+function calculate(){
+  const price      = Number(document.getElementById("price").value);
+  const cat        = document.getElementById("category").value;
+  const firstReg   = parseDate(document.getElementById("firstReg").value);
+  const importDate = parseDate(document.getElementById("importDate").value);
+  const mileage    = Number(document.getElementById("mileage").value);
+  const co2        = Number(document.getElementById("co2").value);
+
+  const years   = yearsBetween(firstReg, importDate);
   const yearDep = lookupDepreciation(cat, years);
-  const avgKm = autoAvgKm(years);  
-  const kmDep = mileageDep(avgKm, mileage);
+  const avgKm   = autoAvgKm(years);  
+  const kmDep   = mileageDep(avgKm, mileage);
   const totalDep = yearDep + kmDep;
   const finalPrice = price * (1 - totalDep);
 
   const co2coef = lookupCO2(price, co2);
-
-  const tax = finalPrice * co2coef;
-
-const dataset = window.toyota2021;
-
-if (!dataset || !dataset.models) {
-  console.error("Toyota dataset not loaded");
-} else {
-  loadBrandData();
-  loadModels();
-}
-
+  const tax     = finalPrice * co2coef;
   
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία:</strong> ${years} έτη</p>
@@ -177,19 +285,56 @@ if (!dataset || !dataset.models) {
     <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(2)}</h3>
   `;
 }
+
+/* ========== ΑΡΧΙΚΟΠΟΙΗΣΗ ΜΟΛΙΣ ΦΟΡΤΩΣΕΙ Η ΣΕΛΙΔΑ ========== */
+
 document.addEventListener("DOMContentLoaded", () => {
-  loadBrandData();
-  loadModels();
-});
+  // Γέμισμα dropdown κατηγορίας (χειροκίνητο αν θέλει ο χρήστης)
+  const categorySelect = document.getElementById("category");
+  categorySelect.innerHTML = "";
+  Object.keys(categories).forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    categorySelect.appendChild(option);
+  });
 
-document.getElementById("modelSelect").addEventListener("change", loadVersions);
-document.getElementById("versionSelect").addEventListener("change", autoFillCarData);
+  // Μάρκα / Έτος
+  populateBrandSelect();
+  populateYearSelect(); // κενό στην αρχή
 
-/* === Binding === */
-document.getElementById("calcBtn").addEventListener("click", calculate);
+  // Event listeners για επιλογές αυτοκινήτου
+  document.getElementById("brandSelect").addEventListener("change", () => {
+    populateYearSelect();
+    // reset dataset
+    currentDataset = null;
+    document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
+    document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
+    document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε Χρώμα</option>';
+  });
 
-document.getElementById("resetBtn").addEventListener("click", () => {
-  document.getElementById("calcForm").reset();
-  document.getElementById("results").innerHTML = 
-    "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
+  document.getElementById("yearSelect").addEventListener("change", () => {
+    loadDatasetForSelection();
+  });
+
+  document.getElementById("modelSelect").addEventListener("change", () => {
+    populateVersions();
+  });
+
+  document.getElementById("versionSelect").addEventListener("change", () => {
+    populateColors();
+  });
+
+  document.getElementById("colorSelect").addEventListener("change", () => {
+    autoFillCarData();
+  });
+
+  // Κουμπιά υπολογισμού / reset
+  document.getElementById("calcBtn").addEventListener("click", calculate);
+
+  document.getElementById("resetBtn").addEventListener("click", () => {
+    document.getElementById("calcForm").reset();
+    document.getElementById("results").innerHTML = 
+      "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
+  });
 });
