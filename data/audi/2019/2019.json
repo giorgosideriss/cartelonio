@@ -1,0 +1,1652 @@
+{
+  "brand": "Audi",
+  "year": 2019,
+  "models": {
+    "A3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8VFCZC",
+          "code": "8VFCZC",
+          "name": "SB Design 35 TFSI 6 ταχύτητες",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20598.0,
+              "priceRetail": 20598.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFAZG",
+          "code": "8VFAZG",
+          "name": "SB 35 TFSI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21432.0,
+              "priceRetail": 21432.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBZG",
+          "code": "8VFBZG",
+          "name": "SB Sport 35 TFSI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22223.0,
+              "priceRetail": 22223.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCZG",
+          "code": "8VFCZG",
+          "name": "SB Design 35 TFSI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22277.0,
+              "priceRetail": 22277.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFADC",
+          "code": "8VFADC",
+          "name": "SB Business 30 TDI 6 ταχύτητες",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16992.0,
+              "priceRetail": 16992.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFADC",
+          "code": "8VFADC",
+          "name": "SB Comfort 30 TDI 6 ταχύτητες",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19214.0,
+              "priceRetail": 19214.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBDC",
+          "code": "8VFBDC",
+          "name": "SB Sport 30 TDI 6 ταχύτητες",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19929.0,
+              "priceRetail": 19929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCDC",
+          "code": "8VFCDC",
+          "name": "SB Design 30 TDI 6 ταχύτητες",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20392.0,
+              "priceRetail": 20392.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFADG",
+          "code": "8VFADG",
+          "name": "SB 30 TDI S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20878.0,
+              "priceRetail": 20878.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBDG",
+          "code": "8VFBDG",
+          "name": "SB Sport 30 TDI S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21581.0,
+              "priceRetail": 21581.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCDG",
+          "code": "8VFCDG",
+          "name": "SB Design 30 TDI S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22027.0,
+              "priceRetail": 22027.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMANC",
+          "code": "8VMANC",
+          "name": "Sport Sedan 30 TFSI 6 ταχύτητες",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17321.0,
+              "priceRetail": 17321.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBNC",
+          "code": "8VMBNC",
+          "name": "Sport Sedan Sport 30 TFSI 6 ταχύτητες",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18300.0,
+              "priceRetail": 18300.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCNC",
+          "code": "8VMCNC",
+          "name": "Sport Sedan Design 30 TFSI 6 ταχύτητες",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18186.0,
+              "priceRetail": 18186.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMANG",
+          "code": "8VMANG",
+          "name": "Sport Sedan 30 TFSI S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18957.0,
+              "priceRetail": 18957.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBNG",
+          "code": "8VMBNG",
+          "name": "Sport Sedan Sport 30 TFSI S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19936.0,
+              "priceRetail": 19936.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCNG",
+          "code": "8VMCNG",
+          "name": "Sport Sedan Design 30 TFSI S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19829.0,
+              "priceRetail": 19829.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMAZC",
+          "code": "8VMAZC",
+          "name": "Sport Sedan 35 TFSI 6 ταχύτητες",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19894.0,
+              "priceRetail": 19894.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBZC",
+          "code": "8VMBZC",
+          "name": "Sport Sedan Sport 35 TFSI 6 ταχύτητες",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20944.0,
+              "priceRetail": 20944.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCZC",
+          "code": "8VMCZC",
+          "name": "Sport Sedan Design 35 TFSI 6 ταχύτητες",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20745.0,
+              "priceRetail": 20745.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMAZG",
+          "code": "8VMAZG",
+          "name": "Sport Sedan 35 TFSI S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21534.0,
+              "priceRetail": 21534.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBZG",
+          "code": "8VMBZG",
+          "name": "Sport Sedan Sport 35 TFSI S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22581.0,
+              "priceRetail": 22581.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCZG",
+          "code": "8VMCZG",
+          "name": "Sport Sedan Design 35 TFSI S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22378.0,
+              "priceRetail": 22378.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMADC",
+          "code": "8VMADC",
+          "name": "Sport Sedan Business 30 TDI 6 ταχύτητες",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16992.0,
+              "priceRetail": 16992.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMADC",
+          "code": "8VMADC",
+          "name": "Sport Sedan Comfort 30 TDI 6 ταχύτητες",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19343.0,
+              "priceRetail": 19343.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBDC",
+          "code": "8VMBDC",
+          "name": "Sport Sedan Sport 30 TDI 6 ταχύτητες",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20000.0,
+              "priceRetail": 20000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCDC",
+          "code": "8VMCDC",
+          "name": "Sport Sedan Design 30 TDI 6 ταχύτητες",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20500.0,
+              "priceRetail": 20500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMADG",
+          "code": "8VMADG",
+          "name": "Sport Sedan 30 TDI S tronic",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20980.0,
+              "priceRetail": 20980.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBDG",
+          "code": "8VMBDG",
+          "name": "Sport Sedan Sport 30 TDI S tronic",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21939.0,
+              "priceRetail": 21939.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCDG",
+          "code": "8VMCDG",
+          "name": "Sport Sedan Design 30 TDI S tronic",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22135.0,
+              "priceRetail": 22135.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEAZC",
+          "code": "8VEAZC",
+          "name": "Cabriolet 35 TFSI (6 ταχύτητες)",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24176.0,
+              "priceRetail": 24176.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBZC",
+          "code": "8VEBZC",
+          "name": "Cabriolet Sport 35 TFSI (6 ταχύτητες)",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25000.0,
+              "priceRetail": 25000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEAZG",
+          "code": "8VEAZG",
+          "name": "Cabriolet 35 TFSI S tronic",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25814.0,
+              "priceRetail": 25814.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBZG",
+          "code": "8VEBZG",
+          "name": "Cabriolet Sport 35 TFSI S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26776.0,
+              "priceRetail": 26776.0
+            }
+          ]
+        }
+      ]
+    },
+    "S3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8VFS5Y",
+          "code": "8VFS5Y",
+          "name": "SB TFSI quattro S tronic",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31730.0,
+              "priceRetail": 31730.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMS5Y",
+          "code": "8VMS5Y",
+          "name": "Sport Sedan TFSI quattro S tronic",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31835.0,
+              "priceRetail": 31835.0
+            }
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8W2AIG",
+          "code": "8W2AIG",
+          "name": "30 TDI S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26821.0,
+              "priceRetail": 26821.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BIG",
+          "code": "8W2BIG",
+          "name": "Sport 30 TDI S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28045.0,
+              "priceRetail": 28045.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2APG",
+          "code": "8W2APG",
+          "name": "35 TFSI MHEV S tronic",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25000.0,
+              "priceRetail": 25000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BPG",
+          "code": "8W2BPG",
+          "name": "Sport 35 TFSI MHEV S tronic",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26384.0,
+              "priceRetail": 26384.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2ABG",
+          "code": "8W2ABG",
+          "name": "35 TDI S tronic",
+          "co2": 113,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29923.0,
+              "priceRetail": 29923.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BBG",
+          "code": "8W2BBG",
+          "name": "Sport 35 TDI S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31154.0,
+              "priceRetail": 31154.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AFG",
+          "code": "8W2AFG",
+          "name": "40 TDI S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31737.0,
+              "priceRetail": 31737.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BFG",
+          "code": "8W2BFG",
+          "name": "Sport 40 TDI S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33071.0,
+              "priceRetail": 33071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AFY",
+          "code": "8W2AFY",
+          "name": "40 TDI quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33568.0,
+              "priceRetail": 33568.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BFY",
+          "code": "8W2BFY",
+          "name": "Sport 40 TDI quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34548.0,
+              "priceRetail": 34548.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AFY",
+          "code": "8W5AFY",
+          "name": "Avant 40 TDI quattro S tronic",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34830.0,
+              "priceRetail": 34830.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BFY",
+          "code": "8W5BFY",
+          "name": "Avant Sport 40 TDI quattro S tronic",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35804.0,
+              "priceRetail": 35804.0
+            }
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "F53BPG",
+          "code": "F53BPG",
+          "name": "Coupé 35 TFSI MHEV S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29569.0,
+              "priceRetail": 29569.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BSC",
+          "code": "F53BSC",
+          "name": "Coupé 40 TFSI MHEV (6 ταχύτητες)",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31455.0,
+              "priceRetail": 31455.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BSG",
+          "code": "F53BSG",
+          "name": "Coupé 40 TFSI MHEV S tronic",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33164.0,
+              "priceRetail": 33164.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BFG",
+          "code": "F53BFG",
+          "name": "Coupé 40 TDI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37974.0,
+              "priceRetail": 37974.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BFY",
+          "code": "F53BFY",
+          "name": "Coupé 40 TDI quattro S tronic",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39359.0,
+              "priceRetail": 39359.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53B3Y",
+          "code": "F53B3Y",
+          "name": "Coupé 45 TFSI MHEV quattro S tronic",
+          "co2": 150,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40105.0,
+              "priceRetail": 40105.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABPG",
+          "code": "F5ABPG",
+          "name": "Sportback 35 TFSI MHEV S tronic",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29569.0,
+              "priceRetail": 29569.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABSC",
+          "code": "F5ABSC",
+          "name": "Sportback 40 TFSI MHEV (6 ταχύτητες)",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31448.0,
+              "priceRetail": 31448.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABSG",
+          "code": "F5ABSG",
+          "name": "Sportback 40 TFSI MHEV S tronic",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33157.0,
+              "priceRetail": 33157.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABFG",
+          "code": "F5ABFG",
+          "name": "Sportback 40 TDI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37974.0,
+              "priceRetail": 37974.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABFY",
+          "code": "F5ABFY",
+          "name": "Sportback 40 TDI quattro S tronic",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39334.0,
+              "priceRetail": 39334.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5AB3Y",
+          "code": "F5AB3Y",
+          "name": "Sportback 45 TFSI MHEV quattro S tronic",
+          "co2": 150,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40077.0,
+              "priceRetail": 40077.0
+            }
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4A2B7G",
+          "code": "4A2B7G",
+          "name": "Sport 45 TFSI MHEV S tronic",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46648.0,
+              "priceRetail": 46648.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2C7G",
+          "code": "4A2C7G",
+          "name": "Design 45 TFSI MHEV S tronic",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46648.0,
+              "priceRetail": 46648.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2B7Y",
+          "code": "4A2B7Y",
+          "name": "Sport 45 TFSI MHEV quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48534.0,
+              "priceRetail": 48534.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2C7Y",
+          "code": "4A2C7Y",
+          "name": "Design 45 TFSI MHEV quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48534.0,
+              "priceRetail": 48534.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2BIG",
+          "code": "4A2BIG",
+          "name": "Sport 40 TDI MHEV S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45714.0,
+              "priceRetail": 45714.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2CIG",
+          "code": "4A2CIG",
+          "name": "Design 40 TDI MHEV S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45714.0,
+              "priceRetail": 45714.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2BIY",
+          "code": "4A2BIY",
+          "name": "Sport 40 TDI MHEV quattro S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47643.0,
+              "priceRetail": 47643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2CIY",
+          "code": "4A2CIY",
+          "name": "Design 40 TDI MHEV quattro S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47643.0,
+              "priceRetail": 47643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2BGA",
+          "code": "4A2BGA",
+          "name": "Sport 50 TDI MHEV quattro tiptronic",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60216.0,
+              "priceRetail": 60216.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4A2CGA",
+          "code": "4A2CGA",
+          "name": "Design 50 TDI MHEV quattro tiptronic",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59958.0,
+              "priceRetail": 59958.0
+            }
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4KA0GA",
+          "code": "4KA0GA",
+          "name": "Sportback 50 TDI MHEV quattro tiptronic",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60929.0,
+              "priceRetail": 60929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4KA07Y",
+          "code": "4KA07Y",
+          "name": "Sportback 45 TFSI MHEV quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60705.0,
+              "priceRetail": 60705.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4KA02Y",
+          "code": "4KA02Y",
+          "name": "Sportback 55 TFSI MHEV quattro S tronic",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 62542.0,
+              "priceRetail": 62542.0
+            }
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4N203A",
+          "code": "4N203A",
+          "name": "50 TDI MHEV quattro tiptronic",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 74721.0,
+              "priceRetail": 74721.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q2": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "GABANC",
+          "code": "GABANC",
+          "name": "30 TFSI (6 ταχύτητες)",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16992.0,
+              "priceRetail": 16992.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBNC",
+          "code": "GABBNC",
+          "name": "Sport 30 TFSI (6 ταχύτητες)",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19607.0,
+              "priceRetail": 19607.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCNC",
+          "code": "GABCNC",
+          "name": "Design 30 TFSI (6 ταχύτητες)",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19607.0,
+              "priceRetail": 19607.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABANG",
+          "code": "GABANG",
+          "name": "30 TFSI S tronic",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19576.0,
+              "priceRetail": 19576.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBNG",
+          "code": "GABBNG",
+          "name": "Sport 30 TFSI S tronic",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21310.0,
+              "priceRetail": 21310.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCNG",
+          "code": "GABCNG",
+          "name": "Design 30 TFSI S tronic",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21310.0,
+              "priceRetail": 21310.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAZC",
+          "code": "GABAZC",
+          "name": "35 TFSI (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19725.0,
+              "priceRetail": 19725.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBZC",
+          "code": "GABBZC",
+          "name": "Sport 35 TFSI (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21463.0,
+              "priceRetail": 21463.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCZC",
+          "code": "GABCZC",
+          "name": "Design 35 TFSI (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21463.0,
+              "priceRetail": 21463.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAZG",
+          "code": "GABAZG",
+          "name": "35 TFSI S tronic",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21423.0,
+              "priceRetail": 21423.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBZG",
+          "code": "GABBZG",
+          "name": "Sport 35 TFSI S tronic",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23165.0,
+              "priceRetail": 23165.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCZG",
+          "code": "GABCZG",
+          "name": "Design 35 TFSI S tronic",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23165.0,
+              "priceRetail": 23165.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAFC",
+          "code": "GABAFC",
+          "name": "30 TDI (6 ταχύτητες)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19725.0,
+              "priceRetail": 19725.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBFC",
+          "code": "GABBFC",
+          "name": "Sport 30 TDI (6 ταχύτητες)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21463.0,
+              "priceRetail": 21463.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCFC",
+          "code": "GABCFC",
+          "name": "Design 30 TDI (6 ταχύτητες)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21463.0,
+              "priceRetail": 21463.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAFG",
+          "code": "GABAFG",
+          "name": "Business 30 TDI S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19993.0,
+              "priceRetail": 19993.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBFG",
+          "code": "GABBFG",
+          "name": "Sport 30 TDI S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23169.0,
+              "priceRetail": 23169.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCFG",
+          "code": "GABCFG",
+          "name": "Design 30 TDI S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23169.0,
+              "priceRetail": 23169.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABARY",
+          "code": "GABARY",
+          "name": "35 TDI quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24481.0,
+              "priceRetail": 24481.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBRY",
+          "code": "GABBRY",
+          "name": "35 TDI Sport quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25948.0,
+              "priceRetail": 25948.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCRY",
+          "code": "GABCRY",
+          "name": "35 TDI Design quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25948.0,
+              "priceRetail": 25948.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "F3BAZC",
+          "code": "F3BAZC",
+          "name": "35 TFSI 6 ταχύτητες",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21875.0,
+              "priceRetail": 21875.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BBZC",
+          "code": "F3BBZC",
+          "name": "Advanced 35 TFSI 6 ταχύτητες",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23006.0,
+              "priceRetail": 23006.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BCZC",
+          "code": "F3BCZC",
+          "name": "S line 35 TFSI 6 ταχύτητες",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23737.0,
+              "priceRetail": 23737.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BAZG",
+          "code": "F3BAZG",
+          "name": "35 TFSI S tronic",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23604.0,
+              "priceRetail": 23604.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BBZG",
+          "code": "F3BBZG",
+          "name": "Advanced 35 TFSI S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24535.0,
+              "priceRetail": 24535.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BCZG",
+          "code": "F3BCZG",
+          "name": "S line 35 TFSI S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25264.0,
+              "priceRetail": 25264.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BASG",
+          "code": "F3BASG",
+          "name": "Business 35 TDI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24993.0,
+              "priceRetail": 24993.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BASG",
+          "code": "F3BASG",
+          "name": "Comfort 35 TDI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26853.0,
+              "priceRetail": 26853.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BBSG",
+          "code": "F3BBSG",
+          "name": "Advanced 35 TDI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27827.0,
+              "priceRetail": 27827.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BCSG",
+          "code": "F3BCSG",
+          "name": "S line 35 TDI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28518.0,
+              "priceRetail": 28518.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BABY",
+          "code": "F3BABY",
+          "name": "40 TDI quattro S tronic",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31096.0,
+              "priceRetail": 31096.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BBBY",
+          "code": "F3BBBY",
+          "name": "Advanced 40 TDI quattro S tronic",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32143.0,
+              "priceRetail": 32143.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BCBY",
+          "code": "F3BCBY",
+          "name": "S-line 40 TDI quattro S tronic",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32820.0,
+              "priceRetail": 32820.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BA8Y",
+          "code": "F3BA8Y",
+          "name": "45 TFSI quattro S tronic",
+          "co2": 167,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30737.0,
+              "priceRetail": 30737.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BB8Y",
+          "code": "F3BB8Y",
+          "name": "Advanced 45 TFSI quattro S tronic",
+          "co2": 168,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31250.0,
+              "priceRetail": 31250.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F3BC8Y",
+          "code": "F3BC8Y",
+          "name": "S-line 45 TFSI quattro S tronic",
+          "co2": 168,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31914.0,
+              "priceRetail": 31914.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q5": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "FYBA3Y",
+          "code": "FYBA3Y",
+          "name": "45 TFSI MHEV quattro S tronic",
+          "co2": 164,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42300.0,
+              "priceRetail": 42300.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBB3Y",
+          "code": "FYBB3Y",
+          "name": "Sport 45 TFSI MHEV quattro S tronic",
+          "co2": 164,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43149.0,
+              "priceRetail": 43149.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBC3Y",
+          "code": "FYBC3Y",
+          "name": "Design 45 TFSI MHEV quattro S tronic",
+          "co2": 164,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43149.0,
+              "priceRetail": 43149.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBAKY",
+          "code": "FYBAKY",
+          "name": "35 TDI quattro Stronic",
+          "co2": 143,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35807.0,
+              "priceRetail": 35807.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBBKY",
+          "code": "FYBBKY",
+          "name": "Sport 35 TDI quattro Stronic",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37642.0,
+              "priceRetail": 37642.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBCKY",
+          "code": "FYBCKY",
+          "name": "Design 35 TDI quattro Stronic",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37642.0,
+              "priceRetail": 37642.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBAFY",
+          "code": "FYBAFY",
+          "name": "40 TDI quattro Stronic",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37722.0,
+              "priceRetail": 37722.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBBFY",
+          "code": "FYBBFY",
+          "name": "Sport 40 TDI quattro Stronic",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38571.0,
+              "priceRetail": 38571.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBCFY",
+          "code": "FYBCFY",
+          "name": "Design 40 TDI quattro Stronic",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38571.0,
+              "priceRetail": 38571.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q7": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4MB0L2",
+          "code": "4MB0L2",
+          "name": "50 TDI MHEV quattro tiptronic",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58356.0,
+              "priceRetail": 58356.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q8": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4MN0L2",
+          "code": "4MN0L2",
+          "name": "50 TDI MHEV quattro tiptronic",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66547.0,
+              "priceRetail": 66547.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
