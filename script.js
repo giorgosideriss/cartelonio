@@ -3,10 +3,14 @@
 // Προς το παρόν έχουμε μόνο Toyota 2021.
 const DATA_SOURCES = {
   "Toyota": {
-    "2021": "data/toyota/2021/2021.json",
-    "2020": "data/toyota/2020/2020.json"
+    "2020": "data/toyota/2020/2020.json",
+    "2021": "data/toyota/2021/2021.json"
+  },
+  "Audi": {
+    "2017": "data/audi/2017/2017.json"
   }
 };
+
 
 
 // Τρέχον σετ δεδομένων (π.χ. Toyota 2021)
