@@ -1,0 +1,249 @@
+{
+  "brand": "Audi",
+  "year": "2018",
+  "models": {
+    "A1": [
+      { "type": "8XKAS4", "edition": "1.0 TFSI (5 ταχύτητες)", "price": 13748, "co2": 97 },
+      { "type": "8XKASG", "edition": "1.0 TFSI S tronic", "price": 15220, "co2": 102 },
+      { "type": "8XKA14", "edition": "1.6 TDI (5 ταχύτητες)", "price": 15722, "co2": 99 },
+      { "type": "8XKA1G", "edition": "1.6 TDI S tronic", "price": 17221, "co2": 105 },
+      { "type": "8XKSF9", "edition": "S1 2.0 TFSI quattro (6 ταχύτητες)", "price": 23357, "co2": 162 }
+    ],
+    "A1 SB": [
+      { "type": "8XFAS4", "edition": "1.0 TFSI (5 ταχύτητες)", "price": 14210, "co2": 97 },
+      { "type": "8XFBS4", "edition": "1.0 TFSI Sport (5 ταχύτητες)", "price": 15547, "co2": 99 },
+      { "type": "8XFASG", "edition": "1.0 TFSI S tronic", "price": 15689, "co2": 102 },
+      { "type": "8XFBSG", "edition": "1.0 TFSI Sport S tronic", "price": 17021, "co2": 102 },
+      { "type": "8XFA14", "edition": "1.6 TDI (5 ταχύτητες)", "price": 16185, "co2": 99 },
+      { "type": "8XFB14", "edition": "1.6 TDI Sport (5 ταχύτητες)", "price": 17522, "co2": 99 },
+      { "type": "8XFA1G", "edition": "1.6 TDI S tronic", "price": 17700, "co2": 105 },
+      { "type": "8XFB1G", "edition": "1.6 TDI Sport S tronic", "price": 19021, "co2": 105 },
+      { "type": "8XFSF9", "edition": "S1 SB 2.0 TFSI quattro (6 ταχύτητες)", "price": 23821, "co2": 166 }
+    ],
+    "A3 SB": [
+      { "type": "8VFANC", "edition": "1.0 TFSI (6 ταχύτητες)", "price": 16970, "co2": 106 },
+      { "type": "8VFBNC", "edition": "1.0 TFSI Sport (6 ταχύτητες)", "price": 17921, "co2": 107 },
+      { "type": "8VFCNC", "edition": "1.0 TFSI Design (6 ταχύτητες)", "price": 18064, "co2": 107 },
+      { "type": "8VFANG", "edition": "1.0 TFSI S tronic", "price": 18857, "co2": 106 },
+      { "type": "8VFBNG", "edition": "1.0 TFSI Sport S tronic", "price": 19557, "co2": 107 },
+      { "type": "8VFCNG", "edition": "1.0 TFSI Design S tronic", "price": 19700, "co2": 107 },
+      { "type": "8VFAZC", "edition": "1.5 TFSI CoD (6 ταχύτητες)", "price": 19793, "co2": 116 },
+      { "type": "8VFBZC", "edition": "1.5 TFSI CoD Sport (6 ταχύτητες)", "price": 20500, "co2": 117 },
+      { "type": "8VFCZC", "edition": "1.5 TFSI CoD Design (6 ταχύτητες)", "price": 20642, "co2": 117 },
+      { "type": "8VFAZG", "edition": "1.5 TFSI CoD S tronic", "price": 21432, "co2": 112 },
+      { "type": "8VFBZG", "edition": "1.5 TFSI CoD Sport S tronic", "price": 22135, "co2": 113 },
+      { "type": "8VFCZG", "edition": "1.5 TFSI CoD Design S tronic", "price": 22277, "co2": 113 },
+      { "type": "8VFADC", "edition": "1.6 TDI Business (6 ταχύτητες)", "price": 16992, "co2": 107 },
+      { "type": "8VFADC", "edition": "1.6 TDI Comfort (6 ταχύτητες)", "price": 19214, "co2": 107 },
+      { "type": "8VFBDC", "edition": "1.6 TDI Sport (6 ταχύτητες)", "price": 19929, "co2": 108 },
+      { "type": "8VFCDC", "edition": "1.6 TDI Design (6 ταχύτητες)", "price": 20088, "co2": 108 },
+      { "type": "8VFADG", "edition": "1.6 TDI S tronic", "price": 20878, "co2": 105 },
+      { "type": "8VFBDG", "edition": "1.6 TDI Sport S tronic", "price": 21581, "co2": 106 },
+      { "type": "8VFCDG", "edition": "1.6 TDI Design S tronic", "price": 21723, "co2": 106 },
+      { "type": "8VFS39", "edition": "S3 SB 2.0 TFSI quattro (6 ταχύτητες)", "price": 29493, "co2": 162 },
+      { "type": "8VFS3Y", "edition": "S3 SB 2.0 TFSI quattro S tronic", "price": 31232, "co2": 149 },
+      { "type": "8VFRWY", "edition": "RS3 Sportback 2.5 TFSI quattro S tronic", "price": 40877, "co2": 189 }
+    ],
+
+    "A3 Sport Sedan": [
+      { "type": "8VMANC", "edition": "1.0 TFSI (6 ταχύτητες)", "price": 17321, "co2": 105 },
+      { "type": "8VMBNC", "edition": "1.0 TFSI Sport (6 ταχύτητες)", "price": 18029, "co2": 105 },
+      { "type": "8VMCNC", "edition": "1.0 TFSI Design (6 ταχύτητες)", "price": 18164, "co2": 105 },
+      { "type": "8VMANG", "edition": "1.0 TFSI S tronic", "price": 18957, "co2": 105 },
+      { "type": "8VMBNG", "edition": "1.0 TFSI Sport S tronic", "price": 19664, "co2": 105 },
+      { "type": "8VMCNG", "edition": "1.0 TFSI Design S tronic", "price": 19807, "co2": 105 },
+      { "type": "8VMAZC", "edition": "1.5 TFSI CoD (6 ταχύτητες)", "price": 19900, "co2": 115 },
+      { "type": "8VMBZC", "edition": "1.5 TFSI CoD Sport (6 ταχύτητες)", "price": 20601, "co2": 115 },
+      { "type": "8VMCZC", "edition": "1.5 TFSI CoD Design (6 ταχύτητες)", "price": 20743, "co2": 115 },
+      { "type": "8VMAZG", "edition": "1.5 TFSI CoD S tronic", "price": 21534, "co2": 111 },
+      { "type": "8VMBZG", "edition": "1.5 TFSI CoD Sport S tronic", "price": 22243, "co2": 112 },
+      { "type": "8VMCZG", "edition": "1.5 TFSI CoD Design S tronic", "price": 22378, "co2": 112 },
+      { "type": "8VMADC", "edition": "1.6 TDI Business (6 ταχύτητες)", "price": 16992, "co2": 106 },
+      { "type": "8VMADC", "edition": "1.6 TDI Comfort (6 ταχύτητες)", "price": 19343, "co2": 106 },
+      { "type": "8VMBDC", "edition": "1.6 TDI Sport (6 ταχύτητες)", "price": 20000, "co2": 107 },
+      { "type": "8VMCDC", "edition": "1.6 TDI Design (6 ταχύτητες)", "price": 20189, "co2": 107 },
+      { "type": "8VMADG", "edition": "1.6 TDI S tronic", "price": 20980, "co2": 104 },
+      { "type": "8VMBDG", "edition": "1.6 TDI Sport S tronic", "price": 21689, "co2": 105 },
+      { "type": "8VMCDG", "edition": "1.6 TDI Design S tronic", "price": 21824, "co2": 105 },
+      { "type": "8VMS39", "edition": "S3 Sport Sedan 2.0 TFSI quattro (6 ταχύτητες)", "price": 29595, "co2": 162 },
+      { "type": "8VMS3Y", "edition": "S3 Sport Sedan 2.0 TFSI quattro S tronic", "price": 31336, "co2": 148 },
+      { "type": "8VMRWY", "edition": "RS3 Sport Sedan 2.5 TFSI quattro S tronic", "price": 40983, "co2": 188 }
+    ],
+
+    "A3 Cabriolet": [
+      { "type": "8VEA4C", "edition": "1.4 TFSI (6 ταχύτητες)", "price": 21157, "co2": 122 },
+      { "type": "8VEB4C", "edition": "1.4 TFSI Sport (6 ταχύτητες)", "price": 21862, "co2": 123 },
+      { "type": "8VEA4G", "edition": "1.4 TFSI S tronic", "price": 22797, "co2": 118 },
+      { "type": "8VEB4G", "edition": "1.4 TFSI Sport S tronic", "price": 23500, "co2": 119 },
+      { "type": "8VEAZC", "edition": "1.5 TFSI CoD (6 ταχύτητες)", "price": 24088, "co2": 119 },
+      { "type": "8VEBZC", "edition": "1.5 TFSI CoD Sport (6 ταχύτητες)", "price": 24797, "co2": 120 },
+      { "type": "8VEAZG", "edition": "1.5 TFSI CoD S tronic", "price": 25724, "co2": 116 },
+      { "type": "8VEBZG", "edition": "1.5 TFSI CoD Sport S tronic", "price": 26429, "co2": 117 },
+      { "type": "8VEADC", "edition": "1.6 TDI (6 ταχύτητες)", "price": 23534, "co2": 112 },
+      { "type": "8VEBDC", "edition": "1.6 TDI Sport (6 ταχύτητες)", "price": 24243, "co2": 113 }
+    ],
+
+    "A4": [
+      { "type": "8W2AEC", "edition": "1.4 TFSI 6 ταχύτητες", "price": 23172, "co2": 123 },
+      { "type": "8W2BEC", "edition": "1.4 TFSI Sport 6 ταχύτητες", "price": 24402, "co2": 126 },
+      { "type": "8W2AEG", "edition": "1.4 TFSI S tronic", "price": 24878, "co2": 119 },
+      { "type": "8W2BEG", "edition": "1.4 TFSI Sport S tronic", "price": 26106, "co2": 122 },
+      { "type": "8W2AIC", "edition": "2.0 TDI (122hp) 6 ταχύτητες", "price": 25000, "co2": 98 },
+      { "type": "8W2BIC", "edition": "2.0 TDI (122hp) Sport 6 ταχύτητες", "price": 26340, "co2": 103 },
+      { "type": "8W2AIG", "edition": "2.0 TDI (122hp) S tronic", "price": 26821, "co2": 104 },
+      { "type": "8W2BIG", "edition": "2.0 TDI (122hp) Sport S tronic", "price": 28045, "co2": 106 },
+      { "type": "8W2ABC", "edition": "2.0 TDI (150hp) 6 ταχύτητες", "price": 27908, "co2": 99 },
+      { "type": "8W2BBC", "edition": "2.0 TDI (150hp) Sport 6 ταχύτητες", "price": 29141, "co2": 104 },
+      { "type": "8W2ABG", "edition": "2.0 TDI (150hp) S tronic", "price": 29615, "co2": 104 },
+      { "type": "8W2BBG", "edition": "2.0 TDI (150hp) Sport S tronic", "price": 30846, "co2": 106 },
+      { "type": "8W2AFC", "edition": "2.0 TDI (190hp) 6 ταχύτητες", "price": 29686, "co2": 111 },
+      { "type": "8W2BFC", "edition": "2.0 TDI (190hp) Sport 6 ταχύτητες", "price": 31026, "co2": 111 },
+      { "type": "8W2AFG", "edition": "2.0 TDI (190hp) S tronic", "price": 31391, "co2": 107 },
+      { "type": "8W2BFG", "edition": "2.0 TDI (190hp) Sport S tronic", "price": 32731, "co2": 107 },
+      { "type": "8W2AFY", "edition": "2.0 TDI (190hp) quattro S tronic", "price": 33224, "co2": 114 },
+      { "type": "8W2BFY", "edition": "2.0 TDI (190hp) Sport quattro S tronic", "price": 34199, "co2": 114 },
+      { "type": "8W2S4A", "edition": "S4 3.0 TFSI quattro tiptronic", "price": 51486, "co2": 166 }
+    ],
+
+    "A4 Avant": [
+      { "type": "8W5AFY", "edition": "2.0 TDI (190hp) quattro S tronic", "price": 34487, "co2": 116 },
+      { "type": "8W5BFY", "edition": "2.0 TDI (190hp) Sport quattro S tronic", "price": 35462, "co2": 116 },
+      { "type": "8W5S4A", "edition": "S4 Avant 3.0 TFSI quattro tiptronic", "price": 52796, "co2": 171 }
+    ],
+
+    "A4 Allroad": [
+      { "type": "8WH0AY", "edition": "2.0 TFSI MHEV S tronic", "price": 36089, "co2": 148 },
+      { "type": "8WH0FY", "edition": "2.0 TDI S tronic", "price": 36809, "co2": 128 }
+    ],
+
+    "A5 Coupe": [
+      { "type": "F53BEG", "edition": "1.4 TFSI S tronic", "price": 29278, "co2": 125 },
+      { "type": "F53BDC", "edition": "2.0 TFSI MHEV (6 ταχύτητες)", "price": 31165, "co2": 130 },
+      { "type": "F53BSG", "edition": "2.0 TFSI MHEV S tronic", "price": 32874, "co2": 128 },
+      { "type": "F53BAY", "edition": "2.0 TFSI MHEV quattro S tronic", "price": 39707, "co2": 141 },
+      { "type": "F53BFC", "edition": "2.0 TDI (6 ταχύτητες)", "price": 35936, "co2": 113 },
+      { "type": "F53BFG", "edition": "2.0 TDI S tronic", "price": 37641, "co2": 111 },
+      { "type": "F53BFY", "edition": "2.0 TDI quattro S tronic", "price": 39000, "co2": 118 },
+      { "type": "F53S4A", "edition": "S5 Coupé 3.0 TFSI quattro S tronic", "price": 45193, "co2": 166 },
+      { "type": "F53RXA", "edition": "RS5 Coupé 2.9 TFSI quattro tiptronic", "price": 70835, "co2": 197 }
+    ],
+
+    "A5 SB": [
+      { "type": "F5ABEG", "edition": "1.4 TFSI S tronic", "price": 29278, "co2": 128 },
+      { "type": "F5ABDC", "edition": "2.0 TFSI MHEV (6 ταχύτητες)", "price": 31165, "co2": 132 },
+      { "type": "F5ABDG", "edition": "2.0 TFSI MHEV S tronic", "price": 32867, "co2": 128 },
+      { "type": "F5ABAY", "edition": "2.0 TFSI MHEV quattro S tronic", "price": 39700, "co2": 147 },
+      { "type": "F5ABFC", "edition": "2.0 TDI (6 ταχύτητες)", "price": 35936, "co2": 115 },
+      { "type": "F5ABFG", "edition": "2.0 TDI S tronic", "price": 37641, "co2": 112 },
+      { "type": "F5ABFY", "edition": "2.0 TDI quattro S tronic", "price": 39001, "co2": 121 },
+      { "type": "F5AS4A", "edition": "S5 SB 3.0 TFSI quattro S tronic", "price": 45193, "co2": 170 },
+      { "type": "F57BFG", "edition": "A5 Cabriolet 2.0 TDI S tronic", "price": 43417, "co2": 122 },
+      { "type": "F57BAY", "edition": "A5 Cabriolet 2.0 TFSI MHEV quattro S tronic", "price": 45482, "co2": 151 }
+    ],
+
+    "A6": [
+      { "type": "4GC06G", "edition": "1.8 TFSI ultra S tronic", "price": 38065, "co2": 133 },
+      { "type": "4GC08G", "edition": "2.0 TFSI S tronic", "price": 39322, "co2": 137 },
+      { "type": "4GC08Y", "edition": "2.0 TFSI quattro S tronic", "price": 41502, "co2": 153 },
+      { "type": "4GC0DG", "edition": "2.0 TDI ultra S tronic", "price": 35962, "co2": 110 },
+      { "type": "4GC0IG", "edition": "2.0 TDI ultra S tronic", "price": 37917, "co2": 114 },
+      { "type": "4GC0IY", "edition": "2.0 TDI quattro S tronic", "price": 40107, "co2": 131 },
+      { "type": "4GC0TG", "edition": "3.0 TDI S tronic", "price": 44872, "co2": 115 },
+      { "type": "4GC0TY", "edition": "3.0 TDI quattro S tronic", "price": 47048, "co2": 138 },
+      { "type": "4GCSFY", "edition": "S6 4.0 TFSI quattro S tronic", "price": 71604, "co2": 214 }
+    ],
+
+    "A6 Avant": [
+      { "type": "4GD0TY", "edition": "3.0 TDI quattro S tronic", "price": 48707, "co2": 144 },
+      { "type": "4GDRRA", "edition": "RS6 Avant Performance 4.0 TFSI quattro tiptronic 8", "price": 106975, "co2": 223 },
+      { "type": "4GJ0GY", "edition": "A6 Allroad 3.0 TDI quattro S tronic", "price": 61176, "co2": 149 },
+      { "type": "4GJ0VA", "edition": "A6 Allroad 3.0 BiTDI quattro tiptronic", "price": 65187, "co2": 172 }
+    ],
+
+    "A7 Sportback": [
+      { "type": "4KA0GA", "edition": "50 TDI quattro Tiptronic", "price": 61522, "co2": 147 },
+      { "type": "4KA02Y", "edition": "55 TFSI quattro S tronic", "price": 63966, "co2": 157 }
+    ],
+
+    "A8": [
+      { "type": "4N203A", "edition": "50 TDI quattro tiptronic", "price": 81899, "co2": 145 }
+    ],
+
+    "TT Coupé": [
+      { "type": "FV306C", "edition": "1.8 TFSI (6 ταχύτητες)", "price": 32770, "co2": 134 },
+      { "type": "FV306G", "edition": "1.8 TFSI S tronic", "price": 34391, "co2": 129 },
+      { "type": "FV307L", "edition": "2.0 TFSI quattro S tronic", "price": 40751, "co2": 149 },
+      { "type": "FV3S3L", "edition": "TTS Coupé 2.0 TFSI quattro S tronic", "price": 54772, "co2": 155 },
+      { "type": "FV3RSY", "edition": "TT RS Coupé 2.5 TFSI quattro S tronic", "price": 62796, "co2": 187 }
+    ],
+
+    "TT Roadster": [
+      { "type": "FV906C", "edition": "1.8 TFSI (6 ταχύτητες)", "price": 34058, "co2": 138 },
+      { "type": "FV906G", "edition": "1.8 TFSI S tronic", "price": 35685, "co2": 132 },
+      { "type": "FV907L", "edition": "2.0 TFSI quattro S tronic", "price": 42038, "co2": 154 },
+      { "type": "FV9S3L", "edition": "TTS Roadster 2.0 TFSI quattro S tronic", "price": 56065, "co2": 159 }
+    ],
+
+    "Q2": [
+      { "type": "GABANC", "edition": "1.0 TFSI (6 ταχύτητες)", "price": 17879, "co2": 117 },
+      { "type": "GABBNC", "edition": "1.0 TFSI Sport (6 ταχύτητες)", "price": 19343, "co2": 117 },
+      { "type": "GABCNC", "edition": "1.0 TFSI Design (6 ταχύτητες)", "price": 19343, "co2": 117 },
+      { "type": "GABANG", "edition": "1.0 TFSI S tronic", "price": 19579, "co2": 117 },
+      { "type": "GABBNG", "edition": "1.0 TFSI Sport S tronic", "price": 21047, "co2": 117 },
+      { "type": "GABCNG", "edition": "1.0 TFSI Design S tronic", "price": 21047, "co2": 117 },
+      { "type": "GABACC", "edition": "1.4 TFSI CoD (6 ταχύτητες)", "price": 19760, "co2": 124 },
+      { "type": "GABBCC", "edition": "1.4 TFSI CoD Sport (6 ταχύτητες)", "price": 21230, "co2": 124 },
+      { "type": "GABCCC", "edition": "1.4 TFSI CoD Design (6 ταχύτητες)", "price": 21230, "co2": 124 },
+      { "type": "GABACG", "edition": "1.4 TFSI CoD S tronic", "price": 21466, "co2": 119 },
+      { "type": "GABBCG", "edition": "1.4 TFSI CoD Sport S tronic", "price": 22932, "co2": 119 },
+      { "type": "GABCCG", "edition": "1.4 TFSI CoD Design S tronic", "price": 22932, "co2": 119 },
+      { "type": "GABAFC", "edition": "1.6 TDI (6 ταχύτητες)", "price": 19771, "co2": 114 },
+      { "type": "GABBFC", "edition": "1.6 TDI Sport (6 ταχύτητες)", "price": 21236, "co2": 114 },
+      { "type": "GABCFC", "edition": "1.6 TDI Design (6 ταχύτητες)", "price": 21236, "co2": 114 },
+      { "type": "GABAFG", "edition": "1.6 TDI S tronic", "price": 21473, "co2": 109 },
+      { "type": "GABBFG", "edition": "1.6 TDI Sport S tronic", "price": 22939, "co2": 109 },
+      { "type": "GABCFG", "edition": "1.6 TDI Design S tronic", "price": 22939, "co2": 109 },
+      { "type": "GABARY", "edition": "2.0 TDI quattro S tronic", "price": 24116, "co2": 125 },
+      { "type": "GABBRY", "edition": "2.0 TDI Sport quattro S tronic", "price": 25578, "co2": 125 },
+      { "type": "GABCRY", "edition": "2.0 TDI Design quattro S tronic", "price": 25578, "co2": 125 },
+      { "type": "GABATY", "edition": "2.0 TDI quattro S tronic", "price": 25590, "co2": 128 },
+      { "type": "GABBTY", "edition": "2.0 TDI Sport quattro S tronic", "price": 27060, "co2": 128 },
+      { "type": "GABCTY", "edition": "2.0 TDI Design quattro S tronic", "price": 27060, "co2": 128 }
+    ],
+
+    "Q3": [
+      { "type": "8UGAJC", "edition": "1.4 TFSI (125hp) (6 ταχύτητες)", "price": 20000, "co2": 134 },
+      { "type": "8UGAKC", "edition": "1.4 TFSI (6 ταχύτητες)", "price": 19915, "co2": 133 },
+      { "type": "8UGBKC", "edition": "1.4 TFSI Sport (6 ταχύτητες)", "price": 21569, "co2": 133 },
+      { "type": "8UGAKX", "edition": "1.4 TFSI S tronic", "price": 21436, "co2": 139 },
+      { "type": "8UGBKX", "edition": "1.4 TFSI Sport S tronic", "price": 23098, "co2": 139 },
+      { "type": "8UGA6C", "edition": "1.4 TFSI CoD ultra (6 ταχύτητες)", "price": 20186, "co2": 127 },
+      { "type": "8UGA6X", "edition": "1.4 TFSI CoD S tronic", "price": 21715, "co2": 136 },
+      { "type": "8UGB6X", "edition": "1.4 TFSI CoD Sport S tronic", "price": 23378, "co2": 136 },
+      { "type": "8UGBEY", "edition": "2.0 TFSI (220hp) Sport quattro S tronic", "price": 27555, "co2": 154 },
+      { "type": "8UGAGC", "edition": "2.0 TDI (150hp) (6 ταχύτητες)", "price": 24264, "co2": 117 },
+      { "type": "8UGCGC", "edition": "2.0 TDI (150hp) Design (6 ταχύτητες)", "price": 25923, "co2": 117 },
+      { "type": "8UGCGG", "edition": "2.0 TDI (150hp) Design S tronic", "price": 27450, "co2": 131 },
+      { "type": "8UGBGY", "edition": "2.0 TDI (150hp) Sport quattro S tronic", "price": 28775, "co2": 131 },
+      { "type": "8UGABY", "edition": "2.0 TDI (184hp) quattro S tronic", "price": 29604, "co2": 136 }
+    ],
+
+    "Q5": [
+      { "type": "FYBAAY", "edition": "2.0 TFSI quattro S tronic", "price": 40579, "co2": 154 },
+      { "type": "FYBBAY", "edition": "2.0 TFSI Sport quattro S tronic", "price": 42420, "co2": 157 },
+      { "type": "FYBCAY", "edition": "2.0 TFSI Design quattro S tronic", "price": 42420, "co2": 157 },
+      { "type": "FYBAKY", "edition": "2.0 TDI quattro S tronic", "price": 35113, "co2": 129 },
+      { "type": "FYBBKY", "edition": "2.0 TDI Sport quattro S tronic", "price": 36954, "co2": 132 },
+      { "type": "FYBCKY", "edition": "2.0 TDI Design quattro S tronic", "price": 36954, "co2": 132 },
+      { "type": "FYBAFY", "edition": "2.0 TDI quattro S tronic", "price": 37626, "co2": 129 },
+      { "type": "FYBBFY", "edition": "2.0 TDI Sport quattro S tronic", "price": 39466, "co2": 132 },
+      { "type": "FYBCFY", "edition": "2.0 TDI Design quattro S tronic", "price": 39466, "co2": 132 }
+    ],
+
+    "Q7": [
+      { "type": "4MB0E1", "edition": "3.0 TDI quattro tiptronic", "price": 57722, "co2": 149 },
+      { "type": "4MB0E3", "edition": "e-tron 3.0 TDI quattro tiptronic", "price": 77902, "co2": 48 },
+      { "type": "4MBSU1", "edition": "SQ7 4.0 TDI quattro tiptronic", "price": 85201, "co2": 189 }
+    ]
+  }
+}
