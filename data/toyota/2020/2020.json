@@ -1,0 +1,5531 @@
+{
+  "brand": "Toyota",
+  "year": 2020,
+  "models": {
+    "AYGO": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "KGB40L-AGMRKW-03",
+          "code": "1000000530",
+          "name": "Aygo 3D x-City",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8333.0,
+              "priceRetail": 10650.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8466.0,
+              "priceRetail": 10820.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 8678.0,
+              "priceRetail": 11090.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8333.0,
+              "priceRetail": 10650.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMRKW-03",
+          "code": "1000000531",
+          "name": "Aygo 5D x-City",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8592.0,
+              "priceRetail": 10980.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8725.0,
+              "priceRetail": 11150.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 8936.0,
+              "priceRetail": 11420.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8592.0,
+              "priceRetail": 10980.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AGMRKW-06",
+          "code": "1000000532",
+          "name": "Aygo 3D x-Cool",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8052.0,
+              "priceRetail": 10290.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8185.0,
+              "priceRetail": 10460.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 8396.0,
+              "priceRetail": 10730.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8052.0,
+              "priceRetail": 10290.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMRKW-06",
+          "code": "1000000533",
+          "name": "Aygo 5D x-Cool",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8310.0,
+              "priceRetail": 10620.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8443.0,
+              "priceRetail": 10790.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 8654.0,
+              "priceRetail": 11060.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8310.0,
+              "priceRetail": 10620.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-FQ",
+          "code": "1000000541",
+          "name": "Aygo 5D x-Play MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10078.0,
+              "priceRetail": 12880.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10211.0,
+              "priceRetail": 13050.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10423.0,
+              "priceRetail": 13320.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10078.0,
+              "priceRetail": 12880.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-FQ",
+          "code": "1000000542",
+          "name": "Aygo 5D x-Play",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9382.0,
+              "priceRetail": 11990.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9515.0,
+              "priceRetail": 12160.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 9726.0,
+              "priceRetail": 12430.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9382.0,
+              "priceRetail": 11990.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-FS",
+          "code": "1000000543",
+          "name": "Aygo 5D x-Play Sport MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10516.0,
+              "priceRetail": 13440.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10649.0,
+              "priceRetail": 13610.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10861.0,
+              "priceRetail": 13880.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10516.0,
+              "priceRetail": 13440.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-FS",
+          "code": "1000000544",
+          "name": "Aygo 5D x-Play Sport",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9820.0,
+              "priceRetail": 12550.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9953.0,
+              "priceRetail": 12720.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10164.0,
+              "priceRetail": 12990.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9820.0,
+              "priceRetail": 12550.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-0A",
+          "code": "1000000548",
+          "name": "Aygo 5D x-Cite MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10649.0,
+              "priceRetail": 13610.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10782.0,
+              "priceRetail": 13780.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10994.0,
+              "priceRetail": 14050.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10649.0,
+              "priceRetail": 13610.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-0A",
+          "code": "1000000549",
+          "name": "Aygo 5D x-Cite",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9953.0,
+              "priceRetail": 12720.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10086.0,
+              "priceRetail": 12890.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10297.0,
+              "priceRetail": 13160.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9953.0,
+              "priceRetail": 12720.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-GY",
+          "code": "1000000552",
+          "name": "Aygo 5D x-Wave Connect MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11291.0,
+              "priceRetail": 14430.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11424.0,
+              "priceRetail": 14600.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11635.0,
+              "priceRetail": 14870.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11291.0,
+              "priceRetail": 14430.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-GY",
+          "code": "1000000553",
+          "name": "Aygo 5D x-Wave Connect",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10595.0,
+              "priceRetail": 13540.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10728.0,
+              "priceRetail": 13710.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10939.0,
+              "priceRetail": 13980.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10595.0,
+              "priceRetail": 13540.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-A7",
+          "code": "1000000554",
+          "name": "Aygo 5D x-Clusiv Connect MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11103.0,
+              "priceRetail": 14190.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11236.0,
+              "priceRetail": 14360.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11448.0,
+              "priceRetail": 14630.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11103.0,
+              "priceRetail": 14190.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-A7",
+          "code": "1000000555",
+          "name": "Aygo 5D x-Clusiv Connect",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10407.0,
+              "priceRetail": 13300.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10540.0,
+              "priceRetail": 13470.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10751.0,
+              "priceRetail": 13740.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10407.0,
+              "priceRetail": 13300.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-FJ",
+          "code": "1000000630",
+          "name": "Aygo x-Play TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9664.0,
+              "priceRetail": 12350.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9797.0,
+              "priceRetail": 12520.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10008.0,
+              "priceRetail": 12790.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9664.0,
+              "priceRetail": 12350.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-GC",
+          "code": "1000000631",
+          "name": "Aygo x-Play Sport TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10102.0,
+              "priceRetail": 12910.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10235.0,
+              "priceRetail": 13080.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10446.0,
+              "priceRetail": 13350.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10102.0,
+              "priceRetail": 12910.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-GZ",
+          "code": "1000000632",
+          "name": "Aygo x-Wave+ TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10876.0,
+              "priceRetail": 13900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11009.0,
+              "priceRetail": 14070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11221.0,
+              "priceRetail": 14340.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10876.0,
+              "priceRetail": 13900.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-0D",
+          "code": "1000000636",
+          "name": "Aygo x-Cite TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10235.0,
+              "priceRetail": 13080.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10368.0,
+              "priceRetail": 13250.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10579.0,
+              "priceRetail": 13520.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10235.0,
+              "priceRetail": 13080.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-0D",
+          "code": "1000000637",
+          "name": "Aygo x-Cite TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10931.0,
+              "priceRetail": 13970.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11064.0,
+              "priceRetail": 14140.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11275.0,
+              "priceRetail": 14410.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10931.0,
+              "priceRetail": 13970.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-GZ",
+          "code": "1000000638",
+          "name": "Aygo x-Wave+ TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11573.0,
+              "priceRetail": 14790.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11706.0,
+              "priceRetail": 14960.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11917.0,
+              "priceRetail": 15230.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11573.0,
+              "priceRetail": 14790.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-FJ",
+          "code": "1000000639",
+          "name": "Aygo x-Play TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10360.0,
+              "priceRetail": 13240.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10493.0,
+              "priceRetail": 13410.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10704.0,
+              "priceRetail": 13680.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10360.0,
+              "priceRetail": 13240.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-GC",
+          "code": "1000000640",
+          "name": "Aygo x-Play Sport TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10798.0,
+              "priceRetail": 13800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10931.0,
+              "priceRetail": 13970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11142.0,
+              "priceRetail": 14240.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10798.0,
+              "priceRetail": 13800.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-IA",
+          "code": "1000000877",
+          "name": "Aygo 5D x-Style S/R",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10548.0,
+              "priceRetail": 13480.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10681.0,
+              "priceRetail": 13650.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10892.0,
+              "priceRetail": 13920.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10548.0,
+              "priceRetail": 13480.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-IN",
+          "code": "1000000878",
+          "name": "Aygo 5D x-Style S/R TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10829.0,
+              "priceRetail": 13840.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10962.0,
+              "priceRetail": 14010.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11174.0,
+              "priceRetail": 14280.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10829.0,
+              "priceRetail": 13840.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-IA",
+          "code": "1000000881",
+          "name": "Aygo 5D x-Style S/R MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11244.0,
+              "priceRetail": 14370.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11377.0,
+              "priceRetail": 14540.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11588.0,
+              "priceRetail": 14810.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11244.0,
+              "priceRetail": 14370.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-IN",
+          "code": "1000000882",
+          "name": "Aygo 5D x-Style S/R TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11526.0,
+              "priceRetail": 14730.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11659.0,
+              "priceRetail": 14900.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11870.0,
+              "priceRetail": 15170.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11526.0,
+              "priceRetail": 14730.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AGMRKW-30",
+          "code": "1000001052",
+          "name": "Aygo 3D x-Cool TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8435.0,
+              "priceRetail": 10780.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8568.0,
+              "priceRetail": 10950.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 8779.0,
+              "priceRetail": 11220.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8435.0,
+              "priceRetail": 10780.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AGMRKW-02",
+          "code": "1000001053",
+          "name": "Aygo 3D x-City TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8717.0,
+              "priceRetail": 11140.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 8850.0,
+              "priceRetail": 11310.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 9061.0,
+              "priceRetail": 11580.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8717.0,
+              "priceRetail": 11140.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMRKW-02",
+          "code": "1000001055",
+          "name": "Aygo 5D x-City TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 8975.0,
+              "priceRetail": 11470.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9108.0,
+              "priceRetail": 11640.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 9319.0,
+              "priceRetail": 11910.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 8975.0,
+              "priceRetail": 11470.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-BV",
+          "code": "1000001056",
+          "name": "Aygo 5D x-Play Canvas",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9945.0,
+              "priceRetail": 12710.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10078.0,
+              "priceRetail": 12880.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10290.0,
+              "priceRetail": 13150.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9945.0,
+              "priceRetail": 12710.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-BV",
+          "code": "1000001057",
+          "name": "Aygo 5D x-Play Canvas MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10642.0,
+              "priceRetail": 13600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10775.0,
+              "priceRetail": 13770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10986.0,
+              "priceRetail": 14040.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10642.0,
+              "priceRetail": 13600.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-EG",
+          "code": "1000001058",
+          "name": "Aygo 5D x-Play Canvas TSS",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10227.0,
+              "priceRetail": 13070.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10360.0,
+              "priceRetail": 13240.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10571.0,
+              "priceRetail": 13510.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10227.0,
+              "priceRetail": 13070.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-EG",
+          "code": "1000001059",
+          "name": "Aygo 5D x-Play Canvas TSS MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10923.0,
+              "priceRetail": 13960.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11056.0,
+              "priceRetail": 14130.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11268.0,
+              "priceRetail": 14400.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10923.0,
+              "priceRetail": 13960.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHMGKW-B0",
+          "code": "1000001060",
+          "name": "Aygo 5D x-Clusiv Clima",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10704.0,
+              "priceRetail": 13680.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10837.0,
+              "priceRetail": 13850.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11049.0,
+              "priceRetail": 14120.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10704.0,
+              "priceRetail": 13680.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KGB40L-AHGGKW-B0",
+          "code": "1000001061",
+          "name": "Aygo 5D x-Clusiv Clima MMT",
+          "co2": 95,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11401.0,
+              "priceRetail": 14570.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11534.0,
+              "priceRetail": 14740.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11745.0,
+              "priceRetail": 15010.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11401.0,
+              "priceRetail": 14570.0
+            }
+          ]
+        }
+      ]
+    },
+    "YARIS": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "KSP130L-CHMRKW-EP",
+          "code": "1000000106",
+          "name": "Yaris TSS 5D 1.0 MT Cool",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9570.31,
+              "priceRetail": 12250.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9703.12,
+              "priceRetail": 12420.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 9929.68,
+              "priceRetail": 12710.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10046.87,
+              "priceRetail": 12860.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KSP130L-CHMRKW-EQ",
+          "code": "1000000107",
+          "name": "Yaris TSS 5D 1.0P Live Plus",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9945.31,
+              "priceRetail": 12730.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10078.12,
+              "priceRetail": 12900.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10304.69,
+              "priceRetail": 13190.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10421.87,
+              "priceRetail": 13340.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KSP130L-CHMNKW-ZS",
+          "code": "1000000108",
+          "name": "Yaris TSS 5D 1.0P Active",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10929.68,
+              "priceRetail": 13990.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11062.5,
+              "priceRetail": 14160.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11289.06,
+              "priceRetail": 14450.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11406.25,
+              "priceRetail": 14600.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFRBW-EQ",
+          "code": "1000000056",
+          "name": "Yaris TSS 5D 1.5P Live",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10414.06,
+              "priceRetail": 13330.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10546.87,
+              "priceRetail": 13500.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10773.43,
+              "priceRetail": 13790.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10890.62,
+              "priceRetail": 13940.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFNBW-ZS",
+          "code": "1000000098",
+          "name": "Yaris TSS 5D 1.5P Active",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11539.06,
+              "priceRetail": 14770.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11671.87,
+              "priceRetail": 14940.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11898.43,
+              "priceRetail": 15230.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 12015.62,
+              "priceRetail": 15380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHXNBW-ZS",
+          "code": "1000000116",
+          "name": "Yaris TSS 5D 1.5P CVT Active",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 12515.62,
+              "priceRetail": 16020.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 12648.43,
+              "priceRetail": 16190.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 12875.0,
+              "priceRetail": 16480.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 12992.18,
+              "priceRetail": 16630.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFNBW-65",
+          "code": "1000000253",
+          "name": "Yaris TSS 5D Active Plus",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 12070.31,
+              "priceRetail": 15450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 12203.12,
+              "priceRetail": 15620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 12429.68,
+              "priceRetail": 15910.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 12546.87,
+              "priceRetail": 16060.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHXNBW-65",
+          "code": "1000000255",
+          "name": "Yaris TSS 5D Active Plus CVT",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13046.87,
+              "priceRetail": 16700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13179.68,
+              "priceRetail": 16870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13406.25,
+              "priceRetail": 17160.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13523.43,
+              "priceRetail": 17310.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFGBW-A1",
+          "code": "1000000689",
+          "name": "Yaris 1,5L 5D Black Bi-Tone Red/White",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13101.56,
+              "priceRetail": 16770.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13234.37,
+              "priceRetail": 16940.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13460.94,
+              "priceRetail": 17230.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13578.12,
+              "priceRetail": 17380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFGBW-A3",
+          "code": "1000000690",
+          "name": "Yaris 1,5L 5D Black Bi-Tone Bronze",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13101.56,
+              "priceRetail": 16770.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13234.37,
+              "priceRetail": 16940.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13460.94,
+              "priceRetail": 17230.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13578.12,
+              "priceRetail": 17380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFGBW-A9",
+          "code": "1000000691",
+          "name": "Yaris 1,5L 5D Black Bi-Tone Blue",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13101.56,
+              "priceRetail": 16770.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13234.37,
+              "priceRetail": 16940.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13460.94,
+              "priceRetail": 17230.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13578.12,
+              "priceRetail": 17380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFNBW-4L",
+          "code": "1000000714",
+          "name": "Yaris 1,5lt 5D Y20 Edition",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 12148.19,
+              "priceRetail": 15550.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 12281.0,
+              "priceRetail": 15720.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 12507.57,
+              "priceRetail": 16010.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 12624.75,
+              "priceRetail": 16160.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHFNBW-5K",
+          "code": "1000000740",
+          "name": "Yaris 1,5L 5D Y20 Bi-Tone",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 12570.14,
+              "priceRetail": 16090.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 12702.95,
+              "priceRetail": 16260.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 12929.51,
+              "priceRetail": 16550.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13046.7,
+              "priceRetail": 16700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHXNBW-5K",
+          "code": "1000000742",
+          "name": "Yaris 1,5L 5D Y20 Bi-Tone CVT",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13515.07,
+              "priceRetail": 17300.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13647.88,
+              "priceRetail": 17470.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13874.44,
+              "priceRetail": 17760.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13991.63,
+              "priceRetail": 17910.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CHXNBW-4L",
+          "code": "1000000746",
+          "name": "Yaris 1,5L 5D Y20 Edition CVT",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13124.79,
+              "priceRetail": 16800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13257.61,
+              "priceRetail": 16970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13484.17,
+              "priceRetail": 17260.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13601.36,
+              "priceRetail": 17410.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXNBW-P1",
+          "code": "1000000109",
+          "name": "Yaris HSD TSS 5D HSD Active Steel",
+          "co2": 84,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11632.24,
+              "priceRetail": 14645.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11767.27,
+              "priceRetail": 14815.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11997.61,
+              "priceRetail": 15105.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 12116.75,
+              "priceRetail": 15255.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXNBW-3S",
+          "code": "1000000117",
+          "name": "Yaris HSD TSS 5D HSD Active Plus",
+          "co2": 84,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 14256.65,
+              "priceRetail": 18220.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 14389.67,
+              "priceRetail": 18390.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 14616.59,
+              "priceRetail": 18680.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 14733.96,
+              "priceRetail": 18830.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXGBW-49",
+          "code": "1000000271",
+          "name": "Yaris HSD TSS 5D HSD Chic",
+          "co2": 96,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15312.99,
+              "priceRetail": 19570.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15446.01,
+              "priceRetail": 19740.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15672.92,
+              "priceRetail": 20030.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15790.29,
+              "priceRetail": 20180.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXNBW-P2",
+          "code": "1000000521",
+          "name": "Yaris HSD TSS 5D Active",
+          "co2": 84,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13328.03,
+              "priceRetail": 16780.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13463.06,
+              "priceRetail": 16950.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13693.4,
+              "priceRetail": 17240.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13812.55,
+              "priceRetail": 17390.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXGBW-03",
+          "code": "1000000698",
+          "name": "Yaris 1,5L HSD Black Bi-Tone Bronze",
+          "co2": 96,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15203.44,
+              "priceRetail": 19430.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15336.46,
+              "priceRetail": 19600.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15563.38,
+              "priceRetail": 19890.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15680.75,
+              "priceRetail": 20040.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXGBW-01",
+          "code": "1000000735",
+          "name": "Yaris 1,5L HSD Black Bi-Tone Red/White",
+          "co2": 96,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15203.44,
+              "priceRetail": 19430.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15336.46,
+              "priceRetail": 19600.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15563.38,
+              "priceRetail": 19890.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15680.75,
+              "priceRetail": 20040.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXGBW-05",
+          "code": "1000000736",
+          "name": "Yaris 1,5L HSD Black Bi-Tone Blue",
+          "co2": 96,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15203.44,
+              "priceRetail": 19430.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15336.46,
+              "priceRetail": 19600.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15563.38,
+              "priceRetail": 19890.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15680.75,
+              "priceRetail": 20040.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NHP130L-CHXNBW-99",
+          "code": "1000000744",
+          "name": "Yaris 1,5L HSD Y20 Bi-Tone",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 14757.43,
+              "priceRetail": 18860.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 14890.45,
+              "priceRetail": 19030.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15117.37,
+              "priceRetail": 19320.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15234.74,
+              "priceRetail": 19470.0
+            }
+          ]
+        }
+      ]
+    },
+    "COROLLA HB": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "NRE210L-DHFDZW-21",
+          "code": "1000000772",
+          "name": "COROLLA HB 1.2T ATK LIVE",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13574.36,
+              "priceRetail": 17430.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13706.76,
+              "priceRetail": 17600.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13998.81,
+              "priceRetail": 17975.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 14103.95,
+              "priceRetail": 18735.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHFDZW-22",
+          "code": "1000000782",
+          "name": "COROLLA HB 1.2T ATK ECO",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 14456.33,
+              "priceRetail": 19200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 14584.34,
+              "priceRetail": 19370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 14866.72,
+              "priceRetail": 19745.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 14968.38,
+              "priceRetail": 19880.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHXDZW-23",
+          "code": "1000000783",
+          "name": "COROLLA HB 1.2T ATK CVT LIVE",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 14834.13,
+              "priceRetail": 19700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 14962.14,
+              "priceRetail": 19870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15244.52,
+              "priceRetail": 20245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15346.17,
+              "priceRetail": 20380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHFNZW-GV",
+          "code": "1000000784",
+          "name": "COROLLA HB 1.2T ATK ACTIVE PLUS",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15510.69,
+              "priceRetail": 20600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15638.7,
+              "priceRetail": 20770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15921.08,
+              "priceRetail": 21145.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16022.74,
+              "priceRetail": 21280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHFNZW-GW",
+          "code": "1000000785",
+          "name": "COROLLA HB 1.2T ATK BLACK EDITION",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16482.19,
+              "priceRetail": 21890.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16610.2,
+              "priceRetail": 22060.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16892.58,
+              "priceRetail": 22435.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16994.24,
+              "priceRetail": 22570.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHXNZW-GX",
+          "code": "1000000786",
+          "name": "COROLLA HB 1.2T ATK CVT ACTIVE PLUS",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16338.91,
+              "priceRetail": 21700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16466.93,
+              "priceRetail": 21870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16749.31,
+              "priceRetail": 22245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16850.96,
+              "priceRetail": 22380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHXNZW-GY",
+          "code": "1000000787",
+          "name": "COROLLA HB 1.2T ATK CVT BLACK EDITION",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17865.33,
+              "priceRetail": 25300.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17985.39,
+              "priceRetail": 25470.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18250.22,
+              "priceRetail": 25845.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18345.56,
+              "priceRetail": 25980.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHFNZW-IV",
+          "code": "1000000789",
+          "name": "COROLLA HB 1.2T ATK ACTIVE",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15510.53,
+              "priceRetail": 20600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15638.54,
+              "priceRetail": 20770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15920.92,
+              "priceRetail": 21145.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16022.58,
+              "priceRetail": 21280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHFNZW-AE",
+          "code": "1000000845",
+          "name": "COROLLA HB 1.2T ATK STYLE",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16339.01,
+              "priceRetail": 21700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16467.02,
+              "priceRetail": 21870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16749.4,
+              "priceRetail": 22245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16851.06,
+              "priceRetail": 22380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NRE210L-DHXNZW-FL",
+          "code": "1000000846",
+          "name": "COROLLA HB 1.2T ATK CVT ACTIVE",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16337.85,
+              "priceRetail": 21700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16465.87,
+              "priceRetail": 21870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16748.24,
+              "priceRetail": 22245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16849.9,
+              "priceRetail": 22380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXDBW-0U",
+          "code": "1000000773",
+          "name": "COROLLA HB 1.8 HSD LIVE",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16273.99,
+              "priceRetail": 20800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16407.01,
+              "priceRetail": 20970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16700.44,
+              "priceRetail": 21345.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16806.08,
+              "priceRetail": 21480.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXNBW-G3",
+          "code": "1000000774",
+          "name": "COROLLA HB 1.8 HSD ACTIVE PLUS",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17399.02,
+              "priceRetail": 22900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17528.19,
+              "priceRetail": 23070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 17813.15,
+              "priceRetail": 23445.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 17915.73,
+              "priceRetail": 23580.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXNBW-7V",
+          "code": "1000000788",
+          "name": "COROLLA HB 1.8 HSD ACTIVE",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17399.9,
+              "priceRetail": 22900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17529.08,
+              "priceRetail": 23070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 17814.04,
+              "priceRetail": 23445.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 17916.62,
+              "priceRetail": 23580.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXDBW-Q2",
+          "code": "1000000790",
+          "name": "COROLLA HB 1.8 HSD ECO",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16567.45,
+              "priceRetail": 21175.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16700.47,
+              "priceRetail": 21345.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16993.9,
+              "priceRetail": 21720.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 17099.53,
+              "priceRetail": 22505.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXNBW-G4",
+          "code": "1000000840",
+          "name": "COROLLA HB 1.8 HSD BLACK EDITION",
+          "co2": 83,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19224.05,
+              "priceRetail": 25300.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19353.23,
+              "priceRetail": 25470.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19638.18,
+              "priceRetail": 25845.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19740.77,
+              "priceRetail": 25980.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXNBW-8V",
+          "code": "1000000844",
+          "name": "COROLLA HB 1.8 HSD STYLE",
+          "co2": 83,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18692.58,
+              "priceRetail": 24600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18821.76,
+              "priceRetail": 24770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19106.72,
+              "priceRetail": 25145.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19209.3,
+              "priceRetail": 25280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DHXNBW-2Y",
+          "code": "1000001064",
+          "name": "COROLLA HB 1.8 HSD GR-S",
+          "co2": 83,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19451.49,
+              "priceRetail": 25600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19580.67,
+              "priceRetail": 25770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19865.62,
+              "priceRetail": 26145.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19968.21,
+              "priceRetail": 26280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DHXNBW-G6",
+          "code": "1000000792",
+          "name": "COROLLA HB 2.0 HDF STYLE",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20457.38,
+              "priceRetail": 27700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 20582.93,
+              "priceRetail": 27870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20859.89,
+              "priceRetail": 28245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20959.59,
+              "priceRetail": 28380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DHXGBW-CK",
+          "code": "1000000793",
+          "name": "COROLLA HB 2.0 HDF SPORT",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22301.95,
+              "priceRetail": 30200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22427.51,
+              "priceRetail": 30370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22704.47,
+              "priceRetail": 30745.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22804.17,
+              "priceRetail": 30880.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DHXNBW-8X",
+          "code": "1000000849",
+          "name": "COROLLA HB 2.0 HDF ACTIVE",
+          "co2": 85,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19481.82,
+              "priceRetail": 25640.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19611.0,
+              "priceRetail": 25810.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19895.95,
+              "priceRetail": 26185.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19998.53,
+              "priceRetail": 26320.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DHXNBW-3C",
+          "code": "1000001063",
+          "name": "COROLLA HB 2.0 HDF GR-S",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22303.67,
+              "priceRetail": 30200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22429.22,
+              "priceRetail": 30370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22706.18,
+              "priceRetail": 30745.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22805.88,
+              "priceRetail": 30880.0
+            }
+          ]
+        }
+      ]
+    },
+    "COROLLA TOURING SPORTS": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "ZWE211L-DWXDBW-0X",
+          "code": "1000000791",
+          "name": "COROLLA TS 1.8 HSD LIVE",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17209.86,
+              "priceRetail": 22650.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17339.04,
+              "priceRetail": 22820.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 17624.0,
+              "priceRetail": 23195.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 17726.58,
+              "priceRetail": 23330.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DWXNBW-TL",
+          "code": "1000000804",
+          "name": "COROLLA TS 1.8 HSD ACTIVE PLUS",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19375.71,
+              "priceRetail": 25500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19504.89,
+              "priceRetail": 25670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19789.84,
+              "priceRetail": 26045.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19892.43,
+              "priceRetail": 26180.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DWXDBW-0X",
+          "code": "1000000868",
+          "name": "COROLLA TS TAXI 1.8 HSD LIVE",
+          "co2": 76,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18120.67,
+              "priceRetail": 22650.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18256.69,
+              "priceRetail": 22820.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18556.72,
+              "priceRetail": 23195.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18664.73,
+              "priceRetail": 23330.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DWXNBW-TL",
+          "code": "1000000870",
+          "name": "COROLLA TS TAXI 1.8 HSD ACTIVE PLUS",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20320.67,
+              "priceRetail": 25500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 20456.14,
+              "priceRetail": 25670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20754.99,
+              "priceRetail": 26045.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20862.58,
+              "priceRetail": 26180.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DWXNBW-N0",
+          "code": "1000000932",
+          "name": "COROLLA TS TAXI 1.8 HSD ACTIVE",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19681.15,
+              "priceRetail": 24600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19817.16,
+              "priceRetail": 24770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20117.19,
+              "priceRetail": 25245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20225.2,
+              "priceRetail": 25380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DWXGBW-29",
+          "code": "1000000962",
+          "name": "COROLLA TS 1.8 HSD LOUNGE",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21933.24,
+              "priceRetail": 29700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22058.79,
+              "priceRetail": 29870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22335.75,
+              "priceRetail": 30245.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22435.45,
+              "priceRetail": 30380.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DWXGBW-O1",
+          "code": "1000000847",
+          "name": "COROLLA TS 2.0 HDF LOUNGE",
+          "co2": 89,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23040.77,
+              "priceRetail": 31200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23166.32,
+              "priceRetail": 31370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23443.28,
+              "priceRetail": 31745.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 23542.98,
+              "priceRetail": 31880.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MZEH12L-DWXGBW-30",
+          "code": "1000000964",
+          "name": "COROLLA WG 2.0 HDF LOUNGE S/R TAXI",
+          "co2": 90,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25559.15,
+              "priceRetail": 32200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25694.09,
+              "priceRetail": 32370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 25991.77,
+              "priceRetail": 32745.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 26098.93,
+              "priceRetail": 32880.0
+            }
+          ]
+        }
+      ]
+    },
+    "COROLLA SEDAN": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "ZRE181L-DEFNPW-T8",
+          "code": "1000000159",
+          "name": "Corolla 1,6 MT Active Plus",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15533.0,
+              "priceRetail": 20630.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15661.0,
+              "priceRetail": 20800.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15910.0,
+              "priceRetail": 21130.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15985.0,
+              "priceRetail": 21230.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEFDPW-0B",
+          "code": "1000000795",
+          "name": "COROLLA 1,6lt SEDAN LIVE",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13239.0,
+              "priceRetail": 17000.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13372.0,
+              "priceRetail": 17170.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13629.0,
+              "priceRetail": 17500.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13707.0,
+              "priceRetail": 17600.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEFDPW-0D",
+          "code": "1000000796",
+          "name": "COROLLA SDN 1.6 LIVE",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 13317.0,
+              "priceRetail": 17100.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 13450.0,
+              "priceRetail": 17270.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 13707.0,
+              "priceRetail": 17600.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 13785.0,
+              "priceRetail": 17700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEFNPW-EE",
+          "code": "1000000797",
+          "name": "COROLLA SDN 1.6 ACTIVE",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 15133.0,
+              "priceRetail": 20100.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 15261.0,
+              "priceRetail": 20270.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 15510.0,
+              "priceRetail": 20600.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 15585.0,
+              "priceRetail": 20700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEFNPW-EB",
+          "code": "1000000798",
+          "name": "COROLLA SDN 1.6 STYLE",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16489.0,
+              "priceRetail": 21900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16617.0,
+              "priceRetail": 22070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16866.0,
+              "priceRetail": 22400.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16941.0,
+              "priceRetail": 22500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEXNPW-EH",
+          "code": "1000000800",
+          "name": "COROLLA SDN 1.6 CVT STYLE",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17725.0,
+              "priceRetail": 25100.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17845.0,
+              "priceRetail": 25270.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18078.0,
+              "priceRetail": 25600.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18148.0,
+              "priceRetail": 25700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZRE210L-DEXNPW-EG",
+          "code": "1000000841",
+          "name": "COROLLA SDN 1.6 CVT ACTIVE",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16339.0,
+              "priceRetail": 21700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16467.0,
+              "priceRetail": 21870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16715.0,
+              "priceRetail": 22200.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 16790.0,
+              "priceRetail": 22300.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXNBW-ED",
+          "code": "1000000801",
+          "name": "COROLLA SDN 1.8 HSD LIVE",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 16565.0,
+              "priceRetail": 21175.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 16698.0,
+              "priceRetail": 21345.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 16956.0,
+              "priceRetail": 21675.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 17035.0,
+              "priceRetail": 22420.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXNBW-BU",
+          "code": "1000000802",
+          "name": "COROLLA SDN 1.8 HSD ACTIVE",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17931.0,
+              "priceRetail": 23600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18061.0,
+              "priceRetail": 23770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18311.0,
+              "priceRetail": 24100.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18387.0,
+              "priceRetail": 24200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXNBW-EJ",
+          "code": "1000000803",
+          "name": "COROLLA SDN 1.8 HSD STYLE",
+          "co2": 83,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19452.0,
+              "priceRetail": 25600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19581.0,
+              "priceRetail": 25770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19832.0,
+              "priceRetail": 26100.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19908.0,
+              "priceRetail": 26200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXNBW-ED",
+          "code": "1000000871",
+          "name": "COROLLA SDN TAXI 1.8 HSD LIVE",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 17741.0,
+              "priceRetail": 22175.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 17877.0,
+              "priceRetail": 22345.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18141.0,
+              "priceRetail": 22675.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18221.0,
+              "priceRetail": 22775.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXGBW-C7",
+          "code": "1000000883",
+          "name": "COROLLA SDN 1.8 HSD LOUNGE",
+          "co2": 87,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21527.0,
+              "priceRetail": 29150.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21653.0,
+              "priceRetail": 29320.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21896.0,
+              "priceRetail": 29650.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21970.0,
+              "priceRetail": 29750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZWE211L-DEXNBW-IG",
+          "code": "1000000933",
+          "name": "COROLLA SDN TAXI 1.8 HSD ACTIVE",
+          "co2": 77,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18880.0,
+              "priceRetail": 23600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19016.0,
+              "priceRetail": 23770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19280.0,
+              "priceRetail": 24100.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19360.0,
+              "priceRetail": 24200.0
+            }
+          ]
+        }
+      ]
+    },
+    "PRIUS": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "ZVW50L-AHXEBW-AT",
+          "code": "1000000763",
+          "name": "PRIUS 1,8 HSD ACTIVE",
+          "co2": 75,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22302.15,
+              "priceRetail": 30200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22427.71,
+              "priceRetail": 30370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22745.28,
+              "priceRetail": 30800.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22856.07,
+              "priceRetail": 30950.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZVW50L-AHXEBW-A0",
+          "code": "1000000812",
+          "name": "PRIUS 1,8 HSD STYLE",
+          "co2": 84,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23772.33,
+              "priceRetail": 32190.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23897.88,
+              "priceRetail": 32360.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24215.46,
+              "priceRetail": 32790.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24326.24,
+              "priceRetail": 32940.0
+            }
+          ]
+        }
+      ]
+    },
+    "RAV4": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "MXAA54L-ANFMBW-HV",
+          "code": "1000000653",
+          "name": "RAV4 2.0P AWD MT STYLE",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22153.0,
+              "priceRetail": 33850.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22264.0,
+              "priceRetail": 34020.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22546.0,
+              "priceRetail": 34450.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22677.0,
+              "priceRetail": 34650.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANFMBW-HW",
+          "code": "1000000654",
+          "name": "RAV4 2.0P AWD MT STYLE PLUS",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23789.0,
+              "priceRetail": 36350.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23901.0,
+              "priceRetail": 36520.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24182.0,
+              "priceRetail": 36950.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24313.0,
+              "priceRetail": 37150.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANXMBW-EC",
+          "code": "1000000655",
+          "name": "RAV4 2.0P AWD CVT STYLE",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23803.0,
+              "priceRetail": 35800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23916.0,
+              "priceRetail": 35970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24202.0,
+              "priceRetail": 36400.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24335.0,
+              "priceRetail": 36600.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANXMBW-ED",
+          "code": "1000000656",
+          "name": "RAV4 2.0P AWD CVT STYLE PLUS",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25534.0,
+              "priceRetail": 40650.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25641.0,
+              "priceRetail": 40820.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 25911.0,
+              "priceRetail": 41250.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 26036.0,
+              "priceRetail": 41450.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANFXBW-BK",
+          "code": "1000000850",
+          "name": "RAV4 2.0 FWD MT ACTIVE",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19562.0,
+              "priceRetail": 27700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19682.0,
+              "priceRetail": 27870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19986.0,
+              "priceRetail": 28300.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20127.0,
+              "priceRetail": 30275.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANFMBW-JM",
+          "code": "1000000851",
+          "name": "RAV4 2.0 FWD MT STYLE",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20911.0,
+              "priceRetail": 31450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21024.0,
+              "priceRetail": 31620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21310.0,
+              "priceRetail": 32050.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21443.0,
+              "priceRetail": 32250.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANFMBW-JN",
+          "code": "1000000852",
+          "name": "RAV4 2.0 FWD MT STYLE PLUS",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22573.0,
+              "priceRetail": 33950.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22686.0,
+              "priceRetail": 34120.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22972.0,
+              "priceRetail": 34550.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 23105.0,
+              "priceRetail": 34750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANXXBW-AK",
+          "code": "1000000853",
+          "name": "RAV4 2.0 FWD CVT ACTIVE",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20977.0,
+              "priceRetail": 31550.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21090.0,
+              "priceRetail": 31720.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21376.0,
+              "priceRetail": 32150.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21509.0,
+              "priceRetail": 32350.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANXMBW-FA",
+          "code": "1000000854",
+          "name": "RAV4 2.0 FWD CVT STYLE",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22207.0,
+              "priceRetail": 33400.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22320.0,
+              "priceRetail": 33570.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22606.0,
+              "priceRetail": 34000.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22739.0,
+              "priceRetail": 34200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA52L-ANXMBW-FB",
+          "code": "1000000855",
+          "name": "RAV4 2.0 FWD CVT STYLE PLUS",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23870.0,
+              "priceRetail": 35900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23983.0,
+              "priceRetail": 36070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24269.0,
+              "priceRetail": 36500.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24402.0,
+              "priceRetail": 36700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANXMBW-EE",
+          "code": "1000000865",
+          "name": "RAV4 2.0 AWD CVT STYLE PLUS P/R",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 26602.0,
+              "priceRetail": 42350.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 26709.0,
+              "priceRetail": 42520.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 26979.0,
+              "priceRetail": 42950.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 27104.0,
+              "priceRetail": 43150.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANXGBW-LH",
+          "code": "1000000866",
+          "name": "RAV4 2.0 AWD CVT ADVENTURE",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 30402.0,
+              "priceRetail": 48400.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 30509.0,
+              "priceRetail": 48570.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 30779.0,
+              "priceRetail": 49000.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 30905.0,
+              "priceRetail": 49200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANFMBW-HX",
+          "code": "1000000873",
+          "name": "RAV4 2.0 AWD MT STYLE PLUS P/R",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25006.0,
+              "priceRetail": 40610.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25111.0,
+              "priceRetail": 40780.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 25376.0,
+              "priceRetail": 41210.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25499.0,
+              "priceRetail": 41410.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MXAA54L-ANFGBW-RX",
+          "code": "1000000874",
+          "name": "RAV4 2.0 AWD MT ADVENTURE",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 28695.0,
+              "priceRetail": 46600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 28799.0,
+              "priceRetail": 46770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 29064.0,
+              "priceRetail": 47200.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 29187.0,
+              "priceRetail": 47400.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXMBW-T8",
+          "code": "1000000842",
+          "name": "RAV4 2.5 HSD AWD CVT BLACK EDITION",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 33357.0,
+              "priceRetail": 46700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 33479.0,
+              "priceRetail": 46870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 33786.0,
+              "priceRetail": 47300.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 33929.0,
+              "priceRetail": 47500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXXBW-XP",
+          "code": "1000000858",
+          "name": "RAV4 2.5 HSD FWD CVT ACTIVE",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25643.0,
+              "priceRetail": 35900.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25764.0,
+              "priceRetail": 36070.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 26071.0,
+              "priceRetail": 36500.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 26214.0,
+              "priceRetail": 36700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXMBW-E7",
+          "code": "1000000859",
+          "name": "RAV4 2.5 HSD FWD CVT STYLE",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 26750.0,
+              "priceRetail": 37450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 26871.0,
+              "priceRetail": 37620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 27179.0,
+              "priceRetail": 38050.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 27321.0,
+              "priceRetail": 38250.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXMBW-T8",
+          "code": "1000000861",
+          "name": "RAV4 2.5 HSD FWD CVT BLACK EDITION",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 31393.0,
+              "priceRetail": 43950.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 31514.0,
+              "priceRetail": 44120.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 31821.0,
+              "priceRetail": 44550.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 31964.0,
+              "priceRetail": 44750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXGBW-4U",
+          "code": "1000000862",
+          "name": "RAV4 2.5 HSD FWD CVT ADVENTURE",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 32464.0,
+              "priceRetail": 45450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 32586.0,
+              "priceRetail": 45620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 32893.0,
+              "priceRetail": 46050.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 33036.0,
+              "priceRetail": 46250.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXXBW-XP",
+          "code": "1000000863",
+          "name": "RAV4 2.5 HSD AWD CVT ACTIVE",
+          "co2": 100,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 27766.0,
+              "priceRetail": 38650.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 27888.0,
+              "priceRetail": 38820.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 28197.0,
+              "priceRetail": 39250.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 28341.0,
+              "priceRetail": 39450.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXMBW-E7",
+          "code": "1000000864",
+          "name": "RAV4 2.5 HSD AWD CVT STYLE",
+          "co2": 100,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 28879.0,
+              "priceRetail": 40200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 29001.0,
+              "priceRetail": 40370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 29310.0,
+              "priceRetail": 40800.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 29454.0,
+              "priceRetail": 41000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXGBW-4U",
+          "code": "1000000867",
+          "name": "RAV4 2.5 HSD AWD CVT ADVENTURE",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 34429.0,
+              "priceRetail": 48200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 34550.0,
+              "priceRetail": 48370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 34857.0,
+              "priceRetail": 48800.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 35000.0,
+              "priceRetail": 49000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXMBW-0J",
+          "code": "1000001014",
+          "name": "2.5 HSD FWD CVT BLACK EDITION P/R",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 32464.0,
+              "priceRetail": 45450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 32586.0,
+              "priceRetail": 45620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 32893.0,
+              "priceRetail": 46050.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 33036.0,
+              "priceRetail": 46250.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXMBW-0J",
+          "code": "1000001017",
+          "name": "2.5 HSD AWD CVT BLACK EDITION P/R",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 34429.0,
+              "priceRetail": 48200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 34550.0,
+              "priceRetail": 48370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 34857.0,
+              "priceRetail": 48800.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 35000.0,
+              "priceRetail": 49000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH52L-ANXGBW-7W",
+          "code": "1000001042",
+          "name": "2.5 HSD FWD CVT Adventure P/R",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 33536.0,
+              "priceRetail": 46950.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 33657.0,
+              "priceRetail": 47120.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 33964.0,
+              "priceRetail": 47550.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 34107.0,
+              "priceRetail": 47750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "AXAH54L-ANXGBW-7W",
+          "code": "1000001043",
+          "name": "2.5 HSD AWD CVT Adventure P/R",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 35500.0,
+              "priceRetail": 49700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 35621.0,
+              "priceRetail": 49870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 35929.0,
+              "priceRetail": 50300.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 36071.0,
+              "priceRetail": 50500.0
+            }
+          ]
+        }
+      ]
+    },
+    "GT86": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "ZN6-GLB8-AA",
+          "code": "1000000509",
+          "name": "GT86 2.0 M/T Boxer (Audioless)",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24016.48,
+              "priceRetail": 37850.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24124.35,
+              "priceRetail": 38020.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24397.19,
+              "priceRetail": 38450.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24555.82,
+              "priceRetail": 38700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZN6-GLF8-GE",
+          "code": "1000000510",
+          "name": "GT86 2.0 M/T Black Touch Edition AL",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 27440.74,
+              "priceRetail": 46320.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 27541.45,
+              "priceRetail": 46490.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 27796.19,
+              "priceRetail": 46920.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 27944.29,
+              "priceRetail": 47170.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZN6-GLF7-IC",
+          "code": "1000000511",
+          "name": "GT86 2.0 A/T Black Touch Edition AL",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 28536.71,
+              "priceRetail": 48170.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 28637.42,
+              "priceRetail": 48340.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 28892.16,
+              "priceRetail": 48770.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 29040.27,
+              "priceRetail": 49020.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "ZN6-GLE8-0X",
+          "code": "1000000565",
+          "name": "GT86 2.0 M/T Premium (Audioless)",
+          "co2": 183,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24555.82,
+              "priceRetail": 38700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24663.69,
+              "priceRetail": 38870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24936.53,
+              "priceRetail": 39300.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25095.16,
+              "priceRetail": 42365.0
+            }
+          ]
+        }
+      ]
+    },
+    "LAND CRUISER": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GDJ150L-GKTEYW-J0",
+          "code": "1000000355",
+          "name": "Land Cruiser 2.8L DSL 5D 5S PREMIUM",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 53396.12,
+              "priceRetail": 93550.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 53493.15,
+              "priceRetail": 93720.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 54115.29,
+              "priceRetail": 94810.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 54474.88,
+              "priceRetail": 95440.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-J1",
+          "code": "1000000356",
+          "name": "Land Cruiser 2.8L DSL 5D 7S PREMIUM",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 54509.13,
+              "priceRetail": 95500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 54606.16,
+              "priceRetail": 95670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 55228.31,
+              "priceRetail": 96760.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 55587.9,
+              "priceRetail": 97390.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-MP",
+          "code": "1000000501",
+          "name": "Land Cruiser 2.8L DSL AT 5S LEGEND PLUS",
+          "co2": 213,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 42979.45,
+              "priceRetail": 75300.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 43076.48,
+              "priceRetail": 75470.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 43698.63,
+              "priceRetail": 76560.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 44058.22,
+              "priceRetail": 77190.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-D6",
+          "code": "1000000506",
+          "name": "Land Cruiser 2.8L DSL 5D 5S LUXURY COLOR",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 50256.85,
+              "priceRetail": 88050.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 50353.88,
+              "priceRetail": 88220.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 50976.03,
+              "priceRetail": 89310.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 51335.62,
+              "priceRetail": 89940.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKFEYW-HU",
+          "code": "1000000507",
+          "name": "Land Cruiser 2.8L DSL 6MT 5S LEGEND",
+          "co2": 204,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 36358.45,
+              "priceRetail": 63700.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 36455.48,
+              "priceRetail": 63870.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 37077.63,
+              "priceRetail": 64960.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 37437.21,
+              "priceRetail": 65590.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-P8",
+          "code": "1000000508",
+          "name": "Land Cruiser 2.8L DSL 5D 7S PREM COLOR L",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 54509.13,
+              "priceRetail": 95500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 54606.16,
+              "priceRetail": 95670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 55228.31,
+              "priceRetail": 96760.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 55587.9,
+              "priceRetail": 97390.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-D5",
+          "code": "1000000563",
+          "name": "Land Cruiser 2.8L DSL 5D 5S LUXURY",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 50256.85,
+              "priceRetail": 88050.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 50353.88,
+              "priceRetail": 88220.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 50976.03,
+              "priceRetail": 89310.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 51335.62,
+              "priceRetail": 89940.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-P7",
+          "code": "1000000564",
+          "name": "Land Cruiser 2.8L DSL 5D 5S PREMIUM COLO",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 53396.12,
+              "priceRetail": 93550.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 53493.15,
+              "priceRetail": 93720.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 54115.3,
+              "priceRetail": 94810.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 54474.89,
+              "priceRetail": 95440.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GDJ150L-GKTEYW-U4",
+          "code": "1000000843",
+          "name": "LAND CRUISER 2.8 AT LEGEND 7-SEATER",
+          "co2": 212,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 38898.4,
+              "priceRetail": 68150.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 38995.43,
+              "priceRetail": 68320.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 39617.58,
+              "priceRetail": 69410.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 39977.17,
+              "priceRetail": 70040.0
+            }
+          ]
+        }
+      ]
+    },
+    "PROACE VERSO": {
+      "category": "MPV",
+      "editions": [
+        {
+          "factoryCode": "MPY141L-LBZDTW-07",
+          "code": "1000000557",
+          "name": "ProAce Verso L1 1.5D 120hp Family 8S",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24468.08,
+              "priceRetail": 36800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24581.11,
+              "priceRetail": 36970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24734.04,
+              "priceRetail": 37200.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24468.08,
+              "priceRetail": 36800.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY161L-LBZDTW-08",
+          "code": "1000000558",
+          "name": "ProAce Verso L2 1.5D 120hp Family 8S",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24727.38,
+              "priceRetail": 37190.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24840.41,
+              "priceRetail": 37360.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24993.34,
+              "priceRetail": 37590.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24727.38,
+              "priceRetail": 37190.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY161L-LBZSGW-3E",
+          "code": "1000000560",
+          "name": "ProAce Verso L2 SHUT 1.5D 120hp 9S",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19717.5,
+              "priceRetail": 27920.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19837.56,
+              "priceRetail": 28090.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19999.99,
+              "priceRetail": 28320.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19717.5,
+              "priceRetail": 27920.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY141L-LBZSGW-3D",
+          "code": "1000000574",
+          "name": "ProAce Verso L1 SHUT 1.5D 120hp 9S",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19618.64,
+              "priceRetail": 27780.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19738.7,
+              "priceRetail": 27950.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19901.13,
+              "priceRetail": 28180.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19618.64,
+              "priceRetail": 27780.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY141L-LBZSGW-3D",
+          "code": "1000000942",
+          "name": "ProAce Verso L1 SHUT 1.5D 120hp 9S Taxi",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22710.14,
+              "priceRetail": 28940.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22843.54,
+              "priceRetail": 29110.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23024.03,
+              "priceRetail": 29340.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22710.14,
+              "priceRetail": 28940.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY161L-LBZSGW-3E",
+          "code": "1000000943",
+          "name": "ProAce Verso L2 SHUT 1.5D 120hp 9S Taxi",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 23180.98,
+              "priceRetail": 29540.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23314.38,
+              "priceRetail": 29710.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23494.87,
+              "priceRetail": 29940.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 23180.98,
+              "priceRetail": 29540.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY141L-LBZDTW-07",
+          "code": "1000000945",
+          "name": "ProAce Verso L1 1.5D 120hp Family 8S Taxi",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25416.87,
+              "priceRetail": 32680.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25549.09,
+              "priceRetail": 32850.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 25727.97,
+              "priceRetail": 33080.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25416.87,
+              "priceRetail": 32680.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY161L-LBZDTW-08",
+          "code": "1000000946",
+          "name": "ProAce Verso L1 1.5D 120hp Family 8S Taxi",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 25883.52,
+              "priceRetail": 33280.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 26015.74,
+              "priceRetail": 33450.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 26194.62,
+              "priceRetail": 33680.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25883.52,
+              "priceRetail": 33280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY561L-LBTSGW-3C",
+          "code": "1000000559",
+          "name": "ProAce Verso L2 SHUT 2.0D 180hp A/T",
+          "co2": 160,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 26268.46,
+              "priceRetail": 42660.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 26373.14,
+              "priceRetail": 42830.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 26514.77,
+              "priceRetail": 43060.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 26268.46,
+              "priceRetail": 42660.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY561L-LBTDTW-TY",
+          "code": "1000000562",
+          "name": "ProAce Verso L2 2.0D 180hp A/T VIP",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 38526.56,
+              "priceRetail": 63800.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 38629.22,
+              "priceRetail": 63970.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 38768.11,
+              "priceRetail": 64200.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 38526.56,
+              "priceRetail": 63800.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY361L-LBTSGW-3E",
+          "code": "1000000884",
+          "name": "Proace Verso L2 2.0D 120hp AT Shuttle",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21890.85,
+              "priceRetail": 33450.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22002.1,
+              "priceRetail": 33620.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22152.63,
+              "priceRetail": 33850.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21890.85,
+              "priceRetail": 33450.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY361L-LBTSGW-3E",
+          "code": "1000000944",
+          "name": "Proace Verso L2 2.0D 120hp AT Shuttle Taxi",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24416.01,
+              "priceRetail": 31190.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24549.09,
+              "priceRetail": 31360.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24729.14,
+              "priceRetail": 31590.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24416.01,
+              "priceRetail": 31190.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MPY561L-LBTDTW-TY",
+          "code": "1000000947",
+          "name": "ProAce Verso L2 2.0D 180hp A/T VIP Taxi",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 38251.1,
+              "priceRetail": 49500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 38382.47,
+              "priceRetail": 49670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 38560.2,
+              "priceRetail": 49900.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 38251.1,
+              "priceRetail": 49500.0
+            }
+          ]
+        }
+      ]
+    },
+    "YARIS VAN": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "MDZ822L-LBZSGW-YF",
+          "code": "1000000912",
+          "name": "L0 VAN 1.5D 100hp SSD RGD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18350.73,
+              "priceRetail": 24590.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18477.6,
+              "priceRetail": 24760.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18649.24,
+              "priceRetail": 24990.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18350.73,
+              "priceRetail": 24590.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ122L-LBZSGW-YF",
+          "code": "1000000913",
+          "name": "L0 VAN 1.5D 120hp SSD RGD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19604.46,
+              "priceRetail": 26270.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19731.33,
+              "priceRetail": 26440.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19902.97,
+              "priceRetail": 26670.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19604.46,
+              "priceRetail": 26270.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ142L-LBZSGW-YF",
+          "code": "1000000914",
+          "name": "L1 VAN 1.5D 120hp SSD RGD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20970.13,
+              "priceRetail": 28100.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21097.0,
+              "priceRetail": 28270.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21268.64,
+              "priceRetail": 28500.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20970.13,
+              "priceRetail": 28100.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ822L-LBZDGW-YF",
+          "code": "1000000915",
+          "name": "L0 VAN 1.5D 100hp DSD RGD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18708.94,
+              "priceRetail": 25070.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18835.81,
+              "priceRetail": 25240.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19007.45,
+              "priceRetail": 25470.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18708.94,
+              "priceRetail": 25070.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ122L-LBZDGW-YF",
+          "code": "1000000916",
+          "name": "L0 VAN 1.5D 120hp DSD RGD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19962.67,
+              "priceRetail": 26750.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 20089.54,
+              "priceRetail": 27925.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20261.18,
+              "priceRetail": 28165.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19962.67,
+              "priceRetail": 26750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ142L-LBZDGW-YF",
+          "code": "1000000917",
+          "name": "L1 VAN 1.5D 120hp DSD RGD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21328.34,
+              "priceRetail": 28580.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21455.21,
+              "priceRetail": 28750.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21626.85,
+              "priceRetail": 28980.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21328.34,
+              "priceRetail": 28580.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ142L-LBZSTW-F4",
+          "code": "1000000918",
+          "name": "L1 VAN 1.5D 120hp SSD RTD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 20970.13,
+              "priceRetail": 28100.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21097.0,
+              "priceRetail": 28270.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21268.64,
+              "priceRetail": 28500.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20970.13,
+              "priceRetail": 28100.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ822L-LBZDTW-F4",
+          "code": "1000000919",
+          "name": "L0 VAN 1.5D 100hp DSD RTD",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18708.94,
+              "priceRetail": 25070.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18835.81,
+              "priceRetail": 25240.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19007.45,
+              "priceRetail": 25470.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18708.94,
+              "priceRetail": 25070.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ122L-LBZDTW-F4",
+          "code": "1000000920",
+          "name": "L0 VAN 1.5D 120hp DSD RTD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19962.67,
+              "priceRetail": 26750.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 20089.54,
+              "priceRetail": 27925.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20261.18,
+              "priceRetail": 28165.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19962.67,
+              "priceRetail": 26750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ142L-LBZDTW-F4",
+          "code": "1000000921",
+          "name": "L1 VAN 1.5D 120hp DSD RTD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21328.34,
+              "priceRetail": 28580.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21455.21,
+              "priceRetail": 28750.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21626.85,
+              "priceRetail": 28980.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21328.34,
+              "priceRetail": 28580.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ222L-LBZSGW-YF",
+          "code": "1000000751",
+          "name": "Proace L0 VAN 1.6D 115hp - SSD-RGD",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19604.47,
+              "priceRetail": 26270.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 19731.33,
+              "priceRetail": 26440.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 19902.98,
+              "priceRetail": 26670.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 19604.47,
+              "priceRetail": 26270.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ922L-LBMSPW-JA",
+          "code": "1000000094",
+          "name": "ProAce ProAce L0 1,6D - 95HP VAN",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18119.4,
+              "priceRetail": 24280.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18246.26,
+              "priceRetail": 24450.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18417.9,
+              "priceRetail": 24680.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18119.4,
+              "priceRetail": 24280.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ342L-LBZSGW-YG",
+          "code": "1000000683",
+          "name": "Proace L1 VAN 2.0D 122hp - SSD-RGD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21790.0,
+              "priceRetail": 29200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21916.87,
+              "priceRetail": 29370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22088.51,
+              "priceRetail": 29600.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21790.0,
+              "priceRetail": 29200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ362L-LBZSGW-YG",
+          "code": "1000000684",
+          "name": "Proace L2 VAN 2.0D 122hp - SSD-RGD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22379.55,
+              "priceRetail": 29990.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22506.42,
+              "priceRetail": 30160.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22678.06,
+              "priceRetail": 30390.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22379.55,
+              "priceRetail": 29990.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ362L-LBZDTW-02",
+          "code": "1000000327",
+          "name": "ProAce L1 VAN 2.0D 122hp (DSD/RTG)",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22737.76,
+              "priceRetail": 29680.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22864.63,
+              "priceRetail": 29850.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23036.27,
+              "priceRetail": 30080.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22737.76,
+              "priceRetail": 29680.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ342L-LBZSPW-KR",
+          "code": "1000000330",
+          "name": "ProAce L2 VAN 2.0D 120hp (SSD/RPD)",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21559.7,
+              "priceRetail": 30470.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21686.56,
+              "priceRetail": 30640.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21858.2,
+              "priceRetail": 30870.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21559.7,
+              "priceRetail": 30470.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ342L-LBZDGW-YG",
+          "code": "1000000426",
+          "name": "ProAce L1 VAN 2.0D 120hp (SSD/RPD)",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22148.21,
+              "priceRetail": 28890.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22275.08,
+              "priceRetail": 29060.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22446.72,
+              "priceRetail": 29290.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22148.21,
+              "priceRetail": 28890.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ362L-LBZDGW-YG",
+          "code": "1000000427",
+          "name": "ProAce L1 VAN 122hp DSD/RGD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22737.76,
+              "priceRetail": 29680.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22864.63,
+              "priceRetail": 29850.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23036.27,
+              "priceRetail": 30080.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22737.76,
+              "priceRetail": 29680.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFSHW-F2",
+          "code": "1000000286",
+          "name": "Hilux DC 4X4 Advance",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24295.43,
+              "priceRetail": 32070.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24424.22,
+              "priceRetail": 32240.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24568.16,
+              "priceRetail": 32430.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 24704.52,
+              "priceRetail": 32610.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFSXW-F2",
+          "code": "1000000906",
+          "name": "HILUX DC 4x4 ADVANCE TSS",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24723.57,
+              "priceRetail": 32640.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24852.36,
+              "priceRetail": 32810.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24996.3,
+              "priceRetail": 33000.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25132.66,
+              "priceRetail": 33180.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFSXW-2V",
+          "code": "1000000952",
+          "name": "HILUX DC 4x4 ADVANCE TSS",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24727.26,
+              "priceRetail": 32640.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 24856.05,
+              "priceRetail": 32810.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 24999.99,
+              "priceRetail": 33000.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25136.35,
+              "priceRetail": 33180.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "KSP130L-CGMRKW-CI",
+          "code": "1000000238",
+          "name": "Yaris Van 1.0P 69HP LIVE",
+          "co2": 91,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9067.16,
+              "priceRetail": 12150.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9194.02,
+              "priceRetail": 12320.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 9410.44,
+              "priceRetail": 12610.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 9522.38,
+              "priceRetail": 12760.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CGFRBW-CY",
+          "code": "1000000229",
+          "name": "Yaris Van 1.5P 111HP LIVE",
+          "co2": 91,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 9723.88,
+              "priceRetail": 13030.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 9850.74,
+              "priceRetail": 13200.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10067.16,
+              "priceRetail": 13490.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10179.1,
+              "priceRetail": 13640.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CGFNBW-54",
+          "code": "1000000336",
+          "name": "Yaris Van 1.5P 111hp Active",
+          "co2": 91,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 10410.14,
+              "priceRetail": 13950.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 10537.0,
+              "priceRetail": 14120.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 10753.42,
+              "priceRetail": 14410.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 10865.36,
+              "priceRetail": 14560.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "NSP131L-CGXNBW-54",
+          "code": "1000000337",
+          "name": "Yaris Van 1.5P 111hp CVT Active",
+          "co2": 91,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 11402.73,
+              "priceRetail": 15280.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 11529.59,
+              "priceRetail": 15450.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 11746.01,
+              "priceRetail": 15740.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 11857.95,
+              "priceRetail": 15890.0
+            }
+          ]
+        }
+      ]
+    },
+    "PROACE": {
+      "category": "MPV",
+      "editions": [
+        {
+          "factoryCode": "MDZ342L-LBZSTW-02",
+          "code": "1000000892",
+          "name": "L1 2.0D 120hp SSD/RTD",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21790.0,
+              "priceRetail": 29200.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21916.87,
+              "priceRetail": 29370.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22088.51,
+              "priceRetail": 29600.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21790.0,
+              "priceRetail": 29200.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "MDZ342L-LBZDTW-02",
+          "code": "1000000326",
+          "name": "Proace L2 Chassis 2.0D 120hp",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22148.21,
+              "priceRetail": 25245.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 22275.08,
+              "priceRetail": 25415.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 22446.72,
+              "priceRetail": 25645.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 22148.21,
+              "priceRetail": 25245.0
+            }
+          ]
+        }
+      ]
+    },
+    "HILUX": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GUN125L-DNTMHW-DN",
+          "code": "1000000093",
+          "name": "Hilux DC 4X4 CRUISER AT",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 27310.58,
+              "priceRetail": 36050.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 27439.37,
+              "priceRetail": 36220.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 27583.31,
+              "priceRetail": 36410.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 27719.68,
+              "priceRetail": 36590.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNTHHW-QL",
+          "code": "1000000495",
+          "name": "Hilux DC 4X4 MLM SPECIAL EDITION",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 30757.55,
+              "priceRetail": 40600.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 30886.34,
+              "priceRetail": 40770.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 31030.28,
+              "priceRetail": 40960.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 31166.65,
+              "priceRetail": 41140.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFMXW-CN",
+          "code": "1000000907",
+          "name": "HILUX DC 4x4 CRUISER M/T",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 26462.11,
+              "priceRetail": 34930.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 26590.9,
+              "priceRetail": 35100.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 26734.84,
+              "priceRetail": 35290.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 26871.2,
+              "priceRetail": 35470.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNTMXW-DN",
+          "code": "1000000908",
+          "name": "HILUX DC 4x4 CRUISER A/T",
+          "co2": 204,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 27712.11,
+              "priceRetail": 36580.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 27840.9,
+              "priceRetail": 36750.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 27984.84,
+              "priceRetail": 36940.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 28121.2,
+              "priceRetail": 37120.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFHXW-3H",
+          "code": "1000000909",
+          "name": "HILUX DC 4x4 MILLENNIUM M/T",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 29924.23,
+              "priceRetail": 39500.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 30053.02,
+              "priceRetail": 39670.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 30196.96,
+              "priceRetail": 39860.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 30333.32,
+              "priceRetail": 40040.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNTHXW-3J",
+          "code": "1000000910",
+          "name": "HILUX DC 4x4 MILLENNIUM A/T",
+          "co2": 204,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 31159.08,
+              "priceRetail": 41130.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 31287.87,
+              "priceRetail": 41300.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 31431.81,
+              "priceRetail": 41490.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 31568.17,
+              "priceRetail": 41670.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNFHXW-3H",
+          "code": "1000000922",
+          "name": "HILUX DC 4x4 INVINCIBLE M/T",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 31333.32,
+              "priceRetail": 41360.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 31462.11,
+              "priceRetail": 41530.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 31606.05,
+              "priceRetail": 41720.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 31742.41,
+              "priceRetail": 41900.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNTHXW-3J",
+          "code": "1000000923",
+          "name": "HILUX DC 4x4 INVINCIBLE A/T",
+          "co2": 204,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 32568.17,
+              "priceRetail": 42990.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 32696.96,
+              "priceRetail": 43160.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 32840.9,
+              "priceRetail": 43350.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 32977.26,
+              "priceRetail": 43530.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-DNTHHW-QL",
+          "code": "1000000954",
+          "name": "Hilux DC 4X4 MLM INVINCIBLE",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 32174.23,
+              "priceRetail": 42470.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 32303.02,
+              "priceRetail": 42640.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 32446.96,
+              "priceRetail": 42830.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 32583.33,
+              "priceRetail": 43010.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN135L-CNFSXW-IV",
+          "code": "1000000903",
+          "name": "HILUX EC 4x2 COMFORT",
+          "co2": 177,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 19954.53,
+              "priceRetail": 26340.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 20083.32,
+              "priceRetail": 26510.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 20227.26,
+              "priceRetail": 26700.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 20363.62,
+              "priceRetail": 26880.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-CNFSXW-D1",
+          "code": "1000000904",
+          "name": "HILUX EC 4x4 COMFORT TSS",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 22969.69,
+              "priceRetail": 30320.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 23098.47,
+              "priceRetail": 30490.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 23242.41,
+              "priceRetail": 30680.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 23378.78,
+              "priceRetail": 30860.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-CNFMXW-AQ",
+          "code": "1000000905",
+          "name": "HILUX EC 4x4 SPECIAL EDITION TSS",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 24946.96,
+              "priceRetail": 32930.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 25075.75,
+              "priceRetail": 33100.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 25219.69,
+              "priceRetail": 33290.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 25356.05,
+              "priceRetail": 33470.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN135L-BNFSXW-JK",
+          "code": "1000000902",
+          "name": "HILUX SC 4x2 COMFORT",
+          "co2": 178,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 18166.66,
+              "priceRetail": 23980.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 18295.45,
+              "priceRetail": 24150.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 18439.39,
+              "priceRetail": 24340.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 18575.75,
+              "priceRetail": 24520.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GUN125L-BNFSXW-5I",
+          "code": "1000000911",
+          "name": "HILUX SC 4x4 COMFORT",
+          "co2": 187,
+          "variants": [
+            {
+              "color": "Απλό Μη Μεταλλικό",
+              "priceNet": 21265.14,
+              "priceRetail": 28070.0
+            },
+            {
+              "color": "Λευκό Μη Μεταλλικό",
+              "priceNet": 21393.93,
+              "priceRetail": 28240.0
+            },
+            {
+              "color": "Μεταλλικό",
+              "priceNet": 21537.87,
+              "priceRetail": 28430.0
+            },
+            {
+              "color": "Μεταλλικό Περλέ",
+              "priceNet": 21674.23,
+              "priceRetail": 28610.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
