@@ -1,0 +1,4395 @@
+{
+  "brand": "Audi",
+  "year": 2017,
+  "models": {
+    "A1": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8XKAS4",
+          "code": "8XKAS4",
+          "name": "1.0 TFSI (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13654.0,
+              "priceRetail": 13654.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKBS4",
+          "code": "8XKBS4",
+          "name": "1.0 TFSI Sport (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14970.0,
+              "priceRetail": 14970.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKCS4",
+          "code": "8XKCS4",
+          "name": "1.0 TFSI Design (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14970.0,
+              "priceRetail": 14970.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKASG",
+          "code": "8XKASG",
+          "name": "1.0 TFSI S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15114.0,
+              "priceRetail": 15114.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKBSG",
+          "code": "8XKBSG",
+          "name": "1.0 TFSI Sport S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16402.0,
+              "priceRetail": 16402.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKCSG",
+          "code": "8XKCSG",
+          "name": "1.0 TFSI Design S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16402.0,
+              "priceRetail": 16402.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKAKC",
+          "code": "8XKAKC",
+          "name": "1.4 TFSI (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14886.0,
+              "priceRetail": 14886.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKBKC",
+          "code": "8XKBKC",
+          "name": "1.4 TFSI Sport (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16174.0,
+              "priceRetail": 16174.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKCKC",
+          "code": "8XKCKC",
+          "name": "1.4 TFSI Design (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16174.0,
+              "priceRetail": 16174.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKAKG",
+          "code": "8XKAKG",
+          "name": "1.4 TFSI S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16326.0,
+              "priceRetail": 16326.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKBKG",
+          "code": "8XKBKG",
+          "name": "1.4 TFSI Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17643.0,
+              "priceRetail": 17643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKCKG",
+          "code": "8XKCKG",
+          "name": "1.4 TFSI Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17643.0,
+              "priceRetail": 17643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKA14",
+          "code": "8XKA14",
+          "name": "1.6 TDI (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15616.0,
+              "priceRetail": 15616.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKB14",
+          "code": "8XKB14",
+          "name": "1.6 TDI Sport (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16907.0,
+              "priceRetail": 16907.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKC14",
+          "code": "8XKC14",
+          "name": "1.6 TDI Design (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16907.0,
+              "priceRetail": 16907.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKA1G",
+          "code": "8XKA1G",
+          "name": "1.6 TDI S tronic",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17062.0,
+              "priceRetail": 17062.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKB1G",
+          "code": "8XKB1G",
+          "name": "1.6 TDI Sport S tronic",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18355.0,
+              "priceRetail": 18355.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKC1G",
+          "code": "8XKC1G",
+          "name": "1.6 TDI Design S tronic",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18355.0,
+              "priceRetail": 18355.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XKBLG",
+          "code": "8XKBLG",
+          "name": "1.8 TFSI Sport S tronic",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20645.0,
+              "priceRetail": 20645.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFAS4",
+          "code": "8XFAS4",
+          "name": "SB 1.0 TFSI (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14134.0,
+              "priceRetail": 14134.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFBS4",
+          "code": "8XFBS4",
+          "name": "SB 1.0 TFSI Sport (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15426.0,
+              "priceRetail": 15426.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFCS4",
+          "code": "8XFCS4",
+          "name": "SB 1.0 TFSI Design (5 ταχύτητες)",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15426.0,
+              "priceRetail": 15426.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFASG",
+          "code": "8XFASG",
+          "name": "SB 1.0 TFSI S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15568.0,
+              "priceRetail": 15568.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFBSG",
+          "code": "8XFBSG",
+          "name": "SB 1.0 TFSI Sport S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16856.0,
+              "priceRetail": 16856.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFCSG",
+          "code": "8XFCSG",
+          "name": "SB 1.0 TFSI Design S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16856.0,
+              "priceRetail": 16856.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFAKC",
+          "code": "8XFAKC",
+          "name": "SB 1.4 TFSI (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15341.0,
+              "priceRetail": 15341.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFBKC",
+          "code": "8XFBKC",
+          "name": "SB 1.4 TFSI Sport (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16667.0,
+              "priceRetail": 16667.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFCKC",
+          "code": "8XFCKC",
+          "name": "SB 1.4 TFSI Design (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16667.0,
+              "priceRetail": 16667.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFAKG",
+          "code": "8XFAKG",
+          "name": "SB 1.4 TFSI S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16780.0,
+              "priceRetail": 16780.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFBKG",
+          "code": "8XFBKG",
+          "name": "SB 1.4 TFSI Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18071.0,
+              "priceRetail": 18071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFCKG",
+          "code": "8XFCKG",
+          "name": "SB 1.4 TFSI Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18071.0,
+              "priceRetail": 18071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFA14",
+          "code": "8XFA14",
+          "name": "SB 1.6 TDI (5 ταχύτητες)",
+          "co2": 92,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16071.0,
+              "priceRetail": 16071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFB14",
+          "code": "8XFB14",
+          "name": "SB 1.6 TDI Sport (5 ταχύτητες)",
+          "co2": 92,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17385.0,
+              "priceRetail": 17385.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFC14",
+          "code": "8XFC14",
+          "name": "SB 1.6 TDI Design (5 ταχύτητες)",
+          "co2": 92,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17385.0,
+              "priceRetail": 17385.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFA1G",
+          "code": "8XFA1G",
+          "name": "SB 1.6 TDI S tronic",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17529.0,
+              "priceRetail": 17529.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFB1G",
+          "code": "8XFB1G",
+          "name": "SB 1.6 TDI Sport S tronic",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18822.0,
+              "priceRetail": 18822.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFC1G",
+          "code": "8XFC1G",
+          "name": "SB 1.6 TDI Design S tronic",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18822.0,
+              "priceRetail": 18822.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFBLG",
+          "code": "8XFBLG",
+          "name": "SB 1.8 TFSI Sport S tronic",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21044.0,
+              "priceRetail": 21044.0
+            }
+          ]
+        }
+      ]
+    },
+    "S1": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8XKSF9",
+          "code": "8XKSF9",
+          "name": "2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23937.0,
+              "priceRetail": 23937.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8XFSF9",
+          "code": "8XFSF9",
+          "name": "SB 2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24323.0,
+              "priceRetail": 24323.0
+            }
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8V1BCC",
+          "code": "8V1BCC",
+          "name": "1.4 TFSI CoD Ambition (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20878.0,
+              "priceRetail": 20878.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8V1BFC",
+          "code": "8V1BFC",
+          "name": "1.6 TDI Ambition (6 ταχύτητες)",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19965.0,
+              "priceRetail": 19965.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKANC",
+          "code": "8VKANC",
+          "name": "1.0 TFSI (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16288.0,
+              "priceRetail": 16288.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBNC",
+          "code": "8VKBNC",
+          "name": "1.0 TFSI Sport (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17001.0,
+              "priceRetail": 17001.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCNC",
+          "code": "8VKCNC",
+          "name": "1.0 TFSI Design (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17143.0,
+              "priceRetail": 17143.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKANG",
+          "code": "8VKANG",
+          "name": "1.0 TFSI S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17929.0,
+              "priceRetail": 17929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBNG",
+          "code": "8VKBNG",
+          "name": "1.0 TFSI Sport S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18643.0,
+              "priceRetail": 18643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCNG",
+          "code": "8VKCNG",
+          "name": "1.0 TFSI Design S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18786.0,
+              "priceRetail": 18786.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKACC",
+          "code": "8VKACC",
+          "name": "1.4 TFSI CoD (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19071.0,
+              "priceRetail": 19071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBCC",
+          "code": "8VKBCC",
+          "name": "1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19786.0,
+              "priceRetail": 19786.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCCC",
+          "code": "8VKCCC",
+          "name": "1.4 TFSI CoD Design (6 ταχύτητες)",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19929.0,
+              "priceRetail": 19929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKACG",
+          "code": "8VKACG",
+          "name": "1.4 TFSI CoD S tronic",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20709.0,
+              "priceRetail": 20709.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBCG",
+          "code": "8VKBCG",
+          "name": "1.4 TFSI CoD Sport S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21385.0,
+              "priceRetail": 21385.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCCG",
+          "code": "8VKCCG",
+          "name": "1.4 TFSI CoD Design S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21520.0,
+              "priceRetail": 21520.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKAFC",
+          "code": "8VKAFC",
+          "name": "1.6 TDI (6 ταχύτητες)",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18857.0,
+              "priceRetail": 18857.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBFC",
+          "code": "8VKBFC",
+          "name": "1.6 TDI Sport (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19571.0,
+              "priceRetail": 19571.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCFC",
+          "code": "8VKCFC",
+          "name": "1.6 TDI Design (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19714.0,
+              "priceRetail": 19714.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKAFG",
+          "code": "8VKAFG",
+          "name": "1.6 TDI S tronic",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20541.0,
+              "priceRetail": 20541.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBFG",
+          "code": "8VKBFG",
+          "name": "1.6 TDI Sport S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21216.0,
+              "priceRetail": 21216.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCFG",
+          "code": "8VKCFG",
+          "name": "1.6 TDI Design S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21351.0,
+              "priceRetail": 21351.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKBGY",
+          "code": "8VKBGY",
+          "name": "2.0 TFSI Sport quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25126.0,
+              "priceRetail": 25126.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKCGY",
+          "code": "8VKCGY",
+          "name": "2.0 TFSI Design quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25283.0,
+              "priceRetail": 25283.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VAAFC",
+          "code": "8VAAFC",
+          "name": "SB 1.6 TDI Comfort (6 ταχύτητες)",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19397.0,
+              "priceRetail": 19397.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VABFC",
+          "code": "8VABFC",
+          "name": "SB 1.6 TDI Ambition (6 ταχύτητες)",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20709.0,
+              "priceRetail": 20709.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VAAFG",
+          "code": "8VAAFG",
+          "name": "SB 1.6 TDI Comfort S tronic",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21117.0,
+              "priceRetail": 21117.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFANC",
+          "code": "8VFANC",
+          "name": "SB 1.0 TFSI (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16970.0,
+              "priceRetail": 16970.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBNC",
+          "code": "8VFBNC",
+          "name": "SB 1.0 TFSI Sport (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17643.0,
+              "priceRetail": 17643.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCNC",
+          "code": "8VFCNC",
+          "name": "SB 1.0 TFSI Design (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17786.0,
+              "priceRetail": 17786.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFANG",
+          "code": "8VFANG",
+          "name": "SB 1.0 TFSI S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18500.0,
+              "priceRetail": 18500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBNG",
+          "code": "8VFBNG",
+          "name": "SB 1.0 TFSI Sport S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19214.0,
+              "priceRetail": 19214.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCNG",
+          "code": "8VFCNG",
+          "name": "SB 1.0 TFSI Design S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19357.0,
+              "priceRetail": 19357.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFACC",
+          "code": "8VFACC",
+          "name": "SB 1.4 TFSI CoD (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19214.0,
+              "priceRetail": 19214.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBCC",
+          "code": "8VFBCC",
+          "name": "SB 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19929.0,
+              "priceRetail": 19929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCCC",
+          "code": "8VFCCC",
+          "name": "SB 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20541.0,
+              "priceRetail": 20541.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFACG",
+          "code": "8VFACG",
+          "name": "SB 1.4 TFSI CoD S tronic",
+          "co2": 113,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21318.0,
+              "priceRetail": 21318.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBCG",
+          "code": "8VFBCG",
+          "name": "SB 1.4 TFSI CoD Sport S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21993.0,
+              "priceRetail": 21993.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCCG",
+          "code": "8VFCCG",
+          "name": "SB 1.4 TFSI CoD Design S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22128.0,
+              "priceRetail": 22128.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFAYC",
+          "code": "8VFAYC",
+          "name": "SB 1.4 TFSI g-tron (6 ταχύτητες)",
+          "co2": 94,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20811.0,
+              "priceRetail": 20811.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFAYG",
+          "code": "8VFAYG",
+          "name": "SB 1.4 TFSI g-tron S tronic",
+          "co2": 91,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22411.0,
+              "priceRetail": 22411.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFAFC",
+          "code": "8VFAFC",
+          "name": "SB 1.6 TDI (6 ταχύτητες)",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19214.0,
+              "priceRetail": 19214.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBFC",
+          "code": "8VFBFC",
+          "name": "SB 1.6 TDI Sport (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19929.0,
+              "priceRetail": 19929.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCFC",
+          "code": "8VFCFC",
+          "name": "SB 1.6 TDI Design (6 ταχύτητες)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20338.0,
+              "priceRetail": 20338.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFAFG",
+          "code": "8VFAFG",
+          "name": "SB 1.6 TDI S tronic",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21149.0,
+              "priceRetail": 21149.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBFG",
+          "code": "8VFBFG",
+          "name": "SB 1.6 TDI Sport S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21824.0,
+              "priceRetail": 21824.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCFG",
+          "code": "8VFCFG",
+          "name": "SB 1.6 TDI Design S tronic",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21959.0,
+              "priceRetail": 21959.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFBGY",
+          "code": "8VFBGY",
+          "name": "SB 2.0 TFSI Sport quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25691.0,
+              "priceRetail": 25691.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFCGY",
+          "code": "8VFCGY",
+          "name": "SB 2.0 TFSI Design quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25848.0,
+              "priceRetail": 25848.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VSBCC",
+          "code": "8VSBCC",
+          "name": "Sport Sedan 1.4 TFSI CoD Ambition (6 ταχύτητες)",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20000.0,
+              "priceRetail": 20000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VSBCG",
+          "code": "8VSBCG",
+          "name": "Sport Sedan 1.4 TFSI CoD Ambition S tronic",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20608.0,
+              "priceRetail": 20608.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VSBFG",
+          "code": "8VSBFG",
+          "name": "Sport Sedan 1.6 TDI Ambition S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22196.0,
+              "priceRetail": 22196.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMANC",
+          "code": "8VMANC",
+          "name": "Sport Sedan 1.0 TFSI (6 ταχύτητες)",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17071.0,
+              "priceRetail": 17071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBNC",
+          "code": "8VMBNC",
+          "name": "Sport Sedan 1.0 TFSI Sport (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17750.0,
+              "priceRetail": 17750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCNC",
+          "code": "8VMCNC",
+          "name": "Sport Sedan 1.0 TFSI Design (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17893.0,
+              "priceRetail": 17893.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMANG",
+          "code": "8VMANG",
+          "name": "Sport Sedan 1.0 TFSI S tronic",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18607.0,
+              "priceRetail": 18607.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBNG",
+          "code": "8VMBNG",
+          "name": "Sport Sedan 1.0 TFSI Sport S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19321.0,
+              "priceRetail": 19321.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCNG",
+          "code": "8VMCNG",
+          "name": "Sport Sedan 1.0 TFSI Design S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19464.0,
+              "priceRetail": 19464.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMACC",
+          "code": "8VMACC",
+          "name": "Sport Sedan 1.4 TFSI CoD (6 ταχύτητες)",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19821.0,
+              "priceRetail": 19821.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBCC",
+          "code": "8VMBCC",
+          "name": "Sport Sedan 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20507.0,
+              "priceRetail": 20507.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCCC",
+          "code": "8VMCCC",
+          "name": "Sport Sedan 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20642.0,
+              "priceRetail": 20642.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMACG",
+          "code": "8VMACG",
+          "name": "Sport Sedan 1.4 TFSI CoD S tronic",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21419.0,
+              "priceRetail": 21419.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBCG",
+          "code": "8VMBCG",
+          "name": "Sport Sedan 1.4 TFSI CoD Sport S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22095.0,
+              "priceRetail": 22095.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCCG",
+          "code": "8VMCCG",
+          "name": "Sport Sedan 1.4 TFSI CoD Design S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22230.0,
+              "priceRetail": 22230.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMAFC",
+          "code": "8VMAFC",
+          "name": "Sport Sedan 1.6 TDI (6 ταχύτητες)",
+          "co2": 100,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19397.0,
+              "priceRetail": 19397.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBFC",
+          "code": "8VMBFC",
+          "name": "Sport Sedan 1.6 TDI Sport (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20000.0,
+              "priceRetail": 20000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCFC",
+          "code": "8VMCFC",
+          "name": "Sport Sedan 1.6 TDI Design (6 ταχύτητες)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20405.0,
+              "priceRetail": 20405.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMAFG",
+          "code": "8VMAFG",
+          "name": "Sport Sedan 1.6 TDI S tronic",
+          "co2": 100,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21253.0,
+              "priceRetail": 21253.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBFG",
+          "code": "8VMBFG",
+          "name": "Sport Sedan 1.6 TDI Sport S tronic",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21757.0,
+              "priceRetail": 21757.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCFG",
+          "code": "8VMCFG",
+          "name": "Sport Sedan 1.6 TDI Design S tronic",
+          "co2": 101,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21892.0,
+              "priceRetail": 21892.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMBGY",
+          "code": "8VMBGY",
+          "name": "Sport Sedan 2.0 TFSI Sport quattro S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25785.0,
+              "priceRetail": 25785.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMCGY",
+          "code": "8VMCGY",
+          "name": "Sport Sedan 2.0 TFSI Design quattro S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25942.0,
+              "priceRetail": 25942.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8V7AAC",
+          "code": "8V7AAC",
+          "name": "Cabriolet 1.4 TFSI  Attraction Plus (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22639.0,
+              "priceRetail": 22639.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEA4C",
+          "code": "8VEA4C",
+          "name": "Cabriolet 1.4 TFSI (6 ταχύτητες)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21177.0,
+              "priceRetail": 21177.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEB4C",
+          "code": "8VEB4C",
+          "name": "Cabriolet 1.4 TFSI Sport (6 ταχύτητες)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21842.0,
+              "priceRetail": 21842.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEC4C",
+          "code": "8VEC4C",
+          "name": "Cabriolet 1.4 TFSI Design (6 ταχύτητες)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21975.0,
+              "priceRetail": 21975.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEA4G",
+          "code": "8VEA4G",
+          "name": "Cabriolet 1.4 TFSI S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22770.0,
+              "priceRetail": 22770.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEB4G",
+          "code": "8VEB4G",
+          "name": "Cabriolet 1.4 TFSI Sport S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23446.0,
+              "priceRetail": 23446.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEC4G",
+          "code": "8VEC4G",
+          "name": "Cabriolet 1.4 TFSI Design S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23581.0,
+              "priceRetail": 23581.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEACC",
+          "code": "8VEACC",
+          "name": "Cabriolet 1.4 TFSI CoD (6 ταχύτητες)",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23919.0,
+              "priceRetail": 23919.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBCC",
+          "code": "8VEBCC",
+          "name": "Cabriolet 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24595.0,
+              "priceRetail": 24595.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VECCC",
+          "code": "8VECCC",
+          "name": "Cabriolet 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24730.0,
+              "priceRetail": 24730.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEACG",
+          "code": "8VEACG",
+          "name": "Cabriolet 1.4 TFSI CoD S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25513.0,
+              "priceRetail": 25513.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBCG",
+          "code": "8VEBCG",
+          "name": "Cabriolet 1.4 TFSI CoD Sport S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26154.0,
+              "priceRetail": 26154.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VECCG",
+          "code": "8VECCG",
+          "name": "Cabriolet 1.4 TFSI CoD Design S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26282.0,
+              "priceRetail": 26282.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEAFC",
+          "code": "8VEAFC",
+          "name": "Cabriolet 1.6 TDI (6 ταχύτητες)",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23750.0,
+              "priceRetail": 23750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBFC",
+          "code": "8VEBFC",
+          "name": "Cabriolet 1.6 TDI Sport (6 ταχύτητες)",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24426.0,
+              "priceRetail": 24426.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VECFC",
+          "code": "8VECFC",
+          "name": "Cabriolet 1.6 TDI Design (6 ταχύτητες)",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24561.0,
+              "priceRetail": 24561.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VEBGY",
+          "code": "8VEBGY",
+          "name": "Cabriolet 2.0 TFSI Sport quattro S tronic",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29837.0,
+              "priceRetail": 29837.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VECGY",
+          "code": "8VECGY",
+          "name": "Cabriolet 2.0 TFSI Design quattro S tronic",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29962.0,
+              "priceRetail": 29962.0
+            }
+          ]
+        }
+      ]
+    },
+    "S3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8VKS39",
+          "code": "8VKS39",
+          "name": "2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28351.0,
+              "priceRetail": 28351.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VKS3Y",
+          "code": "8VKS3Y",
+          "name": "2.0 TFSI quattro S tronic",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30080.0,
+              "priceRetail": 30080.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFS39",
+          "code": "8VFS39",
+          "name": "SB 2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29016.0,
+              "priceRetail": 29016.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VFS3Y",
+          "code": "8VFS3Y",
+          "name": "SB 2.0 TFSI quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30727.0,
+              "priceRetail": 30727.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMS39",
+          "code": "8VMS39",
+          "name": "Sport Sedan 2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29106.0,
+              "priceRetail": 29106.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8VMS3Y",
+          "code": "8VMS3Y",
+          "name": "Sport Sedan 2.0 TFSI quattro S tronic",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30819.0,
+              "priceRetail": 30819.0
+            }
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8W2AEC",
+          "code": "8W2AEC",
+          "name": "1.4 TFSI 6 ταχύτητες",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23172.0,
+              "priceRetail": 23172.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BEC",
+          "code": "8W2BEC",
+          "name": "1.4 TFSI Sport 6 ταχύτητες",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24368.0,
+              "priceRetail": 24368.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CEC",
+          "code": "8W2CEC",
+          "name": "1.4 TFSI Design 6 ταχύτητες",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24368.0,
+              "priceRetail": 24368.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AEG",
+          "code": "8W2AEG",
+          "name": "1.4 TFSI S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24831.0,
+              "priceRetail": 24831.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BEG",
+          "code": "8W2BEG",
+          "name": "1.4 TFSI Sport S tronic",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26036.0,
+              "priceRetail": 26036.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CEG",
+          "code": "8W2CEG",
+          "name": "1.4 TFSI Design S tronic",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26036.0,
+              "priceRetail": 26036.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AIC",
+          "code": "8W2AIC",
+          "name": "2.0 TDI (122hp) 6 ταχύτητες",
+          "co2": 98,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25000.0,
+              "priceRetail": 25000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BIC",
+          "code": "8W2BIC",
+          "name": "2.0 TDI (122hp) Sport 6 ταχύτητες",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26186.0,
+              "priceRetail": 26186.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CIC",
+          "code": "8W2CIC",
+          "name": "2.0 TDI (122hp) Design 6 ταχύτητες",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26186.0,
+              "priceRetail": 26186.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AIG",
+          "code": "8W2AIG",
+          "name": "2.0 TDI (122hp) S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26667.0,
+              "priceRetail": 26667.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BIG",
+          "code": "8W2BIG",
+          "name": "2.0 TDI (122hp) Sport S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27853.0,
+              "priceRetail": 27853.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CIG",
+          "code": "8W2CIG",
+          "name": "2.0 TDI (122hp) Design S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27853.0,
+              "priceRetail": 27853.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2ABC",
+          "code": "8W2ABC",
+          "name": "2.0 TDI (150hp) 6 ταχύτητες",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27785.0,
+              "priceRetail": 27785.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BBC",
+          "code": "8W2BBC",
+          "name": "2.0 TDI (150hp) Sport 6 ταχύτητες",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28974.0,
+              "priceRetail": 28974.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CBC",
+          "code": "8W2CBC",
+          "name": "2.0 TDI (150hp) Design 6 ταχύτητες",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29006.0,
+              "priceRetail": 29006.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2ABG",
+          "code": "8W2ABG",
+          "name": "2.0 TDI (150hp) S tronic",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29455.0,
+              "priceRetail": 29455.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BBG",
+          "code": "8W2BBG",
+          "name": "2.0 TDI (150hp) Sport S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30641.0,
+              "priceRetail": 30641.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CBG",
+          "code": "8W2CBG",
+          "name": "2.0 TDI (150hp) Design S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30641.0,
+              "priceRetail": 30641.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AFC",
+          "code": "8W2AFC",
+          "name": "2.0 TDI (190hp) 6 ταχύτητες",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29551.0,
+              "priceRetail": 29551.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BFC",
+          "code": "8W2BFC",
+          "name": "2.0 TDI (190hp) Sport 6 ταχύτητες",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30865.0,
+              "priceRetail": 30865.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CFC",
+          "code": "8W2CFC",
+          "name": "2.0 TDI (190hp) Design 6 ταχύτητες",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30865.0,
+              "priceRetail": 30865.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AFG",
+          "code": "8W2AFG",
+          "name": "2.0 TDI (190hp) S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31218.0,
+              "priceRetail": 31218.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BFG",
+          "code": "8W2BFG",
+          "name": "2.0 TDI (190hp) Sport S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32500.0,
+              "priceRetail": 32500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CFG",
+          "code": "8W2CFG",
+          "name": "2.0 TDI (190hp) Design S tronic",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32500.0,
+              "priceRetail": 32500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2AFY",
+          "code": "8W2AFY",
+          "name": "2.0 TDI (190hp) quattro S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33013.0,
+              "priceRetail": 33013.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2BFY",
+          "code": "8W2BFY",
+          "name": "2.0 TDI (190hp) Sport quattro S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33942.0,
+              "priceRetail": 33942.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W2CFY",
+          "code": "8W2CFY",
+          "name": "2.0 TDI (190hp) Design quattro S tronic",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33942.0,
+              "priceRetail": 33942.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AEC",
+          "code": "8W5AEC",
+          "name": "Avant 1.4 TFSI 6 ταχύτητες",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24402.0,
+              "priceRetail": 24402.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BEC",
+          "code": "8W5BEC",
+          "name": "Avant 1.4 TFSI Sport 6 ταχύτητες",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25251.0,
+              "priceRetail": 25251.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CEC",
+          "code": "8W5CEC",
+          "name": "Avant 1.4 TFSI Design 6 ταχύτητες",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25251.0,
+              "priceRetail": 25251.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AEG",
+          "code": "8W5AEG",
+          "name": "Avant 1.4 TFSI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26068.0,
+              "priceRetail": 26068.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BEG",
+          "code": "8W5BEG",
+          "name": "Avant 1.4 TFSI Sport S tronic",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26947.0,
+              "priceRetail": 26947.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CEG",
+          "code": "8W5CEG",
+          "name": "Avant 1.4 TFSI Design S tronic",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26947.0,
+              "priceRetail": 26947.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AIC",
+          "code": "8W5AIC",
+          "name": "Avant 2.0 TDI (122hp) 6 ταχύτητες",
+          "co2": 103,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26218.0,
+              "priceRetail": 26218.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BIC",
+          "code": "8W5BIC",
+          "name": "Avant 2.0 TDI (122hp) Sport 6 ταχύτητες",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27083.0,
+              "priceRetail": 27083.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CIC",
+          "code": "8W5CIC",
+          "name": "Avant 2.0 TDI (122hp) Design 6 ταχύτητες",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27083.0,
+              "priceRetail": 27083.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AIG",
+          "code": "8W5AIG",
+          "name": "Avant 2.0 TDI (122hp) S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27885.0,
+              "priceRetail": 27885.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BIG",
+          "code": "8W5BIG",
+          "name": "Avant 2.0 TDI (122hp) Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28750.0,
+              "priceRetail": 28750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CIG",
+          "code": "8W5CIG",
+          "name": "Avant 2.0 TDI (122hp) Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28750.0,
+              "priceRetail": 28750.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5ABC",
+          "code": "8W5ABC",
+          "name": "Avant 2.0 TDI (150hp) 6 ταχύτητες",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29006.0,
+              "priceRetail": 29006.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BBC",
+          "code": "8W5BBC",
+          "name": "Avant 2.0 TDI (150hp) Sport 6 ταχύτητες",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29872.0,
+              "priceRetail": 29872.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CBC",
+          "code": "8W5CBC",
+          "name": "Avant 2.0 TDI (150hp) Design 6 ταχύτητες",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29872.0,
+              "priceRetail": 29872.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5ABG",
+          "code": "8W5ABG",
+          "name": "Avant 2.0 TDI (150hp) S tronic",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30673.0,
+              "priceRetail": 30673.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BBG",
+          "code": "8W5BBG",
+          "name": "Avant 2.0 TDI (150hp) Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31474.0,
+              "priceRetail": 31474.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CBG",
+          "code": "8W5CBG",
+          "name": "Avant 2.0 TDI (150hp) Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31538.0,
+              "priceRetail": 31538.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AFC",
+          "code": "8W5AFC",
+          "name": "Avant 2.0 TDI (190hp) 6 ταχύτητες",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30769.0,
+              "priceRetail": 30769.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BFC",
+          "code": "8W5BFC",
+          "name": "Avant 2.0 TDI (190hp) Sport 6 ταχύτητες",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31731.0,
+              "priceRetail": 31731.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CFC",
+          "code": "8W5CFC",
+          "name": "Avant 2.0 TDI (190hp) Design 6 ταχύτητες",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31731.0,
+              "priceRetail": 31731.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AFG",
+          "code": "8W5AFG",
+          "name": "Avant 2.0 TDI (190hp) S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32436.0,
+              "priceRetail": 32436.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BFG",
+          "code": "8W5BFG",
+          "name": "Avant 2.0 TDI (190hp) Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33397.0,
+              "priceRetail": 33397.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CFG",
+          "code": "8W5CFG",
+          "name": "Avant 2.0 TDI (190hp) Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33397.0,
+              "priceRetail": 33397.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5AFY",
+          "code": "8W5AFY",
+          "name": "Avant 2.0 TDI (190hp) quattro S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34231.0,
+              "priceRetail": 34231.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5BFY",
+          "code": "8W5BFY",
+          "name": "Avant 2.0 TDI (190hp) Sport quattro S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35192.0,
+              "priceRetail": 35192.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5CFY",
+          "code": "8W5CFY",
+          "name": "Avant 2.0 TDI (190hp) Design quattro S tronic",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35192.0,
+              "priceRetail": 35192.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8WH0AY",
+          "code": "8WH0AY",
+          "name": "Allroad quattro 2.0 TFSI S tronic",
+          "co2": 147,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35653.0,
+              "priceRetail": 35653.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8WH0FY",
+          "code": "8WH0FY",
+          "name": "Allroad quattro 2.0 TDI S tronic",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36432.0,
+              "priceRetail": 36432.0
+            }
+          ]
+        }
+      ]
+    },
+    "S4": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8W2S4A",
+          "code": "8W2S4A",
+          "name": "3.0 TFSI quattro tiptronic",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50423.0,
+              "priceRetail": 50423.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8W5S4A",
+          "code": "8W5S4A",
+          "name": "Avant 3.0 TFSI quattro tiptronic",
+          "co2": 171,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51630.0,
+              "priceRetail": 51630.0
+            }
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "F53BEG",
+          "code": "F53BEG",
+          "name": "Coupé 1.4 TFSI S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29146.0,
+              "priceRetail": 29146.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BDC",
+          "code": "F53BDC",
+          "name": "Coupé 2.0 TFSI (6 ταχύτητες)",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30747.0,
+              "priceRetail": 30747.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BDG",
+          "code": "F53BDG",
+          "name": "Coupé 2.0 TFSI S tronic",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32404.0,
+              "priceRetail": 32404.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BAY",
+          "code": "F53BAY",
+          "name": "Coupé 2.0 TFSI quattro S tronic",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39163.0,
+              "priceRetail": 39163.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BFC",
+          "code": "F53BFC",
+          "name": "Coupé 2.0 TDI (6 ταχύτητες)",
+          "co2": 113,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35769.0,
+              "priceRetail": 35769.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BFG",
+          "code": "F53BFG",
+          "name": "Coupé 2.0 TDI S tronic",
+          "co2": 111,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37436.0,
+              "priceRetail": 37436.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F53BFY",
+          "code": "F53BFY",
+          "name": "Coupé 2.0 TDI quattro S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39615.0,
+              "priceRetail": 39615.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABEG",
+          "code": "F5ABEG",
+          "name": "SB 1.4 TFSI S tronic",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29146.0,
+              "priceRetail": 29146.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABDC",
+          "code": "F5ABDC",
+          "name": "SB 2.0 TFSI (6 ταχύτητες)",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30747.0,
+              "priceRetail": 30747.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABDG",
+          "code": "F5ABDG",
+          "name": "SB 2.0 TFSI S tronic",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31753.0,
+              "priceRetail": 31753.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABAY",
+          "code": "F5ABAY",
+          "name": "SB 2.0 TFSI quattro S tronic",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39163.0,
+              "priceRetail": 39163.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABFC",
+          "code": "F5ABFC",
+          "name": "SB 2.0 TDI (6 ταχύτητες)",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35769.0,
+              "priceRetail": 35769.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABFG",
+          "code": "F5ABFG",
+          "name": "SB 2.0 TDI S tronic",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37436.0,
+              "priceRetail": 37436.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5ABFY",
+          "code": "F5ABFY",
+          "name": "SB 2.0 TDI quattro S tronic",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38819.0,
+              "priceRetail": 38819.0
+            }
+          ]
+        }
+      ]
+    },
+    "S5": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "F53S4A",
+          "code": "F53S4A",
+          "name": "Coupé 3.0 TFSI quattro tiptronic",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44988.0,
+              "priceRetail": 44988.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "F5AS4A",
+          "code": "F5AS4A",
+          "name": "SB 3.0 TFSI quattro tiptronic",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44988.0,
+              "priceRetail": 44988.0
+            }
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GC06G",
+          "code": "4GC06G",
+          "name": "1.8 TFSI ultra S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38065.0,
+              "priceRetail": 38065.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC08G",
+          "code": "4GC08G",
+          "name": "2.0 TFSI S tronic",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39322.0,
+              "priceRetail": 39322.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC08Y",
+          "code": "4GC08Y",
+          "name": "2.0 TFSI S tronic quattro",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41502.0,
+              "priceRetail": 41502.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC0DG",
+          "code": "4GC0DG",
+          "name": "2.0 TDI ultra S tronic",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35962.0,
+              "priceRetail": 35962.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC0IG",
+          "code": "4GC0IG",
+          "name": "2.0 TDI ultra S tronic",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37917.0,
+              "priceRetail": 37917.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC0IY",
+          "code": "4GC0IY",
+          "name": "2.0 TDI ultra S tronic quattro",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40107.0,
+              "priceRetail": 40107.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC0TG",
+          "code": "4GC0TG",
+          "name": "3.0 TDI S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44872.0,
+              "priceRetail": 44872.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GC0TY",
+          "code": "4GC0TY",
+          "name": "3.0 TDI S tronic quattro",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47048.0,
+              "priceRetail": 47048.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD06G",
+          "code": "4GD06G",
+          "name": "Avant 1.8 TFSI ultra S tronic",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40452.0,
+              "priceRetail": 40452.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD08G",
+          "code": "4GD08G",
+          "name": "Avant 2.0 TFSI S tronic",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41740.0,
+              "priceRetail": 41740.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD08Y",
+          "code": "4GD08Y",
+          "name": "Avant 2.0 TFSI quattro S tronic",
+          "co2": 158,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43904.0,
+              "priceRetail": 43904.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD0DG",
+          "code": "4GD0DG",
+          "name": "Avant 2.0 TDI ultra S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38365.0,
+              "priceRetail": 38365.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD0IG",
+          "code": "4GD0IG",
+          "name": "Avant 2.0 TDI ultra S tronic",
+          "co2": 115,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40321.0,
+              "priceRetail": 40321.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD0IY",
+          "code": "4GD0IY",
+          "name": "Avant 2.0 TDI quattro S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42494.0,
+              "priceRetail": 42494.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD0TG",
+          "code": "4GD0TG",
+          "name": "Avant 3.0 TDI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47917.0,
+              "priceRetail": 47917.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GD0TY",
+          "code": "4GD0TY",
+          "name": "Avant 3.0 TDI quattro S tronic",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49466.0,
+              "priceRetail": 49466.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GJ0GY",
+          "code": "4GJ0GY",
+          "name": "Allroad 3.0 TDI quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59791.0,
+              "priceRetail": 59791.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GJ0VA",
+          "code": "4GJ0VA",
+          "name": "Allroad 3.0 BiTDI quattro tiptronic",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 63647.0,
+              "priceRetail": 63647.0
+            }
+          ]
+        }
+      ]
+    },
+    "S6": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GCSFY",
+          "code": "4GCSFY",
+          "name": "4.0 TFSI quattro S tronic",
+          "co2": 214,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 69806.0,
+              "priceRetail": 69806.0
+            }
+          ]
+        }
+      ]
+    },
+    "RS6": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GDRAA",
+          "code": "4GDRAA",
+          "name": "Avant 4.0 TFSI quattro tiptronic 8",
+          "co2": 223,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 97489.0,
+              "priceRetail": 97489.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GDRRA",
+          "code": "4GDRRA",
+          "name": "Avant Performance 4.0 TFSI quattro tiptronic 8",
+          "co2": 223,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 103881.0,
+              "priceRetail": 103881.0
+            }
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GF06G",
+          "code": "4GF06G",
+          "name": "Sportback 1.8 TFSI ultra S tronic",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43405.0,
+              "priceRetail": 43405.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GF08G",
+          "code": "4GF08G",
+          "name": "Sportback 2.0 TFSI S tronic",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44567.0,
+              "priceRetail": 44567.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GF08Y",
+          "code": "4GF08Y",
+          "name": "Sportback 2.0 TFSI quattro S tronic",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46736.0,
+              "priceRetail": 46736.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GF0TG",
+          "code": "4GF0TG",
+          "name": "Sportback 3.0 TDI ultra S tronic",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50321.0,
+              "priceRetail": 50321.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GF0TY",
+          "code": "4GF0TY",
+          "name": "Sportback 3.0 TDI quattro S tronic",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52513.0,
+              "priceRetail": 52513.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GF0GY",
+          "code": "4GF0GY",
+          "name": "Sportback 3.0 TDI quattro S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52575.0,
+              "priceRetail": 52575.0
+            }
+          ]
+        }
+      ]
+    },
+    "S7": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GFSFY",
+          "code": "4GFSFY",
+          "name": "Sportback 4.0 TFSI quattro S tronic",
+          "co2": 215,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 78396.0,
+              "priceRetail": 78396.0
+            }
+          ]
+        }
+      ]
+    },
+    "RS7": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4GFRAA",
+          "code": "4GFRAA",
+          "name": "Sportback 4.0 TFSI quattro tiptronic 8.",
+          "co2": 221,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 102454.0,
+              "priceRetail": 102454.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4GFRRA",
+          "code": "4GFRRA",
+          "name": "Sportback Performance 4.0 TFSI quattro tiptronic 8.",
+          "co2": 221,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 105223.0,
+              "priceRetail": 105223.0
+            }
+          ]
+        }
+      ]
+    },
+    "TT": {
+      "category": "Coupe/Roadster",
+      "editions": [
+        {
+          "factoryCode": "FV306C",
+          "code": "FV306C",
+          "name": "Coupé 1.8 TFSI (6 ταχύτητες)",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32475.0,
+              "priceRetail": 32475.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV306G",
+          "code": "FV306G",
+          "name": "Coupé 1.8 TFSI S tronic",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34077.0,
+              "priceRetail": 34077.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV307L",
+          "code": "FV307L",
+          "name": "Coupé 2.0 TFSI quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40394.0,
+              "priceRetail": 40394.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV906C",
+          "code": "FV906C",
+          "name": "Roadster 1.8 TFSI (6 ταχύτητες)",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33731.0,
+              "priceRetail": 33731.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV906G",
+          "code": "FV906G",
+          "name": "Roadster 1.8 TFSI S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35333.0,
+              "priceRetail": 35333.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV907L",
+          "code": "FV907L",
+          "name": "Roadster 2.0 TFSI quattro S tronic",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41626.0,
+              "priceRetail": 41626.0
+            }
+          ]
+        }
+      ]
+    },
+    "TTS": {
+      "category": "Coupe/Roadster",
+      "editions": [
+        {
+          "factoryCode": "FV3S39",
+          "code": "FV3S39",
+          "name": "Coupé 2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 164,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52717.0,
+              "priceRetail": 52717.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV3S3L",
+          "code": "FV3S3L",
+          "name": "Coupé 2.0 TFSI quattro S tronic",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54310.0,
+              "priceRetail": 54310.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV9S39",
+          "code": "FV9S39",
+          "name": "Roadster 2.0 TFSI quattro (6 ταχύτητες)",
+          "co2": 169,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 53925.0,
+              "priceRetail": 53925.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FV9S3L",
+          "code": "FV9S3L",
+          "name": "Roadster 2.0 TFSI quattro S tronic",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 55542.0,
+              "priceRetail": 55542.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q2": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GABANC",
+          "code": "GABANC",
+          "name": "1.0 TFSI (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17071.0,
+              "priceRetail": 17071.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBNC",
+          "code": "GABBNC",
+          "name": "1.0 TFSI Sport (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18857.0,
+              "priceRetail": 18857.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCNC",
+          "code": "GABCNC",
+          "name": "1.0 TFSI Design (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18857.0,
+              "priceRetail": 18857.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABANG",
+          "code": "GABANG",
+          "name": "1.0 TFSI S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19000.0,
+              "priceRetail": 19000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBNG",
+          "code": "GABBNG",
+          "name": "1.0 TFSI Sport S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20608.0,
+              "priceRetail": 20608.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCNG",
+          "code": "GABCNG",
+          "name": "1.0 TFSI Design S tronic",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20608.0,
+              "priceRetail": 20608.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABACC",
+          "code": "GABACC",
+          "name": "1.4 TFSI CoD (6 ταχύτητες)",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19492.0,
+              "priceRetail": 19492.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBCC",
+          "code": "GABBCC",
+          "name": "1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20944.0,
+              "priceRetail": 20944.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCCC",
+          "code": "GABCCC",
+          "name": "1.4 TFSI CoD Design (6 ταχύτητες)",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20944.0,
+              "priceRetail": 20944.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABACG",
+          "code": "GABACG",
+          "name": "1.4 TFSI CoD S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21216.0,
+              "priceRetail": 21216.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBCG",
+          "code": "GABBCG",
+          "name": "1.4 TFSI CoD Sport S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22770.0,
+              "priceRetail": 22770.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCCG",
+          "code": "GABCCG",
+          "name": "1.4 TFSI CoD Design S tronic",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22770.0,
+              "priceRetail": 22770.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAFC",
+          "code": "GABAFC",
+          "name": "1.6 TDI (6 ταχύτητες)",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19500.0,
+              "priceRetail": 19500.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBFC",
+          "code": "GABBFC",
+          "name": "1.6 TDI Sport (6 ταχύτητες)",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21081.0,
+              "priceRetail": 21081.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCFC",
+          "code": "GABCFC",
+          "name": "1.6 TDI Design (6 ταχύτητες)",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21081.0,
+              "priceRetail": 21081.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABAFG",
+          "code": "GABAFG",
+          "name": "1.6 TDI S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21216.0,
+              "priceRetail": 21216.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBFG",
+          "code": "GABBFG",
+          "name": "1.6 TDI Sport S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22770.0,
+              "priceRetail": 22770.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCFG",
+          "code": "GABCFG",
+          "name": "1.6 TDI Design S tronic",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22770.0,
+              "priceRetail": 22770.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABARY",
+          "code": "GABARY",
+          "name": "2.0 TDI quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23604.0,
+              "priceRetail": 23604.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBRY",
+          "code": "GABBRY",
+          "name": "2.0 TDI Sport quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25001.0,
+              "priceRetail": 25001.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCRY",
+          "code": "GABCRY",
+          "name": "2.0 TDI Design quattro S tronic",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25001.0,
+              "priceRetail": 25001.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABATY",
+          "code": "GABATY",
+          "name": "2.0 TDI quattro S tronic",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25001.0,
+              "priceRetail": 25001.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABBTY",
+          "code": "GABBTY",
+          "name": "2.0 TDI Sport quattro S tronic",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26445.0,
+              "priceRetail": 26445.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "GABCTY",
+          "code": "GABCTY",
+          "name": "2.0 TDI Design quattro S tronic",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26445.0,
+              "priceRetail": 26445.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q3": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "8UGAJC",
+          "code": "8UGAJC",
+          "name": "1.4 TFSI (125hp) (6 ταχύτητες)",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19986.0,
+              "priceRetail": 19986.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGA6C",
+          "code": "8UGA6C",
+          "name": "1.4 TFSI CoD ultra (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20013.0,
+              "priceRetail": 20013.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGB6C",
+          "code": "8UGB6C",
+          "name": "1.4 TFSI CoD Sport ultra (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21642.0,
+              "priceRetail": 21642.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGC6C",
+          "code": "8UGC6C",
+          "name": "1.4 TFSI CoD Design ultra (6 ταχύτητες)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21642.0,
+              "priceRetail": 21642.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGA6X",
+          "code": "8UGA6X",
+          "name": "1.4 TFSI CoD S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21509.0,
+              "priceRetail": 21509.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGB6X",
+          "code": "8UGB6X",
+          "name": "1.4 TFSI CoD Sport S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23105.0,
+              "priceRetail": 23105.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGC6X",
+          "code": "8UGC6X",
+          "name": "1.4 TFSI CoD Design S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23105.0,
+              "priceRetail": 23105.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGA8Y",
+          "code": "8UGA8Y",
+          "name": "2.0 TFSI (180hp) quattro S tronic",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25000.0,
+              "priceRetail": 25000.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGB8Y",
+          "code": "8UGB8Y",
+          "name": "2.0 TFSI (180hp) Sport quattro S tronic",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26632.0,
+              "priceRetail": 26632.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGC8Y",
+          "code": "8UGC8Y",
+          "name": "2.0 TFSI (180hp) Design quattro S tronic",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26632.0,
+              "priceRetail": 26632.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBEY",
+          "code": "8UGBEY",
+          "name": "2.0 TFSI (220hp) Sport quattro S tronic",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27432.0,
+              "priceRetail": 27432.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCEY",
+          "code": "8UGCEY",
+          "name": "2.0 TFSI (220hp) Design quattro S tronic",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27432.0,
+              "priceRetail": 27432.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGAGC",
+          "code": "8UGAGC",
+          "name": "2.0 TDI (150hp) (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24155.0,
+              "priceRetail": 24155.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBGC",
+          "code": "8UGBGC",
+          "name": "2.0 TDI (150hp) Sport (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25769.0,
+              "priceRetail": 25769.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCGC",
+          "code": "8UGCGC",
+          "name": "2.0 TDI (150hp) Design (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25769.0,
+              "priceRetail": 25769.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGAGG",
+          "code": "8UGAGG",
+          "name": "2.0 TDI (150hp) S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25628.0,
+              "priceRetail": 25628.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBGG",
+          "code": "8UGBGG",
+          "name": "2.0 TDI (150hp) Sport S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27261.0,
+              "priceRetail": 27261.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCGG",
+          "code": "8UGCGG",
+          "name": "2.0 TDI (150hp) Design S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27261.0,
+              "priceRetail": 27261.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGAG9",
+          "code": "8UGAG9",
+          "name": "2.0 TDI (150hp) quattro (6 ταχύτητες)",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25440.0,
+              "priceRetail": 25440.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBG9",
+          "code": "8UGBG9",
+          "name": "2.0 TDI (150hp) Sport quattro (6 ταχύτητες)",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27073.0,
+              "priceRetail": 27073.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCG9",
+          "code": "8UGCG9",
+          "name": "2.0 TDI (150hp) Design quattro (6 ταχύτητες)",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27073.0,
+              "priceRetail": 27073.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGAGY",
+          "code": "8UGAGY",
+          "name": "2.0 TDI (150hp) quattro S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26947.0,
+              "priceRetail": 26947.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBGY",
+          "code": "8UGBGY",
+          "name": "2.0 TDI (150hp) Sport quattro S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28549.0,
+              "priceRetail": 28549.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCGY",
+          "code": "8UGCGY",
+          "name": "2.0 TDI (150hp) Design quattro S tronic",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28549.0,
+              "priceRetail": 28549.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGAB9",
+          "code": "8UGAB9",
+          "name": "2.0 TDI (184hp) quattro (6 ταχύτητες)",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27858.0,
+              "priceRetail": 27858.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBB9",
+          "code": "8UGBB9",
+          "name": "2.0 TDI (184hp) Sport quattro (6 ταχύτητες)",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29460.0,
+              "priceRetail": 29460.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCB9",
+          "code": "8UGCB9",
+          "name": "2.0 TDI (184hp) Design quattro (6 ταχύτητες)",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29460.0,
+              "priceRetail": 29460.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGABY",
+          "code": "8UGABY",
+          "name": "2.0 TDI (184hp) quattro S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29334.0,
+              "priceRetail": 29334.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGBBY",
+          "code": "8UGBBY",
+          "name": "2.0 TDI (184hp) Sport quattro S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30936.0,
+              "priceRetail": 30936.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGCBY",
+          "code": "8UGCBY",
+          "name": "2.0 TDI (184hp) Design quattro S tronic",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30936.0,
+              "priceRetail": 30936.0
+            }
+          ]
+        }
+      ]
+    },
+    "RS": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8UGR7Y",
+          "code": "8UGR7Y",
+          "name": "Q3 2.5 TFSI quattro S tronic",
+          "co2": 203,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36159.0,
+              "priceRetail": 36159.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8UGRWY",
+          "code": "8UGRWY",
+          "name": "Q3 Performance 2.5 TFSI quattro S tronic",
+          "co2": 203,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39013.0,
+              "priceRetail": 39013.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q5": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "8RB0ZY",
+          "code": "8RB0ZY",
+          "name": "2.0 TDI quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30757.0,
+              "priceRetail": 30757.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "8RB0RY",
+          "code": "8RB0RY",
+          "name": "2.0 TDI quattro S tronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31804.0,
+              "priceRetail": 31804.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBAAY",
+          "code": "FYBAAY",
+          "name": "2.0 TFSI quattro S tronic",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40579.0,
+              "priceRetail": 40579.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBBAY",
+          "code": "FYBBAY",
+          "name": "2.0 TFSI Sport quattro S tronic",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42365.0,
+              "priceRetail": 42365.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBCAY",
+          "code": "FYBCAY",
+          "name": "2.0 TFSI Design quattro S tronic",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42365.0,
+              "priceRetail": 42365.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBABC",
+          "code": "FYBABC",
+          "name": "2.0 TDI (6 ταχύτητες)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32372.0,
+              "priceRetail": 32372.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBBBC",
+          "code": "FYBBBC",
+          "name": "2.0 TDI Sport (6 ταχύτητες)",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34167.0,
+              "priceRetail": 34167.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBCBC",
+          "code": "FYBCBC",
+          "name": "2.0 TDI Design (6 ταχύτητες)",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34167.0,
+              "priceRetail": 34167.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBAFY",
+          "code": "FYBAFY",
+          "name": "2.0 TDI quattro S tronic",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37626.0,
+              "priceRetail": 37626.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBBFY",
+          "code": "FYBBFY",
+          "name": "2.0 TDI Sport quattro S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39416.0,
+              "priceRetail": 39416.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "FYBCFY",
+          "code": "FYBCFY",
+          "name": "2.0 TDI Design quattro S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39416.0,
+              "priceRetail": 39416.0
+            }
+          ]
+        }
+      ]
+    },
+    "Q7": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4MB0E1",
+          "code": "4MB0E1",
+          "name": "3.0 TDI quattro tiptronic",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56589.0,
+              "priceRetail": 56589.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4MB0E3",
+          "code": "4MB0E3",
+          "name": "e-tron 3.0 TDI quattro tiptronic",
+          "co2": 50,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 76365.0,
+              "priceRetail": 76365.0
+            }
+          ]
+        }
+      ]
+    },
+    "SQ7": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4MBSU1",
+          "code": "4MBSU1",
+          "name": "4.0 TDI quattro tiptronic",
+          "co2": 189,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 83413.0,
+              "priceRetail": 83413.0
+            }
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4HC0CA",
+          "code": "4HC0CA",
+          "name": "4.0 TFSI quattro tiptronic",
+          "co2": 206,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 86501.0,
+              "priceRetail": 86501.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HC06A",
+          "code": "4HC06A",
+          "name": "3.0 TDI quattro tiptronic",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65764.0,
+              "priceRetail": 65764.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HC0TA",
+          "code": "4HC0TA",
+          "name": "4.2 TDI quattro tiptronic",
+          "co2": 189,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 88033.0,
+              "priceRetail": 88033.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HL0CA",
+          "code": "4HL0CA",
+          "name": "4.0 TFSI quattro tiptronic Long",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 87700.0,
+              "priceRetail": 87700.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HL06A",
+          "code": "4HL06A",
+          "name": "3.0 TDI quattro tiptronic Long",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66595.0,
+              "priceRetail": 66595.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HL0TA",
+          "code": "4HL0TA",
+          "name": "4.2 TDI quattro tiptronic Long",
+          "co2": 190,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 89218.0,
+              "priceRetail": 89218.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4HL0GA",
+          "code": "4HL0GA",
+          "name": "W12 6.3 FSI quattro tiptronic Long",
+          "co2": 254,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 121303.0,
+              "priceRetail": 121303.0
+            }
+          ]
+        }
+      ]
+    },
+    "S8": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4HCSSA",
+          "code": "4HCSSA",
+          "name": "4.0 TFSI quattro tiptronic",
+          "co2": 216,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 97888.0,
+              "priceRetail": 97888.0
+            }
+          ]
+        }
+      ]
+    },
+    "R8": {
+      "category": "Coupe/Roadster",
+      "editions": [
+        {
+          "factoryCode": "4S30AE",
+          "code": "4S30AE",
+          "name": "V10 5.2 FSI quattro S tronic",
+          "co2": 272,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 144894.0,
+              "priceRetail": 144894.0
+            }
+          ]
+        },
+        {
+          "factoryCode": "4S30BE",
+          "code": "4S30BE",
+          "name": "V10 plus 5.2 FSI quattro S tronic",
+          "co2": 287,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 163032.0,
+              "priceRetail": 163032.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
