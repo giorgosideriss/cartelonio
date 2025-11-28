@@ -203,7 +203,7 @@ function populateColors() {
   const model    = modelEl.value;
   const edIndex  = parseInt(verEl.value, 10);
 
-  colorEl.innerHTML = '<option value="">Επιλέξτε Χρώμα</option>';
+  colorEl.innerHTML = '<option value="">Επιλέξτε Extra</option>';
 
   if (!currentDataset || !currentDataset.models || !model) return;
   if (isNaN(edIndex)) return;
