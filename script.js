@@ -7,11 +7,11 @@ const DATA_SOURCES = {
     "2021": "data/toyota/2021/2021.json"
   },
   "Audi": {
-    "2017": "data/audi/2017/2017.json"
+    "2017": "data/audi/2017/2017.json",
     "2018": "data/audi/2018/2018.json"
-
   }
 };
+
 
 
 
