@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="el">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-<link rel="stylesheet" href="style.css">
-<!-- ADPLACEHOLDER: Paste your Google AdSense script here after approval -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ADPLACEHOLDER: Paste your Google AdSense script here after approval -->
 
-<!--
-    <meta name="google-adsense-account" content="ca-pub-3754487072936423">
+  <!--
+  <meta name="google-adsense-account" content="ca-pub-3754487072936423">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3754487072936423"
      crossorigin="anonymous"></script>
--->
+  -->
 </head>
 <body>
 <header class="header">
@@ -21,6 +21,19 @@
   </div>
 </header>
 
+<!--
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3754487072936423"
+     data-ad-slot="1234567890"
+     data-ad-format="auto"
+     data-full-width-responsive="true">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+-->
+
 <div style="text-align:center;">
   <img src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" alt="description" width="300">
 </div>
@@ -29,39 +42,6 @@
   <section class="card">
     <form id="calcForm" autocomplete="off">
 
-      <!-- Μάρκα / Έτος / Μοντέλο / Έκδοση -->
-      <div class="row">
-        <label for="brandSelect">Μάρκα</label>
-        <select id="brandSelect"></select>
-      </div>
-
-      <div class="row">
-        <label for="yearSelect">Χρονολογία</label>
-        <select id="yearSelect"></select>
-      </div>
-
-      <div class="row">
-        <label for="modelSelect">Μοντέλο</label>
-        <select id="modelSelect"></select>
-      </div>
-
-      <div class="row">
-        <label for="versionSelect">Έκδοση</label>
-        <select id="versionSelect"></select>
-      </div>
-
-      <div class="row">
-        <label for="colorSelect">Έκδοση εξοπλισμού / Βασικό Extra</label>
-        <select id="colorSelect"></select>
-      </div>
-
-      <!-- ΠΡΟΑΙΡΕΤΙΚΑ EXTRAS (checkboxes) -->
-      <div class="row">
-        <label for="extrasContainer">Προαιρετικός Εξοπλισμός</label>
-        <div id="extrasContainer"></div>
-      </div>
-
-      <!-- ΛΤΠΦ -->
       <div class="row">
         <label for="price">
           Τιμή Οχήματος - ΛΤΠΦ (€)
@@ -74,6 +54,43 @@
           </span>
         </label>
         <input type="number" id="price" required step="0.01" value="">
+      </div>
+
+      <div class="row">
+        <label>Μάρκα</label>
+        <select id="brandSelect"></select>
+      </div>
+
+      <div class="row">
+        <label>Χρονολογία</label>
+        <select id="yearSelect"></select>
+      </div>
+
+      <div class="row">
+        <label>Μοντέλο</label>
+        <select id="modelSelect"></select>
+      </div>
+
+      <div class="row">
+        <label>Έκδοση</label>
+        <select id="versionSelect"></select>
+      </div>
+
+      <!-- ΝΕΟ Custom dropdown για Extras (με checkboxes) -->
+      <div class="row">
+        <label>Extras</label>
+        <div class="extras-dropdown">
+          <button type="button" id="extrasToggle" class="extras-toggle" disabled>
+            <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
+            <span class="extras-toggle-arrow">▾</span>
+          </button>
+          <div id="extrasPanel" class="extras-panel"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>Επιλογή ΛΤΠΦ (χρώμα/πακέτο)</label>
+        <select id="colorSelect"></select>
       </div>
 
       <div class="row">
@@ -121,7 +138,7 @@
   </footer>
 </main>
 
-<!-- αν θες άστο, αλλιώς μπορείς να το σβήσεις -->
+<!-- Μπορεί να μείνει, δεν επηρεάζει τίποτα πλέον -->
 <script src="data/toyota/2021/2021.json"></script>
 <script src="script.js"></script>
 
