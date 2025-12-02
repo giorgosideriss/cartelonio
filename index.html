@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Υπολογιστής Τέλους Ταξινόμησης — cartelonio</title>
+<title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,7 @@
 <header class="header">
   <div class="container">
     <h1>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου</h1>
-    <p class="subtitle">Υπολογισμός τελωνείου για εισαγωγή οχήματος από ΕΕ.</p>
+    <p class="subtitle">Υπολογισμός τελών για εισαγόμενο όχημα.</p>
   </div>
 </header>
 
@@ -20,79 +20,62 @@
 </div>
 
 <main class="container">
-
   <section class="card">
     <form id="calcForm" autocomplete="off">
 
-      <!-- BRAND -->
       <div class="row">
         <label>Μάρκα</label>
         <select id="brandSelect"></select>
       </div>
 
-      <!-- YEAR -->
       <div class="row">
         <label>Χρονολογία</label>
         <select id="yearSelect"></select>
       </div>
 
-      <!-- MODEL -->
       <div class="row">
         <label>Μοντέλο</label>
         <select id="modelSelect"></select>
       </div>
 
-      <!-- EDITION -->
       <div class="row">
         <label>Έκδοση</label>
         <select id="versionSelect"></select>
       </div>
 
-      <!-- VARIANT (ΧΡΩΜΑ / ΚΩΔΙΚΟΣ) -->
+      <!-- ✅ ΕΝΑ ΜΟΝΟ ΠΕΔΙΟ EXTRAS, ΣΩΣΤΗ ΘΕΣΗ -->
       <div class="row">
-        <label>Επιλογή Έκδοσης / Variant</label>
-        <select id="colorSelect"></select>
-      </div>
-
-      <!-- EXTRAS (ΠΟΛΛΑΠΛΗΣ ΕΠΙΛΟΓΗΣ) -->
-      <div class="row">
-        <label>Extras (πολλαπλής επιλογής)</label>
+        <label>Extras</label>
         <select id="extras" multiple size="8"></select>
       </div>
 
-      <!-- PRICE -->
       <div class="row">
         <label for="price">Τιμή ΛΤΠΦ (€)</label>
         <input type="number" id="price" step="0.01">
       </div>
 
-      <!-- CATEGORY -->
       <div class="row">
-        <label for="category">Κατηγορία Οχήματος</label>
+        <label for="category">Κατηγορία</label>
         <select id="category"></select>
       </div>
 
-      <!-- FIRST REG -->
       <div class="row">
         <label for="firstReg">Πρώτη Άδεια</label>
         <input type="date" id="firstReg">
       </div>
 
-      <!-- IMPORT DATE -->
       <div class="row">
         <label for="importDate">Ημερομηνία Εισαγωγής</label>
         <input type="date" id="importDate">
       </div>
 
-      <!-- KM -->
       <div class="row">
         <label for="mileage">Χιλιόμετρα</label>
         <input type="number" id="mileage">
       </div>
 
-      <!-- CO2 -->
       <div class="row">
-        <label for="co2">Εκπομπές CO₂</label>
+        <label for="co2">CO₂</label>
         <input type="number" id="co2">
       </div>
 
@@ -104,17 +87,16 @@
     </form>
   </section>
 
-  <section class="card result" id="resultCard">
+  <section class="card result">
     <h2>Υπολογισμός</h2>
     <div id="results">
-      <p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>
+      <p>Συμπληρώστε τα στοιχεία…</p>
     </div>
   </section>
 
   <footer class="muted">
     <p>cartelonio - Giorgos Sideris</p>
   </footer>
-
 </main>
 
 <script src="script.js"></script>
