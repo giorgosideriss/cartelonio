@@ -14,13 +14,13 @@ const DATA_SOURCES = {
   }
 };
 
-// Τρέχον σετ δεδομένων (π.χ. Toyota 2021)
+// Τρέχον σετ δεδομένων
 let currentDataset = null;
 
-// Για extras
-let currentBasePrice = 0;        // τιμή ΛΤΠΦ χωρίς extras
-let currentExtras = [];          // λίστα extras για την τρέχουσα έκδοση
-let selectedExtras = new Set();  // indexes των επιλεγμένων extras
+// Extras
+let currentBasePrice = 0;        // ΛΤΠΦ χωρίς extras
+let currentExtras = [];          // λίστα extras της έκδοσης
+let selectedExtras = new Set();  // indexes επιλεγμένων extras
 
 /* === CATEGORY DEPRECIATION TABLES (από Excel) === */
 const categories = {
@@ -110,21 +110,29 @@ function getExtrasTotal() {
 }
 
 function recalcPriceWithExtras() {
-  const priceInput = document.getElementById("price");
-  const extrasLabel = document.querySelector(".extras-toggle-label");
+  const priceInput  = document.getElementById("price");
+  const labelSpan   = document.querySelector(".extras-toggle-label");
 
   const extrasTotal = getExtrasTotal();
-  const finalPrice = currentBasePrice + extrasTotal;
+  const finalPrice  = currentBasePrice + extrasTotal;
 
   if (!isNaN(finalPrice)) {
     priceInput.value = finalPrice.toFixed(2);
   }
 
-  if (extrasLabel) {
-    const count = selectedExtras.size;
-    extrasLabel.textContent = count === 0
-      ? "Επιλέξτε extras"
-      : `Επιλεγμένα extras: ${count}`;
+  if (!labelSpan) return;
+
+  const count = selectedExtras.size;
+  if (currentExtras.length === 0) {
+    labelSpan.textContent = "Δεν υπάρχουν extras";
+  } else if (count === 0) {
+    labelSpan.textContent = "Χωρίς επιπλέον extras";
+  } else {
+    const formatted = extrasTotal.toLocaleString("el-GR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    labelSpan.textContent = `${count} επιλεγμένα (+${formatted} €)`;
   }
 }
 
@@ -139,8 +147,8 @@ function handleExtraCheckboxChange(e) {
 }
 
 function loadExtras(extrasList) {
+  const panel    = document.getElementById("extrasPanel");
   const toggleBtn = document.getElementById("extrasToggle");
-  const panel = document.getElementById("extrasPanel");
   const labelSpan = document.querySelector(".extras-toggle-label");
 
   currentExtras = extrasList || [];
@@ -148,28 +156,37 @@ function loadExtras(extrasList) {
   panel.innerHTML = "";
 
   if (!currentExtras || currentExtras.length === 0) {
-    if (toggleBtn) toggleBtn.disabled = true;
-    if (labelSpan) labelSpan.textContent = "Δεν υπάρχουν extras";
+    if (toggleBtn) {
+      toggleBtn.disabled = true;
+    }
+    if (labelSpan) {
+      labelSpan.textContent = "Δεν υπάρχουν extras";
+    }
     recalcPriceWithExtras();
     return;
   }
 
-  if (toggleBtn) toggleBtn.disabled = false;
-  if (labelSpan) labelSpan.textContent = "Επιλέξτε extras";
+  if (toggleBtn) {
+    toggleBtn.disabled = false;
+  }
+  if (labelSpan) {
+    labelSpan.textContent = "Επιλέξτε extras";
+  }
 
   currentExtras.forEach((extra, idx) => {
     const price = Number(extra.price);
-    if (!price) return; // αγνόησε 0 / STD
+    if (!price) return; // αγνόησε STD
 
     const row = document.createElement("label");
     row.className = "extras-option";
 
     const cb = document.createElement("input");
-    cb.type = "checkbox";
-    cb.value = idx;
+    cb.type  = "checkbox";
+    cb.value = String(idx);
     cb.addEventListener("change", handleExtraCheckboxChange);
 
     const text = document.createElement("span");
+    text.className = "extras-option-text";
     text.textContent = `${extra.name} (+${price.toFixed(2)} €)`;
 
     row.appendChild(cb);
@@ -196,8 +213,6 @@ async function loadDatasetForSelection() {
   modelEl.innerHTML  = '<option value="">Επιλέξτε Μοντέλο</option>';
   verEl.innerHTML    = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML  = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
-
-  // reset extras
   loadExtras([]);
 
   if (!brand || !year) return;
@@ -255,7 +270,6 @@ function populateModels() {
   modelEl.innerHTML = '<option value="">Επιλέξτε Μοντέλο</option>';
   verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
-
   loadExtras([]);
 
   if (!currentDataset || !currentDataset.models) return;
@@ -276,7 +290,6 @@ function populateVersions() {
 
   verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
-
   loadExtras([]);
 
   if (!currentDataset || !currentDataset.models || !model) return;
@@ -286,7 +299,7 @@ function populateVersions() {
 
   modelObj.editions.forEach((ed, index) => {
     const opt = document.createElement("option");
-    opt.value = String(index); // index της έκδοσης
+    opt.value = String(index);
     opt.textContent = ed.name;
     verEl.appendChild(opt);
   });
@@ -301,7 +314,6 @@ function populateColors() {
   const edIndex  = parseInt(verEl.value, 10);
 
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
-
   loadExtras([]);
 
   if (!currentDataset || !currentDataset.models || !model) return;
@@ -318,10 +330,9 @@ function populateColors() {
     colorEl.appendChild(opt);
   });
 
-  // Φορτώνουμε και τα extras της συγκεκριμένης έκδοσης
+  // extras για την έκδοση
   loadExtras(edition.extras || []);
 
-  // Αν έχει τουλάχιστον μία variant, διάλεξε την πρώτη
   if (edition.variants.length > 0) {
     colorEl.value = "0";
     autoFillCarData();
@@ -347,25 +358,20 @@ function autoFillCarData() {
   const variant  = edition.variants && edition.variants[colorIdx];
   if (!variant) return;
 
-  // Τιμή ΛΤΠΦ (βάση, χωρίς extras)
   currentBasePrice = Number(variant.priceNet) || 0;
 
-  // Φόρτωση extras για την έκδοση
   if (Array.isArray(edition.extras)) {
     loadExtras(edition.extras);
   } else {
     loadExtras([]);
   }
 
-  // Τιμή στο input με βάση βάση + extras
   recalcPriceWithExtras();
 
-  // Εκπομπές CO2
   if (edition.co2 != null) {
     document.getElementById("co2").value = edition.co2;
   }
 
-  // Κατηγορία αμαξώματος από το JSON
   if (modelObj.category && categories[modelObj.category]) {
     document.getElementById("category").value = modelObj.category;
   }
@@ -403,10 +409,10 @@ function calculate(){
   `;
 }
 
-/* ========== ΑΡΧΙΚΟΠΟΙΗΣΗ ΜΟΛΙΣ ΦΟΡΤΩΣΕΙ Η ΣΕΛΙΔΑ ========== */
+/* ========== ΑΡΧΙΚΟΠΟΙΗΣΗ ========== */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Γέμισμα dropdown κατηγορίας
+  // dropdown κατηγορίας
   const categorySelect = document.getElementById("category");
   categorySelect.innerHTML = "";
   Object.keys(categories).forEach(cat => {
@@ -418,9 +424,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Μάρκα / Έτος
   populateBrandSelect();
-  populateYearSelect(); // κενό στην αρχή
+  populateYearSelect();
 
-  // Event listeners για επιλογές αυτοκινήτου
   document.getElementById("brandSelect").addEventListener("change", () => {
     populateYearSelect();
     currentDataset = null;
@@ -448,17 +453,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Extras dropdown toggle
   const extrasDropdown = document.querySelector(".extras-dropdown");
-  const extrasToggle = document.getElementById("extrasToggle");
+  const extrasToggle   = document.getElementById("extrasToggle");
 
-  extrasToggle.addEventListener("click", () => {
-    extrasDropdown.classList.toggle("open");
-  });
+  if (extrasDropdown && extrasToggle) {
+    extrasToggle.addEventListener("click", () => {
+      extrasDropdown.classList.toggle("open");
+    });
 
-  document.addEventListener("click", (e) => {
-    if (!extrasDropdown.contains(e.target)) {
-      extrasDropdown.classList.remove("open");
-    }
-  });
+    document.addEventListener("click", (e) => {
+      if (!extrasDropdown.contains(e.target)) {
+        extrasDropdown.classList.remove("open");
+      }
+    });
+  }
 
   // Κουμπιά υπολογισμού / reset
   document.getElementById("calcBtn").addEventListener("click", calculate);
