@@ -147,7 +147,7 @@ function handleExtraCheckboxChange(e) {
 }
 
 function loadExtras(extrasList) {
-  const panel    = document.getElementById("extrasPanel");
+  const panel     = document.getElementById("extrasPanel");
   const toggleBtn = document.getElementById("extrasToggle");
   const labelSpan = document.querySelector(".extras-toggle-label");
 
@@ -156,26 +156,18 @@ function loadExtras(extrasList) {
   panel.innerHTML = "";
 
   if (!currentExtras || currentExtras.length === 0) {
-    if (toggleBtn) {
-      toggleBtn.disabled = true;
-    }
-    if (labelSpan) {
-      labelSpan.textContent = "Δεν υπάρχουν extras";
-    }
+    if (toggleBtn) toggleBtn.disabled = true;
+    if (labelSpan) labelSpan.textContent = "Δεν υπάρχουν extras";
     recalcPriceWithExtras();
     return;
   }
 
-  if (toggleBtn) {
-    toggleBtn.disabled = false;
-  }
-  if (labelSpan) {
-    labelSpan.textContent = "Επιλέξτε extras";
-  }
+  if (toggleBtn) toggleBtn.disabled = false;
+  if (labelSpan) labelSpan.textContent = "Επιλέξτε extras";
 
   currentExtras.forEach((extra, idx) => {
     const price = Number(extra.price);
-    if (!price) return; // αγνόησε STD
+    if (!price) return; // αγνόησε STD / 0
 
     const row = document.createElement("label");
     row.className = "extras-option";
