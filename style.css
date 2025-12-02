@@ -16,23 +16,11 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-.container{
-  max-width:920px;
-  margin:34px auto;
-  padding:18px;
-}
+.container{max-width:920px;margin:34px auto;padding:18px}
 
-.header{
-  padding:22px 0;
-}
-.header h1{
-  margin:0;
-  font-size:24px;
-}
-.subtitle{
-  color:var(--muted);
-  margin-top:2px;
-}
+.header{padding:22px 0}
+.header h1{margin:0;font-size:24px}
+.subtitle{color:var(--muted);margin-top:2px}
 
 .card{
   background:var(--card);
@@ -45,16 +33,16 @@ body{
 .row{
   display:flex;
   flex-direction:column;
-  margin-bottom:16px;
+  margin-bottom:12px;
 }
+
 .row label{
   font-size:13px;
   color:var(--muted);
   margin-bottom:6px;
 }
 
-input,
-select{
+input, select{
   padding:12px 14px;
   border:1px solid #e6eef7;
   border-radius:10px;
@@ -62,23 +50,36 @@ select{
   background:white;
 }
 
-/* EXTRA MULTI-SELECT */
-#extras {
-  min-height: 120px;
-  padding: 10px;
-  border-radius: 12px;
-  border: 1px solid #c7ced9;
-  background:white;
-  font-size: 14px;
+/* Να μην «φορτώνουμε» τα checkbox με το ίδιο style */
+input[type="checkbox"]{
+  width:auto;
+  padding:0;
+  border:none;
+  border-radius:0;
+  box-shadow:none;
 }
-#extras option{
-  padding:6px;
-  border-bottom:1px solid #efefef;
-  cursor:pointer;
+
+/* Extras container (checkbox λίστα) */
+#extrasContainer{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  padding:8px 10px;
+  background:#f5f5f5;
+  border-radius:10px;
+  border:1px solid #e0e0e0;
+  min-height:42px;
 }
-#extras option:checked{
-  background: #208200;
-  color:white;
+
+.extra-item{
+  display:flex;
+  align-items:center;
+  font-size:14px;
+  margin-bottom:2px;
+}
+
+.extra-item input[type="checkbox"]{
+  margin-right:8px;
 }
 
 .actions{
@@ -110,37 +111,38 @@ button.secondary{
   margin-top:8px;
 }
 
-.tooltip{
-  display:inline-block;
-  position:relative;
-  cursor:help;
-  margin-left:6px;
-  font-weight:bold;
-  color:#2b2b2b;
+/* Tooltip */
+.tooltip {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+  margin-left: 6px;
+  font-weight: bold;
+  color: #2b2b2b;
 }
 
-.tooltip .tooltiptext{
-  visibility:hidden;
-  width:350px;
-  background-color:#2b2b2b;
-  color:#e0e6f0;
-  text-align:left;
-  padding:5px 10px;
-  border-radius:18px;
-  position:absolute;
-  z-index:1;
-  bottom:125%;
-  left:50%;
-  transform:translateX(-50%);
-  opacity:0;
-  transition:opacity 0.6s ease;
-  font-size:0.80rem;
-  line-height:1.2;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #2b2b2b;
+  color: #e0e6f0;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 18px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  font-size: 0.80rem;
+  line-height: 1.2;
 }
 
-.tooltip:hover .tooltiptext{
-  visibility:visible;
-  opacity:0.55;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.55;
 }
 
 @media(min-width:720px){
@@ -156,7 +158,7 @@ button.secondary{
   }
   .row input,
   .row select,
-  #extras{
+  .row #extrasContainer{
     flex-grow:1;
   }
 }
