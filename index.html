@@ -5,78 +5,100 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
 <link rel="stylesheet" href="style.css">
-</head>
+<!-- ADPLACEHOLDER: Paste your Google AdSense script here after approval -->
 
+<!--
+    <meta name="google-adsense-account" content="ca-pub-3754487072936423">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3754487072936423"
+     crossorigin="anonymous"></script>
+-->
+</head>
 <body>
 <header class="header">
   <div class="container">
     <h1>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου</h1>
-    <p class="subtitle">Υπολογισμός τελών για εισαγόμενο όχημα.</p>
+    <p class="subtitle">Υπολογισμός τελωνείου για εισαγωγή οχήματος από ΕΕ — βασισμένο στα δεδομένα σας.</p>
   </div>
 </header>
 
 <div style="text-align:center;">
-  <img src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" width="300">
+  <img src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" alt="description" width="300">
 </div>
 
 <main class="container">
   <section class="card">
     <form id="calcForm" autocomplete="off">
 
+      <!-- Μάρκα / Έτος / Μοντέλο / Έκδοση -->
       <div class="row">
-        <label>Μάρκα</label>
+        <label for="brandSelect">Μάρκα</label>
         <select id="brandSelect"></select>
       </div>
 
       <div class="row">
-        <label>Χρονολογία</label>
+        <label for="yearSelect">Χρονολογία</label>
         <select id="yearSelect"></select>
       </div>
 
       <div class="row">
-        <label>Μοντέλο</label>
+        <label for="modelSelect">Μοντέλο</label>
         <select id="modelSelect"></select>
       </div>
 
       <div class="row">
-        <label>Έκδοση</label>
+        <label for="versionSelect">Έκδοση</label>
         <select id="versionSelect"></select>
       </div>
 
-      <!-- ✅ ΕΝΑ ΜΟΝΟ ΠΕΔΙΟ EXTRAS, ΣΩΣΤΗ ΘΕΣΗ -->
       <div class="row">
-        <label>Extras</label>
-        <select id="extras" multiple size="8"></select>
+        <label for="colorSelect">Έκδοση εξοπλισμού / Βασικό Extra</label>
+        <select id="colorSelect"></select>
+      </div>
+
+      <!-- ΠΡΟΑΙΡΕΤΙΚΑ EXTRAS (checkboxes) -->
+      <div class="row">
+        <label for="extrasContainer">Προαιρετικός Εξοπλισμός</label>
+        <div id="extrasContainer"></div>
+      </div>
+
+      <!-- ΛΤΠΦ -->
+      <div class="row">
+        <label for="price">
+          Τιμή Οχήματος - ΛΤΠΦ (€)
+          <span class="tooltip">?
+            <span class="tooltiptext">
+              Η ΛΤΠΦ είναι η αρχική αξία του αυτοκινήτου,
+              χωρίς τέλη ταξινόμησης και φόρους, αναλόγως την έκδοση εξοπλισμού.
+              Μπορείτε να την βρείτε στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
+            </span>
+          </span>
+        </label>
+        <input type="number" id="price" required step="0.01" value="">
       </div>
 
       <div class="row">
-        <label for="price">Τιμή ΛΤΠΦ (€)</label>
-        <input type="number" id="price" step="0.01">
-      </div>
-
-      <div class="row">
-        <label for="category">Κατηγορία</label>
+        <label for="category">Κατηγορία Οχήματος</label>
         <select id="category"></select>
       </div>
 
       <div class="row">
-        <label for="firstReg">Πρώτη Άδεια</label>
-        <input type="date" id="firstReg">
+        <label for="firstReg">Πρώτη Άδεια (ημ/νία)</label>
+        <input type="date" id="firstReg" value="">
       </div>
 
       <div class="row">
-        <label for="importDate">Ημερομηνία Εισαγωγής</label>
-        <input type="date" id="importDate">
+        <label for="importDate">Ημερομηνία Εισαγωγής (ημ/νία)</label>
+        <input type="date" id="importDate" value="">
       </div>
 
       <div class="row">
-        <label for="mileage">Χιλιόμετρα</label>
-        <input type="number" id="mileage">
+        <label for="mileage">Διανυθέντα Χιλιόμετρα</label>
+        <input type="number" id="mileage" value="">
       </div>
 
       <div class="row">
-        <label for="co2">CO₂</label>
-        <input type="number" id="co2">
+        <label for="co2">Εκπομπές CO₂ (g/km)</label>
+        <input type="number" id="co2" value="">
       </div>
 
       <div class="row actions">
@@ -87,10 +109,10 @@
     </form>
   </section>
 
-  <section class="card result">
+  <section class="card result" id="resultCard" aria-live="polite">
     <h2>Υπολογισμός</h2>
     <div id="results">
-      <p>Συμπληρώστε τα στοιχεία…</p>
+      <p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>
     </div>
   </section>
 
@@ -99,6 +121,9 @@
   </footer>
 </main>
 
+<!-- αν θες άστο, αλλιώς μπορείς να το σβήσεις -->
+<script src="data/toyota/2021/2021.json"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
