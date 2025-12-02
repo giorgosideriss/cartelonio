@@ -225,6 +225,26 @@ function populateColors() {
     colorEl.appendChild(opt);
   });
 
+function loadExtras(extrasList) {
+  const extrasSelect = document.getElementById("extras");
+  extrasSelect.innerHTML = "";
+
+  if (!extrasList || extrasList.length === 0) {
+    extrasSelect.disabled = true;
+    return;
+  }
+
+  extrasSelect.disabled = false;
+
+  extrasList.forEach(extra => {
+    const opt = document.createElement("option");
+    opt.value = extra.price;
+    opt.textContent = `${extra.name} (+${extra.price} €)`;
+    extrasSelect.appendChild(opt);
+  });
+}
+
+  
   // Μόλις γεμίσουν τα χρώματα, αν θέλουμε, διαλέγουμε το πρώτο και
   // κάνουμε αυτόματη συμπλήρωση.
   if (edition.variants.length > 0) {
