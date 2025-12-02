@@ -104,7 +104,7 @@ button.secondary{
 
 .extras-dropdown {
   position: relative;
-  width: 100%;
+  width: 0%;
 }
 
 .extras-toggle {
@@ -133,14 +133,14 @@ button.secondary{
 
 .extras-panel {
   position:absolute;
-  top:100%;
+  top:50%;
   left:0;
   right:0;
   background:white;
   border:1px solid #e6eef7;
   border-radius:10px;
   margin-top:4px;
-  max-height:220px;
+  max-height:300px;
   overflow-y:auto;
   box-shadow:0 10px 20px rgba(15,23,42,0.15);
   padding:6px 0;
@@ -161,7 +161,7 @@ button.secondary{
 }
 
 .extras-option input[type="checkbox"] {
-  margin-top:3px;
+  margin-top:2px;
 }
 
 /* Responsive */
