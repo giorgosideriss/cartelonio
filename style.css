@@ -186,9 +186,9 @@ button.secondary{
   position:absolute;
   top:50%;
   left:0;
-  right:0;
+  right:40%;
   background:white;
-  border:1px solid #e6eef7;
+  border:1px solid #454545;
   border-radius:10px;
   margin-top:4px;
   max-height:300px;
