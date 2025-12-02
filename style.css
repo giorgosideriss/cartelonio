@@ -100,6 +100,57 @@ button.secondary{
   opacity: 0.55;
 }
 
+/* --- BEAUTIFUL MODERN EXTRAS DROPDOWN --- */
+
+#extras {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  background: white;
+}
+
+/* Wrapper around each checkbox + label */
+.extra-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.extra-item:last-child {
+  border-bottom: none;
+}
+
+.extra-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.extra-item label {
+  flex: 1;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Hover effect */
+.extra-item:hover {
+  background: #f6f6f6;
+}
+
+/* Make the whole list look like a dropdown */
+#extras:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(32,130,0,0.2);
+}
+
+
 /* === EXTRAS DROPDOWN === */
 
 .extras-dropdown {
@@ -173,52 +224,3 @@ button.secondary{
   .row .extras-dropdown{flex-grow:1}
 }
 
-/* --- BEAUTIFUL MODERN EXTRAS DROPDOWN --- */
-
-#extras {
-  max-height: 220px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 10px;
-  background: white;
-}
-
-/* Wrapper around each checkbox + label */
-.extra-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 6px 4px;
-  border-bottom: 1px solid #eee;
-}
-
-.extra-item:last-child {
-  border-bottom: none;
-}
-
-.extra-item input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
-  cursor: pointer;
-}
-
-.extra-item label {
-  flex: 1;
-  font-size: 14px;
-  cursor: pointer;
-  color: #333;
-  line-height: 1.3;
-}
-
-/* Hover effect */
-.extra-item:hover {
-  background: #f6f6f6;
-}
-
-/* Make the whole list look like a dropdown */
-#extras:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(32,130,0,0.2);
-}
