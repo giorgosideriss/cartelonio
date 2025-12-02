@@ -1,3 +1,178 @@
+:root{
+  --bg:#cccccc;
+  --card:#d2d2d2;
+  --accent:#208200;
+  --muted:#2b2b2b;
+  --radius:18px;
+  font-family: "Noto Sans", "IBM Plex Sans", "Open Sans", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:#454545;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:920px;margin:34px auto;padding:18px}
+
+.header{padding:22px 0}
+.header h1{margin:0;font-size:24px}
+.subtitle{color:var(--muted);margin-top:2px}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:0 25px 5px rgba(15,23,42,0.06);
+  margin-bottom:30px;
+}
+
+.row{display:flex;flex-direction:column;margin-bottom:12px}
+.row label{font-size:13px;color:var(--muted);margin-bottom:6px}
+
+input, select{
+  padding:12px 14px;
+  border:1px solid #e6eef7;
+  border-radius:10px;
+  font-size:15px;
+  background:white;
+}
+
+.actions{display:flex;gap:10px;align-items:center}
+
+button{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+button.secondary{
+  background:#f3f6fb;
+  color:#0f172a;
+  border:1px solid #e0e6f0;
+}
+
+.muted{
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+  margin-top:8px;
+}
+
+/* Tooltip για ΛΤΠΦ */
+.tooltip {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+  margin-left: 6px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #2b2b2b;
+  color: #e0e6f0;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 18px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  font-size: 0.80rem;
+  line-height: 1.2;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.55;
+}
+
+/* === EXTRAS DROPDOWN === */
+
+.extras-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.extras-toggle {
+  width: 100%;
+  text-align: left;
+  padding:12px 14px;
+  border:1px solid #e6eef7;
+  border-radius:10px;
+  background:white;
+  font-size:15px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.extras-toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.extras-toggle-arrow {
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.extras-panel {
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:white;
+  border:1px solid #e6eef7;
+  border-radius:10px;
+  margin-top:4px;
+  max-height:220px;
+  overflow-y:auto;
+  box-shadow:0 10px 20px rgba(15,23,42,0.15);
+  padding:6px 0;
+  display:none;
+  z-index:100;
+}
+
+.extras-dropdown.open .extras-panel {
+  display:block;
+}
+
+.extras-option {
+  display:flex;
+  align-items:flex-start;
+  padding:4px 12px;
+  font-size:14px;
+  gap:8px;
+}
+
+.extras-option input[type="checkbox"] {
+  margin-top:3px;
+}
+
+/* Responsive */
+@media(min-width:720px){
+  .row{flex-direction:row;align-items:center}
+  .row label{width:300px;text-align:right;padding-right:10px;margin-bottom:0}
+  .row input,
+  .row select,
+  .row .extras-dropdown{flex-grow:1}
+}
+
 /* --- BEAUTIFUL MODERN EXTRAS DROPDOWN --- */
 
 #extras {
