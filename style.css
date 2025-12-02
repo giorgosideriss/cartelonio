@@ -119,6 +119,7 @@ button.secondary{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  transition: box-shadow 0.15s ease-out, border-color 0.15s ease-out;
 }
 
 .extras-toggle:disabled {
@@ -126,9 +127,19 @@ button.secondary{
   opacity: 0.7;
 }
 
+.extras-dropdown.open .extras-toggle {
+  border-color: var(--accent);
+  box-shadow:0 0 0 2px rgba(32,130,0,0.2);
+}
+
 .extras-toggle-arrow {
   font-size: 11px;
   margin-left: 8px;
+  transition: transform 0.15s ease-out;
+}
+
+.extras-dropdown.open .extras-toggle-arrow {
+  transform: rotate(180deg);
 }
 
 .extras-panel {
@@ -163,6 +174,7 @@ button.secondary{
   padding:10px 16px;
   cursor:pointer;
   transition: background 0.15s ease-out;
+  margin:0;
 }
 
 .extras-option:hover {
