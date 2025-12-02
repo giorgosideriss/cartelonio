@@ -8,7 +8,7 @@
         {
           "factoryCode": "595s4",
           "code": "595s4",
-          "name": "1.4 T-JET 145HP",
+          "name": "1.4 T-Jet 145HP",
           "co2": 139,
           "variants": [
             {
@@ -21,7 +21,7 @@
         {
        "factoryCode": "595s4",
           "code": "595s4",
-          "name": "Pista 1.4 T-JET 160HP",
+          "name": "Pista 1.4 T-Jet 160HP",
           "co2": 139,
           "variants": [
             {
@@ -34,7 +34,7 @@
         {
         "factoryCode": "595s4",
           "code": "595s4",
-          "name": "Turismo 1.4 T-JET 165HP",
+          "name": "Turismo 1.4 T-Jet 165HP",
           "co2": 139,
           "variants": [
             {
@@ -47,16 +47,61 @@
         {
               "factoryCode": "595s4",
           "code": "595s4",
-          "name": "Competizione 1.4 T-JET 180HP",
+          "name": "Competizione 1.4 T-Jet 180HP",
           "co2": 139,
           "variants": [
             {
               "color": "Standard",
               "priceNet": 17643.60,
-              "priceRetail": 17643.60
-  
+              "priceRetail": 97888.0
             }
           ]
         }
       ]
     },
+    "595C": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "595cs4",
+          "code": "595cs4",
+          "name": "1.4 T-Jet 145HP",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15798.43,
+              "priceRetail": 15798.43
+            }
+          ]
+        },
+        {
+          "factoryCode": "595cs4",
+          "code": "595cs4",
+          "name": "Turismo 1.4 T-Jet 165HP",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16937.38,
+                      "priceRetail": 16937.38
+            }
+          ]
+        },
+        {
+          "factoryCode": "595cs4",
+          "code": "595cs4",
+          "name": "Competizione 1.4 T-Jet 180HP",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19056.03,
+              "priceRetail": 19056.03
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
