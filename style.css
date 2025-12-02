@@ -30,17 +30,8 @@ body{
   margin-bottom:30px;
 }
 
-.row{
-  display:flex;
-  flex-direction:column;
-  margin-bottom:12px;
-}
-
-.row label{
-  font-size:13px;
-  color:var(--muted);
-  margin-bottom:6px;
-}
+.row{display:flex;flex-direction:column;margin-bottom:12px}
+.row label{font-size:13px;color:var(--muted);margin-bottom:6px}
 
 input, select{
   padding:12px 14px;
@@ -50,43 +41,7 @@ input, select{
   background:white;
 }
 
-/* Να μην «φορτώνουμε» τα checkbox με το ίδιο style */
-input[type="checkbox"]{
-  width:auto;
-  padding:0;
-  border:none;
-  border-radius:0;
-  box-shadow:none;
-}
-
-/* Extras container (checkbox λίστα) */
-#extrasContainer{
-  display:flex;
-  flex-direction:column;
-  gap:4px;
-  padding:8px 10px;
-  background:#f5f5f5;
-  border-radius:10px;
-  border:1px solid #e0e0e0;
-  min-height:42px;
-}
-
-.extra-item{
-  display:flex;
-  align-items:center;
-  font-size:14px;
-  margin-bottom:2px;
-}
-
-.extra-item input[type="checkbox"]{
-  margin-right:8px;
-}
-
-.actions{
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
+.actions{display:flex;gap:10px;align-items:center}
 
 button{
   background:var(--accent);
@@ -111,7 +66,7 @@ button.secondary{
   margin-top:8px;
 }
 
-/* Tooltip */
+/* Tooltip για ΛΤΠΦ */
 .tooltip {
   display: inline-block;
   position: relative;
@@ -145,20 +100,75 @@ button.secondary{
   opacity: 0.55;
 }
 
+/* === EXTRAS DROPDOWN === */
+
+.extras-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.extras-toggle {
+  width: 100%;
+  text-align: left;
+  padding:12px 14px;
+  border:1px solid #e6eef7;
+  border-radius:10px;
+  background:white;
+  font-size:15px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.extras-toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.extras-toggle-arrow {
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.extras-panel {
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:white;
+  border:1px solid #e6eef7;
+  border-radius:10px;
+  margin-top:4px;
+  max-height:220px;
+  overflow-y:auto;
+  box-shadow:0 10px 20px rgba(15,23,42,0.15);
+  padding:6px 0;
+  display:none;
+  z-index:100;
+}
+
+.extras-dropdown.open .extras-panel {
+  display:block;
+}
+
+.extras-option {
+  display:flex;
+  align-items:flex-start;
+  padding:4px 12px;
+  font-size:14px;
+  gap:8px;
+}
+
+.extras-option input[type="checkbox"] {
+  margin-top:3px;
+}
+
+/* Responsive */
 @media(min-width:720px){
-  .row{
-    flex-direction:row;
-    align-items:center;
-  }
-  .row label{
-    width:300px;
-    text-align:right;
-    padding-right:10px;
-    margin-bottom:0;
-  }
+  .row{flex-direction:row;align-items:center}
+  .row label{width:300px;text-align:right;padding-right:10px;margin-bottom:0}
   .row input,
   .row select,
-  .row #extrasContainer{
-    flex-grow:1;
-  }
+  .row .extras-dropdown{flex-grow:1}
 }
