@@ -139,20 +139,36 @@ function handleExtraCheckboxChange(e) {
 }
 
 function loadExtras(extrasList) {
-  const toggleBtn = document.getElementById("extrasToggle");
-  const panel = document.getElementById("extrasPanel");
-  const labelSpan = document.querySelector(".extras-toggle-label");
+  const extrasSelect = document.getElementById("extras");
+  extrasSelect.innerHTML = "";
 
-  currentExtras = extrasList || [];
-  selectedExtras.clear();
-  panel.innerHTML = "";
-
-  if (!currentExtras || currentExtras.length === 0) {
-    toggleBtn.disabled = true;
-    labelSpan.textContent = "Δεν υπάρχουν extras";
-    recalcPriceWithExtras();
+  if (!extrasList || extrasList.length === 0) {
+    extrasSelect.disabled = true;
     return;
   }
+
+  extrasSelect.disabled = false;
+
+  extrasList.forEach((extra, index) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "extra-item";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.dataset.price = extra.price;
+    checkbox.id = "extra_" + index;
+
+    const label = document.createElement("label");
+    label.setAttribute("for", "extra_" + index);
+    label.textContent = `${extra.name} (+${extra.price} €)`;
+
+    wrapper.appendChild(checkbox);
+    wrapper.appendChild(label);
+
+    extrasSelect.appendChild(wrapper);
+  });
+}
+
 
   toggleBtn.disabled = false;
   labelSpan.textContent = "Επιλέξτε extras";
