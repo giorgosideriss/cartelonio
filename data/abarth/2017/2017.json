@@ -1,159 +1,60 @@
-  "A5": {
+{
+  "brand": "Abarth",
+  "year": 2017,
+  "models": {
+"595": {
       "category": "Hatchback",
       "editions": [
         {
-          "factoryCode": "F53BPG",
-          "code": "F53BPG",
-          "name": "Coupé 35 TFSI MHEV S tronic",
-          "co2": 133,
+          "factoryCode": "595s4",
+          "code": "595s4",
+          "name": "1.4 T-JET 145HP",
+          "co2": 139,
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 29569.0,
-              "priceRetail": 29569.0
+              "priceNet": 14292.0,
+              "priceRetail": 14292.0
             }
           ]
         },
         {
-          "factoryCode": "F53BSC",
-          "code": "F53BSC",
-          "name": "Coupé 40 TFSI MHEV (6 ταχύτητες)",
-          "co2": 135,
+       "factoryCode": "595s4",
+          "code": "595s4",
+          "name": "Pista 1.4 T-JET 160HP",
+          "co2": 139,
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 31455.0,
-              "priceRetail": 31455.0
+              "priceNet": 15798.0,
+              "priceRetail": 15798.0
             }
           ]
         },
         {
-          "factoryCode": "F53BSG",
-          "code": "F53BSG",
-          "name": "Coupé 40 TFSI MHEV S tronic",
-          "co2": 135,
+        "factoryCode": "595s4",
+          "code": "595s4",
+          "name": "Turismo 1.4 T-JET 165HP",
+          "co2": 139,
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 33164.0,
-              "priceRetail": 33164.0
+              "priceNet": 15806.0,
+              "priceRetail": 15806.0
             }
           ]
         },
         {
-          "factoryCode": "F53BFG",
-          "code": "F53BFG",
-          "name": "Coupé 40 TDI S tronic",
-          "co2": 117,
+              "factoryCode": "595s4",
+          "code": "595s4",
+          "name": "Competizione 1.4 T-JET 180HP",
+          "co2": 139,
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 37974.0,
-              "priceRetail": 37974.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F53BFY",
-          "code": "F53BFY",
-          "name": "Coupé 40 TDI quattro S tronic",
-          "co2": 137,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 39359.0,
-              "priceRetail": 39359.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F53B3Y",
-          "code": "F53B3Y",
-          "name": "Coupé 45 TFSI MHEV quattro S tronic",
-          "co2": 150,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 40105.0,
-              "priceRetail": 40105.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5ABPG",
-          "code": "F5ABPG",
-          "name": "Sportback 35 TFSI MHEV S tronic",
-          "co2": 134,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 29569.0,
-              "priceRetail": 29569.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5ABSC",
-          "code": "F5ABSC",
-          "name": "Sportback 40 TFSI MHEV (6 ταχύτητες)",
-          "co2": 135,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 31448.0,
-              "priceRetail": 31448.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5ABSG",
-          "code": "F5ABSG",
-          "name": "Sportback 40 TFSI MHEV S tronic",
-          "co2": 135,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 33157.0,
-              "priceRetail": 33157.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5ABFG",
-          "code": "F5ABFG",
-          "name": "Sportback 40 TDI S tronic",
-          "co2": 117,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 37974.0,
-              "priceRetail": 37974.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5ABFY",
-          "code": "F5ABFY",
-          "name": "Sportback 40 TDI quattro S tronic",
-          "co2": 137,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 39334.0,
-              "priceRetail": 39334.0
-            }
-          ]
-        },
-        {
-          "factoryCode": "F5AB3Y",
-          "code": "F5AB3Y",
-          "name": "Sportback 45 TFSI MHEV quattro S tronic",
-          "co2": 150,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 40077.0,
-              "priceRetail": 40077.0
+              "priceNet": 17643.60,
+              "priceRetail": 17643.60
+  
             }
           ]
         }
