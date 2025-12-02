@@ -4,7 +4,7 @@
   --accent:#208200;
   --muted:#2b2b2b;
   --radius:18px;
-font-family: "Noto Sans", "IBM Plex Sans", "Open Sans", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Noto Sans", "IBM Plex Sans", "Open Sans", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 *{box-sizing:border-box}
@@ -16,11 +16,23 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-.container{max-width:920px;margin:34px auto;padding:18px}
+.container{
+  max-width:920px;
+  margin:34px auto;
+  padding:18px;
+}
 
-.header{padding:22px 0}
-.header h1{margin:0;font-size:24px}
-.subtitle{color:var(--muted);margin-top:2px}
+.header{
+  padding:22px 0;
+}
+.header h1{
+  margin:0;
+  font-size:24px;
+}
+.subtitle{
+  color:var(--muted);
+  margin-top:2px;
+}
 
 .card{
   background:var(--card);
@@ -30,10 +42,19 @@ body{
   margin-bottom:30px;
 }
 
-.row{display:flex;flex-direction:column;margin-bottom:12px}
-.row label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.row{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:16px;
+}
+.row label{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:6px;
+}
 
-input, select{
+input,
+select{
   padding:12px 14px;
   border:1px solid #e6eef7;
   border-radius:10px;
@@ -41,7 +62,30 @@ input, select{
   background:white;
 }
 
-.actions{display:flex;gap:10px;align-items:center}
+/* EXTRA MULTI-SELECT */
+#extras {
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #c7ced9;
+  background:white;
+  font-size: 14px;
+}
+#extras option{
+  padding:6px;
+  border-bottom:1px solid #efefef;
+  cursor:pointer;
+}
+#extras option:checked{
+  background: #208200;
+  color:white;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
 
 button{
   background:var(--accent);
@@ -66,42 +110,53 @@ button.secondary{
   margin-top:8px;
 }
 
-.tooltip {
-  display: inline-block;
-  position: relative;
-  cursor: help;
-  margin-left: 6px;
-  font-weight: bold;
-  color: #2b2b2b;
+.tooltip{
+  display:inline-block;
+  position:relative;
+  cursor:help;
+  margin-left:6px;
+  font-weight:bold;
+  color:#2b2b2b;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 350px;
-  background-color: #2b2b2b;
-  color: #e0e6f0;
-  text-align: left;
-  padding: 5px 10px;
-  border-radius: 18px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  font-size: 0.80rem;
-  line-height: 1.2;
+.tooltip .tooltiptext{
+  visibility:hidden;
+  width:350px;
+  background-color:#2b2b2b;
+  color:#e0e6f0;
+  text-align:left;
+  padding:5px 10px;
+  border-radius:18px;
+  position:absolute;
+  z-index:1;
+  bottom:125%;
+  left:50%;
+  transform:translateX(-50%);
+  opacity:0;
+  transition:opacity 0.6s ease;
+  font-size:0.80rem;
+  line-height:1.2;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 0.55;
+.tooltip:hover .tooltiptext{
+  visibility:visible;
+  opacity:0.55;
 }
-
 
 @media(min-width:720px){
-  .row{flex-direction:row;align-items:center}
-  .row label{width:300px;text-align:right;padding-right:10px;margin-bottom:0}
-  .row input,.row select{flex-grow:1}
+  .row{
+    flex-direction:row;
+    align-items:center;
+  }
+  .row label{
+    width:300px;
+    text-align:right;
+    padding-right:10px;
+    margin-bottom:0;
+  }
+  .row input,
+  .row select,
+  #extras{
+    flex-grow:1;
+  }
 }
