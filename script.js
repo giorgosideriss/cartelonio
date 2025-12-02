@@ -120,11 +120,11 @@ function recalcPriceWithExtras() {
     priceInput.value = finalPrice.toFixed(2);
   }
 
-  const count = selectedExtras.size;
-  if (count === 0) {
-    extrasLabel.textContent = "Επιλέξτε extras";
-  } else {
-    extrasLabel.textContent = `Επιλεγμένα extras: ${count}`;
+  if (extrasLabel) {
+    const count = selectedExtras.size;
+    extrasLabel.textContent = count === 0
+      ? "Επιλέξτε extras"
+      : `Επιλεγμένα extras: ${count}`;
   }
 }
 
@@ -139,44 +139,27 @@ function handleExtraCheckboxChange(e) {
 }
 
 function loadExtras(extrasList) {
-  const extrasSelect = document.getElementById("extras");
-  extrasSelect.innerHTML = "";
+  const toggleBtn = document.getElementById("extrasToggle");
+  const panel = document.getElementById("extrasPanel");
+  const labelSpan = document.querySelector(".extras-toggle-label");
 
-  if (!extrasList || extrasList.length === 0) {
-    extrasSelect.disabled = true;
+  currentExtras = extrasList || [];
+  selectedExtras.clear();
+  panel.innerHTML = "";
+
+  if (!currentExtras || currentExtras.length === 0) {
+    if (toggleBtn) toggleBtn.disabled = true;
+    if (labelSpan) labelSpan.textContent = "Δεν υπάρχουν extras";
+    recalcPriceWithExtras();
     return;
   }
 
-  extrasSelect.disabled = false;
-
-  extrasList.forEach((extra, index) => {
-    const wrapper = document.createElement("div");
-    wrapper.className = "extra-item";
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.dataset.price = extra.price;
-    checkbox.id = "extra_" + index;
-
-    const label = document.createElement("label");
-    label.setAttribute("for", "extra_" + index);
-    label.textContent = `${extra.name} (+${extra.price} €)`;
-
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(label);
-
-    extrasSelect.appendChild(wrapper);
-  });
-}
-
-
-  toggleBtn.disabled = false;
-  labelSpan.textContent = "Επιλέξτε extras";
+  if (toggleBtn) toggleBtn.disabled = false;
+  if (labelSpan) labelSpan.textContent = "Επιλέξτε extras";
 
   currentExtras.forEach((extra, idx) => {
-    // αγνόησε όσα έχουν price 0 ή null
     const price = Number(extra.price);
-    if (!price) return;
+    if (!price) return; // αγνόησε 0 / STD
 
     const row = document.createElement("label");
     row.className = "extras-option";
@@ -197,7 +180,7 @@ function loadExtras(extrasList) {
   recalcPriceWithExtras();
 }
 
-/* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΧΡΩΜΑ ========== */
+/* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
 async function loadDatasetForSelection() {
   const brandEl  = document.getElementById("brandSelect");
@@ -367,7 +350,7 @@ function autoFillCarData() {
   // Τιμή ΛΤΠΦ (βάση, χωρίς extras)
   currentBasePrice = Number(variant.priceNet) || 0;
 
-  // Φόρτωση extras για την έκδοση (αν δεν το έχουμε κάνει ήδη)
+  // Φόρτωση extras για την έκδοση
   if (Array.isArray(edition.extras)) {
     loadExtras(edition.extras);
   } else {
