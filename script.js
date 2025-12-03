@@ -32,7 +32,7 @@ const categories = {
 
   "Sedan": [[0.5,0.15],[1,0.3],[1.5,0.33],[2,0.36],[2.5,0.4],[3,0.43],[3.5,0.5],[4,0.57],[4.5,0.64],[5,0.72],[5.5,0.74],[6,0.76],[6.5,0.78],[7,0.8],[7.5,0.81],[8,0.84],[8.5,0.85],[9,0.85],[9.5,0.86],[10,0.87]],
 
-  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
+  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
 
   "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47],[4.5,0.53],[5,0.59],[5.5,0.63],[6,0.66],[6.5,0.68],[7,0.71],[7.5,0.73],[8,0.76],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
 
@@ -120,7 +120,10 @@ function recalcPriceWithExtras() {
     priceInput.value = finalPrice.toFixed(2);
   }
 
-  if (!labelSpan) return;
+  if (!labelSpan) {
+    updateCarSummary();   // ασφαλεία, αλλά δύσκολα θα λείπει
+    return;
+  }
 
   const count = selectedExtras.size;
   if (currentExtras.length === 0) {
@@ -134,6 +137,9 @@ function recalcPriceWithExtras() {
     });
     labelSpan.textContent = `${count} επιλεγμένα (+${formatted} €)`;
   }
+
+  // *** ΚΡΙΣΙΜΟ: ενημέρωσε τη Σύνοψη Οχήματος με τη νέα τιμή ΛΤΠΦ ***
+  updateCarSummary();
 }
 
 function handleExtraCheckboxChange(e) {
@@ -262,7 +268,7 @@ function populateModels() {
   const colorEl = document.getElementById("colorSelect");
 
   modelEl.innerHTML = '<option value="">Επιλέξτε Μοντέλο</option>';
-  verEl.innerHTML   = '<option value="">Επιλέξωση Έκδοση</option>'.replace("ώ","ό"); // μικρό trick για να μην γράφω από την αρχή
+  verEl.innerHTML   = '<option value="">Επιλέξωση Έκδοση</option>'.replace("ώ","ό");
   verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
   loadExtras([]);
@@ -384,10 +390,10 @@ function updateCarSummary() {
   const summaryEl = document.getElementById("carSummary");
   if (!summaryEl) return;
 
-  const brand  = document.getElementById("brandSelect").value || "—";
-  const year   = document.getElementById("yearSelect").value  || "—";
-  const model  = document.getElementById("modelSelect").value || "—";
-  const verIdx = document.getElementById("versionSelect").value;
+  const brand    = document.getElementById("brandSelect").value || "—";
+  const year     = document.getElementById("yearSelect").value  || "—";
+  const model    = document.getElementById("modelSelect").value || "—";
+  const verIdx   = document.getElementById("versionSelect").value;
   const colorIdx = document.getElementById("colorSelect").value;
 
   let editionName = "—";
@@ -404,8 +410,10 @@ function updateCarSummary() {
     }
   }
 
-  const priceVal = document.getElementById("price").value;
-  const priceText = priceVal ? Number(priceVal).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})+" €" : "—";
+  const priceVal  = document.getElementById("price").value;
+  const priceText = priceVal
+    ? Number(priceVal).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})+" €"
+    : "—";
 
   summaryEl.innerHTML = `
     <p><strong>Μάρκα:</strong> ${brand}</p>
