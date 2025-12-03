@@ -162,28 +162,6 @@ function loadExtras(extrasList) {
     return;
   }
 
-  toggleBtn.disabled = false;
-  labelSpan.textContent = "Επιλέξτε extras";
-
-  currentExtras.forEach((extra, idx) => {
-    const price = Number(extra.price);
-    if (!price) return;
-
-    const row = document.createElement("div");
-    row.className = "extras-option";
-
-    const cb = document.createElement("input");
-    cb.type  = "checkbox";
-    cb.value = idx;
-    cb.addEventListener("change", handleExtraCheckboxChange);
-
-    const text = document.createElement("div");
-    text.className = "extras-option-text";
-    text.textContent = `${extra.name} (+${price.toFixed(2)} €)`;
-
-    row.appendChild(cb);
-    row.appendChild(text);
-    panel.appendChild(row);
 
     // Clicking on the row toggles the checkbox (Apple behavior)
     row.addEventListener("click", e => {
@@ -194,12 +172,6 @@ function loadExtras(extrasList) {
     });
   });
 
-  recalcPriceWithExtras();
-}
-
-
-  recalcPriceWithExtras();
-}
 
 /* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
