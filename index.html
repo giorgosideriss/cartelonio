@@ -3,142 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- ADPLACEHOLDER: Paste your Google AdSense script here after approval -->
+  <title>Car Configurator — cartelonio</title>
 
-  <!--
-  <meta name="google-adsense-account" content="ca-pub-3754487072936423">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3754487072936423"
-     crossorigin="anonymous"></script>
-  -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <h1>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου</h1>
-    <p class="subtitle">Υπολογισμός τελωνείου για εισαγωγή οχήματος από ΕΕ — βασισμένο στα δεδομένα σας.</p>
+
+<header class="topbar">
+  <div class="topbar-content">
+    <h1>Car Configurator</h1>
+    <p>Premium Vehicle Import Duty Calculator</p>
   </div>
 </header>
 
-<!--
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3754487072936423"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
--->
+<main class="configurator">
 
-<div style="text-align:center;">
-  <img src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" alt="description" width="300">
-</div>
+  <!-- LEFT PANEL (steps) -->
+  <div class="steps">
 
-<main class="container">
-  <section class="card">
-    <form id="calcForm" autocomplete="off">
-
-      <div class="row">
-        <label for="price">
-          Τιμή Οχήματος - ΛΤΠΦ (€)
-          <span class="tooltip">?
-            <span class="tooltiptext">
-              Η ΛΤΠΦ είναι η αρχική αξία του αυτοκινήτου,
-              χωρίς τέλη ταξινόμησης και φόρους, αναλόγως την έκδοση εξοπλισμού.
-              Μπορείτε να την βρείτε στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
-            </span>
+    <!-- PRICE -->
+    <div class="step-card">
+      <label class="step-label">
+        Τιμή Οχήματος — ΛΤΠΦ (€)
+        <span class="tooltip">?
+          <span class="tooltiptext">
+            Η ΛΤΠΦ είναι η βασική αξία του οχήματος χωρίς τέλη ταξινόμησης & φόρους.
           </span>
-        </label>
-        <input type="number" id="price" required step="0.01" value="">
-      </div>
+        </span>
+      </label>
+      <input type="number" id="price" placeholder="π.χ. 15200" />
+    </div>
 
-      <div class="row">
-        <label>Μάρκα</label>
-        <select id="brandSelect"></select>
-      </div>
+    <!-- BRAND -->
+    <div class="step-card">
+      <label class="step-label">Μάρκα</label>
+      <select id="brandSelect"></select>
+    </div>
 
-      <div class="row">
-        <label>Χρονολογία</label>
-        <select id="yearSelect"></select>
-      </div>
+    <!-- YEAR -->
+    <div class="step-card">
+      <label class="step-label">Χρονολογία</label>
+      <select id="yearSelect"></select>
+    </div>
 
-      <div class="row">
-        <label>Μοντέλο</label>
-        <select id="modelSelect"></select>
-      </div>
+    <!-- MODEL -->
+    <div class="step-card">
+      <label class="step-label">Μοντέλο</label>
+      <select id="modelSelect"></select>
+    </div>
 
-      <div class="row">
-        <label>Έκδοση</label>
-        <select id="versionSelect"></select>
-      </div>
+    <!-- VERSION -->
+    <div class="step-card">
+      <label class="step-label">Έκδοση</label>
+      <select id="versionSelect"></select>
+    </div>
 
-      <!-- Custom dropdown για Extras (με checkboxes) -->
-      <div class="row">
-        <label>Extras</label>
-        <div class="extras-dropdown">
-          <button type="button" id="extrasToggle" class="extras-toggle" disabled>
-            <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
-            <span class="extras-toggle-arrow">▾</span>
-          </button>
-          <div id="extrasPanel" class="extras-panel"></div>
-        </div>
-      </div>
+    <!-- EXTRAS -->
+    <div class="step-card">
+      <label class="step-label">Extras</label>
 
-      <div class="row">
-        <label>Επιλογή ΛΤΠΦ (χρώμα/πακέτο)</label>
-        <select id="colorSelect"></select>
-      </div>
+      <button type="button" id="extrasToggle" class="extras-trigger">
+        <span class="extras-text">Δεν υπάρχουν extras</span>
+        <span class="arrow">▾</span>
+      </button>
 
-      <div class="row">
-        <label for="category">Κατηγορία Οχήματος</label>
-        <select id="category"></select>
-      </div>
+      <div id="extrasPanel" class="extras-panel"></div>
+    </div>
 
-      <div class="row">
-        <label for="firstReg">Πρώτη Άδεια (ημ/νία)</label>
-        <input type="date" id="firstReg" value="">
-      </div>
+    <!-- COLOR/PACK -->
+    <div class="step-card">
+      <label class="step-label">ΛΤΠΦ (χρώμα / πακέτο)</label>
+      <select id="colorSelect"></select>
+    </div>
 
-      <div class="row">
-        <label for="importDate">Ημερομηνία Εισαγωγής (ημ/νία)</label>
-        <input type="date" id="importDate" value="">
-      </div>
+    <!-- CATEGORY -->
+    <div class="step-card">
+      <label class="step-label">Κατηγορία Οχήματος</label>
+      <select id="category"></select>
+    </div>
 
-      <div class="row">
-        <label for="mileage">Διανυθέντα Χιλιόμετρα</label>
-        <input type="number" id="mileage" value="">
-      </div>
+    <!-- DATES -->
+    <div class="step-card">
+      <label class="step-label">Πρώτη Άδεια</label>
+      <input type="date" id="firstReg">
+    </div>
 
-      <div class="row">
-        <label for="co2">Εκπομπές CO₂ (g/km)</label>
-        <input type="number" id="co2" value="">
-      </div>
+    <div class="step-card">
+      <label class="step-label">Ημερομηνία Εισαγωγής</label>
+      <input type="date" id="importDate">
+    </div>
 
-      <div class="row actions">
-        <button type="button" id="calcBtn">Υπολόγισε</button>
-        <button type="button" id="resetBtn" class="secondary">Επαναφορά</button>
-      </div>
+    <!-- MILEAGE -->
+    <div class="step-card">
+      <label class="step-label">Χιλιόμετρα</label>
+      <input type="number" id="mileage" placeholder="π.χ. 89000">
+    </div>
 
-    </form>
-  </section>
+    <!-- CO2 -->
+    <div class="step-card">
+      <label class="step-label">Εκπομπές CO₂ (g/km)</label>
+      <input type="number" id="co2" placeholder="π.χ. 118">
+    </div>
 
-  <section class="card result" id="resultCard" aria-live="polite">
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button id="calcBtn" class="primary">Υπολόγισε</button>
+      <button id="resetBtn" class="secondary">Επαναφορά</button>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL (result) -->
+  <div class="results-card">
     <h2>Υπολογισμός</h2>
     <div id="results">
-      <p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>
+      <p>Συμπληρώστε τα στοιχεία…</p>
     </div>
-  </section>
+  </div>
 
-  <footer class="muted">
-    <p>cartelonio - Giorgos Sideris</p>
-  </footer>
 </main>
 
 <script src="script.js"></script>
-
 </body>
 </html>
