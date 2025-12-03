@@ -111,35 +111,24 @@ button.secondary{
   width: 100%;
   text-align: left;
   padding:12px 14px;
-  border:1px solid #e6eef7;
-  border-radius:10px;
+  border:1px solid #d0d7df;
+  border-radius:12px;
   background:white;
   font-size:15px;
   cursor:pointer;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  transition: box-shadow 0.15s ease-out, border-color 0.15s ease-out;
+  transition: border-color .2s;
 }
 
 .extras-toggle:disabled {
-  cursor: not-allowed;
-  opacity: 0.7;
+  opacity: .6;
+  cursor:not-allowed;
 }
 
-.extras-dropdown.open .extras-toggle {
+.extras-toggle:hover:not(:disabled) {
   border-color: var(--accent);
-  box-shadow:0 0 0 2px rgba(32,130,0,0.2);
-}
-
-.extras-toggle-arrow {
-  font-size: 11px;
-  margin-left: 8px;
-  transition: transform 0.15s ease-out;
-}
-
-.extras-dropdown.open .extras-toggle-arrow {
-  transform: rotate(180deg);
 }
 
 .extras-panel {
@@ -148,96 +137,94 @@ button.secondary{
   left:0;
   right:0;
   background:white;
-  border:1px solid #e6eef7;
-  border-radius:18px;
-  margin-top:6px;
-  max-height:260px;
+  border-radius:16px;
+  box-shadow:0 18px 40px rgba(0,0,0,0.15);
+  border:1px solid #d0d7df;
   overflow-y:auto;
-  box-shadow:0 16px 40px rgba(15,23,42,0.28);
+  max-height:280px;
+  margin-top:6px;
   padding:6px 0;
+  z-index:2000;
   display:none;
-  z-index:100;
 }
 
 .extras-dropdown.open .extras-panel {
   display:block;
 }
 
-/* Μια γραμμή extra – full width, Apple-style */
-
+/* === ONE EXTRA ROW === */
 .extras-option {
-  position: relative;
-  width: 100%;
-  display:flex;
-  align-items:flex-start;
-  gap:12px;
+  width:100%;
+  display:grid;
+  grid-template-columns: 34px 1fr;   /* checkbox | text */
+  align-items:center;
   padding:10px 16px;
   cursor:pointer;
-  transition: background 0.15s ease-out;
-  margin:0;
+  column-gap:12px;
+  transition: background .15s;
 }
 
 .extras-option:hover {
-  background:#f3f4f6;
+  background:#f5f5f7;
 }
 
+/* TEXT */
 .extras-option-text {
-  flex:1;
   font-size:14px;
-  color:#111827;
   line-height:1.35;
+  color:#121212;
+  word-break:break-word;
 }
 
-/* Custom animated checkbox τύπου Apple */
+/* === APPLE STYLE CHECKBOX === */
 
 .extras-option input[type="checkbox"] {
   appearance:none;
   -webkit-appearance:none;
-  width:20px;
-  height:20px;
-  border-radius:7px;
+  width:22px;
+  height:22px;
+  border-radius:8px;
   border:2px solid #cbd5e1;
-  background:#f9fafb;
-  box-shadow:0 1px 2px rgba(15,23,42,0.18);
+  background:#ffffff;
+  box-shadow:0 1px 2px rgba(0,0,0,0.12);
   position:relative;
-  margin-top:2px;
   cursor:pointer;
-  transition:
-    background 0.18s ease-out,
-    border-color 0.18s ease-out,
-    box-shadow 0.18s ease-out,
-    transform 0.12s ease-out;
+  transition: all .18s ease-out;
+}
+
+.extras-option input[type="checkbox"]:hover {
+  border-color:#94a3b8;
 }
 
 .extras-option input[type="checkbox"]::after {
   content:"";
   position:absolute;
-  left:4px;
+  left:5px;
   top:2px;
   width:8px;
-  height:12px;
-  border-right:2px solid white;
-  border-bottom:2px solid white;
-  transform:scale(0.6) rotate(35deg) translateY(-2px);
+  height:14px;
+  border-right:2px solid #fff;
+  border-bottom:2px solid #fff;
+  transform:scale(0.5) rotate(35deg);
   opacity:0;
-  transition:opacity 0.16s ease-out, transform 0.16s ease-out;
+  transition:opacity .12s ease-out, transform .12s ease-out;
 }
 
 .extras-option input[type="checkbox"]:checked {
   background:var(--accent);
   border-color:var(--accent);
-  box-shadow:0 0 0 4px rgba(32,130,0,0.26);
-  transform:scale(0.96);
+  box-shadow:0 0 0 4px rgba(32,130,0,.28);
+  transform:scale(0.95);
 }
 
 .extras-option input[type="checkbox"]:checked::after {
   opacity:1;
-  transform:scale(1) rotate(35deg) translateY(-2px);
+  transform:scale(1) rotate(35deg);
 }
 
-.extras-option input[type="checkbox"]:focus-visible {
-  outline:none;
-  box-shadow:0 0 0 3px rgba(59,130,246,0.7);
+/* better alignment */
+@media(min-width:720px) {
+  .row .extras-dropdown { flex-grow:1; }
 }
 
 /* Responsive */
