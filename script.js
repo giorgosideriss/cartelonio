@@ -179,7 +179,9 @@ function recalcPriceWithExtras() {
   }
 
   // *** ΚΡΙΣΙΜΟ: ενημέρωσε τη Σύνοψη Οχήματος με τη νέα τιμή ΛΤΠΦ ***
-  updateCarSummary();
+  updateCarImage();
+updateCarSummary();
+
 }
 
 function handleExtraCheckboxChange(e) {
