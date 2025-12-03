@@ -155,36 +155,48 @@ function loadExtras(extrasList) {
   selectedExtras.clear();
   panel.innerHTML = "";
 
-  if (!currentExtras || currentExtras.length === 0) {
-    if (toggleBtn) toggleBtn.disabled = true;
-    if (labelSpan) labelSpan.textContent = "Δεν υπάρχουν extras";
+  if (!currentExtras.length) {
+    toggleBtn.disabled = true;
+    labelSpan.textContent = "Δεν υπάρχουν extras";
     recalcPriceWithExtras();
     return;
   }
 
-  if (toggleBtn) toggleBtn.disabled = false;
-  if (labelSpan) labelSpan.textContent = "Επιλέξτε extras";
+  toggleBtn.disabled = false;
+  labelSpan.textContent = "Επιλέξτε extras";
 
   currentExtras.forEach((extra, idx) => {
     const price = Number(extra.price);
-    if (!price) return; // αγνόησε STD / 0
+    if (!price) return;
 
-    const row = document.createElement("label");
+    const row = document.createElement("div");
     row.className = "extras-option";
 
     const cb = document.createElement("input");
     cb.type  = "checkbox";
-    cb.value = String(idx);
+    cb.value = idx;
     cb.addEventListener("change", handleExtraCheckboxChange);
 
-    const text = document.createElement("span");
+    const text = document.createElement("div");
     text.className = "extras-option-text";
     text.textContent = `${extra.name} (+${price.toFixed(2)} €)`;
 
     row.appendChild(cb);
     row.appendChild(text);
     panel.appendChild(row);
+
+    // Clicking on the row toggles the checkbox (Apple behavior)
+    row.addEventListener("click", e => {
+      if (e.target.tagName !== "INPUT") {
+        cb.checked = !cb.checked;
+        cb.dispatchEvent(new Event("change"));
+      }
+    });
   });
+
+  recalcPriceWithExtras();
+}
+
 
   recalcPriceWithExtras();
 }
