@@ -14,6 +14,46 @@ const DATA_SOURCES = {
   }
 };
 
+/* =========================================================
+   BING IMAGE SEARCH API — AUTO IMAGE FETCHER
+   ========================================================= */
+
+const BING_API_KEY = "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ";
+const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
+
+/**
+ * Κάνει online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
+ * και ενημερώνει το <img id="carImage">
+ */
+async function updateCarImage() {
+  const brand  = document.getElementById("brandSelect").value;
+  const model  = document.getElementById("modelSelect").value;
+  const year   = document.getElementById("yearSelect").value;
+
+  if (!brand || !model || !year) return;
+
+  const query = `${brand} ${model} ${year} PNG`;
+
+  try {
+    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
+      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
+    });
+
+    if (!res.ok) throw new Error("Image API error");
+
+    const data = await res.json();
+    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
+
+    if (imgUrl) {
+      document.getElementById("carImage").src = imgUrl;
+    }
+
+  } catch (err) {
+    console.warn("Image search failed:", err);
+  }
+}
+
+
 // Τρέχον σετ δεδομένων
 let currentDataset = null;
 
