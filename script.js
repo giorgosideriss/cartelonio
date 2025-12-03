@@ -18,299 +18,512 @@ const DATA_SOURCES = {
 let currentDataset = null;
 
 // Extras
-let currentBasePrice = 0;
-let currentExtras = [];
-let selectedExtras = new Set();
+let currentBasePrice = 0;        // ΛΤΠΦ χωρίς extras
+let currentExtras    = [];       // λίστα extras της έκδοσης
+let selectedExtras   = new Set();// indexes επιλεγμένων extras
 
-/* ===== ΑΠΟΜΕΙΩΣΕΙΣ κλπ ===== */
+/* === CATEGORY DEPRECIATION TABLES (από Excel) === */
 const categories = {
-  "Επιλέξτε Κατηγορία Αμαξώματος": [[0,0]],
-  "SUV": [[0.5,0.11],[1,0.22],[1.5,0.25],[2,0.29],[2.5,0.35],[3,0.37],[3.5,0.44],[4,0.5],[4.5,0.56],[5,0.62]],
-  "Hatchback": [[0.5,0.09],[1,0.19],[1.5,0.24],[2,0.28],[2.5,0.32],[3,0.37],[3.5,0.43],[4,0.49]],
-  "Sedan": [[0.5,0.15],[1,0.3],[1.5,0.33],[2,0.36],[2.5,0.4],[3,0.43],[3.5,0.5],[4,0.57]],
-  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48]],
-  "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47]],
-  "MPV": [[0.5,0.09],[1,0.19],[1.5,0.23],[2,0.27],[2.5,0.33],[3,0.36],[3.5,0.43],[4,0.49]]
+  "Επιλέξτε Κατηγορία Αμαξώματος": [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],
+  
+  "SUV": [[0.5,0.11],[1,0.22],[1.5,0.25],[2,0.29],[2.5,0.35],[3,0.37],[3.5,0.44],[4,0.5],[4.5,0.56],[5,0.62],[5.5,0.66],[6,0.68],[6.5,0.71],[7,0.73],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
+
+  "Hatchback": [[0.5,0.09],[1,0.19],[1.5,0.24],[2,0.28],[2.5,0.32],[3,0.37],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.7],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.81],[10,0.83]],
+
+  "Sedan": [[0.5,0.15],[1,0.3],[1.5,0.33],[2,0.36],[2.5,0.4],[3,0.43],[3.5,0.5],[4,0.57],[4.5,0.64],[5,0.72],[5.5,0.74],[6,0.76],[6.5,0.78],[7,0.8],[7.5,0.81],[8,0.84],[8.5,0.85],[9,0.85],[9.5,0.86],[10,0.87]],
+
+  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
+
+  "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47],[4.5,0.53],[5,0.59],[5.5,0.63],[6,0.66],[6.5,0.68],[7,0.71],[7.5,0.73],[8,0.76],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
+
+  "MPV": [[0.5,0.09],[1,0.19],[1.5,0.23],[2,0.27],[2.5,0.33],[3,0.36],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.7],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]]
 };
 
+/* === CO2 TABLE (από Excel) === */
 const coTable = {
-  "<14000":[0.038,0.04,0.044,0.048,0.052,0.056,0.064,0.08],
-  "14-17k":[0.076,0.08,0.088,0.096,0.104,0.112,0.128,0.16],
-  "17-20k":[0.152,0.16,0.176,0.192,0.208,0.224,0.256,0.32],
-  "20-25k":[0.228,0.24,0.264,0.288,0.312,0.336,0.384,0.48],
-  ">25k":[0.304,0.32,0.352,0.384,0.416,0.448,0.512,0.64]
+  "<14000": [0.038,0.04,0.044,0.048,0.052,0.056,0.064,0.08],
+  "14-17k": [0.076,0.08,0.088,0.096,0.104,0.112,0.128,0.16],
+  "17-20k": [0.152,0.16,0.176,0.192,0.208,0.224,0.256,0.32],
+  "20-25k": [0.228,0.24,0.264,0.288,0.312,0.336,0.384,0.48],
+  ">25k":   [0.304,0.32,0.352,0.384,0.416,0.448,0.512,0.64]
 };
 
-/* ===== ΒΟΗΘΕΙΕΣ ===== */
-const parseDate = v => v ? new Date(v) : null;
-const yearsBetween = (a,b) => (!a||!b)?0:Math.floor((b-a)/31557600000);
-const autoAvgKm = y => y*15000;
+/* ========== ΒΟΗΘΗΤΙΚΕΣ ΣΥΝΑΡΤΗΣΕΙΣ ========== */
+
+function parseDate(v){ return v ? new Date(v) : null; }
+
+function yearsBetween(d1, d2){
+  if (!d1 || !d2) return 0;
+  return Math.floor((d2 - d1) / (1000*60*60*24*365));
+}
+
+function autoAvgKm(years){
+  return years * 15000;
+}
 
 function lookupDepreciation(cat, years){
-  const t = categories[cat];
-  if(!t) return 0;
-  let res = 0;
-  for(const row of t){
-    if(years >= row[0]) res=row[1];
+  const table = categories[cat];
+  if (!table) return 0;
+  let result = table[0][1];
+  for(let i=0;i<table.length;i++){
+    if(years >= table[i][0]) result = table[i][1];
   }
-  return res;
+  return result;
 }
 
 function lookupCO2(price, co2){
-  let bracket="<14000";
-  if(price>=14000 && price<17000) bracket="14-17k";
+  let bracket = "<14000";
+  if(price >=14000 && price<17000) bracket = "14-17k";
   else if(price>=17000 && price<20000) bracket="17-20k";
   else if(price>=20000 && price<25000) bracket="20-25k";
   else if(price>=25000) bracket=">25k";
 
-  const bins=[100,120,140,160,180,200,250,9999];
-  let i=bins.findIndex(x=>co2<=x);
-  return coTable[bracket][i];
+  let col = 0;
+  if(co2<=100) col=0;
+  else if(co2<=120) col=1;
+  else if(co2<=140) col=2;
+  else if(co2<=160) col=3;
+  else if(co2<=180) col=4;
+  else if(co2<=200) col=5;
+  else if(co2<=250) col=6;
+  else col=7;
+
+  return coTable[bracket][col];
 }
 
-function mileageDep(avg,m){
-  return m <= avg ? 0 : ((m-avg)/500)*0.001;
+function mileageDep(avgKm, mileage){
+  if(mileage <= avgKm) return 0;
+  return ((mileage - avgKm)/500) * 0.001;
 }
 
-/* ===== EXTRAS ===== */
-function getExtrasTotal(){
-  let t=0;
-  selectedExtras.forEach(i=>{
-    const ex=currentExtras[i];
-    if(ex) t+=Number(ex.price||0);
+/* ========== EXTRAS HELPERS ========== */
+
+function getExtrasTotal() {
+  let total = 0;
+  selectedExtras.forEach(idx => {
+    const extra = currentExtras[idx];
+    if (extra && Number(extra.price)) {
+      total += Number(extra.price);
+    }
   });
-  return t;
+  return total;
 }
 
-function recalcPriceWithExtras(){
-  const price=document.getElementById("price");
-  const label=document.querySelector(".extras-toggle-label");
-  const total=getExtrasTotal();
-  const final=currentBasePrice+total;
-  price.value=final.toFixed(2);
+function recalcPriceWithExtras() {
+  const priceInput = document.getElementById("price");
+  const labelSpan  = document.querySelector(".extras-toggle-label");
 
-  if(currentExtras.length===0){
-    label.textContent="Δεν υπάρχουν extras";
-  } else if(selectedExtras.size===0){
-    label.textContent="Χωρίς επιπλέον extras";
+  const extrasTotal = getExtrasTotal();
+  const finalPrice  = currentBasePrice + extrasTotal;
+
+  if (!isNaN(finalPrice)) {
+    priceInput.value = finalPrice.toFixed(2);
+  }
+
+  if (!labelSpan) return;
+
+  const count = selectedExtras.size;
+  if (currentExtras.length === 0) {
+    labelSpan.textContent = "Δεν υπάρχουν extras";
+  } else if (count === 0) {
+    labelSpan.textContent = "Χωρίς επιπλέον extras";
   } else {
-    label.textContent=`${selectedExtras.size} επιλεγμένα (+${total.toFixed(2)} €)`;
+    const formatted = extrasTotal.toLocaleString("el-GR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    labelSpan.textContent = `${count} επιλεγμένα (+${formatted} €)`;
   }
 }
 
-function handleExtraTick(ev){
-  const i=Number(ev.target.dataset.index);
-  if(ev.target.checked) selectedExtras.add(i);
-  else selectedExtras.delete(i);
+function handleExtraCheckboxChange(e) {
+  const idx = Number(e.target.value);
+  if (e.target.checked) {
+    selectedExtras.add(idx);
+  } else {
+    selectedExtras.delete(idx);
+  }
   recalcPriceWithExtras();
 }
 
-function loadExtras(list){
-  const panel=document.getElementById("extrasPanel");
-  const toggle=document.getElementById("extrasToggle");
-  const label=document.querySelector(".extras-toggle-label");
+function loadExtras(extrasList) {
+  const panel     = document.getElementById("extrasPanel");
+  const toggleBtn = document.getElementById("extrasToggle");
+  const labelSpan = document.querySelector(".extras-toggle-label");
 
-  panel.innerHTML="";
-  currentExtras=list||[];
+  currentExtras = extrasList || [];
   selectedExtras.clear();
 
-  if(!currentExtras.length){
-    toggle.disabled=true;
-    label.textContent="Δεν υπάρχουν extras";
+  if (!panel) return;
+  panel.innerHTML = "";
+
+  if (!currentExtras || currentExtras.length === 0) {
+    if (toggleBtn) toggleBtn.disabled = true;
+    if (labelSpan) labelSpan.textContent = "Δεν υπάρχουν extras";
+    recalcPriceWithExtras();
     return;
   }
 
-  toggle.disabled=false;
-  label.textContent="Επιλέξτε extras";
+  if (toggleBtn) toggleBtn.disabled = false;
+  if (labelSpan) labelSpan.textContent = "Επιλέξτε extras";
 
-  currentExtras.forEach((ex,i)=>{
-    if(!ex.price) return;
-    const row=document.createElement("label");
-    row.className="extras-option";
+  currentExtras.forEach((extra, idx) => {
+    const price = Number(extra.price);
+    if (!price) return; // αγνόησε STD (=0)
 
-    const cb=document.createElement("input");
-    cb.type="checkbox";
-    cb.dataset.index=i;
-    cb.addEventListener("change",handleExtraTick);
+    const row = document.createElement("label");
+    row.className = "extras-option";
 
-    const txt=document.createElement("span");
-    txt.className="extras-option-text";
-    txt.innerHTML=`${ex.name} <br><strong>(+${Number(ex.price).toFixed(2)} €)</strong>`;
+    const cb = document.createElement("input");
+    cb.type  = "checkbox";
+    cb.value = String(idx);
+    cb.addEventListener("change", handleExtraCheckboxChange);
+
+    const text = document.createElement("span");
+    text.className = "extras-option-text";
+    text.textContent = `${extra.name} (+${price.toFixed(2)} €)`;
 
     row.appendChild(cb);
-    row.appendChild(txt);
+    row.appendChild(text);
     panel.appendChild(row);
   });
-}
 
-/* ===== DROPDOWNS ===== */
-async function loadDatasetForSelection(){
-  const brand=document.getElementById("brandSelect").value;
-  const year=document.getElementById("yearSelect").value;
-
-  currentDataset=null;
-  document.getElementById("modelSelect").innerHTML='<option>Επιλέξτε Μοντέλο</option>';
-  document.getElementById("versionSelect").innerHTML='<option>Επιλέξτε Έκδοση</option>';
-  document.getElementById("colorSelect").innerHTML='<option>Επιλέξτε ΛΤΠΦ</option>';
-  loadExtras([]);
-
-  if(!brand||!year) return;
-
-  const url=DATA_SOURCES[brand][year];
-  const res=await fetch(url);
-  currentDataset=await res.json();
-
-  const models=document.getElementById("modelSelect");
-  models.innerHTML='<option value="">Επιλέξτε Μοντέλο</option>';
-  Object.keys(currentDataset.models).forEach(m=>{
-    const o=document.createElement("option");
-    o.value=m; o.textContent=m;
-    models.appendChild(o);
-  });
-}
-
-function populateVersions(){
-  const model=document.getElementById("modelSelect").value;
-  const ver=document.getElementById("versionSelect");
-  ver.innerHTML='<option>Επιλέξτε Έκδοση</option>';
-  document.getElementById("colorSelect").innerHTML='<option>Επιλέξτε ΛΤΠΦ</option>';
-  loadExtras([]);
-
-  if(!model||!currentDataset) return;
-
-  currentDataset.models[model].editions.forEach((ed,i)=>{
-    const o=document.createElement("option");
-    o.value=i; o.textContent=ed.name;
-    ver.appendChild(o);
-  });
-}
-
-function populateColors(){
-  const model=document.getElementById("modelSelect").value;
-  const idx=parseInt(document.getElementById("versionSelect").value);
-  const col=document.getElementById("colorSelect");
-  col.innerHTML='<option>Επιλέξτε ΛΤΠΦ</option>';
-  loadExtras([]);
-
-  if(isNaN(idx)) return;
-
-  const ed=currentDataset.models[model].editions[idx];
-
-  ed.variants.forEach((v,i)=>{
-    const o=document.createElement("option");
-    o.value=i; o.textContent=v.color||"Standard";
-    col.appendChild(o);
-  });
-
-  loadExtras(ed.extras||[]);
-}
-
-function autoFillCarData(){
-  const model=document.getElementById("modelSelect").value;
-  const edIndex=parseInt(document.getElementById("versionSelect").value);
-  const colIndex=parseInt(document.getElementById("colorSelect").value);
-
-  if(isNaN(edIndex)||isNaN(colIndex)) return;
-
-  const edition=currentDataset.models[model].editions[edIndex];
-  const variant=edition.variants[colIndex];
-
-  currentBasePrice=Number(variant.priceNet)||0;
-  loadExtras(edition.extras||[]);
   recalcPriceWithExtras();
+}
 
-  if(edition.co2) document.getElementById("co2").value=edition.co2;
+/* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
-  if(currentDataset.models[model].category){
-    document.getElementById("category").value=currentDataset.models[model].category;
+async function loadDatasetForSelection() {
+  const brandEl  = document.getElementById("brandSelect");
+  const yearEl   = document.getElementById("yearSelect");
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const brand = brandEl.value;
+  const year  = yearEl.value;
+
+  currentDataset = null;
+  modelEl.innerHTML  = '<option value="">Επιλέξτε Μοντέλο</option>';
+  verEl.innerHTML    = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML  = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
+  loadExtras([]);
+
+  if (!brand || !year) return;
+
+  const url = DATA_SOURCES[brand] && DATA_SOURCES[brand][year];
+  if (!url) {
+    console.warn("Δεν βρέθηκαν δεδομένα για", brand, year);
+    return;
+  }
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    currentDataset = await res.json();
+    populateModels();
+  } catch (err) {
+    console.error("Σφάλμα φόρτωσης δεδομένων:", err);
   }
 }
 
-/* ===== ΥΠΟΛΟΓΙΣΜΟΣ ===== */
-function calculate(){
-  const price=Number(document.getElementById("price").value);
-  const cat=document.getElementById("category").value;
-  const first=parseDate(document.getElementById("firstReg").value);
-  const imp=parseDate(document.getElementById("importDate").value);
-  const km=Number(document.getElementById("mileage").value);
-  const co2=Number(document.getElementById("co2").value);
+function populateBrandSelect() {
+  const brandEl = document.getElementById("brandSelect");
+  brandEl.innerHTML = '<option value="">Επιλέξτε Μάρκα</option>';
 
-  const years=yearsBetween(first,imp);
-  const dep1=lookupDepreciation(cat,years);
-  const avg=autoAvgKm(years);
-  const dep2=mileageDep(avg,km);
-  const total=dep1+dep2;
-  const taxable=price*(1-total);
-  const coef=lookupCO2(price,co2);
-  const tax=taxable*coef;
+  Object.keys(DATA_SOURCES).forEach(brand => {
+    const opt = document.createElement("option");
+    opt.value = brand;
+    opt.textContent = brand;
+    brandEl.appendChild(opt);
+  });
+}
 
-  document.getElementById("results").innerHTML=`
-    <p><strong>Ηλικία:</strong> ${years}</p>
-    <p><strong>Μέσος όρος χιλιομέτρων:</strong> ${avg.toLocaleString()} km</p>
-    <p><strong>Απομείωση:</strong> ${(total*100).toFixed(0)}%</p>
-    <p><strong>Φορολογητέα αξία:</strong> €${taxable.toFixed(0)}</p>
-    <p><strong>Συντελεστής CO₂:</strong> ${coef}</p>
-    <h3>Τέλος Ταξινόμησης: €${tax.toFixed(2)}</h3>
+function populateYearSelect() {
+  const brandEl = document.getElementById("brandSelect");
+  const yearEl  = document.getElementById("yearSelect");
+  const brand   = brandEl.value;
+
+  yearEl.innerHTML = '<option value="">Επιλέξτε Χρονολογία</option>';
+
+  if (!brand || !DATA_SOURCES[brand]) return;
+
+  Object.keys(DATA_SOURCES[brand]).forEach(year => {
+    const opt = document.createElement("option");
+    opt.value = year;
+    opt.textContent = year;
+    yearEl.appendChild(opt);
+  });
+}
+
+function populateModels() {
+  const modelEl = document.getElementById("modelSelect");
+  const verEl   = document.getElementById("versionSelect");
+  const colorEl = document.getElementById("colorSelect");
+
+  modelEl.innerHTML = '<option value="">Επιλέξτε Μοντέλο</option>';
+  verEl.innerHTML   = '<option value="">Επιλέξωση Έκδοση</option>'.replace("ώ","ό"); // μικρό trick για να μην γράφω από την αρχή
+  verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
+  loadExtras([]);
+
+  if (!currentDataset || !currentDataset.models) return;
+
+  Object.keys(currentDataset.models).forEach(modelName => {
+    const opt = document.createElement("option");
+    opt.value = modelName;
+    opt.textContent = modelName;
+    modelEl.appendChild(opt);
+  });
+}
+
+function populateVersions() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+  const model    = modelEl.value;
+
+  verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
+  colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
+  loadExtras([]);
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+
+  const modelObj = currentDataset.models[model];
+  if (!modelObj || !Array.isArray(modelObj.editions)) return;
+
+  modelObj.editions.forEach((ed, index) => {
+    const opt = document.createElement("option");
+    opt.value = String(index);
+    opt.textContent = ed.name;
+    verEl.appendChild(opt);
+  });
+
+  updateCarSummary();
+}
+
+function populateColors() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const model    = modelEl.value;
+  const edIndex  = parseInt(verEl.value, 10);
+
+  colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
+  loadExtras([]);
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+  if (isNaN(edIndex)) return;
+
+  const modelObj = currentDataset.models[model];
+  const edition  = modelObj && modelObj.editions && modelObj.editions[edIndex];
+  if (!edition || !Array.isArray(edition.variants)) return;
+
+  edition.variants.forEach((variant, idx) => {
+    const opt = document.createElement("option");
+    opt.value = String(idx);
+    opt.textContent = variant.color || "Standard";
+    colorEl.appendChild(opt);
+  });
+
+  // extras για την έκδοση
+  loadExtras(edition.extras || []);
+
+  if (edition.variants.length > 0) {
+    colorEl.value = "0";
+    autoFillCarData();
+  }
+
+  updateCarSummary();
+}
+
+function autoFillCarData() {
+  const modelEl  = document.getElementById("modelSelect");
+  const verEl    = document.getElementById("versionSelect");
+  const colorEl  = document.getElementById("colorSelect");
+
+  const model    = modelEl.value;
+  const edIndex  = parseInt(verEl.value, 10);
+  const colorIdx = parseInt(colorEl.value, 10);
+
+  if (!currentDataset || !currentDataset.models || !model) return;
+  if (isNaN(edIndex) || isNaN(colorIdx)) return;
+
+  const modelObj = currentDataset.models[model];
+  const edition  = modelObj && modelObj.editions && modelObj.editions[edIndex];
+  if (!edition) return;
+
+  const variant  = edition.variants && edition.variants[colorIdx];
+  if (!variant) return;
+
+  currentBasePrice = Number(variant.priceNet) || 0;
+
+  if (Array.isArray(edition.extras)) {
+    loadExtras(edition.extras);
+  } else {
+    loadExtras([]);
+  }
+
+  recalcPriceWithExtras();
+
+  if (edition.co2 != null) {
+    document.getElementById("co2").value = edition.co2;
+  }
+
+  if (modelObj.category && categories[modelObj.category]) {
+    document.getElementById("category").value = modelObj.category;
+  }
+
+  updateCarSummary();
+}
+
+/* ========== ΣΥΝΟΨΗ ΟΧΗΜΑΤΟΣ ========== */
+
+function updateCarSummary() {
+  const summaryEl = document.getElementById("carSummary");
+  if (!summaryEl) return;
+
+  const brand  = document.getElementById("brandSelect").value || "—";
+  const year   = document.getElementById("yearSelect").value  || "—";
+  const model  = document.getElementById("modelSelect").value || "—";
+  const verIdx = document.getElementById("versionSelect").value;
+  const colorIdx = document.getElementById("colorSelect").value;
+
+  let editionName = "—";
+  let variantName = "—";
+
+  if (currentDataset && model && !isNaN(parseInt(verIdx,10))) {
+    const ed = currentDataset.models[model]?.editions[parseInt(verIdx,10)];
+    if (ed) {
+      editionName = ed.name || "—";
+      if (Array.isArray(ed.variants) && !isNaN(parseInt(colorIdx,10))) {
+        const v = ed.variants[parseInt(colorIdx,10)];
+        if (v) variantName = v.color || "Standard";
+      }
+    }
+  }
+
+  const priceVal = document.getElementById("price").value;
+  const priceText = priceVal ? Number(priceVal).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})+" €" : "—";
+
+  summaryEl.innerHTML = `
+    <p><strong>Μάρκα:</strong> ${brand}</p>
+    <p><strong>Χρονολογία:</strong> ${year}</p>
+    <p><strong>Μοντέλο:</strong> ${model}</p>
+    <p><strong>Έκδοση:</strong> ${editionName}</p>
+    <p><strong>ΛΤΠΦ (με extras):</strong> ${priceText}</p>
+    <p><strong>Χρώμα / Πακέτο:</strong> ${variantName}</p>
   `;
 }
 
-/* ===== INITIALIZE ===== */
-document.addEventListener("DOMContentLoaded",()=>{
+/* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
 
-  /* Κατηγορίες */
-  const catSel=document.getElementById("category");
-  Object.keys(categories).forEach(c=>{
-    const o=document.createElement("option");
-    o.value=c; o.textContent=c;
-    catSel.appendChild(o);
+function calculate(){
+  const price      = Number(document.getElementById("price").value);
+  const cat        = document.getElementById("category").value;
+  const firstReg   = parseDate(document.getElementById("firstReg").value);
+  const importDate = parseDate(document.getElementById("importDate").value);
+  const mileage    = Number(document.getElementById("mileage").value);
+  const co2        = Number(document.getElementById("co2").value);
+
+  const years   = yearsBetween(firstReg, importDate);
+  const yearDep = lookupDepreciation(cat, years);
+  const avgKm   = autoAvgKm(years);  
+  const kmDep   = mileageDep(avgKm, mileage);
+  const totalDep = yearDep + kmDep;
+  const finalPrice = price * (1 - totalDep);
+
+  const co2coef = lookupCO2(price, co2);
+  const tax     = finalPrice * co2coef;
+  
+  document.getElementById("results").innerHTML = `
+    <p><strong>Ηλικία:</strong> ${years} έτη</p>
+    <p><strong>Μέσος όρος χιλιομέτρων για ηλικία:</strong> ${avgKm.toLocaleString("el-GR")} km</p>
+    <p><strong>Απομείωση λόγω ηλικίας & κατηγορίας αμαξώματος:</strong> ${(yearDep*100).toFixed(0)}%</p>
+    <p><strong>Απομείωση λόγω διανυθέντων χιλιομέτρων πλέον του μέσου όρου:</strong> ${(kmDep*100).toFixed(0)}%</p>
+    <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(0)}%</p>
+    <p><strong>Φορολογητέα αξία (μετά την απομείωση):</strong> €${finalPrice.toFixed(0)}</p>
+    <p><strong>Συντελεστής τέλους ταξινόμησης (CO₂):</strong> ${co2coef}</p>
+    <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(2)}</h3>
+  `;
+}
+
+/* ========== ΑΡΧΙΚΟΠΟΙΗΣΗ ========== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  // dropdown κατηγορίας
+  const categorySelect = document.getElementById("category");
+  categorySelect.innerHTML = "";
+  Object.keys(categories).forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    categorySelect.appendChild(option);
   });
 
-  /* Μάρκα */
-  const brand=document.getElementById("brandSelect");
-  Object.keys(DATA_SOURCES).forEach(b=>{
-    const o=document.createElement("option");
-    o.value=b; o.textContent=b;
-    brand.appendChild(o);
-  });
+  // Μάρκα / Έτος
+  populateBrandSelect();
+  populateYearSelect();
 
-  brand.addEventListener("change",()=>{
-    const year=document.getElementById("yearSelect");
-    year.innerHTML='<option value="">Επιλέξτε Χρονολογία</option>';
-    if(DATA_SOURCES[brand.value]){
-      Object.keys(DATA_SOURCES[brand.value]).forEach(y=>{
-        const o=document.createElement("option");
-        o.value=y; o.textContent=y;
-        year.appendChild(o);
-      });
-    }
+  document.getElementById("brandSelect").addEventListener("change", () => {
+    populateYearSelect();
+    currentDataset = null;
+    document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
+    document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
+    document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
     loadExtras([]);
+    updateCarSummary();
   });
 
-  document.getElementById("yearSelect").addEventListener("change",loadDatasetForSelection);
-  document.getElementById("modelSelect").addEventListener("change",populateVersions);
-  document.getElementById("versionSelect").addEventListener("change",populateColors);
-  document.getElementById("colorSelect").addEventListener("change",autoFillCarData);
-
-  /* Extras dropdown */
-  const dropdown=document.querySelector(".extras-dropdown");
-  const toggle=document.getElementById("extrasToggle");
-
-  toggle.addEventListener("click",()=>{
-    dropdown.classList.toggle("open");
+  document.getElementById("yearSelect").addEventListener("change", () => {
+    loadDatasetForSelection();
   });
 
-  document.addEventListener("click",(e)=>{
-    if(!dropdown.contains(e.target)) dropdown.classList.remove("open");
+  document.getElementById("modelSelect").addEventListener("change", () => {
+    populateVersions();
   });
 
-  document.getElementById("calcBtn").addEventListener("click",calculate);
+  document.getElementById("versionSelect").addEventListener("change", () => {
+    populateColors();
+  });
 
-  document.getElementById("resetBtn").addEventListener("click",()=>{
+  document.getElementById("colorSelect").addEventListener("change", () => {
+    autoFillCarData();
+  });
+
+  // Extras dropdown toggle
+  const extrasDropdown = document.querySelector(".extras-dropdown");
+  const extrasToggle   = document.getElementById("extrasToggle");
+
+  if (extrasDropdown && extrasToggle) {
+    extrasToggle.addEventListener("click", () => {
+      extrasDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!extrasDropdown.contains(e.target) && e.target !== extrasToggle) {
+        extrasDropdown.classList.remove("open");
+      }
+    });
+  }
+
+  // Κουμπιά υπολογισμού / reset
+  document.getElementById("calcBtn").addEventListener("click", () => {
+    calculate();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", () => {
     document.getElementById("calcForm").reset();
+    currentBasePrice = 0;
+    currentExtras = [];
     selectedExtras.clear();
-    currentBasePrice=0;
     loadExtras([]);
-    document.getElementById("results").innerHTML="<p>Συμπληρώστε και πατήστε Υπολόγισε.</p>";
+    document.getElementById("results").innerHTML = 
+      "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
+    updateCarSummary();
   });
 
+  // Αρχική σύνοψη
+  updateCarSummary();
 });
