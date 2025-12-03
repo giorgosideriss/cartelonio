@@ -321,6 +321,9 @@ function populateModels() {
     opt.textContent = modelName;
     modelEl.appendChild(opt);
   });
+
+  updateCarImage();   // <<< CHANGE IMAGE
+  updateCarSummary();
 }
 
 function populateVersions() {
@@ -345,6 +348,7 @@ function populateVersions() {
     verEl.appendChild(opt);
   });
 
+  updateCarImage();
   updateCarSummary();
 }
 
@@ -381,6 +385,7 @@ function populateColors() {
     autoFillCarData();
   }
 
+  updateCarImage();
   updateCarSummary();
 }
 
@@ -421,6 +426,7 @@ function autoFillCarData() {
     document.getElementById("category").value = modelObj.category;
   }
 
+   updateCarImage();
   updateCarSummary();
 }
 
