@@ -10,136 +10,146 @@
 <header class="header">
   <div class="container">
     <h1>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου</h1>
-    <p class="subtitle">Υπολογισμός τελωνείου για εισαγωγή οχήματος από ΕΕ — με βάση τον επίσημο τιμοκατάλογο.</p>
+    <p class="subtitle">Υπολογισμός τελωνείου για εισαγωγή οχήματος από ΕΕ — βασισμένο στα δεδομένα σας.</p>
   </div>
 </header>
 
-<div class="hero-image">
-  <img id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" 
-     alt="car preview" width="320">
-
-</div>
-
-<main class="container">
-  <section class="layout">
-    <!-- ΑΡΙΣΤΕΡΗ ΣΤΗΛΗ: configurator -->
-    <section class="card config-card">
-      <h2 class="card-title">Διαμόρφωση Οχήματος</h2>
-      <form id="calcForm" autocomplete="off">
-
-        <div class="row">
-          <label for="price">
-            Τιμή Οχήματος - ΛΤΠΦ (€)
-            <span class="tooltip">?
-              <span class="tooltiptext">
-                Η ΛΤΠΦ είναι η αρχική αξία του αυτοκινήτου,
-                χωρίς τέλη ταξινόμησης και φόρους, αναλόγως την έκδοση εξοπλισμού.
-                Μπορείτε να την βρείτε στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
-              </span>
-            </span>
-          </label>
-          <input type="number" id="price" required step="0.01" value="">
-        </div>
-
-        <div class="row">
-          <label>Μάρκα</label>
-<div class="brand-select-wrapper">
-  <div id="brandSelectBtn" class="brand-select-btn">
-    <span id="brandSelectLabel">Επιλέξτε Μάρκα</span>
-    <span class="arrow">▼</span>
+<div class="hero-wrap">
+  <div class="hero-card">
+    <img
+      id="carImage"
+      src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"
+      alt="Όχημα"
+    >
   </div>
-
-  <div id="brandSelectMenu" class="brand-select-menu"></div>
 </div>
-        </div>
 
-        <div class="row">
-          <label>Χρονολογία</label>
-          <select id="yearSelect"></select>
-        </div>
+<main class="container layout">
+  <!-- Αριστερά: Φόρμα / Configurator -->
+  <section class="card main-card">
+    <form id="calcForm" autocomplete="off">
 
-        <div class="row">
-          <label>Μοντέλο</label>
-          <select id="modelSelect"></select>
-        </div>
+      <div class="section-title">Διαμόρφωση Οχήματος</div>
 
-        <div class="row">
-          <label>Έκδοση</label>
-          <select id="versionSelect"></select>
-        </div>
+      <div class="row">
+        <label for="price">
+          Τιμή Οχήματος - ΛΤΠΦ (€)
+          <span class="tooltip">?
+            <span class="tooltiptext">
+              Η ΛΤΠΦ είναι η αρχική αξία του αυτοκινήτου,
+              χωρίς τέλη ταξινόμησης και φόρους, αναλόγως την έκδοση εξοπλισμού.
+              Μπορείτε να την βρείτε στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
+            </span>
+          </span>
+        </label>
+        <input type="number" id="price" required step="0.01" value="">
+      </div>
 
-        <!-- Custom dropdown για Extras (με animated checkboxes) -->
-        <div class="row">
-          <label>Extras</label>
-          <div class="extras-dropdown">
-            <button type="button" id="extrasToggle" class="extras-toggle" disabled>
-              <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
-              <span class="extras-toggle-arrow">▾</span>
-            </button>
-            <div id="extrasPanel" class="extras-panel"></div>
-          </div>
-        </div>
+      <!-- Custom BRAND DROPDOWN -->
+      <div class="row">
+        <label>Μάρκα</label>
+        <div class="brand-picker">
+          <button type="button" id="brandButton" class="brand-button">
+            <span id="brandButtonLogo" class="brand-button-logo"></span>
+            <span id="brandButtonLabel" class="brand-button-label">Επιλέξτε μάρκα</span>
+            <span class="brand-button-arrow">▾</span>
+          </button>
+          <div id="brandMenu" class="brand-menu"></div>
 
-        <div class="row">
-          <label>Επιλογή ΛΤΠΦ (χρώμα/πακέτο)</label>
-          <select id="colorSelect"></select>
+          <!-- Κρυφό native select, για να δουλεύουν όλα τα scripts -->
+          <select id="brandSelect" class="brand-select-native" aria-hidden="true" tabindex="-1"></select>
         </div>
+      </div>
 
-        <div class="row">
-          <label for="category">Κατηγορία Οχήματος</label>
-          <select id="category"></select>
+      <div class="row">
+        <label>Χρονολογία</label>
+        <select id="yearSelect"></select>
+      </div>
+
+      <div class="row">
+        <label>Μοντέλο</label>
+        <select id="modelSelect"></select>
+      </div>
+
+      <div class="row">
+        <label>Έκδοση</label>
+        <select id="versionSelect"></select>
+      </div>
+
+      <!-- Extras με animated checkboxes -->
+      <div class="row">
+        <label>Extras</label>
+        <div class="extras-dropdown">
+          <button type="button" id="extrasToggle" class="extras-toggle" disabled>
+            <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
+            <span class="extras-toggle-arrow">▾</span>
+          </button>
+          <div id="extrasPanel" class="extras-panel"></div>
         </div>
+      </div>
 
-        <div class="row">
-          <label for="firstReg">Πρώτη Άδεια (ημ/νία)</label>
-          <input type="date" id="firstReg" value="">
-        </div>
+      <div class="row">
+        <label>Επιλογή ΛΤΠΦ (χρώμα/πακέτο)</label>
+        <select id="colorSelect"></select>
+      </div>
 
-        <div class="row">
-          <label for="importDate">Ημερομηνία Εισαγωγής (ημ/νία)</label>
-          <input type="date" id="importDate" value="">
-        </div>
+      <hr class="section-divider">
 
-        <div class="row">
-          <label for="mileage">Διανυθέντα Χιλιόμετρα</label>
-          <input type="number" id="mileage" value="">
-        </div>
+      <div class="section-title">Στοιχεία Οχήματος</div>
 
-        <div class="row">
-          <label for="co2">Εκπομπές CO₂ (g/km)</label>
-          <input type="number" id="co2" value="">
-        </div>
+      <div class="row">
+        <label for="category">Κατηγορία Οχήματος</label>
+        <select id="category"></select>
+      </div>
 
-        <div class="row actions">
-          <button type="button" id="calcBtn">Υπολόγισε</button>
-          <button type="button" id="resetBtn" class="secondary">Επαναφορά</button>
-        </div>
+      <div class="row">
+        <label for="firstReg">Πρώτη Άδεια (ημ/νία)</label>
+        <input type="date" id="firstReg" value="">
+      </div>
 
-      </form>
-    </section>
+      <div class="row">
+        <label for="importDate">Ημερομηνία Εισαγωγής (ημ/νία)</label>
+        <input type="date" id="importDate" value="">
+      </div>
 
-    <!-- ΔΕΞΙΑ ΣΤΗΛΗ: σύνοψη & αποτέλεσμα -->
-    <section class="summary-column">
-      <section class="card mini-summary">
-        <h2 class="card-title">Σύνοψη Οχήματος</h2>
-        <div id="carSummary">
-          <p>Επίλεξε μάρκα, χρονολογία και έκδοση για να δεις τη σύνοψη.</p>
-        </div>
-      </section>
+      <div class="row">
+        <label for="mileage">Διανυθέντα Χιλιόμετρα</label>
+        <input type="number" id="mileage" value="">
+      </div>
 
-      <section class="card result" id="resultCard" aria-live="polite">
-        <h2 class="card-title">Υπολογισμός Τέλους Ταξινόμησης</h2>
-        <div id="results">
-          <p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>
-        </div>
-      </section>
-    </section>
+      <div class="row">
+        <label for="co2">Εκπομπές CO₂ (g/km)</label>
+        <input type="number" id="co2" value="">
+      </div>
+
+      <div class="row actions">
+        <button type="button" id="calcBtn">Υπολόγισε</button>
+        <button type="button" id="resetBtn" class="secondary">Επαναφορά</button>
+      </div>
+
+    </form>
   </section>
 
-  <footer class="muted">
-    <p>cartelonio - Giorgos Sideris
-    Έχει καταβληθεί κάθε προσπάθεια για να εξασφαλισθεί η ορθότητα των πληροφοριών που περιλαμβάνονται σε αυτή την ιστοσελίδα. Η ιστοσελίδα δεν αναλαμβάνει τη νομική ευθύνη για τυχόν σφάλματα, παραλείψεις, ανακριβείς πληροφορίες ή οποιαδήποτε άμεση ή έμμεση ζημιά μπορεί να προκύψει από τη χρήση της.</p>
-  </footer>
+  <!-- Δεξιά: Σύνοψη + Αποτελέσματα -->
+  <section class="side-column">
+    <section class="card">
+      <h2>Σύνοψη Οχήματος</h2>
+      <div id="carSummary" class="car-summary">
+        <!-- γεμίζει από JS -->
+      </div>
+    </section>
+
+    <section class="card result" id="resultCard" aria-live="polite">
+      <h2>Υπολογισμός</h2>
+      <div id="results">
+        <p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>
+      </div>
+    </section>
+
+    <footer class="muted">
+      <p>cartelonio - Giorgos Sideris</p>
+    </footer>
+  </section>
 </main>
 
 <script src="script.js"></script>
