@@ -48,44 +48,144 @@
   ]
 }
 ,
-        {
-       "factoryCode": "595s4",
-          "code": "595s4",
-          "name": "Pista 1.4 T-Jet 160HP",
-          "co2": 139,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 15798.0,
-              "priceRetail": 15798.0
-            }
-          ]
-        },
-        {
-        "factoryCode": "595s4",
-          "code": "595s4",
-          "name": "Turismo 1.4 T-Jet 165HP",
-          "co2": 139,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 15806.0,
-              "priceRetail": 15806.0
-            }
-          ]
-        },
-        {
-              "factoryCode": "595s4",
-          "code": "595s4",
-          "name": "Competizione 1.4 T-Jet 180HP",
-          "co2": 139,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 17643.60,
-              "priceRetail": 97888.0
-            }
-          ]
+        
+      {
+  "factoryCode": "595s4",
+  "code": "595s4",
+  "name": "Pista 1.4 T-Jet 160HP",
+  "co2": 139,
+  "variants": [
+    {
+      "color": "Standard",
+      "priceNet": 15798.0,
+      "priceRetail": 15798.0
+    }
+  ],
+  "extras": [
+    { "name": "Σκούρα κρύσταλλα (πίσω παράθυρα και 5ης πόρτας)", "price": 150.60 },
+    { "name": "Αυτόματος κλιματισμός (μονοζωνικός)", "price": 376.51 },
+    { "name": "Εμπρός προβολείς Xenon", "price": 677.71 },
+    { "name": "Ηλεκτρικά ανοιγόμενη οροφή Skydome", "price": 677.71 },
+    { "name": "Αυτόματο κιβώτιο ταχυτήτων MTA", "price": 1054.22 },
+    { "name": "Ηλεκτρικός αντιθαμβωτικός εσωτερικός καθρέφτης", "price": 112.95 },
+    { "name": "Κίτρινες δαγκάνες φρένων", "price": 150.60 },
+    { "name": "Ηχοσύστημα Hi-Fi Beats με ενισχυτή & sub-woofer 480W", "price": 376.51 },
+    { "name": "Πίσω αισθητήρες στάθμευσης", "price": 150.60 },
+    { "name": "Παστέλ χρώμα Λευκό Gara (Κωδ. 268)", "price": 225.90 },
+    { "name": "Μεταλλικό χρώμα Μαύρο Scorpione (Κωδ. 876)", "price": 293.67 },
+    { "name": "Παστέλ χρώμα Κόκκινο Abarth (Κωδ. 176)", "price": 225.90 },
+    { "name": "Μεταλλικό χρώμα Γκρι Record (Κωδ. 695)", "price": 293.67 },
+    { "name": "Μαύροι εξωτ. καθρέφτες + μαύρη σπορ γραμμή προφυλακτήρων", "price": 37.65 },
+    { "name": "Κίτρινοι εξωτ. καθρέφτες + κίτρινη σπορ γραμμή προφυλακτήρων", "price": 37.65 },
+    { "name": "Αναπτήρας", "price": 15.06 },
+    { "name": "Μαύρες δαγκάνες φρένων", "price": 150.60 },
+    { "name": "Σύστημα U-Connect Navi με οθόνη 7'' + Bluetooth + Abarth Telemetry", "price": 423.73 }
+  ]
+}
+,
+       {
+  "factoryCode": "595s4",
+  "code": "595s4",
+  "name": "Turismo 1.4 T-Jet 165HP",
+  "co2": 139,
+  "variants": [
+    {
+      "color": "Standard",
+      "priceNet": 15806.0,
+      "priceRetail": 15806.0
+    }
+  ],
+  "extras": [
+    { "name": "Εμπρός προβολείς Xenon", "price": 677.71 },
+    { "name": "Ηλεκτρικά ανοιγόμενη οροφή Skydome", "price": 677.71 },
+    { "name": "Αυτόματο κιβώτιο ταχυτήτων MTA", "price": 1054.22 },
+    { "name": "Ηλεκτρικός αντιθαμβωτικός εσωτερικός καθρέφτης", "price": 112.95 },
+    { "name": "Ζάντες αλουμινίου Touring 17'' 10 ακτίνων με ελαστικά 205/40 R17", "price": 150.60 },
+    { "name": "Δίχρωμη βαφή Μαύρο Scorpione / Λευκό Gara (220)", "price": 715.36 },
+    { "name": "Δίχρωμη βαφή Γκρι Pista / Γκρι Campovolo (618)", "price": 715.36 },
+    { "name": "Εμπρός αμορτισέρ KONI FSD", "price": 112.95 },
+    { "name": "Κόκκινες δαγκάνες φρένων", "price": 188.25 },
+    { "name": "Κίτρινες δαγκάνες φρένων", "price": 188.25 },
+    { "name": "Ηχοσύστημα Hi-Fi Beats με ενισχυτή & Sub-Woofer 480W", "price": 376.51 },
+    { "name": "Πίσω αισθητήρες στάθμευσης", "price": 150.60 },
+    { "name": "Ζάντες αλουμινίου Sport 5 οπών 17'' με ελαστικά 205/40 R17", "price": 150.60 },
+    { "name": "Παστέλ χρώμα Λευκό Gara (268)", "price": 263.55 },
+    { "name": "Μεταλλικό χρώμα Γκρι Trofeo (372)", "price": 331.33 },
+    { "name": "Μεταλλικό χρώμα Μαύρο Scorpione (876)", "price": 331.33 },
+    { "name": "Παστέλ χρώμα Κόκκινο Abarth (176)", "price": 263.55 },
+    { "name": "Παστέλ χρώμα Κίτρινο Modena (258)", "price": 715.36 },
+    { "name": "Μεταλλικό χρώμα Γκρι Record (695)", "price": 331.33 },
+    { "name": "Ζάντες αλουμινίου Trofeo 5 οπών 17'' με ελαστικά 205/45 R17", "price": 150.60 },
+    { "name": "Κόκκινη διακοσμητική ταινία \"Abarth\" & κόκκινοι καθρέφτες", "price": 210.84 },
+    { "name": "Λευκή διακοσμητική ταινία \"Abarth\" & λευκοί καθρέφτες", "price": 210.84 },
+    { "name": "Μαύρη διακοσμητική ταινία \"Abarth\" & μαύροι καθρέφτες", "price": 210.84 },
+    { "name": "Παστέλ χρώμα Γκρι Campovolo (676)", "price": 263.55 },
+    { "name": "Δίχρωμη βαφή Γκρι Pista / Κόκκινο Abarth (627)", "price": 715.36 },
+    { "name": "Περλέ Λευκό Iridato (227)", "price": 715.36 },
+    { "name": "Μεταλλικό Μπλε Podio (369)", "price": 331.33 },
+    { "name": "Αναπτήρας", "price": 15.06 },
+    { "name": "Κεραία μικρών διαστάσεων αλουμινίου", "price": 82.83 },
+    { "name": "Ταμπλό Competizione από ανθρακονήματα", "price": 564.76 },
+    { "name": "Δίχρωμη βαφή Μαύρο Scorpione / Γκρι Record (343)", "price": 715.36 },
+    { "name": "Σύστημα U-Connect NAVI με οθόνη 7'' & telemetry", "price": 451.81 },
+    { "name": "Πακέτο 695 Yamaha (Akrapovic, Alcantara, ζάντες Esseesse 17'' κ.λπ.)", "price": 2189.72 }
+  ]
+}
+,
+       {
+  "factoryCode": "595s4",
+  "code": "595s4",
+  "name": "Competizione 1.4 T-Jet 180HP",
+  "co2": 139,
+  "variants": [
+    {
+      "color": "Standard",
+      "priceNet": 17643.60,
+      "priceRetail": 97888.0
+    }
+  ],
+  "extras": [
+    { "name": "Εμπρός προβολείς Xenon", "price": 706.21 },
+    { "name": "Ηλεκτρικά ανοιγόμενη οροφή Skydome", "price": 776.84 },
+    { "name": "Αυτόματο κιβώτιο ταχυτήτων MTA", "price": 1059.32 },
+    { "name": "Ηλεκτρικός αντιθαμβωτικός καθρέφτης", "price": 105.93 },
+    { "name": "Ζάντες αλουμινίου Esseesse μαύρες ματ 17\" 205/40 R17", "price": 211.86 },
+    { "name": "Διχρωμία Μαύρο Scorpione / Λευκό Gara", "price": 706.21 },
+    { "name": "Διχρωμία Γκρι Pista / Γκρι Campovolo", "price": 706.21 },
+    { "name": "Δερμάτινα καθίσματα Corsa by Sabelt σε μαύρο Alcantara", "price": 1059.32 },
+    { "name": "Δερμάτινα καθίσματα Corsa by Sabelt σε καφέ Alcantara", "price": 1059.32 },
+    { "name": "Τετραπίστονες δαγκάνες Brembo σε κίτρινο χρώμα", "price": 141.24 },
+    { "name": "Ηχοσύστημα Hi-Fi Beats με subwoofer", "price": 423.73 },
+    { "name": "Πίσω αισθητήρες στάθμευσης", "price": 148.31 },
+    { "name": "Τετραπίστονες δαγκάνες Brembo σε γκρι χρώμα", "price": 141.24 },
+    { "name": "Παστέλ χρώμα Λευκό Gara (268)", "price": 282.49 },
+    { "name": "Μεταλλικό χρώμα Γκρι Trofeo (372)", "price": 346.05 },
+    { "name": "Μεταλλικό χρώμα Μαύρο Scorpione (876)", "price": 346.05 },
+    { "name": "Παστέλ χρώμα Κόκκινο Abarth (176)", "price": 282.49 },
+    { "name": "Παστέλ χρώμα Κίτρινο Modena (258)", "price": 706.21 },
+    { "name": "Μεταλλικό χρώμα Γκρι Record (695)", "price": 346.05 },
+    { "name": "Κόκκινη διακοσμητική ταινία Abarth + κόκκινοι καθρέφτες", "price": 225.99 },
+    { "name": "Λευκή διακοσμητική ταινία Abarth + λευκοί καθρέφτες", "price": 225.99 },
+    { "name": "Μαύρη διακοσμητική ταινία Abarth + μαύροι καθρέφτες", "price": 225.99 },
+    { "name": "Παστέλ χρώμα Γκρι Campovolo (676)", "price": 282.49 },
+    { "name": "Ζάντες Formula Titanium 17'' 205/45 R17", "price": 211.86 },
+    { "name": "Διχρωμία Γκρι Pista / Κόκκινο Abarth (627)", "price": 706.21 },
+    { "name": "Περλέ Λευκό Iridato (227)", "price": 706.21 },
+    { "name": "Μεταλλικό Μπλε Podio (369)", "price": 346.05 },
+    { "name": "Αναπτήρας", "price": 21.19 },
+    { "name": "Ζάντες Formula Μαύρες Ματ 17''", "price": 211.86 },
+    { "name": "Ζάντες Formula Magnesium 17''", "price": 211.86 },
+    { "name": "Κεραία ραδιοφώνου μικρών διαστάσεων αλουμινένια", "price": 91.81 },
+    { "name": "Ταμπλό Competizione από ανθρακονήματα", "price": 600.28 },
+    { "name": "Διχρωμία Μαύρο Scorpione / Γκρι Record (343)", "price": 706.21 },
+    { "name": "Δερμάτινο σαλόνι Abarth (κόκκινο ή καφέ)", "price": 247.18 },
+    { "name": "Δερμάτινο σαλόνι Abarth (μαύρο)", "price": 247.18 },
+    { "name": "Uconnect Navi 7'' με Telemetry", "price": 423.73 },
+    { "name": "Τετραπίστονες δαγκάνες Brembo σε μαύρο χρώμα", "price": 141.24 },
+    { "name": "Nürburgring Pack (diff + seats + wheels)", "price": 2330.51 }
+  ]
+}
+
         }
       ]
     },
