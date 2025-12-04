@@ -495,6 +495,461 @@
             { "name": "Moondust Silver", "price": 368.00 }
   ]
 }
+           ,
+        {
+          "factoryCode": "FIESTA_3DR_RED_EDITION_140",
+          "code": "F3D_RED140",
+          "name": "Fiesta 3dr Red Edition 1.0 EcoBoost 140PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11820.00,
+              "priceRetail": 11820.00
+            }
+          ],
+          "extras": [
+            { "name": "ICE Pack #7 (4.2'' display + SYNC)", "price": 287.00 },
+            { "name": "ICE Pack #11 (6 speakers + SYNC)", "price": 503.00 },
+            { "name": "Navigation System Low", "price": 503.00 },
+            { "name": "Navigation System + Sony Audio", "price": 666.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_3DR_BLACK_EDITION_140",
+          "code": "F3D_BLACK140",
+          "name": "Fiesta 3dr Black Edition 1.0 EcoBoost 140PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11820.00,
+              "priceRetail": 11820.00
+            }
+          ],
+          "extras": [
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation System Low", "price": 503.00 },
+            { "name": "Navigation System + Sony Audio", "price": 666.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_RED_EDITION_140",
+          "code": "F5D_RED140",
+          "name": "Fiesta 5dr Red Edition 1.0 EcoBoost 140PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12195.00,
+              "priceRetail": 12195.00
+            }
+          ],
+          "extras": [
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation System Low", "price": 503.00 },
+            { "name": "Navigation System + Sony Audio", "price": 666.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_BLACK_EDITION_140",
+          "code": "F5D_BLACK140",
+          "name": "Fiesta 5dr Black Edition 1.0 EcoBoost 140PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12195.00,
+              "priceRetail": 12195.00
+            }
+          ],
+          "extras": [
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation System Low", "price": 503.00 },
+            { "name": "Navigation System + Sony Audio", "price": 666.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_3DR_ST_LINE_100",
+          "code": "F3D_STL100",
+          "name": "Fiesta 3dr ST-Line 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10957.00,
+              "priceRetail": 10957.00
+            }
+          ],
+          "extras": [
+            { "name": "ST-Line Pack #1 (Red stitching interior)", "price": 246.00 },
+            { "name": "ST-Line Pack #2 (Sport pedals + red seatbelts)", "price": 207.00 },
+            { "name": "17'' ST-Line alloy wheels", "price": 410.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation Low", "price": 503.00 },
+            { "name": "Sony Navigation", "price": 666.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_3DR_ST_LINE_125",
+          "code": "F3D_STL125",
+          "name": "Fiesta 3dr ST-Line 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11420.00,
+              "priceRetail": 11420.00
+            }
+          ],
+          "extras": [
+            { "name": "ST-Line Pack #1", "price": 246.00 },
+            { "name": "ST-Line Pack #2", "price": 207.00 },
+            { "name": "17'' ST-Line alloy wheels", "price": 410.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation Low", "price": 503.00 },
+            { "name": "Sony Navigation", "price": 666.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_ST_LINE_100",
+          "code": "F5D_STL100",
+          "name": "Fiesta 5dr ST-Line 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11338.00,
+              "priceRetail": 11338.00
+            }
+          ],
+          "extras": [
+            { "name": "ST-Line Pack #1", "price": 246.00 },
+            { "name": "ST-Line Pack #2", "price": 207.00 },
+            { "name": "17'' ST-Line alloy wheels", "price": 410.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation Low", "price": 503.00 },
+            { "name": "Sony Navigation", "price": 666.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_ST_LINE_125",
+          "code": "F5D_STL125",
+          "name": "Fiesta 5dr ST-Line 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11840.00,
+              "priceRetail": 11840.00
+            }
+          ],
+          "extras": [
+            { "name": "ST-Line Pack #1", "price": 246.00 },
+            { "name": "ST-Line Pack #2", "price": 207.00 },
+            { "name": "17'' ST-Line alloy wheels", "price": 410.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Navigation Low", "price": 503.00 },
+            { "name": "Sony Navigation", "price": 666.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_ST_180",
+          "code": "FST180",
+          "name": "Fiesta ST 1.6 EcoBoost 182PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16000.00,
+              "priceRetail": 16000.00
+            }
+          ],
+          "extras": [
+            { "name": "ST Style Pack (17'' alloys)", "price": 410.00 },
+            { "name": "ST Performance Pack (brakes + suspension)", "price": 620.00 },
+            { "name": "Recaro partial leather seats", "price": 738.00 },
+            { "name": "Navigation System", "price": 666.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 },
+            { "name": "Active City Stop", "price": 271.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_ST_200",
+          "code": "FST200",
+          "name": "Fiesta ST200 1.6 EcoBoost 200PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17850.00,
+              "priceRetail": 17850.00
+            }
+          ],
+          "extras": [
+            { "name": "Recaro partial leather seats", "price": 738.00 },
+            { "name": "Navigation System", "price": 666.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 236.00 },
+            { "name": "Active City Stop", "price": 271.00 }
+  ]
+}
+      ]
+    },
+    "595C": {
+      "category": "Hatchback",
+      "editions": [
+        ,
+        {
+          "factoryCode": "HF493DA",
+          "code": "HF493DA",
+          "name": "Focus 5dr Trend 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12900.00,
+              "priceRetail": 12900.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White (solid)", "price": 140.00 },
+            { "name": "Race Red (solid)", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red (special metallic)", "price": 937.00 },
+            { "name": "Marketing Flex Pack 4 (Winter Pack II)", "price": 561.00 },
+            { "name": "Marketing Flex Pack 36 (Parking Pack II)", "price": 317.90 },
+            { "name": "Marketing Flex Pack 54 (Appearance Pack I)", "price": 815.32 },
+            { "name": "16'' alloy wheels 205/55 R16 (D2XTU)", "price": 538.56 },
+            { "name": "Automatic dual zone climate control DEATC", "price": 81.20 },
+            { "name": "Φιμέ κρύσταλλα (privacy glass)", "price": 119.68 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Heated seats (driver & passenger)", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493DB",
+          "code": "HF493DB",
+          "name": "Focus 5dr Trend 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13450.00,
+              "priceRetail": 13450.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White (solid)", "price": 140.00 },
+            { "name": "Race Red (solid)", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red (special metallic)", "price": 937.00 },
+            { "name": "Marketing Flex Pack 4 (Winter Pack II)", "price": 561.00 },
+            { "name": "Marketing Flex Pack 36 (Parking Pack II)", "price": 317.90 },
+            { "name": "Marketing Flex Pack 54 (Appearance Pack I)", "price": 815.32 },
+            { "name": "16'' alloy wheels 205/55 R16", "price": 538.56 },
+            { "name": "Automatic dual zone climate control DEATC", "price": 81.20 },
+            { "name": "Φιμέ κρύσταλλα", "price": 119.68 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Heated seats", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493EA",
+          "code": "HF493EA",
+          "name": "Focus 5dr Trend 1.5 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14480.00,
+              "priceRetail": 14480.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Race Red", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Appearance Pack I", "price": 815.32 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Φιμέ κρύσταλλα", "price": 119.68 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Heated seats", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493EB",
+          "code": "HF493EB",
+          "name": "Focus 5dr Trend 1.5 TDCi 120PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15020.00,
+              "priceRetail": 15020.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Race Red", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Appearance Pack I", "price": 815.32 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Φιμέ κρύσταλλα", "price": 119.68 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Heated seats", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF494EB",
+          "code": "HF494EB",
+          "name": "Focus 5dr Titanium 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15540.00,
+              "priceRetail": 15540.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Race Red", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Heated seats", "price": 224.40 },
+            { "name": "Winter Pack", "price": 561.00 },
+            { "name": "Active City Stop", "price": 175.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF495EB",
+          "code": "HF495EB",
+          "name": "Focus 5dr Titanium 1.5 EcoBoost 150PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16480.00,
+              "priceRetail": 16480.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Race Red", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Heated seats", "price": 224.40 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Winter Pack", "price": 561.00 },
+            { "name": "Active City Stop", "price": 175.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493FA",
+          "code": "HF493FA",
+          "name": "Focus 5dr Trend 1.6 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14250.00,
+              "priceRetail": 14250.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Race Red", "price": 0.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Appearance Pack I", "price": 815.32 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Φιμέ κρύσταλλα", "price": 119.68 },
+            { "name": "Door Edge Protector", "price": 59.84 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Heated seats", "price": 224.40 }
+    ]
+}
         
       ]
     }
