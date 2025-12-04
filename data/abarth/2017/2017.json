@@ -94,7 +94,7 @@
       "color": "Standard",
       "priceNet": 15806.0,
       "priceRetail": 15806.0
-    }
+ }
   ],
   "extras": [
     { "name": "Εμπρός προβολείς Xenon", "price": 677.71 },
@@ -144,7 +144,7 @@
       "color": "Standard",
       "priceNet": 17643.60,
       "priceRetail": 97888.0
-    }
+  }
   ],
   "extras": [
     { "name": "Εμπρός προβολείς Xenon", "price": 706.21 },
@@ -202,8 +202,8 @@
               "color": "Standard",
               "priceNet": 15798.43,
               "priceRetail": 15798.43
-            }
-          ], 
+         }
+  ],
   "extras": [
     { "name": "Σκούρα κρύσταλλα (πίσω παράθυρα και 5ης πόρτας)", "price": 150.60 },
     { "name": "Προβολείς ομίχλης", "price": 150.60 },
@@ -246,10 +246,8 @@
               "color": "Standard",
               "priceNet": 16937.38,
                       "priceRetail": 16937.38
-            }
-          ]
-        },
-        ,
+   }
+  ],
   "extras": [
     { "name": "Εμπρός προβολείς Xenon", "price": 677.71 },
     { "name": "Ηλεκτρικά ανοιγόμενη οροφή Skydome", "price": 677.71 },
@@ -298,8 +296,8 @@
               "color": "Standard",
               "priceNet": 19056.03,
               "priceRetail": 19056.03
-            }
-          ],
+       }
+  ],
   "extras": [
     { "name": "Εμπρός προβολείς Xenon", "price": 706.21 },
     { "name": "Ηλεκτρικά ανοιγόμενη οροφή Skydome", "price": 776.84 },
