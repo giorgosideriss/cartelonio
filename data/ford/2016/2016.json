@@ -67,13 +67,6 @@
         }
       ]
     },
-    {
-  "brand": "Ford",
-  "year": 2016,
-  "models": {
-    "KA+": {
-      "category": "Hatchback",
-      "editions": [
         {
           "factoryCode": "1EVA92N",
           "code": "1EVA92N",
