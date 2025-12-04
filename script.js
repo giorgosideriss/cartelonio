@@ -16,7 +16,7 @@ const DATA_SOURCES = {
 
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
-"Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
+"Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
   "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
   "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png"
 };
