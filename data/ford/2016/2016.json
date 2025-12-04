@@ -494,12 +494,9 @@
             { "name": "Magnetic", "price": 368.00 },
             { "name": "Deep Impact Blue", "price": 368.00 },
             { "name": "Moondust Silver", "price": 368.00 }
-          ]
-        }
-
-      ]
-    }
-
+  ]
+}
+        
       ]
     }
   }
