@@ -14,24 +14,22 @@ const DATA_SOURCES = {
   }
 };
 
-/* === BRAND LOGOS === */
+/* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
-  "Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
-  "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
-  "Toyota": "https://e7.pngegg.com/pngimages/398/662/png-clipart-toyota-prius-car-toyota-camry-logo-toyota-emblem-text-thumbnail.png"
+  "Toyota": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.png",
+  "Audi":   "https://upload.wikimedia.org/wikipedia/commons/6/6f/Audi_logo_detail.svg",
+  "Abarth":"https://upload.wikimedia.org/wikipedia/en/5/5d/Abarth_Logo.svg"
 };
 
-
 /* =========================================================
-   BING IMAGE SEARCH API — AUTO IMAGE FETCHER
+   (ΠΡΟΑΙΡΕΤΙΚΟ) BING IMAGE SEARCH API — AUTO IMAGE FETCHER
    ========================================================= */
-
 const BING_API_KEY = "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ";
 const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
 
 /**
- * Κάνει online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
- * και ενημερώνει το <img id="carImage">
+ * Online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
+ * και ενημέρωση του <img id="carImage">
  */
 async function updateCarImage() {
   const brand  = document.getElementById("brandSelect").value;
@@ -39,6 +37,10 @@ async function updateCarImage() {
   const year   = document.getElementById("yearSelect").value;
 
   if (!brand || !model || !year) return;
+  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
+    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
+    return;
+  }
 
   const query = `${brand} ${model} ${year} PNG`;
 
@@ -61,7 +63,6 @@ async function updateCarImage() {
   }
 }
 
-
 // Τρέχον σετ δεδομένων
 let currentDataset = null;
 
@@ -80,7 +81,7 @@ const categories = {
 
   "Sedan": [[0.5,0.15],[1,0.3],[1.5,0.33],[2,0.36],[2.5,0.4],[3,0.43],[3.5,0.5],[4,0.57],[4.5,0.64],[5,0.72],[5.5,0.74],[6,0.76],[6.5,0.78],[7,0.8],[7.5,0.81],[8,0.84],[8.5,0.85],[9,0.85],[9.5,0.86],[10,0.87]],
 
-  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
+  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
 
   "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47],[4.5,0.53],[5,0.59],[5.5,0.63],[6,0.66],[6.5,0.68],[7,0.71],[7.5,0.73],[8,0.76],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
 
@@ -169,7 +170,7 @@ function recalcPriceWithExtras() {
   }
 
   if (!labelSpan) {
-    updateCarSummary();   // ασφαλεία, αλλά δύσκολα θα λείπει
+    updateCarSummary();
     return;
   }
 
@@ -186,10 +187,7 @@ function recalcPriceWithExtras() {
     labelSpan.textContent = `${count} επιλεγμένα (+${formatted} €)`;
   }
 
-  // *** ΚΡΙΣΙΜΟ: ενημέρωσε τη Σύνοψη Οχήματος με τη νέα τιμή ΛΤΠΦ ***
-  updateCarImage();
-updateCarSummary();
-
+  updateCarSummary();
 }
 
 function handleExtraCheckboxChange(e) {
@@ -283,37 +281,79 @@ async function loadDatasetForSelection() {
   }
 }
 
-
+/* === BRAND POPULATION (κρυφό select + custom menu) === */
 
 function populateBrandSelect() {
-  const menu = document.getElementById("brandSelectMenu");
-  menu.innerHTML = "";
+  const selectEl     = document.getElementById("brandSelect");
+  const menuEl       = document.getElementById("brandMenu");
+  const buttonLabel  = document.getElementById("brandButtonLabel");
+  const buttonLogo   = document.getElementById("brandButtonLogo");
+
+  if (!selectEl) return;
+
+  // native select (hidden)
+  selectEl.innerHTML = '<option value=""></option>';
+
+  // custom menu
+  if (menuEl) menuEl.innerHTML = "";
 
   Object.keys(DATA_SOURCES).forEach(brand => {
-    const row = document.createElement("div");
-    row.className = "brand-option";
-    row.innerHTML = `
-      <img src="${BRAND_LOGOS[brand] || ""}" alt="">
-      <span>${brand}</span>
-    `;
+    // option στο select (state)
+    const opt = document.createElement("option");
+    opt.value = brand;
+    opt.textContent = brand;
+    selectEl.appendChild(opt);
 
-    row.addEventListener("click", () => {
-      document.getElementById("brandSelectLabel").textContent = brand;
-      menu.classList.remove("open");
+    // custom επιλογή στο menu
+    if (menuEl) {
+      const item = document.createElement("button");
+      item.type = "button";
+      item.className = "brand-option";
+      item.dataset.value = brand;
 
-      // set actual selected brand
-      document.getElementById("brandSelect").value = brand;
+      const logoSpan = document.createElement("span");
+      logoSpan.className = "brand-option-logo";
+      if (BRAND_LOGOS[brand]) {
+        logoSpan.style.backgroundImage = `url('${BRAND_LOGOS[brand]}')`;
+      }
 
-      populateYearSelect();
-      loadDatasetForSelection();
-      updateCarSummary();
-    });
+      const textSpan = document.createElement("span");
+      textSpan.className = "brand-option-label";
+      textSpan.textContent = brand;
 
-    menu.appendChild(row);
+      item.appendChild(logoSpan);
+      item.appendChild(textSpan);
+
+      item.addEventListener("click", () => {
+        selectEl.value = brand;
+
+        if (buttonLabel) buttonLabel.textContent = brand;
+        if (buttonLogo) {
+          if (BRAND_LOGOS[brand]) {
+            buttonLogo.style.backgroundImage = `url('${BRAND_LOGOS[brand]}')`;
+            buttonLogo.classList.add("has-logo");
+          } else {
+            buttonLogo.style.backgroundImage = "none";
+            buttonLogo.classList.remove("has-logo");
+          }
+        }
+
+        menuEl.classList.remove("open");
+
+        // ενεργοποίηση του κλασικού change listener
+        selectEl.dispatchEvent(new Event("change"));
+      });
+
+      menuEl.appendChild(item);
+    }
   });
+
+  if (buttonLabel) buttonLabel.textContent = "Επιλέξτε μάρκα";
+  if (buttonLogo) {
+    buttonLogo.style.backgroundImage = "none";
+    buttonLogo.classList.remove("has-logo");
+  }
 }
-
-
 
 function populateYearSelect() {
   const brandEl = document.getElementById("brandSelect");
@@ -338,7 +378,6 @@ function populateModels() {
   const colorEl = document.getElementById("colorSelect");
 
   modelEl.innerHTML = '<option value="">Επιλέξτε Μοντέλο</option>';
-  verEl.innerHTML   = '<option value="">Επιλέξωση Έκδοση</option>'.replace("ώ","ό");
   verEl.innerHTML   = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
   loadExtras([]);
@@ -351,9 +390,6 @@ function populateModels() {
     opt.textContent = modelName;
     modelEl.appendChild(opt);
   });
-
-  updateCarImage();   // <<< CHANGE IMAGE
-  updateCarSummary();
 }
 
 function populateVersions() {
@@ -378,7 +414,6 @@ function populateVersions() {
     verEl.appendChild(opt);
   });
 
-  updateCarImage();
   updateCarSummary();
 }
 
@@ -415,7 +450,6 @@ function populateColors() {
     autoFillCarData();
   }
 
-  updateCarImage();
   updateCarSummary();
 }
 
@@ -456,7 +490,6 @@ function autoFillCarData() {
     document.getElementById("category").value = modelObj.category;
   }
 
-   updateCarImage();
   updateCarSummary();
 }
 
@@ -499,6 +532,9 @@ function updateCarSummary() {
     <p><strong>ΛΤΠΦ (με extras):</strong> ${priceText}</p>
     <p><strong>Χρώμα / Πακέτο:</strong> ${variantName}</p>
   `;
+
+  // Προαιρετικά, προσπάθησε να ενημερώσεις και την εικόνα
+  updateCarImage();
 }
 
 /* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
@@ -550,7 +586,10 @@ document.addEventListener("DOMContentLoaded", () => {
   populateBrandSelect();
   populateYearSelect();
 
-  document.getElementById("brandSelect").addEventListener("change", () => {
+  const brandSelect = document.getElementById("brandSelect");
+
+  // Όταν αλλάζει μάρκα (μέσω του κρυφού select)
+  brandSelect.addEventListener("change", () => {
     populateYearSelect();
     currentDataset = null;
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
@@ -562,6 +601,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("yearSelect").addEventListener("change", () => {
     loadDatasetForSelection();
+    updateCarSummary();
   });
 
   document.getElementById("modelSelect").addEventListener("change", () => {
@@ -592,6 +632,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Brand dropdown toggle
+  const brandButton = document.getElementById("brandButton");
+  const brandMenu   = document.getElementById("brandMenu");
+
+  if (brandButton && brandMenu) {
+    brandButton.addEventListener("click", (e) => {
+      e.stopPropagation();
+      brandMenu.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!brandMenu.contains(e.target) && e.target !== brandButton) {
+        brandMenu.classList.remove("open");
+      }
+    });
+  }
+
   // Κουμπιά υπολογισμού / reset
   document.getElementById("calcBtn").addEventListener("click", () => {
     calculate();
@@ -611,14 +668,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Αρχική σύνοψη
   updateCarSummary();
 });
-
-document.getElementById("brandSelectBtn").addEventListener("click", () => {
-  document.getElementById("brandSelectMenu").classList.toggle("open");
-});
-
-document.addEventListener("click", (e) => {
-  if (!document.querySelector(".brand-select-wrapper").contains(e.target)) {
-    document.getElementById("brandSelectMenu").classList.remove("open");
-  }
-});
-
