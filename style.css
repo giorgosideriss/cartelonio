@@ -354,4 +354,55 @@ button.secondary:hover{
   align-items: center;
   font-size: 15px;
 }
+.brand-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.brand-select-btn {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-select-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.brand-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.brand-option img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.brand-option:hover {
+    background: #f0f0f0;
+}
+
+.brand-select-menu.open {
+    display: block;
+}
 
