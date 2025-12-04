@@ -335,7 +335,177 @@
             { "name": "Deep Impact Blue", "price": 368.00 },
             { "name": "Moondust Silver", "price": 368.00 }
           ]
+        },
+        {
+                  ,
+        {
+          "factoryCode": "FIESTA_5DR_10_GDI",
+          "code": "F5D_10GDI80",
+          "name": "Fiesta 5dr Trend 1.0 GDi 80PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 9567.00,
+              "priceRetail": 9567.00
+            }
+          ],
+          "extras": [
+            { "name": "MKT Flex Pack #2 (Easy Driver Pack I)", "price": 170.00 },
+            { "name": "MKT Flex Pack #8 (Cool & Sound Pack III)", "price": 635.00 },
+            { "name": "MKT Flex Pack #10 (Style Pack I)", "price": 147.00 },
+            { "name": "MKT Flex Pack #76 (Cool & Sound Pack I)", "price": 511.00 },
+            { "name": "MKT Flex Pack #78 (Design Pack I)", "price": 248.00 },
+            { "name": "MKT Flex Pack #81 (15'' wheels + fog lights)", "price": 364.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Διπλό πάτωμα χώρου αποσκευών", "price": 77.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Candy Blue", "price": 554.00 },
+            { "name": "Candy Red", "price": 554.00 },
+            { "name": "Bohai Bay Mint", "price": 461.00 },
+            { "name": "Copper Pulse", "price": 461.00 },
+            { "name": "Silk", "price": 461.00 },
+            { "name": "Shadow Black", "price": 368.00 },
+            { "name": "Magnetic", "price": 368.00 },
+            { "name": "Deep Impact Blue", "price": 368.00 },
+            { "name": "Moondust Silver", "price": 368.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_10ECO_100",
+          "code": "F5D_10EBT100",
+          "name": "Fiesta 5dr Trend 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10193.00,
+              "priceRetail": 10193.00
+            }
+          ],
+          "extras": [
+            { "name": "MKT Flex Pack #2", "price": 170.00 },
+            { "name": "MKT Flex Pack #8", "price": 635.00 },
+            { "name": "MKT Flex Pack #10", "price": 147.00 },
+            { "name": "MKT Flex Pack #78", "price": 248.00 },
+            { "name": "MKT Flex Pack #81", "price": 364.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Διπλό πάτωμα χώρου αποσκευών", "price": 77.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "ICE Pack #68 (Sony + Nav)", "price": 666.00 },
+            { "name": "Candy Blue", "price": 554.00 },
+            { "name": "Candy Red", "price": 554.00 },
+            { "name": "Bohai Bay Mint", "price": 461.00 },
+            { "name": "Copper Pulse", "price": 461.00 },
+            { "name": "Silk", "price": 461.00 },
+            { "name": "Shadow Black", "price": 368.00 },
+            { "name": "Magnetic", "price": 368.00 },
+            { "name": "Deep Impact Blue", "price": 368.00 },
+            { "name": "Moondust Silver", "price": 368.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_15TDCI_75",
+          "code": "F5D_15TDCI75",
+          "name": "Fiesta 5dr Trend 1.5 TDCi 75PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10035.25,
+              "priceRetail": 10035.25
+            }
+          ],
+          "extras": [
+            { "name": "MKT Flex Pack #2", "price": 170.00 },
+            { "name": "MKT Flex Pack #8", "price": 635.00 },
+            { "name": "MKT Flex Pack #10", "price": 147.00 },
+            { "name": "MKT Flex Pack #78", "price": 248.00 },
+            { "name": "MKT Flex Pack #81", "price": 364.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Διπλό πάτωμα χώρου αποσκευών", "price": 77.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Candy Blue", "price": 554.00 },
+            { "name": "Candy Red", "price": 554.00 },
+            { "name": "Bohai Bay Mint", "price": 461.00 },
+            { "name": "Copper Pulse", "price": 461.00 },
+            { "name": "Silk", "price": 461.00 },
+            { "name": "Shadow Black", "price": 368.00 },
+            { "name": "Magnetic", "price": 368.00 },
+            { "name": "Deep Impact Blue", "price": 368.00 },
+            { "name": "Moondust Silver", "price": 368.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_15TDCI_95",
+          "code": "F5D_15TDCI95",
+          "name": "Fiesta 5dr Trend 1.5 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11060.68,
+              "priceRetail": 11060.68
+            }
+          ],
+          "extras": [
+            { "name": "MKT Flex Pack #2", "price": 170.00 },
+            { "name": "MKT Flex Pack #8", "price": 635.00 },
+            { "name": "MKT Flex Pack #10", "price": 147.00 },
+            { "name": "MKT Flex Pack #78", "price": 248.00 },
+            { "name": "MKT Flex Pack #81", "price": 364.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Διπλό πάτωμα χώρου αποσκευών", "price": 77.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "ICE Pack #7", "price": 287.00 },
+            { "name": "ICE Pack #11", "price": 503.00 },
+            { "name": "Candy Blue", "price": 554.00 },
+            { "name": "Candy Red", "price": 554.00 },
+            { "name": "Bohai Bay Mint", "price": 461.00 },
+            { "name": "Copper Pulse", "price": 461.00 },
+            { "name": "Silk", "price": 461.00 },
+            { "name": "Shadow Black", "price": 368.00 },
+            { "name": "Magnetic", "price": 368.00 },
+            { "name": "Deep Impact Blue", "price": 368.00 },
+            { "name": "Moondust Silver", "price": 368.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "FIESTA_5DR_15TDCI_ECONETIC",
+          "code": "F5D_15TDCIECO",
+          "name": "Fiesta 5dr Econetic 1.5 TDCi 95PS (82g)",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11289.00,
+              "priceRetail": 11289.00
+            }
+          ],
+          "extras": [
+            { "name": "MKT Flex Pack #2", "price": 170.00 },
+            { "name": "MKT Flex Pack #8 (Econetic pricing)", "price": 387.00 },
+            { "name": "Active City Stop", "price": 271.00 },
+            { "name": "Διπλό πάτωμα χώρου αποσκευών", "price": 77.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 217.00 },
+            { "name": "ICE Pack #11 (Econetic pricing)", "price": 236.00 },
+            { "name": "Candy Blue", "price": 554.00 },
+            { "name": "Candy Red", "price": 554.00 },
+            { "name": "Bohai Bay Mint", "price": 461.00 },
+            { "name": "Copper Pulse", "price": 461.00 },
+            { "name": "Silk", "price": 461.00 },
+            { "name": "Shadow Black", "price": 368.00 },
+            { "name": "Magnetic", "price": 368.00 },
+            { "name": "Deep Impact Blue", "price": 368.00 },
+            { "name": "Moondust Silver", "price": 368.00 }
+          ]
         }
+
       ]
     }
 
