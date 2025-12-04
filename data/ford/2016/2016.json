@@ -9,6 +9,7 @@
           "factoryCode": "1EVA92N",
           "code": "1EVA92N",
           "name": "KA+ ESSENTIAL 1.19 70PS",
+           "co2": 114,
           "variants": [
             {
               "color": "Standard",
@@ -69,6 +70,7 @@
           "factoryCode": "1EVA92N",
           "code": "1EVA92N",
           "name": "KA+ ESSENTIAL 1.19 70PS",
+                "co2": 114,
           "variants": [
             {
               "color": "Standard",
@@ -95,6 +97,7 @@
           "factoryCode": "1EVQ97N",
           "code": "1EVQ97N",
           "name": "KA+ ULTIMATE 1.19 85PS",
+                "co2": 110,
           "variants": [
             {
               "color": "Standard",
@@ -134,6 +137,7 @@
           "factoryCode": "FIESTA_3DR_10_GDI",
           "code": "F3D_10GDI",
           "name": "Fiesta 3dr Trend 1.0 GDi 80PS",
+                "co2": 105,
           "variants": [
             {
               "color": "Standard",
@@ -167,6 +171,7 @@
           "factoryCode": "FIESTA_3DR_10_ECO_100",
           "code": "F3D_10EBT100",
           "name": "Fiesta 3dr Trend 1.0 EcoBoost 100PS",
+                "co2": 99,
           "variants": [
             {
               "color": "Standard",
@@ -265,6 +270,7 @@
           "factoryCode": "FIESTA_3DR_10_GDI",
           "code": "F3D_10GDI",
           "name": "Fiesta 3dr Trend 1.0 GDi 80PS",
+                "co2": 105,
           "variants": [
             {
               "color": "Standard",
@@ -298,6 +304,7 @@
           "factoryCode": "FIESTA_3DR_10_ECO_100",
           "code": "F3D_10EBT100",
           "name": "Fiesta 3dr Trend 1.0 EcoBoost 100PS",
+                "co2": 99,
           "variants": [
             {
               "color": "Standard",
@@ -332,6 +339,7 @@
           "factoryCode": "FIESTA_5DR_10_GDI",
           "code": "F5D_10GDI80",
           "name": "Fiesta 5dr Trend 1.0 GDi 80PS",
+                "co2": 105,
           "variants": [
             {
               "color": "Standard",
@@ -367,6 +375,7 @@
           "factoryCode": "FIESTA_5DR_10ECO_100",
           "code": "F5D_10EBT100",
           "name": "Fiesta 5dr Trend 1.0 EcoBoost 100PS",
+                "co2": 99,
           "variants": [
             {
               "color": "Standard",
@@ -402,6 +411,7 @@
           "factoryCode": "FIESTA_5DR_15TDCI_75",
           "code": "F5D_15TDCI75",
           "name": "Fiesta 5dr Trend 1.5 TDCi 75PS",
+                "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -436,6 +446,7 @@
           "factoryCode": "FIESTA_5DR_15TDCI_95",
           "code": "F5D_15TDCI95",
           "name": "Fiesta 5dr Trend 1.5 TDCi 95PS",
+                "co2": 114,
           "variants": [
             {
               "color": "Standard",
