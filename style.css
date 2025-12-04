@@ -91,7 +91,7 @@ input, select{
 
 button{
   background:var(--accent);
-  color:white;
+  color:#000000;
   border:none;
   padding:10px 14px;
   border-radius:12px;
