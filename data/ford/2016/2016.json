@@ -1,0 +1,71 @@
+{
+  "brand": "Ford",
+  "year": 2016,
+  "models": {
+    "KA+": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "1EVA92N",
+          "code": "1EVA92N",
+          "name": "KA+ ESSENTIAL 1.19 70PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 8211.00,
+              "priceRetail": 8211.00
+            }
+          ],
+          "extras": [
+            { "name": "Smoke (Magnetic)", "price": 386.18 },
+            { "name": "Deep Impact Blue", "price": 386.18 },
+            { "name": "Bright Yellow", "price": 154.47 },
+            { "name": "Tuxedo Black (Shadow Black)", "price": 483.74 },
+            { "name": "Ingot Silver", "price": 386.18 },
+            { "name": "Spare Wheel Pack (ρεζέρβα 14 x5,5 χαλύβδινη 175/65R14, χωρίς κιτ επισκευής)", "price": 23.00 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 138.21 },
+            { "name": "Σύστημα A/C με φίλτρο καμπίνας", "price": 304.88 },
+            { "name": "Ταπέτα δαπέδου από μοκέτα πίσω", "price": 20.33 },
+            { "name": "Cool & Sound Pack I (A/C + ICE Feature Pack 06, ραδιόφωνο FM/AM, Aux & USB, Bluetooth, Ford Dock)", "price": 360.00 },
+            { "name": "Αισθητήρες παρκαρίσματος πίσω", "price": 81.30 },
+            { "name": "Πακέτο καπνιστή", "price": 6.00 }
+          ]
+        },
+        {
+          "factoryCode": "1EVQ97N",
+          "code": "1EVQ97N",
+          "name": "KA+ ULTIMATE 1.19 85PS",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 8768.00,
+              "priceRetail": 8768.00
+            }
+          ],
+          "extras": [
+            { "name": "Deep Impact Blue", "price": 386.18 },
+            { "name": "Bright Yellow", "price": 154.47 },
+            { "name": "Tuxedo Black (Shadow Black)", "price": 483.74 },
+            { "name": "Sparkling Gold", "price": 483.74 },
+            { "name": "Smoke (Magnetic)", "price": 386.18 },
+            { "name": "Ingot Silver", "price": 386.18 },
+            { "name": "Ruby Red", "price": 483.74 },
+            { "name": "ICE Pack #8: Ράδιο-CD συμβατό με MP3, έγχρωμη οθόνη 4,2'', 8 ηχεία, χειριστήρια στο τιμόνι, θύρα Aux & USB, SYNC (Bluetooth - Voice Control - Κλήση Έκτακτης Ανάγκης)", "price": 162.60 },
+            { "name": "Ταπέτα δαπέδου από μοκέτα πίσω", "price": 20.33 },
+            { "name": "Driver Assistance Pack (ηλεκτρικά πίσω παράθυρα, πίσω αισθητήρες, ηλεκτρικοί θερμαινόμενοι αναδιπλούμενοι καθρέφτες)", "price": 130.00 },
+            { "name": "Θερμαινόμενο κάθισμα οδηγού & συνοδηγού", "price": 284.55 },
+            { "name": "Περιμετρικός Συναγερμός", "price": 138.21 },
+            { "name": "Αυτόματος κλιματισμός - EATC", "price": 130.08 },
+            { "name": "Αισθητήρες παρκαρίσματος πίσω", "price": 81.30 },
+            { "name": "Spare Wheel Pack (ρεζέρβα 14 x5,5 χαλύβδινη 175/65R14, χωρίς κιτ επισκευής)", "price": 23.00 },
+            { "name": "Cruise Control", "price": 48.00 },
+            { "name": "Φιμέ κρύσταλλα", "price": 130.08 },
+            { "name": "Ζάντες ελαφρού κράματος 15'' πολυάκτινες (195/50R15)", "price": 202.00 },
+            { "name": "Πακέτο καπνιστή", "price": 6.00 }
+          ]
+        }
+      ]
+    }
+  }
+}
