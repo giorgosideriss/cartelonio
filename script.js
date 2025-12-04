@@ -14,6 +14,14 @@ const DATA_SOURCES = {
   }
 };
 
+/* === BRAND LOGOS === */
+const BRAND_LOGOS = {https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png
+  "Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
+  "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
+  "Toyota": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.png"
+};
+
+
 /* =========================================================
    BING IMAGE SEARCH API — AUTO IMAGE FETCHER
    ========================================================= */
@@ -282,10 +290,23 @@ function populateBrandSelect() {
   Object.keys(DATA_SOURCES).forEach(brand => {
     const opt = document.createElement("option");
     opt.value = brand;
+
+    const logo = BRAND_LOGOS[brand] || "";
     opt.textContent = brand;
+
+    // Για εμφάνιση εικόνας μέσα στο dropdown
+    if (logo) {
+      opt.style.backgroundImage = `url('${logo}')`;
+      opt.style.backgroundRepeat = "no-repeat";
+      opt.style.backgroundPosition = "8px center";
+      opt.style.backgroundSize = "22px";
+      opt.style.paddingLeft = "36px";
+    }
+
     brandEl.appendChild(opt);
   });
 }
+
 
 function populateYearSelect() {
   const brandEl = document.getElementById("brandSelect");
