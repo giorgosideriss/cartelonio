@@ -15,7 +15,7 @@ const DATA_SOURCES = {
 };
 
 /* === BRAND LOGOS === */
-const BRAND_LOGOS = {https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png
+const BRAND_LOGOS = {
   "Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
   "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
   "Toyota": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.png"
