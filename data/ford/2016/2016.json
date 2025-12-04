@@ -947,7 +947,519 @@
             { "name": "Door Edge Protector", "price": 59.84 },
             { "name": "Active City Stop", "price": 175.00 },
             { "name": "Heated seats", "price": 224.40 }
-    ]
+      ]
+        }        ,
+        {
+          "factoryCode": "HF493SA",
+          "code": "F5D_STL100",
+          "name": "Focus 5dr ST-Line 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14720.00,
+              "priceRetail": 14720.00
+            }
+          ],
+          "extras": [
+            { "name": "17'' ST-Line alloy wheels", "price": 510.00 },
+            { "name": "18'' ST-Line alloy wheels", "price": 657.00 },
+            { "name": "ST-Line Sport Suspension Pack", "price": 340.00 },
+            { "name": "Red brake calipers", "price": 123.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493SB",
+          "code": "F5D_STL125",
+          "name": "Focus 5dr ST-Line 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15250.00,
+              "priceRetail": 15250.00
+            }
+          ],
+          "extras": [
+            { "name": "17'' ST-Line alloy wheels", "price": 510.00 },
+            { "name": "18'' ST-Line alloy wheels", "price": 657.00 },
+            { "name": "ST-Line Sport Suspension Pack", "price": 340.00 },
+            { "name": "Red brake calipers", "price": 123.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493SC",
+          "code": "F5D_STL150",
+          "name": "Focus 5dr ST-Line 1.5 EcoBoost 150PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16240.00,
+              "priceRetail": 16240.00
+            }
+          ],
+          "extras": [
+            { "name": "18'' ST-Line alloy wheels", "price": 657.00 },
+            { "name": "19'' Performance alloy wheels", "price": 820.00 },
+            { "name": "ST-Line Performance Pack", "price": 490.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493TD",
+          "code": "F5D_STL120TDCI",
+          "name": "Focus 5dr ST-Line 1.5 TDCi 120PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16590.00,
+              "priceRetail": 16590.00
+            }
+          ],
+          "extras": [
+            { "name": "17'' ST-Line alloy wheels", "price": 510.00 },
+            { "name": "18'' ST-Line alloy wheels", "price": 657.00 },
+            { "name": "ST-Line Sport Suspension Pack", "price": 340.00 },
+            { "name": "Red brake calipers", "price": 123.00 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Active City Stop", "price": 175.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493ST",
+          "code": "FOCUS_ST250",
+          "name": "Focus ST 2.0 EcoBoost 250PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23200.00,
+              "priceRetail": 23200.00
+            }
+          ],
+          "extras": [
+            { "name": "ST Style Pack (19'' alloys + red calipers)", "price": 940.00 },
+            { "name": "Recaro Sports Seats (partial leather)", "price": 980.00 },
+            { "name": "Recaro Full Leather Seats", "price": 1650.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "Parking Pack", "price": 317.00 },
+            { "name": "Quickclear heated windscreen", "price": 155.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493SD",
+          "code": "FOCUS_STTDCI",
+          "name": "Focus ST 2.0 TDCi 185PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22050.00,
+              "priceRetail": 22050.00
+            }
+          ],
+          "extras": [
+            { "name": "ST Style Pack", "price": 940.00 },
+            { "name": "Recaro Sports Seats", "price": 980.00 },
+            { "name": "Recaro Full Leather Seats", "price": 1650.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "Parking Pack", "price": 317.00 },
+            { "name": "Quickclear heated windscreen", "price": 155.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF493RS",
+          "code": "FOCUS_RS350",
+          "name": "Focus RS 2.3 EcoBoost 350PS AWD",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31800.00,
+              "priceRetail": 31800.00
+            }
+          ],
+          "extras": [
+            { "name": "Recaro Shell Seats", "price": 1880.00 },
+            { "name": "19'' Forged Alloy Wheels", "price": 1240.00 },
+            { "name": "Nitrous Blue Special Paint", "price": 750.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 },
+            { "name": "Rear Parking Sensors", "price": 217.00 },
+            { "name": "Ford SYNC Navigation", "price": 850.00 },
+            { "name": "Privacy Glass", "price": 160.00 }
+   ]
+}
+      ]
+    },
+    "Focus Wagon (Estate)": {
+      "category": "Hatchback",
+      "editions": [
+        {
+       "factoryCode": "HF5W93DA",
+          "code": "FOCUS_WGN_T100",
+          "name": "Focus Wagon Trend 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13520.00,
+              "priceRetail": 13520.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou Brown", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Appearance Pack I", "price": 815.32 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W93DB",
+          "code": "FOCUS_WGN_T125",
+          "name": "Focus Wagon Trend 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14060.00,
+              "priceRetail": 14060.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Caribou Brown", "price": 484.00 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Appearance Pack I", "price": 815.32 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W93EA",
+          "code": "FOCUS_WGN_D95",
+          "name": "Focus Wagon Trend 1.5 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15230.00,
+              "priceRetail": 15230.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Active City Stop", "price": 175.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W93EB",
+          "code": "FOCUS_WGN_D120",
+          "name": "Focus Wagon Trend 1.5 TDCi 120PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15810.00,
+              "priceRetail": 15810.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Candy Red", "price": 937.00 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Winter Pack II", "price": 561.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W94EB",
+          "code": "FOCUS_WGN_TIT125",
+          "name": "Focus Wagon Titanium 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16290.00,
+              "priceRetail": 16290.00
+            }
+          ],
+          "extras": [
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Rear View Camera", "price": 280.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 },
+            { "name": "Heated seats", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W95EB",
+          "code": "FOCUS_WGN_TIT150",
+          "name": "Focus Wagon Titanium 1.5 EcoBoost 150PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17110.00,
+              "priceRetail": 17110.00
+            }
+          ],
+          "extras": [
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Rear View Camera", "price": 280.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Door Edge Protectors", "price": 59.84 },
+            { "name": "Heated seats", "price": 224.40 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF5W93FA",
+          "code": "FOCUS_WGN_D95_16",
+          "name": "Focus Wagon Trend 1.6 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15040.00,
+              "priceRetail": 15040.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Roof rails (silver)", "price": 143.00 },
+            { "name": "Privacy glass", "price": 119.68 },
+            { "name": "Rear parking sensors", "price": 217.00 },
+            { "name": "Winter Pack II", "price": 561.00 }
+       ]
+}
+      ]
+    },
+    "Focus Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+       "factoryCode": "HF4D93DA",
+          "code": "FOCUS_SD_T100",
+          "name": "Focus Sedan Trend 1.0 EcoBoost 100PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13390.00,
+              "priceRetail": 13390.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Rear Parking Sensors", "price": 217.00 },
+            { "name": "Privacy Glass", "price": 119.68 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF4D93DB",
+          "code": "FOCUS_SD_T125",
+          "name": "Focus Sedan Trend 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13940.00,
+              "priceRetail": 13940.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Tectonic Silver", "price": 484.00 },
+            { "name": "Candy Red", "price": 937.00 },
+
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Privacy Glass", "price": 119.68 },
+            { "name": "Rear Parking Sensors", "price": 217.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Winter Pack II", "price": 561.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF4D93EA",
+          "code": "FOCUS_SD_D95",
+          "name": "Focus Sedan Trend 1.5 TDCi 95PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15180.00,
+              "priceRetail": 15180.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Candy Red", "price": 937.00 },
+
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Winter Pack II", "price": 561.00 },
+            { "name": "Rear Parking Sensors", "price": 217.00 },
+            { "name": "Parking Pack II", "price": 317.90 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF4D93EB",
+          "code": "FOCUS_SD_D120",
+          "name": "Focus Sedan Trend 1.5 TDCi 120PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15740.00,
+              "priceRetail": 15740.00
+            }
+          ],
+          "extras": [
+            { "name": "Frozen White", "price": 140.00 },
+            { "name": "Shadow Black", "price": 396.44 },
+            { "name": "Deep Impact Blue", "price": 396.44 },
+            { "name": "Moondust Silver", "price": 396.44 },
+            { "name": "Magnetic Grey", "price": 396.44 },
+            { "name": "Candy Red", "price": 937.00 },
+
+            { "name": "16'' alloy wheels", "price": 538.56 },
+            { "name": "Privacy Glass", "price": 119.68 },
+            { "name": "Rear Parking Sensors", "price": 217.00 },
+            { "name": "Parking Pack II", "price": 317.90 },
+            { "name": "Winter Pack II", "price": 561.00 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF4D94EB",
+          "code": "FOCUS_SD_TIT125",
+          "name": "Focus Sedan Titanium 1.0 EcoBoost 125PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16590.00,
+              "priceRetail": 16590.00
+            }
+          ],
+          "extras": [
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "Rear View Camera", "price": 280.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Privacy Glass", "price": 119.68 },
+            { "name": "Heated Seats", "price": 224.40 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
+        },
+
+        {
+          "factoryCode": "HF4D95EB",
+          "code": "FOCUS_SD_TIT150",
+          "name": "Focus Sedan Titanium 1.5 EcoBoost 150PS",
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17420.00,
+              "priceRetail": 17420.00
+            }
+          ],
+          "extras": [
+            { "name": "Xenon HID Headlights", "price": 715.00 },
+            { "name": "Panoramic Roof", "price": 1050.00 },
+            { "name": "Rear View Camera", "price": 280.00 },
+            { "name": "Sony Navigation System", "price": 880.00 },
+            { "name": "18'' alloy wheels", "price": 657.00 },
+            { "name": "Privacy Glass", "price": 119.68 },
+            { "name": "Heated Seats", "price": 224.40 },
+            { "name": "Door Edge Protectors", "price": 59.84 }
+          ]
 }
         
       ]
