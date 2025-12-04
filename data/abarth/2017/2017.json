@@ -83,7 +83,8 @@
   ]
 }
 ,
-       {
+        
+      {
   "factoryCode": "595s4",
   "code": "595s4",
   "name": "Turismo 1.4 T-Jet 165HP",
@@ -132,7 +133,8 @@
   ]
 }
 ,
-       {
+        
+      {
   "factoryCode": "595s4",
   "code": "595s4",
   "name": "Competizione 1.4 T-Jet 180HP",
@@ -233,7 +235,8 @@
   ]
 }
 ,
-        {
+        
+      {
           "factoryCode": "595cs4",
           "code": "595cs4",
           "name": "Turismo 1.4 T-Jet 165HP",
@@ -281,10 +284,11 @@
     { "name": "Δίχρωμη βαφή Μαύρο Scorpione / Γκρι Record (343)", "price": 715.36 },
     { "name": "Σύστημα U-Connect NAVI με οθόνη 7'' & telemetry", "price": 451.81 },
     { "name": "Πακέτο 695 Yamaha (Akrapovic, Alcantara, ζάντες Esseesse 17'' κ.λπ.)", "price": 2189.72 }
-  ]
+   ]
 }
 ,
-        {
+        
+      {
           "factoryCode": "595cs4",
           "code": "595cs4",
           "name": "Competizione 1.4 T-Jet 180HP",
