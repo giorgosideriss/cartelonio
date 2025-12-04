@@ -21,7 +21,7 @@ const DATA_SOURCES = {
 const BRAND_LOGOS = {
 "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
   "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
-  "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png"
+  "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png",
   "Ford": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png"
   
 };
