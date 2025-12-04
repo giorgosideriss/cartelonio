@@ -283,29 +283,40 @@ async function loadDatasetForSelection() {
   }
 }
 
+const BRAND_LOGOS = {
+  "Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
+  "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
+  "Toyota": "https://e7.pngegg.com/pngimages/398/662/png-clipart-toyota-prius-car-toyota-camry-logo-toyota-emblem-text-thumbnail.png"
+};
+
 function populateBrandSelect() {
-  const brandEl = document.getElementById("brandSelect");
-  brandEl.innerHTML = '<option value="">Επιλέξτε Μάρκα</option>';
+  const menu = document.getElementById("brandSelectMenu");
+  menu.innerHTML = "";
 
   Object.keys(DATA_SOURCES).forEach(brand => {
-    const opt = document.createElement("option");
-    opt.value = brand;
+    const row = document.createElement("div");
+    row.className = "brand-option";
+    row.innerHTML = `
+      <img src="${BRAND_LOGOS[brand] || ""}" alt="">
+      <span>${brand}</span>
+    `;
 
-    const logo = BRAND_LOGOS[brand] || "";
-    opt.textContent = brand;
+    row.addEventListener("click", () => {
+      document.getElementById("brandSelectLabel").textContent = brand;
+      menu.classList.remove("open");
 
-    // Για εμφάνιση εικόνας μέσα στο dropdown
-    if (logo) {
-      opt.style.backgroundImage = `url('${logo}')`;
-      opt.style.backgroundRepeat = "no-repeat";
-      opt.style.backgroundPosition = "8px center";
-      opt.style.backgroundSize = "22px";
-      opt.style.paddingLeft = "36px";
-    }
+      // set actual selected brand
+      document.getElementById("brandSelect").value = brand;
 
-    brandEl.appendChild(opt);
+      populateYearSelect();
+      loadDatasetForSelection();
+      updateCarSummary();
+    });
+
+    menu.appendChild(row);
   });
 }
+
 
 
 function populateYearSelect() {
@@ -604,3 +615,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Αρχική σύνοψη
   updateCarSummary();
 });
+
+document.getElementById("brandSelectBtn").addEventListener("click", () => {
+  document.getElementById("brandSelectMenu").classList.toggle("open");
+});
+
+document.addEventListener("click", (e) => {
+  if (!document.querySelector(".brand-select-wrapper").contains(e.target)) {
+    document.getElementById("brandSelectMenu").classList.remove("open");
+  }
+});
+
