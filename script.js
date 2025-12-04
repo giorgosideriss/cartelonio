@@ -283,11 +283,7 @@ async function loadDatasetForSelection() {
   }
 }
 
-const BRAND_LOGOS = {
-  "Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
-  "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
-  "Toyota": "https://e7.pngegg.com/pngimages/398/662/png-clipart-toyota-prius-car-toyota-camry-logo-toyota-emblem-text-thumbnail.png"
-};
+
 
 function populateBrandSelect() {
   const menu = document.getElementById("brandSelectMenu");
