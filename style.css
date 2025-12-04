@@ -346,3 +346,12 @@ button.secondary:hover{
   .row select,
   .row .extras-dropdown{flex-grow:1}
 }
+
+#brandSelect option {
+  height: 32px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
