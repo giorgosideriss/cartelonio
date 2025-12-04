@@ -16,9 +16,9 @@ const DATA_SOURCES = {
 
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
-  "Toyota": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.png",
-  "Audi":   "https://upload.wikimedia.org/wikipedia/commons/6/6f/Audi_logo_detail.svg",
-  "Abarth":"https://upload.wikimedia.org/wikipedia/en/5/5d/Abarth_Logo.svg"
+"Abarth": "https://icon2.cleanpng.com/20180525/bgu/kisspng-abarth-595-car-fiat-automobiles-5b087fa234a4d7.3756661215272836182156.jpg",
+  "Audi": "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
+  "Toyota": "https://e7.pngegg.com/pngimages/398/662/png-clipart-toyota-prius-car-toyota-camry-logo-toyota-emblem-text-thumbnail.png"
 };
 
 /* =========================================================
