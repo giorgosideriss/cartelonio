@@ -205,6 +205,7 @@
           "factoryCode": "1EVA92N",
           "code": "1EVA92N",
           "name": "KA+ ESSENTIAL 1.19 70PS",
+           "co2": 114,
           "variants": [
             {
               "color": "Standard",
@@ -807,6 +808,7 @@
           "factoryCode": "HF493EA",
           "code": "HF493EA",
           "name": "Focus 5dr Trend 1.5 TDCi 95PS",
+          "co2": 116,
           "variants": [
             {
               "color": "Standard",
@@ -839,6 +841,7 @@
           "factoryCode": "HF493EB",
           "code": "HF493EB",
           "name": "Focus 5dr Trend 1.5 TDCi 120PS",
+          "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -871,6 +874,7 @@
           "factoryCode": "HF494EB",
           "code": "HF494EB",
           "name": "Focus 5dr Titanium 1.0 EcoBoost 125PS",
+          "co2": 108,
           "variants": [
             {
               "color": "Standard",
@@ -902,6 +906,7 @@
           "factoryCode": "HF495EB",
           "code": "HF495EB",
           "name": "Focus 5dr Titanium 1.5 EcoBoost 150PS",
+          "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -933,6 +938,7 @@
           "factoryCode": "HF493FA",
           "code": "HF493FA",
           "name": "Focus 5dr Trend 1.6 TDCi 95PS",
+          "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -964,6 +970,7 @@
           "factoryCode": "HF493SA",
           "code": "F5D_STL100",
           "name": "Focus 5dr ST-Line 1.0 EcoBoost 100PS",
+          "co2": 111,
           "variants": [
             {
               "color": "Standard",
@@ -990,6 +997,7 @@
           "factoryCode": "HF493SB",
           "code": "F5D_STL125",
           "name": "Focus 5dr ST-Line 1.0 EcoBoost 125PS",
+          "co2": 108,
           "variants": [
             {
               "color": "Standard",
@@ -1016,6 +1024,7 @@
           "factoryCode": "HF493SC",
           "code": "F5D_STL150",
           "name": "Focus 5dr ST-Line 1.5 EcoBoost 150PS",
+          "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -1041,6 +1050,7 @@
           "factoryCode": "HF493TD",
           "code": "F5D_STL120TDCI",
           "name": "Focus 5dr ST-Line 1.5 TDCi 120PS",
+          "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -1067,6 +1077,7 @@
           "factoryCode": "HF493ST",
           "code": "FOCUS_ST250",
           "name": "Focus ST 2.0 EcoBoost 250PS",
+          "co2": 169,
           "variants": [
             {
               "color": "Standard",
@@ -1089,6 +1100,7 @@
           "factoryCode": "HF493SD",
           "code": "FOCUS_STTDCI",
           "name": "Focus ST 2.0 TDCi 185PS",
+          "co2": 114,
           "variants": [
             {
               "color": "Standard",
@@ -1111,6 +1123,7 @@
           "factoryCode": "HF493RS",
           "code": "FOCUS_RS350",
           "name": "Focus RS 2.3 EcoBoost 350PS AWD",
+          "co2": 175,
           "variants": [
             {
               "color": "Standard",
@@ -1137,6 +1150,7 @@
        "factoryCode": "HF5W93DA",
           "code": "FOCUS_WGN_T100",
           "name": "Focus Wagon Trend 1.0 EcoBoost 100PS",
+          "co2": 115,
           "variants": [
             {
               "color": "Standard",
@@ -1167,6 +1181,7 @@
           "factoryCode": "HF5W93DB",
           "code": "FOCUS_WGN_T125",
           "name": "Focus Wagon Trend 1.0 EcoBoost 125PS",
+          "co2": 116,
           "variants": [
             {
               "color": "Standard",
@@ -1197,6 +1212,7 @@
           "factoryCode": "HF5W93EA",
           "code": "FOCUS_WGN_D95",
           "name": "Focus Wagon Trend 1.5 TDCi 95PS",
+          "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -1222,6 +1238,7 @@
           "factoryCode": "HF5W93EB",
           "code": "FOCUS_WGN_D120",
           "name": "Focus Wagon Trend 1.5 TDCi 120PS",
+          "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -1247,6 +1264,7 @@
           "factoryCode": "HF5W94EB",
           "code": "FOCUS_WGN_TIT125",
           "name": "Focus Wagon Titanium 1.0 EcoBoost 125PS",
+          "co2": 116,
           "variants": [
             {
               "color": "Standard",
@@ -1271,6 +1289,7 @@
           "factoryCode": "HF5W95EB",
           "code": "FOCUS_WGN_TIT150",
           "name": "Focus Wagon Titanium 1.5 EcoBoost 150PS",
+          "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -1295,6 +1314,7 @@
           "factoryCode": "HF5W93FA",
           "code": "FOCUS_WGN_D95_16",
           "name": "Focus Wagon Trend 1.6 TDCi 95PS",
+          "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -1321,6 +1341,7 @@
        "factoryCode": "HF4D93DA",
           "code": "FOCUS_SD_T100",
           "name": "Focus Sedan Trend 1.0 EcoBoost 100PS",
+          "co2": 115,
           "variants": [
             {
               "color": "Standard",
@@ -1350,6 +1371,7 @@
           "factoryCode": "HF4D93DB",
           "code": "FOCUS_SD_T125",
           "name": "Focus Sedan Trend 1.0 EcoBoost 125PS",
+          "co2": 116,
           "variants": [
             {
               "color": "Standard",
@@ -1378,6 +1400,7 @@
           "factoryCode": "HF4D93EA",
           "code": "FOCUS_SD_D95",
           "name": "Focus Sedan Trend 1.5 TDCi 95PS",
+            "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -1404,6 +1427,7 @@
           "factoryCode": "HF4D93EB",
           "code": "FOCUS_SD_D120",
           "name": "Focus Sedan Trend 1.5 TDCi 120PS",
+            "co2": 98,
           "variants": [
             {
               "color": "Standard",
@@ -1431,6 +1455,7 @@
           "factoryCode": "HF4D94EB",
           "code": "FOCUS_SD_TIT125",
           "name": "Focus Sedan Titanium 1.0 EcoBoost 125PS",
+            "co2": 116,
           "variants": [
             {
               "color": "Standard",
@@ -1454,6 +1479,7 @@
           "factoryCode": "HF4D95EB",
           "code": "FOCUS_SD_TIT150",
           "name": "Focus Sedan Titanium 1.5 EcoBoost 150PS",
+            "co2": 139,
           "variants": [
             {
               "color": "Standard",
@@ -1482,6 +1508,7 @@
           "factoryCode": "CM493DA",
           "code": "CMX_TRD_100",
           "name": "C-MAX Trend 1.0 EcoBoost 100PS",
+            "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -1519,6 +1546,7 @@
           "factoryCode": "CM493DB",
           "code": "CMX_TRD_125",
           "name": "C-MAX Trend 1.0 EcoBoost 125PS",
+            "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -1549,6 +1577,7 @@
           "factoryCode": "CM493EA",
           "code": "CMX_TRD_D95",
           "name": "C-MAX Trend 1.5 TDCi 95PS",
+          "co2": 110,
           "variants": [
             {
               "color": "Standard",
@@ -1581,6 +1610,7 @@
           "factoryCode": "CM493EB",
           "code": "CMX_TRD_D120",
           "name": "C-MAX Trend 1.5 TDCi 120PS",
+          "co2": 118,
           "variants": [
             {
               "color": "Standard",
@@ -1612,6 +1642,7 @@
           "factoryCode": "CM494EB",
           "code": "CMX_TIT_125",
           "name": "C-MAX Titanium 1.0 EcoBoost 125PS",
+          "co2": 119,
           "variants": [
             {
               "color": "Standard",
@@ -1637,6 +1668,7 @@
           "factoryCode": "CM495EB",
           "code": "CMX_TIT_150",
           "name": "C-MAX Titanium 1.5 EcoBoost 150PS",
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -1667,6 +1699,7 @@
           "factoryCode": "GCM493DA",
           "code": "GCMX_TRD_100",
           "name": "Grand C-MAX Trend 1.0 EcoBoost 100PS",
+          "co2": 119,
           "variants": [
             {
               "color": "Standard",
@@ -1704,6 +1737,7 @@
           "factoryCode": "GCM493DB",
           "code": "GCMX_TRD_125",
           "name": "Grand C-MAX Trend 1.0 EcoBoost 125PS",
+          "co2": 119,
           "variants": [
             {
               "color": "Standard",
@@ -1733,6 +1767,7 @@
           "factoryCode": "GCM493EA",
           "code": "GCMX_TRD_D95",
           "name": "Grand C-MAX Trend 1.5 TDCi 95PS",
+          "co2": 118,
           "variants": [
             {
               "color": "Standard",
@@ -1765,6 +1800,7 @@
           "factoryCode": "GCM493EB",
           "code": "GCMX_TRD_D120",
           "name": "Grand C-MAX Trend 1.5 TDCi 120PS",
+          "co2": 118,
           "variants": [
             {
               "color": "Standard",
@@ -1796,6 +1832,7 @@
           "factoryCode": "GCM494EB",
           "code": "GCMX_TIT_125",
           "name": "Grand C-MAX Titanium 1.0 EcoBoost 125PS",
+          "co2": 119,
           "variants": [
             {
               "color": "Standard",
@@ -1821,6 +1858,7 @@
           "factoryCode": "GCM495EB",
           "code": "GCMX_TIT_150",
           "name": "Grand C-MAX Titanium 1.5 EcoBoost 150PS",
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -1851,6 +1889,7 @@
           "factoryCode": "KG493DA",
           "code": "KUGA_TREND_150",
           "name": "Kuga Trend 1.5 EcoBoost 150PS 2WD",
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -1890,6 +1929,7 @@
           "factoryCode": "KG493DB",
           "code": "KUGA_TREND_182",
           "name": "Kuga Trend 1.5 EcoBoost 182PS AWD",
+          "co2": 173,
           "variants": [
             {
               "color": "Standard",
@@ -1924,6 +1964,7 @@
           "factoryCode": "KG493EA",
           "code": "KUGA_TREND_D120",
           "name": "Kuga Trend 2.0 TDCi 120PS 2WD",
+          "co2": 135,
           "variants": [
             {
               "color": "Standard",
@@ -1957,6 +1998,7 @@
           "factoryCode": "KG493EB",
           "code": "KUGA_TREND_D150",
           "name": "Kuga Trend 2.0 TDCi 150PS AWD",
+           "co2": 135,
           "variants": [
             {
               "color": "Standard",
@@ -1991,6 +2033,7 @@
           "factoryCode": "KG494DB",
           "code": "KUGA_TIT_150",
           "name": "Kuga Titanium 1.5 EcoBoost 150PS 2WD",
+                         "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -2020,6 +2063,7 @@
           "factoryCode": "KG495EB",
           "code": "KUGA_TIT_D150",
           "name": "Kuga Titanium 2.0 TDCi 150PS AWD",
+               "co2": 127,
           "variants": [
             {
               "color": "Standard",
@@ -2055,6 +2099,7 @@
           "factoryCode": "MD4D93DA",
           "code": "MOND_TRD_125",
           "name": "Mondeo 4dr Trend 1.0 EcoBoost 125PS",
+               "co2": 120,
           "variants": [
             {
               "color": "Standard",
@@ -2092,6 +2137,7 @@
           "factoryCode": "MD5D93DA",
           "code": "MOND5_TRD_125",
           "name": "Mondeo 5dr Trend 1.0 EcoBoost 125PS",
+           "co2": 120,
           "variants": [
             {
               "color": "Standard",
@@ -2124,6 +2170,7 @@
           "factoryCode": "MD4D93EA",
           "code": "MOND_TRD_D120",
           "name": "Mondeo 4dr Trend 1.5 TDCi 120PS",
+           "co2": 107,
           "variants": [
             {
               "color": "Standard",
@@ -2160,6 +2207,7 @@
           "factoryCode": "MD5D93EA",
           "code": "MOND5_TRD_D120",
           "name": "Mondeo 5dr Trend 1.5 TDCi 120PS",
+           "co2": 107,
           "variants": [
             {
               "color": "Standard",
@@ -2192,6 +2240,7 @@
           "factoryCode": "MDWG93EA",
           "code": "MONDWG_TRD_D120",
           "name": "Mondeo Wagon Trend 1.5 TDCi 120PS",
+          "co2": 107,
           "variants": [
             {
               "color": "Standard",
@@ -2226,6 +2275,7 @@
           "factoryCode": "MD4D94EB",
           "code": "MOND_TIT_160",
           "name": "Mondeo 4dr Titanium 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2264,6 +2314,7 @@
           "factoryCode": "MD5D94EB",
           "code": "MOND5_TIT_160",
           "name": "Mondeo 5dr Titanium 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2298,6 +2349,7 @@
           "factoryCode": "MDWG94EB",
           "code": "MONDWG_TIT_160",
           "name": "Mondeo Wagon Titanium 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2335,6 +2387,7 @@
           "factoryCode": "MD4D95EB",
           "code": "MOND_TIT_D150",
           "name": "Mondeo 4dr Titanium 2.0 TDCi 150PS",
+           "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -2369,6 +2422,7 @@
           "factoryCode": "MD5D95EB",
           "code": "MOND5_TIT_D150",
           "name": "Mondeo 5dr Titanium 2.0 TDCi 150PS",
+           "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -2403,6 +2457,7 @@
           "factoryCode": "MDWG95EB",
           "code": "MONDWG_TIT_D150",
           "name": "Mondeo Wagon Titanium 2.0 TDCi 150PS",
+           "co2": 117,
           "variants": [
             {
               "color": "Standard",
@@ -2439,6 +2494,7 @@
           "factoryCode": "MD4D96EB",
           "code": "MOND_VIG_160",
           "name": "Mondeo 4dr Vignale 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2474,6 +2530,7 @@
           "factoryCode": "MD5D96EB",
           "code": "MOND5_VIG_160",
           "name": "Mondeo 5dr Vignale 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2508,6 +2565,7 @@
           "factoryCode": "MDWG96EB",
           "code": "MONDWG_VIG_160",
           "name": "Mondeo Wagon Vignale 1.5 EcoBoost 160PS",
+           "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2547,6 +2605,7 @@
           "factoryCode": "MD4D97EB",
           "code": "MOND_VIG_D180",
           "name": "Mondeo 4dr Vignale 2.0 TDCi 180PS",
+           "co2": 115,
           "variants": [
             {
               "color": "Standard",
@@ -2625,6 +2684,7 @@
           "factoryCode": "SM493DA",
           "code": "SMAX_TRD_160",
           "name": "S-MAX Trend 1.5 EcoBoost 160PS",
+           "co2": 149,
           "variants": [
             {
               "color": "Standard",
@@ -2664,6 +2724,7 @@
           "factoryCode": "SM493EA",
           "code": "SMAX_TRD_D120",
           "name": "S-MAX Trend 2.0 TDCi 120PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -2698,6 +2759,7 @@
           "factoryCode": "SM493EB",
           "code": "SMAX_TRD_D150",
           "name": "S-MAX Trend 2.0 TDCi 150PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -2735,6 +2797,7 @@
           "factoryCode": "SM494DA",
           "code": "SMAX_TIT_160",
           "name": "S-MAX Titanium 1.5 EcoBoost 160PS",
+           "co2": 149,
           "variants": [
             {
               "color": "Standard",
@@ -2771,6 +2834,7 @@
           "factoryCode": "SM494EB",
           "code": "SMAX_TIT_D150",
           "name": "S-MAX Titanium 2.0 TDCi 150PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -2804,6 +2868,7 @@
           "factoryCode": "SM495EB",
           "code": "SMAX_VIG_D180",
           "name": "S-MAX Vignale 2.0 TDCi 180PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -2842,6 +2907,7 @@
           "factoryCode": "GX493DA",
           "code": "GAL_TRD_160",
           "name": "Galaxy Trend 1.5 EcoBoost 160PS",
+           "co2": 149,
           "variants": [
             {
               "color": "Standard",
@@ -2878,6 +2944,7 @@
           "factoryCode": "GX493EA",
           "code": "GAL_TRD_D120",
           "name": "Galaxy Trend 2.0 TDCi 120PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -2911,6 +2978,7 @@
           "factoryCode": "GX493EB",
           "code": "GAL_TRD_D150",
           "name": "Galaxy Trend 2.0 TDCi 150PS",
+           "co2": 156,
           "variants": [
             {
               "color": "Standard",
@@ -2945,6 +3013,7 @@
           "factoryCode": "GX494DA",
           "code": "GAL_TIT_160",
           "name": "Galaxy Titanium 1.5 EcoBoost 160PS",
+           "co2": 149,
           "variants": [
             {
               "color": "Standard",
@@ -2982,6 +3051,7 @@
           "factoryCode": "GX494EB",
           "code": "GAL_TIT_D150",
           "name": "Galaxy Titanium 2.0 TDCi 150PS",
+           "co2": 129,
           "variants": [
             {
               "color": "Standard",
@@ -3016,6 +3086,7 @@
           "factoryCode": "GX495EB",
           "code": "GAL_VIG_D180",
           "name": "Galaxy Vignale 2.0 TDCi 180PS",
+           "co2": 139,
           "variants": [
             {
               "color": "Standard",
