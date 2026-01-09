@@ -31,19 +31,7 @@
 
       <div class="section-title">Διαμόρφωση Οχήματος</div>
 
-      <div class="row">
-        <label for="price">
-          Τιμή Οχήματος - ΛΤΠΦ (€)
-          <span class="tooltip">?
-            <span class="tooltiptext">
-              Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση. 
-              Εαν δεν υπάρχει στην λίστα το αυτοκίνητο για το οποίο ενδιαφέρεστε, αναζητήστε την ΛΤΠΦ και τα υπόλοιπα στοιχεία (όπως εκπομπές CO2, κατηγορία αμαξώματος) στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
-            </span>
-          </span>
-        </label>
-        <input type="number" id="price" required step="0.01" value="">
-      </div>
-
+  
       <!-- Custom BRAND DROPDOWN -->
       <div class="row">
         <label>Μάρκα</label>
@@ -87,6 +75,19 @@
         </div>
       </div>
 
+      <div class="row">
+        <label for="price">
+          Τιμή Οχήματος - ΛΤΠΦ (€)
+          <span class="tooltip">?
+            <span class="tooltiptext">
+              Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση. 
+              Εαν δεν υπάρχει στην λίστα το αυτοκίνητο για το οποίο ενδιαφέρεστε, αναζητήστε την ΛΤΠΦ και τα υπόλοιπα στοιχεία (όπως εκπομπές CO2, κατηγορία αμαξώματος) στους τιμοκαταλόγους της εταιρίας για το κάθε έτος.
+            </span>
+          </span>
+        </label>
+        <input type="number" id="price" required step="0.01" value="">
+      </div>
+      
       <div class="row">
         <label>Επιλογή ΛΤΠΦ (χρώμα/πακέτο)</label>
         <select id="colorSelect"></select>
