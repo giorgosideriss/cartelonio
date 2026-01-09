@@ -111,7 +111,7 @@ button{
 
 button:hover{
   transform:translateY(-1px);
-  box-shadow:0 12px 30px rgba(32,130,0,0.45);
+  box-shadow:0 2px 20px rgb(203 203 203 / 45%);
 }
 button:active{
   transform:translateY(0);
