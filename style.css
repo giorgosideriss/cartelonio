@@ -102,7 +102,7 @@ button{
   align-items:center;
   justify-content:center;
   gap:6px;
-  box-shadow:0 10px 25px rgba(32,130,0,0.35);
+  box-shadow:0 2px 25px rgb(225 225 225 / 35%);
   transition:
     transform 0.08s ease-out,
     box-shadow 0.1s ease-out,
