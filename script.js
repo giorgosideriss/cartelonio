@@ -673,3 +673,38 @@ document.addEventListener("DOMContentLoaded", () => {
   // Αρχική σύνοψη
   updateCarSummary();
 });
+
+(function () {
+  const brandSelect = document.getElementById("brandSelect");
+  const colorRow = document.getElementById("colorRow");
+  const colorSelect = document.getElementById("colorSelect");
+
+  if (!brandSelect || !colorRow || !colorSelect) return;
+
+  function syncToyotaColorVisibility() {
+    const isToyota = (brandSelect.value || "").trim().toLowerCase() === "toyota";
+
+    // Κρύψε/εμφάνισε το row
+    colorRow.style.display = isToyota ? "" : "none";
+
+    // Μπλόκαρε επιλογή όταν δεν είναι Toyota
+    colorSelect.disabled = !isToyota;
+
+    // Αν αλλάξει από Toyota σε άλλη μάρκα, καθάρισε τυχόν επιλογή
+    if (!isToyota) {
+      colorSelect.value = "";
+    }
+  }
+
+  // 1) Σε κάθε αλλαγή μάρκας
+  brandSelect.addEventListener("change", syncToyotaColorVisibility);
+
+  // 2) Αν η μάρκα αλλάζει μέσω custom UI (brandButton/menu),
+  // πολλές φορές γίνεται set programmatically και μετά dispatch change.
+  // Αν ΔΕΝ το κάνεις ήδη, βάλε αυτό όπου κάνεις brandSelect.value = ...
+  // brandSelect.dispatchEvent(new Event("change", { bubbles: true }));
+
+  // 3) Αρχικοποίηση στην πρώτη φόρτωση
+  syncToyotaColorVisibility();
+})();
+
