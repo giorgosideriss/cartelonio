@@ -13,7 +13,8 @@ const DATA_SOURCES = {
     "2016": "data/ford/2016/2016.json"
   },
   "Abarth": {
-    "2017": "data/abarth/2017/2017.json"
+    "2017": "data/abarth/2017/2017.json",
+    "2018": "data/abarth/2018/2018.json"
   }
 };
 
