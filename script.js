@@ -93,7 +93,7 @@ const DATA_SOURCES = Object.fromEntries(
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
   "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
-  "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2020/05/Alfa-Romeo-Logo.png",
+  "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2021/09/Alfa-Romeo-Logo-500x281.png",
   "Alpina": "https://logos-world.net/wp-content/uploads/2021/03/Alpina-Logo.png",
   "Alpine": "https://logos-world.net/wp-content/uploads/2021/09/Alpine-Logo.png",
   "Aston Martin": "https://logos-world.net/wp-content/uploads/2020/05/Aston-Martin-Logo.png",
