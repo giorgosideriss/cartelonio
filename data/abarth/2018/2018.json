@@ -512,7 +512,7 @@
         {
           "factoryCode": "124cs4",
           "code": "124cs4",
-          "name": "MT 1.4 T-Jet 170HP",
+          "name": "Manual 1.4 T-Jet 170HP",
           "co2": 148,
           "variants": [
             {
@@ -541,7 +541,7 @@
       {
           "factoryCode": "124cs4",
           "code": "124cs4",
-          "name": "AT 1.4 T-Jet 180HP",
+          "name": "Auto 1.4 T-Jet 170HP",
           "co2": 153,
           "variants": [
             {
