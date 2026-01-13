@@ -288,7 +288,20 @@ async function loadDatasetForSelection() {
   }
 }
 
+/* === Αλφαβητικα === */
+
+function sortAlpha(arr) {
+  return arr.slice().sort((a, b) => a.localeCompare(b, "el", { sensitivity: "base" }));
+}
+
+function sortYears(arr) {
+  return arr.slice().sort((a, b) => Number(a) - Number(b));
+}
+
+
 /* === BRAND POPULATION (κρυφό select + custom menu) === */
+
+
 
 function populateBrandSelect() {
   const selectEl     = document.getElementById("brandSelect");
@@ -304,7 +317,7 @@ function populateBrandSelect() {
   // custom menu
   if (menuEl) menuEl.innerHTML = "";
 
-  Object.keys(DATA_SOURCES).forEach(brand => {
+sortAlpha(Object.keys(DATA_SOURCES)).forEach(brand => {
     // option στο select (state)
     const opt = document.createElement("option");
     opt.value = brand;
@@ -371,7 +384,7 @@ function populateYearSelect() {
 
   if (!brand || !DATA_SOURCES[brand]) return;
 
-  Object.keys(DATA_SOURCES[brand]).forEach(year => {
+sortYears(Object.keys(DATA_SOURCES[brand])).forEach(year => {
     const opt = document.createElement("option");
     opt.value = year;
     opt.textContent = year;
@@ -391,7 +404,7 @@ function populateModels() {
 
   if (!currentDataset || !currentDataset.models) return;
 
-  Object.keys(currentDataset.models).forEach(modelName => {
+sortAlpha(Object.keys(currentDataset.models)).forEach(modelName => {
     const opt = document.createElement("option");
     opt.value = modelName;
     opt.textContent = modelName;
