@@ -14,7 +14,8 @@ const DATA_SOURCES = {
   },
   "Abarth": {
     "2017": "data/abarth/2017/2017.json",
-    "2018": "data/abarth/2018/2018.json"
+    "2018": "data/abarth/2018/2018.json",
+    "2019": "data/abarth/2019/2019.json"
   }
 };
 
