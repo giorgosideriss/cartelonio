@@ -237,18 +237,13 @@
             {
               "name": "ΜΑΤ ΜΠΛΕ ΧΡΩΜΑ",
               "price": 483.87
-            }
+              }
           ]
-        }
-      ]
-    },
-    "131 Rally": {
-      "category": "Hatchback",
-      "editions": [
+        },
         {
           "factoryCode": "312.HRT.0",
           "code": "312.HRT.0",
-          "name": "1.4 T-Jet 180hp",
+          "name": "131 Rally 1.4 T-Jet 180hp",
           "co2": 156,
           "variants": [
             {
