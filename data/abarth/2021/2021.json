@@ -147,7 +147,7 @@
         {
           "factoryCode": "150.17Y.5",
           "code": "150.17Y.5",
-          "name": "YAMAHA 1.4 T-Jet 165HP",
+          "name": "Yamaha 1.4 T-Jet 165HP",
           "co2": 153,
           "variants": [
             {
@@ -222,7 +222,7 @@
         {
           "factoryCode": "150.17M.5",
           "code": "150.17M.5",
-          "name": "TURISMO 1.4 T-Jet 165HP",
+          "name": "Turismo 1.4 T-Jet 165HP",
           "co2": 153,
           "variants": [
             {
@@ -377,7 +377,7 @@
         {
           "factoryCode": "150.17T.5",
           "code": "150.17T.5",
-          "name": "COMPETIZIONE 1.4 T-Jet 180HP",
+          "name": "Competizione 1.4 T-Jet 180HP",
           "co2": 156,
           "variants": [
             {
@@ -568,7 +568,7 @@
         {
           "factoryCode": "150.17U.5",
           "code": "150.17U.5",
-          "name": "ESSEESSE 1.4 T-Jet 180HP",
+          "name": "Esseesse 1.4 T-Jet 180HP",
           "co2": 156,
           "variants": [
             {
@@ -778,11 +778,17 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -829.64
             }
-          ]
-        },
+]
+}
+      ]
+    },
+
+    "595C": {
+      "category": "Hatchback",
+      "editions": [
         {
-          "factoryCode": "150.57H.5",
-          "code": "150.57H.5",
+          "factoryCode": "595cs4",
+          "code": "595cs4",
           "name": "1.4 T-Jet 145HP",
           "co2": 158,
           "variants": [
@@ -790,9 +796,9 @@
               "color": "Standard",
               "priceNet": 16365.67,
               "priceRetail": 16365.67
-            }
-          ],
-          "extras": [
+         }
+  ],
+ "extras": [
             {
               "name": "ΣΚΟΥΡΑ ΚΡΥΣΤΑΛΛΑ (ΠΙΣΩ ΠΑΡΑΘΥΡΑ ΚΑΙ 5ΗΣ ΠΟΡΤΑΣ)",
               "price": 149.7
@@ -906,7 +912,7 @@
         {
           "factoryCode": "150.57M.5",
           "code": "150.57M.5",
-          "name": "TURISMO 1.4 T-Jet 165HP",
+          "name": "Turismo 1.4 T-Jet 165HP",
           "co2": 156,
           "variants": [
             {
