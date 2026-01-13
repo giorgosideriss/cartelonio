@@ -1,23 +1,103 @@
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
-const DATA_SOURCES = {
-  "Toyota": {
-    "2020": "data/toyota/2020/2020.json",
-    "2021": "data/toyota/2021/2021.json"
-  },
-  "Audi": {
-    "2017": "data/audi/2017/2017.json",
-    "2018": "data/audi/2018/2018.json",
-    "2019": "data/audi/2019/2019.json"
-  },
-   "Ford": {
-    "2016": "data/ford/2016/2016.json"
-  },
-  "Abarth": {
-    "2017": "data/abarth/2017/2017.json",
-    "2018": "data/abarth/2018/2018.json",
-    "2019": "data/abarth/2019/2019.json"
-  }
-};
+/* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ (AUTO-GENERATED 2015–2025) === */
+
+// 1) Λίστα μαρκών (όπως ακριβώς θέλεις να εμφανίζονται στο UI)
+const BRANDS = [
+  "Abarth",
+  "Alfa Romeo",
+  "Alpina",
+  "Alpine",
+  "Aston Martin",
+  "Audi",
+  "BMW",
+  "BYD",
+  "Bentley",
+  "Chery",
+  "Chrysler",
+  "Citroen",
+  "Cupra",
+  "DS",
+  "Dacia",
+  "Ferrari",
+  "Fiat",
+  "Ford",
+  "GWM",
+  "GWM Ora",
+  "Geely",
+  "Genesis",
+  "Honda",
+  "Hyundai",
+  "INEOS",
+  "Infiniti",
+  "Jaecoo",
+  "Jaguar",
+  "Jeep",
+  "KGM Motors",
+  "Kia",
+  "Lamborghini",
+  "Land Rover",
+  "Leapmotor",
+  "Lexus",
+  "Lotus",
+  "MG",
+  "MINI",
+  "Maserati",
+  "Mazda",
+  "McLaren",
+  "Mercedes-Benz",
+  "Mitsubishi",
+  "Morgan",
+  "Nissan",
+  "OMODA",
+  "Peugeot",
+  "Polestar",
+  "Porsche",
+  "Renault",
+  "Rolls-Royce",
+  "SAAB",
+  "SEAT",
+  "Skoda",
+  "Skywell",
+  "Smart",
+  "SsangYong",
+  "Subaru",
+  "Suzuki",
+  "Tesla",
+  "Toyota",
+  "Vauxhall",
+  "Volkswagen",
+  "Volvo",
+  "Xpeng"
+];
+
+// 2) Έτη 2015–2025
+const YEARS = Array.from({ length: 11 }, (_, i) => 2015 + i);
+
+// 3) Μετατροπή μάρκας -> folder name (π.χ. "Alfa Romeo" -> "alfa-romeo")
+function slugifyBrand(name) {
+  return name
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")                    // σπάει τόνους
+    .replace(/[\u0300-\u036f]/g, "")     // αφαιρεί τόνους
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")         // spaces/σύμβολα -> "-"
+    .replace(/^-+|-+$/g, "");            // trim "-” στα άκρα
+}
+
+// 4) Χτίσιμο DATA_SOURCES
+const DATA_SOURCES = Object.fromEntries(
+  BRANDS.map(brand => [
+    brand,
+    Object.fromEntries(
+      YEARS.map(year => [
+        String(year),
+        `data/${slugifyBrand(brand)}/${year}/${year}.json`
+      ])
+    )
+  ])
+);
+
 
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
