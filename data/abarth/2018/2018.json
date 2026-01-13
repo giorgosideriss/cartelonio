@@ -502,19 +502,18 @@
   { "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΛΟΥΜΙΝΕΝΙΑ ΤΑΠΑ ΡΕΖΕΡΒΟΥΑΡ, ΦΙΛΤΡΟ ΑΕΡΑ BMC", "price": -112.00 },
   { "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΠΡΟΤΕΙΝΟΜΕΝΗ ΕΡΓΑΣΙΑ ΤΟΠΟΘΕΤΗΣΗΣ ΤΑΠΑ ΡΕΖΕΡΒΟΥΑΡ, ΦΙΛΤΡΟ ΑΕΡΑ BMC", "price": -17.03 },
   { "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ", "price": -458.12 }
-]
-}
+     ]
+        }
       ]
     },
-
     "124 Spider": {
       "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "124cs4",
           "code": "124cs4",
-          "name": "Manual 1.4 T-Jet 180HP",
-          "co2": 159,
+          "name": "MT 1.4 T-Jet 170HP",
+          "co2": 148,
           "variants": [
             {
               "color": "Standard",
@@ -543,7 +542,7 @@
           "factoryCode": "124cs4",
           "code": "124cs4",
           "name": "AT 1.4 T-Jet 180HP",
-          "co2": 159,
+          "co2": 153,
           "variants": [
             {
               "color": "Standard",
