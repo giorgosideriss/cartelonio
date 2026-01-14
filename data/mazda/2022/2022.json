@@ -8406,7 +8406,7 @@
               "price": 483.87
             },
             {
-              "name": "Zircon Sand &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49T / πλαϊνά μέρη οροφής &amp; οροφή (49T)",
+              "name": "Zircon Sand &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49T / πλαϊνά μέρη οροφής (49T)",
               "price": 1209.68
             },
             {
@@ -8430,7 +8430,7 @@
               "price": 1209.68
             },
             {
-              "name": "&nbsp;Soul Red &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49V / πλαϊνά μέρη οροφής &amp; ορ (49V)",
+              "name": "Soul Red / Multi Tone - κυρίως αμάξωμα: 49V / πλαϊνά μέρη οροφής (49V)",
               "price": 1612.9
             }
           ]
@@ -8453,7 +8453,7 @@
               "price": 483.87
             },
             {
-              "name": "Zircon Sand &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49T / πλαϊνά μέρη οροφής &amp; οροφή (49T)",
+              "name": "Zircon Sand / Multi Tone - κυρίως αμάξωμα: 49T / πλαϊνά μέρη οροφής &amp; οροφή (49T)",
               "price": 1209.68
             },
             {
@@ -8465,15 +8465,15 @@
               "price": 604.84
             },
             {
-              "name": "Jet Black &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49P / πλαϊνά μέρη οροφής: SILVER / ορο (49P)",
+              "name": "Jet Black / Multi Tone - κυρίως αμάξωμα: 49P / πλαϊνά μέρη οροφής: SILVER / ορο (49P)",
               "price": 1209.68
             },
             {
-              "name": "Ceramic Silver &nbsp;/ Multi Tone - κυρίως αμάξωμα: 48A / πλαϊνά μέρη οροφής: Grey / (48A)",
+              "name": "Ceramic Silver / Multi Tone - κυρίως αμάξωμα: 48A / πλαϊνά μέρη οροφής: Grey / (48A)",
               "price": 1209.68
             },
             {
-              "name": "&nbsp;Soul Red &nbsp;/ Multi Tone - κυρίως αμάξωμα: 49V / πλαϊνά μέρη οροφής &amp; ορ (49V)",
+              "name": "Soul Red / Multi Tone - κυρίως αμάξωμα: 49V / πλαϊνά μέρη οροφής (49V)",
               "price": 1612.9
             },
             {
@@ -8554,10 +8554,7 @@
             {
               "name": "Χρώμα Machine Grey (46G)",
               "price": 435.48
-            },
-            {
-              "name": "",
-              "price": 24830.65
+            
             }
           ]
         },
@@ -8597,10 +8594,6 @@
             {
               "name": "Χρώμα Polymetal Grey (47C)",
               "price": 315.0
-            },
-            {
-              "name": "",
-              "price": 25637.1
             }
           ]
         },
@@ -8644,10 +8637,7 @@
             {
               "name": "",
               "price": 26201.61
-            },
-            {
-              "name": "",
-              "price": 27008.06
+  
             }
           ]
         },
@@ -8687,170 +8677,6 @@
             {
               "name": "Χρώμα Platinum Quartz M. (47S)",
               "price": 314.52
-            }
-          ]
-        },
-        {
-          "factoryCode": "DN4JEAG",
-          "code": "DN4JEAG",
-          "name": "Mazda MX-30/e-Skyactiv/GT Plus/ Luxury Modern Premium- AT",
-          "co2": 0,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 33298.39,
-              "priceRetail": 33298.39
-            }
-          ],
-          "extras": [
-            {
-              "name": "Μαύρο Jet Mica (41W)",
-              "price": 403.23
-            },
-            {
-              "name": "Γκρι Machine Mica (46G)",
-              "price": 524.19
-            },
-            {
-              "name": "Crystal Soul Red Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 46V / πλαϊνά μέρη οροφής: (47E)",
-              "price": 1612.9
-            },
-            {
-              "name": "Ceramic Silver Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47A / πλαϊνά μέρη οροφής: SI (48A)",
-              "price": 1209.68
-            },
-            {
-              "name": "Ceramic Silver Metallic (47A)",
-              "price": 403.23
-            },
-            {
-              "name": "Polymetal Gray Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47C / πλαϊνά μέρη οροφής: SI (47L)",
-              "price": 1209.68
-            },
-            {
-              "name": "Polymetal Gray Metallic (47C)",
-              "price": 403.23
-            }
-          ]
-        },
-        {
-          "factoryCode": "DN4KEAB",
-          "code": "DN4KEAB",
-          "name": "MX-30/e-Skyactiv/GT Plus/ Luxury Vin",
-          "co2": 0,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 34104.84,
-              "priceRetail": 34104.84
-            }
-          ],
-          "extras": [
-            {
-              "name": "Μαύρο Jet Mica (41W)",
-              "price": 403.23
-            },
-            {
-              "name": "Γκρι Machine Mica (46G)",
-              "price": 524.19
-            },
-            {
-              "name": "Polymetal Gray Metallic (47C)",
-              "price": 403.23
-            },
-            {
-              "name": "Ceramic Silver Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47A / πλαϊνά μέρη οροφής: SI (48A)",
-              "price": 1209.68
-            },
-            {
-              "name": "Crystal Soul Red Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 46V / πλαϊνά μέρη οροφής: (47E)",
-              "price": 1612.9
-            },
-            {
-              "name": "Ceramic Silver Metallic (47A)",
-              "price": 403.23
-            },
-            {
-              "name": "Polymetal Gray Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47C / πλαϊνά μέρη οροφής: SI (47L)",
-              "price": 1209.68
-            }
-          ]
-        },
-        {
-          "factoryCode": "DN4JEAB",
-          "code": "DN4JEAB",
-          "name": "MX-30/e-Skyactiv/Launch Edition/Lux",
-          "co2": 0,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 30645.16,
-              "priceRetail": 30645.16
-            }
-          ],
-          "extras": [
-            {
-              "name": "Μαύρο Jet Mica (41W)",
-              "price": 403.23
-            },
-            {
-              "name": "Polymetal Gray Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47C / πλαϊνά μέρη οροφής: SI (47L)",
-              "price": 1209.68
-            },
-            {
-              "name": "Polymetal Gray Metallic (47C)",
-              "price": 403.23
-            },
-            {
-              "name": "Crystal Soul Red Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 46V / πλαϊνά μέρη οροφής: (47E)",
-              "price": 1612.9
-            },
-            {
-              "name": "Ceramic Silver Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47A / πλαϊνά μέρη οροφής: SI (48A)",
-              "price": 1209.68
-            },
-            {
-              "name": "Γκρι Machine Mica (46G)",
-              "price": 524.19
-            }
-          ]
-        },
-        {
-          "factoryCode": "DN4JEAC",
-          "code": "DN4JEAC",
-          "name": "MX-30/e-Skyactiv/Launch Edition/Lux",
-          "co2": 0,
-          "variants": [
-            {
-              "color": "Standard",
-              "priceNet": 30645.16,
-              "priceRetail": 30645.16
-            }
-          ],
-          "extras": [
-            {
-              "name": "Μαύρο Jet Mica (41W)",
-              "price": 403.23
-            },
-            {
-              "name": "Polymetal Gray Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47C / πλαϊνά μέρη οροφής: SI (47L)",
-              "price": 1209.68
-            },
-            {
-              "name": "Polymetal Gray Metallic (47C)",
-              "price": 403.23
-            },
-            {
-              "name": "Crystal Soul Red Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 46V / πλαϊνά μέρη οροφής: (47E)",
-              "price": 1612.9
-            },
-            {
-              "name": "Ceramic Silver Metallic / 3 αποχρώσεων - κυρίως αμάξωμα: 47A / πλαϊνά μέρη οροφής: SI (48A)",
-              "price": 1209.68
-            },
-            {
-              "name": "Γκρι Machine Mica (46G)",
-              "price": 524.19
             }
           ]
         }
