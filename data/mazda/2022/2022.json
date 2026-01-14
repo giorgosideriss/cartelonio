@@ -7541,7 +7541,7 @@
         }
       ]
     },
-    "Mazda MX-30": {
+    "MX-30": {
       "category": "SUV",
       "editions": [
         {
@@ -8515,13 +8515,13 @@
         }
       ]
     },
-    "Mazda MX-5": {
+    "MX-5": {
       "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "G1GEABMSD",
           "code": "G1GEABMSD",
-          "name": "Mazda MX-5/G132/REVOLUTION #IPM5 2022",
+          "name": "G132/REVOLUTION",
           "co2": 142,
           "variants": [
             {
@@ -8561,7 +8561,7 @@
         {
           "factoryCode": "G1JEACMSD",
           "code": "G1JEACMSD",
-          "name": "Mazda MX-5/G184/REVOLUTION TOP #IPM5 2022",
+          "name": "G184/REVOLUTION TOP",
           "co2": 155,
           "variants": [
             {
@@ -8600,7 +8600,7 @@
         {
           "factoryCode": "G1HEAFMSD",
           "code": "G1HEAFMSD",
-          "name": "Mazda MX-5/R F/G132/REVOLUTION  #IPM5 2022",
+          "name": "RF/G132/REVOLUTION",
           "co2": 142,
           "variants": [
             {
@@ -8644,7 +8644,7 @@
         {
           "factoryCode": "G1KEAJMSD",
           "code": "G1KEAJMSD",
-          "name": "Mazda MX-5/RF/G184/REVOLUTION TOP  #IPM5 2025",
+          "name": "RF/G184/REVOLUTION TOP",
           "co2": 155,
           "variants": [
             {
