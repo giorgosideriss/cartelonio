@@ -665,11 +665,10 @@ function updateCarSummary() {
 
   summaryEl.innerHTML = `
     <p><strong>Μάρκα:</strong> ${brand}</p>
-    <p><strong>Χρονολογία:</strong> ${year}</p>
+    <p><strong>Έτος:</strong> ${year}</p>
     <p><strong>Μοντέλο:</strong> ${model}</p>
     <p><strong>Έκδοση:</strong> ${editionName}</p>
     <p><strong>ΛΤΠΦ (με extras):</strong> ${priceText}</p>
-    <p><strong>Χρώμα / Πακέτο:</strong> ${variantName}</p>
   `;
 
   // Προαιρετικά, προσπάθησε να ενημερώσεις και την εικόνα
