@@ -248,8 +248,8 @@ button.secondary{
 }
 
 .brand-option-logo{
-  width:30px;
-  height:30px;
+  width:36px;
+  height:36px;
   border-radius:999px;
   background:rgb(255 255 255 / 0%);
   background-size:contain;
@@ -361,7 +361,7 @@ button.secondary{
   margin-top:2px;
   cursor:pointer;
   transition:
-    background 0.18s ease-out,
+    background 0.58s cubic-bezier(0.4, 0, 1, 1),
     border-color 0.18s ease-out,
     box-shadow 0.18s ease-out,
     transform 0.12s ease-out;
@@ -378,7 +378,7 @@ button.secondary{
   border-bottom:2px solid white;
   transform:scale(0.6) rotate(35deg) translateY(-2px);
   opacity:0;
-  transition:opacity 0.16s ease-out, transform 0.16s ease-out;
+  transition:opacity 0.56s ease-out, transform 0.16s ease-out;
 }
 
 .extras-option input[type="checkbox"]:checked {
