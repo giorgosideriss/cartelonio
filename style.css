@@ -374,8 +374,8 @@ button.secondary{
   top:2px;
   width:8px;
   height:12px;
-  border-right:2px solid white;
-  border-bottom:2px solid white;
+  border-right:5px solid white;
+  border-bottom:5px solid white;
   transform:scale(0.6) rotate(35deg) translateY(-2px);
   opacity:0;
   transition:opacity 0.56s ease-out, transform 0.16s ease-out;
@@ -384,7 +384,7 @@ button.secondary{
 .extras-option input[type="checkbox"]:checked {
   background:var(--accent);
   border-color:var(--accent);
-  box-shadow:0 0 0 4px rgba(32,130,0,0.26);
+  box-shadow:0 0 0 4px rgba(32,130,0,0.0);
   transform:scale(0.96);
 }
 
