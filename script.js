@@ -1062,3 +1062,145 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 })();
+
+
+/* =========================================================
+   CARTELONIO UI v6 — VISUAL SYNC ONLY
+   Δεν αλλάζει calculations, data loading ή dropdown logic.
+   ========================================================= */
+(() => {
+  const $ = (id) => document.getElementById(id);
+
+  function valueOf(id) {
+    const el = $(id);
+    return el ? String(el.value || "").trim() : "";
+  }
+
+  function selectedText(id) {
+    const el = $(id);
+    if (!el || !el.options || el.selectedIndex < 0) return "";
+    const text = String(el.options[el.selectedIndex]?.textContent || "").trim();
+    return /^Επιλέξτε/i.test(text) ? "" : text;
+  }
+
+  function formatPrice(v) {
+    const n = Number(v);
+    if (!String(v).trim() || !Number.isFinite(n)) return "—";
+    return n.toLocaleString("el-GR", {
+      style: "currency",
+      currency: "EUR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    });
+  }
+
+  function formatKm(v) {
+    const n = Number(v);
+    if (!String(v).trim() || !Number.isFinite(n)) return "—";
+    return n.toLocaleString("el-GR") + " km";
+  }
+
+  function syncPremiumUi() {
+    const brand = valueOf("brandSelect");
+    const year = valueOf("yearSelect");
+    const model = valueOf("modelSelect");
+    const version = selectedText("versionSelect");
+    const category = valueOf("category");
+    const co2 = valueOf("co2");
+    const mileage = valueOf("mileage");
+    const price = valueOf("price");
+
+    // Hero
+    if ($("heroVehicleName")) {
+      $("heroVehicleName").textContent =
+        brand && model ? `${brand} ${model}` :
+        brand ? brand :
+        "Βρες το αυτοκίνητό σου";
+    }
+    if ($("heroVehicleMeta")) {
+      $("heroVehicleMeta").textContent =
+        version ? version :
+        (brand && year && model ? "Επίλεξε έκδοση για να συμπληρωθούν τα στοιχεία." :
+         "Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.");
+    }
+    if ($("heroYearChip")) $("heroYearChip").textContent = `Έτος ${year || "—"}`;
+    if ($("heroCategoryChip")) {
+      const cat = category && !/^Επιλέξτε/.test(category) ? category : "—";
+      $("heroCategoryChip").textContent = `Αμάξωμα ${cat}`;
+    }
+    if ($("heroCo2Chip")) $("heroCo2Chip").textContent = `CO₂ ${co2 ? co2 + " g/km" : "—"}`;
+
+    // Progress
+    const stepData = [
+      ["brandSelect","stepBrandValue",brand],
+      ["yearSelect","stepYearValue",year],
+      ["modelSelect","stepModelValue",model],
+      ["versionSelect","stepVersionValue",version]
+    ];
+    stepData.forEach(([fieldId,labelId,val]) => {
+      const item = document.querySelector(`[data-step-field="${fieldId}"]`);
+      if (item) item.classList.toggle("is-done", Boolean(val));
+      if ($(labelId)) $(labelId).textContent = val || "Επίλεξε";
+    });
+
+    // Vehicle passport
+    if ($("passportBrand")) $("passportBrand").textContent = brand || "—";
+    if ($("passportModel")) $("passportModel").textContent = model || "Επίλεξε όχημα";
+    if ($("passportVersion")) $("passportVersion").textContent = version || "—";
+    if ($("passportYear")) $("passportYear").textContent = year || "—";
+    if ($("passportCategory")) {
+      $("passportCategory").textContent =
+        category && !/^Επιλέξτε/.test(category) ? category : "—";
+    }
+    if ($("passportCo2")) $("passportCo2").textContent = co2 ? `${co2} g/km` : "—";
+    if ($("passportMileage")) $("passportMileage").textContent = formatKm(mileage);
+    if ($("passportPrice")) $("passportPrice").textContent = formatPrice(price);
+  }
+
+  function decorateResult() {
+    const results = $("results");
+    if (!results) return;
+    const h3 = results.querySelector("h3");
+    if (!h3) return;
+
+    // Keep the original calculation text intact, but visually separate the amount.
+    const raw = h3.textContent || "";
+    const match = raw.match(/€\s*([\d.,]+)/);
+    if (match) {
+      h3.setAttribute("data-tax", `€${match[1]}`);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const watched = [
+      "brandSelect","yearSelect","modelSelect","versionSelect","colorSelect",
+      "price","category","firstReg","importDate","mileage","co2"
+    ];
+
+    watched.forEach(id => {
+      const el = $(id);
+      if (!el) return;
+      el.addEventListener("change", () => setTimeout(syncPremiumUi, 0));
+      el.addEventListener("input", () => setTimeout(syncPremiumUi, 0));
+    });
+
+    const results = $("results");
+    if (results) {
+      new MutationObserver(() => {
+        decorateResult();
+        syncPremiumUi();
+      }).observe(results, {childList:true,subtree:true,characterData:true});
+    }
+
+    // Observe compatibility summary because the original app refreshes it
+    // after auto-fill operations.
+    const legacySummary = $("carSummary");
+    if (legacySummary) {
+      new MutationObserver(() => syncPremiumUi())
+        .observe(legacySummary, {childList:true,subtree:true,characterData:true});
+    }
+
+    syncPremiumUi();
+    decorateResult();
+  });
+})();
