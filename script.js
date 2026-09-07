@@ -154,57 +154,54 @@ const BRAND_LOGOS = {
 const DEFAULT_CAR_IMAGE =
   "https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png";
 
-function setCarImage(src, altText = "Όχημα") {
+function showDefaultCarImage() {
   const img = document.getElementById("carImage");
   if (!img) return;
-
-  const nextSrc = src || DEFAULT_CAR_IMAGE;
-
-  // Αν είναι ήδη η ίδια εικόνα, δεν κάνουμε άσκοπο reload.
-  if (img.src === nextSrc || img.getAttribute("src") === nextSrc) {
-    img.alt = altText;
-    return;
-  }
-
-  img.classList.add("is-changing");
-
-  const preload = new Image();
-  preload.onload = () => {
-    img.src = nextSrc;
-    img.alt = altText;
-    requestAnimationFrame(() => img.classList.remove("is-changing"));
-  };
-
-  // Αν η online εικόνα δεν φορτώσει, επιστρέφουμε στην default.
-  preload.onerror = () => {
-    img.src = DEFAULT_CAR_IMAGE;
-    img.alt = "Όχημα";
-    requestAnimationFrame(() => img.classList.remove("is-changing"));
-  };
-
-  preload.src = nextSrc;
-}
-
-function resetCarImage() {
-  setCarImage(DEFAULT_CAR_IMAGE, "Όχημα");
+  img.src = DEFAULT_CAR_IMAGE;
+  img.alt = "Όχημα";
+  img.classList.remove("is-changing");
 }
 
 function updateCarImageFromSelectedModel() {
+  const img = document.getElementById("carImage");
   const brandEl = document.getElementById("brandSelect");
   const yearEl = document.getElementById("yearSelect");
   const modelEl = document.getElementById("modelSelect");
 
-  const brand = brandEl ? brandEl.value : "";
-  const year = yearEl ? yearEl.value : "";
-  const model = modelEl ? modelEl.value : "";
+  if (!img || !brandEl || !yearEl || !modelEl) return;
 
-  if (!brand || !year || !model || !currentDataset?.models?.[model]) {
-    resetCarImage();
+  const brand = brandEl.value;
+  const year = yearEl.value;
+  const model = modelEl.value;
+
+  if (!brand || !year || !model || !currentDataset || !currentDataset.models) {
     return;
   }
 
   const modelObj = currentDataset.models[model];
-  setCarImage(modelObj.image, `${brand} ${model} ${year}`);
+  if (!modelObj || !modelObj.image) {
+    showDefaultCarImage();
+    return;
+  }
+
+  const newUrl = modelObj.image;
+  const preload = new window.Image();
+
+  img.classList.add("is-changing");
+
+  preload.onload = function () {
+    img.src = newUrl;
+    img.alt = brand + " " + model + " " + year;
+    requestAnimationFrame(function () {
+      img.classList.remove("is-changing");
+    });
+  };
+
+  preload.onerror = function () {
+    showDefaultCarImage();
+  };
+
+  preload.src = newUrl;
 }
 
 // Τρέχον σετ δεδομένων
@@ -661,14 +658,11 @@ function populateVersions() {
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
   loadExtras([]);
 
-  if (!currentDataset || !currentDataset.models || !model) {
-    resetCarImage();
-    return;
-  }
+  if (!currentDataset || !currentDataset.models || !model) return;
 
   const modelObj = currentDataset.models[model];
 
-  // Ανανέωσε την hero εικόνα μόλις έχουμε μάρκα + έτος + μοντέλο.
+  // Αλλάζουμε μόνο την hero εικόνα. Δεν πειράζουμε καθόλου τη φόρτωση των δεδομένων.
   updateCarImageFromSelectedModel();
 
   // Η κατηγορία είναι ιδιότητα του μοντέλου, οπότε ελέγχεται αμέσως
@@ -876,13 +870,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
-    resetCarImage();
     loadExtras([]);
+    showDefaultCarImage();
     updateCarSummary();
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
-    resetCarImage();
+    showDefaultCarImage();
     loadDatasetForSelection();
     updateCarSummary();
   });
@@ -976,7 +970,6 @@ document.addEventListener("DOMContentLoaded", () => {
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
     clearAllRequiredFieldWarnings();
-    resetCarImage();
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
     updateCarSummary();
