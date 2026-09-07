@@ -418,6 +418,61 @@ function syncCategoryFromSelectedModel() {
 }
 
 
+
+/* ========== ΠΡΟΕΙΔΟΠΟΙΗΣΕΙΣ ΚΕΝΩΝ ΥΠΟΧΡΕΩΤΙΚΩΝ ΠΕΔΙΩΝ ========== */
+
+const REQUIRED_CALC_FIELDS = ["price", "firstReg", "importDate", "mileage", "co2"];
+
+function setFieldWarning(fieldId, show) {
+  const wrap = document.querySelector(`.required-field-wrap[data-field="${fieldId}"]`);
+  if (!wrap) return;
+
+  wrap.classList.toggle("has-warning", Boolean(show));
+
+  const warning = wrap.querySelector(".field-warning");
+  if (warning) {
+    warning.setAttribute("aria-hidden", show ? "false" : "true");
+  }
+}
+
+function isFieldEmpty(fieldId) {
+  const el = document.getElementById(fieldId);
+  return !el || String(el.value).trim() === "";
+}
+
+function validateRequiredCalculationFields() {
+  let firstInvalid = null;
+  let hasError = false;
+
+  REQUIRED_CALC_FIELDS.forEach(fieldId => {
+    const empty = isFieldEmpty(fieldId);
+    setFieldWarning(fieldId, empty);
+
+    if (empty && !firstInvalid) {
+      firstInvalid = document.getElementById(fieldId);
+    }
+    if (empty) hasError = true;
+  });
+
+  const categoryEl = document.getElementById("category");
+  const categoryInvalid = !categoryEl || !isValidVehicleCategory(categoryEl.value);
+
+  if (categoryInvalid) {
+    setCategoryWarning(true);
+    if (!firstInvalid && categoryEl) firstInvalid = categoryEl;
+    hasError = true;
+  }
+
+  if (firstInvalid) firstInvalid.focus();
+
+  return !hasError;
+}
+
+function clearAllRequiredFieldWarnings() {
+  REQUIRED_CALC_FIELDS.forEach(fieldId => setFieldWarning(fieldId, false));
+}
+
+
 /* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
 async function loadDatasetForSelection() {
@@ -735,13 +790,11 @@ function calculate(){
   const mileage    = Number(document.getElementById("mileage").value);
   const co2        = Number(document.getElementById("co2").value);
 
-  // Μην επιτρέπεις υπολογισμό χωρίς σωστή κατηγορία αμαξώματος.
-  if (!isValidVehicleCategory(cat)) {
-    setCategoryWarning(true);
-    document.getElementById("category").focus();
+  // Έλεγχος όλων των απαραίτητων πεδίων μόνο όταν πατηθεί "Υπολόγισε".
+  if (!validateRequiredCalculationFields()) {
     document.getElementById("results").innerHTML = `
       <p class="category-error-message">
-        <strong>Επιλέξτε τη σωστή κατηγορία αμαξώματος</strong> πριν τον υπολογισμό.
+        <strong>Συμπληρώστε τα πεδία που επισημαίνονται με κόκκινο.</strong>
       </p>
     `;
     return;
@@ -833,6 +886,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
+  // Οι προειδοποιήσεις των υποχρεωτικών πεδίων εμφανίζονται μόνο μετά
+  // από προσπάθεια υπολογισμού και εξαφανίζονται μόλις συμπληρωθεί το πεδίο.
+  REQUIRED_CALC_FIELDS.forEach(fieldId => {
+    const el = document.getElementById(fieldId);
+    if (!el) return;
+
+    const clearIfFilled = () => {
+      if (!isFieldEmpty(fieldId)) {
+        setFieldWarning(fieldId, false);
+      }
+    };
+
+    el.addEventListener("input", clearIfFilled);
+    el.addEventListener("change", clearIfFilled);
+  });
+
   // Extras dropdown toggle
   const extrasDropdown = document.querySelector(".extras-dropdown");
   const extrasToggle   = document.getElementById("extrasToggle");
@@ -879,6 +949,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadExtras([]);
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
+    clearAllRequiredFieldWarnings();
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
     updateCarSummary();
