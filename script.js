@@ -148,45 +148,63 @@ const BRAND_LOGOS = {
 
 
 /* =========================================================
-   (ΠΡΟΑΙΡΕΤΙΚΟ) BING IMAGE SEARCH API — AUTO IMAGE FETCHER
+   ΔΥΝΑΜΙΚΗ ΕΙΚΟΝΑ ΟΧΗΜΑΤΟΣ ΑΠΟ ΤΟ JSON
    ========================================================= */
-const BING_API_KEY = "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ";
-const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
 
-/**
- * Online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
- * και ενημέρωση του <img id="carImage">
- */
-async function updateCarImage() {
-  const brand  = document.getElementById("brandSelect").value;
-  const model  = document.getElementById("modelSelect").value;
-  const year   = document.getElementById("yearSelect").value;
+const DEFAULT_CAR_IMAGE =
+  "https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png";
 
-  if (!brand || !model || !year) return;
-  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
-    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
+function setCarImage(src, altText = "Όχημα") {
+  const img = document.getElementById("carImage");
+  if (!img) return;
+
+  const nextSrc = src || DEFAULT_CAR_IMAGE;
+
+  // Αν είναι ήδη η ίδια εικόνα, δεν κάνουμε άσκοπο reload.
+  if (img.src === nextSrc || img.getAttribute("src") === nextSrc) {
+    img.alt = altText;
     return;
   }
 
-  const query = `${brand} ${model} ${year} PNG`;
+  img.classList.add("is-changing");
 
-  try {
-    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
-      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
-    });
+  const preload = new Image();
+  preload.onload = () => {
+    img.src = nextSrc;
+    img.alt = altText;
+    requestAnimationFrame(() => img.classList.remove("is-changing"));
+  };
 
-    if (!res.ok) throw new Error("Image API error");
+  // Αν η online εικόνα δεν φορτώσει, επιστρέφουμε στην default.
+  preload.onerror = () => {
+    img.src = DEFAULT_CAR_IMAGE;
+    img.alt = "Όχημα";
+    requestAnimationFrame(() => img.classList.remove("is-changing"));
+  };
 
-    const data = await res.json();
-    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
+  preload.src = nextSrc;
+}
 
-    if (imgUrl) {
-      document.getElementById("carImage").src = imgUrl;
-    }
+function resetCarImage() {
+  setCarImage(DEFAULT_CAR_IMAGE, "Όχημα");
+}
 
-  } catch (err) {
-    console.warn("Image search failed:", err);
+function updateCarImageFromSelectedModel() {
+  const brandEl = document.getElementById("brandSelect");
+  const yearEl = document.getElementById("yearSelect");
+  const modelEl = document.getElementById("modelSelect");
+
+  const brand = brandEl ? brandEl.value : "";
+  const year = yearEl ? yearEl.value : "";
+  const model = modelEl ? modelEl.value : "";
+
+  if (!brand || !year || !model || !currentDataset?.models?.[model]) {
+    resetCarImage();
+    return;
   }
+
+  const modelObj = currentDataset.models[model];
+  setCarImage(modelObj.image, `${brand} ${model} ${year}`);
 }
 
 // Τρέχον σετ δεδομένων
@@ -643,9 +661,15 @@ function populateVersions() {
   colorEl.innerHTML = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
   loadExtras([]);
 
-  if (!currentDataset || !currentDataset.models || !model) return;
+  if (!currentDataset || !currentDataset.models || !model) {
+    resetCarImage();
+    return;
+  }
 
   const modelObj = currentDataset.models[model];
+
+  // Ανανέωσε την hero εικόνα μόλις έχουμε μάρκα + έτος + μοντέλο.
+  updateCarImageFromSelectedModel();
 
   // Η κατηγορία είναι ιδιότητα του μοντέλου, οπότε ελέγχεται αμέσως
   // μόλις ο χρήστης επιλέξει μοντέλο (δεν χρειάζεται να περιμένει την έκδοση).
@@ -852,11 +876,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
+    resetCarImage();
     loadExtras([]);
     updateCarSummary();
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
+    resetCarImage();
     loadDatasetForSelection();
     updateCarSummary();
   });
@@ -950,6 +976,7 @@ document.addEventListener("DOMContentLoaded", () => {
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
     clearAllRequiredFieldWarnings();
+    resetCarImage();
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
     updateCarSummary();
