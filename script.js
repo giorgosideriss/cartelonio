@@ -371,6 +371,53 @@ function loadExtras(extrasList) {
   recalcPriceWithExtras();
 }
 
+
+/* ========== ΕΛΕΓΧΟΣ / ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΚΑΤΗΓΟΡΙΑΣ ΑΜΑΞΩΜΑΤΟΣ ========== */
+
+const CATEGORY_PLACEHOLDER = "Επιλέξτε Κατηγορία Αμαξώματος";
+
+function isValidVehicleCategory(value) {
+  return Boolean(value && value !== CATEGORY_PLACEHOLDER && categories[value]);
+}
+
+function setCategoryWarning(show) {
+  const wrap = document.querySelector(".category-field-wrap");
+  const warning = document.getElementById("categoryWarning");
+
+  if (wrap) wrap.classList.toggle("has-warning", Boolean(show));
+
+  if (warning) {
+    warning.setAttribute("aria-hidden", show ? "false" : "true");
+  }
+}
+
+function syncCategoryFromSelectedModel() {
+  const modelEl = document.getElementById("modelSelect");
+  const categoryEl = document.getElementById("category");
+  if (!modelEl || !categoryEl) return;
+
+  const model = modelEl.value;
+
+  // Δεν εμφανίζουμε error πριν επιλεγεί μοντέλο.
+  if (!model || !currentDataset || !currentDataset.models) {
+    categoryEl.value = CATEGORY_PLACEHOLDER;
+    setCategoryWarning(false);
+    return;
+  }
+
+  const modelObj = currentDataset.models[model];
+  const autoCategory = modelObj && modelObj.category;
+
+  if (isValidVehicleCategory(autoCategory)) {
+    categoryEl.value = autoCategory;
+    setCategoryWarning(false);
+  } else {
+    categoryEl.value = CATEGORY_PLACEHOLDER;
+    setCategoryWarning(true);
+  }
+}
+
+
 /* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
 async function loadDatasetForSelection() {
@@ -544,6 +591,11 @@ function populateVersions() {
   if (!currentDataset || !currentDataset.models || !model) return;
 
   const modelObj = currentDataset.models[model];
+
+  // Η κατηγορία είναι ιδιότητα του μοντέλου, οπότε ελέγχεται αμέσως
+  // μόλις ο χρήστης επιλέξει μοντέλο (δεν χρειάζεται να περιμένει την έκδοση).
+  syncCategoryFromSelectedModel();
+
   if (!modelObj || !Array.isArray(modelObj.editions)) return;
 
   modelObj.editions.forEach((ed, index) => {
@@ -625,9 +677,9 @@ function autoFillCarData() {
     document.getElementById("co2").value = edition.co2;
   }
 
-  if (modelObj.category && categories[modelObj.category]) {
-    document.getElementById("category").value = modelObj.category;
-  }
+  // Επιβεβαίωσε ξανά την κατηγορία όταν συμπληρώνονται αυτόματα
+  // τα στοιχεία της επιλεγμένης έκδοσης.
+  syncCategoryFromSelectedModel();
 
   updateCarSummary();
 }
@@ -685,6 +737,18 @@ function calculate(){
   const mileage    = Number(document.getElementById("mileage").value);
   const co2        = Number(document.getElementById("co2").value);
 
+  // Μην επιτρέπεις υπολογισμό χωρίς σωστή κατηγορία αμαξώματος.
+  if (!isValidVehicleCategory(cat)) {
+    setCategoryWarning(true);
+    document.getElementById("category").focus();
+    document.getElementById("results").innerHTML = `
+      <p class="category-error-message">
+        <strong>Επιλέξτε τη σωστή κατηγορία αμαξώματος</strong> πριν τον υπολογισμό.
+      </p>
+    `;
+    return;
+  }
+
   const years   = yearsBetween(firstReg, importDate);
   const yearDep = lookupDepreciation(cat, years);
   const avgKm   = autoAvgKm(years);  
@@ -719,6 +783,8 @@ document.addEventListener("DOMContentLoaded", () => {
     option.textContent = cat;
     categorySelect.appendChild(option);
   });
+  categorySelect.value = CATEGORY_PLACEHOLDER;
+  setCategoryWarning(false);
 
   // Μάρκα / Έτος
   populateBrandSelect();
@@ -733,6 +799,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
     document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
+    categorySelect.value = CATEGORY_PLACEHOLDER;
+    setCategoryWarning(false);
     loadExtras([]);
     updateCarSummary();
   });
@@ -752,6 +820,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("colorSelect").addEventListener("change", () => {
     autoFillCarData();
+  });
+
+  // Αν ο χρήστης επιλέξει χειροκίνητα σωστή κατηγορία,
+  // η κόκκινη προειδοποίηση εξαφανίζεται αμέσως.
+  categorySelect.addEventListener("change", () => {
+    setCategoryWarning(!isValidVehicleCategory(categorySelect.value));
   });
 
   // Extras dropdown toggle
@@ -798,6 +872,8 @@ document.addEventListener("DOMContentLoaded", () => {
     currentExtras = [];
     selectedExtras.clear();
     loadExtras([]);
+    categorySelect.value = CATEGORY_PLACEHOLDER;
+    setCategoryWarning(false);
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
     updateCarSummary();

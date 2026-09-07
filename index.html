@@ -98,9 +98,16 @@
 
       <div class="section-title">Στοιχεία Οχήματος</div>
 
-      <div class="row">
+      <div class="row" id="categoryRow">
         <label for="category">Κατηγορία Οχήματος</label>
-        <select id="category"></select>
+        <div class="category-field-wrap">
+          <select id="category"></select>
+          <span id="categoryWarning" class="category-warning" aria-hidden="true" tabindex="0">!
+            <span class="category-warning-text">
+              Ο τύπος αμαξώματος δεν μπόρεσε να προσδιοριστεί αυτόματα. Παρακαλώ επιλέξτε τη σωστή κατηγορία οχήματος.
+            </span>
+          </span>
+        </div>
       </div>
 
       <div class="row">
