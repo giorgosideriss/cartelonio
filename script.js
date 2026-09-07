@@ -148,60 +148,45 @@ const BRAND_LOGOS = {
 
 
 /* =========================================================
-   ΔΥΝΑΜΙΚΗ ΕΙΚΟΝΑ ΟΧΗΜΑΤΟΣ ΑΠΟ ΤΟ JSON
+   (ΠΡΟΑΙΡΕΤΙΚΟ) BING IMAGE SEARCH API — AUTO IMAGE FETCHER
    ========================================================= */
+const BING_API_KEY = "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ";
+const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
 
-const DEFAULT_CAR_IMAGE =
-  "https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png";
+/**
+ * Online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
+ * και ενημέρωση του <img id="carImage">
+ */
+async function updateCarImage() {
+  const brand  = document.getElementById("brandSelect").value;
+  const model  = document.getElementById("modelSelect").value;
+  const year   = document.getElementById("yearSelect").value;
 
-function showDefaultCarImage() {
-  const img = document.getElementById("carImage");
-  if (!img) return;
-  img.src = DEFAULT_CAR_IMAGE;
-  img.alt = "Όχημα";
-  img.classList.remove("is-changing");
-}
-
-function updateCarImageFromSelectedModel() {
-  const img = document.getElementById("carImage");
-  const brandEl = document.getElementById("brandSelect");
-  const yearEl = document.getElementById("yearSelect");
-  const modelEl = document.getElementById("modelSelect");
-
-  if (!img || !brandEl || !yearEl || !modelEl) return;
-
-  const brand = brandEl.value;
-  const year = yearEl.value;
-  const model = modelEl.value;
-
-  if (!brand || !year || !model || !currentDataset || !currentDataset.models) {
+  if (!brand || !model || !year) return;
+  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
+    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
     return;
   }
 
-  const modelObj = currentDataset.models[model];
-  if (!modelObj || !modelObj.image) {
-    showDefaultCarImage();
-    return;
-  }
+  const query = `${brand} ${model} ${year} PNG`;
 
-  const newUrl = modelObj.image;
-  const preload = new window.Image();
-
-  img.classList.add("is-changing");
-
-  preload.onload = function () {
-    img.src = newUrl;
-    img.alt = brand + " " + model + " " + year;
-    requestAnimationFrame(function () {
-      img.classList.remove("is-changing");
+  try {
+    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
+      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
     });
-  };
 
-  preload.onerror = function () {
-    showDefaultCarImage();
-  };
+    if (!res.ok) throw new Error("Image API error");
 
-  preload.src = newUrl;
+    const data = await res.json();
+    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
+
+    if (imgUrl) {
+      document.getElementById("carImage").src = imgUrl;
+    }
+
+  } catch (err) {
+    console.warn("Image search failed:", err);
+  }
 }
 
 // Τρέχον σετ δεδομένων
@@ -662,9 +647,6 @@ function populateVersions() {
 
   const modelObj = currentDataset.models[model];
 
-  // Αλλάζουμε μόνο την hero εικόνα. Δεν πειράζουμε καθόλου τη φόρτωση των δεδομένων.
-  updateCarImageFromSelectedModel();
-
   // Η κατηγορία είναι ιδιότητα του μοντέλου, οπότε ελέγχεται αμέσως
   // μόλις ο χρήστης επιλέξει μοντέλο (δεν χρειάζεται να περιμένει την έκδοση).
   syncCategoryFromSelectedModel();
@@ -871,12 +853,10 @@ document.addEventListener("DOMContentLoaded", () => {
     categorySelect.value = CATEGORY_PLACEHOLDER;
     setCategoryWarning(false);
     loadExtras([]);
-    showDefaultCarImage();
     updateCarSummary();
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
-    showDefaultCarImage();
     loadDatasetForSelection();
     updateCarSummary();
   });
@@ -1013,3 +993,72 @@ document.addEventListener("DOMContentLoaded", () => {
   syncToyotaColorVisibility();
 })();
 
+
+
+/* =========================================================
+   CARTELONIO — SAFE DYNAMIC MODEL IMAGE PATCH
+   This block is intentionally isolated from the dropdown/data logic.
+   ========================================================= */
+(() => {
+  const DEFAULT_CARTELONIO_CAR_IMAGE =
+    "https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png";
+
+  function setCartelonioHeroImage(url, altText) {
+    const img = document.getElementById("carImage");
+    if (!img) return;
+
+    if (!url) {
+      img.src = DEFAULT_CARTELONIO_CAR_IMAGE;
+      img.alt = "Όχημα";
+      return;
+    }
+
+    const preload = new Image();
+
+    preload.onload = () => {
+      img.classList.add("is-changing");
+      img.src = url;
+      img.alt = altText || "Όχημα";
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => img.classList.remove("is-changing"));
+      });
+    };
+
+    preload.onerror = () => {
+      img.src = DEFAULT_CARTELONIO_CAR_IMAGE;
+      img.alt = "Όχημα";
+      img.classList.remove("is-changing");
+    };
+
+    preload.src = url;
+  }
+
+  function refreshCartelonioModelImage() {
+    const brandEl = document.getElementById("brandSelect");
+    const yearEl = document.getElementById("yearSelect");
+    const modelEl = document.getElementById("modelSelect");
+
+    if (!brandEl || !yearEl || !modelEl) return;
+
+    const brand = brandEl.value;
+    const year = yearEl.value;
+    const model = modelEl.value;
+
+    // Important: this feature never changes dropdowns/currentDataset.
+    if (!brand || !year || !model) return;
+    if (typeof currentDataset === "undefined" || !currentDataset?.models?.[model]) return;
+
+    const modelObj = currentDataset.models[model];
+    setCartelonioHeroImage(
+      modelObj.image || DEFAULT_CARTELONIO_CAR_IMAGE,
+      `${brand} ${model} ${year}`
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const modelEl = document.getElementById("modelSelect");
+    if (modelEl) {
+      modelEl.addEventListener("change", refreshCartelonioModelImage);
+    }
+  });
+})();

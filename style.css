@@ -574,11 +574,11 @@ button.secondary{
 }
 
 
-/* Dynamic vehicle image */
+/* Dynamic car image — isolated visual effect only */
 #carImage{
-  transition: opacity .22s ease, transform .22s ease;
+  transition: opacity .2s ease, transform .2s ease;
 }
 #carImage.is-changing{
-  opacity:.15;
-  transform:scale(.985);
+  opacity:.18;
+  transform:scale(.99);
 }
