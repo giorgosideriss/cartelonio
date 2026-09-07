@@ -1157,20 +1157,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if ($("passportPrice")) $("passportPrice").textContent = formatPrice(price);
   }
 
-  function decorateResult() {
-    const results = $("results");
-    if (!results) return;
-    const h3 = results.querySelector("h3");
-    if (!h3) return;
-
-    // Keep the original calculation text intact, but visually separate the amount.
-    const raw = h3.textContent || "";
-    const match = raw.match(/€\s*([\d.,]+)/);
-    if (match) {
-      h3.setAttribute("data-tax", `€${match[1]}`);
-    }
-  }
-
   document.addEventListener("DOMContentLoaded", () => {
     const watched = [
       "brandSelect","yearSelect","modelSelect","versionSelect","colorSelect",
@@ -1187,7 +1173,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const results = $("results");
     if (results) {
       new MutationObserver(() => {
-        decorateResult();
         syncPremiumUi();
       }).observe(results, {childList:true,subtree:true,characterData:true});
     }
@@ -1201,6 +1186,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     syncPremiumUi();
-    decorateResult();
   });
 })();
