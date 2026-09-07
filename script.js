@@ -677,10 +677,8 @@ function autoFillCarData() {
     document.getElementById("co2").value = edition.co2;
   }
 
-  // Επιβεβαίωσε ξανά την κατηγορία όταν συμπληρώνονται αυτόματα
-  // τα στοιχεία της επιλεγμένης έκδοσης.
-  syncCategoryFromSelectedModel();
-
+  // Η κατηγορία ελέγχεται μόνο όταν αλλάζει το μοντέλο.
+  // Αν ο χρήστης την έχει επιλέξει χειροκίνητα, δεν την πειράζουμε εδώ.
   updateCarSummary();
 }
 
@@ -825,7 +823,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Αν ο χρήστης επιλέξει χειροκίνητα σωστή κατηγορία,
   // η κόκκινη προειδοποίηση εξαφανίζεται αμέσως.
   categorySelect.addEventListener("change", () => {
-    setCategoryWarning(!isValidVehicleCategory(categorySelect.value));
+    const modelSelected = Boolean(document.getElementById("modelSelect").value);
+
+    if (isValidVehicleCategory(categorySelect.value)) {
+      setCategoryWarning(false);
+    } else {
+      // Προειδοποίηση μόνο εφόσον έχει ήδη επιλεγεί μοντέλο.
+      setCategoryWarning(modelSelected);
+    }
   });
 
   // Extras dropdown toggle

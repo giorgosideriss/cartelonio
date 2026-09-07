@@ -231,8 +231,7 @@ button.secondary{
   pointer-events:none;
 }
 
-.category-warning:hover .category-warning-text,
-.category-warning:focus .category-warning-text{
+.category-warning:hover .category-warning-text{
   visibility:visible;
   opacity:.96;
 }
