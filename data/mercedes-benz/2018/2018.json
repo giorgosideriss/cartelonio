@@ -117,7 +117,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/a-class-hatch-w176.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "B-Class": {
       "category": "Hatchback",
@@ -150,7 +152,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/b-class-w246.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLA Coupe": {
       "category": "Coupe/Roadster",
@@ -379,7 +383,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/cla-coupe-c117.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLA Shooting Brake": {
       "category": "MPV",
@@ -594,7 +600,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/cla-shooting-brake-x117.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Sedan": {
       "category": "Sedan",
@@ -1005,7 +1013,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Estate": {
       "category": "MPV",
@@ -1416,7 +1426,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/c-class-estate-s205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Sedan": {
       "category": "Sedan",
@@ -1827,7 +1839,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/e-class-sedan-w213.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Estate": {
       "category": "MPV",
@@ -2154,7 +2168,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/e-class-estate-s213.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLS Coupe": {
       "category": "Coupe/Roadster",
@@ -2257,7 +2273,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/cls-coupe-c257.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class": {
       "category": "Sedan",
@@ -2626,7 +2644,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/s-class-w222.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class Long": {
       "category": "Sedan",
@@ -2645,7 +2665,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/s-class-long-v222.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Coupe": {
       "category": "Coupe/Roadster",
@@ -2986,7 +3008,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/c-class-coupe-c205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Cabrio": {
       "category": "Cabrio",
@@ -3313,7 +3337,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/c-class-cabrio-a205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Coupe": {
       "category": "Coupe/Roadster",
@@ -3584,7 +3610,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/e-class-coupe-c238.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Cabrio": {
       "category": "Cabrio",
@@ -3883,7 +3911,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/e-class-cabrio-a238.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class Coupe": {
       "category": "Coupe/Roadster",
@@ -3958,7 +3988,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/s-class-coupe-c217.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class Cabrio": {
       "category": "Cabrio",
@@ -4047,7 +4079,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/s-class-cabrio-a217.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "SLC": {
       "category": "Cabrio",
@@ -4108,7 +4142,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/slc-r172.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "SL": {
       "category": "Cabrio",
@@ -4169,7 +4205,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/sl-r231.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Mercedes-AMG GT Coupe": {
       "category": "Coupe/Roadster",
@@ -4244,7 +4282,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/amg-gt-coupe-c190.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Mercedes-AMG GT Roadster": {
       "category": "Cabrio",
@@ -4291,7 +4331,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/amg-gt-roadster-r190.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLA": {
       "category": "SUV",
@@ -4492,7 +4534,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/gla-x156.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLC": {
       "category": "SUV",
@@ -4623,7 +4667,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/glc-x253.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLC Coupe": {
       "category": "SUV",
@@ -4754,7 +4800,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/glc-coupe-c253.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLE": {
       "category": "SUV",
@@ -4885,7 +4933,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/gle-w166.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLE-Coupe": {
       "category": "SUV",
@@ -4974,7 +5024,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/gle-coupe-c292.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLS": {
       "category": "SUV",
@@ -5035,7 +5087,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/gls-x166.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "new smart fortwo coupe (C453)": {
       "category": "Coupe/Roadster",
@@ -5166,7 +5220,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/smart-fortwo-c453.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "new smart fortwo cabrio (A453)": {
       "category": "Cabrio",
@@ -5297,7 +5353,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/smart-fortwo-cabrio-a453.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "new smart forfour (W453)": {
       "category": "Hatchback",
@@ -5428,7 +5486,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/smart-forfour-w453.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "A-Class (W177)": {
       "category": "Hatchback",
@@ -5587,7 +5647,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/a-class-hatch-w177.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "G-Class": {
       "category": "SUV",
@@ -5620,7 +5682,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/g-class-w463.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Mercedes-AMG GT 4-door Coupe": {
       "category": "Coupe/Roadster",
@@ -5695,7 +5759,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/amg-gt-4door-x290.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "A-Class Saloon": {
       "category": "Hatchback",
@@ -5770,7 +5836,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/a-class-sedan-v177.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLE (W167)": {
       "category": "SUV",
@@ -5803,7 +5871,9 @@
           ],
           "extras": []
         }
-      ]
+      ],
+      "image": "images/mercedes-benz/models/gle-v167.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     }
   }
 }
