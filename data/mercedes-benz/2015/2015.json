@@ -154,9 +154,8 @@
           ]
         }
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Smart%20Fortwo%20Coup%C3%A9%20Prime%20(C%20453)%20%E2%80%93%20Frontansicht,%2016.%20Juni%202015,%20D%C3%BCsseldorf.jpg?width=900",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Smart_Fortwo_Coup%C3%A9_Prime_(C_453)_%E2%80%93_Frontansicht,_16._Juni_2015,_D%C3%BCsseldorf.jpg",
-      "imageStyle": "reference-photo-pending-stylized-cutout"
+      "image": "images/mercedes-benz/models/smart-fortwo-c453.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "new smart forfour (W453)": {
       "category": "Sedan",
@@ -390,9 +389,8 @@
           "extras": []
         }
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Smart%20Forfour%201.0%20Edition%201%20(W%20453)%20%E2%80%93%20Frontansicht,%2015.%20M%C3%A4rz%202015,%20D%C3%BCsseldorf.jpg?width=900",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Smart_Forfour_1.0_Edition_1_(W_453)_%E2%80%93_Frontansicht,_15._M%C3%A4rz_2015,_D%C3%BCsseldorf.jpg",
-      "imageStyle": "reference-photo-pending-stylized-cutout"
+      "image": "images/mercedes-benz/models/smart-forfour-w453.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Α-Class Facelift": {
       "category": "Sedan",
@@ -959,9 +957,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/class-facelift.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_A_180_AMG_Line_(W_176)_%E2%80%93_Frontansicht,_14._November_2015,_Ratingen.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/a-class-hatch-w176.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "B-Class": {
       "category": "Sedan",
@@ -1739,9 +1736,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/b-class.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_B_180_Urban_(W_246,_Facelift)_%E2%80%93_Frontansicht,_18._Oktober_2015,_Ratingen.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/b-class-w246.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLA Coupe": {
       "category": "Coupe",
@@ -1887,9 +1883,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/cla-coupe.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA250_4MATIC_(C117)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/cla-coupe-c117.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLA Shooting Brake": {
       "category": "Estate",
@@ -2035,9 +2030,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/cla-shooting-brake.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA_180_Shooting_Brake_Sports_(X117)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/cla-shooting-brake-x117.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLA": {
       "category": "SUV",
@@ -2384,9 +2378,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/gla.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLA45_AMG_4MATIC_Edition_1_(X156)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/gla-x156.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Sedan (W205)": {
       "category": "Sedan",
@@ -3070,9 +3063,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/c-class-sedan-w205.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_180_AVANTGARDE_(W205)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Estate (S205)": {
       "category": "Estate",
@@ -3487,9 +3479,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/c-class-estate-s205.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_200_d_T-Modell_(S_205)_%E2%80%93_Frontansicht,_18._Oktober_2015,_Ratingen.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/c-class-estate-s205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Coupe New": {
       "category": "Coupe",
@@ -3771,9 +3762,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/c-class-coupe-new.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:2015-2018_Mercedes-Benz_C_200_(C_205)_coupe_(2018-10-29)_02.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/c-class-coupe-c205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "SLK": {
       "category": "Cabrio",
@@ -3907,9 +3897,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/slk.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes_SLK_200_-_Mondial_de_l%27Automobile_de_Paris_2014_-_005.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/slk-r172.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Sedan": {
       "category": "Sedan",
@@ -4013,9 +4002,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/e-class-sedan.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E220_BLUETEC_AVANTGARDE_(W212)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/e-class-sedan-w212.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Estate": {
       "category": "Estate",
@@ -4232,9 +4220,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/e-class-estate.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E220_BlueTec_STATIONWAGON_AVANTGARDE_(S212)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/e-class-estate-s212.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Coupe": {
       "category": "Coupe",
@@ -4324,9 +4311,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/e-class-coupe.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E250_Coupe_(C207)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/e-class-coupe-c207.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "E-Class Cabrio": {
       "category": "Cabrio",
@@ -4416,9 +4402,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/e-class-cabrio.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E400_Cabriolet_(A207)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/e-class-cabrio-a207.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLS Coupe": {
       "category": "Coupe",
@@ -4522,9 +4507,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/cls-coupe.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes_CLS_Facelift_front.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/cls-coupe-c218.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "CLS Shooting Brake": {
       "category": "Estate",
@@ -4628,9 +4612,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/cls-shooting-brake.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLS_550_4MATIC_Shooting_Brake_(X218)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/cls-shooting-brake-x218.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class": {
       "category": "Sedan",
@@ -4944,9 +4927,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/s-class.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S-Klasse_(W222)_S_400_4MATIC_(2015)_(52598332853).jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/s-class-w222.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Mercedes-Maybach S-Class": {
       "category": "Sedan",
@@ -4980,9 +4962,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/mercedes-maybach-s-class.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes_Maybach_S600_Frontside.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/maybach-s-class-x222.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "S-Class Coupe": {
       "category": "Coupe",
@@ -5202,9 +5183,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/s-class-coupe.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S_63_AMG_4MATIC_Coup%C3%A9_(C217)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/s-class-coupe-c217.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "SL": {
       "category": "Cabrio",
@@ -5276,9 +5256,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/sl.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SL400_(R231)_front.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/sl-r231.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLC": {
       "category": "SUV",
@@ -5460,9 +5439,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/glc.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLC_(X253)_front.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/glc-x253.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLE": {
       "category": "SUV",
@@ -5719,9 +5697,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/gle.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLE350d_Sports_(W166)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/gle-w166.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GLE-Coupe": {
       "category": "SUV",
@@ -5816,9 +5793,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/gle-coupe.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C292_fr.jpg",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/gle-coupe-c292.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "GL": {
       "category": "Sedan",
@@ -5903,9 +5879,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/gl.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GL350_BLUETEC_4MATIC_(X166)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/gl-x166.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "G-Class": {
       "category": "SUV",
@@ -5967,9 +5942,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/g-class.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G_350_BlueTEC_(W463)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/g-class-w463.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "Mercedes-AMG GT": {
       "category": "Sedan",
@@ -6003,9 +5977,8 @@
           "extras": []
         }
       ],
-      "image": "images/mercedes-benz/2015/mercedes-amg-gt.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_S_(C190)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/amg-gt-coupe-c190.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     },
     "C-Class Sedan": {
       "category": "Sedan",
@@ -6232,9 +6205,8 @@
           ]
         }
       ],
-      "image": "images/mercedes-benz/2015/c-class-sedan.png",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_180_AVANTGARDE_(W205)_front.JPG",
-      "imageStyle": "cartelonio-stylized-cutout-v1"
+      "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
+      "imageSource": "Cartelonio local Mercedes-Benz HD asset pack"
     }
   }
 }
