@@ -1224,7 +1224,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Fiat",
       "Infiniti",
       "Lexus",
-      "Mclaren",
+      "McLaren",
       "Mitsubishi",
       "Morgan",
       "Nissan",
