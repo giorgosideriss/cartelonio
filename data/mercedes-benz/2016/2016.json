@@ -1,0 +1,3825 @@
+{
+  "brand": "Mercedes-Benz",
+  "year": 2016,
+  "models": {
+    "new smart fortwo coupe (C453)": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "453.341",
+          "code": "453.341",
+          "name": "fortwo coupe 61hp",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 7710.94,
+              "priceRetail": 7710.94
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.342",
+          "code": "453.342",
+          "name": "fortwo coupe 71hp",
+          "co2": 93,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 9475.74,
+              "priceRetail": 9475.74
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.344",
+          "code": "453.344",
+          "name": "fortwo coupe 90hp",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10273.87,
+              "priceRetail": 10273.87
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.362",
+          "code": "453.362",
+          "name": "fortwo coupe Brabus 109hp",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15856.0,
+              "priceRetail": 15856.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "new smart fortwo cabrio (A453)": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "453.442",
+          "code": "453.442",
+          "name": "fortwo cabrio 71hp",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11917.06,
+              "priceRetail": 11917.06
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.444",
+          "code": "453.444",
+          "name": "fortwo cabrio 90hp",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12730.83,
+              "priceRetail": 12730.83
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.462",
+          "code": "453.462",
+          "name": "fortwo cabrio Brabus 109hp",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18229.0,
+              "priceRetail": 18229.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "new smart forfour (W453)": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "453.041",
+          "code": "453.041",
+          "name": "forfour 61hp",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 8507.81,
+              "priceRetail": 8507.81
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.042",
+          "code": "453.042",
+          "name": "forfour 71hp",
+          "co2": 97,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10000.0,
+              "priceRetail": 10000.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.044",
+          "code": "453.044",
+          "name": "forfour 90hp",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10790.3,
+              "priceRetail": 10790.3
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "453.062",
+          "code": "453.062",
+          "name": "forfour Brabus 109hp",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16500.0,
+              "priceRetail": 16500.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Α-Class Facelift": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "176.041",
+          "code": "176.041",
+          "name": "A 160",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17521.19,
+              "priceRetail": 17521.19
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.042",
+          "code": "176.042",
+          "name": "A 180",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18375.71,
+              "priceRetail": 18375.71
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.043",
+          "code": "176.043",
+          "name": "A 200",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20538.56,
+              "priceRetail": 20538.56
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.047",
+          "code": "176.047",
+          "name": "A 220 4MATIC",
+          "co2": 150,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23782.72,
+              "priceRetail": 23782.72
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.044",
+          "code": "176.044",
+          "name": "A 250 (Manual)",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23232.98,
+              "priceRetail": 23232.98
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.046",
+          "code": "176.046",
+          "name": "A 250 4MATIC",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26330.05,
+              "priceRetail": 26330.05
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.050",
+          "code": "176.050",
+          "name": "A 250 Sport (Manual)",
+          "co2": 158,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25935.96,
+              "priceRetail": 25935.96
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.051",
+          "code": "176.051",
+          "name": "A 250 Sport 4MATIC",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29039.41,
+              "priceRetail": 29039.41
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.052",
+          "code": "176.052",
+          "name": "Mercedes-AMG A 45 4MATIC",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36129.23,
+              "priceRetail": 36129.23
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.011",
+          "code": "176.011",
+          "name": "A 160 d",
+          "co2": 98,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19073.28,
+              "priceRetail": 19073.28
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.012",
+          "code": "176.012",
+          "name": "A 180 d",
+          "co2": 98,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19231.32,
+              "priceRetail": 19231.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.008",
+          "code": "176.008",
+          "name": "A 200 d",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21709.46,
+              "priceRetail": 21709.46
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.002",
+          "code": "176.002",
+          "name": "A 200 d 4MATIC",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24880.32,
+              "priceRetail": 24880.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.003",
+          "code": "176.003",
+          "name": "A 220 d",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25711.54,
+              "priceRetail": 25711.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "176.005",
+          "code": "176.005",
+          "name": "A 220 d 4MATIC",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27280.15,
+              "priceRetail": 27280.15
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "B-Class": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "246.241",
+          "code": "246.241",
+          "name": "B 160",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19661.02,
+              "priceRetail": 19661.02
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.242",
+          "code": "246.242",
+          "name": "B 180",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20525.27,
+              "priceRetail": 20525.27
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.243",
+          "code": "246.243",
+          "name": "B 200",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21509.31,
+              "priceRetail": 21509.31
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.247",
+          "code": "246.247",
+          "name": "B 220 4MATIC (Auto)",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24764.4,
+              "priceRetail": 24764.4
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.244",
+          "code": "246.244",
+          "name": "B 250 (Manual)",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23893.98,
+              "priceRetail": 23893.98
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.246",
+          "code": "246.246",
+          "name": "B 250 4MATIC (Auto)",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26982.76,
+              "priceRetail": 26982.76
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.211",
+          "code": "246.211",
+          "name": "B 160 d",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20918.92,
+              "priceRetail": 20918.92
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.212",
+          "code": "246.212",
+          "name": "B 180 d",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21594.59,
+              "priceRetail": 21594.59
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.208",
+          "code": "246.208",
+          "name": "B 200 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22952.7,
+              "priceRetail": 22952.7
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.202",
+          "code": "246.202",
+          "name": "B 200 d 4MATIC",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25659.55,
+              "priceRetail": 25659.55
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.203",
+          "code": "246.203",
+          "name": "B 220 d (Auto)",
+          "co2": 107,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26487.18,
+              "priceRetail": 26487.18
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "246.205",
+          "code": "246.205",
+          "name": "B 220 d 4MATIC (Auto)",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27650.75,
+              "priceRetail": 27650.75
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "242.848",
+          "code": "242.848",
+          "name": "B 200 c (Natural Gas Drive)",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24060.81,
+              "priceRetail": 24060.81
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "242.890",
+          "code": "242.890",
+          "name": "B 250 e (Electric Drive)",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33387.1,
+              "priceRetail": 33387.1
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "CLA Coupe Facelift": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "117.342",
+          "code": "117.342",
+          "name": "CLA 180",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20631.65,
+              "priceRetail": 20631.65
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.343",
+          "code": "117.343",
+          "name": "CLA 200",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22699.47,
+              "priceRetail": 22699.47
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.347",
+          "code": "117.347",
+          "name": "CLA 220 4MATIC (Auto)",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28103.45,
+              "priceRetail": 28103.45
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.344",
+          "code": "117.344",
+          "name": "CLA 250 (Manual)",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28251.23,
+              "priceRetail": 28251.23
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.346",
+          "code": "117.346",
+          "name": "CLA 250 4MATIC (Auto)",
+          "co2": 150,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31527.09,
+              "priceRetail": 31527.09
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.350",
+          "code": "117.350",
+          "name": "CLA 250 Sport",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31022.17,
+              "priceRetail": 31022.17
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.351",
+          "code": "117.351",
+          "name": "CLA 250 Sport 4MATIC",
+          "co2": 160,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34334.98,
+              "priceRetail": 34334.98
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.352",
+          "code": "117.352",
+          "name": "Mercedes-AMG CLA 45 4MATIC",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43001.21,
+              "priceRetail": 43001.21
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.312",
+          "code": "117.312",
+          "name": "CLA 180 d",
+          "co2": 98,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22207.08,
+              "priceRetail": 22207.08
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.308",
+          "code": "117.308",
+          "name": "CLA 200 d",
+          "co2": 104,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25980.77,
+              "priceRetail": 25980.77
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.302",
+          "code": "117.302",
+          "name": "CLA 200 d 4MATIC",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29256.41,
+              "priceRetail": 29256.41
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.303",
+          "code": "117.303",
+          "name": "CLA 220 d (Auto)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29371.79,
+              "priceRetail": 29371.79
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.305",
+          "code": "117.305",
+          "name": "CLA 220 d 4MATIC (Auto)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31017.59,
+              "priceRetail": 31017.59
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "CLA Shooting Brake Facelift": {
+      "category": "Estate",
+      "editions": [
+        {
+          "factoryCode": "117.942",
+          "code": "117.942",
+          "name": "CLA 180",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23005.32,
+              "priceRetail": 23005.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.943",
+          "code": "117.943",
+          "name": "CLA 200",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25207.29,
+              "priceRetail": 25207.29
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.947",
+          "code": "117.947",
+          "name": "CLA 220 4MATIC (Auto)",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28737.68,
+              "priceRetail": 28737.68
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.944",
+          "code": "117.944",
+          "name": "CLA 250 (Manual)",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28891.63,
+              "priceRetail": 28891.63
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.946",
+          "code": "117.946",
+          "name": "CLA 250 4MATIC (Auto)",
+          "co2": 150,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32118.23,
+              "priceRetail": 32118.23
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.951",
+          "code": "117.951",
+          "name": "CLA 250 Sport 4MATIC (Auto)",
+          "co2": 160,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34938.42,
+              "priceRetail": 34938.42
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.952",
+          "code": "117.952",
+          "name": "Mercedes-AMG CLA 45 4MATIC",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43737.92,
+              "priceRetail": 43737.92
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.912",
+          "code": "117.912",
+          "name": "CLA 180 d",
+          "co2": 98,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24641.89,
+              "priceRetail": 24641.89
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.908",
+          "code": "117.908",
+          "name": "CLA 200 d",
+          "co2": 108,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26544.87,
+              "priceRetail": 26544.87
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.902",
+          "code": "117.902",
+          "name": "CLA 200 d 4MATIC",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29868.09,
+              "priceRetail": 29868.09
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.903",
+          "code": "117.903",
+          "name": "CLA 220 d (Auto)",
+          "co2": 106,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29948.72,
+              "priceRetail": 29948.72
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "117.905",
+          "code": "117.905",
+          "name": "CLA 220 d 4MATIC (Auto)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31670.85,
+              "priceRetail": 31670.85
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLA": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "156.942",
+          "code": "156.942",
+          "name": "GLA 180",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19512.71,
+              "priceRetail": 19512.71
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.943",
+          "code": "156.943",
+          "name": "GLA 200",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22207.45,
+              "priceRetail": 22207.45
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.944",
+          "code": "156.944",
+          "name": "GLA 250 (Manual)",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24960.73,
+              "priceRetail": 24960.73
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.946",
+          "code": "156.946",
+          "name": "GLA 250 4MATIC (Auto)",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28140.39,
+              "priceRetail": 28140.39
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.952",
+          "code": "156.952",
+          "name": "Mercedes-AMG GLA 45 4MATIC",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40923.91,
+              "priceRetail": 40923.91
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.912",
+          "code": "156.912",
+          "name": "GLA 180 d",
+          "co2": 105,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23040.54,
+              "priceRetail": 23040.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.908",
+          "code": "156.908",
+          "name": "GLA 200 d",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24263.51,
+              "priceRetail": 24263.51
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.902",
+          "code": "156.902",
+          "name": "GLA 200 d 4MATIC (Auto)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27443.47,
+              "priceRetail": 27443.47
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.903",
+          "code": "156.903",
+          "name": "GLA 220 d (Auto)",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27820.51,
+              "priceRetail": 27820.51
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "156.905",
+          "code": "156.905",
+          "name": "GLA 220 d 4MATIC (Auto)",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29378.14,
+              "priceRetail": 29378.14
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "C-Class Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "205.044",
+          "code": "205.044",
+          "name": "C 160",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23425.68,
+              "priceRetail": 23425.68
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.040",
+          "code": "205.040",
+          "name": "C 180",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24939.19,
+              "priceRetail": 24939.19
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.042",
+          "code": "205.042",
+          "name": "C 200",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27393.22,
+              "priceRetail": 27393.22
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.043",
+          "code": "205.043",
+          "name": "C 200 4MATIC (Auto)",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31046.8,
+              "priceRetail": 31046.8
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.045",
+          "code": "205.045",
+          "name": "C 250 (Auto)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30778.89,
+              "priceRetail": 30778.89
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.048",
+          "code": "205.048",
+          "name": "C 300 (Auto)",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36557.88,
+              "priceRetail": 36557.88
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.047",
+          "code": "205.047",
+          "name": "C 350 e (Auto)",
+          "co2": 48,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42622.13,
+              "priceRetail": 42622.13
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.066",
+          "code": "205.066",
+          "name": "C 400 4MATIC (Auto)",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43454.11,
+              "priceRetail": 43454.11
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.064",
+          "code": "205.064",
+          "name": "Mercedes-AMG C 43 4MATIC",
+          "co2": 178,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50144.93,
+              "priceRetail": 50144.93
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.086",
+          "code": "205.086",
+          "name": "Mercedes-AMG C 63",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56285.55,
+              "priceRetail": 56285.55
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.087",
+          "code": "205.087",
+          "name": "Mercedes-AMG C 63 S",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 63287.91,
+              "priceRetail": 63287.91
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.036",
+          "code": "205.036",
+          "name": "C 180 d",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29028.5,
+              "priceRetail": 29028.5
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.037",
+          "code": "205.037",
+          "name": "C 200 d",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30537.56,
+              "priceRetail": 30537.56
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.004",
+          "code": "205.004",
+          "name": "C 220 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29301.28,
+              "priceRetail": 29301.28
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.005",
+          "code": "205.005",
+          "name": "C 220 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32977.39,
+              "priceRetail": 32977.39
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.008",
+          "code": "205.008",
+          "name": "C 250 d (Auto)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31846.15,
+              "priceRetail": 31846.15
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.009",
+          "code": "205.009",
+          "name": "C 250 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33190.95,
+              "priceRetail": 33190.95
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.012",
+          "code": "205.012",
+          "name": "C 300 h (Auto)",
+          "co2": 94,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39425.29,
+              "priceRetail": 39425.29
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "C-Class Estate": {
+      "category": "Estate",
+      "editions": [
+        {
+          "factoryCode": "205.244",
+          "code": "205.244",
+          "name": "C 160",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24700.8,
+              "priceRetail": 24700.8
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.240",
+          "code": "205.240",
+          "name": "C 180",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26400.75,
+              "priceRetail": 26400.75
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.242",
+          "code": "205.242",
+          "name": "C 200",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28787.69,
+              "priceRetail": 28787.69
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.243",
+          "code": "205.243",
+          "name": "C 200 4MATIC (Auto)",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32463.05,
+              "priceRetail": 32463.05
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.245",
+          "code": "205.245",
+          "name": "C 250 (Auto)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32198.49,
+              "priceRetail": 32198.49
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.248",
+          "code": "205.248",
+          "name": "C 300 (Auto)",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37906.4,
+              "priceRetail": 37906.4
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.247",
+          "code": "205.247",
+          "name": "C 350 e (Auto)",
+          "co2": 48,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44008.62,
+              "priceRetail": 44008.62
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.266",
+          "code": "205.266",
+          "name": "C 400 4MATIC (Auto)",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44824.88,
+              "priceRetail": 44824.88
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.264",
+          "code": "205.264",
+          "name": "Mercedes-AMG C 43 4MATIC",
+          "co2": 178,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51516.59,
+              "priceRetail": 51516.59
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.286",
+          "code": "205.286",
+          "name": "Mercedes-AMG C 63",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57535.55,
+              "priceRetail": 57535.55
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.287",
+          "code": "205.287",
+          "name": "Mercedes-AMG C 63 S",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 64526.07,
+              "priceRetail": 64526.07
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.236",
+          "code": "205.236",
+          "name": "C 180 d",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30461.54,
+              "priceRetail": 30461.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.237",
+          "code": "205.237",
+          "name": "C 200 d",
+          "co2": 99,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31955.13,
+              "priceRetail": 31955.13
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.204",
+          "code": "205.204",
+          "name": "C 220 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30750.0,
+              "priceRetail": 30750.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.205",
+          "code": "205.205",
+          "name": "C 220 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34415.83,
+              "priceRetail": 34415.83
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.208",
+          "code": "205.208",
+          "name": "C 250 d (Auto)",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33032.05,
+              "priceRetail": 33032.05
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.209",
+          "code": "205.209",
+          "name": "C 250 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34365.58,
+              "priceRetail": 34365.58
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.212",
+          "code": "205.212",
+          "name": "C 300 h (Auto)",
+          "co2": 94,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40804.6,
+              "priceRetail": 40804.6
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "C-Class Coupe New": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "205.340",
+          "code": "205.340",
+          "name": "C 180",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26476.13,
+              "priceRetail": 26476.13
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.342",
+          "code": "205.342",
+          "name": "C 200",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28850.5,
+              "priceRetail": 28850.5
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.343",
+          "code": "205.343",
+          "name": "C 200 4MATIC (Auto)",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32512.32,
+              "priceRetail": 32512.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.345",
+          "code": "205.345",
+          "name": "C 250 (Auto)",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33033.92,
+              "priceRetail": 33033.92
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.348",
+          "code": "205.348",
+          "name": "C 300 (Auto)",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34519.7,
+              "priceRetail": 34519.7
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.366",
+          "code": "205.366",
+          "name": "C 400 4MATIC (Auto)",
+          "co2": 172,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40821.26,
+              "priceRetail": 40821.26
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.364",
+          "code": "205.364",
+          "name": "Mercedes-AMG C 43 4MATIC",
+          "co2": 178,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46984.6,
+              "priceRetail": 46984.6
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.386",
+          "code": "205.386",
+          "name": "Mercedes-AMG C 63",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 62132.7,
+              "priceRetail": 62132.7
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.387",
+          "code": "205.387",
+          "name": "Mercedes-AMG C 63 S",
+          "co2": 200,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 68667.06,
+              "priceRetail": 68667.06
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.304",
+          "code": "205.304",
+          "name": "C 220 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31910.26,
+              "priceRetail": 31910.26
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.305",
+          "code": "205.305",
+          "name": "C 220 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35766.33,
+              "priceRetail": 35766.33
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.308",
+          "code": "205.308",
+          "name": "C 250 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36237.18,
+              "priceRetail": 36237.18
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.309",
+          "code": "205.309",
+          "name": "C 250 d 4MATIC (Auto)",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38115.58,
+              "priceRetail": 38115.58
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "C-Class Cabrio": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "205.404",
+          "code": "205.404",
+          "name": "C 220 d Cabriolet",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36865.38,
+              "priceRetail": 36865.38
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.405",
+          "code": "205.405",
+          "name": "C 220 d 4MATIC Cabriolet",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40646.98,
+              "priceRetail": 40646.98
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.408",
+          "code": "205.408",
+          "name": "C 250 d Cabriolet",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41187.19,
+              "priceRetail": 41187.19
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.440",
+          "code": "205.440",
+          "name": "C 180 Cabriolet",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30577.89,
+              "priceRetail": 30577.89
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.442",
+          "code": "205.442",
+          "name": "C 200 Cabriolet",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32920.85,
+              "priceRetail": 32920.85
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.443",
+          "code": "205.443",
+          "name": "C 200 4MATIC Cabriolet",
+          "co2": 163,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36485.51,
+              "priceRetail": 36485.51
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.445",
+          "code": "205.445",
+          "name": "C 250 Cabriolet",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34767.59,
+              "priceRetail": 34767.59
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.448",
+          "code": "205.448",
+          "name": "C 300 Cabriolet",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36250.0,
+              "priceRetail": 36250.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.466",
+          "code": "205.466",
+          "name": "C 400 4MATIC Cabriolet",
+          "co2": 181,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44822.27,
+              "priceRetail": 44822.27
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.464",
+          "code": "205.464",
+          "name": "Mercedes-AMG C 43 4MATIC Cabriolet",
+          "co2": 190,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50965.64,
+              "priceRetail": 50965.64
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.486",
+          "code": "205.486",
+          "name": "Mercedes-AMG C 63 Cabriolet",
+          "co2": 208,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 69589.04,
+              "priceRetail": 69589.04
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.487",
+          "code": "205.487",
+          "name": "Mercedes-AMG C 63 S Cabriolet",
+          "co2": 208,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 76107.31,
+              "priceRetail": 76107.31
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "205.464",
+          "code": "205.464",
+          "name": "Mercedes-AMG C 43 4MATIC Cabriolet",
+          "co2": 190,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50966.0,
+              "priceRetail": 50966.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "SLC Facelift": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "172.431",
+          "code": "172.431",
+          "name": "SLC 180",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30157.04,
+              "priceRetail": 30157.04
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "172.434",
+          "code": "172.434",
+          "name": "SLC 200",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34254.93,
+              "priceRetail": 34254.93
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "172.438",
+          "code": "172.438",
+          "name": "SLC 300",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39780.15,
+              "priceRetail": 39780.15
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "172.466",
+          "code": "172.466",
+          "name": "Mercedes-AMG SLC 43",
+          "co2": 178,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51032.61,
+              "priceRetail": 51032.61
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "172.404",
+          "code": "172.404",
+          "name": "SLC 250 d",
+          "co2": 114,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37282.05,
+              "priceRetail": 37282.05
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "E-Class Sedan (W213) NEW": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "213.042",
+          "code": "213.042",
+          "name": "E 200",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37657.04,
+              "priceRetail": 37657.04
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.004",
+          "code": "213.004",
+          "name": "E 220 d",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39339.74,
+              "priceRetail": 39339.74
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.033",
+          "code": "213.033",
+          "name": "E 350 d",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47581.66,
+              "priceRetail": 47581.66
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.043",
+          "code": "213.043",
+          "name": "E 200 4MATIC",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38873.0,
+              "priceRetail": 38873.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.045",
+          "code": "213.045",
+          "name": "E 250",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41432.0,
+              "priceRetail": 41432.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.048",
+          "code": "213.048",
+          "name": "E 300",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44520.0,
+              "priceRetail": 44520.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.050",
+          "code": "213.050",
+          "name": "E 350 e",
+          "co2": 49,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51652.0,
+              "priceRetail": 51652.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.071",
+          "code": "213.071",
+          "name": "E 400 4MATIC",
+          "co2": 173,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54589.0,
+              "priceRetail": 54589.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.064",
+          "code": "213.064",
+          "name": "Mercedes AMG E 43 4MATIC",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 64828.0,
+              "priceRetail": 64828.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.013",
+          "code": "213.013",
+          "name": "E 200 d",
+          "co2": 102,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37212.0,
+              "priceRetail": 37212.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.040",
+          "code": "213.040",
+          "name": "E 180",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36200.0,
+              "priceRetail": 36200.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.005",
+          "code": "213.005",
+          "name": "E 220 d 4 MATIC",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41436.0,
+              "priceRetail": 41436.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "E-Class Estate (S213) NEW": {
+      "category": "Estate",
+      "editions": [
+        {
+          "factoryCode": "213.242",
+          "code": "213.242",
+          "name": "E 200",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42211.0,
+              "priceRetail": 42211.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.245",
+          "code": "213.245",
+          "name": "E 250",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45722.0,
+              "priceRetail": 45722.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.204",
+          "code": "213.204",
+          "name": "E 220 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46840.0,
+              "priceRetail": 46840.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.271",
+          "code": "213.271",
+          "name": "E 400 4MATIC",
+          "co2": 180,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56552.0,
+              "priceRetail": 56552.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.264",
+          "code": "213.264",
+          "name": "Mercedes AMG E 43 4MATIC",
+          "co2": 197,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65018.0,
+              "priceRetail": 65018.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.213",
+          "code": "213.213",
+          "name": "E 200 d",
+          "co2": 109,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44936.0,
+              "priceRetail": 44936.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "213.233",
+          "code": "213.233",
+          "name": "E 350 d",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 53882.0,
+              "priceRetail": 53882.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "E-Class Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "212.035",
+          "code": "212.035",
+          "name": "E 200 NGD (Auto) (Natural Gas Drive)",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40961.54,
+              "priceRetail": 40961.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "212.035",
+          "code": "212.035",
+          "name": "E 200 NGD (Auto) (Natural Gas Drive)",
+          "co2": 116,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40962.0,
+              "priceRetail": 40962.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "E-Class Coupe": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "207.334",
+          "code": "207.334",
+          "name": "E 200",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37247.54,
+              "priceRetail": 37247.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.336",
+          "code": "207.336",
+          "name": "E 250 (Auto)",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41582.91,
+              "priceRetail": 41582.91
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.361",
+          "code": "207.361",
+          "name": "E 400 (Auto)",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49815.27,
+              "priceRetail": 49815.27
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.304",
+          "code": "207.304",
+          "name": "E 250 d",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41758.79,
+              "priceRetail": 41758.79
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.326",
+          "code": "207.326",
+          "name": "E 350 d (Auto)",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46677.14,
+              "priceRetail": 46677.14
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "E-Class Cabrio": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "207.434",
+          "code": "207.434",
+          "name": "E 200",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41286.95,
+              "priceRetail": 41286.95
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.436",
+          "code": "207.436",
+          "name": "E 250 (Auto)",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45307.88,
+              "priceRetail": 45307.88
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.461",
+          "code": "207.461",
+          "name": "E 400 (Auto)",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 53701.69,
+              "priceRetail": 53701.69
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.404",
+          "code": "207.404",
+          "name": "E 250 d",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45577.89,
+              "priceRetail": 45577.89
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "207.426",
+          "code": "207.426",
+          "name": "E 350 d (Auto)",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50653.27,
+              "priceRetail": 50653.27
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "CLS Coupe": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "218.301",
+          "code": "218.301",
+          "name": "CLS 220 d",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48391.03,
+              "priceRetail": 48391.03
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.304",
+          "code": "218.304",
+          "name": "CLS 250 d",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50448.72,
+              "priceRetail": 50448.72
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.397",
+          "code": "218.397",
+          "name": "CLS 250 d 4MATIC",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52713.57,
+              "priceRetail": 52713.57
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.361",
+          "code": "218.361",
+          "name": "CLS 400",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 55887.68,
+              "priceRetail": 55887.68
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.368",
+          "code": "218.368",
+          "name": "CLS 400 4MATIC",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58206.52,
+              "priceRetail": 58206.52
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.374",
+          "code": "218.374",
+          "name": "Mercedes-AMG CLS 63",
+          "co2": 234,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 99743.15,
+              "priceRetail": 99743.15
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.392",
+          "code": "218.392",
+          "name": "Mercedes-AMG CLS 63 4MATIC",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 103065.07,
+              "priceRetail": 103065.07
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.376",
+          "code": "218.376",
+          "name": "Mercedes-AMG CLS 63 S 4MATIC",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 112340.18,
+              "priceRetail": 112340.18
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "CLS Shooting Brake": {
+      "category": "Estate",
+      "editions": [
+        {
+          "factoryCode": "218.901",
+          "code": "218.901",
+          "name": "CLS 220 d",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50000.0,
+              "priceRetail": 50000.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.904",
+          "code": "218.904",
+          "name": "CLS 250 d",
+          "co2": 120,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52060.3,
+              "priceRetail": 52060.3
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.997",
+          "code": "218.997",
+          "name": "CLS 250 d 4MATIC",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54378.08,
+              "priceRetail": 54378.08
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.961",
+          "code": "218.961",
+          "name": "CLS 400",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57500.0,
+              "priceRetail": 57500.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.968",
+          "code": "218.968",
+          "name": "CLS 400 4MATIC",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59757.11,
+              "priceRetail": 59757.11
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.992",
+          "code": "218.992",
+          "name": "Mercedes-AMG CLS 63 4MATIC",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 104680.85,
+              "priceRetail": 104680.85
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "218.976",
+          "code": "218.976",
+          "name": "Mercedes-AMG CLS 63 S 4MATIC",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 113952.13,
+              "priceRetail": 113952.13
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S-Class": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "222.004",
+          "code": "222.004",
+          "name": "S 300 h",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 74414.29,
+              "priceRetail": 74414.29
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.032",
+          "code": "222.032",
+          "name": "S 350 d",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 74415.83,
+              "priceRetail": 74415.83
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.033",
+          "code": "222.033",
+          "name": "S 350 d 4MATIC",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 78091.13,
+              "priceRetail": 78091.13
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.057",
+          "code": "222.057",
+          "name": "S 400 h",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 79110.17,
+              "priceRetail": 79110.17
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.067",
+          "code": "222.067",
+          "name": "S 400 4MATIC",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 81842.42,
+              "priceRetail": 81842.42
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.082",
+          "code": "222.082",
+          "name": "S 500",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 92618.48,
+              "priceRetail": 92618.48
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.085",
+          "code": "222.085",
+          "name": "S 500 4MATIC",
+          "co2": 202,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 94994.29,
+              "priceRetail": 94994.29
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.077",
+          "code": "222.077",
+          "name": "Mercedes-AMG S 63",
+          "co2": 237,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 132054.79,
+              "priceRetail": 132054.79
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S-Class Long": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "222.104",
+          "code": "222.104",
+          "name": "S 300 h Long",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 77642.86,
+              "priceRetail": 77642.86
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.132",
+          "code": "222.132",
+          "name": "S 350 d Long",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 77715.52,
+              "priceRetail": 77715.52
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.133",
+          "code": "222.133",
+          "name": "S 350 d 4MATIC Long",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 81089.9,
+              "priceRetail": 81089.9
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.157",
+          "code": "222.157",
+          "name": "S 400 h Long",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 81807.91,
+              "priceRetail": 81807.91
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.167",
+          "code": "222.167",
+          "name": "S 400 4MATIC Long",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 84567.54,
+              "priceRetail": 84567.54
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.163",
+          "code": "222.163",
+          "name": "S 500 e Long",
+          "co2": 65,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 95100.57,
+              "priceRetail": 95100.57
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.182",
+          "code": "222.182",
+          "name": "S 500 Long",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 94828.2,
+              "priceRetail": 94828.2
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.185",
+          "code": "222.185",
+          "name": "S 500 4MATIC Long",
+          "co2": 202,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 98413.24,
+              "priceRetail": 98413.24
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.176",
+          "code": "222.176",
+          "name": "S 600 Long",
+          "co2": 268,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 142872.34,
+              "priceRetail": 142872.34
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.178",
+          "code": "222.178",
+          "name": "Mercedes-AMG S 63 4MATIC Long",
+          "co2": 242,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 134246.58,
+              "priceRetail": 134246.58
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.179",
+          "code": "222.179",
+          "name": "Mercedes-AMG S 65 Long",
+          "co2": 279,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 202526.6,
+              "priceRetail": 202526.6
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Mercedes-Maybach S-Class": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "222.982",
+          "code": "222.982",
+          "name": "Mercedes-Maybach S 500",
+          "co2": 207,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 115970.32,
+              "priceRetail": 115970.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.985",
+          "code": "222.985",
+          "name": "Mercedes-Maybach S 500 4MATIC",
+          "co2": 219,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 121238.58,
+              "priceRetail": 121238.58
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "222.976",
+          "code": "222.976",
+          "name": "Mercedes-Maybach S 600",
+          "co2": 274,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 162500.0,
+              "priceRetail": 162500.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S-Class Coupe": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "217.364",
+          "code": "217.364",
+          "name": "S 400 4MATIC",
+          "co2": 196,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 86030.81,
+              "priceRetail": 86030.81
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.382",
+          "code": "217.382",
+          "name": "S 500",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 106546.21,
+              "priceRetail": 106546.21
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.385",
+          "code": "217.385",
+          "name": "S 500 4MATIC",
+          "co2": 202,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 110371.0,
+              "priceRetail": 110371.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.377",
+          "code": "217.377",
+          "name": "Mercedes-AMG S 63",
+          "co2": 237,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 150308.22,
+              "priceRetail": 150308.22
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.378",
+          "code": "217.378",
+          "name": "Mercedes-AMG S 63 4MATIC",
+          "co2": 242,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 148687.21,
+              "priceRetail": 148687.21
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.379",
+          "code": "217.379",
+          "name": "Mercedes-AMG S 65",
+          "co2": 279,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 210021.28,
+              "priceRetail": 210021.28
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S-Class Cabrio": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "217.482",
+          "code": "217.482",
+          "name": "S 500",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 119816.35,
+              "priceRetail": 119816.35
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.478",
+          "code": "217.478",
+          "name": "Mercedes-AMG S 63 4MATIC",
+          "co2": 242,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 161940.64,
+              "priceRetail": 161940.64
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "217.479",
+          "code": "217.479",
+          "name": "Mercedes-AMG S 65",
+          "co2": 272,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 217750.0,
+              "priceRetail": 217750.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "SL Facelift": {
+      "category": "Cabrio",
+      "editions": [
+        {
+          "factoryCode": "231.466",
+          "code": "231.466",
+          "name": "SL 400",
+          "co2": 175,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 85803.14,
+              "priceRetail": 85803.14
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "231.473",
+          "code": "231.473",
+          "name": "SL 500",
+          "co2": 205,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 104115.3,
+              "priceRetail": 104115.3
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "231.474",
+          "code": "231.474",
+          "name": "Mercedes-AMG SL 63",
+          "co2": 229,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 136712.33,
+              "priceRetail": 136712.33
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "231.479",
+          "code": "231.479",
+          "name": "Mercedes-AMG SL 65",
+          "co2": 279,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 202106.38,
+              "priceRetail": 202106.38
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLC": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "253.946",
+          "code": "253.946",
+          "name": "GLC 250 4MATIC (Auto)",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34008.62,
+              "priceRetail": 34008.62
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.905",
+          "code": "253.905",
+          "name": "GLC 220 d 4MATIC (Auto)",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35433.42,
+              "priceRetail": 35433.42
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.909",
+          "code": "253.909",
+          "name": "GLC 250 d 4MATIC (Auto)",
+          "co2": 129,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35703.52,
+              "priceRetail": 35703.52
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.954",
+          "code": "253.954",
+          "name": "GLC 350 e 4MATIC",
+          "co2": 59,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40560.34,
+              "priceRetail": 40560.34
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.964",
+          "code": "253.964",
+          "name": "Mercedes-AMG GLC 43 4MATIC",
+          "co2": 189,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48975.12,
+              "priceRetail": 48975.12
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.925",
+          "code": "253.925",
+          "name": "GLC 350 d 4MATIC (Auto)",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42395.0,
+              "priceRetail": 42395.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLC Coupe": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "253.346",
+          "code": "253.346",
+          "name": "GLC 250 4MATIC Coupe",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37660.1,
+              "priceRetail": 37660.1
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.305",
+          "code": "253.305",
+          "name": "GLC 220d 4MATIC Coupe",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37506.28,
+              "priceRetail": 37506.28
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.309",
+          "code": "253.309",
+          "name": "GLC 250d 4MATIC Coupe",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37770.1,
+              "priceRetail": 37770.1
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.354",
+          "code": "253.354",
+          "name": "GLC 350 e 4MATIC",
+          "co2": 59,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44727.0,
+              "priceRetail": 44727.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.364",
+          "code": "253.364",
+          "name": "Mercedes-AMG GLC 43 4MATIC",
+          "co2": 192,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50030.0,
+              "priceRetail": 50030.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "253.325",
+          "code": "253.325",
+          "name": "GLC 350 d 4MATIC (Auto)",
+          "co2": 161,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44583.0,
+              "priceRetail": 44583.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLE": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "166.006",
+          "code": "166.006",
+          "name": "GLE 250 d",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46758.79,
+              "priceRetail": 46758.79
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.004",
+          "code": "166.004",
+          "name": "GLE 250 d 4MATIC",
+          "co2": 149,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49070.2,
+              "priceRetail": 49070.2
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.024",
+          "code": "166.024",
+          "name": "GLE 350 d 4MATIC",
+          "co2": 169,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52536.23,
+              "priceRetail": 52536.23
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.056",
+          "code": "166.056",
+          "name": "GLE 400 4MATIC",
+          "co2": 197,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52683.65,
+              "priceRetail": 52683.65
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.073",
+          "code": "166.073",
+          "name": "GLE 500 4MATIC",
+          "co2": 243,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66158.68,
+              "priceRetail": 66158.68
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.063",
+          "code": "166.063",
+          "name": "GLE 500 e 4MATIC",
+          "co2": 78,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 63570.4,
+              "priceRetail": 63570.4
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.064",
+          "code": "166.064",
+          "name": "Mercedes-AMG GLE 43 4MATIC",
+          "co2": 199,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60112.56,
+              "priceRetail": 60112.56
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.074",
+          "code": "166.074",
+          "name": "Mercedes-AMG GLE 63 4MATIC",
+          "co2": 276,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 95505.32,
+              "priceRetail": 95505.32
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.075",
+          "code": "166.075",
+          "name": "Mercedes-AMG GLE 63 S 4MATIC",
+          "co2": 276,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 103867.02,
+              "priceRetail": 103867.02
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLE-Coupe": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "292.324",
+          "code": "292.324",
+          "name": "GLE 350 d 4MATIC",
+          "co2": 169,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57463.77,
+              "priceRetail": 57463.77
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "292.356",
+          "code": "292.356",
+          "name": "GLE 400 4MATIC",
+          "co2": 197,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57914.69,
+              "priceRetail": 57914.69
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "292.373",
+          "code": "292.373",
+          "name": "GLE 500 4MATIC",
+          "co2": 243,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 71815.07,
+              "priceRetail": 71815.07
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "292.364",
+          "code": "292.364",
+          "name": "Mercedes-AMG GLE 43 4MATIC",
+          "co2": 199,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65114.16,
+              "priceRetail": 65114.16
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "292.374",
+          "code": "292.374",
+          "name": "Mercedes-AMG GLE 63 4MATIC",
+          "co2": 276,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 100664.89,
+              "priceRetail": 100664.89
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "292.375",
+          "code": "292.375",
+          "name": "Mercedes-AMG GLE 63 S 4MATIC",
+          "co2": 276,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 109436.17,
+              "priceRetail": 109436.17
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "GLS": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "166.824",
+          "code": "166.824",
+          "name": "GLS 350 d 4MATIC",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 64265.4,
+              "priceRetail": 64265.4
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.856",
+          "code": "166.856",
+          "name": "GLS 400 4MATIC",
+          "co2": 206,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65856.16,
+              "priceRetail": 65856.16
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.873",
+          "code": "166.873",
+          "name": "GLS 500 4MATIC",
+          "co2": 255,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 83186.17,
+              "priceRetail": 83186.17
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "166.875",
+          "code": "166.875",
+          "name": "Mercedes-AMG GLS 63 4MATIC",
+          "co2": 288,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 115372.34,
+              "priceRetail": 115372.34
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "G-Class": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "463.348",
+          "code": "463.348",
+          "name": "G 350 d",
+          "co2": 261,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 77489.36,
+              "priceRetail": 77489.36
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "463.234",
+          "code": "463.234",
+          "name": "G 500",
+          "co2": 289,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 90553.19,
+              "priceRetail": 90553.19
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "463.272",
+          "code": "463.272",
+          "name": "Mercedes-AMG G 63",
+          "co2": 322,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 123617.02,
+              "priceRetail": 123617.02
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "463.274",
+          "code": "463.274",
+          "name": "Mercedes-AMG G 65",
+          "co2": 397,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 234468.09,
+              "priceRetail": 234468.09
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "463.234",
+          "code": "463.234",
+          "name": "Mercedes G 500 4x42",
+          "co2": 289,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 198511.0,
+              "priceRetail": 198511.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Mercedes-AMG GT": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "190.377",
+          "code": "190.377",
+          "name": "Mercedes-AMG GT",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 99058.22,
+              "priceRetail": 99058.22
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "190.378",
+          "code": "190.378",
+          "name": "Mercedes-AMG GT S",
+          "co2": 219,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 115102.74,
+              "priceRetail": 115102.74
+            }
+          ],
+          "extras": []
+        }
+      ]
+    }
+  }
+}
