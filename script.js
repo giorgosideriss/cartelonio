@@ -228,6 +228,64 @@ const coTable = {
 
 function parseDate(v){ return v ? new Date(v) : null; }
 
+/* ========== ΠΡΩΤΗ ΑΔΕΙΑ: ΗΜΕΡΑ / ΜΗΝΑΣ + ΑΥΤΟΜΑΤΟ ΕΤΟΣ ========== */
+
+function populateFirstRegDays() {
+  const dayEl = document.getElementById("firstRegDay");
+  if (!dayEl || dayEl.options.length > 1) return;
+  for (let day = 1; day <= 31; day++) {
+    const opt = document.createElement("option");
+    opt.value = String(day);
+    opt.textContent = String(day);
+    dayEl.appendChild(opt);
+  }
+}
+
+function syncFirstRegValue() {
+  const dayEl = document.getElementById("firstRegDay");
+  const monthEl = document.getElementById("firstRegMonth");
+  const yearEl = document.getElementById("firstRegYear");
+  const hiddenEl = document.getElementById("firstReg");
+  if (!dayEl || !monthEl || !yearEl || !hiddenEl) return;
+
+  const day = Number(dayEl.value);
+  const month = Number(monthEl.value);
+  const year = Number(yearEl.value);
+
+  hiddenEl.value = "";
+  if (!day || !month || !year) return;
+
+  // Αποτρέπει ανύπαρκτες ημερομηνίες όπως 31/02.
+  const testDate = new Date(year, month - 1, day);
+  const valid = testDate.getFullYear() === year &&
+                testDate.getMonth() === month - 1 &&
+                testDate.getDate() === day;
+  if (!valid) return;
+
+  hiddenEl.value = `${year}-${String(month).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+  setFieldWarning("firstReg", false);
+  hiddenEl.dispatchEvent(new Event("input", { bubbles: true }));
+}
+
+function syncFirstRegYearFromModelYear() {
+  const selectedYear = document.getElementById("yearSelect")?.value || "";
+  const firstRegYear = document.getElementById("firstRegYear");
+  if (!firstRegYear) return;
+  firstRegYear.value = selectedYear;
+  syncFirstRegValue();
+}
+
+function resetFirstRegComposite() {
+  const dayEl = document.getElementById("firstRegDay");
+  const monthEl = document.getElementById("firstRegMonth");
+  const yearEl = document.getElementById("firstRegYear");
+  const hiddenEl = document.getElementById("firstReg");
+  if (dayEl) dayEl.value = "";
+  if (monthEl) monthEl.value = "";
+  if (yearEl) yearEl.value = "";
+  if (hiddenEl) hiddenEl.value = "";
+}
+
 function yearsBetween(d1, d2){
   if (!d1 || !d2) return 0;
   return Math.floor((d2 - d1) / (1000*60*60*24*365));
@@ -847,6 +905,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Όταν αλλάζει μάρκα (μέσω του κρυφού select)
   brandSelect.addEventListener("change", () => {
     populateYearSelect();
+    syncFirstRegYearFromModelYear();
     currentDataset = null;
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
@@ -858,9 +917,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
+    syncFirstRegYearFromModelYear();
     loadDatasetForSelection();
     updateCarSummary();
   });
+
+  populateFirstRegDays();
+  syncFirstRegYearFromModelYear();
+
+  document.getElementById("firstRegDay")?.addEventListener("change", syncFirstRegValue);
+  document.getElementById("firstRegMonth")?.addEventListener("change", syncFirstRegValue);
 
   document.getElementById("modelSelect").addEventListener("change", () => {
     populateVersions();
@@ -944,6 +1010,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("resetBtn").addEventListener("click", () => {
     document.getElementById("calcForm").reset();
+    resetFirstRegComposite();
     currentBasePrice = 0;
     currentExtras = [];
     selectedExtras.clear();

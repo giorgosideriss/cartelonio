@@ -334,6 +334,20 @@ button.secondary{
 .tooltip:hover .tooltiptext{visibility:visible;opacity:.97}
 .required-field-wrap,.category-field-wrap{position:relative;display:flex;align-items:center;gap:8px;width:100%}
 .required-field-wrap input,.category-field-wrap select{flex:1;min-width:0}
+
+/* Composite first-registration date */
+.first-reg-wrap{align-items:center}
+.first-reg-grid{display:grid;grid-template-columns:.72fr 1.35fr .82fr;gap:8px;flex:1;min-width:0}
+.first-reg-grid select,.first-reg-grid input{min-width:0;width:100%}
+.first-reg-grid input[readonly]{background:#f6f7f4;color:#3f463e;font-weight:750;cursor:default}
+.required-field-wrap.has-warning .first-reg-grid select,
+.required-field-wrap.has-warning .first-reg-grid input{
+  border:1.5px solid var(--danger);box-shadow:0 0 0 4px rgba(198,40,40,.09);
+}
+@media (max-width:620px){
+  .first-reg-grid{grid-template-columns:.7fr 1.35fr .85fr;gap:6px}
+  .first-reg-grid select,.first-reg-grid input{padding:0 9px;font-size:12px}
+}
 .required-field-wrap.has-warning input,.category-field-wrap.has-warning select{
   border:1.5px solid var(--danger);box-shadow:0 0 0 4px rgba(198,40,40,.09);
 }

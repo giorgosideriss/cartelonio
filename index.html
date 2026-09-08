@@ -187,11 +187,32 @@
           </div>
 
           <div class="field-block">
-            <label for="firstReg">Πρώτη Άδεια</label>
-            <div class="required-field-wrap" data-field="firstReg">
-              <input type="date" id="firstReg" value="">
+            <label for="firstRegDay">Πρώτη Άδεια</label>
+            <div class="required-field-wrap first-reg-wrap" data-field="firstReg">
+              <div class="first-reg-grid">
+                <select id="firstRegDay" aria-label="Ημέρα πρώτης άδειας">
+                  <option value="">Ημέρα</option>
+                </select>
+                <select id="firstRegMonth" aria-label="Μήνας πρώτης άδειας">
+                  <option value="">Μήνας</option>
+                  <option value="1">Ιανουάριος</option>
+                  <option value="2">Φεβρουάριος</option>
+                  <option value="3">Μάρτιος</option>
+                  <option value="4">Απρίλιος</option>
+                  <option value="5">Μάιος</option>
+                  <option value="6">Ιούνιος</option>
+                  <option value="7">Ιούλιος</option>
+                  <option value="8">Αύγουστος</option>
+                  <option value="9">Σεπτέμβριος</option>
+                  <option value="10">Οκτώβριος</option>
+                  <option value="11">Νοέμβριος</option>
+                  <option value="12">Δεκέμβριος</option>
+                </select>
+                <input type="text" id="firstRegYear" value="" placeholder="Έτος" readonly aria-label="Έτος πρώτης άδειας (αυτόματα)">
+              </div>
+              <input type="hidden" id="firstReg" value="">
               <span class="field-warning" aria-hidden="true">!
-                <span class="field-warning-text">Παρακαλώ συμπληρώστε την ημερομηνία Πρώτης Άδειας.</span>
+                <span class="field-warning-text">Παρακαλώ επιλέξτε έγκυρη Ημέρα και Μήνα. Το Έτος συμπληρώνεται αυτόματα από τη Χρονολογία του μοντέλου.</span>
               </span>
             </div>
           </div>
