@@ -119,8 +119,9 @@ button{border:0}
 }
 .hero-wrap{min-width:0;display:flex;align-items:center;justify-content:center}
 .hero-card{
-  position:relative;width:100%;height:280px;
+  position:relative;width:115%;height:315px;
   display:flex;align-items:center;justify-content:center;
+  margin-left:-7%;
 }
 .hero-card img{
   position:relative;z-index:2;
@@ -464,7 +465,7 @@ button.secondary{
     grid-template-columns:1fr;grid-template-rows:auto 1fr;
   }
   .stage-copy h1{font-size:38px}
-  .hero-card{height:245px}
+  .hero-card{height:270px;width:108%;margin-left:-4%}
   .hero-wrap{margin-top:5px}
   .stage-index{display:none}
   .config-progress{
@@ -483,7 +484,7 @@ button.secondary{
 @media(max-width:430px){
   .stage-copy h1{font-size:34px}
   .vehicle-stage{min-height:475px}
-  .hero-card{height:215px}
+  .hero-card{height:235px;width:108%;margin-left:-4%}
   .hero-chips{gap:6px}.hero-chip{font-size:10px}
   .panel-heading h2,.result-heading h2{font-size:18px}
   .tooltip .tooltiptext,.category-warning-text,.field-warning-text{width:250px}
