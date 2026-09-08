@@ -1213,21 +1213,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Vehicle passport
     // Brand mark: keep the fallback label until a brand is selected, then replace it with that brand's logo.
+    const DARK_LOGO_BRANDS = [
+  "Opel",
+  "MINI",
+  "Maserati"
+];
     const passportLabelText = $("passportLabelText");
     const passportBrandLogo = $("passportBrandLogo");
     if (passportLabelText && passportBrandLogo) {
       const logoUrl = brand && typeof BRAND_LOGOS !== "undefined" ? BRAND_LOGOS[brand] : "";
-      if (brand && logoUrl) {
-        passportLabelText.hidden = true;
-        passportBrandLogo.src = logoUrl;
-        passportBrandLogo.alt = `${brand} logo`;
-        passportBrandLogo.hidden = false;
-      } else {
-        passportLabelText.hidden = false;
-        passportBrandLogo.hidden = true;
-        passportBrandLogo.removeAttribute("src");
-        passportBrandLogo.alt = "";
-      }
+  if (brand && logoUrl) {
+  passportLabelText.hidden = true;
+  passportBrandLogo.src = logoUrl;
+  passportBrandLogo.alt = `${brand} logo`;
+
+  passportBrandLogo.classList.toggle(
+    "logo-dark",
+    DARK_LOGO_BRANDS.includes(brand)
+  );
+
+  passportBrandLogo.hidden = false;
+} else {
+  passportLabelText.hidden = false;
+  passportBrandLogo.hidden = true;
+  passportBrandLogo.removeAttribute("src");
+  passportBrandLogo.alt = "";
+  passportBrandLogo.classList.remove("logo-dark");
+}
     }
 
     // Small selected-model image in the passport. Uses the same local model asset already used by the hero.
