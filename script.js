@@ -1216,8 +1216,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const DARK_LOGO_BRANDS = [
   "Opel",
   "MINI",
-  "Maserati"
-];
+  "Maserati",
+      "Audi",
+      "Bentley",
+      "Cupra",
+      "Dacia",
+      "Fiat",
+      "Infiniti",
+      "Lexus",
+      "Mclaren",
+      "Mitsubishi",
+      "Morgan",
+      "Nissan",
+      "Renault",
+      "Rolls-Royce",
+      "Skoda",
+      "Smart",
+      "Volkswagen",
+      "Volvo"
+      ];
     const passportLabelText = $("passportLabelText");
     const passportBrandLogo = $("passportBrandLogo");
     if (passportLabelText && passportBrandLogo) {
