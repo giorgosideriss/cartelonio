@@ -1212,6 +1212,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Vehicle passport
+    // Brand mark: keep the fallback label until a brand is selected, then replace it with that brand's logo.
+    const passportLabelText = $("passportLabelText");
+    const passportBrandLogo = $("passportBrandLogo");
+    if (passportLabelText && passportBrandLogo) {
+      const logoUrl = brand && typeof BRAND_LOGOS !== "undefined" ? BRAND_LOGOS[brand] : "";
+      if (brand && logoUrl) {
+        passportLabelText.hidden = true;
+        passportBrandLogo.src = logoUrl;
+        passportBrandLogo.alt = `${brand} logo`;
+        passportBrandLogo.hidden = false;
+      } else {
+        passportLabelText.hidden = false;
+        passportBrandLogo.hidden = true;
+        passportBrandLogo.removeAttribute("src");
+        passportBrandLogo.alt = "";
+      }
+    }
+
+    // Small selected-model image in the passport. Uses the same local model asset already used by the hero.
+    const passportModelImage = $("passportModelImage");
+    const passportTitle = passportModelImage ? passportModelImage.closest(".passport-title") : null;
+    let passportImageUrl = "";
+    if (brand && year && model && typeof currentDataset !== "undefined" && currentDataset?.models?.[model]) {
+      passportImageUrl = currentDataset.models[model].image || "";
+    }
+    if (passportModelImage) {
+      if (passportImageUrl) {
+        if (passportModelImage.getAttribute("src") !== passportImageUrl) {
+          passportModelImage.src = passportImageUrl;
+        }
+        passportModelImage.alt = `${brand} ${model}`;
+        passportModelImage.hidden = false;
+        if (passportTitle) passportTitle.classList.add("has-model-image");
+      } else {
+        passportModelImage.hidden = true;
+        passportModelImage.removeAttribute("src");
+        passportModelImage.alt = "";
+        if (passportTitle) passportTitle.classList.remove("has-model-image");
+      }
+    }
+
     if ($("passportBrand")) $("passportBrand").textContent = brand || "—";
     if ($("passportModel")) $("passportModel").textContent = model || "Επίλεξε όχημα";
     if ($("passportVersion")) $("passportVersion").textContent = version || "—";
@@ -1226,6 +1267,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    const passportModelImage = $("passportModelImage");
+    if (passportModelImage) {
+      passportModelImage.addEventListener("error", () => {
+        passportModelImage.hidden = true;
+        const title = passportModelImage.closest(".passport-title");
+        if (title) title.classList.remove("has-model-image");
+      });
+    }
+
+    const passportBrandLogo = $("passportBrandLogo");
+    if (passportBrandLogo) {
+      passportBrandLogo.addEventListener("error", () => {
+        passportBrandLogo.hidden = true;
+        const label = $("passportLabelText");
+        if (label) label.hidden = false;
+      });
+    }
+
     const watched = [
       "brandSelect","yearSelect","modelSelect","versionSelect","colorSelect",
       "price","category","firstReg","importDate","mileage","co2"
