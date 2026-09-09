@@ -126,7 +126,9 @@
               "name": "4WQ ΖΑΝΤΕΣ ΑΛΟΥΜΙΝΙΟΥ ELEGANTE ΜΕ ΕΛΑΣΤΙΚΑ 195/55/R16",
               "price": 325.63
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E37.2",
@@ -269,7 +271,9 @@
               "name": "439 ΖΑΝΤΕΣ ΑΛΟΥΜΙΝΙΟΥ ΔΙΧΡΩΜΕΣ SPORT ΜΕ ΕΛΑΣΤΙΚΑ 215/40/R18",
               "price": 742.11
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.C37.2",
@@ -376,7 +380,9 @@
               "name": "432 ΖΑΝΤΕΣ ΑΛΟΥΜΙΝΙΟΥ SPORT ΜΕ ΕΛΑΣΤΙΚΑ 215/45/R17",
               "price": -10.98
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-qv.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E3B.2",
@@ -627,7 +633,9 @@
               "name": "61Q ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ BRONZO (ΚΩΔ 394)",
               "price": 341.25
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E3F.2",
@@ -878,7 +886,9 @@
               "name": "61Q ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ BRONZO (ΚΩΔ 394)",
               "price": 340.95
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.C3F.2",
@@ -1037,7 +1047,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 334.81
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-qv.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E3G.2",
@@ -1288,7 +1300,9 @@
               "name": "61Q ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ BRONZO (ΚΩΔ 394)",
               "price": 340.95
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.C3G.2",
@@ -1435,7 +1449,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 334.81
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-qv.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.Q3D.2",
@@ -1586,9 +1602,13 @@
               "name": "5DT ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ KOKKINO (ΚΩΔ 148)",
               "price": 341.45
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s2-qv.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/mito-s2-base.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Giulietta": {
       "category": "Hatchback",
@@ -1814,7 +1834,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2024.76
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B5E.1",
@@ -2037,7 +2059,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2024.76
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5F.1",
@@ -2268,7 +2292,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2024.76
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5G.1",
@@ -2471,7 +2497,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2024.76
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5C.1",
@@ -2614,7 +2642,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2135.07
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5H.1",
@@ -2845,7 +2875,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2046.69
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B5R.1",
@@ -2968,7 +3000,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 451.16
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5R.1",
@@ -3171,7 +3205,9 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2046.69
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5T.1",
@@ -3386,9 +3422,13 @@
               "name": "270 ΕΙΔΙΚΟ ΧΡΩΜΑ ΠΕΡΛΕ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ. ΧΡΩΜΑΤΟΣ 134)",
               "price": 2142.15
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/giulietta-base.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "4C Coupe": {
       "category": "Coupe/Roadster",
@@ -3530,9 +3570,13 @@
               "name": "74F ΧΡΩΜΑ ΠΑΣΤΕΛ ΚΟΚΚΙΝΟ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 289)",
               "price": 504.07
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/4c-coupe.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/4c-coupe.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "4C Spider": {
       "category": "Cabrio",
@@ -3690,9 +3734,13 @@
               "name": "74F ΧΡΩΜΑ ΠΑΣΤΕΛ ΚΟΚΚΙΝΟ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 289)",
               "price": 504.07
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/4c-spider.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/4c-spider.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     }
   }
 }
