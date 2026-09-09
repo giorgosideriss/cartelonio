@@ -62,7 +62,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.PRG.3",
@@ -121,7 +123,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.JR3.3",
@@ -208,7 +212,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.JRG.3",
@@ -295,7 +301,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.VA8.3",
@@ -358,7 +366,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.VAJ.3",
@@ -421,7 +431,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.DA8.3",
@@ -484,7 +496,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.DAJ.3",
@@ -547,7 +561,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.QRR.3",
@@ -626,7 +642,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-qv-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.8A8.3",
@@ -669,7 +687,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.8AJ.3",
@@ -712,9 +732,13 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/giulia-my20.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Stelvio": {
       "category": "SUV",
@@ -772,7 +796,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PAG.3",
@@ -827,7 +853,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PRD.3",
@@ -882,7 +910,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.JA3.3",
@@ -973,7 +1003,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.JAG.3",
@@ -1064,7 +1096,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.VA8.3",
@@ -1135,7 +1169,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.VAJ.3",
@@ -1202,7 +1238,9 @@
               "name": "8CZ ΜΕΤΑΛΛΙΚΟ ANODISED BLUE (ΚΩΔ. ΧΡΩΜ. 486)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-my20.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.DA8.3",
@@ -1285,7 +1323,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.DAJ.3",
@@ -1364,7 +1404,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.QAR.3",
@@ -1443,7 +1485,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-qv-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.8A8.3",
@@ -1490,7 +1534,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.8AJ.3",
@@ -1537,9 +1583,13 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΜΑΥΡΟ VOLCANO (ΚΩΔ. ΧΡΩΜ. 408)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/stelvio-my20.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Tonale": {
       "category": "SUV",
@@ -1605,7 +1655,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-edizione-speciale.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.EFL.0",
@@ -1668,7 +1720,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-edizione-speciale.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.SFK.0",
@@ -1703,7 +1757,9 @@
               "name": "3XV ΓΚΡΙ ΜΕΤΑΛΛΙΚΟ (ΚΩΔ.ΧΡΩΜ.581)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.SF2.0",
@@ -1738,7 +1794,9 @@
               "name": "3XV ΓΚΡΙ ΜΕΤΑΛΛΙΚΟ (ΚΩΔ.ΧΡΩΜ.581)",
               "price": 900.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.PFK.0",
@@ -1813,7 +1871,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.PF2.0",
@@ -1884,7 +1944,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.RFL.0",
@@ -1963,7 +2025,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.RF2.0",
@@ -2038,7 +2102,9 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "622.DFL.0",
@@ -2109,9 +2175,13 @@
               "name": "6FW ΠΡΑΣΙΝΟ ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ (ΚΩΔ.ΧΡΩΜ.398)",
               "price": 1250.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/tonale-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/tonale-edizione-speciale.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     }
   }
 }
