@@ -1,4 +1,4 @@
-/* Cartelonio Mercedes-Benz 2015-2025 HD local image pack */
+/* Cartelonio multi-brand local image pack — Mercedes-Benz + Alfa Romeo multi-trim HD assets */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ (AUTO-GENERATED 2015–2025) === */
 
@@ -83,6 +83,16 @@ const DATA_SOURCES = Object.fromEntries(
         `data/${slugifyBrand(brand)}/${year}/${year}.json`
       ])
     )
+  ])
+);
+
+// Brand-specific year availability.
+// Alfa Romeo 2021 is intentionally skipped until an official price list is added.
+const ALFA_ROMEO_AVAILABLE_YEARS = ["2015","2016","2017","2018","2019","2020","2022"];
+DATA_SOURCES["Alfa Romeo"] = Object.fromEntries(
+  ALFA_ROMEO_AVAILABLE_YEARS.map(year => [
+    year,
+    `data/alfa-romeo/${year}/${year}.json`
   ])
 );
 
@@ -1101,6 +1111,24 @@ document.addEventListener("DOMContentLoaded", () => {
     preload.src = url;
   }
 
+  function getSelectedVehicleImage() {
+    const modelEl = document.getElementById("modelSelect");
+    const versionEl = document.getElementById("versionSelect");
+    const model = modelEl?.value || "";
+
+    if (!model || typeof currentDataset === "undefined" || !currentDataset?.models?.[model]) {
+      return "";
+    }
+
+    const modelObj = currentDataset.models[model];
+    const editionIndex = parseInt(versionEl?.value ?? "", 10);
+    const edition = Number.isInteger(editionIndex) ? modelObj.editions?.[editionIndex] : null;
+
+    // Edition-level image lets different trims (e.g. Veloce / Quadrifoglio)
+    // use different local assets. Older datasets still work through model.image.
+    return edition?.image || modelObj.image || "";
+  }
+
   function refreshCartelonioModelImage() {
     const brandEl = document.getElementById("brandSelect");
     const yearEl = document.getElementById("yearSelect");
@@ -1112,22 +1140,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = yearEl.value;
     const model = modelEl.value;
 
-    // Important: this feature never changes dropdowns/currentDataset.
     if (!brand || !year || !model) return;
-    if (typeof currentDataset === "undefined" || !currentDataset?.models?.[model]) return;
 
-    const modelObj = currentDataset.models[model];
     setCartelonioHeroImage(
-      modelObj.image || DEFAULT_CARTELONIO_CAR_IMAGE,
+      getSelectedVehicleImage() || DEFAULT_CARTELONIO_CAR_IMAGE,
       `${brand} ${model} ${year}`
     );
   }
 
   document.addEventListener("DOMContentLoaded", () => {
     const modelEl = document.getElementById("modelSelect");
-    if (modelEl) {
-      modelEl.addEventListener("change", refreshCartelonioModelImage);
-    }
+    const versionEl = document.getElementById("versionSelect");
+    if (modelEl) modelEl.addEventListener("change", refreshCartelonioModelImage);
+    if (versionEl) versionEl.addEventListener("change", refreshCartelonioModelImage);
   });
 })();
 
@@ -1213,50 +1238,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Vehicle passport
     // Brand mark: keep the fallback label until a brand is selected, then replace it with that brand's logo.
-    const DARK_LOGO_BRANDS = [
-  "Opel",
-  "MINI",
-  "Maserati",
-      "Audi",
-      "Bentley",
-      "Cupra",
-      "Dacia",
-      "Fiat",
-      "Infiniti",
-      "Lexus",
-      "McLaren",
-      "Mitsubishi",
-      "Morgan",
-      "Nissan",
-      "Renault",
-      "Rolls-Royce",
-      "Skoda",
-      "Smart",
-      "Volkswagen",
-      "Volvo"
-      ];
     const passportLabelText = $("passportLabelText");
     const passportBrandLogo = $("passportBrandLogo");
     if (passportLabelText && passportBrandLogo) {
       const logoUrl = brand && typeof BRAND_LOGOS !== "undefined" ? BRAND_LOGOS[brand] : "";
-  if (brand && logoUrl) {
-  passportLabelText.hidden = true;
-  passportBrandLogo.src = logoUrl;
-  passportBrandLogo.alt = `${brand} logo`;
-
-  passportBrandLogo.classList.toggle(
-    "logo-dark",
-    DARK_LOGO_BRANDS.includes(brand)
-  );
-
-  passportBrandLogo.hidden = false;
-} else {
-  passportLabelText.hidden = false;
-  passportBrandLogo.hidden = true;
-  passportBrandLogo.removeAttribute("src");
-  passportBrandLogo.alt = "";
-  passportBrandLogo.classList.remove("logo-dark");
-}
+      if (brand && logoUrl) {
+        passportLabelText.hidden = true;
+        passportBrandLogo.src = logoUrl;
+        passportBrandLogo.alt = `${brand} logo`;
+        passportBrandLogo.hidden = false;
+      } else {
+        passportLabelText.hidden = false;
+        passportBrandLogo.hidden = true;
+        passportBrandLogo.removeAttribute("src");
+        passportBrandLogo.alt = "";
+      }
     }
 
     // Small selected-model image in the passport. Uses the same local model asset already used by the hero.
@@ -1264,7 +1260,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const passportTitle = passportModelImage ? passportModelImage.closest(".passport-title") : null;
     let passportImageUrl = "";
     if (brand && year && model && typeof currentDataset !== "undefined" && currentDataset?.models?.[model]) {
-      passportImageUrl = currentDataset.models[model].image || "";
+      const modelObj = currentDataset.models[model];
+      const editionIndex = parseInt(valueOf("versionSelect"), 10);
+      const edition = Number.isInteger(editionIndex) ? modelObj.editions?.[editionIndex] : null;
+      passportImageUrl = edition?.image || modelObj.image || "";
     }
     if (passportModelImage) {
       if (passportImageUrl) {

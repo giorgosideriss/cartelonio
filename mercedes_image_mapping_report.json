@@ -1,0 +1,46 @@
+{
+  "2015": {
+    "models": 28,
+    "missing_images": []
+  },
+  "2016": {
+    "models": 33,
+    "missing_images": []
+  },
+  "2017": {
+    "models": 44,
+    "missing_images": []
+  },
+  "2018": {
+    "models": 35,
+    "missing_images": []
+  },
+  "2019": {
+    "models": 40,
+    "missing_images": []
+  },
+  "2020": {
+    "models": 49,
+    "missing_images": []
+  },
+  "2021": {
+    "models": 36,
+    "missing_images": []
+  },
+  "2022": {
+    "models": 36,
+    "missing_images": []
+  },
+  "2023": {
+    "models": 35,
+    "missing_images": []
+  },
+  "2024": {
+    "models": 37,
+    "missing_images": []
+  },
+  "2025": {
+    "models": 35,
+    "missing_images": []
+  }
+}

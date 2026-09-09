@@ -1,0 +1,44 @@
+{
+  "2015": {
+    "models": 4,
+    "editions": 20,
+    "editionImages": 20,
+    "uniqueAssets": 7
+  },
+  "2016": {
+    "models": 5,
+    "editions": 19,
+    "editionImages": 19,
+    "uniqueAssets": 9
+  },
+  "2017": {
+    "models": 4,
+    "editions": 35,
+    "editionImages": 35,
+    "uniqueAssets": 10
+  },
+  "2018": {
+    "models": 4,
+    "editions": 43,
+    "editionImages": 43,
+    "uniqueAssets": 9
+  },
+  "2019": {
+    "models": 3,
+    "editions": 16,
+    "editionImages": 16,
+    "uniqueAssets": 7
+  },
+  "2020": {
+    "models": 3,
+    "editions": 33,
+    "editionImages": 33,
+    "uniqueAssets": 9
+  },
+  "2022": {
+    "models": 3,
+    "editions": 32,
+    "editionImages": 32,
+    "uniqueAssets": 10
+  }
+}
