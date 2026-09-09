@@ -1,0 +1,516 @@
+{
+  "brand": "Alfa Romeo",
+  "year": 2017,
+  "models": {
+    "MiTo Series 3": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "145.B37.3",
+          "code": "145.B37.3",
+          "name": "MiTo 1.4 8v 78hp MiTo",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 9571.36,
+              "priceRetail": 9571.36
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "145.E37.3",
+          "code": "145.E37.3",
+          "name": "MiTo 1.4 8v 78hp Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10350.18,
+              "priceRetail": 10350.18
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "145.E3B.3",
+          "code": "145.E3B.3",
+          "name": "MiTo 0.9 TwinAir 105hp Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12277.81,
+              "priceRetail": 12277.81
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "145.E3R.3",
+          "code": "145.E3R.3",
+          "name": "MiTo 1.3 JTDM-2 95hp Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13021.16,
+              "priceRetail": 13021.16
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "145.V3D.3",
+          "code": "145.V3D.3",
+          "name": "MiTo 1.4 170hp TCT Veloce",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15421.13,
+              "priceRetail": 15421.13
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Giulietta": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "191.V5C.2",
+          "code": "191.V5C.2",
+          "name": "Giulietta 1.75 TBi 240hp TCT Veloce",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23515.78,
+              "priceRetail": 23515.78
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.B5E.2",
+          "code": "191.B5E.2",
+          "name": "Giulietta 1.4 TB 120hp Giulietta",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13539.35,
+              "priceRetail": 13539.35
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.C5N.2",
+          "code": "191.C5N.2",
+          "name": "Giulietta 1.4 MultiAir 150hp Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16400.04,
+              "priceRetail": 16400.04
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.C5G.2",
+          "code": "191.C5G.2",
+          "name": "Giulietta 1.4 MultiAir 170hp TCT Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18865.92,
+              "priceRetail": 18865.92
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.B5R.2",
+          "code": "191.B5R.2",
+          "name": "Giulietta 1.6 JTDM-2 120hp Giulietta",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15667.53,
+              "priceRetail": 15667.53
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.C5R.2",
+          "code": "191.C5R.2",
+          "name": "Giulietta 1.6 JTDM-2 120hp Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16349.35,
+              "priceRetail": 16349.35
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.B59.2",
+          "code": "191.B59.2",
+          "name": "Giulietta 1.6 JTDM-2 120hp TCT Giulietta",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17330.2,
+              "priceRetail": 17330.2
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.C59.2",
+          "code": "191.C59.2",
+          "name": "Giulietta 1.6 JTDM-2 120hp TCT Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17973.06,
+              "priceRetail": 17973.06
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.C5T.2",
+          "code": "191.C5T.2",
+          "name": "Giulietta 2.0 JTDM-2 175hp TCT Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19115.92,
+              "priceRetail": 19115.92
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.BSJ.2",
+          "code": "191.BSJ.2",
+          "name": "Giulietta 1.4 Turbo 120hp Sport",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14017.49,
+              "priceRetail": 14017.49
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.BSN.2",
+          "code": "191.BSN.2",
+          "name": "Giulietta 1.4 MultiAir 150hp Sport",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16400.04,
+              "priceRetail": 16400.04
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.B5G.2",
+          "code": "191.B5G.2",
+          "name": "Giulietta 1.4 MultiAir 170hp TCT Giulietta",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16500.87,
+              "priceRetail": 16500.87
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "191.BSR.2",
+          "code": "191.BSR.2",
+          "name": "Giulietta 1.6 JTDM-2 120hp Sport",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16349.35,
+              "priceRetail": 16349.35
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Giulia": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "620.DAP.0",
+          "code": "620.DAP.0",
+          "name": "Giulia 2.2 210hp Automatic 4x4 Veloce",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32265.72,
+              "priceRetail": 32265.72
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.DA1.0",
+          "code": "620.DA1.0",
+          "name": "Giulia 2.0 280hp Automatic 4x4 Veloce",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32395.0,
+              "priceRetail": 32395.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.QRU.0",
+          "code": "620.QRU.0",
+          "name": "Giulia 2.9 510hp Manual Quadrifoglio Verde",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 68361.61,
+              "priceRetail": 68361.61
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.QRV.0",
+          "code": "620.QRV.0",
+          "name": "Giulia 2.9 510hp Automatic Quadrifoglio Verde",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 72982.46,
+              "priceRetail": 72982.46
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.GRE.0",
+          "code": "620.GRE.0",
+          "name": "Giulia 2.2 150hp Manual Giulia",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25143.95,
+              "priceRetail": 25143.95
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.GRG.0",
+          "code": "620.GRG.0",
+          "name": "Giulia 2.2 150hp Automatic Giulia",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26906.78,
+              "priceRetail": 26906.78
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.PRJ.0",
+          "code": "620.PRJ.0",
+          "name": "Giulia 2.2 180hp Manual Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27163.19,
+              "priceRetail": 27163.19
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.PRL.0",
+          "code": "620.PRL.0",
+          "name": "Giulia 2.2 180hp Automatic Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28926.01,
+              "priceRetail": 28926.01
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.GR0.0",
+          "code": "620.GR0.0",
+          "name": "Giulia 2.0 200hp Automatic Giulia",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26235.57,
+              "priceRetail": 26235.57
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "620.PR0.0",
+          "code": "620.PR0.0",
+          "name": "Giulia 2.0 200hp Automatic Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27240.59,
+              "priceRetail": 27240.59
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Stelvio": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "630.LA1.0",
+          "code": "630.LA1.0",
+          "name": "Stelvio 2.0 280hp Automatic 4x4 First Edition",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42392.48,
+              "priceRetail": 42392.48
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.PAP.0",
+          "code": "630.PAP.0",
+          "name": "Stelvio 2.2 210hp Automatic 4x4 Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35751.9,
+              "priceRetail": 35751.9
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.PA1.0",
+          "code": "630.PA1.0",
+          "name": "Stelvio 2.0 280hp Automatic 4x4 Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37501.17,
+              "priceRetail": 37501.17
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.GRG.0",
+          "code": "630.GRG.0",
+          "name": "Stelvio 2.2 180hp Automatic 4x2 Stelvio",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31292.1,
+              "priceRetail": 31292.1
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.PRL.0",
+          "code": "630.PRL.0",
+          "name": "Stelvio 2.2 180hp Automatic 4x2 Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34181.55,
+              "priceRetail": 34181.55
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.GA0.0",
+          "code": "630.GA0.0",
+          "name": "Stelvio 2.0 200hp Automatic 4x4 Stelvio",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34028.95,
+              "priceRetail": 34028.95
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "630.PA0.0",
+          "code": "630.PA0.0",
+          "name": "Stelvio 2.0 200hp Automatic 4x4 Super",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36384.02,
+              "priceRetail": 36384.02
+            }
+          ],
+          "extras": []
+        }
+      ]
+    }
+  }
+}
