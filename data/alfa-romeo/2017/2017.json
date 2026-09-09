@@ -118,7 +118,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 370.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s3-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E37.3",
@@ -321,7 +323,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 370.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s3-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E3B.3",
@@ -516,7 +520,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 370.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s3-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.E3R.3",
@@ -715,7 +721,9 @@
               "name": "58B ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΓΚΡΙ ARDESIA (ΚΩΔ 675)",
               "price": 370.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s3-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "145.V3D.3",
@@ -846,9 +854,13 @@
               "name": "5DR ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΜΑΥΡΟ ETNA (ΚΩΔ 805)",
               "price": 370.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/mito-s3-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/mito-s3-base.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Giulietta": {
       "category": "Hatchback",
@@ -974,7 +986,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B5E.2",
@@ -1069,7 +1083,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5N.2",
@@ -1288,7 +1304,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5G.2",
@@ -1503,7 +1521,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B5R.2",
@@ -1602,7 +1622,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5R.2",
@@ -1825,7 +1847,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B59.2",
@@ -1924,7 +1948,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C59.2",
@@ -2143,7 +2169,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.C5T.2",
@@ -2358,7 +2386,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-super.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.BSJ.2",
@@ -2469,7 +2499,9 @@
               "name": "52B ΑΙΣΘΗΤΗΡΕΣ ΠΑΡΚΙΝΓΚ ΠΙΣΩ",
               "price": 80.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.BSN.2",
@@ -2700,7 +2732,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.B5G.2",
@@ -2903,7 +2937,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-base.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "191.BSR.2",
@@ -3130,9 +3166,13 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΧΡΩΜΑ ΑΣΗΜΙ ALFA (ΚΩΔ. ΧΡΩΜΑΤΟΣ 620)",
               "price": 300.0
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulietta-veloce.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/giulietta-veloce.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Giulia": {
       "category": "Sedan",
@@ -3338,7 +3378,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2198.49
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.DA1.0",
@@ -3541,7 +3583,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2155.17
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.QRU.0",
@@ -3652,7 +3696,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2073.46
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-qv-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.QRV.0",
@@ -3763,7 +3809,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2073.46
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-qv-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.GRE.0",
@@ -3942,7 +3990,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΓΚΡΙ SILVERSTONE (ΚΩΔ. ΧΡΩΜ. 620)",
               "price": 769.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-base-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.GRG.0",
@@ -4125,7 +4175,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΓΚΡΙ SILVERSTONE (ΚΩΔ. ΧΡΩΜ. 620)",
               "price": 769.23
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-base-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.PRJ.0",
@@ -4368,7 +4420,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2243.59
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.PRL.0",
@@ -4615,7 +4669,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2243.59
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.GR0.0",
@@ -4822,7 +4878,9 @@
               "name": "210 ΜΕΤΑΛΛΙΚΟ ΓΚΡΙ SILVERSTONE (ΚΩΔ. ΧΡΩΜ. 620)",
               "price": 753.77
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-base-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "620.PR0.0",
@@ -5069,9 +5127,13 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2198.49
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/giulia-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/giulia-veloce-pre2020.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     },
     "Stelvio": {
       "category": "SUV",
@@ -5137,7 +5199,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2114.16
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PAP.0",
@@ -5396,7 +5460,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2215.66
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PA1.0",
@@ -5655,7 +5721,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2114.16
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.GRG.0",
@@ -5874,7 +5942,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2272.73
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PRL.0",
@@ -6125,7 +6195,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2215.66
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.GA0.0",
@@ -6356,7 +6428,9 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2114.16
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         },
         {
           "factoryCode": "630.PA0.0",
@@ -6607,9 +6681,13 @@
               "name": "270 ΤΡΙΠΛΗΣ ΕΠΙΣΤΡΩΣΗΣ ΚΟΚΚΙΝΟ COMPETIZIONE (ΚΩΔ.ΧΡΩΜ. 361)",
               "price": 2114.16
             }
-          ]
+          ],
+          "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+          "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/alfa-romeo/models/stelvio-super-pre2020.png",
+      "imageSource": "Cartelonio local Alfa Romeo HD multi-trim asset pack"
     }
   }
 }
