@@ -2057,3 +2057,97 @@ button.secondary{
     object-position:center;
   }
 }
+
+/* =========================================================
+   2026-09-10 — Extras panel flow fix + frameless vehicle viewport
+   ========================================================= */
+
+/*
+ * The Extras list is intentionally kept in normal document flow when open.
+ * This prevents it from covering the Registration section below and also
+ * guarantees a fully opaque surface independent of backdrop/backgrounds.
+ */
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card:has(.extras-dropdown){
+  height:auto !important;
+  min-height:92px;
+  overflow:visible !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown{
+  position:static !important;
+  display:block;
+  width:100%;
+  min-width:0;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-panel{
+  position:relative !important;
+  inset:auto !important;
+  top:auto !important;
+  left:auto !important;
+  right:auto !important;
+  z-index:20 !important;
+  width:100% !important;
+  max-width:100% !important;
+  max-height:330px;
+  margin:10px 0 0 !important;
+  padding:8px !important;
+  box-sizing:border-box;
+  overflow-x:hidden !important;
+  overflow-y:auto !important;
+  overscroll-behavior:contain;
+  background:#0b120e !important;
+  background-color:#0b120e !important;
+  background-image:none !important;
+  opacity:1 !important;
+  border:1px solid rgba(190,224,194,.24) !important;
+  border-radius:14px;
+  box-shadow:0 18px 42px rgba(0,0,0,.55) !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  isolation:isolate;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown:not(.open) .extras-panel{
+  display:none !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown.open .extras-panel{
+  display:block !important;
+}
+
+/* Every row is opaque too, so no lower-page text can bleed through. */
+.vehicle-configurator-v2 .vehicle-fields .extras-option{
+  background:#0b120e !important;
+  opacity:1 !important;
+}
+.vehicle-configurator-v2 .vehicle-fields .extras-option:hover,
+.vehicle-configurator-v2 .vehicle-fields .extras-option:focus-visible{
+  background:#17221a !important;
+}
+
+/* Keep the right column aligned while the Extras card expands. */
+@media (min-width:821px){
+  .vehicle-configurator-v2 .config-upper{
+    align-items:stretch;
+  }
+  .vehicle-configurator-v2 .integrated-hero-wrap{
+    height:100%;
+    min-height:100%;
+  }
+}
+
+/* Vehicle image keeps its requested geometry but has no visible outline. */
+.vehicle-configurator-v2 .integrated-hero-wrap .hero-card{
+  border:none !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+
+@media (max-width:820px){
+  .vehicle-configurator-v2 .integrated-hero-wrap .hero-card{
+    border:none !important;
+    outline:none !important;
+    box-shadow:none !important;
+  }
+}
