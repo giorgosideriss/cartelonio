@@ -46,7 +46,9 @@
 <div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
 <div class="form-grid vehicle-fields">
 <div class="field-block dropdown-card brand-dropdown-card">
-<label><span class="field-icon">🚘</span>Μάρκα</label>
+<label>Μάρκα</label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">🚘</span>
 <div class="brand-picker">
 <button class="brand-button" id="brandButton" type="button">
 <span class="brand-button-logo" id="brandButtonLogo"></span>
@@ -57,20 +59,32 @@
 <select aria-hidden="true" class="brand-select-native" id="brandSelect" tabindex="-1"></select>
 </div>
 </div>
+</div>
 <div class="field-block dropdown-card">
-<label for="yearSelect"><span class="field-icon">📅</span>Έτος</label>
+<label for="yearSelect">Έτος</label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">📅</span>
 <select id="yearSelect"></select>
 </div>
+</div>
 <div class="field-block dropdown-card">
-<label for="modelSelect"><span class="field-icon">🚗</span>Μοντέλο</label>
+<label for="modelSelect">Μοντέλο</label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">🚗</span>
 <select id="modelSelect"></select>
 </div>
+</div>
 <div class="field-block dropdown-card">
-<label for="versionSelect"><span class="field-icon">⚙️</span>Έκδοση</label>
+<label for="versionSelect">Έκδοση</label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">⚙️</span>
 <select id="versionSelect"></select>
 </div>
+</div>
 <div class="field-block field-block-wide dropdown-card">
-<label><span class="field-icon">✦</span>Extras</label>
+<label>Extras</label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">✦</span>
 <div class="extras-dropdown">
 <button class="extras-toggle" disabled="" id="extrasToggle" type="button">
 <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
@@ -79,9 +93,13 @@
 <div class="extras-panel" id="extrasPanel"></div>
 </div>
 </div>
+</div>
 <div class="field-block field-block-wide dropdown-card" id="colorRow">
-<label for="colorSelect"><span class="field-icon">🎨</span>Χρώμα <span class="label-note">μόνο Toyota</span></label>
+<label for="colorSelect">Χρώμα <span class="label-note">μόνο Toyota</span></label>
+<div class="dropdown-control-row">
+<span aria-hidden="true" class="dropdown-leading-icon">🎨</span>
 <select id="colorSelect"></select>
+</div>
 </div>
 <div class="field-block field-block-wide">
 <label for="price"><span class="field-icon">€</span>
@@ -116,8 +134,8 @@
 <small>Απαραίτητα στοιχεία για τον υπολογισμό</small>
 </div>
 <div class="form-grid registration-fields">
-<div class="field-block field-block-wide dropdown-card" id="categoryRow">
-<label for="category"><span class="field-icon">🚙</span>Κατηγορία Οχήματος</label>
+<div class="field-block field-block-wide" id="categoryRow">
+<label for="category"><span class="field-icon">🚙</span>Είδος Αμαξώματος</label>
 <div class="category-field-wrap">
 <select id="category"></select>
 <span aria-hidden="true" class="category-warning" id="categoryWarning">!
