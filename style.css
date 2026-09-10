@@ -268,7 +268,7 @@ button.secondary{
   flex-shrink:0;background-size:contain;background-repeat:no-repeat;background-position:center;
 }
 .brand-button-logo.has-logo{background-color:transparent}
-.brand-button-label{flex:1;font-size:16px}
+.brand-button-label{flex:1;font-size:13px}
 .brand-button-arrow,.extras-toggle-arrow{font-size:14px;color:#7f857e}
 .brand-menu{
   position:absolute;top:calc(100% + 7px);left:0;right:0;z-index:160;
@@ -644,7 +644,7 @@ button.secondary{
   display:flex;align-items:center;gap:6px;
   min-height:18px;margin:0 0 6px;
   color:rgba(255,255,255,.78);
-  font-size:14px;font-weight:750;letter-spacing:.015em;
+  font-size:10px;font-weight:750;letter-spacing:.015em;
 }
 .vehicle-configurator-v2 .field-icon{
   display:inline-grid;place-items:center;
@@ -689,7 +689,7 @@ button.secondary{
 }
 .vehicle-configurator-v2 .brand-button{padding:0 13px}
 .vehicle-configurator-v2 .brand-button-logo{
-  width:35px;height:35px;background-color:rgba(255,255,255,.08)
+  width:24px;height:24px;background-color:rgba(255,255,255,.08)
 }
 .vehicle-configurator-v2 .brand-button-label,
 .vehicle-configurator-v2 .extras-toggle-label{color:rgba(255,255,255,.82)}
@@ -821,4 +821,59 @@ button.secondary{
   .vehicle-configurator-v2 .registration-strip{padding:16px 14px 15px}
   .vehicle-configurator-v2 .actions{flex-direction:column;align-items:stretch}
   .vehicle-configurator-v2 .actions button{width:100%;flex:none}
+}
+
+/* Cartelonio readability refinement — larger labels, controls and brand mark */
+.vehicle-configurator-v2 .field-block label{
+  min-height:22px;
+  margin-bottom:7px;
+  gap:8px;
+  font-size:13px;
+  font-weight:780;
+}
+.vehicle-configurator-v2 .field-icon{
+  width:21px;
+  height:21px;
+  font-size:15px;
+}
+.vehicle-configurator-v2 select,
+.vehicle-configurator-v2 input,
+.vehicle-configurator-v2 .brand-button,
+.vehicle-configurator-v2 .extras-toggle{
+  min-height:54px;
+  height:54px;
+  padding-left:15px;
+  padding-right:15px;
+  font-size:14px;
+}
+.vehicle-configurator-v2 select option,
+.vehicle-configurator-v2 select optgroup{
+  font-size:14px;
+}
+.vehicle-configurator-v2 .brand-button-logo{
+  width:34px;
+  height:34px;
+  max-width:44px;
+  flex:0 0 34px;
+  object-fit:contain;
+}
+.vehicle-configurator-v2 .brand-button-label,
+.vehicle-configurator-v2 .extras-toggle-label{
+  font-size:14px;
+}
+.vehicle-configurator-v2 .brand-option-logo{
+  width:36px;
+  height:36px;
+  object-fit:contain;
+}
+.vehicle-configurator-v2 .brand-option-label{
+  font-size:14px;
+}
+.vehicle-configurator-v2 .first-reg-grid select,
+.vehicle-configurator-v2 .first-reg-grid input{
+  height:54px;
+  min-height:54px;
+  padding-left:11px;
+  padding-right:11px;
+  font-size:13px;
 }
