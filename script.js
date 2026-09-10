@@ -1156,6 +1156,23 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  // Keep the hero image synced with the selected vehicle/trim.
+  // These listeners were accidentally dropped during the layout refactor.
+  document.addEventListener("DOMContentLoaded", () => {
+    const brandEl = document.getElementById("brandSelect");
+    const yearEl = document.getElementById("yearSelect");
+    const modelEl = document.getElementById("modelSelect");
+    const versionEl = document.getElementById("versionSelect");
+
+    [brandEl, yearEl, modelEl, versionEl].forEach(el => {
+      if (!el) return;
+      el.addEventListener("change", () => setTimeout(refreshCartelonioModelImage, 0));
+    });
+
+    // Also refresh once after the page has initialized.
+    setTimeout(refreshCartelonioModelImage, 0);
+  });
+
   document.addEventListener("DOMContentLoaded", () => {
     const watched = [
       "brandSelect","yearSelect","modelSelect","versionSelect","colorSelect",
