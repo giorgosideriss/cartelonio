@@ -740,7 +740,7 @@ button.secondary{
 }
 .vehicle-configurator-v2 .registration-strip::before{
   content:"";position:absolute;left:20px;right:20px;top:0;height:1px;
-  background:linear-gradient(90deg,rgba(165,230,121,.55),rgba(255,255,255,.06),transparent);
+  background:linear-gradient(90deg,rgba(165,230,121,.0%),rgba(255,255,255,.06),transparent);
 }
 .vehicle-configurator-v2 .registration-strip-heading{
   display:flex;justify-content:space-between;align-items:center;gap:20px;
