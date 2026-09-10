@@ -45,7 +45,7 @@
 </div>
 <div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
 <div class="form-grid vehicle-fields">
-<div class="field-block">
+<div class="field-block dropdown-card brand-dropdown-card">
 <label><span class="field-icon">🚘</span>Μάρκα</label>
 <div class="brand-picker">
 <button class="brand-button" id="brandButton" type="button">
@@ -57,19 +57,19 @@
 <select aria-hidden="true" class="brand-select-native" id="brandSelect" tabindex="-1"></select>
 </div>
 </div>
-<div class="field-block">
+<div class="field-block dropdown-card">
 <label for="yearSelect"><span class="field-icon">📅</span>Έτος</label>
 <select id="yearSelect"></select>
 </div>
-<div class="field-block">
+<div class="field-block dropdown-card">
 <label for="modelSelect"><span class="field-icon">🚗</span>Μοντέλο</label>
 <select id="modelSelect"></select>
 </div>
-<div class="field-block">
+<div class="field-block dropdown-card">
 <label for="versionSelect"><span class="field-icon">⚙️</span>Έκδοση</label>
 <select id="versionSelect"></select>
 </div>
-<div class="field-block field-block-wide">
+<div class="field-block field-block-wide dropdown-card">
 <label><span class="field-icon">✦</span>Extras</label>
 <div class="extras-dropdown">
 <button class="extras-toggle" disabled="" id="extrasToggle" type="button">
@@ -79,7 +79,7 @@
 <div class="extras-panel" id="extrasPanel"></div>
 </div>
 </div>
-<div class="field-block field-block-wide" id="colorRow">
+<div class="field-block field-block-wide dropdown-card" id="colorRow">
 <label for="colorSelect"><span class="field-icon">🎨</span>Χρώμα <span class="label-note">μόνο Toyota</span></label>
 <select id="colorSelect"></select>
 </div>
@@ -116,7 +116,7 @@
 <small>Απαραίτητα στοιχεία για τον υπολογισμό</small>
 </div>
 <div class="form-grid registration-fields">
-<div class="field-block field-block-wide" id="categoryRow">
+<div class="field-block field-block-wide dropdown-card" id="categoryRow">
 <label for="category"><span class="field-icon">🚙</span>Κατηγορία Οχήματος</label>
 <div class="category-field-wrap">
 <select id="category"></select>
