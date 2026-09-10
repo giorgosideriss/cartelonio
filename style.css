@@ -2510,3 +2510,47 @@ button.secondary{
   white-space:nowrap;
 }
 
+/* =========================================================
+   Cartelonio — unified inline SVG icon system
+   General UI icons now match the calculator line-icon style.
+   Brand logos remain unchanged.
+   ========================================================= */
+.vehicle-configurator-v2 .ui-svg-icon{
+  display:block;
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.75;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.vehicle-configurator-v2 .dropdown-leading-icon,
+.vehicle-configurator-v2 .field-icon{
+  color:rgba(235,242,237,.88);
+  filter:none !important;
+}
+
+.vehicle-configurator-v2 .dropdown-leading-icon{
+  width:30px;
+  height:30px;
+  padding:3px;
+}
+
+.vehicle-configurator-v2 .field-icon{
+  width:20px;
+  height:20px;
+  padding:1px;
+}
+
+.vehicle-configurator-v2 .price-leading-icon{
+  width:30px;
+  height:30px;
+  padding:3px;
+}
+
+.vehicle-configurator-v2 .primary-action .calc-button-icon{
+  stroke-width:1.75;
+}
+

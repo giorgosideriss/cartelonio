@@ -62,28 +62,40 @@
 <div class="field-block dropdown-card">
 <label for="yearSelect">Έτος</label>
 <div class="dropdown-control-row">
-<span aria-hidden="true" class="dropdown-leading-icon">📅</span>
+<span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <rect x="3.5" y="5.5" width="17" height="15" rx="2.5"></rect>
+  <path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17"></path>
+</svg></span>
 <select id="yearSelect"></select>
 </div>
 </div>
 <div class="field-block dropdown-card">
 <label for="modelSelect">Μοντέλο</label>
 <div class="dropdown-control-row">
-<span aria-hidden="true" class="dropdown-leading-icon">🚗</span>
+<span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M5 16.5h14l-1.5-5.2a2 2 0 0 0-1.9-1.45H8.4a2 2 0 0 0-1.9 1.45L5 16.5Z"></path>
+  <path d="M4 16.5v2M20 16.5v2M7.5 16.5v1M16.5 16.5v1M7.1 13h9.8"></path>
+</svg></span>
 <select id="modelSelect"></select>
 </div>
 </div>
 <div class="field-block dropdown-card">
 <label for="versionSelect">Έκδοση</label>
 <div class="dropdown-control-row">
-<span aria-hidden="true" class="dropdown-leading-icon">⚙️</span>
+<span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="3.2"></circle>
+  <path d="M12 2.8v2.1M12 19.1v2.1M21.2 12h-2.1M4.9 12H2.8M18.5 5.5 17 7M7 17l-1.5 1.5M18.5 18.5 17 17M7 7 5.5 5.5"></path>
+</svg></span>
 <select id="versionSelect"></select>
 </div>
 </div>
 <div class="field-block field-block-wide dropdown-card">
 <label>Extras</label>
 <div class="dropdown-control-row">
-<span aria-hidden="true" class="dropdown-leading-icon">✦</span>
+<span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3.5 13.8 8l4.7 1.8-4.7 1.8L12 16l-1.8-4.4-4.7-1.8L10.2 8 12 3.5Z"></path>
+  <path d="m18.2 15.3.8 2 .2.5.5.2 2 .8-2 .8-.5.2-.2.5-.8 2-.8-2-.2-.5-.5-.2-2-.8 2-.8.5-.2.2-.5.8-2Z"></path>
+</svg></span>
 <div class="extras-dropdown">
 <button class="extras-toggle" disabled="" id="extrasToggle" type="button">
 <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
@@ -96,7 +108,13 @@
 <div class="field-block field-block-wide dropdown-card" id="colorRow">
 <label for="colorSelect">Χρώμα <span class="label-note">μόνο Toyota</span></label>
 <div class="dropdown-control-row">
-<span aria-hidden="true" class="dropdown-leading-icon">🎨</span>
+<span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3.5a8.5 8.5 0 1 0 0 17h1.3c1.3 0 2.1-1.4 1.45-2.5-.6-1.02.15-2.3 1.33-2.3H17a3.5 3.5 0 0 0 3.5-3.5C20.5 7.4 16.7 3.5 12 3.5Z"></path>
+  <circle cx="8" cy="9" r=".9" fill="currentColor" stroke="none"></circle>
+  <circle cx="12" cy="7" r=".9" fill="currentColor" stroke="none"></circle>
+  <circle cx="16" cy="9" r=".9" fill="currentColor" stroke="none"></circle>
+  <circle cx="7" cy="13" r=".9" fill="currentColor" stroke="none"></circle>
+</svg></span>
 <select id="colorSelect"></select>
 </div>
 </div>
@@ -119,7 +137,9 @@
   </span>
 </label>
 <div class="dropdown-control-row price-control-row">
-  <span aria-hidden="true" class="dropdown-leading-icon price-leading-icon">€</span>
+  <span aria-hidden="true" class="dropdown-leading-icon price-leading-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M18 6.2A7 7 0 1 0 18 17.8M5 10h9M5 14h8"></path>
+</svg></span>
   <div class="required-field-wrap" data-field="price">
     <input id="price" placeholder="0,00" required="" step="0.01" type="number" value=""/>
     <span aria-hidden="true" class="field-warning">!
@@ -137,7 +157,10 @@
 </div>
 <div class="form-grid registration-fields">
 <div class="field-block field-block-wide" id="categoryRow">
-<label for="category"><span class="field-icon">🚙</span>Είδος Αμαξώματος</label>
+<label for="category"><span class="field-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M5 17h14l-1.3-6a2 2 0 0 0-2-1.6H8.3a2 2 0 0 0-2 1.6L5 17Z"></path>
+  <path d="M4 17v2M20 17v2M7.5 17v1M16.5 17v1M8 9.4 9.2 6h5.6L16 9.4"></path>
+</svg></span>Είδος Αμαξώματος</label>
 <div class="category-field-wrap">
 <select id="category"></select>
 <span aria-hidden="true" class="category-warning" id="categoryWarning">!
@@ -148,7 +171,10 @@
 </div>
 </div>
 <div class="field-block">
-<label for="firstRegDay"><span class="field-icon">📆</span>Πρώτη Άδεια</label>
+<label for="firstRegDay"><span class="field-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <rect x="3.5" y="5.5" width="17" height="15" rx="2.5"></rect>
+  <path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 16.5h3"></path>
+</svg></span>Πρώτη Άδεια</label>
 <div class="required-field-wrap first-reg-wrap" data-field="firstReg">
 <div class="first-reg-grid">
 <select aria-label="Ημέρα πρώτης άδειας" id="firstRegDay">
@@ -178,7 +204,11 @@
 </div>
 </div>
 <div class="field-block">
-<label for="importDate"><span class="field-icon">📥</span>Ημερομηνία Εισαγωγής</label>
+<label for="importDate"><span class="field-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3.5v10"></path>
+  <path d="m8.5 10.5 3.5 3.5 3.5-3.5"></path>
+  <path d="M5 16.5v3h14v-3"></path>
+</svg></span>Ημερομηνία Εισαγωγής</label>
 <div class="required-field-wrap" data-field="importDate">
 <input id="importDate" type="date" value=""/>
 <span aria-hidden="true" class="field-warning">!
@@ -187,7 +217,9 @@
 </div>
 </div>
 <div class="field-block">
-<label for="mileage"><span class="field-icon">🛣️</span>Διανυθέντα Χιλιόμετρα</label>
+<label for="mileage"><span class="field-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M8.2 3.5 5.5 20.5M15.8 3.5l2.7 17M12 4.5v3M12 10.5v3M12 16.5v3"></path>
+</svg></span>Διανυθέντα Χιλιόμετρα</label>
 <div class="required-field-wrap" data-field="mileage">
 <input id="mileage" placeholder="π.χ. 120000" type="number" value=""/>
 <span aria-hidden="true" class="field-warning">!
@@ -196,7 +228,10 @@
 </div>
 </div>
 <div class="field-block">
-<label for="co2"><span class="field-icon">🌿</span>Εκπομπές CO₂ <span class="label-note">g/km</span></label>
+<label for="co2"><span class="field-icon"><svg class="ui-svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path>
+  <path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path>
+</svg></span>Εκπομπές CO₂ <span class="label-note">g/km</span></label>
 <div class="required-field-wrap" data-field="co2">
 <input id="co2" placeholder="π.χ. 129" type="number" value=""/>
 <span aria-hidden="true" class="field-warning">!
