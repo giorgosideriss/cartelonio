@@ -790,7 +790,7 @@ button.secondary{
   color:#10150e;
   box-shadow:0 14px 34px rgba(117,190,73,.19);
 }
-.vehicle-configurator-v2 .primary-action span:first-child::after{content:'Ταξινόμησης'}
+.vehicle-configurator-v2 .primary-action span:first-child::after{content:' Ταξινόμησης'}
 .vehicle-configurator-v2 .secondary{
   min-height:46px;padding:0 18px;border-radius:12px;
   color:rgba(255,255,255,.67);background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.11)
