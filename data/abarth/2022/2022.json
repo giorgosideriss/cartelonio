@@ -110,9 +110,13 @@
               "name": "ΜΑΤ ΜΠΛΕ ΧΡΩΜΑ",
               "price": 483.87
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-2022.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/abarth/models/abarth-595-2022.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     },
     "695": {
       "category": "Hatchback",
@@ -237,8 +241,10 @@
             {
               "name": "ΜΑΤ ΜΠΛΕ ΧΡΩΜΑ",
               "price": 483.87
-                 }
-          ]
+            }
+          ],
+          "image": "images/abarth/models/abarth-695-base.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "312.HRT.0",
@@ -317,11 +323,14 @@
               "name": "Σ WAD ΖΑΝΤΕΣ ΑΛΟΥΜΙΝΙΟΥ MONTECARLO 17'' ΜΕ ΕΛΑΣΤΙΚΑ 205/40",
               "price": 161.29
             }
-          ]
-}
-      ]
+          ],
+          "image": "images/abarth/models/abarth-695-131-rally.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
+        }
+      ],
+      "image": "images/abarth/models/abarth-695-base.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     },
-
     "595C": {
       "category": "Cabrio",
       "editions": [
@@ -418,11 +427,14 @@
               "name": "ΜΑΤ ΜΠΛΕ ΧΡΩΜΑ",
               "price": 483.87
             }
-          ]
-}
-      ]
+          ],
+          "image": "images/abarth/models/abarth-595c.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
+        }
+      ],
+      "image": "images/abarth/models/abarth-595c.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     },
-
     "695C": {
       "category": "Cabrio",
       "editions": [
@@ -527,9 +539,13 @@
               "name": "ΜΑΤ ΜΠΛΕ ΧΡΩΜΑ",
               "price": 483.87
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-695c.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/abarth/models/abarth-695c.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     }
   }
 }
