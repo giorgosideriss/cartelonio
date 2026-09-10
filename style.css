@@ -2283,3 +2283,80 @@ button.secondary{
     max-height:280px !important;
   }
 }
+
+/* =========================================================
+   CARTELONIO — Vehicle image clean background patch
+   Removes the divider/border beside the vehicle image and
+   all blur/glow/backdrop effects from the vehicle image area.
+   ========================================================= */
+.hero-visual,
+.vehicle-visual,
+.vehicle-image-wrap,
+.vehicle-image-frame,
+.car-visual,
+.car-image-wrap,
+.model-image-wrap,
+.hero-car,
+.hero-car-wrap {
+  border: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none;
+  background: transparent !important;
+}
+
+.hero-visual::before,
+.hero-visual::after,
+.vehicle-visual::before,
+.vehicle-visual::after,
+.vehicle-image-wrap::before,
+.vehicle-image-wrap::after,
+.vehicle-image-frame::before,
+.vehicle-image-frame::after,
+.car-visual::before,
+.car-visual::after,
+.car-image-wrap::before,
+.car-image-wrap::after,
+.model-image-wrap::before,
+.model-image-wrap::after,
+.hero-car::before,
+.hero-car::after,
+.hero-car-wrap::before,
+.hero-car-wrap::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* The vehicle PNG itself stays untouched and transparent. */
+.hero-visual img,
+.vehicle-visual img,
+.vehicle-image-wrap img,
+.vehicle-image-frame img,
+.car-visual img,
+.car-image-wrap img,
+.model-image-wrap img,
+.hero-car img,
+.hero-car-wrap img {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Remove the vertical divider immediately adjacent to the visual column. */
+.configurator-visual,
+.hero-right,
+.vehicle-column,
+.car-column {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
