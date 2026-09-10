@@ -360,54 +360,11 @@ button.secondary{
 .category-warning:hover .category-warning-text,.field-warning:hover .field-warning-text{visibility:visible;opacity:.97}
 .category-error-message{color:#a22121;margin:0;font-size:13px}
 
-/* Right column / passport */
+/* Results column */
 .side-column{
-  position:sticky;top:91px;
-  display:flex;flex-direction:column;gap:18px;
+  position:static;
+  display:block;
 }
-.passport{padding:24px;background:#171a17;color:#fff;box-shadow:0 22px 55px rgba(18,21,18,.18)}
-.passport-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:27px}
-.passport-label{font-size:9px;font-weight:850;letter-spacing:.18em;color:rgba(255,255,255,.42)}
-.passport-brand-identity{min-height:34px;display:flex;align-items:center;justify-content:flex-start}
-.passport-brand-logo{
-  display:block;width:auto;max-width:92px;height:50px;object-fit:contain;
-  padding:4px 8px;border-radius:9px;background:rgba(255,255,255,0%);
-  box-shadow:0 5px 14px rgba(0,0,0,.16);
-}
-.passport-brand-logo[hidden]{display:none}
-
-.status-dot{font-size:9px;font-weight:800;letter-spacing:.08em;color:#a6d486;display:flex;align-items:center;gap:5px}
-.status-dot i{display:block;width:6px;height:6px;background:#8bc765;border-radius:50%;box-shadow:0 0 0 4px rgba(139,199,101,.10)}
-.passport-title{position:relative}
-.passport-title.has-model-image{padding-bottom:94px}
-.passport-model-image{
-  position:absolute;right:-3px;bottom:0;width:132px;height:88px;object-fit:contain;object-position:right center;
-  filter:drop-shadow(0 12px 14px rgba(0,0,0,.32));opacity:.98;
-}
-.passport-model-image[hidden]{display:none}
-.passport-title small{
-  display:block;margin-bottom:4px;color:#a6d486;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-}
-.passport-title h2{margin:0;font-size:27px;line-height:1.05;letter-spacing:-.045em}
-.passport-title p{
-  margin:8px 0 0;min-height:17px;color:rgba(255,255,255,.55);font-size:11px;line-height:1.45;
-}
-.passport-specs{
-  display:grid;grid-template-columns:1fr 1fr;margin-top:24px;
-  border-top:1px solid rgba(255,255,255,.09);border-left:1px solid rgba(255,255,255,.09);
-}
-.passport-specs div{
-  min-height:65px;padding:12px;border-right:1px solid rgba(255,255,255,.09);border-bottom:1px solid rgba(255,255,255,.09);
-}
-.passport-specs span{display:block;color:rgba(255,255,255,.38);font-size:9px;margin-bottom:6px}
-.passport-specs strong{display:block;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.passport-price{
-  margin-top:18px;padding:17px 18px;border-radius:16px;
-  background:linear-gradient(135deg,rgba(109,169,67,.20),rgba(109,169,67,.07));
-  border:1px solid rgba(166,212,134,.16);
-}
-.passport-price span{display:block;color:rgba(255,255,255,.48);font-size:9px;margin-bottom:5px}
-.passport-price strong{display:block;font-size:26px;letter-spacing:-.04em;color:#d3efbe}
 .compatibility-summary{display:none}
 
 /* Results */
@@ -508,7 +465,7 @@ button.secondary{
   .side-column{display:flex}
   .actions{align-items:stretch;flex-direction:column}
   .actions button{width:100%}
-  .passport,.result-panel{border-radius:22px}
+  .result-panel{border-radius:22px}
 }
 @media(max-width:430px){
   .stage-copy h1{font-size:34px}
@@ -519,11 +476,6 @@ button.secondary{
   .tooltip .tooltiptext,.category-warning-text,.field-warning-text{width:250px}
 }
 
-@media(max-width:480px){
-  .passport-model-image{width:116px;height:78px}
-  .passport-title.has-model-image{padding-bottom:84px}
-  .passport-brand-logo{max-width:84px;height:30px}
-}
 
 /* =========================================================
    Integrated 01 + 02 configurator inside the dark hero stage
@@ -607,8 +559,8 @@ button.secondary{
 .integrated-hero-wrap #carImage{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 28px 22px rgba(0,0,0,.38))}
 .vehicle-stage-integrated .stage-index{right:30px;bottom:22px;color:rgba(255,255,255,.42)}
 .workspace-results-only{display:block;max-width:1180px;margin:22px auto 0}
-.workspace-results-only .side-column{position:static;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
-.workspace-results-only .legal{grid-column:1/-1}
+.workspace-results-only .side-column{position:static;display:block}
+.workspace-results-only .legal{margin-top:18px}
 
 @media(max-width:1050px){
   .vehicle-stage-integrated{grid-template-columns:1fr;min-height:auto;padding:34px 30px 28px}
@@ -621,7 +573,7 @@ button.secondary{
   .integrated-stage-copy h1{font-size:38px}
   .integrated-config .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .integrated-hero-wrap{display:none}
-  .workspace-results-only .side-column{display:flex}
+  .workspace-results-only .side-column{display:block}
 }
 @media(max-width:480px){
   .integrated-config .form-grid{grid-template-columns:1fr}
