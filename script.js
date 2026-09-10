@@ -1204,3 +1204,53 @@ document.addEventListener("DOMContentLoaded", () => {
     syncPremiumUi();
   });
 })();
+
+/* === Whole-card dropdown activation (2026-09-10) === */
+(() => {
+  function openNativeSelect(select) {
+    if (!select || select.disabled) return;
+    select.focus({ preventScroll: true });
+    try {
+      if (typeof select.showPicker === "function") {
+        select.showPicker();
+        return;
+      }
+    } catch (_) {}
+    try { select.click(); } catch (_) {}
+  }
+
+  function setupWholeCardDropdowns() {
+    const cards = document.querySelectorAll(".vehicle-configurator-v2 .vehicle-fields .dropdown-card");
+
+    cards.forEach((card) => {
+      const nativeSelect = card.querySelector(".dropdown-control-row > select");
+      const brandButton = card.querySelector("#brandButton");
+      const extrasToggle = card.querySelector("#extrasToggle");
+      const control = brandButton || extrasToggle || nativeSelect;
+      if (!control) return;
+
+      card.dataset.cardDropdown = "true";
+
+      card.addEventListener("click", (event) => {
+        // Let the real controls, open custom menus and option items handle their own clicks.
+        if (event.target.closest("button, select, option, input, .brand-menu, .extras-panel, .tooltip")) return;
+
+        if (brandButton) {
+          if (!brandButton.disabled) brandButton.click();
+          return;
+        }
+        if (extrasToggle) {
+          if (!extrasToggle.disabled) extrasToggle.click();
+          return;
+        }
+        if (nativeSelect) openNativeSelect(nativeSelect);
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupWholeCardDropdowns, { once: true });
+  } else {
+    setupWholeCardDropdowns();
+  }
+})();

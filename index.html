@@ -100,30 +100,33 @@
 <select id="colorSelect"></select>
 </div>
 </div>
-<div class="field-block field-block-wide">
-<label for="price"><span class="field-icon">€</span>
-              Τιμή Οχήματος - ΛΤΠΦ (€)
-              <span class="tooltip">?
-                <span class="tooltiptext">
-                  Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση.
-                  Εάν δεν υπάρχει το αυτοκίνητο στη λίστα, μπορείτε να παρακάμψετε τη διαμόρφωση
-                  και να συμπληρώσετε χειροκίνητα ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.
-                </span>
-</span>
-</label>
-<div class="required-field-wrap" data-field="price">
-<input id="price" placeholder="0,00" required="" step="0.01" type="number" value=""/>
-<span aria-hidden="true" class="field-warning">!
-                <span class="field-warning-text">Παρακαλώ συμπληρώστε την Τιμή Οχήματος - ΛΤΠΦ.</span>
-</span>
-</div>
-</div>
 </div>
 </div>
 <div class="hero-wrap integrated-hero-wrap">
 <div class="hero-card">
 <div class="car-shadow"></div>
 <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
+</div>
+<div class="field-block dropdown-card price-dropdown-card">
+<label for="price">
+  Τιμή Οχήματος - ΛΤΠΦ (€)
+  <span class="tooltip">?
+    <span class="tooltiptext">
+      Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση.
+      Εάν δεν υπάρχει το αυτοκίνητο στη λίστα, μπορείτε να παρακάμψετε τη διαμόρφωση
+      και να συμπληρώσετε χειροκίνητα ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.
+    </span>
+  </span>
+</label>
+<div class="dropdown-control-row price-control-row">
+  <span aria-hidden="true" class="dropdown-leading-icon price-leading-icon">€</span>
+  <div class="required-field-wrap" data-field="price">
+    <input id="price" placeholder="0,00" required="" step="0.01" type="number" value=""/>
+    <span aria-hidden="true" class="field-warning">!
+      <span class="field-warning-text">Παρακαλώ συμπληρώστε την Τιμή Οχήματος - ΛΤΠΦ.</span>
+    </span>
+  </div>
+</div>
 </div>
 </div>
 </div>

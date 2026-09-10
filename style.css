@@ -1642,3 +1642,115 @@ button.secondary{
   z-index:1;
   overflow:visible;
 }
+
+/* === 2026-09-10: price under vehicle image + whole-card dropdown interaction === */
+.vehicle-configurator-v2 .integrated-hero-wrap{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:16px;
+  min-width:0;
+}
+
+.vehicle-configurator-v2 .integrated-hero-wrap .hero-card{
+  flex:1 1 auto;
+  min-height:0;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding-top:0;
+}
+
+.vehicle-configurator-v2 .integrated-hero-wrap .hero-card #carImage{
+  transform:translateY(-12px);
+}
+
+.vehicle-configurator-v2 .price-dropdown-card{
+  position:relative;
+  width:100%;
+  min-height:96px;
+  margin-top:auto;
+  padding:18px 22px 14px;
+  border:1px solid rgba(223,235,230,.22);
+  border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.vehicle-configurator-v2 .price-dropdown-card > label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 10px;
+  font-size:15px;
+  line-height:1.1;
+  font-weight:700;
+  color:#f2f5f3;
+}
+
+.vehicle-configurator-v2 .price-control-row{
+  display:grid;
+  grid-template-columns:38px minmax(0,1fr);
+  align-items:center;
+  gap:10px;
+  min-height:42px;
+}
+
+.vehicle-configurator-v2 .price-leading-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  font-weight:800;
+  color:#fff;
+}
+
+.vehicle-configurator-v2 .price-dropdown-card .required-field-wrap{
+  min-width:0;
+  width:100%;
+  position:relative;
+}
+
+.vehicle-configurator-v2 .price-dropdown-card input#price{
+  width:100%;
+  min-width:0;
+  height:42px;
+  margin:0;
+  padding:0 38px 0 0;
+  border:0!important;
+  outline:0;
+  background:transparent!important;
+  box-shadow:none!important;
+  font-size:17px;
+  font-weight:600;
+  color:#dce4e0;
+}
+
+.vehicle-configurator-v2 .price-dropdown-card input#price::placeholder{
+  color:#89938f;
+  opacity:1;
+}
+
+.vehicle-configurator-v2 .price-dropdown-card:focus-within{
+  border-color:rgba(151,236,112,.5);
+  box-shadow:0 0 0 4px rgba(137,232,95,.07),inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* Make the entire visual card feel and behave like the dropdown control. */
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card[data-card-dropdown="true"]{
+  cursor:pointer;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card[data-card-dropdown="true"] > label{
+  pointer-events:none;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card[data-card-dropdown="true"] .dropdown-control-row{
+  cursor:pointer;
+}
+
+@media (max-width: 980px){
+  .vehicle-configurator-v2 .integrated-hero-wrap .hero-card #carImage{transform:none}
+  .vehicle-configurator-v2 .price-dropdown-card{margin-top:0}
+}
