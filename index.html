@@ -35,72 +35,17 @@
     </p>
   </section>
 
-  <!-- HERO / VEHICLE STAGE -->
-  <section class="vehicle-stage">
+  <!-- HERO / INTEGRATED CONFIGURATOR -->
+  <section class="vehicle-stage vehicle-stage-integrated">
     <div class="stage-glow stage-glow-a"></div>
     <div class="stage-glow stage-glow-b"></div>
 
-    <div class="stage-copy">
+    <div class="stage-copy integrated-stage-copy">
       <div class="stage-kicker">Επιλεγμένο όχημα</div>
       <h1 id="heroVehicleName">Βρες το αυτοκίνητό σου</h1>
       <p id="heroVehicleMeta">Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.</p>
 
-      <div class="hero-chips">
-        <span class="hero-chip" id="heroYearChip">Έτος —</span>
-        <span class="hero-chip" id="heroCategoryChip">Αμάξωμα —</span>
-        <span class="hero-chip" id="heroCo2Chip">CO₂ —</span>
-      </div>
-    </div>
-
-    <div class="hero-wrap">
-      <div class="hero-card">
-        <div class="car-shadow"></div>
-        <img
-          id="carImage"
-          src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"
-          alt="Όχημα"
-        >
-      </div>
-    </div>
-
-    <div class="stage-index">01 / CONFIGURE</div>
-  </section>
-
-  <!-- PROGRESS -->
-  <section class="config-progress" aria-label="Βήματα διαμόρφωσης">
-    <div class="progress-item" data-step-field="brandSelect">
-      <span class="progress-number">1</span>
-      <div><strong>Μάρκα</strong><small id="stepBrandValue">Επίλεξε</small></div>
-    </div>
-    <span class="progress-line"></span>
-    <div class="progress-item" data-step-field="yearSelect">
-      <span class="progress-number">2</span>
-      <div><strong>Έτος</strong><small id="stepYearValue">Επίλεξε</small></div>
-    </div>
-    <span class="progress-line"></span>
-    <div class="progress-item" data-step-field="modelSelect">
-      <span class="progress-number">3</span>
-      <div><strong>Μοντέλο</strong><small id="stepModelValue">Επίλεξε</small></div>
-    </div>
-    <span class="progress-line"></span>
-    <div class="progress-item" data-step-field="versionSelect">
-      <span class="progress-number">4</span>
-      <div><strong>Έκδοση</strong><small id="stepVersionValue">Επίλεξε</small></div>
-    </div>
-  </section>
-
-  <div class="workspace">
-
-    <!-- LEFT: FORM -->
-    <section class="panel form-panel">
-      <div class="panel-heading">
-        <div>
-          <span class="panel-kicker">01</span>
-          <h2>Διαμόρφωση οχήματος</h2>
-        </div>
-        <span class="panel-badge">LIVE DATA</span>
-      </div>
-
+      <div class="integrated-config">
       <form id="calcForm" autocomplete="off">
         <div class="form-grid">
 
@@ -256,7 +201,20 @@
           <button type="button" id="resetBtn" class="secondary">Επαναφορά</button>
         </div>
       </form>
-    </section>
+      </div>
+    </div>
+
+    <div class="hero-wrap integrated-hero-wrap">
+      <div class="hero-card">
+        <div class="car-shadow"></div>
+        <img id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" alt="Όχημα">
+      </div>
+    </div>
+
+    <div class="stage-index">01 / CONFIGURE &amp; CALCULATE</div>
+  </section>
+
+  <div class="workspace workspace-results-only">
 
     <!-- RIGHT: STICKY VEHICLE PASSPORT -->
     <aside class="side-column">

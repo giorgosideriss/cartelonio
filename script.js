@@ -96,6 +96,14 @@ DATA_SOURCES["Alfa Romeo"] = Object.fromEntries(
   ])
 );
 
+const ABARTH_AVAILABLE_YEARS = ["2017","2018","2019","2020","2021","2022"];
+DATA_SOURCES["Abarth"] = Object.fromEntries(
+  ABARTH_AVAILABLE_YEARS.map(year => [
+    year,
+    `data/abarth/${year}/${year}.json`
+  ])
+);
+
 
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
