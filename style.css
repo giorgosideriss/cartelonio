@@ -2482,3 +2482,31 @@ button.secondary{
     width:calc(100% + 46px) !important;
   }
 }
+
+/* =========================================================
+   Cartelonio — calculator icon inside primary calculate button
+   Keeps the existing right-side arrow unchanged.
+   ========================================================= */
+.vehicle-configurator-v2 .primary-action .calc-button-label{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.vehicle-configurator-v2 .primary-action .calc-button-icon{
+  width:22px;
+  height:22px;
+  flex:0 0 22px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+/* Existing pseudo-text remains after the label text, while the arrow stays on the right. */
+.vehicle-configurator-v2 .primary-action .calc-button-label > span{
+  white-space:nowrap;
+}
+
