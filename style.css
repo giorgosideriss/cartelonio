@@ -2151,3 +2151,135 @@ button.secondary{
     box-shadow:none !important;
   }
 }
+
+/* =========================================================
+   2026-09-10 — Extras dropdown = Brand dropdown behaviour
+   The Extras menu is now a true floating dropdown, matching
+   the Brand menu: opaque, bordered, scrollable and layered.
+   ========================================================= */
+
+/* Undo the previous in-flow Extras expansion. */
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card:has(.extras-dropdown){
+  height:92px !important;
+  min-height:92px !important;
+  overflow:visible !important;
+  position:relative;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .dropdown-card:has(.extras-dropdown.open){
+  z-index:500 !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown{
+  position:relative !important;
+  display:block;
+  width:100%;
+  min-width:0;
+  z-index:510 !important;
+  overflow:visible !important;
+}
+
+/* Match the Brand menu geometry and behaviour. */
+.vehicle-configurator-v2 .vehicle-fields .extras-panel{
+  position:absolute !important;
+  top:calc(100% + 8px) !important;
+  left:-42px !important;
+  right:0 !important;
+  bottom:auto !important;
+  width:calc(100% + 42px) !important;
+  max-width:none !important;
+  max-height:300px !important;
+  margin:0 !important;
+  padding:7px !important;
+  box-sizing:border-box;
+  display:none !important;
+  overflow-x:hidden !important;
+  overflow-y:auto !important;
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+
+  /* Fully opaque surface — no page content can show through. */
+  background:#111713 !important;
+  background-color:#111713 !important;
+  background-image:none !important;
+  opacity:1 !important;
+  color:#fff !important;
+
+  border:1px solid rgba(255,255,255,.13) !important;
+  border-radius:14px !important;
+  box-shadow:0 25px 58px rgba(0,0,0,.58) !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  isolation:isolate;
+  z-index:520 !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown.open .extras-panel{
+  display:block !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-dropdown:not(.open) .extras-panel{
+  display:none !important;
+}
+
+/* Same clean row treatment as Brand options. */
+.vehicle-configurator-v2 .vehicle-fields .extras-option{
+  position:relative;
+  z-index:1;
+  width:100%;
+  min-height:47px;
+  margin:0;
+  padding:9px 10px !important;
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  border-radius:12px;
+  background:#111713 !important;
+  background-color:#111713 !important;
+  opacity:1 !important;
+  color:#fff !important;
+  box-sizing:border-box;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-option:hover,
+.vehicle-configurator-v2 .vehicle-fields .extras-option:focus-within{
+  background:#1c251f !important;
+}
+
+.vehicle-configurator-v2 .vehicle-fields .extras-option-text{
+  color:#f5f7f3 !important;
+  font-size:13px;
+  font-weight:650;
+  line-height:1.4;
+  white-space:normal !important;
+  overflow-wrap:anywhere;
+}
+
+/* Dark scrollbar, visually consistent with the Brand menu. */
+.vehicle-configurator-v2 .vehicle-fields .extras-panel{
+  scrollbar-width:thin;
+  scrollbar-color:#667069 #111713;
+}
+.vehicle-configurator-v2 .vehicle-fields .extras-panel::-webkit-scrollbar{width:10px}
+.vehicle-configurator-v2 .vehicle-fields .extras-panel::-webkit-scrollbar-track{
+  background:#111713;
+  border-radius:10px;
+}
+.vehicle-configurator-v2 .vehicle-fields .extras-panel::-webkit-scrollbar-thumb{
+  background:#667069;
+  border:2px solid #111713;
+  border-radius:10px;
+}
+
+/* Mobile: keep the same dropdown behaviour, but don't extend beyond viewport. */
+@media (max-width:820px){
+  .vehicle-configurator-v2 .vehicle-fields .dropdown-card:has(.extras-dropdown){
+    height:auto !important;
+    min-height:74px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-fields .extras-panel{
+    left:-42px !important;
+    width:calc(100% + 42px) !important;
+    max-height:280px !important;
+  }
+}
