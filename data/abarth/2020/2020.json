@@ -13,7 +13,7 @@
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 14514.30,
+              "priceNet": 14514.3,
               "priceRetail": 0.0
             }
           ],
@@ -130,7 +130,9 @@
               "name": "ΖΩΝΕΣ ΑΣΦΑΛΕΙΑΣ ΣΕ ΚΟΚΚΙΝΟ ΧΡΩΜΑ",
               "price": 149.7
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-base.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -265,7 +267,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -523.95
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-pista-2020.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -340,7 +344,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -488.83
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-yamaha.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -535,7 +541,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -523.95
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-turismo.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -545,7 +553,7 @@
           "variants": [
             {
               "color": "Standard",
-              "priceNet": 17463.60,
+              "priceNet": 17463.6,
               "priceRetail": 0.0
             }
           ],
@@ -618,7 +626,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -488.83
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-scorpioneoro.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -837,7 +847,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -488.83
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-competizione.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595s4",
@@ -988,9 +1000,13 @@
               "name": "-112,00 9SU 9SV ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΠΡΟΤΕΙΝΟΜΕΝΗ ΕΡΓΑΣΙΑ ΤΟΠΟΘΕΤΗΣΗΣ ΤΑΠΑ ΡΕΖΕΡΒΟΥΑΡ, ΦΙΛΤΡΟ ΑΕΡΑ BMC",
               "price": -17.03
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-esseesse.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/abarth/models/abarth-595-base.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     },
     "695": {
       "category": "Hatchback",
@@ -1072,9 +1088,13 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -458.12
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-695-70th.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/abarth/models/abarth-695-70th.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     },
     "595C": {
       "category": "Hatchback",
@@ -1204,7 +1224,9 @@
               "name": "ΑΝΕΜΟΘΡΑΥΣΤΗΣ",
               "price": 89.82
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595c.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595cs4",
@@ -1383,7 +1405,9 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -488.83
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595c-turismo.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         },
         {
           "factoryCode": "595cs4",
@@ -1634,9 +1658,13 @@
               "name": "ΠΙΣΤΩΤΙΚΟ ΓΙΑ ΑΥΤΟΜΑΤΟ ΚΙΒΩΤΙΟ",
               "price": -488.83
             }
-          ]
+          ],
+          "image": "images/abarth/models/abarth-595-competizione.png",
+          "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
         }
-      ]
+      ],
+      "image": "images/abarth/models/abarth-595c.png",
+      "imageSource": "Cartelonio local Abarth Full HD multi-trim asset pack"
     }
   }
 }
