@@ -1,100 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="el">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#101311">
-  <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#101311" name="theme-color"/>
+<title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="site-header">
-  <div class="shell header-inner">
-    <a class="brand-mark" href="#" aria-label="cartelonio">
-      <span class="brand-mark-dot"></span>
-      <span>cartelonio</span>
-    </a>
-    <div class="header-copy">
-      <span class="eyebrow">Vehicle Import Intelligence</span>
-      <span class="header-note">Υπολογισμός τέλους ταξινόμησης</span>
-    </div>
-  </div>
+<div class="shell header-inner">
+<a aria-label="cartelonio" class="brand-mark" href="#">
+<span class="brand-mark-dot"></span>
+<span>cartelonio</span>
+</a>
+<div class="header-copy">
+<span class="eyebrow">Vehicle Import Intelligence</span>
+<span class="header-note">Υπολογισμός τέλους ταξινόμησης</span>
+</div>
+</div>
 </header>
-
 <main class="shell page">
-
-
-  <section class="intro-block">
-    <span class="intro-kicker">ΥΠΟΛΟΓΙΣΤΗΣ ΤΕΛΟΥΣ ΤΑΞΙΝΟΜΗΣΗΣ</span>
-    <h1>Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</h1>
-    <p>
+<section class="intro-block">
+<span class="intro-kicker">ΥΠΟΛΟΓΙΣΤΗΣ ΤΕΛΟΥΣ ΤΑΞΙΝΟΜΗΣΗΣ</span>
+<h1>Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</h1>
+<p>
       Το Cartelonio είναι ένας υπολογιστής τέλους ταξινόμησης αυτοκινήτων για την Ελλάδα.
       Επίλεξε το όχημά σου ή συμπλήρωσε χειροκίνητα τα απαραίτητα στοιχεία και δες άμεσα
       μια εκτίμηση του τέλους ταξινόμησης.
     </p>
-  </section>
-
-  <!-- HERO / INTEGRATED CONFIGURATOR -->
-  <section class="vehicle-stage vehicle-stage-integrated">
-    <div class="stage-glow stage-glow-a"></div>
-    <div class="stage-glow stage-glow-b"></div>
-
-    <div class="stage-copy integrated-stage-copy">
-      <div class="stage-kicker">Επιλεγμένο όχημα</div>
-      <h1 id="heroVehicleName">Βρες το αυτοκίνητό σου</h1>
-      <p id="heroVehicleMeta">Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.</p>
-
-      <div class="integrated-config">
-      <form id="calcForm" autocomplete="off">
-        <div class="form-grid">
-
-          <div class="field-block">
-            <label>Μάρκα</label>
-            <div class="brand-picker">
-              <button type="button" id="brandButton" class="brand-button">
-                <span id="brandButtonLogo" class="brand-button-logo"></span>
-                <span id="brandButtonLabel" class="brand-button-label">Επιλέξτε μάρκα</span>
-                <span class="brand-button-arrow">⌄</span>
-              </button>
-              <div id="brandMenu" class="brand-menu"></div>
-              <select id="brandSelect" class="brand-select-native" aria-hidden="true" tabindex="-1"></select>
-            </div>
-          </div>
-
-          <div class="field-block">
-            <label for="yearSelect">Έτος</label>
-            <select id="yearSelect"></select>
-          </div>
-
-          <div class="field-block">
-            <label for="modelSelect">Μοντέλο</label>
-            <select id="modelSelect"></select>
-          </div>
-
-          <div class="field-block">
-            <label for="versionSelect">Έκδοση</label>
-            <select id="versionSelect"></select>
-          </div>
-
-          <div class="field-block field-block-wide">
-            <label>Extras</label>
-            <div class="extras-dropdown">
-              <button type="button" id="extrasToggle" class="extras-toggle" disabled>
-                <span class="extras-toggle-label">Δεν υπάρχουν extras</span>
-                <span class="extras-toggle-arrow">⌄</span>
-              </button>
-              <div id="extrasPanel" class="extras-panel"></div>
-            </div>
-          </div>
-
-          <div class="field-block field-block-wide" id="colorRow">
-            <label for="colorSelect">Χρώμα <span class="label-note">μόνο Toyota</span></label>
-            <select id="colorSelect"></select>
-          </div>
-
-          <div class="field-block field-block-wide">
-            <label for="price">
+</section>
+<!-- HERO / INTEGRATED CONFIGURATOR -->
+<section class="vehicle-stage vehicle-stage-integrated vehicle-configurator-v2">
+<div class="stage-glow stage-glow-a"></div>
+<div class="stage-glow stage-glow-b"></div>
+<form autocomplete="off" class="integrated-form" id="calcForm">
+<div class="config-upper">
+<div class="vehicle-config-panel">
+<div class="vehicle-config-intro">
+<div class="stage-kicker">Επιλεγμένο όχημα</div>
+<h1 id="heroVehicleName">Βρες το αυτοκίνητό σου</h1>
+<p id="heroVehicleMeta">Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.</p>
+</div>
+<div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
+<div class="form-grid vehicle-fields">
+<div class="field-block">
+<label><span class="field-icon">🚘</span>Μάρκα</label>
+<div class="brand-picker">
+<button class="brand-button" id="brandButton" type="button">
+<span class="brand-button-logo" id="brandButtonLogo"></span>
+<span class="brand-button-label" id="brandButtonLabel">Επιλέξτε μάρκα</span>
+<span class="brand-button-arrow">⌄</span>
+</button>
+<div class="brand-menu" id="brandMenu"></div>
+<select aria-hidden="true" class="brand-select-native" id="brandSelect" tabindex="-1"></select>
+</div>
+</div>
+<div class="field-block">
+<label for="yearSelect"><span class="field-icon">📅</span>Έτος</label>
+<select id="yearSelect"></select>
+</div>
+<div class="field-block">
+<label for="modelSelect"><span class="field-icon">🚗</span>Μοντέλο</label>
+<select id="modelSelect"></select>
+</div>
+<div class="field-block">
+<label for="versionSelect"><span class="field-icon">⚙️</span>Έκδοση</label>
+<select id="versionSelect"></select>
+</div>
+<div class="field-block field-block-wide">
+<label><span class="field-icon">✦</span>Extras</label>
+<div class="extras-dropdown">
+<button class="extras-toggle" disabled="" id="extrasToggle" type="button">
+<span class="extras-toggle-label">Δεν υπάρχουν extras</span>
+<span class="extras-toggle-arrow">⌄</span>
+</button>
+<div class="extras-panel" id="extrasPanel"></div>
+</div>
+</div>
+<div class="field-block field-block-wide" id="colorRow">
+<label for="colorSelect"><span class="field-icon">🎨</span>Χρώμα <span class="label-note">μόνο Toyota</span></label>
+<select id="colorSelect"></select>
+</div>
+<div class="field-block field-block-wide">
+<label for="price"><span class="field-icon">€</span>
               Τιμή Οχήματος - ΛΤΠΦ (€)
               <span class="tooltip">?
                 <span class="tooltiptext">
@@ -102,150 +92,137 @@
                   Εάν δεν υπάρχει το αυτοκίνητο στη λίστα, μπορείτε να παρακάμψετε τη διαμόρφωση
                   και να συμπληρώσετε χειροκίνητα ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.
                 </span>
-              </span>
-            </label>
-            <div class="required-field-wrap" data-field="price">
-              <input type="number" id="price" required step="0.01" value="" placeholder="0,00">
-              <span class="field-warning" aria-hidden="true">!
+</span>
+</label>
+<div class="required-field-wrap" data-field="price">
+<input id="price" placeholder="0,00" required="" step="0.01" type="number" value=""/>
+<span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ συμπληρώστε την Τιμή Οχήματος - ΛΤΠΦ.</span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-break">
-          <span>02</span>
-          <strong>Στοιχεία ταξινόμησης</strong>
-        </div>
-
-        <div class="form-grid">
-          <div class="field-block field-block-wide" id="categoryRow">
-            <label for="category">Κατηγορία Οχήματος</label>
-            <div class="category-field-wrap">
-              <select id="category"></select>
-              <span id="categoryWarning" class="category-warning" aria-hidden="true">!
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="hero-wrap integrated-hero-wrap">
+<div class="hero-card">
+<div class="car-shadow"></div>
+<img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
+</div>
+</div>
+</div>
+<div class="registration-strip">
+<div class="registration-strip-heading">
+<div><span>02</span><strong>Στοιχεία Ταξινόμησης</strong></div>
+<small>Απαραίτητα στοιχεία για τον υπολογισμό</small>
+</div>
+<div class="form-grid registration-fields">
+<div class="field-block field-block-wide" id="categoryRow">
+<label for="category"><span class="field-icon">🚙</span>Κατηγορία Οχήματος</label>
+<div class="category-field-wrap">
+<select id="category"></select>
+<span aria-hidden="true" class="category-warning" id="categoryWarning">!
                 <span class="category-warning-text">
                   Ο τύπος αμαξώματος δεν μπόρεσε να προσδιοριστεί αυτόματα. Παρακαλώ επιλέξτε τη σωστή κατηγορία οχήματος.
                 </span>
-              </span>
-            </div>
-          </div>
-
-          <div class="field-block">
-            <label for="firstRegDay">Πρώτη Άδεια</label>
-            <div class="required-field-wrap first-reg-wrap" data-field="firstReg">
-              <div class="first-reg-grid">
-                <select id="firstRegDay" aria-label="Ημέρα πρώτης άδειας">
-                  <option value="">Ημέρα</option>
-                </select>
-                <select id="firstRegMonth" aria-label="Μήνας πρώτης άδειας">
-                  <option value="">Μήνας</option>
-                  <option value="1">Ιανουάριος</option>
-                  <option value="2">Φεβρουάριος</option>
-                  <option value="3">Μάρτιος</option>
-                  <option value="4">Απρίλιος</option>
-                  <option value="5">Μάιος</option>
-                  <option value="6">Ιούνιος</option>
-                  <option value="7">Ιούλιος</option>
-                  <option value="8">Αύγουστος</option>
-                  <option value="9">Σεπτέμβριος</option>
-                  <option value="10">Οκτώβριος</option>
-                  <option value="11">Νοέμβριος</option>
-                  <option value="12">Δεκέμβριος</option>
-                </select>
-                <input type="text" id="firstRegYear" value="" placeholder="Έτος" readonly aria-label="Έτος πρώτης άδειας (αυτόματα)">
-              </div>
-              <input type="hidden" id="firstReg" value="">
-              <span class="field-warning" aria-hidden="true">!
+</span>
+</div>
+</div>
+<div class="field-block">
+<label for="firstRegDay"><span class="field-icon">📆</span>Πρώτη Άδεια</label>
+<div class="required-field-wrap first-reg-wrap" data-field="firstReg">
+<div class="first-reg-grid">
+<select aria-label="Ημέρα πρώτης άδειας" id="firstRegDay">
+<option value="">Ημέρα</option>
+</select>
+<select aria-label="Μήνας πρώτης άδειας" id="firstRegMonth">
+<option value="">Μήνας</option>
+<option value="1">Ιανουάριος</option>
+<option value="2">Φεβρουάριος</option>
+<option value="3">Μάρτιος</option>
+<option value="4">Απρίλιος</option>
+<option value="5">Μάιος</option>
+<option value="6">Ιούνιος</option>
+<option value="7">Ιούλιος</option>
+<option value="8">Αύγουστος</option>
+<option value="9">Σεπτέμβριος</option>
+<option value="10">Οκτώβριος</option>
+<option value="11">Νοέμβριος</option>
+<option value="12">Δεκέμβριος</option>
+</select>
+<input aria-label="Έτος πρώτης άδειας (αυτόματα)" id="firstRegYear" placeholder="Έτος" readonly="" type="text" value=""/>
+</div>
+<input id="firstReg" type="hidden" value=""/>
+<span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ επιλέξτε έγκυρη Ημέρα και Μήνα. Το Έτος συμπληρώνεται αυτόματα από τη Χρονολογία του μοντέλου.</span>
-              </span>
-            </div>
-          </div>
-
-          <div class="field-block">
-            <label for="importDate">Ημερομηνία Εισαγωγής</label>
-            <div class="required-field-wrap" data-field="importDate">
-              <input type="date" id="importDate" value="">
-              <span class="field-warning" aria-hidden="true">!
+</span>
+</div>
+</div>
+<div class="field-block">
+<label for="importDate"><span class="field-icon">📥</span>Ημερομηνία Εισαγωγής</label>
+<div class="required-field-wrap" data-field="importDate">
+<input id="importDate" type="date" value=""/>
+<span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ συμπληρώστε την Ημερομηνία Εισαγωγής.</span>
-              </span>
-            </div>
-          </div>
-
-          <div class="field-block">
-            <label for="mileage">Διανυθέντα Χιλιόμετρα</label>
-            <div class="required-field-wrap" data-field="mileage">
-              <input type="number" id="mileage" value="" placeholder="π.χ. 120000">
-              <span class="field-warning" aria-hidden="true">!
+</span>
+</div>
+</div>
+<div class="field-block">
+<label for="mileage"><span class="field-icon">🛣️</span>Διανυθέντα Χιλιόμετρα</label>
+<div class="required-field-wrap" data-field="mileage">
+<input id="mileage" placeholder="π.χ. 120000" type="number" value=""/>
+<span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ συμπληρώστε τα Διανυθέντα Χιλιόμετρα.</span>
-              </span>
-            </div>
-          </div>
-
-          <div class="field-block">
-            <label for="co2">Εκπομπές CO₂ <span class="label-note">g/km</span></label>
-            <div class="required-field-wrap" data-field="co2">
-              <input type="number" id="co2" value="" placeholder="π.χ. 129">
-              <span class="field-warning" aria-hidden="true">!
+</span>
+</div>
+</div>
+<div class="field-block">
+<label for="co2"><span class="field-icon">🌿</span>Εκπομπές CO₂ <span class="label-note">g/km</span></label>
+<div class="required-field-wrap" data-field="co2">
+<input id="co2" placeholder="π.χ. 129" type="number" value=""/>
+<span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ συμπληρώστε τις Εκπομπές CO₂.</span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="actions">
-          <button type="button" id="calcBtn" class="primary-action">
-            <span>Υπολόγισε τέλος</span>
-            <span class="button-arrow">→</span>
-          </button>
-          <button type="button" id="resetBtn" class="secondary">Επαναφορά</button>
-        </div>
-      </form>
-      </div>
-    </div>
-
-    <div class="hero-wrap integrated-hero-wrap">
-      <div class="hero-card">
-        <div class="car-shadow"></div>
-        <img id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png" alt="Όχημα">
-      </div>
-    </div>
-
-    <div class="stage-index">01 / CONFIGURE &amp; CALCULATE</div>
-  </section>
-
-  <div class="workspace workspace-results-only">
-
-    <!-- RESULT -->
-    <aside class="side-column">
-      <div id="carSummary" class="car-summary compatibility-summary"></div>
-
-      <section class="panel result result-panel" id="resultCard" aria-live="polite">
-        <div class="result-heading">
-          <div>
-            <span class="panel-kicker">03</span>
-            <h2>Αποτέλεσμα</h2>
-          </div>
-          <span class="result-icon">€</span>
-        </div>
-        <div id="results">
-          <div class="empty-result">
-            <span class="empty-result-icon">↗</span>
-            <p>Συμπλήρωσε τα στοιχεία και πάτησε <strong>Υπολόγισε τέλος</strong>.</p>
-          </div>
-        </div>
-      </section>
-
-      <footer class="legal">
-        <strong>cartelonio</strong>
-        <p>Έχει καταβληθεί κάθε προσπάθεια για την ορθότητα των πληροφοριών. Η ιστοσελίδα δεν αναλαμβάνει νομική ευθύνη για τυχόν σφάλματα, παραλείψεις ή ανακριβείς πληροφορίες.</p>
-        <span>Giorgos Sideris</span>
-      </footer>
-    </aside>
-
-  </div>
+</span>
+</div>
+</div>
+</div>
+<div class="actions">
+<button class="primary-action" id="calcBtn" type="button">
+<span>Υπολόγισε τέλος</span>
+<span class="button-arrow">→</span>
+</button>
+<button class="secondary" id="resetBtn" type="button">Επαναφορά</button>
+</div>
+</div>
+</form>
+<div class="stage-index">01 / CONFIGURE &amp; CALCULATE</div>
+</section>
+<div class="workspace workspace-results-only">
+<!-- RESULT -->
+<aside class="side-column">
+<div class="car-summary compatibility-summary" id="carSummary"></div>
+<section aria-live="polite" class="panel result result-panel" id="resultCard">
+<div class="result-heading">
+<div>
+<span class="panel-kicker">03</span>
+<h2>Αποτέλεσμα</h2>
+</div>
+<span class="result-icon">€</span>
+</div>
+<div id="results">
+<div class="empty-result">
+<span class="empty-result-icon">↗</span>
+<p>Συμπλήρωσε τα στοιχεία και πάτησε <strong>Υπολόγισε τέλος</strong>.</p>
+</div>
+</div>
+</section>
+<footer class="legal">
+<strong>cartelonio</strong>
+<p>Έχει καταβληθεί κάθε προσπάθεια για την ορθότητα των πληροφοριών. Η ιστοσελίδα δεν αναλαμβάνει νομική ευθύνη για τυχόν σφάλματα, παραλείψεις ή ανακριβείς πληροφορίες.</p>
+<span>Giorgos Sideris</span>
+</footer>
+</aside>
+</div>
 </main>
-
 <script src="script.js"></script>
 </body>
 </html>
