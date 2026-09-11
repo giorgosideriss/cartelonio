@@ -2677,7 +2677,7 @@
           "factoryCode": "8WDRXA",
           "code": "8WDRXA",
           "name": "RS4 Avant FSI quattro tiptronic",
-          "co2": null,
+          "co2": 221,
           "variants": [
             {
               "color": "Standard",
@@ -2790,7 +2790,7 @@
           "factoryCode": "F5PRXA",
           "code": "F5PRXA",
           "name": "RS 5 Coupé TFSI quattro tiptronic",
-          "co2": null,
+          "co2": 210,
           "variants": [
             {
               "color": "Standard",
@@ -2809,7 +2809,7 @@
           "factoryCode": "F5FCZG",
           "code": "F5FCZG",
           "name": "A5 SB S line 40 TFSI MHEV S tronic",
-          "co2": null,
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -2823,7 +2823,7 @@
           "factoryCode": "F5FCJG",
           "code": "F5FCJG",
           "name": "A5 SB S line 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2837,7 +2837,7 @@
           "factoryCode": "F5FCUG",
           "code": "F5FCUG",
           "name": "A5 SB S line 40 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -2851,7 +2851,7 @@
           "factoryCode": "F5FCUY",
           "code": "F5FCUY",
           "name": "A5 SB S line 40 TDI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 138,
           "variants": [
             {
               "color": "Standard",
@@ -2870,7 +2870,7 @@
           "factoryCode": "4A2BDG",
           "code": "4A2BDG",
           "name": "A6 Sport 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 138,
           "variants": [
             {
               "color": "Standard",
@@ -2884,7 +2884,7 @@
           "factoryCode": "4A2CDG",
           "code": "4A2CDG",
           "name": "A6 Design 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 137,
           "variants": [
             {
               "color": "Standard",
@@ -2898,7 +2898,7 @@
           "factoryCode": "4A2BIG",
           "code": "4A2BIG",
           "name": "A6 Sport 40 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -2912,7 +2912,7 @@
           "factoryCode": "4A2CIG",
           "code": "4A2CIG",
           "name": "A6 Design 40 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -2926,7 +2926,7 @@
           "factoryCode": "4A2BIY",
           "code": "4A2BIY",
           "name": "A6 Sport 40 TDI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 155,
           "variants": [
             {
               "color": "Standard",
@@ -2940,7 +2940,7 @@
           "factoryCode": "4A2CIY",
           "code": "4A2CIY",
           "name": "A6 Design 40 TDI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 154,
           "variants": [
             {
               "color": "Standard",
@@ -2959,7 +2959,7 @@
           "factoryCode": "4A5RCA",
           "code": "4A5RCA",
           "name": "RS6 Avant TFSI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 281,
           "variants": [
             {
               "color": "Standard",
@@ -2978,7 +2978,7 @@
           "factoryCode": "F3BAZC",
           "code": "F3BAZC",
           "name": "Q3 35 TFSI 6 ταχύτητες",
-          "co2": null,
+          "co2": 149,
           "variants": [
             {
               "color": "Standard",
@@ -2992,7 +2992,7 @@
           "factoryCode": "F3BCZC",
           "code": "F3BCZC",
           "name": "Q3 S line 35 TFSI 6 ταχύτητες",
-          "co2": null,
+          "co2": 153,
           "variants": [
             {
               "color": "Standard",
@@ -3006,7 +3006,7 @@
           "factoryCode": "F3BBZG",
           "code": "F3BBZG",
           "name": "Q3 Advanced 35 TFSI MHEV S tronic",
-          "co2": null,
+          "co2": 154,
           "variants": [
             {
               "color": "Standard",
@@ -3020,7 +3020,7 @@
           "factoryCode": "F3BCZG",
           "code": "F3BCZG",
           "name": "Q3 S line 35 TFSI MHEV S tronic",
-          "co2": null,
+          "co2": 155,
           "variants": [
             {
               "color": "Standard",
@@ -3034,7 +3034,7 @@
           "factoryCode": "F3BARG",
           "code": "F3BARG",
           "name": "Q3 Business 35 TDI S tronic",
-          "co2": null,
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -3048,7 +3048,7 @@
           "factoryCode": "F3BARG",
           "code": "F3BARG",
           "name": "Q3 Comfort 35 TDI S tronic",
-          "co2": null,
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -3062,7 +3062,7 @@
           "factoryCode": "F3BBRG",
           "code": "F3BBRG",
           "name": "Q3 Advanced 35 TDI S tronic",
-          "co2": null,
+          "co2": 144,
           "variants": [
             {
               "color": "Standard",
@@ -3076,7 +3076,7 @@
           "factoryCode": "F3BCRG",
           "code": "F3BCRG",
           "name": "Q3 S line 35 TDI S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -3090,7 +3090,7 @@
           "factoryCode": "F3BALY",
           "code": "F3BALY",
           "name": "Q3 40 TDI quattro S tronic",
-          "co2": null,
+          "co2": 160,
           "variants": [
             {
               "color": "Standard",
@@ -3104,7 +3104,7 @@
           "factoryCode": "F3BBLY",
           "code": "F3BBLY",
           "name": "Q3 Advanced 40 TDI quattro S tronic",
-          "co2": null,
+          "co2": 162,
           "variants": [
             {
               "color": "Standard",
@@ -3118,7 +3118,7 @@
           "factoryCode": "F3BCLY",
           "code": "F3BCLY",
           "name": "Q3 S line 40 TDI quattro S tronic",
-          "co2": null,
+          "co2": 163,
           "variants": [
             {
               "color": "Standard",
@@ -3132,7 +3132,7 @@
           "factoryCode": "F3BA8Y",
           "code": "F3BA8Y",
           "name": "Q3 45 TFSI quattro S tronic",
-          "co2": null,
+          "co2": 194,
           "variants": [
             {
               "color": "Standard",
@@ -3146,7 +3146,7 @@
           "factoryCode": "F3BB8Y",
           "code": "F3BB8Y",
           "name": "Q3 Advanced 45 TFSI quattro S tronic",
-          "co2": null,
+          "co2": 194,
           "variants": [
             {
               "color": "Standard",
@@ -3160,7 +3160,7 @@
           "factoryCode": "F3BC8Y",
           "code": "F3BC8Y",
           "name": "Q3 S line 45 TFSI quattro S tronic",
-          "co2": null,
+          "co2": 196,
           "variants": [
             {
               "color": "Standard",
@@ -3179,7 +3179,7 @@
           "factoryCode": "F3NAZC",
           "code": "F3NAZC",
           "name": "Q3 SB 35 TFSI 6 ταχύτητες",
-          "co2": null,
+          "co2": 154,
           "variants": [
             {
               "color": "Standard",
@@ -3193,7 +3193,7 @@
           "factoryCode": "F3NAZG",
           "code": "F3NAZG",
           "name": "Q3 SB 35 TFSI MHEV S tronic",
-          "co2": null,
+          "co2": 156,
           "variants": [
             {
               "color": "Standard",
@@ -3207,7 +3207,7 @@
           "factoryCode": "F3NCZG",
           "code": "F3NCZG",
           "name": "Q3 SB S line 35 TFSI MHEV S tronic",
-          "co2": null,
+          "co2": 155,
           "variants": [
             {
               "color": "Standard",
@@ -3221,7 +3221,7 @@
           "factoryCode": "F3NARG",
           "code": "F3NARG",
           "name": "Q3 SB 35 TDI S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -3235,7 +3235,7 @@
           "factoryCode": "F3NCRG",
           "code": "F3NCRG",
           "name": "Q3 SB S line 35 TDI S tronic",
-          "co2": null,
+          "co2": 145,
           "variants": [
             {
               "color": "Standard",
@@ -3249,7 +3249,7 @@
           "factoryCode": "F3NALY",
           "code": "F3NALY",
           "name": "Q3 SB 40 TDI quattro S tronic",
-          "co2": null,
+          "co2": 165,
           "variants": [
             {
               "color": "Standard",
@@ -3263,7 +3263,7 @@
           "factoryCode": "F3NCLY",
           "code": "F3NCLY",
           "name": "Q3 SB S line 40 TDI quattro S tronic",
-          "co2": null,
+          "co2": 176,
           "variants": [
             {
               "color": "Standard",
@@ -3277,7 +3277,7 @@
           "factoryCode": "F3NA8Y",
           "code": "F3NA8Y",
           "name": "Q3 SB 45 TFSI quattro S tronic",
-          "co2": null,
+          "co2": 196,
           "variants": [
             {
               "color": "Standard",
@@ -3291,7 +3291,7 @@
           "factoryCode": "F3NC8Y",
           "code": "F3NC8Y",
           "name": "Q3 SB S line 45 TFSI quattro S tronic",
-          "co2": null,
+          "co2": 195,
           "variants": [
             {
               "color": "Standard",
@@ -3310,7 +3310,7 @@
           "factoryCode": "FYGAJG",
           "code": "FYGAJG",
           "name": "Q5 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 147,
           "variants": [
             {
               "color": "Standard",
@@ -3324,7 +3324,7 @@
           "factoryCode": "FYGBJG",
           "code": "FYGBJG",
           "name": "Q5 Advanced 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 147,
           "variants": [
             {
               "color": "Standard",
@@ -3338,7 +3338,7 @@
           "factoryCode": "FYGCJG",
           "code": "FYGCJG",
           "name": "Q5 S line 35 TDI MHEV S tronic",
-          "co2": null,
+          "co2": 147,
           "variants": [
             {
               "color": "Standard",
@@ -3352,7 +3352,7 @@
           "factoryCode": "FYGAUY",
           "code": "FYGAUY",
           "name": "Q5 40 TDI MHEV quattro Stronic",
-          "co2": null,
+          "co2": 165,
           "variants": [
             {
               "color": "Standard",
@@ -3366,7 +3366,7 @@
           "factoryCode": "FYGBUY",
           "code": "FYGBUY",
           "name": "Q5 Advanced 40 TDI MHEV quattro Stronic",
-          "co2": null,
+          "co2": 165,
           "variants": [
             {
               "color": "Standard",
@@ -3380,7 +3380,7 @@
           "factoryCode": "FYGCUY",
           "code": "FYGCUY",
           "name": "Q5 S line 40 TDI MHEV quattro Stronic",
-          "co2": null,
+          "co2": 165,
           "variants": [
             {
               "color": "Standard",
@@ -3394,7 +3394,7 @@
           "factoryCode": "FYGAAY",
           "code": "FYGAAY",
           "name": "Q5 45 TFSI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 191,
           "variants": [
             {
               "color": "Standard",
@@ -3408,7 +3408,7 @@
           "factoryCode": "FYGBAY",
           "code": "FYGBAY",
           "name": "Q5 Advanced 45 TFSI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 190,
           "variants": [
             {
               "color": "Standard",
@@ -3422,7 +3422,7 @@
           "factoryCode": "FYGCAY",
           "code": "FYGCAY",
           "name": "Q5 S line 45 TFSI MHEV quattro S tronic",
-          "co2": null,
+          "co2": 191,
           "variants": [
             {
               "color": "Standard",
@@ -3441,7 +3441,7 @@
           "factoryCode": "4MGAX2",
           "code": "4MGAX2",
           "name": "Q7 55 TFSI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 234,
           "variants": [
             {
               "color": "Standard",
@@ -3455,7 +3455,7 @@
           "factoryCode": "4MGCX2",
           "code": "4MGCX2",
           "name": "Q7 S line 55 TFSI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 233,
           "variants": [
             {
               "color": "Standard",
@@ -3469,7 +3469,7 @@
           "factoryCode": "4MGAN2",
           "code": "4MGAN2",
           "name": "Q7 50 TDI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 209,
           "variants": [
             {
               "color": "Standard",
@@ -3483,7 +3483,7 @@
           "factoryCode": "4MGCN2",
           "code": "4MGCN2",
           "name": "Q7 S line 50 TDI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 208,
           "variants": [
             {
               "color": "Standard",
@@ -3502,7 +3502,7 @@
           "factoryCode": "4MN0X2",
           "code": "4MN0X2",
           "name": "Q8 55 TFSI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 243,
           "variants": [
             {
               "color": "Standard",
@@ -3516,7 +3516,7 @@
           "factoryCode": "4MN0N2",
           "code": "4MN0N2",
           "name": "Q8 50 TDI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 219,
           "variants": [
             {
               "color": "Standard",
@@ -3530,7 +3530,7 @@
           "factoryCode": "4MNRV2",
           "code": "4MNRV2",
           "name": "RS Q8 TFSI MHEV quattro tiptronic",
-          "co2": null,
+          "co2": 311,
           "variants": [
             {
               "color": "Standard",
