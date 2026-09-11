@@ -9,6 +9,7 @@
           "factoryCode": "GBAAT4",
           "code": "GBAAT4",
           "name": "A1 SB 25 TFSI 5 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 127,
           "variants": [
             {
@@ -23,6 +24,7 @@
           "factoryCode": "GBABNC",
           "code": "GBABNC",
           "name": "A1 SB Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 130,
           "variants": [
             {
@@ -37,6 +39,7 @@
           "factoryCode": "GBABMC",
           "code": "GBABMC",
           "name": "A1 SB Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 127,
           "variants": [
             {
@@ -51,6 +54,7 @@
           "factoryCode": "GBACMC",
           "code": "GBACMC",
           "name": "A1 SB S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 128,
           "variants": [
             {
@@ -65,6 +69,7 @@
           "factoryCode": "GBABMG",
           "code": "GBABMG",
           "name": "A1 SB Advanced 30 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 135,
           "variants": [
             {
@@ -79,6 +84,7 @@
           "factoryCode": "GBACMG",
           "code": "GBACMG",
           "name": "A1 SB S line 30 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 136,
           "variants": [
             {
@@ -93,6 +99,7 @@
           "factoryCode": "GBABKG",
           "code": "GBABKG",
           "name": "A1 SB Advanced 35 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 141,
           "variants": [
             {
@@ -107,6 +114,7 @@
           "factoryCode": "GBACKG",
           "code": "GBACKG",
           "name": "A1 SB S line 35 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 142,
           "variants": [
             {
@@ -121,6 +129,7 @@
           "factoryCode": "GBACLX",
           "code": "GBACLX",
           "name": "A1 SB S line 40 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 158,
           "variants": [
             {
@@ -140,6 +149,7 @@
           "factoryCode": "GBH0KC",
           "code": "GBH0KC",
           "name": "A1 Citycarver 35 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-citycarver.png",
           "co2": 135,
           "variants": [
             {
@@ -587,6 +597,7 @@
           "factoryCode": "GBH0KG",
           "code": "GBH0KG",
           "name": "A1 Citycarver 35 TFSI S tronic",
+          "image": "audi-a1-gb-citycarver.png",
           "co2": 146,
           "variants": [
             {
@@ -1047,6 +1058,7 @@
           "factoryCode": "8YAAKC",
           "code": "8YAAKC",
           "name": "A3 SB 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 124,
           "variants": [
             {
@@ -1061,6 +1073,7 @@
           "factoryCode": "8YABKC",
           "code": "8YABKC",
           "name": "A3 SB Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 127,
           "variants": [
             {
@@ -1075,6 +1088,7 @@
           "factoryCode": "8YACKC",
           "code": "8YACKC",
           "name": "A3 SB S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 126,
           "variants": [
             {
@@ -1089,6 +1103,7 @@
           "factoryCode": "8YAAKG",
           "code": "8YAAKG",
           "name": "A3 SB 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 116,
           "variants": [
             {
@@ -1103,6 +1118,7 @@
           "factoryCode": "8YABKG",
           "code": "8YABKG",
           "name": "A3 SB Advanced 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 120,
           "variants": [
             {
@@ -1117,6 +1133,7 @@
           "factoryCode": "8YACKG",
           "code": "8YACKG",
           "name": "A3 SB S line 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 119,
           "variants": [
             {
@@ -1131,6 +1148,7 @@
           "factoryCode": "8YAAZG",
           "code": "8YAAZG",
           "name": "A3 SB 35 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 128,
           "variants": [
             {
@@ -1145,6 +1163,7 @@
           "factoryCode": "8YABZG",
           "code": "8YABZG",
           "name": "A3 SB Advanced 35 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 133,
           "variants": [
             {
@@ -1159,6 +1178,7 @@
           "factoryCode": "8YACZG",
           "code": "8YACZG",
           "name": "A3 SB S line 35 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 132,
           "variants": [
             {
@@ -1173,6 +1193,7 @@
           "factoryCode": "8YAAPX",
           "code": "8YAAPX",
           "name": "A3 SB 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 24,
           "variants": [
             {
@@ -1187,6 +1208,7 @@
           "factoryCode": "8YABPX",
           "code": "8YABPX",
           "name": "A3 SB Advanced 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 25,
           "variants": [
             {
@@ -1201,6 +1223,7 @@
           "factoryCode": "8YACPX",
           "code": "8YACPX",
           "name": "A3 SB S line 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": 24,
           "variants": [
             {
@@ -1220,6 +1243,7 @@
           "factoryCode": "8YAS3Y",
           "code": "8YAS3Y",
           "name": "S3 SB TFSI quattro S tronic",
+          "image": "audi-s3-8y-sportback.png",
           "co2": 183,
           "variants": [
             {
@@ -1688,6 +1712,7 @@
           "factoryCode": "8YSAKC",
           "code": "8YSAKC",
           "name": "A3 Sport Sedan 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 120,
           "variants": [
             {
@@ -1702,6 +1727,7 @@
           "factoryCode": "8YSBKC",
           "code": "8YSBKC",
           "name": "A3 Sport Sedan Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 123,
           "variants": [
             {
@@ -1716,6 +1742,7 @@
           "factoryCode": "8YSCKC",
           "code": "8YSCKC",
           "name": "A3 Sport Sedan S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 122,
           "variants": [
             {
@@ -1730,6 +1757,7 @@
           "factoryCode": "8YSAKG",
           "code": "8YSAKG",
           "name": "A3 Sport Sedan 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 113,
           "variants": [
             {
@@ -1744,6 +1772,7 @@
           "factoryCode": "8YSBKG",
           "code": "8YSBKG",
           "name": "A3 Sport Sedan Advanced 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 117,
           "variants": [
             {
@@ -1758,6 +1787,7 @@
           "factoryCode": "8YSCKG",
           "code": "8YSCKG",
           "name": "A3 Sport Sedan S line 30 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 115,
           "variants": [
             {
@@ -1772,6 +1802,7 @@
           "factoryCode": "8YSAZG",
           "code": "8YSAZG",
           "name": "A3 Sport Sedan TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 125,
           "variants": [
             {
@@ -1786,6 +1817,7 @@
           "factoryCode": "8YSBZG",
           "code": "8YSBZG",
           "name": "A3 Sport Sedan Advanced 35 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 129,
           "variants": [
             {
@@ -1800,6 +1832,7 @@
           "factoryCode": "8YSCZG",
           "code": "8YSCZG",
           "name": "A3 Sport Sedan S line 35 TFSI MHEV S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": 128,
           "variants": [
             {
@@ -1819,6 +1852,7 @@
           "factoryCode": "8WCA7G",
           "code": "8WCA7G",
           "name": "A4 35 TFSI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 137,
           "variants": [
             {
@@ -2518,6 +2552,7 @@
           "factoryCode": "8WCC7G",
           "code": "8WCC7G",
           "name": "A4 S line 35 TFSI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 143,
           "variants": [
             {
@@ -2532,6 +2567,7 @@
           "factoryCode": "8WCAZG",
           "code": "8WCAZG",
           "name": "A4 40 TFSI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 141,
           "variants": [
             {
@@ -2546,6 +2582,7 @@
           "factoryCode": "8WCCZG",
           "code": "8WCCZG",
           "name": "A4 S line 40 TFSI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 144,
           "variants": [
             {
@@ -2560,6 +2597,7 @@
           "factoryCode": "8WCAYG",
           "code": "8WCAYG",
           "name": "A4 30 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 121,
           "variants": [
             {
@@ -2574,6 +2612,7 @@
           "factoryCode": "8WCCYG",
           "code": "8WCCYG",
           "name": "A4 S line 30 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 126,
           "variants": [
             {
@@ -2588,6 +2627,7 @@
           "factoryCode": "8WCAJG",
           "code": "8WCAJG",
           "name": "A4 35 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 122,
           "variants": [
             {
@@ -2602,6 +2642,7 @@
           "factoryCode": "8WCCJG",
           "code": "8WCCJG",
           "name": "A4 S line 35 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 127,
           "variants": [
             {
@@ -2616,6 +2657,7 @@
           "factoryCode": "8WCAUG",
           "code": "8WCAUG",
           "name": "A4 40 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 133,
           "variants": [
             {
@@ -2630,6 +2672,7 @@
           "factoryCode": "8WCCUG",
           "code": "8WCCUG",
           "name": "A4 S line 40 TDI MHEV S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 136,
           "variants": [
             {
@@ -2644,6 +2687,7 @@
           "factoryCode": "8WCAUY",
           "code": "8WCAUY",
           "name": "A4 40 TDI MHEV quattro S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 135,
           "variants": [
             {
@@ -2658,6 +2702,7 @@
           "factoryCode": "8WCCUY",
           "code": "8WCCUY",
           "name": "A4 S line 40 TDI MHEV quattro S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": 137,
           "variants": [
             {
@@ -2677,7 +2722,8 @@
           "factoryCode": "8WDRXA",
           "code": "8WDRXA",
           "name": "RS4 Avant FSI quattro tiptronic",
-          "co2": 221,
+          "image": "audi-rs4-b9-avant-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2696,6 +2742,7 @@
           "factoryCode": "8WJ0AY",
           "code": "8WJ0AY",
           "name": "A4 Allroad 45 TFSI MHEV quattro S tronic",
+          "image": "audi-a4-b9-allroad-facelift.png",
           "co2": 182,
           "variants": [
             {
@@ -2710,6 +2757,7 @@
           "factoryCode": "8WJ0UY",
           "code": "8WJ0UY",
           "name": "A4 Allroad 40 TDI MHEV quattro S tronic",
+          "image": "audi-a4-b9-allroad-facelift.png",
           "co2": 146,
           "variants": [
             {
@@ -2729,6 +2777,7 @@
           "factoryCode": "F5PCZG",
           "code": "F5PCZG",
           "name": "A5 Coupé S line 40 TFSI MHEV S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": 141,
           "variants": [
             {
@@ -2743,6 +2792,7 @@
           "factoryCode": "F5PCJG",
           "code": "F5PCJG",
           "name": "A5 Coupé S line 35 TDI MHEV S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": 125,
           "variants": [
             {
@@ -2757,6 +2807,7 @@
           "factoryCode": "F5PCUG",
           "code": "F5PCUG",
           "name": "A5 Coupé S line 40 TDI MHEV S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": 133,
           "variants": [
             {
@@ -2771,6 +2822,7 @@
           "factoryCode": "F5PCUY",
           "code": "F5PCUY",
           "name": "A5 Coupé S line 40 TDI MHEV quattro S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": 135,
           "variants": [
             {
@@ -2790,7 +2842,8 @@
           "factoryCode": "F5PRXA",
           "code": "F5PRXA",
           "name": "RS 5 Coupé TFSI quattro tiptronic",
-          "co2": 210,
+          "image": "audi-rs5-f5-coupe-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2809,7 +2862,8 @@
           "factoryCode": "F5FCZG",
           "code": "F5FCZG",
           "name": "A5 SB S line 40 TFSI MHEV S tronic",
-          "co2": 144,
+          "image": "audi-a5-f5-sportback-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2823,7 +2877,8 @@
           "factoryCode": "F5FCJG",
           "code": "F5FCJG",
           "name": "A5 SB S line 35 TDI MHEV S tronic",
-          "co2": 137,
+          "image": "audi-a5-f5-sportback-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2837,7 +2892,8 @@
           "factoryCode": "F5FCUG",
           "code": "F5FCUG",
           "name": "A5 SB S line 40 TDI MHEV S tronic",
-          "co2": 145,
+          "image": "audi-a5-f5-sportback-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2851,7 +2907,8 @@
           "factoryCode": "F5FCUY",
           "code": "F5FCUY",
           "name": "A5 SB S line 40 TDI MHEV quattro S tronic",
-          "co2": 138,
+          "image": "audi-a5-f5-sportback-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2870,7 +2927,8 @@
           "factoryCode": "4A2BDG",
           "code": "4A2BDG",
           "name": "A6 Sport 35 TDI MHEV S tronic",
-          "co2": 138,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2884,7 +2942,8 @@
           "factoryCode": "4A2CDG",
           "code": "4A2CDG",
           "name": "A6 Design 35 TDI MHEV S tronic",
-          "co2": 137,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2898,7 +2957,8 @@
           "factoryCode": "4A2BIG",
           "code": "4A2BIG",
           "name": "A6 Sport 40 TDI MHEV S tronic",
-          "co2": 145,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2912,7 +2972,8 @@
           "factoryCode": "4A2CIG",
           "code": "4A2CIG",
           "name": "A6 Design 40 TDI MHEV S tronic",
-          "co2": 145,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2926,7 +2987,8 @@
           "factoryCode": "4A2BIY",
           "code": "4A2BIY",
           "name": "A6 Sport 40 TDI MHEV quattro S tronic",
-          "co2": 155,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2940,7 +3002,8 @@
           "factoryCode": "4A2CIY",
           "code": "4A2CIY",
           "name": "A6 Design 40 TDI MHEV quattro S tronic",
-          "co2": 154,
+          "image": "audi-a6-c8-sedan.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2959,7 +3022,8 @@
           "factoryCode": "4A5RCA",
           "code": "4A5RCA",
           "name": "RS6 Avant TFSI MHEV quattro tiptronic",
-          "co2": 281,
+          "image": "audi-rs6-c8-avant.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2978,7 +3042,8 @@
           "factoryCode": "F3BAZC",
           "code": "F3BAZC",
           "name": "Q3 35 TFSI 6 ταχύτητες",
-          "co2": 149,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -2992,7 +3057,8 @@
           "factoryCode": "F3BCZC",
           "code": "F3BCZC",
           "name": "Q3 S line 35 TFSI 6 ταχύτητες",
-          "co2": 153,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3006,7 +3072,8 @@
           "factoryCode": "F3BBZG",
           "code": "F3BBZG",
           "name": "Q3 Advanced 35 TFSI MHEV S tronic",
-          "co2": 154,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3020,7 +3087,8 @@
           "factoryCode": "F3BCZG",
           "code": "F3BCZG",
           "name": "Q3 S line 35 TFSI MHEV S tronic",
-          "co2": 155,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3034,7 +3102,8 @@
           "factoryCode": "F3BARG",
           "code": "F3BARG",
           "name": "Q3 Business 35 TDI S tronic",
-          "co2": 144,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3048,7 +3117,8 @@
           "factoryCode": "F3BARG",
           "code": "F3BARG",
           "name": "Q3 Comfort 35 TDI S tronic",
-          "co2": 144,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3062,7 +3132,8 @@
           "factoryCode": "F3BBRG",
           "code": "F3BBRG",
           "name": "Q3 Advanced 35 TDI S tronic",
-          "co2": 144,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3076,7 +3147,8 @@
           "factoryCode": "F3BCRG",
           "code": "F3BCRG",
           "name": "Q3 S line 35 TDI S tronic",
-          "co2": 145,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3090,7 +3162,8 @@
           "factoryCode": "F3BALY",
           "code": "F3BALY",
           "name": "Q3 40 TDI quattro S tronic",
-          "co2": 160,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3104,7 +3177,8 @@
           "factoryCode": "F3BBLY",
           "code": "F3BBLY",
           "name": "Q3 Advanced 40 TDI quattro S tronic",
-          "co2": 162,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3118,7 +3192,8 @@
           "factoryCode": "F3BCLY",
           "code": "F3BCLY",
           "name": "Q3 S line 40 TDI quattro S tronic",
-          "co2": 163,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3132,7 +3207,8 @@
           "factoryCode": "F3BA8Y",
           "code": "F3BA8Y",
           "name": "Q3 45 TFSI quattro S tronic",
-          "co2": 194,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3146,7 +3222,8 @@
           "factoryCode": "F3BB8Y",
           "code": "F3BB8Y",
           "name": "Q3 Advanced 45 TFSI quattro S tronic",
-          "co2": 194,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3160,7 +3237,8 @@
           "factoryCode": "F3BC8Y",
           "code": "F3BC8Y",
           "name": "Q3 S line 45 TFSI quattro S tronic",
-          "co2": 196,
+          "image": "audi-q3-f3.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3179,7 +3257,8 @@
           "factoryCode": "F3NAZC",
           "code": "F3NAZC",
           "name": "Q3 SB 35 TFSI 6 ταχύτητες",
-          "co2": 154,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3193,7 +3272,8 @@
           "factoryCode": "F3NAZG",
           "code": "F3NAZG",
           "name": "Q3 SB 35 TFSI MHEV S tronic",
-          "co2": 156,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3207,7 +3287,8 @@
           "factoryCode": "F3NCZG",
           "code": "F3NCZG",
           "name": "Q3 SB S line 35 TFSI MHEV S tronic",
-          "co2": 155,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3221,7 +3302,8 @@
           "factoryCode": "F3NARG",
           "code": "F3NARG",
           "name": "Q3 SB 35 TDI S tronic",
-          "co2": 145,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3235,7 +3317,8 @@
           "factoryCode": "F3NCRG",
           "code": "F3NCRG",
           "name": "Q3 SB S line 35 TDI S tronic",
-          "co2": 145,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3249,7 +3332,8 @@
           "factoryCode": "F3NALY",
           "code": "F3NALY",
           "name": "Q3 SB 40 TDI quattro S tronic",
-          "co2": 165,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3263,7 +3347,8 @@
           "factoryCode": "F3NCLY",
           "code": "F3NCLY",
           "name": "Q3 SB S line 40 TDI quattro S tronic",
-          "co2": 176,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3277,7 +3362,8 @@
           "factoryCode": "F3NA8Y",
           "code": "F3NA8Y",
           "name": "Q3 SB 45 TFSI quattro S tronic",
-          "co2": 196,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3291,7 +3377,8 @@
           "factoryCode": "F3NC8Y",
           "code": "F3NC8Y",
           "name": "Q3 SB S line 45 TFSI quattro S tronic",
-          "co2": 195,
+          "image": "audi-q3-f3-sportback.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3310,7 +3397,8 @@
           "factoryCode": "FYGAJG",
           "code": "FYGAJG",
           "name": "Q5 35 TDI MHEV S tronic",
-          "co2": 147,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3324,7 +3412,8 @@
           "factoryCode": "FYGBJG",
           "code": "FYGBJG",
           "name": "Q5 Advanced 35 TDI MHEV S tronic",
-          "co2": 147,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3338,7 +3427,8 @@
           "factoryCode": "FYGCJG",
           "code": "FYGCJG",
           "name": "Q5 S line 35 TDI MHEV S tronic",
-          "co2": 147,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3352,7 +3442,8 @@
           "factoryCode": "FYGAUY",
           "code": "FYGAUY",
           "name": "Q5 40 TDI MHEV quattro Stronic",
-          "co2": 165,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3366,7 +3457,8 @@
           "factoryCode": "FYGBUY",
           "code": "FYGBUY",
           "name": "Q5 Advanced 40 TDI MHEV quattro Stronic",
-          "co2": 165,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3380,7 +3472,8 @@
           "factoryCode": "FYGCUY",
           "code": "FYGCUY",
           "name": "Q5 S line 40 TDI MHEV quattro Stronic",
-          "co2": 165,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3394,7 +3487,8 @@
           "factoryCode": "FYGAAY",
           "code": "FYGAAY",
           "name": "Q5 45 TFSI MHEV quattro S tronic",
-          "co2": 191,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3408,7 +3502,8 @@
           "factoryCode": "FYGBAY",
           "code": "FYGBAY",
           "name": "Q5 Advanced 45 TFSI MHEV quattro S tronic",
-          "co2": 190,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3422,7 +3517,8 @@
           "factoryCode": "FYGCAY",
           "code": "FYGCAY",
           "name": "Q5 S line 45 TFSI MHEV quattro S tronic",
-          "co2": 191,
+          "image": "audi-q5-fy-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3441,7 +3537,8 @@
           "factoryCode": "4MGAX2",
           "code": "4MGAX2",
           "name": "Q7 55 TFSI MHEV quattro tiptronic",
-          "co2": 234,
+          "image": "audi-q7-4m-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3455,7 +3552,8 @@
           "factoryCode": "4MGCX2",
           "code": "4MGCX2",
           "name": "Q7 S line 55 TFSI MHEV quattro tiptronic",
-          "co2": 233,
+          "image": "audi-q7-4m-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3469,7 +3567,8 @@
           "factoryCode": "4MGAN2",
           "code": "4MGAN2",
           "name": "Q7 50 TDI MHEV quattro tiptronic",
-          "co2": 209,
+          "image": "audi-q7-4m-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3483,7 +3582,8 @@
           "factoryCode": "4MGCN2",
           "code": "4MGCN2",
           "name": "Q7 S line 50 TDI MHEV quattro tiptronic",
-          "co2": 208,
+          "image": "audi-q7-4m-facelift.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3502,7 +3602,8 @@
           "factoryCode": "4MN0X2",
           "code": "4MN0X2",
           "name": "Q8 55 TFSI MHEV quattro tiptronic",
-          "co2": 243,
+          "image": "audi-q8-4m.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3516,7 +3617,8 @@
           "factoryCode": "4MN0N2",
           "code": "4MN0N2",
           "name": "Q8 50 TDI MHEV quattro tiptronic",
-          "co2": 219,
+          "image": "audi-q8-4m.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
@@ -3530,7 +3632,8 @@
           "factoryCode": "4MNRV2",
           "code": "4MNRV2",
           "name": "RS Q8 TFSI MHEV quattro tiptronic",
-          "co2": 311,
+          "image": "audi-q8-4m.png",
+          "co2": null,
           "variants": [
             {
               "color": "Standard",
