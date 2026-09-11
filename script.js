@@ -678,7 +678,7 @@ function populateYearSelect() {
   const yearEl  = document.getElementById("yearSelect");
   const brand   = brandEl.value;
 
-  yearEl.innerHTML = '<option value="">Επιλέξτε Χρονολογία</option>';
+  yearEl.innerHTML = '<option value="">Επιλέξτε Έτος</option>';
 
   if (!brand || !DATA_SOURCES[brand]) return;
 
