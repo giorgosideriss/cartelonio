@@ -9,6 +9,7 @@
           "factoryCode": "GBAAT4",
           "code": "GBAAT4",
           "name": "A1 SB 25 TFSI 5 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 128,
           "variants": [
             {
@@ -23,6 +24,7 @@
           "factoryCode": "GBABMC",
           "code": "GBABMC",
           "name": "A1 SB Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 128,
           "variants": [
             {
@@ -37,6 +39,7 @@
           "factoryCode": "GBACMC",
           "code": "GBACMC",
           "name": "A1 SB S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 128,
           "variants": [
             {
@@ -51,6 +54,7 @@
           "factoryCode": "GBABMG",
           "code": "GBABMG",
           "name": "A1 SB Advanced 30 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 132,
           "variants": [
             {
@@ -65,6 +69,7 @@
           "factoryCode": "GBACMG",
           "code": "GBACMG",
           "name": "A1 SB S line 30 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": 132,
           "variants": [
             {
@@ -79,6 +84,7 @@
           "factoryCode": "GBACKG",
           "code": "GBACKG",
           "name": "A1 SB S line 35 TFSI S tronic",
+          "image": "audi-a1-gb-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -98,6 +104,7 @@
           "factoryCode": "GBH0KC",
           "code": "GBH0KC",
           "name": "A1 Citycarver 35 TFSI 6 ταχύτητες",
+          "image": "audi-a1-gb-citycarver.png",
           "co2": null,
           "variants": [
             {
@@ -112,6 +119,7 @@
           "factoryCode": "GBH0KG",
           "code": "GBH0KG",
           "name": "A1 Citycarver 35 TFSI S tronic",
+          "image": "audi-a1-gb-citycarver.png",
           "co2": null,
           "variants": [
             {
@@ -131,6 +139,7 @@
           "factoryCode": "8YAAKC",
           "code": "8YAAKC",
           "name": "A3 SB 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -145,6 +154,7 @@
           "factoryCode": "8YABKC",
           "code": "8YABKC",
           "name": "A3 SB Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -159,6 +169,7 @@
           "factoryCode": "8YACKC",
           "code": "8YACKC",
           "name": "A3 SB S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -173,6 +184,7 @@
           "factoryCode": "8YAAKG",
           "code": "8YAAKG",
           "name": "A3 SB 30 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -187,6 +199,7 @@
           "factoryCode": "8YABKG",
           "code": "8YABKG",
           "name": "A3 SB Advanced 30 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -201,6 +214,7 @@
           "factoryCode": "8YACKG",
           "code": "8YACKG",
           "name": "A3 SB S line 30 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -215,6 +229,7 @@
           "factoryCode": "8YAAZG",
           "code": "8YAAZG",
           "name": "A3 SB 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -229,6 +244,7 @@
           "factoryCode": "8YABZG",
           "code": "8YABZG",
           "name": "A3 SB Advanced 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -243,6 +259,7 @@
           "factoryCode": "8YACZG",
           "code": "8YACZG",
           "name": "A3 SB S line 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -257,6 +274,7 @@
           "factoryCode": "8YAADG",
           "code": "8YAADG",
           "name": "A3 SB 30 TDI S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -271,6 +289,7 @@
           "factoryCode": "8YABDG",
           "code": "8YABDG",
           "name": "A3 SB Advanced 30 TDI S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -285,6 +304,7 @@
           "factoryCode": "8YACDG",
           "code": "8YACDG",
           "name": "A3 SB S line 30 TDI S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -299,6 +319,7 @@
           "factoryCode": "8YAAPX",
           "code": "8YAAPX",
           "name": "A3 SB 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -313,6 +334,7 @@
           "factoryCode": "8YABPX",
           "code": "8YABPX",
           "name": "A3 SB Advanced 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -327,6 +349,7 @@
           "factoryCode": "8YACPX",
           "code": "8YACPX",
           "name": "A3 SB S line 40 TFSI e S tronic",
+          "image": "audi-a3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -346,6 +369,7 @@
           "factoryCode": "8YAS3Y",
           "code": "8YAS3Y",
           "name": "S3 SB TFSI quattro S tronic",
+          "image": "audi-s3-8y-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -365,6 +389,7 @@
           "factoryCode": "8YARWY",
           "code": "8YARWY",
           "name": "RS3 SB TFSI quattro S tronic",
+          "image": "audi-rs3-8y-sportback.png",
           "co2": 216,
           "variants": [
             {
@@ -384,6 +409,7 @@
           "factoryCode": "8YSAKC",
           "code": "8YSAKC",
           "name": "A3 Sport Sedan 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -398,6 +424,7 @@
           "factoryCode": "8YSBKC",
           "code": "8YSBKC",
           "name": "A3 Sport Sedan Advanced 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -412,6 +439,7 @@
           "factoryCode": "8YSCKC",
           "code": "8YSCKC",
           "name": "A3 Sport Sedan S line 30 TFSI 6 ταχύτητες",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -426,6 +454,7 @@
           "factoryCode": "8YSAKG",
           "code": "8YSAKG",
           "name": "A3 Sport Sedan 30 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -440,6 +469,7 @@
           "factoryCode": "8YSAZG",
           "code": "8YSAZG",
           "name": "A3 Sport Sedan 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -454,6 +484,7 @@
           "factoryCode": "8YSBZG",
           "code": "8YSBZG",
           "name": "A3 Sport Sedan Advanced 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -468,6 +499,7 @@
           "factoryCode": "8YSCZG",
           "code": "8YSCZG",
           "name": "A3 Sport Sedan S line 35 TFSI Hybrid S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -482,6 +514,7 @@
           "factoryCode": "8YSADG",
           "code": "8YSADG",
           "name": "A3 Sport Sedan 30 TDI S tronic",
+          "image": "audi-a3-8y-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -501,6 +534,7 @@
           "factoryCode": "8WCA7G",
           "code": "8WCA7G",
           "name": "A4 35 TFSI Hybrid S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -515,6 +549,7 @@
           "factoryCode": "8WCCYG",
           "code": "8WCCYG",
           "name": "A4 S line 30 TDI Hybrid S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -529,6 +564,7 @@
           "factoryCode": "8WCAUG",
           "code": "8WCAUG",
           "name": "A4 40 TDI Hybrid S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -543,6 +579,7 @@
           "factoryCode": "8WCCUG",
           "code": "8WCCUG",
           "name": "A4 S line 40 TDI Hybrid S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -557,6 +594,7 @@
           "factoryCode": "8WCAUY",
           "code": "8WCAUY",
           "name": "A4 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -571,6 +609,7 @@
           "factoryCode": "8WCCUY",
           "code": "8WCCUY",
           "name": "A4 S line 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -590,6 +629,7 @@
           "factoryCode": "8WCS5A",
           "code": "8WCS5A",
           "name": "S4 Sedan TDI Hybrid tiptronic",
+          "image": "audi-s4-b9-sedan-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -609,6 +649,7 @@
           "factoryCode": "8WDS5A",
           "code": "8WDS5A",
           "name": "S4 Avant TDI Hybrid tiptronic",
+          "image": "audi-s4-b9-avant-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -628,6 +669,7 @@
           "factoryCode": "8WDRXA",
           "code": "8WDRXA",
           "name": "RS 4 Avant TFSI quattro tiptronic",
+          "image": "audi-rs4-b9-avant-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -647,6 +689,7 @@
           "factoryCode": "8WJ0AY",
           "code": "8WJ0AY",
           "name": "A4 Allroad 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-a4-b9-allroad-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -661,6 +704,7 @@
           "factoryCode": "8WJ0UY",
           "code": "8WJ0UY",
           "name": "A4 Allroad 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a4-b9-allroad-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -680,6 +724,7 @@
           "factoryCode": "F5PCAY",
           "code": "F5PCAY",
           "name": "A5 Coupé S line 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -694,6 +739,7 @@
           "factoryCode": "F5PCUY",
           "code": "F5PCUY",
           "name": "A5 Coupé S line 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a5-f5-coupe-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -713,6 +759,7 @@
           "factoryCode": "F5PRXA",
           "code": "F5PRXA",
           "name": "RS 5 Coupé quattro tiptronic",
+          "image": "audi-rs5-f5-coupe-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -732,6 +779,7 @@
           "factoryCode": "F5FCZG",
           "code": "F5FCZG",
           "name": "A5 SB S line 40 TFSI Hybrid S tronic",
+          "image": "audi-a5-f5-sportback-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -746,6 +794,7 @@
           "factoryCode": "F5FCAY",
           "code": "F5FCAY",
           "name": "A5 SB S line 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-a5-f5-sportback-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -760,6 +809,7 @@
           "factoryCode": "F5FCUY",
           "code": "F5FCUY",
           "name": "A5 SB S line 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a5-f5-sportback-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -779,6 +829,7 @@
           "factoryCode": "4A2C3Y",
           "code": "4A2C3Y",
           "name": "A6 Design 45 TFSI  Hybrid quattro S tronic",
+          "image": "audi-a6-c8-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -793,6 +844,7 @@
           "factoryCode": "4A2CIY",
           "code": "4A2CIY",
           "name": "A6 Design 40 TDI Hybrid quattro S tronic",
+          "image": "audi-a6-c8-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -807,6 +859,7 @@
           "factoryCode": "4A2CMY",
           "code": "4A2CMY",
           "name": "A6 Design 50 TFSI e quattro S tronic",
+          "image": "audi-a6-c8-sedan.png",
           "co2": null,
           "variants": [
             {
@@ -826,6 +879,7 @@
           "factoryCode": "4AH0LA",
           "code": "4AH0LA",
           "name": "A6 allroad 50 TDI Hybrid quattro S tronic",
+          "image": "audi-a6-c8-allroad.png",
           "co2": null,
           "variants": [
             {
@@ -845,6 +899,7 @@
           "factoryCode": "4A5RCA",
           "code": "4A5RCA",
           "name": "RS 6 Avant TFSI Hybrid quattro tiptronic",
+          "image": "audi-rs6-c8-avant.png",
           "co2": null,
           "variants": [
             {
@@ -864,6 +919,7 @@
           "factoryCode": "4KA03Y",
           "code": "4KA03Y",
           "name": "A7 Sportback 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-a7-c8-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -878,6 +934,7 @@
           "factoryCode": "4KA0LA",
           "code": "4KA0LA",
           "name": "A7 Sportback 50 TDI Hybrid quattro tiptronic",
+          "image": "audi-a7-c8-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -897,6 +954,7 @@
           "factoryCode": "4KARCA",
           "code": "4KARCA",
           "name": "RS 7 Sportback Hybrid quattro tiptronic",
+          "image": "audi-rs7-c8-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -916,6 +974,7 @@
           "factoryCode": "GAGAQC",
           "code": "GAGAQC",
           "name": "Q2 Comfort 30 TFSI 6 ταχύτητες",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -930,6 +989,7 @@
           "factoryCode": "GAGBQC",
           "code": "GAGBQC",
           "name": "Q2 Advanced 30 TFSI  6 ταχύτητες",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -944,6 +1004,7 @@
           "factoryCode": "GAGAZG",
           "code": "GAGAZG",
           "name": "Q2 35 TFSI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -958,6 +1019,7 @@
           "factoryCode": "GAGBZG",
           "code": "GAGBZG",
           "name": "Q2 Advanced 35 TFSI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -972,6 +1034,7 @@
           "factoryCode": "GAGCZG",
           "code": "GAGCZG",
           "name": "Q2 S line 35 TFSI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -986,6 +1049,7 @@
           "factoryCode": "GAGAEG",
           "code": "GAGAEG",
           "name": "Q2 30 TDI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1000,6 +1064,7 @@
           "factoryCode": "GAGBEG",
           "code": "GAGBEG",
           "name": "Q2 Advanced 30 TDI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1014,6 +1079,7 @@
           "factoryCode": "GAGCEG",
           "code": "GAGCEG",
           "name": "Q2 S line 30 TDI S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1028,6 +1094,7 @@
           "factoryCode": "GAGASY",
           "code": "GAGASY",
           "name": "Q2 35 TDI quattro S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1042,6 +1109,7 @@
           "factoryCode": "GAGCSY",
           "code": "GAGCSY",
           "name": "Q2 S line 35 TDI quattro S tronic",
+          "image": "audi-q2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1061,6 +1129,7 @@
           "factoryCode": "GAGS3Y",
           "code": "GAGS3Y",
           "name": "SQ2 TFSI quattro S tronic",
+          "image": "audi-sq2-ga-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1080,6 +1149,7 @@
           "factoryCode": "F3BAZC",
           "code": "F3BAZC",
           "name": "Q3 35 TFSI 6 ταχύτητες",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1094,6 +1164,7 @@
           "factoryCode": "F3BBZG",
           "code": "F3BBZG",
           "name": "Q3 Advanced 35 TFSI Hybrid S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1108,6 +1179,7 @@
           "factoryCode": "F3BCZG",
           "code": "F3BCZG",
           "name": "Q3 S line 35 TFSI Hybrid S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1122,6 +1194,7 @@
           "factoryCode": "F3BARG",
           "code": "F3BARG",
           "name": "Q3 Executive 35 TDI S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1136,6 +1209,7 @@
           "factoryCode": "F3BCRG",
           "code": "F3BCRG",
           "name": "Q3 S line 35 TDI S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1150,6 +1224,7 @@
           "factoryCode": "F3BCLY",
           "code": "F3BCLY",
           "name": "Q3 S line 40 TDI quattro S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1164,6 +1239,7 @@
           "factoryCode": "F3BBKY",
           "code": "F3BBKY",
           "name": "Q3 Advanced 45 TFSI quattro S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1178,6 +1254,7 @@
           "factoryCode": "F3BCKY",
           "code": "F3BCKY",
           "name": "Q3 S line 45 TFSI quattro S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1192,6 +1269,7 @@
           "factoryCode": "F3BAPX",
           "code": "F3BAPX",
           "name": "Q3 45 TFSI e S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1206,6 +1284,7 @@
           "factoryCode": "F3BCPX",
           "code": "F3BCPX",
           "name": "Q3 S line 45 TFSI e S tronic",
+          "image": "audi-q3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1225,6 +1304,7 @@
           "factoryCode": "F3BRWY",
           "code": "F3BRWY",
           "name": "RS Q3 TFSI quattro S tronic",
+          "image": "audi-rsq3-f3.png",
           "co2": null,
           "variants": [
             {
@@ -1239,6 +1319,7 @@
           "factoryCode": "F3NAZC",
           "code": "F3NAZC",
           "name": "Q3 SB 35 TFSI 6 ταχύτητες",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1253,6 +1334,7 @@
           "factoryCode": "F3NAZG",
           "code": "F3NAZG",
           "name": "Q3 SB 35 TFSI Hybrid S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1267,6 +1349,7 @@
           "factoryCode": "F3NCZG",
           "code": "F3NCZG",
           "name": "Q3 SB S line 35 TFSI Hybrid S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1281,6 +1364,7 @@
           "factoryCode": "F3NARG",
           "code": "F3NARG",
           "name": "Q3 SB 35 TDI S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1295,6 +1379,7 @@
           "factoryCode": "F3NCRG",
           "code": "F3NCRG",
           "name": "Q3 SB S line 35 TDI S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1309,6 +1394,7 @@
           "factoryCode": "F3NALY",
           "code": "F3NALY",
           "name": "Q3 SB 40 TDI quattro S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1323,6 +1409,7 @@
           "factoryCode": "F3NCLY",
           "code": "F3NCLY",
           "name": "Q3 SB S line 40 TDI quattro S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1337,6 +1424,7 @@
           "factoryCode": "F3NCKY",
           "code": "F3NCKY",
           "name": "Q3 SB S line 45 TFSI quattro S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1351,6 +1439,7 @@
           "factoryCode": "F3NAPX",
           "code": "F3NAPX",
           "name": "Q3 SB 45 TFSI e S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1365,6 +1454,7 @@
           "factoryCode": "F3NCPX",
           "code": "F3NCPX",
           "name": "Q3 SB S line 45 TFSI e S tronic",
+          "image": "audi-q3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1384,6 +1474,7 @@
           "factoryCode": "F3NRWY",
           "code": "F3NRWY",
           "name": "RS Q3 SB TFSI quattro S tronic",
+          "image": "audi-rsq3-f3-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1398,6 +1489,7 @@
           "factoryCode": "F4BAI1",
           "code": "F4BAI1",
           "name": "Q4 e-tron 35",
+          "image": "audi-q4-etron.png",
           "co2": null,
           "variants": [
             {
@@ -1412,6 +1504,7 @@
           "factoryCode": "F4BAC3",
           "code": "F4BAC3",
           "name": "Q4 e-tron 40",
+          "image": "audi-q4-etron.png",
           "co2": null,
           "variants": [
             {
@@ -1426,6 +1519,7 @@
           "factoryCode": "F4BA23",
           "code": "F4BA23",
           "name": "Q4 e-tron 50 quattro",
+          "image": "audi-q4-etron.png",
           "co2": null,
           "variants": [
             {
@@ -1445,6 +1539,7 @@
           "factoryCode": "F4NAI1",
           "code": "F4NAI1",
           "name": "Q4 Sportback e-tron 35",
+          "image": "audi-q4-etron-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1459,6 +1554,7 @@
           "factoryCode": "F4NAC3",
           "code": "F4NAC3",
           "name": "Q4 Sportback e-tron 40",
+          "image": "audi-q4-etron-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1473,6 +1569,7 @@
           "factoryCode": "F4NA23",
           "code": "F4NA23",
           "name": "Q4 Sportback e-tron 50 quattro",
+          "image": "audi-q4-etron-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1492,6 +1589,7 @@
           "factoryCode": "FYGAJG",
           "code": "FYGAJG",
           "name": "Q5 35 TDI Hybrid S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1506,6 +1604,7 @@
           "factoryCode": "FYGBJG",
           "code": "FYGBJG",
           "name": "Q5 Advanced 35 TDI Hybrid S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1520,6 +1619,7 @@
           "factoryCode": "FYGAUY",
           "code": "FYGAUY",
           "name": "Q5 40 TDI Hybrid quattro Stronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1534,6 +1634,7 @@
           "factoryCode": "FYGBUY",
           "code": "FYGBUY",
           "name": "Q5 Advanced 40 TDI Hybrid quattro Stronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1548,6 +1649,7 @@
           "factoryCode": "FYGCUY",
           "code": "FYGCUY",
           "name": "Q5 S line 40 TDI Hybrid quattro Stronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1562,6 +1664,7 @@
           "factoryCode": "FYGAAY",
           "code": "FYGAAY",
           "name": "Q5 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1576,6 +1679,7 @@
           "factoryCode": "FYGCAY",
           "code": "FYGCAY",
           "name": "Q5 S line 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1590,6 +1694,7 @@
           "factoryCode": "FYGA9Y",
           "code": "FYGA9Y",
           "name": "Q5 50 TFSI e quattro S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1604,6 +1709,7 @@
           "factoryCode": "FYGC9Y",
           "code": "FYGC9Y",
           "name": "Q5 S line 50 TFSI e quattro S tronic",
+          "image": "audi-q5-fy-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1623,6 +1729,7 @@
           "factoryCode": "FYTBUY",
           "code": "FYTBUY",
           "name": "Q5 SB Advanced 40 TDI Hybrid quattro Stronic",
+          "image": "audi-q5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1637,6 +1744,7 @@
           "factoryCode": "FYTCUY",
           "code": "FYTCUY",
           "name": "Q5 SB S line 40 TDI Hybrid quattro Stronic",
+          "image": "audi-q5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1651,6 +1759,7 @@
           "factoryCode": "FYTCAY",
           "code": "FYTCAY",
           "name": "Q5 SB S line 45 TFSI Hybrid quattro S tronic",
+          "image": "audi-q5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1665,6 +1774,7 @@
           "factoryCode": "FYTB9Y",
           "code": "FYTB9Y",
           "name": "Q5 SB Advanced 50 TFSI e quattro S tronic",
+          "image": "audi-q5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1679,6 +1789,7 @@
           "factoryCode": "FYTC9Y",
           "code": "FYTC9Y",
           "name": "Q5 SB S line 50 TFSI e quattro S tronic",
+          "image": "audi-q5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1698,6 +1809,7 @@
           "factoryCode": "FYTS5A",
           "code": "FYTS5A",
           "name": "SQ5 TDI Hybrid quattro tiptronic",
+          "image": "audi-sq5-fy-sportback.png",
           "co2": null,
           "variants": [
             {
@@ -1717,6 +1829,7 @@
           "factoryCode": "4MGAN2",
           "code": "4MGAN2",
           "name": "Q7 50 TDI Hybrid quattro tiptronic",
+          "image": "audi-q7-4m-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1731,6 +1844,7 @@
           "factoryCode": "4MGCN2",
           "code": "4MGCN2",
           "name": "Q7 S line 50 TDI Hybrid quattro tiptronic",
+          "image": "audi-q7-4m-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1745,6 +1859,7 @@
           "factoryCode": "4MGCY3",
           "code": "4MGCY3",
           "name": "Q7 S line 55 TFSI e quattro tiptronic",
+          "image": "audi-q7-4m-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1764,6 +1879,7 @@
           "factoryCode": "4MN0X2",
           "code": "4MN0X2",
           "name": "Q8 55 TFSI Hybrid quattro tiptronic",
+          "image": "audi-q8-4m.png",
           "co2": null,
           "variants": [
             {
@@ -1778,6 +1894,7 @@
           "factoryCode": "4MN0N2",
           "code": "4MN0N2",
           "name": "Q8 50 TDI Hybrid quattro tiptronic",
+          "image": "audi-q8-4m.png",
           "co2": null,
           "variants": [
             {
@@ -1792,6 +1909,7 @@
           "factoryCode": "4MN0Z3",
           "code": "4MN0Z3",
           "name": "Q8 60 TFSI e quattro tiptronic",
+          "image": "audi-q8-4m.png",
           "co2": null,
           "variants": [
             {
@@ -1811,6 +1929,7 @@
           "factoryCode": "4MNRV2",
           "code": "4MNRV2",
           "name": "RS Q8 TFSI Hybrid quattro tiptronic",
+          "image": "audi-rsq8-4m.png",
           "co2": null,
           "variants": [
             {
@@ -1830,6 +1949,7 @@
           "factoryCode": "FVP0CG",
           "code": "FVP0CG",
           "name": "TT Coupe 40 TFSI S tronic",
+          "image": "audi-tt-fv-coupe-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1844,6 +1964,7 @@
           "factoryCode": "FVP09Y",
           "code": "FVP09Y",
           "name": "TT Coupe 45 TFSI quattro S tronic",
+          "image": "audi-tt-fv-coupe-facelift.png",
           "co2": null,
           "variants": [
             {
@@ -1863,6 +1984,7 @@
           "factoryCode": "GENABE",
           "code": "GENABE",
           "name": "e-tron 50 quattro",
+          "image": "audi-etron-ge.png",
           "co2": 0,
           "variants": [
             {
@@ -1877,6 +1999,7 @@
           "factoryCode": "GENBAE",
           "code": "GENBAE",
           "name": "e-tron 55 quattro Advanced",
+          "image": "audi-etron-ge.png",
           "co2": 0,
           "variants": [
             {
@@ -1891,6 +2014,7 @@
           "factoryCode": "GENCAE",
           "code": "GENCAE",
           "name": "e-tron 55 quattro S line",
+          "image": "audi-etron-ge.png",
           "co2": 0,
           "variants": [
             {
@@ -1910,6 +2034,7 @@
           "factoryCode": "GEAABE",
           "code": "GEAABE",
           "name": "e-tron SB 50 quattro",
+          "image": "audi-etron-ge-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1924,6 +2049,7 @@
           "factoryCode": "GEABAE",
           "code": "GEABAE",
           "name": "e-tron SB 55 quattro Advanced",
+          "image": "audi-etron-ge-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1938,6 +2064,7 @@
           "factoryCode": "GEACAE",
           "code": "GEACAE",
           "name": "e-tron SB 55 quattro S line",
+          "image": "audi-etron-ge-sportback.png",
           "co2": 0,
           "variants": [
             {
@@ -1957,6 +2084,7 @@
           "factoryCode": "F83RJ7",
           "code": "F83RJ7",
           "name": "e-tron GT quattro",
+          "image": "audi-etron-gt.png",
           "co2": 0,
           "variants": [
             {
@@ -1971,6 +2099,7 @@
           "factoryCode": "F83RH7",
           "code": "F83RH7",
           "name": "RS e-tron GT",
+          "image": "audi-rs-etron-gt.png",
           "co2": 0,
           "variants": [
             {
