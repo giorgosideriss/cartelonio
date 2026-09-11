@@ -166,52 +166,71 @@ async function updateCarImage() {
 
   if (!carImage) return;
 
-  /*
-   * 1) ΠΡΟΤΕΡΑΙΟΤΗΤΑ: τοπική εικόνα που ορίζεται στο JSON της έκδοσης.
-   *
-   * Παράδειγμα JSON:
-   * "image": "audi-a3-8v-sportback.png"
-   *
-   * Τα PNG αποθηκεύονται ως:
-   * images/cars/audi/audi-a3-8v-sportback.png
-   */
   const edIndex = parseInt(verValue, 10);
-
-  if (
+  const modelObj =
     brand &&
     model &&
     currentDataset &&
-    currentDataset.models &&
-    currentDataset.models[model] &&
-    Array.isArray(currentDataset.models[model].editions) &&
+    currentDataset.models
+      ? currentDataset.models[model]
+      : null;
+
+  const edition =
+    modelObj &&
+    Array.isArray(modelObj.editions) &&
     !isNaN(edIndex)
-  ) {
-    const edition = currentDataset.models[model].editions[edIndex];
+      ? modelObj.editions[edIndex]
+      : null;
 
-    if (edition && edition.image) {
-      const imageValue = String(edition.image).trim();
+  /*
+   * 1) NEW FORMAT — edition-level image
+   * Used by Audi JSON files:
+   * "image": "audi-a3-8v-sportback.png"
+   */
+  if (edition && edition.image) {
+    const imageValue = String(edition.image).trim();
 
-      // Επιτρέπει και πλήρες URL / absolute ή relative path,
-      // σε περίπτωση που θελήσουμε αργότερα να το ορίσουμε απευθείας στο JSON.
-      const isExplicitPath =
-        /^(https?:)?\/\//i.test(imageValue) ||
-        imageValue.startsWith("/") ||
-        imageValue.startsWith("./") ||
-        imageValue.startsWith("../");
+    const isExplicitPath =
+      /^(https?:)?\/\//i.test(imageValue) ||
+      imageValue.startsWith("/") ||
+      imageValue.startsWith("./") ||
+      imageValue.startsWith("../") ||
+      imageValue.includes("/");
 
-      carImage.src = isExplicitPath
-        ? imageValue
-        : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+    carImage.src = isExplicitPath
+      ? imageValue
+      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
 
-      carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
-      return;
-    }
+    carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
+    return;
   }
 
   /*
-   * 2) FALLBACK:
-   * Για παλιότερα JSON / άλλες μάρκες που δεν έχουν ακόμη πεδίο "image",
-   * διατηρούμε την υπάρχουσα Bing Image Search λειτουργία.
+   * 2) LEGACY FORMAT — model-level image
+   * Keeps all existing brands working, e.g.:
+   * "image": "images/aston-martin/models/db11-v12-coupe-2018.png"
+   */
+  if (modelObj && modelObj.image) {
+    const imageValue = String(modelObj.image).trim();
+
+    const isExplicitPath =
+      /^(https?:)?\/\//i.test(imageValue) ||
+      imageValue.startsWith("/") ||
+      imageValue.startsWith("./") ||
+      imageValue.startsWith("../") ||
+      imageValue.includes("/");
+
+    carImage.src = isExplicitPath
+      ? imageValue
+      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+
+    carImage.alt = `${brand} ${model}`;
+    return;
+  }
+
+  /*
+   * 3) FALLBACK — existing Bing image search
+   * Used only when neither edition.image nor model.image exists.
    */
   if (!brand || !model || !year) return;
 
