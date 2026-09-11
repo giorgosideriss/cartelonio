@@ -1,4 +1,3 @@
-/* Cartelonio multi-brand local image pack — Mercedes-Benz + Alfa Romeo multi-trim HD assets */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ (AUTO-GENERATED 2015–2025) === */
 
@@ -86,24 +85,6 @@ const DATA_SOURCES = Object.fromEntries(
   ])
 );
 
-// Brand-specific year availability.
-// Alfa Romeo 2021 is intentionally skipped until an official price list is added.
-const ALFA_ROMEO_AVAILABLE_YEARS = ["2015","2016","2017","2018","2019","2020","2022"];
-DATA_SOURCES["Alfa Romeo"] = Object.fromEntries(
-  ALFA_ROMEO_AVAILABLE_YEARS.map(year => [
-    year,
-    `data/alfa-romeo/${year}/${year}.json`
-  ])
-);
-
-const ABARTH_AVAILABLE_YEARS = ["2017","2018","2019","2020","2021","2022"];
-DATA_SOURCES["Abarth"] = Object.fromEntries(
-  ABARTH_AVAILABLE_YEARS.map(year => [
-    year,
-    `data/abarth/${year}/${year}.json`
-  ])
-);
-
 
 /* Λογότυπα μαρκών */
 const BRAND_LOGOS = {
@@ -177,32 +158,87 @@ const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
  * και ενημέρωση του <img id="carImage">
  */
 async function updateCarImage() {
-  const brand  = document.getElementById("brandSelect").value;
-  const model  = document.getElementById("modelSelect").value;
-  const year   = document.getElementById("yearSelect").value;
+  const brand    = document.getElementById("brandSelect").value;
+  const model    = document.getElementById("modelSelect").value;
+  const year     = document.getElementById("yearSelect").value;
+  const verValue = document.getElementById("versionSelect").value;
+  const carImage = document.getElementById("carImage");
 
+  if (!carImage) return;
+
+  /*
+   * 1) ΠΡΟΤΕΡΑΙΟΤΗΤΑ: τοπική εικόνα που ορίζεται στο JSON της έκδοσης.
+   *
+   * Παράδειγμα JSON:
+   * "image": "audi-a3-8v-sportback.png"
+   *
+   * Τα PNG αποθηκεύονται ως:
+   * images/cars/audi/audi-a3-8v-sportback.png
+   */
+  const edIndex = parseInt(verValue, 10);
+
+  if (
+    brand &&
+    model &&
+    currentDataset &&
+    currentDataset.models &&
+    currentDataset.models[model] &&
+    Array.isArray(currentDataset.models[model].editions) &&
+    !isNaN(edIndex)
+  ) {
+    const edition = currentDataset.models[model].editions[edIndex];
+
+    if (edition && edition.image) {
+      const imageValue = String(edition.image).trim();
+
+      // Επιτρέπει και πλήρες URL / absolute ή relative path,
+      // σε περίπτωση που θελήσουμε αργότερα να το ορίσουμε απευθείας στο JSON.
+      const isExplicitPath =
+        /^(https?:)?\/\//i.test(imageValue) ||
+        imageValue.startsWith("/") ||
+        imageValue.startsWith("./") ||
+        imageValue.startsWith("../");
+
+      carImage.src = isExplicitPath
+        ? imageValue
+        : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+
+      carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
+      return;
+    }
+  }
+
+  /*
+   * 2) FALLBACK:
+   * Για παλιότερα JSON / άλλες μάρκες που δεν έχουν ακόμη πεδίο "image",
+   * διατηρούμε την υπάρχουσα Bing Image Search λειτουργία.
+   */
   if (!brand || !model || !year) return;
+
   if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
-    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
     return;
   }
 
   const query = `${brand} ${model} ${year} PNG`;
 
   try {
-    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
-      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
-    });
+    const res = await fetch(
+      `${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`,
+      {
+        headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
+      }
+    );
 
     if (!res.ok) throw new Error("Image API error");
 
     const data = await res.json();
-    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
+    const imgUrl =
+      data.value && data.value[0] ? data.value[0].contentUrl : null;
 
     if (imgUrl) {
-      document.getElementById("carImage").src = imgUrl;
+      carImage.src = imgUrl;
+      carImage.alt = `${brand} ${model}`;
     }
-
   } catch (err) {
     console.warn("Image search failed:", err);
   }
@@ -245,64 +281,6 @@ const coTable = {
 /* ========== ΒΟΗΘΗΤΙΚΕΣ ΣΥΝΑΡΤΗΣΕΙΣ ========== */
 
 function parseDate(v){ return v ? new Date(v) : null; }
-
-/* ========== ΠΡΩΤΗ ΑΔΕΙΑ: ΗΜΕΡΑ / ΜΗΝΑΣ + ΑΥΤΟΜΑΤΟ ΕΤΟΣ ========== */
-
-function populateFirstRegDays() {
-  const dayEl = document.getElementById("firstRegDay");
-  if (!dayEl || dayEl.options.length > 1) return;
-  for (let day = 1; day <= 31; day++) {
-    const opt = document.createElement("option");
-    opt.value = String(day);
-    opt.textContent = String(day);
-    dayEl.appendChild(opt);
-  }
-}
-
-function syncFirstRegValue() {
-  const dayEl = document.getElementById("firstRegDay");
-  const monthEl = document.getElementById("firstRegMonth");
-  const yearEl = document.getElementById("firstRegYear");
-  const hiddenEl = document.getElementById("firstReg");
-  if (!dayEl || !monthEl || !yearEl || !hiddenEl) return;
-
-  const day = Number(dayEl.value);
-  const month = Number(monthEl.value);
-  const year = Number(yearEl.value);
-
-  hiddenEl.value = "";
-  if (!day || !month || !year) return;
-
-  // Αποτρέπει ανύπαρκτες ημερομηνίες όπως 31/02.
-  const testDate = new Date(year, month - 1, day);
-  const valid = testDate.getFullYear() === year &&
-                testDate.getMonth() === month - 1 &&
-                testDate.getDate() === day;
-  if (!valid) return;
-
-  hiddenEl.value = `${year}-${String(month).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
-  setFieldWarning("firstReg", false);
-  hiddenEl.dispatchEvent(new Event("input", { bubbles: true }));
-}
-
-function syncFirstRegYearFromModelYear() {
-  const selectedYear = document.getElementById("yearSelect")?.value || "";
-  const firstRegYear = document.getElementById("firstRegYear");
-  if (!firstRegYear) return;
-  firstRegYear.value = selectedYear;
-  syncFirstRegValue();
-}
-
-function resetFirstRegComposite() {
-  const dayEl = document.getElementById("firstRegDay");
-  const monthEl = document.getElementById("firstRegMonth");
-  const yearEl = document.getElementById("firstRegYear");
-  const hiddenEl = document.getElementById("firstReg");
-  if (dayEl) dayEl.value = "";
-  if (monthEl) monthEl.value = "";
-  if (yearEl) yearEl.value = "";
-  if (hiddenEl) hiddenEl.value = "";
-}
 
 function yearsBetween(d1, d2){
   if (!d1 || !d2) return 0;
@@ -678,7 +656,7 @@ function populateYearSelect() {
   const yearEl  = document.getElementById("yearSelect");
   const brand   = brandEl.value;
 
-  yearEl.innerHTML = '<option value="">Επιλέξτε Έτος</option>';
+  yearEl.innerHTML = '<option value="">Επιλέξτε Χρονολογία</option>';
 
   if (!brand || !DATA_SOURCES[brand]) return;
 
@@ -923,7 +901,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Όταν αλλάζει μάρκα (μέσω του κρυφού select)
   brandSelect.addEventListener("change", () => {
     populateYearSelect();
-    syncFirstRegYearFromModelYear();
     currentDataset = null;
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
@@ -935,16 +912,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
-    syncFirstRegYearFromModelYear();
     loadDatasetForSelection();
     updateCarSummary();
   });
-
-  populateFirstRegDays();
-  syncFirstRegYearFromModelYear();
-
-  document.getElementById("firstRegDay")?.addEventListener("change", syncFirstRegValue);
-  document.getElementById("firstRegMonth")?.addEventListener("change", syncFirstRegValue);
 
   document.getElementById("modelSelect").addEventListener("change", () => {
     populateVersions();
@@ -1028,7 +998,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("resetBtn").addEventListener("click", () => {
     document.getElementById("calcForm").reset();
-    resetFirstRegComposite();
     currentBasePrice = 0;
     currentExtras = [];
     selectedExtras.clear();
@@ -1079,178 +1048,3 @@ document.addEventListener("DOMContentLoaded", () => {
   syncToyotaColorVisibility();
 })();
 
-
-
-/* =========================================================
-   CARTELONIO — SAFE DYNAMIC MODEL IMAGE PATCH
-   This block is intentionally isolated from the dropdown/data logic.
-   ========================================================= */
-(() => {
-  const DEFAULT_CARTELONIO_CAR_IMAGE =
-    "https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png";
-
-  function setCartelonioHeroImage(url, altText) {
-    const img = document.getElementById("carImage");
-    if (!img) return;
-
-    if (!url) {
-      img.src = DEFAULT_CARTELONIO_CAR_IMAGE;
-      img.alt = "Όχημα";
-      return;
-    }
-
-    const preload = new Image();
-
-    preload.onload = () => {
-      img.classList.add("is-changing");
-      img.src = url;
-      img.alt = altText || "Όχημα";
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => img.classList.remove("is-changing"));
-      });
-    };
-
-    preload.onerror = () => {
-      img.src = DEFAULT_CARTELONIO_CAR_IMAGE;
-      img.alt = "Όχημα";
-      img.classList.remove("is-changing");
-    };
-
-    preload.src = url;
-  }
-
-  function getSelectedVehicleImage() {
-    const modelEl = document.getElementById("modelSelect");
-    const versionEl = document.getElementById("versionSelect");
-    const model = modelEl?.value || "";
-
-    if (!model || typeof currentDataset === "undefined" || !currentDataset?.models?.[model]) {
-      return "";
-    }
-
-    const modelObj = currentDataset.models[model];
-    const editionIndex = parseInt(versionEl?.value ?? "", 10);
-    const edition = Number.isInteger(editionIndex) ? modelObj.editions?.[editionIndex] : null;
-
-    // Edition-level image lets different trims (e.g. Veloce / Quadrifoglio)
-    // use different local assets. Older datasets still work through model.image.
-    return edition?.image || modelObj.image || "";
-  }
-
-  function refreshCartelonioModelImage() {
-    const brandEl = document.getElementById("brandSelect");
-    const yearEl = document.getElementById("yearSelect");
-    const modelEl = document.getElementById("modelSelect");
-
-    if (!brandEl || !yearEl || !modelEl) return;
-
-    const brand = brandEl.value;
-    const year = yearEl.value;
-    const model = modelEl.value;
-
-    if (!brand || !year || !model) return;
-
-    setCartelonioHeroImage(
-      getSelectedVehicleImage() || DEFAULT_CARTELONIO_CAR_IMAGE,
-      `${brand} ${model} ${year}`
-    );
-  }
-
-  // Keep the hero image synced with the selected vehicle/trim.
-  // These listeners were accidentally dropped during the layout refactor.
-  document.addEventListener("DOMContentLoaded", () => {
-    const brandEl = document.getElementById("brandSelect");
-    const yearEl = document.getElementById("yearSelect");
-    const modelEl = document.getElementById("modelSelect");
-    const versionEl = document.getElementById("versionSelect");
-
-    [brandEl, yearEl, modelEl, versionEl].forEach(el => {
-      if (!el) return;
-      el.addEventListener("change", () => setTimeout(refreshCartelonioModelImage, 0));
-    });
-
-    // Also refresh once after the page has initialized.
-    setTimeout(refreshCartelonioModelImage, 0);
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const watched = [
-      "brandSelect","yearSelect","modelSelect","versionSelect","colorSelect",
-      "price","category","firstReg","importDate","mileage","co2"
-    ];
-
-    watched.forEach(id => {
-      const el = $(id);
-      if (!el) return;
-      el.addEventListener("change", () => setTimeout(syncPremiumUi, 0));
-      el.addEventListener("input", () => setTimeout(syncPremiumUi, 0));
-    });
-
-    const results = $("results");
-    if (results) {
-      new MutationObserver(() => {
-        syncPremiumUi();
-      }).observe(results, {childList:true,subtree:true,characterData:true});
-    }
-
-    // Observe compatibility summary because the original app refreshes it
-    // after auto-fill operations.
-    const legacySummary = $("carSummary");
-    if (legacySummary) {
-      new MutationObserver(() => syncPremiumUi())
-        .observe(legacySummary, {childList:true,subtree:true,characterData:true});
-    }
-
-    syncPremiumUi();
-  });
-})();
-
-/* === Whole-card dropdown activation (2026-09-10) === */
-(() => {
-  function openNativeSelect(select) {
-    if (!select || select.disabled) return;
-    select.focus({ preventScroll: true });
-    try {
-      if (typeof select.showPicker === "function") {
-        select.showPicker();
-        return;
-      }
-    } catch (_) {}
-    try { select.click(); } catch (_) {}
-  }
-
-  function setupWholeCardDropdowns() {
-    const cards = document.querySelectorAll(".vehicle-configurator-v2 .vehicle-fields .dropdown-card");
-
-    cards.forEach((card) => {
-      const nativeSelect = card.querySelector(".dropdown-control-row > select");
-      const brandButton = card.querySelector("#brandButton");
-      const extrasToggle = card.querySelector("#extrasToggle");
-      const control = brandButton || extrasToggle || nativeSelect;
-      if (!control) return;
-
-      card.dataset.cardDropdown = "true";
-
-      card.addEventListener("click", (event) => {
-        // Let the real controls, open custom menus and option items handle their own clicks.
-        if (event.target.closest("button, select, option, input, .brand-menu, .extras-panel, .tooltip")) return;
-
-        if (brandButton) {
-          if (!brandButton.disabled) brandButton.click();
-          return;
-        }
-        if (extrasToggle) {
-          if (!extrasToggle.disabled) extrasToggle.click();
-          return;
-        }
-        if (nativeSelect) openNativeSelect(nativeSelect);
-      });
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", setupWholeCardDropdowns, { once: true });
-  } else {
-    setupWholeCardDropdowns();
-  }
-})();
