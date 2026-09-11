@@ -9,6 +9,7 @@
           "factoryCode": "8XKAS4",
           "code": "8XKAS4",
           "name": "1.0 TFSI (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -22,6 +23,7 @@
           "factoryCode": "8XKBS4",
           "code": "8XKBS4",
           "name": "1.0 TFSI Sport (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -35,6 +37,7 @@
           "factoryCode": "8XKCS4",
           "code": "8XKCS4",
           "name": "1.0 TFSI Design (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -48,6 +51,7 @@
           "factoryCode": "8XKASG",
           "code": "8XKASG",
           "name": "1.0 TFSI S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 102,
           "variants": [
             {
@@ -61,6 +65,7 @@
           "factoryCode": "8XKBSG",
           "code": "8XKBSG",
           "name": "1.0 TFSI Sport S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 102,
           "variants": [
             {
@@ -74,6 +79,7 @@
           "factoryCode": "8XKCSG",
           "code": "8XKCSG",
           "name": "1.0 TFSI Design S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 102,
           "variants": [
             {
@@ -87,6 +93,7 @@
           "factoryCode": "8XKAKC",
           "code": "8XKAKC",
           "name": "1.4 TFSI (6 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -100,6 +107,7 @@
           "factoryCode": "8XKBKC",
           "code": "8XKBKC",
           "name": "1.4 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -113,6 +121,7 @@
           "factoryCode": "8XKCKC",
           "code": "8XKCKC",
           "name": "1.4 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -126,6 +135,7 @@
           "factoryCode": "8XKAKG",
           "code": "8XKAKG",
           "name": "1.4 TFSI S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -139,6 +149,7 @@
           "factoryCode": "8XKBKG",
           "code": "8XKBKG",
           "name": "1.4 TFSI Sport S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -152,6 +163,7 @@
           "factoryCode": "8XKCKG",
           "code": "8XKCKG",
           "name": "1.4 TFSI Design S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -165,6 +177,7 @@
           "factoryCode": "8XKA14",
           "code": "8XKA14",
           "name": "1.6 TDI (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -178,6 +191,7 @@
           "factoryCode": "8XKB14",
           "code": "8XKB14",
           "name": "1.6 TDI Sport (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -191,6 +205,7 @@
           "factoryCode": "8XKC14",
           "code": "8XKC14",
           "name": "1.6 TDI Design (5 ταχύτητες)",
+          "image": "audi-a1-8x-3door.png",
           "co2": 97,
           "variants": [
             {
@@ -204,6 +219,7 @@
           "factoryCode": "8XKA1G",
           "code": "8XKA1G",
           "name": "1.6 TDI S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 99,
           "variants": [
             {
@@ -217,6 +233,7 @@
           "factoryCode": "8XKB1G",
           "code": "8XKB1G",
           "name": "1.6 TDI Sport S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 99,
           "variants": [
             {
@@ -230,6 +247,7 @@
           "factoryCode": "8XKC1G",
           "code": "8XKC1G",
           "name": "1.6 TDI Design S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 99,
           "variants": [
             {
@@ -243,6 +261,7 @@
           "factoryCode": "8XKBLG",
           "code": "8XKBLG",
           "name": "1.8 TFSI Sport S tronic",
+          "image": "audi-a1-8x-3door.png",
           "co2": 130,
           "variants": [
             {
@@ -256,6 +275,7 @@
           "factoryCode": "8XFAS4",
           "code": "8XFAS4",
           "name": "SB 1.0 TFSI (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -269,6 +289,7 @@
           "factoryCode": "8XFBS4",
           "code": "8XFBS4",
           "name": "SB 1.0 TFSI Sport (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -282,6 +303,7 @@
           "factoryCode": "8XFCS4",
           "code": "8XFCS4",
           "name": "SB 1.0 TFSI Design (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -295,6 +317,7 @@
           "factoryCode": "8XFASG",
           "code": "8XFASG",
           "name": "SB 1.0 TFSI S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 102,
           "variants": [
             {
@@ -308,6 +331,7 @@
           "factoryCode": "8XFBSG",
           "code": "8XFBSG",
           "name": "SB 1.0 TFSI Sport S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 102,
           "variants": [
             {
@@ -321,6 +345,7 @@
           "factoryCode": "8XFCSG",
           "code": "8XFCSG",
           "name": "SB 1.0 TFSI Design S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 102,
           "variants": [
             {
@@ -334,6 +359,7 @@
           "factoryCode": "8XFAKC",
           "code": "8XFAKC",
           "name": "SB 1.4 TFSI (6 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -347,6 +373,7 @@
           "factoryCode": "8XFBKC",
           "code": "8XFBKC",
           "name": "SB 1.4 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -360,6 +387,7 @@
           "factoryCode": "8XFCKC",
           "code": "8XFCKC",
           "name": "SB 1.4 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -373,6 +401,7 @@
           "factoryCode": "8XFAKG",
           "code": "8XFAKG",
           "name": "SB 1.4 TFSI S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -386,6 +415,7 @@
           "factoryCode": "8XFBKG",
           "code": "8XFBKG",
           "name": "SB 1.4 TFSI Sport S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -399,6 +429,7 @@
           "factoryCode": "8XFCKG",
           "code": "8XFCKG",
           "name": "SB 1.4 TFSI Design S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -412,6 +443,7 @@
           "factoryCode": "8XFA14",
           "code": "8XFA14",
           "name": "SB 1.6 TDI (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 92,
           "variants": [
             {
@@ -425,6 +457,7 @@
           "factoryCode": "8XFB14",
           "code": "8XFB14",
           "name": "SB 1.6 TDI Sport (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 92,
           "variants": [
             {
@@ -438,6 +471,7 @@
           "factoryCode": "8XFC14",
           "code": "8XFC14",
           "name": "SB 1.6 TDI Design (5 ταχύτητες)",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 92,
           "variants": [
             {
@@ -451,6 +485,7 @@
           "factoryCode": "8XFA1G",
           "code": "8XFA1G",
           "name": "SB 1.6 TDI S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -464,6 +499,7 @@
           "factoryCode": "8XFB1G",
           "code": "8XFB1G",
           "name": "SB 1.6 TDI Sport S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -477,6 +513,7 @@
           "factoryCode": "8XFC1G",
           "code": "8XFC1G",
           "name": "SB 1.6 TDI Design S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 97,
           "variants": [
             {
@@ -490,6 +527,7 @@
           "factoryCode": "8XFBLG",
           "code": "8XFBLG",
           "name": "SB 1.8 TFSI Sport S tronic",
+          "image": "audi-a1-8x-sportback.png",
           "co2": 130,
           "variants": [
             {
@@ -508,6 +546,7 @@
           "factoryCode": "8XKSF9",
           "code": "8XKSF9",
           "name": "2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-s1-8x-3door.png",
           "co2": 162,
           "variants": [
             {
@@ -521,6 +560,7 @@
           "factoryCode": "8XFSF9",
           "code": "8XFSF9",
           "name": "SB 2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-s1-8x-sportback.png",
           "co2": 166,
           "variants": [
             {
@@ -539,6 +579,7 @@
           "factoryCode": "8V1BCC",
           "code": "8V1BCC",
           "name": "1.4 TFSI CoD Ambition (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 109,
           "variants": [
             {
@@ -552,6 +593,7 @@
           "factoryCode": "8V1BFC",
           "code": "8V1BFC",
           "name": "1.6 TDI Ambition (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 105,
           "variants": [
             {
@@ -565,6 +607,7 @@
           "factoryCode": "8VKANC",
           "code": "8VKANC",
           "name": "1.0 TFSI (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 106,
           "variants": [
             {
@@ -578,6 +621,7 @@
           "factoryCode": "8VKBNC",
           "code": "8VKBNC",
           "name": "1.0 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -591,6 +635,7 @@
           "factoryCode": "8VKCNC",
           "code": "8VKCNC",
           "name": "1.0 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -604,6 +649,7 @@
           "factoryCode": "8VKANG",
           "code": "8VKANG",
           "name": "1.0 TFSI S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 106,
           "variants": [
             {
@@ -617,6 +663,7 @@
           "factoryCode": "8VKBNG",
           "code": "8VKBNG",
           "name": "1.0 TFSI Sport S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -630,6 +677,7 @@
           "factoryCode": "8VKCNG",
           "code": "8VKCNG",
           "name": "1.0 TFSI Design S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -643,6 +691,7 @@
           "factoryCode": "8VKACC",
           "code": "8VKACC",
           "name": "1.4 TFSI CoD (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -656,6 +705,7 @@
           "factoryCode": "8VKBCC",
           "code": "8VKBCC",
           "name": "1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 108,
           "variants": [
             {
@@ -669,6 +719,7 @@
           "factoryCode": "8VKCCC",
           "code": "8VKCCC",
           "name": "1.4 TFSI CoD Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 108,
           "variants": [
             {
@@ -682,6 +733,7 @@
           "factoryCode": "8VKACG",
           "code": "8VKACG",
           "name": "1.4 TFSI CoD S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 111,
           "variants": [
             {
@@ -695,6 +747,7 @@
           "factoryCode": "8VKBCG",
           "code": "8VKBCG",
           "name": "1.4 TFSI CoD Sport S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 112,
           "variants": [
             {
@@ -708,6 +761,7 @@
           "factoryCode": "8VKCCG",
           "code": "8VKCCG",
           "name": "1.4 TFSI CoD Design S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 112,
           "variants": [
             {
@@ -721,6 +775,7 @@
           "factoryCode": "8VKAFC",
           "code": "8VKAFC",
           "name": "1.6 TDI (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 101,
           "variants": [
             {
@@ -734,6 +789,7 @@
           "factoryCode": "8VKBFC",
           "code": "8VKBFC",
           "name": "1.6 TDI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -747,6 +803,7 @@
           "factoryCode": "8VKCFC",
           "code": "8VKCFC",
           "name": "1.6 TDI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-3door.png",
           "co2": 107,
           "variants": [
             {
@@ -760,6 +817,7 @@
           "factoryCode": "8VKAFG",
           "code": "8VKAFG",
           "name": "1.6 TDI S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 101,
           "variants": [
             {
@@ -773,6 +831,7 @@
           "factoryCode": "8VKBFG",
           "code": "8VKBFG",
           "name": "1.6 TDI Sport S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 102,
           "variants": [
             {
@@ -786,6 +845,7 @@
           "factoryCode": "8VKCFG",
           "code": "8VKCFG",
           "name": "1.6 TDI Design S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 102,
           "variants": [
             {
@@ -799,6 +859,7 @@
           "factoryCode": "8VKBGY",
           "code": "8VKBGY",
           "name": "2.0 TFSI Sport quattro S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 133,
           "variants": [
             {
@@ -812,6 +873,7 @@
           "factoryCode": "8VKCGY",
           "code": "8VKCGY",
           "name": "2.0 TFSI Design quattro S tronic",
+          "image": "audi-a3-8v-3door.png",
           "co2": 133,
           "variants": [
             {
@@ -825,6 +887,7 @@
           "factoryCode": "8VAAFC",
           "code": "8VAAFC",
           "name": "SB 1.6 TDI Comfort (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 99,
           "variants": [
             {
@@ -838,6 +901,7 @@
           "factoryCode": "8VABFC",
           "code": "8VABFC",
           "name": "SB 1.6 TDI Ambition (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 105,
           "variants": [
             {
@@ -851,6 +915,7 @@
           "factoryCode": "8VAAFG",
           "code": "8VAAFG",
           "name": "SB 1.6 TDI Comfort S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 99,
           "variants": [
             {
@@ -864,6 +929,7 @@
           "factoryCode": "8VFANC",
           "code": "8VFANC",
           "name": "SB 1.0 TFSI (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 106,
           "variants": [
             {
@@ -877,6 +943,7 @@
           "factoryCode": "8VFBNC",
           "code": "8VFBNC",
           "name": "SB 1.0 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -890,6 +957,7 @@
           "factoryCode": "8VFCNC",
           "code": "8VFCNC",
           "name": "SB 1.0 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -903,6 +971,7 @@
           "factoryCode": "8VFANG",
           "code": "8VFANG",
           "name": "SB 1.0 TFSI S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 106,
           "variants": [
             {
@@ -916,6 +985,7 @@
           "factoryCode": "8VFBNG",
           "code": "8VFBNG",
           "name": "SB 1.0 TFSI Sport S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -929,6 +999,7 @@
           "factoryCode": "8VFCNG",
           "code": "8VFCNG",
           "name": "SB 1.0 TFSI Design S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -942,6 +1013,7 @@
           "factoryCode": "8VFACC",
           "code": "8VFACC",
           "name": "SB 1.4 TFSI CoD (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 109,
           "variants": [
             {
@@ -955,6 +1027,7 @@
           "factoryCode": "8VFBCC",
           "code": "8VFBCC",
           "name": "SB 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 110,
           "variants": [
             {
@@ -968,6 +1041,7 @@
           "factoryCode": "8VFCCC",
           "code": "8VFCCC",
           "name": "SB 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 110,
           "variants": [
             {
@@ -981,6 +1055,7 @@
           "factoryCode": "8VFACG",
           "code": "8VFACG",
           "name": "SB 1.4 TFSI CoD S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 113,
           "variants": [
             {
@@ -994,6 +1069,7 @@
           "factoryCode": "8VFBCG",
           "code": "8VFBCG",
           "name": "SB 1.4 TFSI CoD Sport S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 114,
           "variants": [
             {
@@ -1007,6 +1083,7 @@
           "factoryCode": "8VFCCG",
           "code": "8VFCCG",
           "name": "SB 1.4 TFSI CoD Design S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 114,
           "variants": [
             {
@@ -1020,6 +1097,7 @@
           "factoryCode": "8VFAYC",
           "code": "8VFAYC",
           "name": "SB 1.4 TFSI g-tron (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 94,
           "variants": [
             {
@@ -1033,6 +1111,7 @@
           "factoryCode": "8VFAYG",
           "code": "8VFAYG",
           "name": "SB 1.4 TFSI g-tron S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 91,
           "variants": [
             {
@@ -1046,6 +1125,7 @@
           "factoryCode": "8VFAFC",
           "code": "8VFAFC",
           "name": "SB 1.6 TDI (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 101,
           "variants": [
             {
@@ -1059,6 +1139,7 @@
           "factoryCode": "8VFBFC",
           "code": "8VFBFC",
           "name": "SB 1.6 TDI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -1072,6 +1153,7 @@
           "factoryCode": "8VFCFC",
           "code": "8VFCFC",
           "name": "SB 1.6 TDI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 107,
           "variants": [
             {
@@ -1085,6 +1167,7 @@
           "factoryCode": "8VFAFG",
           "code": "8VFAFG",
           "name": "SB 1.6 TDI S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 101,
           "variants": [
             {
@@ -1098,6 +1181,7 @@
           "factoryCode": "8VFBFG",
           "code": "8VFBFG",
           "name": "SB 1.6 TDI Sport S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 102,
           "variants": [
             {
@@ -1111,6 +1195,7 @@
           "factoryCode": "8VFCFG",
           "code": "8VFCFG",
           "name": "SB 1.6 TDI Design S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 102,
           "variants": [
             {
@@ -1124,6 +1209,7 @@
           "factoryCode": "8VFBGY",
           "code": "8VFBGY",
           "name": "SB 2.0 TFSI Sport quattro S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 133,
           "variants": [
             {
@@ -1137,6 +1223,7 @@
           "factoryCode": "8VFCGY",
           "code": "8VFCGY",
           "name": "SB 2.0 TFSI Design quattro S tronic",
+          "image": "audi-a3-8v-sportback.png",
           "co2": 133,
           "variants": [
             {
@@ -1150,6 +1237,7 @@
           "factoryCode": "8VSBCC",
           "code": "8VSBCC",
           "name": "Sport Sedan 1.4 TFSI CoD Ambition (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 110,
           "variants": [
             {
@@ -1163,6 +1251,7 @@
           "factoryCode": "8VSBCG",
           "code": "8VSBCG",
           "name": "Sport Sedan 1.4 TFSI CoD Ambition S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 110,
           "variants": [
             {
@@ -1176,6 +1265,7 @@
           "factoryCode": "8VSBFG",
           "code": "8VSBFG",
           "name": "Sport Sedan 1.6 TDI Ambition S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 104,
           "variants": [
             {
@@ -1189,6 +1279,7 @@
           "factoryCode": "8VMANC",
           "code": "8VMANC",
           "name": "Sport Sedan 1.0 TFSI (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 105,
           "variants": [
             {
@@ -1202,6 +1293,7 @@
           "factoryCode": "8VMBNC",
           "code": "8VMBNC",
           "name": "Sport Sedan 1.0 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1215,6 +1307,7 @@
           "factoryCode": "8VMCNC",
           "code": "8VMCNC",
           "name": "Sport Sedan 1.0 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1228,6 +1321,7 @@
           "factoryCode": "8VMANG",
           "code": "8VMANG",
           "name": "Sport Sedan 1.0 TFSI S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 105,
           "variants": [
             {
@@ -1241,6 +1335,7 @@
           "factoryCode": "8VMBNG",
           "code": "8VMBNG",
           "name": "Sport Sedan 1.0 TFSI Sport S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1254,6 +1349,7 @@
           "factoryCode": "8VMCNG",
           "code": "8VMCNG",
           "name": "Sport Sedan 1.0 TFSI Design S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1267,6 +1363,7 @@
           "factoryCode": "8VMACC",
           "code": "8VMACC",
           "name": "Sport Sedan 1.4 TFSI CoD (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 108,
           "variants": [
             {
@@ -1280,6 +1377,7 @@
           "factoryCode": "8VMBCC",
           "code": "8VMBCC",
           "name": "Sport Sedan 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 109,
           "variants": [
             {
@@ -1293,6 +1391,7 @@
           "factoryCode": "8VMCCC",
           "code": "8VMCCC",
           "name": "Sport Sedan 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 109,
           "variants": [
             {
@@ -1306,6 +1405,7 @@
           "factoryCode": "8VMACG",
           "code": "8VMACG",
           "name": "Sport Sedan 1.4 TFSI CoD S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 111,
           "variants": [
             {
@@ -1319,6 +1419,7 @@
           "factoryCode": "8VMBCG",
           "code": "8VMBCG",
           "name": "Sport Sedan 1.4 TFSI CoD Sport S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 112,
           "variants": [
             {
@@ -1332,6 +1433,7 @@
           "factoryCode": "8VMCCG",
           "code": "8VMCCG",
           "name": "Sport Sedan 1.4 TFSI CoD Design S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 112,
           "variants": [
             {
@@ -1345,6 +1447,7 @@
           "factoryCode": "8VMAFC",
           "code": "8VMAFC",
           "name": "Sport Sedan 1.6 TDI (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 100,
           "variants": [
             {
@@ -1358,6 +1461,7 @@
           "factoryCode": "8VMBFC",
           "code": "8VMBFC",
           "name": "Sport Sedan 1.6 TDI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1371,6 +1475,7 @@
           "factoryCode": "8VMCFC",
           "code": "8VMCFC",
           "name": "Sport Sedan 1.6 TDI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 106,
           "variants": [
             {
@@ -1384,6 +1489,7 @@
           "factoryCode": "8VMAFG",
           "code": "8VMAFG",
           "name": "Sport Sedan 1.6 TDI S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 100,
           "variants": [
             {
@@ -1397,6 +1503,7 @@
           "factoryCode": "8VMBFG",
           "code": "8VMBFG",
           "name": "Sport Sedan 1.6 TDI Sport S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 101,
           "variants": [
             {
@@ -1410,6 +1517,7 @@
           "factoryCode": "8VMCFG",
           "code": "8VMCFG",
           "name": "Sport Sedan 1.6 TDI Design S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 101,
           "variants": [
             {
@@ -1423,6 +1531,7 @@
           "factoryCode": "8VMBGY",
           "code": "8VMBGY",
           "name": "Sport Sedan 2.0 TFSI Sport quattro S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 132,
           "variants": [
             {
@@ -1436,6 +1545,7 @@
           "factoryCode": "8VMCGY",
           "code": "8VMCGY",
           "name": "Sport Sedan 2.0 TFSI Design quattro S tronic",
+          "image": "audi-a3-8v-sedan.png",
           "co2": 132,
           "variants": [
             {
@@ -1449,6 +1559,7 @@
           "factoryCode": "8V7AAC",
           "code": "8V7AAC",
           "name": "Cabriolet 1.4 TFSI  Attraction Plus (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 127,
           "variants": [
             {
@@ -1462,6 +1573,7 @@
           "factoryCode": "8VEA4C",
           "code": "8VEA4C",
           "name": "Cabriolet 1.4 TFSI (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 122,
           "variants": [
             {
@@ -1475,6 +1587,7 @@
           "factoryCode": "8VEB4C",
           "code": "8VEB4C",
           "name": "Cabriolet 1.4 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 123,
           "variants": [
             {
@@ -1488,6 +1601,7 @@
           "factoryCode": "8VEC4C",
           "code": "8VEC4C",
           "name": "Cabriolet 1.4 TFSI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 123,
           "variants": [
             {
@@ -1501,6 +1615,7 @@
           "factoryCode": "8VEA4G",
           "code": "8VEA4G",
           "name": "Cabriolet 1.4 TFSI S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 118,
           "variants": [
             {
@@ -1514,6 +1629,7 @@
           "factoryCode": "8VEB4G",
           "code": "8VEB4G",
           "name": "Cabriolet 1.4 TFSI Sport S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 119,
           "variants": [
             {
@@ -1527,6 +1643,7 @@
           "factoryCode": "8VEC4G",
           "code": "8VEC4G",
           "name": "Cabriolet 1.4 TFSI Design S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 119,
           "variants": [
             {
@@ -1540,6 +1657,7 @@
           "factoryCode": "8VEACC",
           "code": "8VEACC",
           "name": "Cabriolet 1.4 TFSI CoD (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 112,
           "variants": [
             {
@@ -1553,6 +1671,7 @@
           "factoryCode": "8VEBCC",
           "code": "8VEBCC",
           "name": "Cabriolet 1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 114,
           "variants": [
             {
@@ -1566,6 +1685,7 @@
           "factoryCode": "8VECCC",
           "code": "8VECCC",
           "name": "Cabriolet 1.4 TFSI CoD Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 114,
           "variants": [
             {
@@ -1579,6 +1699,7 @@
           "factoryCode": "8VEACG",
           "code": "8VEACG",
           "name": "Cabriolet 1.4 TFSI CoD S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 116,
           "variants": [
             {
@@ -1592,6 +1713,7 @@
           "factoryCode": "8VEBCG",
           "code": "8VEBCG",
           "name": "Cabriolet 1.4 TFSI CoD Sport S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 117,
           "variants": [
             {
@@ -1605,6 +1727,7 @@
           "factoryCode": "8VECCG",
           "code": "8VECCG",
           "name": "Cabriolet 1.4 TFSI CoD Design S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 117,
           "variants": [
             {
@@ -1618,6 +1741,7 @@
           "factoryCode": "8VEAFC",
           "code": "8VEAFC",
           "name": "Cabriolet 1.6 TDI (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 110,
           "variants": [
             {
@@ -1631,6 +1755,7 @@
           "factoryCode": "8VEBFC",
           "code": "8VEBFC",
           "name": "Cabriolet 1.6 TDI Sport (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 111,
           "variants": [
             {
@@ -1644,6 +1769,7 @@
           "factoryCode": "8VECFC",
           "code": "8VECFC",
           "name": "Cabriolet 1.6 TDI Design (6 ταχύτητες)",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 111,
           "variants": [
             {
@@ -1657,6 +1783,7 @@
           "factoryCode": "8VEBGY",
           "code": "8VEBGY",
           "name": "Cabriolet 2.0 TFSI Sport quattro S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 139,
           "variants": [
             {
@@ -1670,6 +1797,7 @@
           "factoryCode": "8VECGY",
           "code": "8VECGY",
           "name": "Cabriolet 2.0 TFSI Design quattro S tronic",
+          "image": "audi-a3-8v-cabriolet.png",
           "co2": 139,
           "variants": [
             {
@@ -1688,6 +1816,7 @@
           "factoryCode": "8VKS39",
           "code": "8VKS39",
           "name": "2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-s3-8v-3door.png",
           "co2": 162,
           "variants": [
             {
@@ -1701,6 +1830,7 @@
           "factoryCode": "8VKS3Y",
           "code": "8VKS3Y",
           "name": "2.0 TFSI quattro S tronic",
+          "image": "audi-s3-8v-3door.png",
           "co2": 146,
           "variants": [
             {
@@ -1714,6 +1844,7 @@
           "factoryCode": "8VFS39",
           "code": "8VFS39",
           "name": "SB 2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-s3-8v-sportback.png",
           "co2": 162,
           "variants": [
             {
@@ -1727,6 +1858,7 @@
           "factoryCode": "8VFS3Y",
           "code": "8VFS3Y",
           "name": "SB 2.0 TFSI quattro S tronic",
+          "image": "audi-s3-8v-sportback.png",
           "co2": 149,
           "variants": [
             {
@@ -1740,6 +1872,7 @@
           "factoryCode": "8VMS39",
           "code": "8VMS39",
           "name": "Sport Sedan 2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-s3-8v-sedan.png",
           "co2": 162,
           "variants": [
             {
@@ -1753,6 +1886,7 @@
           "factoryCode": "8VMS3Y",
           "code": "8VMS3Y",
           "name": "Sport Sedan 2.0 TFSI quattro S tronic",
+          "image": "audi-s3-8v-sedan.png",
           "co2": 148,
           "variants": [
             {
@@ -1771,6 +1905,7 @@
           "factoryCode": "8W2AEC",
           "code": "8W2AEC",
           "name": "1.4 TFSI 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 123,
           "variants": [
             {
@@ -1784,6 +1919,7 @@
           "factoryCode": "8W2BEC",
           "code": "8W2BEC",
           "name": "1.4 TFSI Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 126,
           "variants": [
             {
@@ -1797,6 +1933,7 @@
           "factoryCode": "8W2CEC",
           "code": "8W2CEC",
           "name": "1.4 TFSI Design 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 126,
           "variants": [
             {
@@ -1810,6 +1947,7 @@
           "factoryCode": "8W2AEG",
           "code": "8W2AEG",
           "name": "1.4 TFSI S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 119,
           "variants": [
             {
@@ -1823,6 +1961,7 @@
           "factoryCode": "8W2BEG",
           "code": "8W2BEG",
           "name": "1.4 TFSI Sport S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 122,
           "variants": [
             {
@@ -1836,6 +1975,7 @@
           "factoryCode": "8W2CEG",
           "code": "8W2CEG",
           "name": "1.4 TFSI Design S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 122,
           "variants": [
             {
@@ -1849,6 +1989,7 @@
           "factoryCode": "8W2AIC",
           "code": "8W2AIC",
           "name": "2.0 TDI (122hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 98,
           "variants": [
             {
@@ -1862,6 +2003,7 @@
           "factoryCode": "8W2BIC",
           "code": "8W2BIC",
           "name": "2.0 TDI (122hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 103,
           "variants": [
             {
@@ -1875,6 +2017,7 @@
           "factoryCode": "8W2CIC",
           "code": "8W2CIC",
           "name": "2.0 TDI (122hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 103,
           "variants": [
             {
@@ -1888,6 +2031,7 @@
           "factoryCode": "8W2AIG",
           "code": "8W2AIG",
           "name": "2.0 TDI (122hp) S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 104,
           "variants": [
             {
@@ -1901,6 +2045,7 @@
           "factoryCode": "8W2BIG",
           "code": "8W2BIG",
           "name": "2.0 TDI (122hp) Sport S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -1914,6 +2059,7 @@
           "factoryCode": "8W2CIG",
           "code": "8W2CIG",
           "name": "2.0 TDI (122hp) Design S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -1927,6 +2073,7 @@
           "factoryCode": "8W2ABC",
           "code": "8W2ABC",
           "name": "2.0 TDI (150hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 99,
           "variants": [
             {
@@ -1940,6 +2087,7 @@
           "factoryCode": "8W2BBC",
           "code": "8W2BBC",
           "name": "2.0 TDI (150hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 104,
           "variants": [
             {
@@ -1953,6 +2101,7 @@
           "factoryCode": "8W2CBC",
           "code": "8W2CBC",
           "name": "2.0 TDI (150hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 104,
           "variants": [
             {
@@ -1966,6 +2115,7 @@
           "factoryCode": "8W2ABG",
           "code": "8W2ABG",
           "name": "2.0 TDI (150hp) S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 104,
           "variants": [
             {
@@ -1979,6 +2129,7 @@
           "factoryCode": "8W2BBG",
           "code": "8W2BBG",
           "name": "2.0 TDI (150hp) Sport S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -1992,6 +2143,7 @@
           "factoryCode": "8W2CBG",
           "code": "8W2CBG",
           "name": "2.0 TDI (150hp) Design S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -2005,6 +2157,7 @@
           "factoryCode": "8W2AFC",
           "code": "8W2AFC",
           "name": "2.0 TDI (190hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 111,
           "variants": [
             {
@@ -2018,6 +2171,7 @@
           "factoryCode": "8W2BFC",
           "code": "8W2BFC",
           "name": "2.0 TDI (190hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 111,
           "variants": [
             {
@@ -2031,6 +2185,7 @@
           "factoryCode": "8W2CFC",
           "code": "8W2CFC",
           "name": "2.0 TDI (190hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 111,
           "variants": [
             {
@@ -2044,6 +2199,7 @@
           "factoryCode": "8W2AFG",
           "code": "8W2AFG",
           "name": "2.0 TDI (190hp) S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 107,
           "variants": [
             {
@@ -2057,6 +2213,7 @@
           "factoryCode": "8W2BFG",
           "code": "8W2BFG",
           "name": "2.0 TDI (190hp) Sport S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 107,
           "variants": [
             {
@@ -2070,6 +2227,7 @@
           "factoryCode": "8W2CFG",
           "code": "8W2CFG",
           "name": "2.0 TDI (190hp) Design S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 107,
           "variants": [
             {
@@ -2083,6 +2241,7 @@
           "factoryCode": "8W2AFY",
           "code": "8W2AFY",
           "name": "2.0 TDI (190hp) quattro S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2096,6 +2255,7 @@
           "factoryCode": "8W2BFY",
           "code": "8W2BFY",
           "name": "2.0 TDI (190hp) Sport quattro S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2109,6 +2269,7 @@
           "factoryCode": "8W2CFY",
           "code": "8W2CFY",
           "name": "2.0 TDI (190hp) Design quattro S tronic",
+          "image": "audi-a4-b9-sedan-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2122,6 +2283,7 @@
           "factoryCode": "8W5AEC",
           "code": "8W5AEC",
           "name": "Avant 1.4 TFSI 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -2135,6 +2297,7 @@
           "factoryCode": "8W5BEC",
           "code": "8W5BEC",
           "name": "Avant 1.4 TFSI Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 131,
           "variants": [
             {
@@ -2148,6 +2311,7 @@
           "factoryCode": "8W5CEC",
           "code": "8W5CEC",
           "name": "Avant 1.4 TFSI Design 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 131,
           "variants": [
             {
@@ -2161,6 +2325,7 @@
           "factoryCode": "8W5AEG",
           "code": "8W5AEG",
           "name": "Avant 1.4 TFSI S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 123,
           "variants": [
             {
@@ -2174,6 +2339,7 @@
           "factoryCode": "8W5BEG",
           "code": "8W5BEG",
           "name": "Avant 1.4 TFSI Sport S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 126,
           "variants": [
             {
@@ -2187,6 +2353,7 @@
           "factoryCode": "8W5CEG",
           "code": "8W5CEG",
           "name": "Avant 1.4 TFSI Design S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 126,
           "variants": [
             {
@@ -2200,6 +2367,7 @@
           "factoryCode": "8W5AIC",
           "code": "8W5AIC",
           "name": "Avant 2.0 TDI (122hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 103,
           "variants": [
             {
@@ -2213,6 +2381,7 @@
           "factoryCode": "8W5BIC",
           "code": "8W5BIC",
           "name": "Avant 2.0 TDI (122hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 108,
           "variants": [
             {
@@ -2226,6 +2395,7 @@
           "factoryCode": "8W5CIC",
           "code": "8W5CIC",
           "name": "Avant 2.0 TDI (122hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 108,
           "variants": [
             {
@@ -2239,6 +2409,7 @@
           "factoryCode": "8W5AIG",
           "code": "8W5AIG",
           "name": "Avant 2.0 TDI (122hp) S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -2252,6 +2423,7 @@
           "factoryCode": "8W5BIG",
           "code": "8W5BIG",
           "name": "Avant 2.0 TDI (122hp) Sport S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2265,6 +2437,7 @@
           "factoryCode": "8W5CIG",
           "code": "8W5CIG",
           "name": "Avant 2.0 TDI (122hp) Design S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2278,6 +2451,7 @@
           "factoryCode": "8W5ABC",
           "code": "8W5ABC",
           "name": "Avant 2.0 TDI (150hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 104,
           "variants": [
             {
@@ -2291,6 +2465,7 @@
           "factoryCode": "8W5BBC",
           "code": "8W5BBC",
           "name": "Avant 2.0 TDI (150hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2304,6 +2479,7 @@
           "factoryCode": "8W5CBC",
           "code": "8W5CBC",
           "name": "Avant 2.0 TDI (150hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2317,6 +2493,7 @@
           "factoryCode": "8W5ABG",
           "code": "8W5ABG",
           "name": "Avant 2.0 TDI (150hp) S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 106,
           "variants": [
             {
@@ -2330,6 +2507,7 @@
           "factoryCode": "8W5BBG",
           "code": "8W5BBG",
           "name": "Avant 2.0 TDI (150hp) Sport S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2343,6 +2521,7 @@
           "factoryCode": "8W5CBG",
           "code": "8W5CBG",
           "name": "Avant 2.0 TDI (150hp) Design S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2356,6 +2535,7 @@
           "factoryCode": "8W5AFC",
           "code": "8W5AFC",
           "name": "Avant 2.0 TDI (190hp) 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2369,6 +2549,7 @@
           "factoryCode": "8W5BFC",
           "code": "8W5BFC",
           "name": "Avant 2.0 TDI (190hp) Sport 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2382,6 +2563,7 @@
           "factoryCode": "8W5CFC",
           "code": "8W5CFC",
           "name": "Avant 2.0 TDI (190hp) Design 6 ταχύτητες",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -2395,6 +2577,7 @@
           "factoryCode": "8W5AFG",
           "code": "8W5AFG",
           "name": "Avant 2.0 TDI (190hp) S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2408,6 +2591,7 @@
           "factoryCode": "8W5BFG",
           "code": "8W5BFG",
           "name": "Avant 2.0 TDI (190hp) Sport S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2421,6 +2605,7 @@
           "factoryCode": "8W5CFG",
           "code": "8W5CFG",
           "name": "Avant 2.0 TDI (190hp) Design S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -2434,6 +2619,7 @@
           "factoryCode": "8W5AFY",
           "code": "8W5AFY",
           "name": "Avant 2.0 TDI (190hp) quattro S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 116,
           "variants": [
             {
@@ -2447,6 +2633,7 @@
           "factoryCode": "8W5BFY",
           "code": "8W5BFY",
           "name": "Avant 2.0 TDI (190hp) Sport quattro S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 116,
           "variants": [
             {
@@ -2460,6 +2647,7 @@
           "factoryCode": "8W5CFY",
           "code": "8W5CFY",
           "name": "Avant 2.0 TDI (190hp) Design quattro S tronic",
+          "image": "audi-a4-b9-avant-prefacelift.png",
           "co2": 116,
           "variants": [
             {
@@ -2473,6 +2661,7 @@
           "factoryCode": "8WH0AY",
           "code": "8WH0AY",
           "name": "Allroad quattro 2.0 TFSI S tronic",
+          "image": "audi-a4-b9-allroad-prefacelift.png",
           "co2": 147,
           "variants": [
             {
@@ -2486,6 +2675,7 @@
           "factoryCode": "8WH0FY",
           "code": "8WH0FY",
           "name": "Allroad quattro 2.0 TDI S tronic",
+          "image": "audi-a4-b9-allroad-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -2504,6 +2694,7 @@
           "factoryCode": "8W2S4A",
           "code": "8W2S4A",
           "name": "3.0 TFSI quattro tiptronic",
+          "image": "audi-s4-b9-sedan-prefacelift.png",
           "co2": 166,
           "variants": [
             {
@@ -2517,6 +2708,7 @@
           "factoryCode": "8W5S4A",
           "code": "8W5S4A",
           "name": "Avant 3.0 TFSI quattro tiptronic",
+          "image": "audi-s4-b9-avant-prefacelift.png",
           "co2": 171,
           "variants": [
             {
@@ -2535,6 +2727,7 @@
           "factoryCode": "F53BEG",
           "code": "F53BEG",
           "name": "Coupé 1.4 TFSI S tronic",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 125,
           "variants": [
             {
@@ -2548,6 +2741,7 @@
           "factoryCode": "F53BDC",
           "code": "F53BDC",
           "name": "Coupé 2.0 TFSI (6 ταχύτητες)",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 130,
           "variants": [
             {
@@ -2561,6 +2755,7 @@
           "factoryCode": "F53BDG",
           "code": "F53BDG",
           "name": "Coupé 2.0 TFSI S tronic",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 120,
           "variants": [
             {
@@ -2574,6 +2769,7 @@
           "factoryCode": "F53BAY",
           "code": "F53BAY",
           "name": "Coupé 2.0 TFSI quattro S tronic",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 141,
           "variants": [
             {
@@ -2587,6 +2783,7 @@
           "factoryCode": "F53BFC",
           "code": "F53BFC",
           "name": "Coupé 2.0 TDI (6 ταχύτητες)",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 113,
           "variants": [
             {
@@ -2600,6 +2797,7 @@
           "factoryCode": "F53BFG",
           "code": "F53BFG",
           "name": "Coupé 2.0 TDI S tronic",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 111,
           "variants": [
             {
@@ -2613,6 +2811,7 @@
           "factoryCode": "F53BFY",
           "code": "F53BFY",
           "name": "Coupé 2.0 TDI quattro S tronic",
+          "image": "audi-a5-f5-coupe-prefacelift.png",
           "co2": 118,
           "variants": [
             {
@@ -2626,6 +2825,7 @@
           "factoryCode": "F5ABEG",
           "code": "F5ABEG",
           "name": "SB 1.4 TFSI S tronic",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -2639,6 +2839,7 @@
           "factoryCode": "F5ABDC",
           "code": "F5ABDC",
           "name": "SB 2.0 TFSI (6 ταχύτητες)",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 133,
           "variants": [
             {
@@ -2652,6 +2853,7 @@
           "factoryCode": "F5ABDG",
           "code": "F5ABDG",
           "name": "SB 2.0 TFSI S tronic",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 123,
           "variants": [
             {
@@ -2665,6 +2867,7 @@
           "factoryCode": "F5ABAY",
           "code": "F5ABAY",
           "name": "SB 2.0 TFSI quattro S tronic",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 141,
           "variants": [
             {
@@ -2678,6 +2881,7 @@
           "factoryCode": "F5ABFC",
           "code": "F5ABFC",
           "name": "SB 2.0 TDI (6 ταχύτητες)",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 115,
           "variants": [
             {
@@ -2691,6 +2895,7 @@
           "factoryCode": "F5ABFG",
           "code": "F5ABFG",
           "name": "SB 2.0 TDI S tronic",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 112,
           "variants": [
             {
@@ -2704,6 +2909,7 @@
           "factoryCode": "F5ABFY",
           "code": "F5ABFY",
           "name": "SB 2.0 TDI quattro S tronic",
+          "image": "audi-a5-f5-sportback-prefacelift.png",
           "co2": 121,
           "variants": [
             {
@@ -2722,6 +2928,7 @@
           "factoryCode": "F53S4A",
           "code": "F53S4A",
           "name": "Coupé 3.0 TFSI quattro tiptronic",
+          "image": "audi-s5-f5-coupe-prefacelift.png",
           "co2": 166,
           "variants": [
             {
@@ -2735,6 +2942,7 @@
           "factoryCode": "F5AS4A",
           "code": "F5AS4A",
           "name": "SB 3.0 TFSI quattro tiptronic",
+          "image": "audi-s5-f5-sportback-prefacelift.png",
           "co2": 166,
           "variants": [
             {
@@ -2753,6 +2961,7 @@
           "factoryCode": "4GC06G",
           "code": "4GC06G",
           "name": "1.8 TFSI ultra S tronic",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 133,
           "variants": [
             {
@@ -2766,6 +2975,7 @@
           "factoryCode": "4GC08G",
           "code": "4GC08G",
           "name": "2.0 TFSI S tronic",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 137,
           "variants": [
             {
@@ -2779,6 +2989,7 @@
           "factoryCode": "4GC08Y",
           "code": "4GC08Y",
           "name": "2.0 TFSI S tronic quattro",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 153,
           "variants": [
             {
@@ -2792,6 +3003,7 @@
           "factoryCode": "4GC0DG",
           "code": "4GC0DG",
           "name": "2.0 TDI ultra S tronic",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 110,
           "variants": [
             {
@@ -2805,6 +3017,7 @@
           "factoryCode": "4GC0IG",
           "code": "4GC0IG",
           "name": "2.0 TDI ultra S tronic",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 110,
           "variants": [
             {
@@ -2818,6 +3031,7 @@
           "factoryCode": "4GC0IY",
           "code": "4GC0IY",
           "name": "2.0 TDI ultra S tronic quattro",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 128,
           "variants": [
             {
@@ -2831,6 +3045,7 @@
           "factoryCode": "4GC0TG",
           "code": "4GC0TG",
           "name": "3.0 TDI S tronic",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 115,
           "variants": [
             {
@@ -2844,6 +3059,7 @@
           "factoryCode": "4GC0TY",
           "code": "4GC0TY",
           "name": "3.0 TDI S tronic quattro",
+          "image": "audi-a6-c7-sedan.png",
           "co2": 132,
           "variants": [
             {
@@ -2857,6 +3073,7 @@
           "factoryCode": "4GD06G",
           "code": "4GD06G",
           "name": "Avant 1.8 TFSI ultra S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 137,
           "variants": [
             {
@@ -2870,6 +3087,7 @@
           "factoryCode": "4GD08G",
           "code": "4GD08G",
           "name": "Avant 2.0 TFSI S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 140,
           "variants": [
             {
@@ -2883,6 +3101,7 @@
           "factoryCode": "4GD08Y",
           "code": "4GD08Y",
           "name": "Avant 2.0 TFSI quattro S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 158,
           "variants": [
             {
@@ -2896,6 +3115,7 @@
           "factoryCode": "4GD0DG",
           "code": "4GD0DG",
           "name": "Avant 2.0 TDI ultra S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 115,
           "variants": [
             {
@@ -2909,6 +3129,7 @@
           "factoryCode": "4GD0IG",
           "code": "4GD0IG",
           "name": "Avant 2.0 TDI ultra S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 115,
           "variants": [
             {
@@ -2922,6 +3143,7 @@
           "factoryCode": "4GD0IY",
           "code": "4GD0IY",
           "name": "Avant 2.0 TDI quattro S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 133,
           "variants": [
             {
@@ -2935,6 +3157,7 @@
           "factoryCode": "4GD0TG",
           "code": "4GD0TG",
           "name": "Avant 3.0 TDI S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 117,
           "variants": [
             {
@@ -2948,6 +3171,7 @@
           "factoryCode": "4GD0TY",
           "code": "4GD0TY",
           "name": "Avant 3.0 TDI quattro S tronic",
+          "image": "audi-a6-c7-avant.png",
           "co2": 138,
           "variants": [
             {
@@ -2961,6 +3185,7 @@
           "factoryCode": "4GJ0GY",
           "code": "4GJ0GY",
           "name": "Allroad 3.0 TDI quattro S tronic",
+          "image": "audi-a6-c7-allroad.png",
           "co2": 149,
           "variants": [
             {
@@ -2974,6 +3199,7 @@
           "factoryCode": "4GJ0VA",
           "code": "4GJ0VA",
           "name": "Allroad 3.0 BiTDI quattro tiptronic",
+          "image": "audi-a6-c7-allroad.png",
           "co2": 172,
           "variants": [
             {
@@ -2992,6 +3218,7 @@
           "factoryCode": "4GCSFY",
           "code": "4GCSFY",
           "name": "4.0 TFSI quattro S tronic",
+          "image": "audi-s6-c7-sedan.png",
           "co2": 214,
           "variants": [
             {
@@ -3010,6 +3237,7 @@
           "factoryCode": "4GDRAA",
           "code": "4GDRAA",
           "name": "Avant 4.0 TFSI quattro tiptronic 8",
+          "image": "audi-rs6-c7-avant.png",
           "co2": 223,
           "variants": [
             {
@@ -3023,6 +3251,7 @@
           "factoryCode": "4GDRRA",
           "code": "4GDRRA",
           "name": "Avant Performance 4.0 TFSI quattro tiptronic 8",
+          "image": "audi-rs6-c7-avant.png",
           "co2": 223,
           "variants": [
             {
@@ -3041,6 +3270,7 @@
           "factoryCode": "4GF06G",
           "code": "4GF06G",
           "name": "Sportback 1.8 TFSI ultra S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 133,
           "variants": [
             {
@@ -3054,6 +3284,7 @@
           "factoryCode": "4GF08G",
           "code": "4GF08G",
           "name": "Sportback 2.0 TFSI S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 137,
           "variants": [
             {
@@ -3067,6 +3298,7 @@
           "factoryCode": "4GF08Y",
           "code": "4GF08Y",
           "name": "Sportback 2.0 TFSI quattro S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 155,
           "variants": [
             {
@@ -3080,6 +3312,7 @@
           "factoryCode": "4GF0TG",
           "code": "4GF0TG",
           "name": "Sportback 3.0 TDI ultra S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 118,
           "variants": [
             {
@@ -3093,6 +3326,7 @@
           "factoryCode": "4GF0TY",
           "code": "4GF0TY",
           "name": "Sportback 3.0 TDI quattro S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 134,
           "variants": [
             {
@@ -3106,6 +3340,7 @@
           "factoryCode": "4GF0GY",
           "code": "4GF0GY",
           "name": "Sportback 3.0 TDI quattro S tronic",
+          "image": "audi-a7-c7-sportback.png",
           "co2": 136,
           "variants": [
             {
@@ -3124,6 +3359,7 @@
           "factoryCode": "4GFSFY",
           "code": "4GFSFY",
           "name": "Sportback 4.0 TFSI quattro S tronic",
+          "image": "audi-s7-c7-sportback.png",
           "co2": 215,
           "variants": [
             {
@@ -3142,6 +3378,7 @@
           "factoryCode": "4GFRAA",
           "code": "4GFRAA",
           "name": "Sportback 4.0 TFSI quattro tiptronic 8.",
+          "image": "audi-rs7-c7-sportback.png",
           "co2": 221,
           "variants": [
             {
@@ -3155,6 +3392,7 @@
           "factoryCode": "4GFRRA",
           "code": "4GFRRA",
           "name": "Sportback Performance 4.0 TFSI quattro tiptronic 8.",
+          "image": "audi-rs7-c7-sportback.png",
           "co2": 221,
           "variants": [
             {
@@ -3173,6 +3411,7 @@
           "factoryCode": "FV306C",
           "code": "FV306C",
           "name": "Coupé 1.8 TFSI (6 ταχύτητες)",
+          "image": "audi-tt-fv-coupe-prefacelift.png",
           "co2": 134,
           "variants": [
             {
@@ -3186,6 +3425,7 @@
           "factoryCode": "FV306G",
           "code": "FV306G",
           "name": "Coupé 1.8 TFSI S tronic",
+          "image": "audi-tt-fv-coupe-prefacelift.png",
           "co2": 129,
           "variants": [
             {
@@ -3199,6 +3439,7 @@
           "factoryCode": "FV307L",
           "code": "FV307L",
           "name": "Coupé 2.0 TFSI quattro S tronic",
+          "image": "audi-tt-fv-coupe-prefacelift.png",
           "co2": 149,
           "variants": [
             {
@@ -3212,6 +3453,7 @@
           "factoryCode": "FV906C",
           "code": "FV906C",
           "name": "Roadster 1.8 TFSI (6 ταχύτητες)",
+          "image": "audi-tt-fv-roadster-prefacelift.png",
           "co2": 138,
           "variants": [
             {
@@ -3225,6 +3467,7 @@
           "factoryCode": "FV906G",
           "code": "FV906G",
           "name": "Roadster 1.8 TFSI S tronic",
+          "image": "audi-tt-fv-roadster-prefacelift.png",
           "co2": 132,
           "variants": [
             {
@@ -3238,6 +3481,7 @@
           "factoryCode": "FV907L",
           "code": "FV907L",
           "name": "Roadster 2.0 TFSI quattro S tronic",
+          "image": "audi-tt-fv-roadster-prefacelift.png",
           "co2": 154,
           "variants": [
             {
@@ -3256,6 +3500,7 @@
           "factoryCode": "FV3S39",
           "code": "FV3S39",
           "name": "Coupé 2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-tts-fv-coupe-prefacelift.png",
           "co2": 164,
           "variants": [
             {
@@ -3269,6 +3514,7 @@
           "factoryCode": "FV3S3L",
           "code": "FV3S3L",
           "name": "Coupé 2.0 TFSI quattro S tronic",
+          "image": "audi-tts-fv-coupe-prefacelift.png",
           "co2": 155,
           "variants": [
             {
@@ -3282,6 +3528,7 @@
           "factoryCode": "FV9S39",
           "code": "FV9S39",
           "name": "Roadster 2.0 TFSI quattro (6 ταχύτητες)",
+          "image": "audi-tts-fv-roadster-prefacelift.png",
           "co2": 169,
           "variants": [
             {
@@ -3295,6 +3542,7 @@
           "factoryCode": "FV9S3L",
           "code": "FV9S3L",
           "name": "Roadster 2.0 TFSI quattro S tronic",
+          "image": "audi-tts-fv-roadster-prefacelift.png",
           "co2": 159,
           "variants": [
             {
@@ -3313,6 +3561,7 @@
           "factoryCode": "GABANC",
           "code": "GABANC",
           "name": "1.0 TFSI (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3326,6 +3575,7 @@
           "factoryCode": "GABBNC",
           "code": "GABBNC",
           "name": "1.0 TFSI Sport (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3339,6 +3589,7 @@
           "factoryCode": "GABCNC",
           "code": "GABCNC",
           "name": "1.0 TFSI Design (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3352,6 +3603,7 @@
           "factoryCode": "GABANG",
           "code": "GABANG",
           "name": "1.0 TFSI S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3365,6 +3617,7 @@
           "factoryCode": "GABBNG",
           "code": "GABBNG",
           "name": "1.0 TFSI Sport S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3378,6 +3631,7 @@
           "factoryCode": "GABCNG",
           "code": "GABCNG",
           "name": "1.0 TFSI Design S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -3391,6 +3645,7 @@
           "factoryCode": "GABACC",
           "code": "GABACC",
           "name": "1.4 TFSI CoD (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 124,
           "variants": [
             {
@@ -3404,6 +3659,7 @@
           "factoryCode": "GABBCC",
           "code": "GABBCC",
           "name": "1.4 TFSI CoD Sport (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 124,
           "variants": [
             {
@@ -3417,6 +3673,7 @@
           "factoryCode": "GABCCC",
           "code": "GABCCC",
           "name": "1.4 TFSI CoD Design (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 124,
           "variants": [
             {
@@ -3430,6 +3687,7 @@
           "factoryCode": "GABACG",
           "code": "GABACG",
           "name": "1.4 TFSI CoD S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 119,
           "variants": [
             {
@@ -3443,6 +3701,7 @@
           "factoryCode": "GABBCG",
           "code": "GABBCG",
           "name": "1.4 TFSI CoD Sport S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 119,
           "variants": [
             {
@@ -3456,6 +3715,7 @@
           "factoryCode": "GABCCG",
           "code": "GABCCG",
           "name": "1.4 TFSI CoD Design S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 119,
           "variants": [
             {
@@ -3469,6 +3729,7 @@
           "factoryCode": "GABAFC",
           "code": "GABAFC",
           "name": "1.6 TDI (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -3482,6 +3743,7 @@
           "factoryCode": "GABBFC",
           "code": "GABBFC",
           "name": "1.6 TDI Sport (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -3495,6 +3757,7 @@
           "factoryCode": "GABCFC",
           "code": "GABCFC",
           "name": "1.6 TDI Design (6 ταχύτητες)",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 114,
           "variants": [
             {
@@ -3508,6 +3771,7 @@
           "factoryCode": "GABAFG",
           "code": "GABAFG",
           "name": "1.6 TDI S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -3521,6 +3785,7 @@
           "factoryCode": "GABBFG",
           "code": "GABBFG",
           "name": "1.6 TDI Sport S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -3534,6 +3799,7 @@
           "factoryCode": "GABCFG",
           "code": "GABCFG",
           "name": "1.6 TDI Design S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 109,
           "variants": [
             {
@@ -3547,6 +3813,7 @@
           "factoryCode": "GABARY",
           "code": "GABARY",
           "name": "2.0 TDI quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 125,
           "variants": [
             {
@@ -3560,6 +3827,7 @@
           "factoryCode": "GABBRY",
           "code": "GABBRY",
           "name": "2.0 TDI Sport quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 125,
           "variants": [
             {
@@ -3573,6 +3841,7 @@
           "factoryCode": "GABCRY",
           "code": "GABCRY",
           "name": "2.0 TDI Design quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 125,
           "variants": [
             {
@@ -3586,6 +3855,7 @@
           "factoryCode": "GABATY",
           "code": "GABATY",
           "name": "2.0 TDI quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -3599,6 +3869,7 @@
           "factoryCode": "GABBTY",
           "code": "GABBTY",
           "name": "2.0 TDI Sport quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -3612,6 +3883,7 @@
           "factoryCode": "GABCTY",
           "code": "GABCTY",
           "name": "2.0 TDI Design quattro S tronic",
+          "image": "audi-q2-ga-prefacelift.png",
           "co2": 128,
           "variants": [
             {
@@ -3630,6 +3902,7 @@
           "factoryCode": "8UGAJC",
           "code": "8UGAJC",
           "name": "1.4 TFSI (125hp) (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 134,
           "variants": [
             {
@@ -3643,6 +3916,7 @@
           "factoryCode": "8UGA6C",
           "code": "8UGA6C",
           "name": "1.4 TFSI CoD ultra (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 127,
           "variants": [
             {
@@ -3656,6 +3930,7 @@
           "factoryCode": "8UGB6C",
           "code": "8UGB6C",
           "name": "1.4 TFSI CoD Sport ultra (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 127,
           "variants": [
             {
@@ -3669,6 +3944,7 @@
           "factoryCode": "8UGC6C",
           "code": "8UGC6C",
           "name": "1.4 TFSI CoD Design ultra (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 127,
           "variants": [
             {
@@ -3682,6 +3958,7 @@
           "factoryCode": "8UGA6X",
           "code": "8UGA6X",
           "name": "1.4 TFSI CoD S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -3695,6 +3972,7 @@
           "factoryCode": "8UGB6X",
           "code": "8UGB6X",
           "name": "1.4 TFSI CoD Sport S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -3708,6 +3986,7 @@
           "factoryCode": "8UGC6X",
           "code": "8UGC6X",
           "name": "1.4 TFSI CoD Design S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -3721,6 +4000,7 @@
           "factoryCode": "8UGA8Y",
           "code": "8UGA8Y",
           "name": "2.0 TFSI (180hp) quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 152,
           "variants": [
             {
@@ -3734,6 +4014,7 @@
           "factoryCode": "8UGB8Y",
           "code": "8UGB8Y",
           "name": "2.0 TFSI (180hp) Sport quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 152,
           "variants": [
             {
@@ -3747,6 +4028,7 @@
           "factoryCode": "8UGC8Y",
           "code": "8UGC8Y",
           "name": "2.0 TFSI (180hp) Design quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 152,
           "variants": [
             {
@@ -3760,6 +4042,7 @@
           "factoryCode": "8UGBEY",
           "code": "8UGBEY",
           "name": "2.0 TFSI (220hp) Sport quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 154,
           "variants": [
             {
@@ -3773,6 +4056,7 @@
           "factoryCode": "8UGCEY",
           "code": "8UGCEY",
           "name": "2.0 TFSI (220hp) Design quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 154,
           "variants": [
             {
@@ -3786,6 +4070,7 @@
           "factoryCode": "8UGAGC",
           "code": "8UGAGC",
           "name": "2.0 TDI (150hp) (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 117,
           "variants": [
             {
@@ -3799,6 +4084,7 @@
           "factoryCode": "8UGBGC",
           "code": "8UGBGC",
           "name": "2.0 TDI (150hp) Sport (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 117,
           "variants": [
             {
@@ -3812,6 +4098,7 @@
           "factoryCode": "8UGCGC",
           "code": "8UGCGC",
           "name": "2.0 TDI (150hp) Design (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 117,
           "variants": [
             {
@@ -3825,6 +4112,7 @@
           "factoryCode": "8UGAGG",
           "code": "8UGAGG",
           "name": "2.0 TDI (150hp) S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3838,6 +4126,7 @@
           "factoryCode": "8UGBGG",
           "code": "8UGBGG",
           "name": "2.0 TDI (150hp) Sport S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3851,6 +4140,7 @@
           "factoryCode": "8UGCGG",
           "code": "8UGCGG",
           "name": "2.0 TDI (150hp) Design S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3864,6 +4154,7 @@
           "factoryCode": "8UGAG9",
           "code": "8UGAG9",
           "name": "2.0 TDI (150hp) quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 129,
           "variants": [
             {
@@ -3877,6 +4168,7 @@
           "factoryCode": "8UGBG9",
           "code": "8UGBG9",
           "name": "2.0 TDI (150hp) Sport quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 129,
           "variants": [
             {
@@ -3890,6 +4182,7 @@
           "factoryCode": "8UGCG9",
           "code": "8UGCG9",
           "name": "2.0 TDI (150hp) Design quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 129,
           "variants": [
             {
@@ -3903,6 +4196,7 @@
           "factoryCode": "8UGAGY",
           "code": "8UGAGY",
           "name": "2.0 TDI (150hp) quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3916,6 +4210,7 @@
           "factoryCode": "8UGBGY",
           "code": "8UGBGY",
           "name": "2.0 TDI (150hp) Sport quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3929,6 +4224,7 @@
           "factoryCode": "8UGCGY",
           "code": "8UGCGY",
           "name": "2.0 TDI (150hp) Design quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 131,
           "variants": [
             {
@@ -3942,6 +4238,7 @@
           "factoryCode": "8UGAB9",
           "code": "8UGAB9",
           "name": "2.0 TDI (184hp) quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 138,
           "variants": [
             {
@@ -3955,6 +4252,7 @@
           "factoryCode": "8UGBB9",
           "code": "8UGBB9",
           "name": "2.0 TDI (184hp) Sport quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 138,
           "variants": [
             {
@@ -3968,6 +4266,7 @@
           "factoryCode": "8UGCB9",
           "code": "8UGCB9",
           "name": "2.0 TDI (184hp) Design quattro (6 ταχύτητες)",
+          "image": "audi-q3-8u.png",
           "co2": 138,
           "variants": [
             {
@@ -3981,6 +4280,7 @@
           "factoryCode": "8UGABY",
           "code": "8UGABY",
           "name": "2.0 TDI (184hp) quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -3994,6 +4294,7 @@
           "factoryCode": "8UGBBY",
           "code": "8UGBBY",
           "name": "2.0 TDI (184hp) Sport quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -4007,6 +4308,7 @@
           "factoryCode": "8UGCBY",
           "code": "8UGCBY",
           "name": "2.0 TDI (184hp) Design quattro S tronic",
+          "image": "audi-q3-8u.png",
           "co2": 136,
           "variants": [
             {
@@ -4025,6 +4327,7 @@
           "factoryCode": "8UGR7Y",
           "code": "8UGR7Y",
           "name": "Q3 2.5 TFSI quattro S tronic",
+          "image": "audi-rsq3-8u.png",
           "co2": 203,
           "variants": [
             {
@@ -4038,6 +4341,7 @@
           "factoryCode": "8UGRWY",
           "code": "8UGRWY",
           "name": "Q3 Performance 2.5 TFSI quattro S tronic",
+          "image": "audi-rsq3-8u.png",
           "co2": 203,
           "variants": [
             {
@@ -4056,6 +4360,7 @@
           "factoryCode": "8RB0ZY",
           "code": "8RB0ZY",
           "name": "2.0 TDI quattro S tronic",
+          "image": "audi-q5-8r.png",
           "co2": 149,
           "variants": [
             {
@@ -4069,6 +4374,7 @@
           "factoryCode": "8RB0RY",
           "code": "8RB0RY",
           "name": "2.0 TDI quattro S tronic",
+          "image": "audi-q5-8r.png",
           "co2": 149,
           "variants": [
             {
@@ -4082,6 +4388,7 @@
           "factoryCode": "FYBAAY",
           "code": "FYBAAY",
           "name": "2.0 TFSI quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 154,
           "variants": [
             {
@@ -4095,6 +4402,7 @@
           "factoryCode": "FYBBAY",
           "code": "FYBBAY",
           "name": "2.0 TFSI Sport quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 157,
           "variants": [
             {
@@ -4108,6 +4416,7 @@
           "factoryCode": "FYBCAY",
           "code": "FYBCAY",
           "name": "2.0 TFSI Design quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 157,
           "variants": [
             {
@@ -4121,6 +4430,7 @@
           "factoryCode": "FYBABC",
           "code": "FYBABC",
           "name": "2.0 TDI (6 ταχύτητες)",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 117,
           "variants": [
             {
@@ -4134,6 +4444,7 @@
           "factoryCode": "FYBBBC",
           "code": "FYBBBC",
           "name": "2.0 TDI Sport (6 ταχύτητες)",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 120,
           "variants": [
             {
@@ -4147,6 +4458,7 @@
           "factoryCode": "FYBCBC",
           "code": "FYBCBC",
           "name": "2.0 TDI Design (6 ταχύτητες)",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 120,
           "variants": [
             {
@@ -4160,6 +4472,7 @@
           "factoryCode": "FYBAFY",
           "code": "FYBAFY",
           "name": "2.0 TDI quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 129,
           "variants": [
             {
@@ -4173,6 +4486,7 @@
           "factoryCode": "FYBBFY",
           "code": "FYBBFY",
           "name": "2.0 TDI Sport quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 132,
           "variants": [
             {
@@ -4186,6 +4500,7 @@
           "factoryCode": "FYBCFY",
           "code": "FYBCFY",
           "name": "2.0 TDI Design quattro S tronic",
+          "image": "audi-q5-fy-prefacelift.png",
           "co2": 132,
           "variants": [
             {
@@ -4204,6 +4519,7 @@
           "factoryCode": "4MB0E1",
           "code": "4MB0E1",
           "name": "3.0 TDI quattro tiptronic",
+          "image": "audi-q7-4m-prefacelift.png",
           "co2": 149,
           "variants": [
             {
@@ -4217,6 +4533,7 @@
           "factoryCode": "4MB0E3",
           "code": "4MB0E3",
           "name": "e-tron 3.0 TDI quattro tiptronic",
+          "image": "audi-q7-4m-prefacelift.png",
           "co2": 50,
           "variants": [
             {
@@ -4235,6 +4552,7 @@
           "factoryCode": "4MBSU1",
           "code": "4MBSU1",
           "name": "4.0 TDI quattro tiptronic",
+          "image": "audi-sq7-4m-prefacelift.png",
           "co2": 189,
           "variants": [
             {
@@ -4253,6 +4571,7 @@
           "factoryCode": "4HC0CA",
           "code": "4HC0CA",
           "name": "4.0 TFSI quattro tiptronic",
+          "image": "audi-a8-d4.png",
           "co2": 206,
           "variants": [
             {
@@ -4266,6 +4585,7 @@
           "factoryCode": "4HC06A",
           "code": "4HC06A",
           "name": "3.0 TDI quattro tiptronic",
+          "image": "audi-a8-d4.png",
           "co2": 151,
           "variants": [
             {
@@ -4279,6 +4599,7 @@
           "factoryCode": "4HC0TA",
           "code": "4HC0TA",
           "name": "4.2 TDI quattro tiptronic",
+          "image": "audi-a8-d4.png",
           "co2": 189,
           "variants": [
             {
@@ -4292,6 +4613,7 @@
           "factoryCode": "4HL0CA",
           "code": "4HL0CA",
           "name": "4.0 TFSI quattro tiptronic Long",
+          "image": "audi-a8l-d4.png",
           "co2": 207,
           "variants": [
             {
@@ -4305,6 +4627,7 @@
           "factoryCode": "4HL06A",
           "code": "4HL06A",
           "name": "3.0 TDI quattro tiptronic Long",
+          "image": "audi-a8l-d4.png",
           "co2": 155,
           "variants": [
             {
@@ -4318,6 +4641,7 @@
           "factoryCode": "4HL0TA",
           "code": "4HL0TA",
           "name": "4.2 TDI quattro tiptronic Long",
+          "image": "audi-a8l-d4.png",
           "co2": 190,
           "variants": [
             {
@@ -4331,6 +4655,7 @@
           "factoryCode": "4HL0GA",
           "code": "4HL0GA",
           "name": "W12 6.3 FSI quattro tiptronic Long",
+          "image": "audi-a8l-d4.png",
           "co2": 254,
           "variants": [
             {
@@ -4349,6 +4674,7 @@
           "factoryCode": "4HCSSA",
           "code": "4HCSSA",
           "name": "4.0 TFSI quattro tiptronic",
+          "image": "audi-s8-d4.png",
           "co2": 216,
           "variants": [
             {
@@ -4367,6 +4693,7 @@
           "factoryCode": "4S30AE",
           "code": "4S30AE",
           "name": "V10 5.2 FSI quattro S tronic",
+          "image": "audi-r8-4s-coupe.png",
           "co2": 272,
           "variants": [
             {
@@ -4380,6 +4707,7 @@
           "factoryCode": "4S30BE",
           "code": "4S30BE",
           "name": "V10 plus 5.2 FSI quattro S tronic",
+          "image": "audi-r8-4s-coupe.png",
           "co2": 287,
           "variants": [
             {
