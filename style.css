@@ -2578,3 +2578,63 @@ button.secondary{
   stroke-linejoin:round;
 }
 
+/* =========================================================
+   Cartelonio — live brand availability states
+   ========================================================= */
+.vehicle-configurator-v2 .brand-option{
+  transition:
+    background .16s ease,
+    opacity .16s ease,
+    filter .16s ease;
+}
+
+.vehicle-configurator-v2 .brand-option.brand-option-checking,
+.vehicle-configurator-v2 .brand-option.brand-option-unavailable{
+  cursor:not-allowed !important;
+}
+
+.vehicle-configurator-v2 .brand-option.brand-option-checking{
+  opacity:.48;
+  filter:grayscale(.6);
+}
+
+.vehicle-configurator-v2 .brand-option.brand-option-unavailable{
+  opacity:.38 !important;
+  filter:grayscale(1) saturate(.25);
+  background:#0f1712 !important;
+}
+
+.vehicle-configurator-v2 .brand-option.brand-option-unavailable:hover,
+.vehicle-configurator-v2 .brand-option.brand-option-unavailable:focus-visible,
+.vehicle-configurator-v2 .brand-option.brand-option-checking:hover,
+.vehicle-configurator-v2 .brand-option.brand-option-checking:focus-visible{
+  background:#0f1712 !important;
+  transform:none !important;
+  box-shadow:none !important;
+}
+
+.vehicle-configurator-v2 .brand-option.brand-option-unavailable .brand-option-logo,
+.vehicle-configurator-v2 .brand-option.brand-option-checking .brand-option-logo{
+  opacity:.62;
+}
+
+.vehicle-configurator-v2 .brand-availability-badge{
+  flex:0 0 auto;
+  margin-left:auto;
+  padding:4px 8px;
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:999px;
+  background:rgba(255,255,255,.045);
+  color:rgba(255,255,255,.58);
+  font-size:10px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.vehicle-configurator-v2 .brand-option:disabled{
+  pointer-events:none;
+}
+
