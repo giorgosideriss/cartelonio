@@ -1,0 +1,1987 @@
+{
+  "brand": "Audi",
+  "year": 2022,
+  "models": {
+    "A1 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "GBAAT4",
+          "code": "GBAAT4",
+          "name": "A1 SB 25 TFSI 5 ταχύτητες",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16258.0,
+              "priceRetail": 16258.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBABMC",
+          "code": "GBABMC",
+          "name": "A1 SB Advanced 30 TFSI 6 ταχύτητες",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17342.0,
+              "priceRetail": 17342.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBACMC",
+          "code": "GBACMC",
+          "name": "A1 SB S line 30 TFSI 6 ταχύτητες",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17601.0,
+              "priceRetail": 17601.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBABMG",
+          "code": "GBABMG",
+          "name": "A1 SB Advanced 30 TFSI S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18910.0,
+              "priceRetail": 18910.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBACMG",
+          "code": "GBACMG",
+          "name": "A1 SB S line 30 TFSI S tronic",
+          "co2": 132,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19277.0,
+              "priceRetail": 19277.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBACKG",
+          "code": "GBACKG",
+          "name": "A1 SB S line 35 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20737.0,
+              "priceRetail": 20737.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A1 Citycarver": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "GBH0KC",
+          "code": "GBH0KC",
+          "name": "A1 Citycarver 35 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18994.0,
+              "priceRetail": 18994.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GBH0KG",
+          "code": "GBH0KG",
+          "name": "A1 Citycarver 35 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20495.0,
+              "priceRetail": 20495.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A3 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8YAAKC",
+          "code": "8YAAKC",
+          "name": "A3 SB 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17342.0,
+              "priceRetail": 17342.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YABKC",
+          "code": "8YABKC",
+          "name": "A3 SB Advanced 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18117.0,
+              "priceRetail": 18117.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YACKC",
+          "code": "8YACKC",
+          "name": "A3 SB S line 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19379.0,
+              "priceRetail": 19379.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YAAKG",
+          "code": "8YAAKG",
+          "name": "A3 SB 30 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19972.0,
+              "priceRetail": 19972.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YABKG",
+          "code": "8YABKG",
+          "name": "A3 SB Advanced 30 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21048.0,
+              "priceRetail": 21048.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YACKG",
+          "code": "8YACKG",
+          "name": "A3 SB S line 30 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21928.0,
+              "priceRetail": 21928.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YAAZG",
+          "code": "8YAAZG",
+          "name": "A3 SB 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22091.0,
+              "priceRetail": 22091.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YABZG",
+          "code": "8YABZG",
+          "name": "A3 SB Advanced 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23036.0,
+              "priceRetail": 23036.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YACZG",
+          "code": "8YACZG",
+          "name": "A3 SB S line 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24437.0,
+              "priceRetail": 24437.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YAADG",
+          "code": "8YAADG",
+          "name": "A3 SB 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20337.0,
+              "priceRetail": 20337.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YABDG",
+          "code": "8YABDG",
+          "name": "A3 SB Advanced 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21075.0,
+              "priceRetail": 21075.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YACDG",
+          "code": "8YACDG",
+          "name": "A3 SB S line 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22360.0,
+              "priceRetail": 22360.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YAAPX",
+          "code": "8YAAPX",
+          "name": "A3 SB 40 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34175.0,
+              "priceRetail": 34175.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YABPX",
+          "code": "8YABPX",
+          "name": "A3 SB Advanced 40 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34366.0,
+              "priceRetail": 34366.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YACPX",
+          "code": "8YACPX",
+          "name": "A3 SB S line 40 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35739.0,
+              "priceRetail": 35739.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S3 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8YAS3Y",
+          "code": "8YAS3Y",
+          "name": "S3 SB TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42810.0,
+              "priceRetail": 42810.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS3 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "8YARWY",
+          "code": "8YARWY",
+          "name": "RS3 SB TFSI quattro S tronic",
+          "co2": 216,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52034.0,
+              "priceRetail": 52034.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A3 Sport Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8YSAKC",
+          "code": "8YSAKC",
+          "name": "A3 Sport Sedan 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17744.0,
+              "priceRetail": 17744.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSBKC",
+          "code": "8YSBKC",
+          "name": "A3 Sport Sedan Advanced 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18317.0,
+              "priceRetail": 18317.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSCKC",
+          "code": "8YSCKC",
+          "name": "A3 Sport Sedan S line 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19608.0,
+              "priceRetail": 19608.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSAKG",
+          "code": "8YSAKG",
+          "name": "A3 Sport Sedan 30 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20331.0,
+              "priceRetail": 20331.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSAZG",
+          "code": "8YSAZG",
+          "name": "A3 Sport Sedan 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22840.0,
+              "priceRetail": 22840.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSBZG",
+          "code": "8YSBZG",
+          "name": "A3 Sport Sedan Advanced 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23785.0,
+              "priceRetail": 23785.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSCZG",
+          "code": "8YSCZG",
+          "name": "A3 Sport Sedan S line 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25149.0,
+              "priceRetail": 25149.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8YSADG",
+          "code": "8YSADG",
+          "name": "A3 Sport Sedan 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19998.0,
+              "priceRetail": 19998.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A4 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8WCA7G",
+          "code": "8WCA7G",
+          "name": "A4 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26307.0,
+              "priceRetail": 26307.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WCCYG",
+          "code": "8WCCYG",
+          "name": "A4 S line 30 TDI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31229.0,
+              "priceRetail": 31229.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WCAUG",
+          "code": "8WCAUG",
+          "name": "A4 40 TDI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33065.0,
+              "priceRetail": 33065.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WCCUG",
+          "code": "8WCCUG",
+          "name": "A4 S line 40 TDI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35187.0,
+              "priceRetail": 35187.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WCAUY",
+          "code": "8WCAUY",
+          "name": "A4 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34396.0,
+              "priceRetail": 34396.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WCCUY",
+          "code": "8WCCUY",
+          "name": "A4 S line 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37669.0,
+              "priceRetail": 37669.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S4 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "8WCS5A",
+          "code": "8WCS5A",
+          "name": "S4 Sedan TDI Hybrid tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56692.0,
+              "priceRetail": 56692.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "S4 Avant": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "8WDS5A",
+          "code": "8WDS5A",
+          "name": "S4 Avant TDI Hybrid tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58487.0,
+              "priceRetail": 58487.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS4 Avant": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "8WDRXA",
+          "code": "8WDRXA",
+          "name": "RS 4 Avant TFSI quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 70948.0,
+              "priceRetail": 70948.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A4 Allroad": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "8WJ0AY",
+          "code": "8WJ0AY",
+          "name": "A4 Allroad 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39061.0,
+              "priceRetail": 39061.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "8WJ0UY",
+          "code": "8WJ0UY",
+          "name": "A4 Allroad 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38964.0,
+              "priceRetail": 38964.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A5 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "F5PCAY",
+          "code": "F5PCAY",
+          "name": "A5 Coupé S line 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48634.0,
+              "priceRetail": 48634.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F5PCUY",
+          "code": "F5PCUY",
+          "name": "A5 Coupé S line 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43712.0,
+              "priceRetail": 43712.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS5 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "F5PRXA",
+          "code": "F5PRXA",
+          "name": "RS 5 Coupé quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 76163.0,
+              "priceRetail": 76163.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A5 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "F5FCZG",
+          "code": "F5FCZG",
+          "name": "A5 SB S line 40 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36950.0,
+              "priceRetail": 36950.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F5FCAY",
+          "code": "F5FCAY",
+          "name": "A5 SB S line 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48599.0,
+              "priceRetail": 48599.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F5FCUY",
+          "code": "F5FCUY",
+          "name": "A5 SB S line 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43712.0,
+              "priceRetail": 43712.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A6 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "4A2C3Y",
+          "code": "4A2C3Y",
+          "name": "A6 Design 45 TFSI  Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52513.0,
+              "priceRetail": 52513.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4A2CIY",
+          "code": "4A2CIY",
+          "name": "A6 Design 40 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52381.0,
+              "priceRetail": 52381.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4A2CMY",
+          "code": "4A2CMY",
+          "name": "A6 Design 50 TFSI e quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59838.0,
+              "priceRetail": 59838.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A6 Allroad": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "4AH0LA",
+          "code": "4AH0LA",
+          "name": "A6 allroad 50 TDI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 67713.0,
+              "priceRetail": 67713.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS6 Avant": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "4A5RCA",
+          "code": "4A5RCA",
+          "name": "RS 6 Avant TFSI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 108909.0,
+              "priceRetail": 108909.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "A7 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4KA03Y",
+          "code": "4KA03Y",
+          "name": "A7 Sportback 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66321.0,
+              "priceRetail": 66321.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4KA0LA",
+          "code": "4KA0LA",
+          "name": "A7 Sportback 50 TDI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65965.0,
+              "priceRetail": 65965.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS7 Sportback": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "4KARCA",
+          "code": "4KARCA",
+          "name": "RS 7 Sportback Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 112626.0,
+              "priceRetail": 112626.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q2": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GAGAQC",
+          "code": "GAGAQC",
+          "name": "Q2 Comfort 30 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17687.0,
+              "priceRetail": 17687.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGBQC",
+          "code": "GAGBQC",
+          "name": "Q2 Advanced 30 TFSI  6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18797.0,
+              "priceRetail": 18797.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGAZG",
+          "code": "GAGAZG",
+          "name": "Q2 35 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20737.0,
+              "priceRetail": 20737.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGBZG",
+          "code": "GAGBZG",
+          "name": "Q2 Advanced 35 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21892.0,
+              "priceRetail": 21892.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGCZG",
+          "code": "GAGCZG",
+          "name": "Q2 S line 35 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23022.0,
+              "priceRetail": 23022.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGAEG",
+          "code": "GAGAEG",
+          "name": "Q2 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20829.0,
+              "priceRetail": 20829.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGBEG",
+          "code": "GAGBEG",
+          "name": "Q2 Advanced 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21163.0,
+              "priceRetail": 21163.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGCEG",
+          "code": "GAGCEG",
+          "name": "Q2 S line 30 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22256.0,
+              "priceRetail": 22256.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGASY",
+          "code": "GAGASY",
+          "name": "Q2 35 TDI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25600.0,
+              "priceRetail": 25600.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GAGCSY",
+          "code": "GAGCSY",
+          "name": "Q2 S line 35 TDI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28062.0,
+              "priceRetail": 28062.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "SQ2": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GAGS3Y",
+          "code": "GAGS3Y",
+          "name": "SQ2 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40440.0,
+              "priceRetail": 40440.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q3": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "F3BAZC",
+          "code": "F3BAZC",
+          "name": "Q3 35 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22780.0,
+              "priceRetail": 22780.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BBZG",
+          "code": "F3BBZG",
+          "name": "Q3 Advanced 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26213.0,
+              "priceRetail": 26213.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BCZG",
+          "code": "F3BCZG",
+          "name": "Q3 S line 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27467.0,
+              "priceRetail": 27467.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BARG",
+          "code": "F3BARG",
+          "name": "Q3 Executive 35 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29062.0,
+              "priceRetail": 29062.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BCRG",
+          "code": "F3BCRG",
+          "name": "Q3 S line 35 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29831.0,
+              "priceRetail": 29831.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BCLY",
+          "code": "F3BCLY",
+          "name": "Q3 S line 40 TDI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34785.0,
+              "priceRetail": 34785.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BBKY",
+          "code": "F3BBKY",
+          "name": "Q3 Advanced 45 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32721.0,
+              "priceRetail": 32721.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BCKY",
+          "code": "F3BCKY",
+          "name": "Q3 S line 45 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34284.0,
+              "priceRetail": 34284.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BAPX",
+          "code": "F3BAPX",
+          "name": "Q3 45 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36311.0,
+              "priceRetail": 36311.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3BCPX",
+          "code": "F3BCPX",
+          "name": "Q3 S line 45 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39971.0,
+              "priceRetail": 39971.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS Q3": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "F3BRWY",
+          "code": "F3BRWY",
+          "name": "RS Q3 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58771.0,
+              "priceRetail": 58771.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NAZC",
+          "code": "F3NAZC",
+          "name": "Q3 SB 35 TFSI 6 ταχύτητες",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24823.0,
+              "priceRetail": 24823.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NAZG",
+          "code": "F3NAZG",
+          "name": "Q3 SB 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28125.0,
+              "priceRetail": 28125.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NCZG",
+          "code": "F3NCZG",
+          "name": "Q3 SB S line 35 TFSI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29661.0,
+              "priceRetail": 29661.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NARG",
+          "code": "F3NARG",
+          "name": "Q3 SB 35 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30045.0,
+              "priceRetail": 30045.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NCRG",
+          "code": "F3NCRG",
+          "name": "Q3 SB S line 35 TDI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32578.0,
+              "priceRetail": 32578.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NALY",
+          "code": "F3NALY",
+          "name": "Q3 SB 40 TDI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34116.0,
+              "priceRetail": 34116.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NCLY",
+          "code": "F3NCLY",
+          "name": "Q3 SB S line 40 TDI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37078.0,
+              "priceRetail": 37078.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NCKY",
+          "code": "F3NCKY",
+          "name": "Q3 SB S line 45 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36221.0,
+              "priceRetail": 36221.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NAPX",
+          "code": "F3NAPX",
+          "name": "Q3 SB 45 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39132.0,
+              "priceRetail": 39132.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F3NCPX",
+          "code": "F3NCPX",
+          "name": "Q3 SB S line 45 TFSI e S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43708.0,
+              "priceRetail": 43708.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS Q3 Sportback": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "F3NRWY",
+          "code": "F3NRWY",
+          "name": "RS Q3 SB TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60795.0,
+              "priceRetail": 60795.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F4BAI1",
+          "code": "F4BAI1",
+          "name": "Q4 e-tron 35",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41855.0,
+              "priceRetail": 41855.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F4BAC3",
+          "code": "F4BAC3",
+          "name": "Q4 e-tron 40",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47500.0,
+              "priceRetail": 47500.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F4BA23",
+          "code": "F4BA23",
+          "name": "Q4 e-tron 50 quattro",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 53145.0,
+              "priceRetail": 53145.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q4 e-tron Sportback": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "F4NAI1",
+          "code": "F4NAI1",
+          "name": "Q4 Sportback e-tron 35",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44274.0,
+              "priceRetail": 44274.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F4NAC3",
+          "code": "F4NAC3",
+          "name": "Q4 Sportback e-tron 40",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49919.0,
+              "priceRetail": 49919.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F4NA23",
+          "code": "F4NA23",
+          "name": "Q4 Sportback e-tron 50 quattro",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 55565.0,
+              "priceRetail": 55565.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q5": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "FYGAJG",
+          "code": "FYGAJG",
+          "name": "Q5 35 TDI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36806.0,
+              "priceRetail": 36806.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGBJG",
+          "code": "FYGBJG",
+          "name": "Q5 Advanced 35 TDI Hybrid S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38065.0,
+              "priceRetail": 38065.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGAUY",
+          "code": "FYGAUY",
+          "name": "Q5 40 TDI Hybrid quattro Stronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40307.0,
+              "priceRetail": 40307.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGBUY",
+          "code": "FYGBUY",
+          "name": "Q5 Advanced 40 TDI Hybrid quattro Stronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41623.0,
+              "priceRetail": 41623.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGCUY",
+          "code": "FYGCUY",
+          "name": "Q5 S line 40 TDI Hybrid quattro Stronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42940.0,
+              "priceRetail": 42940.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGAAY",
+          "code": "FYGAAY",
+          "name": "Q5 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44755.0,
+              "priceRetail": 44755.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGCAY",
+          "code": "FYGCAY",
+          "name": "Q5 S line 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46515.0,
+              "priceRetail": 46515.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGA9Y",
+          "code": "FYGA9Y",
+          "name": "Q5 50 TFSI e quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50724.0,
+              "priceRetail": 50724.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYGC9Y",
+          "code": "FYGC9Y",
+          "name": "Q5 S line 50 TFSI e quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52555.0,
+              "priceRetail": 52555.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q5 Sportback": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "FYTBUY",
+          "code": "FYTBUY",
+          "name": "Q5 SB Advanced 40 TDI Hybrid quattro Stronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 45111.0,
+              "priceRetail": 45111.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYTCUY",
+          "code": "FYTCUY",
+          "name": "Q5 SB S line 40 TDI Hybrid quattro Stronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46428.0,
+              "priceRetail": 46428.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYTCAY",
+          "code": "FYTCAY",
+          "name": "Q5 SB S line 45 TFSI Hybrid quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49966.0,
+              "priceRetail": 49966.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYTB9Y",
+          "code": "FYTB9Y",
+          "name": "Q5 SB Advanced 50 TFSI e quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54728.0,
+              "priceRetail": 54728.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FYTC9Y",
+          "code": "FYTC9Y",
+          "name": "Q5 SB S line 50 TFSI e quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56025.0,
+              "priceRetail": 56025.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "SQ5 Sportback": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "FYTS5A",
+          "code": "FYTS5A",
+          "name": "SQ5 TDI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 70957.0,
+              "priceRetail": 70957.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q7": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4MGAN2",
+          "code": "4MGAN2",
+          "name": "Q7 50 TDI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 63117.0,
+              "priceRetail": 63117.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4MGCN2",
+          "code": "4MGCN2",
+          "name": "Q7 S line 50 TDI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 68311.0,
+              "priceRetail": 68311.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4MGCY3",
+          "code": "4MGCY3",
+          "name": "Q7 S line 55 TFSI e quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 70253.0,
+              "priceRetail": 70253.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "Q8": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4MN0X2",
+          "code": "4MN0X2",
+          "name": "Q8 55 TFSI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 79030.34,
+              "priceRetail": 79030.34
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4MN0N2",
+          "code": "4MN0N2",
+          "name": "Q8 50 TDI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 74859.0,
+              "priceRetail": 74859.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "4MN0Z3",
+          "code": "4MN0Z3",
+          "name": "Q8 60 TFSI e quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 80922.0,
+              "priceRetail": 80922.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "RS Q8": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4MNRV2",
+          "code": "4MNRV2",
+          "name": "RS Q8 TFSI Hybrid quattro tiptronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 112457.0,
+              "priceRetail": 112457.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "TT Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "FVP0CG",
+          "code": "FVP0CG",
+          "name": "TT Coupe 40 TFSI S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35922.0,
+              "priceRetail": 35922.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "FVP09Y",
+          "code": "FVP09Y",
+          "name": "TT Coupe 45 TFSI quattro S tronic",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44116.0,
+              "priceRetail": 44116.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "e-tron": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GENABE",
+          "code": "GENABE",
+          "name": "e-tron 50 quattro",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60484.0,
+              "priceRetail": 60484.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GENBAE",
+          "code": "GENBAE",
+          "name": "e-tron 55 quattro Advanced",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 70968.0,
+              "priceRetail": 70968.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GENCAE",
+          "code": "GENCAE",
+          "name": "e-tron 55 quattro S line",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 72581.0,
+              "priceRetail": 72581.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "e-tron Sportback": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "GEAABE",
+          "code": "GEAABE",
+          "name": "e-tron SB 50 quattro",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65323.0,
+              "priceRetail": 65323.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GEABAE",
+          "code": "GEABAE",
+          "name": "e-tron SB 55 quattro Advanced",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 76613.0,
+              "priceRetail": 76613.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "GEACAE",
+          "code": "GEACAE",
+          "name": "e-tron SB 55 quattro S line",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 77419.0,
+              "priceRetail": 77419.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    },
+    "e-tron GT": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "F83RJ7",
+          "code": "F83RJ7",
+          "name": "e-tron GT quattro",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 91129.0,
+              "priceRetail": 91129.0
+            }
+          ],
+          "extras": []
+        },
+        {
+          "factoryCode": "F83RH7",
+          "code": "F83RH7",
+          "name": "RS e-tron GT",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 125000.0,
+              "priceRetail": 125000.0
+            }
+          ],
+          "extras": []
+        }
+      ]
+    }
+  }
+}
