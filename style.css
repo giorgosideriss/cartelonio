@@ -2554,3 +2554,27 @@ button.secondary{
   stroke-width:1.75;
 }
 
+/* =========================================================
+   Cartelonio — brand dropdown chevron consistency
+   ========================================================= */
+.vehicle-configurator-v2 .brand-button-arrow{
+  display:grid;
+  place-items:center;
+  width:20px;
+  height:20px;
+  flex:0 0 20px;
+  margin-left:auto !important;
+  color:rgba(255,255,255,.78);
+}
+
+.vehicle-configurator-v2 .brand-button-arrow .dropdown-chevron-svg{
+  display:block;
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
