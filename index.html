@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-<link href="style.css?v=20260915-3" rel="stylesheet"/>
+<link href="style.css?v=20260915-4" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -389,64 +389,46 @@
       </div>
     </div>
 
-    <!-- View 2: Existing "What is Cartelonio" welcome content -->
+    <!-- View 2: What is Cartelonio -->
     <div class="onboarding-view" data-onboarding-view="about">
       <button type="button" class="onboarding-back" data-onboarding-go="welcome">← Πίσω</button>
-      <div class="onboarding-subview-scroll onboarding-existing-welcome">
-        <div class="cartelonio-welcome" role="dialog" aria-modal="true" aria-labelledby="cartelonioWelcomeTitle">
-  <div class="cartelonio-welcome-card">
-    <button class="cartelonio-welcome-close" type="button" aria-label="Κλείσιμο">×</button>
-    <span class="cartelonio-welcome-kicker cartelonio-welcome-kicker-with-logo">
-  <span>Καλώς ήρθες στο</span>
-  <img class="cartelonio-welcome-logo" src="images/cartelonio-logo.png" alt="Cartelonio"/>
-</span>
-    <h2>Υπολόγισε το τέλος ταξινόμησης, πιο απλά.</h2>
-    <p>Το <strong>Cartelonio</strong> συγκεντρώνει στοιχεία οχημάτων, τιμοκαταλόγους και τη μεθοδολογία υπολογισμού του τέλους ταξινόμησης, με βάση τα διαθέσιμα δεδομένα και τους επίσημους πίνακες της <strong>ΑΑΔΕ</strong>.</p>
-    <p>Επίλεξε μάρκα, έτος, μοντέλο και έκδοση. Όπου υπάρχουν διαθέσιμα στοιχεία, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, εκπομπές CO₂ και άλλα δεδομένα που χρειάζονται για τον υπολογισμό.</p>
-    <p class="cartelonio-welcome-note"><strong>Σημαντικό:</strong> Το αποτέλεσμα είναι ενημερωτικό και αποτελεί εκτίμηση. Παρότι έχει καταβληθεί προσπάθεια ώστε τα δεδομένα και οι υπολογισμοί να ακολουθούν πιστά τις επίσημες πηγές, ενδέχεται να υπάρχουν ελλείψεις, αποκλίσεις ή λανθασμένες τιμές. Το τελικό ποσό και η φορολογητέα αξία καθορίζονται αποκλειστικά από τις αρμόδιες τελωνειακές αρχές.</p>
-    <div class="cartelonio-welcome-actions"><button class="cartelonio-welcome-enter" type="button">Ξεκίνα</button></div>
-  </div>
-</div>
+      <div class="onboarding-subview-scroll">
+        <div class="about-cartelonio-view">
+          <div class="about-cartelonio-heading">
+            <span class="about-cartelonio-kicker">CARTELONIO</span>
+            <h2>
+              Καλώς ήρθες στο
+              <img src="images/cartelonio-logo.png" alt="Cartelonio" class="about-cartelonio-logo">
+            </h2>
+          </div>
 
-<!-- HOW TO USE MODAL -->
-<div class="how-to-modal" aria-hidden="true">
-  <div class="how-to-modal-backdrop"></div>
-  <section class="how-to-modal-card" role="dialog" aria-modal="true" aria-labelledby="howToUseTitle">
-    <button class="how-to-modal-close" type="button" aria-label="Κλείσιμο">×</button>
-    <div class="how-to-modal-kicker">CARTELONIO GUIDE</div>
-    <h2>Πώς λειτουργεί το Cartelonio</h2>
-    <p class="how-to-modal-intro">Από την επιλογή του αυτοκινήτου μέχρι την εκτίμηση του Τέλους Ταξινόμησης, η διαδικασία γίνεται σε λίγα βήματα.</p>
+          <p class="about-cartelonio-lead">
+            Το Cartelonio δημιουργήθηκε για να κάνει τον υπολογισμό του Τέλους Ταξινόμησης
+            πιο απλό, γρήγορο και κατανοητό.
+          </p>
 
-    <div class="how-to-steps">
-      <article class="how-to-step"><span class="how-to-step-number">01</span><div>
-        <h3>Επίλεξε το αυτοκίνητό σου</h3>
-        <p>Επίλεξε Μάρκα → Έτος → Μοντέλο → Έκδοση. Όπου υπάρχουν διαθέσιμα δεδομένα, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, CO₂, κατηγορία αμαξώματος και άλλα στοιχεία.</p>
-      </div></article>
+          <div class="about-cartelonio-copy">
+            <p>
+              Επίλεξε το αυτοκίνητό σου και, όπου υπάρχουν διαθέσιμα δεδομένα,
+              η εφαρμογή συμπληρώνει αυτόματα βασικές πληροφορίες όπως ΛΤΠΦ, CO₂,
+              κατηγορία αμαξώματος και άλλα στοιχεία που χρησιμοποιούνται στον υπολογισμό.
+            </p>
+            <p>
+              Με βάση τα στοιχεία του οχήματος, την πρώτη κυκλοφορία, την ημερομηνία
+              εισαγωγής και τα χιλιόμετρα, το Cartelonio υπολογίζει την απομειωμένη
+              φορολογητέα αξία και σου δίνει μια εκτίμηση του Τέλους Ταξινόμησης.
+            </p>
+          </div>
 
-      <article class="how-to-step"><span class="how-to-step-number">02</span><div>
-        <h3>Πρόσθεσε Extras</h3>
-        <p>Αν υπάρχουν εργοστασιακά extras για τη συγκεκριμένη έκδοση, μπορείς να τα επιλέξεις και η ΛΤΠΦ προσαρμόζεται αυτόματα.</p>
-      </div></article>
-
-      <article class="how-to-step"><span class="how-to-step-number">03</span><div>
-        <h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3>
-        <p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Αν κάποιο απαραίτητο στοιχείο δεν υπάρχει στη βάση, μπορείς να το συμπληρώσεις χειροκίνητα.</p>
-      </div></article>
-
-      <article class="how-to-step"><span class="how-to-step-number">04</span><div>
-        <h3>Πάτησε «Υπολόγισε»</h3>
-        <p>Το Cartelonio υπολογίζει την απομειωμένη φορολογητέα αξία και την εκτίμηση του Τέλους Ταξινόμησης σύμφωνα με τα δεδομένα και τους κανόνες που χρησιμοποιεί η εφαρμογή.</p>
-      </div></article>
-    </div>
-
-    <div class="how-to-manual">
-      <strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong>
-      <p>Μπορείς να παρακάμψεις την επιλογή οχήματος και να εισαγάγεις χειροκίνητα τη ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.</p>
-    </div>
-
-    <p class="how-to-disclaimer">Το αποτέλεσμα αποτελεί ενημερωτική εκτίμηση και όχι επίσημο τελωνειακό υπολογισμό. Η τελική αξία καθορίζεται από τις αρμόδιες τελωνειακές αρχές.</p>
-  </section>
-</div>
+          <div class="about-cartelonio-note">
+            <strong>Σημαντικό</strong>
+            <p>
+              Το αποτέλεσμα είναι ενημερωτική εκτίμηση και ενδέχεται να υπάρχουν
+              αποκλίσεις ή ελλείψεις στα διαθέσιμα δεδομένα. Η τελική φορολογητέα αξία
+              και το Τέλος Ταξινόμησης καθορίζονται από τις αρμόδιες τελωνειακές αρχές.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="onboarding-subview-actions">
         <button type="button" class="onboarding-start" data-onboarding-start>Ξεκινήστε τώρα <span>→</span></button>
@@ -476,7 +458,7 @@
 
   </section>
 </div>
-<script src="script.js?v=20260915-3"></script>
+<script src="script.js?v=20260915-4"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>

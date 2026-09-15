@@ -1258,3 +1258,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.classList.add("cartelonio-onboarding-open");
 })();
+
+
+/* =========================================================
+   CARTELONIO — Header How to use reopen repair
+   ========================================================= */
+(function repairHeaderHowToUse(){
+  const btn = document.getElementById("howToUseBtn");
+  const modal = document.getElementById("cartelonioOnboarding");
+  if(!btn || !modal) return;
+
+  /* Clone removes stale listeners that were attached to the now-removed
+     standalone How-to modal. */
+  const cleanBtn = btn.cloneNode(true);
+  btn.parentNode.replaceChild(cleanBtn, btn);
+
+  cleanBtn.addEventListener("click", function(){
+    const views = modal.querySelectorAll("[data-onboarding-view]");
+    views.forEach(view => {
+      view.classList.remove("is-active");
+      view.removeAttribute("style");
+    });
+
+    const howTo = modal.querySelector('[data-onboarding-view="howto"]');
+    if(howTo) howTo.classList.add("is-active");
+
+    modal.setAttribute("aria-hidden","false");
+    modal.classList.add("is-open");
+    document.body.classList.add("cartelonio-onboarding-open");
+  });
+})();

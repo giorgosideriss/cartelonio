@@ -3289,3 +3289,81 @@ body.cartelonio-onboarding-open{overflow:hidden}
   .onboarding-subview-actions{padding:10px 15px 15px}
   .onboarding-subview-actions .onboarding-start{width:100%;min-width:0}
 }
+
+
+/* =========================================================
+   CARTELONIO — About view repair
+   ========================================================= */
+.about-cartelonio-view{
+  max-width:680px;
+  margin:0 auto;
+}
+.about-cartelonio-heading{text-align:center}
+.about-cartelonio-kicker{
+  display:block;
+  margin-bottom:10px;
+  color:var(--accent-deep);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.16em;
+}
+.about-cartelonio-heading h2{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+  font-size:29px;
+  line-height:1.15;
+  letter-spacing:-.035em;
+}
+.about-cartelonio-logo{
+  width:auto;
+  height:38px;
+  max-width:195px;
+  object-fit:contain;
+}
+.about-cartelonio-lead{
+  max-width:590px;
+  margin:19px auto 22px;
+  text-align:center;
+  color:#596159;
+  font-size:14px;
+  line-height:1.6;
+}
+.about-cartelonio-copy{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:11px;
+}
+.about-cartelonio-copy p{
+  margin:0;
+  padding:17px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  color:#646b63;
+  font-size:11px;
+  line-height:1.55;
+}
+.about-cartelonio-note{
+  margin-top:12px;
+  padding:16px 18px;
+  border-radius:16px;
+  background:#171a17;
+  color:#fff;
+}
+.about-cartelonio-note strong{font-size:12px}
+.about-cartelonio-note p{
+  margin:5px 0 0;
+  color:rgba(255,255,255,.65);
+  font-size:10px;
+  line-height:1.5;
+}
+@media(max-width:700px){
+  .about-cartelonio-heading h2{font-size:24px}
+  .about-cartelonio-logo{height:31px;max-width:160px}
+  .about-cartelonio-lead{font-size:12px}
+  .about-cartelonio-copy{grid-template-columns:1fr}
+}
