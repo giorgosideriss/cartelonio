@@ -3007,3 +3007,33 @@ button.secondary{
     transform:none !important;
   }
 }
+
+/* =========================================================
+   CARTELONIO — Header logo
+   Replaces the old green dot + text brand mark.
+   ========================================================= */
+.brand-mark{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+  line-height:0;
+}
+.brand-mark .site-logo{
+  display:block;
+  width:auto;
+  height:46px;
+  max-width:250px;
+  object-fit:contain;
+}
+@media (max-width:768px){
+  .brand-mark .site-logo{
+    height:38px;
+    max-width:205px;
+  }
+}
+@media (max-width:430px){
+  .brand-mark .site-logo{
+    height:34px;
+    max-width:185px;
+  }
+}
