@@ -3037,3 +3037,59 @@ button.secondary{
     max-width:185px;
   }
 }
+
+
+/* CARTELONIO — How to use + Chrome mobile logo fix */
+.site-header .header-inner .brand-mark{
+  display:flex!important;align-items:center!important;
+  width:auto!important;max-width:260px!important;min-width:0!important;
+  flex:0 1 auto!important;overflow:hidden;
+}
+.site-header .header-inner .brand-mark .site-logo{
+  display:block!important;width:220px!important;height:46px!important;
+  max-width:100%!important;min-width:0!important;
+  object-fit:contain!important;object-position:left center!important;flex:none!important;
+}
+.how-to-use-btn{
+  min-height:40px;padding:0 13px 0 15px;border:1px solid rgba(18,21,18,.12);
+  border-radius:999px;background:rgba(251,250,246,.86);color:var(--ink);
+  display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+  font-size:12px;font-weight:800;box-shadow:0 6px 18px rgba(18,21,18,.05);
+}
+.how-to-use-icon{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:var(--accent-deep);background:var(--accent-soft);font-size:11px;font-weight:900}
+.how-to-modal{position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;padding:22px}
+.how-to-modal.is-open{display:flex}
+.how-to-modal-backdrop{position:absolute;inset:0;background:rgba(8,11,9,.64);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.how-to-modal-card{position:relative;z-index:1;width:min(760px,100%);max-height:min(86vh,820px);overflow:auto;padding:34px;border-radius:26px;background:#fbfaf6;color:var(--ink);box-shadow:0 30px 90px rgba(0,0,0,.28)}
+.how-to-modal-close{position:absolute;right:17px;top:15px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#eef0ea;color:#343a34;cursor:pointer;font-size:23px}
+.how-to-modal-kicker{margin-bottom:8px;color:var(--accent-deep);font-size:10px;font-weight:900;letter-spacing:.15em}
+.how-to-modal-card h2{margin:0;padding-right:45px;font-size:30px;line-height:1.05;letter-spacing:-.04em}
+.how-to-modal-intro{margin:12px 0 24px;max-width:630px;color:var(--muted);font-size:13px;line-height:1.55}
+.how-to-steps{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.how-to-step{display:flex;gap:13px;padding:17px;border:1px solid var(--line);border-radius:17px;background:#fff}
+.how-to-step-number{flex:0 0 31px;width:31px;height:31px;border-radius:9px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-deep);font-size:9px;font-weight:900}
+.how-to-step h3{margin:1px 0 6px;font-size:13px}
+.how-to-step p,.how-to-manual p,.how-to-disclaimer{margin:0;color:#697068;font-size:11px;line-height:1.5}
+.how-to-manual{margin-top:12px;padding:15px 17px;border-radius:16px;background:#171a17;color:#fff}
+.how-to-manual strong{font-size:12px}.how-to-manual p{margin-top:5px;color:rgba(255,255,255,.65)}
+.how-to-disclaimer{margin-top:13px;padding:0 3px;font-size:10px}
+body.how-to-modal-open{overflow:hidden}
+
+@media(max-width:768px){
+  .site-header .header-inner{gap:10px!important}
+  .site-header .header-inner .brand-mark{width:150px!important;max-width:150px!important;flex:0 0 150px!important}
+  .site-header .header-inner .brand-mark .site-logo{width:150px!important;height:36px!important;max-width:150px!important}
+  .site-header .header-copy{margin-left:auto;flex:0 0 auto}
+  .how-to-use-btn{min-height:36px;padding:0 10px 0 12px;gap:7px;font-size:11px;white-space:nowrap}
+  .how-to-use-icon{width:20px;height:20px}
+  .how-to-modal{padding:13px}
+  .how-to-modal-card{padding:27px 18px 20px;border-radius:22px;max-height:88vh}
+  .how-to-modal-card h2{font-size:25px}
+  .how-to-steps{grid-template-columns:1fr}
+}
+@media(max-width:390px){
+  .site-header .header-inner .brand-mark{width:128px!important;max-width:128px!important;flex-basis:128px!important}
+  .site-header .header-inner .brand-mark .site-logo{width:128px!important;height:32px!important;max-width:128px!important}
+  .how-to-use-btn{padding:0 9px;font-size:10px}
+  .how-to-use-icon{display:none}
+}

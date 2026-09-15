@@ -15,8 +15,10 @@
 <img class="site-logo" src="images/cartelonio-logo.png" alt="Cartelonio"/>
 </a>
 <div class="header-copy">
-<span class="eyebrow">Vehicle Import Intelligence</span>
-<span class="header-note">Υπολογισμός τέλους ταξινόμησης</span>
+<button class="how-to-use-btn" id="howToUseBtn" type="button" aria-haspopup="dialog" aria-controls="howToUseModal">
+  <span>How to use</span>
+  <span class="how-to-use-icon" aria-hidden="true">?</span>
+</button>
 </div>
 </div>
 </header>
@@ -354,6 +356,47 @@
     <div class="cartelonio-welcome-actions"><button class="cartelonio-welcome-enter" id="cartelonioWelcomeEnter" type="button">Ξεκίνα</button></div>
   </div>
 </div>
+
+<!-- HOW TO USE MODAL -->
+<div class="how-to-modal" id="howToUseModal" aria-hidden="true">
+  <div class="how-to-modal-backdrop" data-how-to-close></div>
+  <section class="how-to-modal-card" role="dialog" aria-modal="true" aria-labelledby="howToUseTitle">
+    <button class="how-to-modal-close" type="button" aria-label="Κλείσιμο" data-how-to-close>×</button>
+    <div class="how-to-modal-kicker">CARTELONIO GUIDE</div>
+    <h2 id="howToUseTitle">Πώς λειτουργεί το Cartelonio</h2>
+    <p class="how-to-modal-intro">Από την επιλογή του αυτοκινήτου μέχρι την εκτίμηση του Τέλους Ταξινόμησης, η διαδικασία γίνεται σε λίγα βήματα.</p>
+
+    <div class="how-to-steps">
+      <article class="how-to-step"><span class="how-to-step-number">01</span><div>
+        <h3>Επίλεξε το αυτοκίνητό σου</h3>
+        <p>Επίλεξε Μάρκα → Έτος → Μοντέλο → Έκδοση. Όπου υπάρχουν διαθέσιμα δεδομένα, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, CO₂, κατηγορία αμαξώματος και άλλα στοιχεία.</p>
+      </div></article>
+
+      <article class="how-to-step"><span class="how-to-step-number">02</span><div>
+        <h3>Πρόσθεσε Extras</h3>
+        <p>Αν υπάρχουν εργοστασιακά extras για τη συγκεκριμένη έκδοση, μπορείς να τα επιλέξεις και η ΛΤΠΦ προσαρμόζεται αυτόματα.</p>
+      </div></article>
+
+      <article class="how-to-step"><span class="how-to-step-number">03</span><div>
+        <h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3>
+        <p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Αν κάποιο απαραίτητο στοιχείο δεν υπάρχει στη βάση, μπορείς να το συμπληρώσεις χειροκίνητα.</p>
+      </div></article>
+
+      <article class="how-to-step"><span class="how-to-step-number">04</span><div>
+        <h3>Πάτησε «Υπολόγισε»</h3>
+        <p>Το Cartelonio υπολογίζει την απομειωμένη φορολογητέα αξία και την εκτίμηση του Τέλους Ταξινόμησης σύμφωνα με τα δεδομένα και τους κανόνες που χρησιμοποιεί η εφαρμογή.</p>
+      </div></article>
+    </div>
+
+    <div class="how-to-manual">
+      <strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong>
+      <p>Μπορείς να παρακάμψεις την επιλογή οχήματος και να εισαγάγεις χειροκίνητα τη ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.</p>
+    </div>
+
+    <p class="how-to-disclaimer">Το αποτέλεσμα αποτελεί ενημερωτική εκτίμηση και όχι επίσημο τελωνειακό υπολογισμό. Η τελική αξία καθορίζεται από τις αρμόδιες τελωνειακές αρχές.</p>
+  </section>
+</div>
+
 <script src="script.js"></script>
 <script src="brand-availability.js"></script>
 </body>

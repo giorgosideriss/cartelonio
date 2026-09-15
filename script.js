@@ -1196,3 +1196,16 @@ document.addEventListener("DOMContentLoaded", () => {
   modal.addEventListener("click", e => { if (e.target === modal) close(); });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && !modal.hidden) close(); });
 })();
+
+
+/* CARTELONIO — How to use modal */
+(function(){
+  const modal=document.getElementById("howToUseModal");
+  const btn=document.getElementById("howToUseBtn");
+  if(!modal||!btn)return;
+  const close=()=>{modal.classList.remove("is-open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("how-to-modal-open");};
+  const open=()=>{modal.classList.add("is-open");modal.setAttribute("aria-hidden","false");document.body.classList.add("how-to-modal-open");};
+  btn.addEventListener("click",open);
+  modal.querySelectorAll("[data-how-to-close]").forEach(el=>el.addEventListener("click",close));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("is-open"))close();});
+})();
