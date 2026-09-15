@@ -805,8 +805,34 @@ function calculate(){
   const euroClass  = document.getElementById("euroClass")?.value || "modern";
   const powertrain = document.getElementById("powertrain")?.value || "ice";
 
-  if (!(price > 0) || !firstReg || !importDate || importDate < firstReg || mileage < 0 || !Number.isFinite(co2)) {
-    document.getElementById("results").innerHTML = `<p><strong>Έλεγχος στοιχείων:</strong> Συμπλήρωσε έγκυρη ΛΤΠΦ, ημερομηνίες, χιλιόμετρα και CO₂.</p>`;
+  // Επαναφορά της οπτικής επισήμανσης των υποχρεωτικών πεδίων.
+  // Τα wrappers και τα κόκκινα ! υπάρχουν ήδη στο HTML/CSS — εδώ απλώς
+  // ενεργοποιούμε ξανά την κλάση has-warning όταν ο χρήστης πατήσει Υπολογισμό.
+  const priceRaw = document.getElementById("price").value.trim();
+  const mileageRaw = document.getElementById("mileage").value.trim();
+  const co2Raw = document.getElementById("co2").value.trim();
+  const firstRegDay = document.getElementById("firstRegDay")?.value || "";
+  const firstRegMonth = document.getElementById("firstRegMonth")?.value || "";
+  const firstRegYear = document.getElementById("firstRegYear")?.value || "";
+
+  const validation = {
+    price: priceRaw === "" || !(price > 0),
+    category: !cat || categories[cat] == null,
+    firstReg: !firstRegDay || !firstRegMonth || !firstRegYear || !firstReg,
+    importDate: !document.getElementById("importDate").value || !importDate || (!!firstReg && !!importDate && importDate < firstReg),
+    mileage: mileageRaw === "" || !Number.isFinite(mileage) || mileage < 0,
+    co2: co2Raw === "" || !Number.isFinite(co2) || co2 < 0
+  };
+
+  document.querySelector('.required-field-wrap[data-field="price"]')?.classList.toggle("has-warning", validation.price);
+  document.querySelector('.category-field-wrap')?.classList.toggle("has-warning", validation.category);
+  document.querySelector('.required-field-wrap[data-field="firstReg"]')?.classList.toggle("has-warning", validation.firstReg);
+  document.querySelector('.required-field-wrap[data-field="importDate"]')?.classList.toggle("has-warning", validation.importDate);
+  document.querySelector('.required-field-wrap[data-field="mileage"]')?.classList.toggle("has-warning", validation.mileage);
+  document.querySelector('.required-field-wrap[data-field="co2"]')?.classList.toggle("has-warning", validation.co2);
+
+  if (Object.values(validation).some(Boolean)) {
+    document.getElementById("results").innerHTML = `<p><strong>Έλεγχος στοιχείων:</strong> Συμπλήρωσε τα πεδία που επισημαίνονται με κόκκινο.</p>`;
     return;
   }
 
