@@ -17,7 +17,12 @@
               "priceRetail": 7634.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.342",
@@ -31,7 +36,12 @@
               "priceRetail": 9379.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.342",
@@ -45,7 +55,12 @@
               "priceRetail": 10542.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.342",
@@ -59,7 +74,12 @@
               "priceRetail": 11054.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.342",
@@ -90,7 +110,12 @@
               "name": "W01 tailor made Color-Package",
               "price": 2520.17
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.344",
@@ -104,7 +129,12 @@
               "priceRetail": 10168.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.344",
@@ -118,7 +148,12 @@
               "priceRetail": 11323.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.344",
@@ -132,7 +167,12 @@
               "priceRetail": 11842.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.344",
@@ -151,7 +191,12 @@
               "name": "915 Fuel tank (35 litres)                                                              l",
               "price": 50.42
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/smart-fortwo-c453.png",
@@ -229,7 +274,12 @@
               "name": "V31 Dashboard instruments                                                              l",
               "price": 126.05
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.042",
@@ -243,7 +293,12 @@
               "priceRetail": 9915.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.042",
@@ -257,7 +312,12 @@
               "priceRetail": 11077.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.042",
@@ -271,7 +331,12 @@
               "priceRetail": 11721.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.042",
@@ -330,7 +395,12 @@
               "name": "R95 40.6 cm (16-inch) 8-Y-spoke light-alloy wheels painted in black                    l",
               "price": 79.83
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.044",
@@ -344,7 +414,12 @@
               "priceRetail": 10702.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.044",
@@ -358,7 +433,12 @@
               "priceRetail": 11866.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.044",
@@ -372,7 +452,12 @@
               "priceRetail": 12511.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "453.044",
@@ -386,7 +471,12 @@
               "priceRetail": 12718.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/smart-forfour-w453.png",
@@ -407,7 +497,12 @@
               "priceRetail": 17543.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.042",
@@ -438,7 +533,12 @@
               "name": "862 Preinstallation for TV",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.043",
@@ -452,7 +552,12 @@
               "priceRetail": 20568.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.047",
@@ -471,7 +576,12 @@
               "name": "U22 4-way lumbar support                                                                          C                   l",
               "price": 162.75
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.044",
@@ -514,7 +624,12 @@
               "name": "U47 AMG rear aerofoil",
               "price": 787.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.046",
@@ -553,7 +668,12 @@
               "name": "865 TV receiver",
               "price": 1039.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.050",
@@ -567,7 +687,12 @@
               "priceRetail": 25965.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.051",
@@ -590,7 +715,12 @@
               "name": "B12 Tyre-change toolkit                                                                           C                   l",
               "price": 31.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.052",
@@ -604,7 +734,12 @@
               "priceRetail": 36162.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.011",
@@ -695,7 +830,12 @@
               "name": "E76 Spare wheel                                                                                   C                   -",
               "price": 240.45
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.012",
@@ -709,7 +849,12 @@
               "priceRetail": 19725.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.012",
@@ -820,7 +965,12 @@
               "name": "E76 Spare wheel                                                                                   C                   -",
               "price": 240.45
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.008",
@@ -903,7 +1053,12 @@
               "name": "857 Media-Display                                                                                 C                   l",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.002",
@@ -917,7 +1072,12 @@
               "priceRetail": 24897.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.003",
@@ -940,7 +1100,12 @@
               "name": "275 Driver's seat, electrically adjustable with memory function                                  C                    l",
               "price": 341.25
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "176.005",
@@ -954,7 +1119,12 @@
               "priceRetail": 27291.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/a-class-hatch-w176.png",
@@ -984,7 +1154,12 @@
               "name": "U65 Additional exterior mirror right and left                                  C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.242",
@@ -1015,7 +1190,12 @@
               "name": "631 LED High Performance headlamps                                             C                   l",
               "price": 918.75
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.243",
@@ -1038,7 +1218,12 @@
               "name": "837 Floor mats, rubber                                                         C                   l",
               "price": 189.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.247",
@@ -1052,7 +1237,12 @@
               "priceRetail": 24541.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.244",
@@ -1071,7 +1261,12 @@
               "name": "P59 Urban                                                                      C                   -",
               "price": 829.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.246",
@@ -1106,7 +1301,12 @@
               "name": "U25 Door sill panels with \"Mercedes-Benz\" lettering,                           C                   l",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.211",
@@ -1269,7 +1469,12 @@
               "name": "U64 Full driving school package                                                C                   l",
               "price": 1207.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.212",
@@ -1283,7 +1488,12 @@
               "priceRetail": 21390.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.208",
@@ -1297,7 +1507,12 @@
               "priceRetail": 22759.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.202",
@@ -1348,7 +1563,12 @@
               "name": "938 Hands-free system                                                          C                   l",
               "price": 136.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.203",
@@ -1362,7 +1582,12 @@
               "priceRetail": 26250.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.205",
@@ -1376,7 +1601,12 @@
               "priceRetail": 27411.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "242.848",
@@ -1390,7 +1620,12 @@
               "priceRetail": 23778.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "cng",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "242.890",
@@ -1404,7 +1639,12 @@
               "priceRetail": 33374.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "not applicable – zero-emission powertrain"
         },
         {
           "factoryCode": "246.212",
@@ -1563,7 +1803,12 @@
               "name": "U65 Additional exterior mirror right and left                                  C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "246.208",
@@ -1702,7 +1947,12 @@
               "name": "U64 Full driving school package                                                C                   l",
               "price": 1207.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "242.848",
@@ -1733,7 +1983,12 @@
               "name": "893 KEYLESS GO starting function                                               C                   l",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "cng",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/b-class-w246.png",
@@ -1754,7 +2009,12 @@
               "priceRetail": 22242.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.343",
@@ -1768,7 +2028,12 @@
               "priceRetail": 24409.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.344",
@@ -1782,7 +2047,12 @@
               "priceRetail": 28003.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.346",
@@ -1796,7 +2066,12 @@
               "priceRetail": 31250.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.352",
@@ -1810,7 +2085,12 @@
               "priceRetail": 42635.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.312",
@@ -1824,7 +2104,12 @@
               "priceRetail": 23856.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.308",
@@ -1838,7 +2123,12 @@
               "priceRetail": 25725.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.302",
@@ -1852,7 +2142,12 @@
               "priceRetail": 29004.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.303",
@@ -1866,7 +2161,12 @@
               "priceRetail": 29095.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.305",
@@ -1880,7 +2180,12 @@
               "priceRetail": 30766.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/cla-coupe-c117.png",
@@ -1901,7 +2206,12 @@
               "priceRetail": 22805.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.943",
@@ -1915,7 +2225,12 @@
               "priceRetail": 24972.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.944",
@@ -1929,7 +2244,12 @@
               "priceRetail": 28616.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.946",
@@ -1943,7 +2263,12 @@
               "priceRetail": 31863.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.952",
@@ -1957,7 +2282,12 @@
               "priceRetail": 43342.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.912",
@@ -1971,7 +2301,12 @@
               "priceRetail": 24460.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.908",
@@ -1985,7 +2320,12 @@
               "priceRetail": 26339.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.902",
@@ -1999,7 +2339,12 @@
               "priceRetail": 29618.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.903",
@@ -2013,7 +2358,12 @@
               "priceRetail": 29709.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "117.905",
@@ -2027,7 +2377,12 @@
               "priceRetail": 31384.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/cla-shooting-brake-x117.png",
@@ -2065,7 +2420,12 @@
               "name": "877 ambient lighting                                                                    Ατμοσφαιρικός φωτισμός          C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.943",
@@ -2084,7 +2444,12 @@
               "name": "228 Auxiliary heater                                                                                                           C                    -",
               "price": 1312.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.944",
@@ -2103,7 +2468,12 @@
               "name": "293 Sidebags in rear                                                                                                         C                   ",
               "price": 393.75
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.946",
@@ -2138,7 +2508,12 @@
               "name": "U09 Dashboard in leather look                                                                                C                   ",
               "price": 210.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.952",
@@ -2173,7 +2548,12 @@
               "name": "877 ambient lighting                                                                    Ατμοσφαιρικός φωτισμός          C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.912",
@@ -2296,7 +2676,12 @@
               "name": "U12 Velour floor mats                                                                                        C                   l",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.908",
@@ -2319,7 +2704,12 @@
               "name": "877 ambient lighting                                                                    Ατμοσφαιρικός φωτισμός          C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.902",
@@ -2333,7 +2723,12 @@
               "priceRetail": 27192.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.903",
@@ -2356,7 +2751,12 @@
               "name": "877 ambient lighting                                                                    Ατμοσφαιρικός φωτισμός          C                   l",
               "price": 126.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "156.905",
@@ -2375,7 +2775,12 @@
               "name": "293 Sidebags in rear                                                                                                         C                   ",
               "price": 393.75
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/gla-x156.png",
@@ -2421,7 +2826,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.040",
@@ -2440,7 +2850,12 @@
               "name": "581 THERMOTRONIC automatic climate control                                                    C                   -",
               "price": 619.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.042",
@@ -2459,7 +2874,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.043",
@@ -2473,7 +2893,12 @@
               "priceRetail": 30747.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.045",
@@ -2504,7 +2929,12 @@
               "name": "666 Freight packaging without tie-down hooks                                                  C                   l",
               "price": 26.25
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.048",
@@ -2523,7 +2953,12 @@
               "name": "348 mbrace                                                                                      -                 l",
               "price": 630.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.047",
@@ -2558,7 +2993,12 @@
               "name": "R48 43.2 cm (17-inch) 5-twin-spoke light-alloy wheels                                                                                                    C                   l",
               "price": 52.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.066",
@@ -2581,7 +3021,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.064",
@@ -2604,7 +3049,12 @@
               "name": "555 AMG Performance seats",
               "price": 2047.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.086",
@@ -2631,7 +3081,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.087",
@@ -2650,7 +3105,12 @@
               "name": "P62 designo two-tone interior in platinum white pearl / black                                 C                   l",
               "price": 3097.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.036",
@@ -2769,7 +3229,12 @@
               "name": "U12 Velour floor mats                                                                                                                                C                   l",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.037",
@@ -2876,7 +3341,12 @@
               "name": "U12 Velour floor mats                                                                                                                                C                   l",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.004",
@@ -2890,7 +3360,12 @@
               "priceRetail": 29073.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.005",
@@ -2921,7 +3396,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.003",
@@ -3000,7 +3480,12 @@
               "name": "895 Telescope stack",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.008",
@@ -3014,7 +3499,12 @@
               "priceRetail": 31559.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.009",
@@ -3033,7 +3523,12 @@
               "name": "348 mbrace                                                                                      -                 l",
               "price": 630.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.012",
@@ -3060,7 +3555,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
@@ -3106,7 +3606,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.240",
@@ -3125,7 +3630,12 @@
               "name": "581 THERMOTRONIC automatic climate control                                                    C                   -",
               "price": 619.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.242",
@@ -3144,7 +3654,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.243",
@@ -3158,7 +3673,12 @@
               "priceRetail": 32173.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.245",
@@ -3189,7 +3709,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.248",
@@ -3203,7 +3728,12 @@
               "priceRetail": 37585.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.247",
@@ -3230,7 +3760,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.266",
@@ -3249,7 +3784,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.264",
@@ -3268,7 +3808,12 @@
               "name": "962 Preparation for signal unit (light bar)                                                                       l",
               "price": 168.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.286",
@@ -3287,7 +3832,12 @@
               "name": "242 Front passenger seat, electrically adjustable with memory function                        C                   l",
               "price": 525.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.287",
@@ -3301,7 +3851,12 @@
               "priceRetail": 63967.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.236",
@@ -3348,7 +3903,12 @@
               "name": "U12 Velour floor mats                                                                                                                                C                   l",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.237",
@@ -3387,7 +3947,12 @@
               "name": "U12 Velour floor mats                                                                                                                                C                   l",
               "price": 84.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.204",
@@ -3406,7 +3971,12 @@
               "name": "443 Heated multifunction steering wheel                                                                           l",
               "price": 273.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.205",
@@ -3425,7 +3995,12 @@
               "name": "5R5 complete winter tyre 10-spoke light-alloy wheels 16\"                                      C                   l",
               "price": 1207.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.208",
@@ -3448,7 +4023,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.209",
@@ -3462,7 +4042,12 @@
               "priceRetail": 34046.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.212",
@@ -3476,7 +4061,12 @@
               "priceRetail": 40447.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-estate-s205.png",
@@ -3514,7 +4104,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                        C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.342",
@@ -3533,7 +4128,12 @@
               "name": "840 Heat-insulating dark-tinted glass                                                    C                   l",
               "price": 388.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.345",
@@ -3547,7 +4147,12 @@
               "priceRetail": 33576.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.348",
@@ -3561,7 +4166,12 @@
               "priceRetail": 34586.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.386",
@@ -3575,7 +4185,12 @@
               "priceRetail": 62131.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.387",
@@ -3589,7 +4204,12 @@
               "priceRetail": 68673.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.304",
@@ -3672,7 +4292,12 @@
               "name": "Y04 designo seat belts in crystal grey                                                   C                   l",
               "price": 315.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.308",
@@ -3759,7 +4384,12 @@
               "name": "Y04 designo seat belts in crystal grey                                                   C                   l",
               "price": 315.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-coupe-c205.png",
@@ -3789,7 +4419,12 @@
               "name": "386 Convenience telephony                                                                           C   l",
               "price": 420.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "172.438",
@@ -3803,7 +4438,12 @@
               "priceRetail": 39514.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "172.457",
@@ -3817,7 +4457,12 @@
               "priceRetail": 45516.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "172.475",
@@ -3831,7 +4476,12 @@
               "priceRetail": 62615.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "172.404",
@@ -3894,7 +4544,12 @@
               "name": "W69 designo black piano lacquer trim                                                                C   l",
               "price": 892.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/slk-r172.png",
@@ -3915,7 +4570,12 @@
               "priceRetail": 35108.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.035",
@@ -3929,7 +4589,12 @@
               "priceRetail": 40950.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "cng",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.006",
@@ -3943,7 +4608,12 @@
               "priceRetail": 34132.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.001",
@@ -3957,7 +4627,12 @@
               "priceRetail": 36500.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.006",
@@ -3971,7 +4646,12 @@
               "priceRetail": 33145.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.001",
@@ -3985,7 +4665,12 @@
               "priceRetail": 35405.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.035",
@@ -3999,7 +4684,12 @@
               "priceRetail": 38451.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "cng",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-sedan-w212.png",
@@ -4020,7 +4710,12 @@
               "priceRetail": 38649.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.236",
@@ -4034,7 +4729,12 @@
               "priceRetail": 43787.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.276",
@@ -4048,7 +4748,12 @@
               "priceRetail": 103308.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.206",
@@ -4175,7 +4880,12 @@
               "name": "Z90 Multifunction control unit for special functions                                          l",
               "price": 399.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.201",
@@ -4189,7 +4899,12 @@
               "priceRetail": 39200.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.298",
@@ -4203,7 +4918,12 @@
               "priceRetail": 48340.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "hybrid",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "212.294",
@@ -4217,7 +4937,12 @@
               "priceRetail": 52794.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-estate-s212.png",
@@ -4238,7 +4963,12 @@
               "priceRetail": 36921.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.336",
@@ -4252,7 +4982,12 @@
               "priceRetail": 41201.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.361",
@@ -4266,7 +5001,12 @@
               "priceRetail": 49407.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.301",
@@ -4280,7 +5020,12 @@
               "priceRetail": 39117.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.304",
@@ -4294,7 +5039,12 @@
               "priceRetail": 41379.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.326",
@@ -4308,7 +5058,12 @@
               "priceRetail": 46248.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-coupe-c207.png",
@@ -4329,7 +5084,12 @@
               "priceRetail": 40885.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.436",
@@ -4343,7 +5103,12 @@
               "priceRetail": 44864.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.461",
@@ -4357,7 +5122,12 @@
               "priceRetail": 53239.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.401",
@@ -4371,7 +5141,12 @@
               "priceRetail": 42926.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.404",
@@ -4385,7 +5160,12 @@
               "priceRetail": 45188.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "207.426",
@@ -4399,7 +5179,12 @@
               "priceRetail": 50199.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-cabrio-a207.png",
@@ -4420,7 +5205,12 @@
               "priceRetail": 55374.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.368",
@@ -4434,7 +5224,12 @@
               "priceRetail": 57672.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.392",
@@ -4448,7 +5243,12 @@
               "priceRetail": 102149.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.376",
@@ -4462,7 +5262,12 @@
               "priceRetail": 111341.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.301",
@@ -4476,7 +5281,12 @@
               "priceRetail": 47949.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.304",
@@ -4490,7 +5300,12 @@
               "priceRetail": 49964.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.397",
@@ -4504,7 +5319,12 @@
               "priceRetail": 52262.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/cls-coupe-c218.png",
@@ -4525,7 +5345,12 @@
               "priceRetail": 56946.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.968",
@@ -4539,7 +5364,12 @@
               "priceRetail": 59244.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.992",
@@ -4553,7 +5383,12 @@
               "priceRetail": 103720.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.976",
@@ -4567,7 +5402,12 @@
               "priceRetail": 112913.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.901",
@@ -4581,7 +5421,12 @@
               "priceRetail": 49544.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.904",
@@ -4595,7 +5440,12 @@
               "priceRetail": 51573.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "218.997",
@@ -4609,7 +5459,12 @@
               "priceRetail": 53874.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Estate",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/cls-shooting-brake-x218.png",
@@ -4639,7 +5494,12 @@
               "name": "934 Taxi/hire car emergency alarm",
               "price": 257.25
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.104",
@@ -4653,7 +5513,12 @@
               "priceRetail": 76912.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.032",
@@ -4680,7 +5545,12 @@
               "name": "934 Taxi/hire car emergency alarm",
               "price": 257.25
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.132",
@@ -4699,7 +5569,12 @@
               "name": "934 Taxi/hire car emergency alarm",
               "price": 257.25
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.033",
@@ -4730,7 +5605,12 @@
               "name": "623 Gulf States specification                                -",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.133",
@@ -4744,7 +5624,12 @@
               "priceRetail": 80334.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.057",
@@ -4775,7 +5660,12 @@
               "name": "623 Gulf States specification                                -",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.157",
@@ -4789,7 +5679,12 @@
               "priceRetail": 81088.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.163",
@@ -4803,7 +5698,12 @@
               "priceRetail": 94235.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.082",
@@ -4817,7 +5717,12 @@
               "priceRetail": 91791.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.182",
@@ -4831,7 +5736,12 @@
               "priceRetail": 94007.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.085",
@@ -4845,7 +5755,12 @@
               "priceRetail": 94163.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.185",
@@ -4859,7 +5774,12 @@
               "priceRetail": 97517.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.077",
@@ -4882,7 +5802,12 @@
               "name": "481 Sump shield                                              C                   l",
               "price": 136.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.176",
@@ -4896,7 +5821,12 @@
               "priceRetail": 141591.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.178",
@@ -4910,7 +5840,12 @@
               "priceRetail": 133088.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.179",
@@ -4924,7 +5859,12 @@
               "priceRetail": 200725.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-w222.png",
@@ -4945,7 +5885,12 @@
               "priceRetail": 114962.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "222.976",
@@ -4959,7 +5904,12 @@
               "priceRetail": 161072.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/maybach-s-class-x222.png",
@@ -5013,7 +5963,12 @@
               "name": "810 Burmester® surround soundsystem                                                                Surround ηχοσύστημα Burmester®                                             C                   l",
               "price": 1155.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "217.382",
@@ -5044,7 +5999,12 @@
               "name": "810 Burmester® surround soundsystem                                                                                                       C                     l",
               "price": 1155.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "217.385",
@@ -5091,7 +6051,12 @@
               "name": "H21 black designo piano lacquer                                                             Διάκοσμος εσωτερικού σε designo piano laquer, μαύρο                            C                   l",
               "price": 1564.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "217.377",
@@ -5126,7 +6091,12 @@
               "name": "H21 black designo piano lacquer                                                             Διάκοσμος εσωτερικού σε designo piano laquer, μαύρο                            C                   l",
               "price": 1564.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "217.378",
@@ -5157,7 +6127,12 @@
               "name": "729 Black high-gloss poplar wood trim                                                              Εσωτερικός διάκοσμος από ξύλο λεύκας, γυαλιστερό μαύρο                     C                   l",
               "price": 409.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "217.379",
@@ -5180,7 +6155,12 @@
               "name": "475 Tyre pressure monitoring system                                                                                                 C                    l",
               "price": 336.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-coupe-c217.png",
@@ -5201,7 +6181,12 @@
               "priceRetail": 84567.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "231.473",
@@ -5220,7 +6205,12 @@
               "name": "773 AMG Exterior Carbon package                                                                                     C                 -                     -",
               "price": 3066.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "231.474",
@@ -5239,7 +6229,12 @@
               "name": "412 Panoramic vario-roof with MAGIC SKY CONTROL                                                                 C                 -                     -",
               "price": 1942.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "231.479",
@@ -5253,7 +6248,12 @@
               "priceRetail": 201631.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/sl-r231.png",
@@ -5274,7 +6274,12 @@
               "priceRetail": 33706.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "253.905",
@@ -5417,7 +6422,12 @@
               "name": "B59 DYNAMIC SELECT                                                                       l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "253.909",
@@ -5436,7 +6446,12 @@
               "name": "3R6 10-spoke alloy wheel w. winter tyre 48.3 cm (19\")                                    ",
               "price": 2152.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/glc-x253.png",
@@ -5462,7 +6477,12 @@
               "name": "228 Aux. heater/ventilation with remote control                                       C                   l                  l",
               "price": 1438.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.004",
@@ -5553,7 +6573,12 @@
               "name": "U12 Velour floor mats                                                                 C                   l l l l l l l l l l",
               "price": 94.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.024",
@@ -5572,7 +6597,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                     C                   l                  l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.056",
@@ -5615,7 +6645,12 @@
               "name": "683 53.3 cm (21-inch) AMG 5-twin-spoke light-alloy wheels                             C                                     ",
               "price": 945.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.073",
@@ -5638,7 +6673,12 @@
               "name": "U21 AMG Performance exhaust system                                                    C                   -                  -",
               "price": 525.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.063",
@@ -5652,7 +6692,12 @@
               "priceRetail": 62999.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.074",
@@ -5671,7 +6716,12 @@
               "name": "401 Climatised front seats                                                            C                   l l l l l l l l",
               "price": 1155.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.075",
@@ -5694,7 +6744,12 @@
               "name": "443 Heated multifunction steering wheel                                               C                   l                  l",
               "price": 273.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/gle-w166.png",
@@ -5720,7 +6775,12 @@
               "name": "R66 Run-flat tyres                                                             C                      -                      -",
               "price": 367.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "292.356",
@@ -5734,7 +6794,12 @@
               "priceRetail": 57250.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "292.364",
@@ -5753,7 +6818,12 @@
               "name": "413 Automatic panoramic sliding sunroof                                       C                    l                      l                        l",
               "price": 1858.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "292.374",
@@ -5776,7 +6846,12 @@
               "name": "865 TV receiver                                                                C                   l                      l                        l",
               "price": 1039.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "292.375",
@@ -5790,7 +6865,12 @@
               "priceRetail": 108258.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/gle-coupe-c292.png",
@@ -5816,7 +6896,12 @@
               "name": "840 Heat-insulating dark-tinted glass                                                             C                   l                  l",
               "price": 409.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.856",
@@ -5843,7 +6928,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                                 C                   l                  l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.873",
@@ -5862,7 +6952,12 @@
               "name": "840 Heat-insulating dark-tinted glass                                                             C                   l                  l",
               "price": 409.5
             }
-          ]
+          ],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "166.874",
@@ -5876,7 +6971,12 @@
               "priceRetail": 112131.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/gl-x166.png",
@@ -5897,7 +6997,12 @@
               "priceRetail": 76749.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "463.234",
@@ -5911,7 +7016,12 @@
               "priceRetail": 89761.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "463.272",
@@ -5925,7 +7035,12 @@
               "priceRetail": 122429.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "463.274",
@@ -5939,7 +7054,12 @@
               "priceRetail": 232216.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/g-class-w463.png",
@@ -5960,7 +7080,12 @@
               "priceRetail": 97246.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "190.378",
@@ -5974,7 +7099,12 @@
               "priceRetail": 113148.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/amg-gt-coupe-c190.png",
@@ -6100,7 +7230,12 @@
               "name": "H84 AMG matt silver glass-fibre trim                                                                                                     C                   -",
               "price": 945.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.004",
@@ -6179,7 +7314,12 @@
               "name": "895 Telescope stack",
               "price": 157.5
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         },
         {
           "factoryCode": "205.008",
@@ -6202,7 +7342,12 @@
               "name": "628 Adaptive Highbeam Assist Plus                                                             C                   l",
               "price": 105.0
             }
-          ]
+          ],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": null,
+          "euroSource": "manual verification required (2015 transition year)"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
