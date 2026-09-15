@@ -17,7 +17,13 @@
               "priceNet": 15220.0,
               "priceRetail": 15220.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XKA14",
@@ -31,7 +37,13 @@
               "priceNet": 15722.0,
               "priceRetail": 15722.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XKA1G",
@@ -45,7 +57,13 @@
               "priceNet": 17221.0,
               "priceRetail": 17221.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFAS4",
@@ -59,7 +77,13 @@
               "priceNet": 14210.0,
               "priceRetail": 14210.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFBS4",
@@ -73,7 +97,13 @@
               "priceNet": 15547.0,
               "priceRetail": 15547.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFASG",
@@ -87,7 +117,13 @@
               "priceNet": 15689.0,
               "priceRetail": 15689.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFBSG",
@@ -101,7 +137,13 @@
               "priceNet": 17021.0,
               "priceRetail": 17021.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFA14",
@@ -115,7 +157,13 @@
               "priceNet": 16185.0,
               "priceRetail": 16185.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFB14",
@@ -129,7 +177,13 @@
               "priceNet": 17522.0,
               "priceRetail": 17522.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFA1G",
@@ -143,7 +197,13 @@
               "priceNet": 17700.0,
               "priceRetail": 17700.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFB1G",
@@ -157,7 +217,13 @@
               "priceNet": 19021.0,
               "priceRetail": 19021.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -176,7 +242,13 @@
               "priceNet": 23357.0,
               "priceRetail": 23357.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8XFSF9",
@@ -190,7 +262,13 @@
               "priceNet": 23821.0,
               "priceRetail": 23821.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -209,7 +287,13 @@
               "priceNet": 16970.0,
               "priceRetail": 16970.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBNC",
@@ -223,7 +307,13 @@
               "priceNet": 17921.0,
               "priceRetail": 17921.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCNC",
@@ -237,7 +327,13 @@
               "priceNet": 18064.0,
               "priceRetail": 18064.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFANG",
@@ -251,7 +347,13 @@
               "priceNet": 18857.0,
               "priceRetail": 18857.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBNG",
@@ -265,7 +367,13 @@
               "priceNet": 19557.0,
               "priceRetail": 19557.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCNG",
@@ -279,7 +387,13 @@
               "priceNet": 19700.0,
               "priceRetail": 19700.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFAZC",
@@ -293,7 +407,13 @@
               "priceNet": 19793.0,
               "priceRetail": 19793.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBZC",
@@ -307,7 +427,13 @@
               "priceNet": 20500.0,
               "priceRetail": 20500.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCZC",
@@ -321,7 +447,13 @@
               "priceNet": 20642.0,
               "priceRetail": 20642.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFAZG",
@@ -335,7 +467,13 @@
               "priceNet": 21432.0,
               "priceRetail": 21432.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBZG",
@@ -349,7 +487,13 @@
               "priceNet": 22135.0,
               "priceRetail": 22135.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCZG",
@@ -363,7 +507,13 @@
               "priceNet": 22277.0,
               "priceRetail": 22277.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFADC",
@@ -377,7 +527,13 @@
               "priceNet": 16992.0,
               "priceRetail": 16992.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFADC",
@@ -391,7 +547,13 @@
               "priceNet": 19214.0,
               "priceRetail": 19214.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBDC",
@@ -405,7 +567,13 @@
               "priceNet": 19929.0,
               "priceRetail": 19929.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCDC",
@@ -419,7 +587,13 @@
               "priceNet": 20088.0,
               "priceRetail": 20088.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFADG",
@@ -433,7 +607,13 @@
               "priceNet": 20878.0,
               "priceRetail": 20878.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFBDG",
@@ -447,7 +627,13 @@
               "priceNet": 21581.0,
               "priceRetail": 21581.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFCDG",
@@ -461,7 +647,13 @@
               "priceNet": 21723.0,
               "priceRetail": 21723.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMANC",
@@ -475,7 +667,13 @@
               "priceNet": 17321.0,
               "priceRetail": 17321.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBNC",
@@ -489,7 +687,13 @@
               "priceNet": 18029.0,
               "priceRetail": 18029.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCNC",
@@ -503,7 +707,13 @@
               "priceNet": 18164.0,
               "priceRetail": 18164.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMANG",
@@ -517,7 +727,13 @@
               "priceNet": 18957.0,
               "priceRetail": 18957.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBNG",
@@ -531,7 +747,13 @@
               "priceNet": 19664.0,
               "priceRetail": 19664.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCNG",
@@ -545,7 +767,13 @@
               "priceNet": 19807.0,
               "priceRetail": 19807.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMAZC",
@@ -559,7 +787,13 @@
               "priceNet": 19900.0,
               "priceRetail": 19900.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBZC",
@@ -573,7 +807,13 @@
               "priceNet": 20601.0,
               "priceRetail": 20601.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCZC",
@@ -587,7 +827,13 @@
               "priceNet": 20743.0,
               "priceRetail": 20743.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMAZG",
@@ -601,7 +847,13 @@
               "priceNet": 21534.0,
               "priceRetail": 21534.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBZG",
@@ -615,7 +867,13 @@
               "priceNet": 22243.0,
               "priceRetail": 22243.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCZG",
@@ -629,7 +887,13 @@
               "priceNet": 22378.0,
               "priceRetail": 22378.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMADC",
@@ -643,7 +907,13 @@
               "priceNet": 16992.0,
               "priceRetail": 16992.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMADC",
@@ -657,7 +927,13 @@
               "priceNet": 19343.0,
               "priceRetail": 19343.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBDC",
@@ -671,7 +947,13 @@
               "priceNet": 20000.0,
               "priceRetail": 20000.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCDC",
@@ -685,7 +967,13 @@
               "priceNet": 20189.0,
               "priceRetail": 20189.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMADG",
@@ -699,7 +987,13 @@
               "priceNet": 20980.0,
               "priceRetail": 20980.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMBDG",
@@ -713,7 +1007,13 @@
               "priceNet": 21689.0,
               "priceRetail": 21689.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMCDG",
@@ -727,7 +1027,13 @@
               "priceNet": 21824.0,
               "priceRetail": 21824.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEA4C",
@@ -741,7 +1047,13 @@
               "priceNet": 21157.0,
               "priceRetail": 21157.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEB4C",
@@ -755,7 +1067,13 @@
               "priceNet": 21862.0,
               "priceRetail": 21862.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEA4G",
@@ -769,7 +1087,13 @@
               "priceNet": 22797.0,
               "priceRetail": 22797.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEB4G",
@@ -783,7 +1107,13 @@
               "priceNet": 23500.0,
               "priceRetail": 23500.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEAZC",
@@ -797,7 +1127,13 @@
               "priceNet": 24088.0,
               "priceRetail": 24088.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEBZC",
@@ -811,7 +1147,13 @@
               "priceNet": 24797.0,
               "priceRetail": 24797.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEAZG",
@@ -825,7 +1167,13 @@
               "priceNet": 25724.0,
               "priceRetail": 25724.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEBZG",
@@ -839,7 +1187,13 @@
               "priceNet": 26429.0,
               "priceRetail": 26429.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEADC",
@@ -853,7 +1207,13 @@
               "priceNet": 23534.0,
               "priceRetail": 23534.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VEBDC",
@@ -867,7 +1227,13 @@
               "priceNet": 24243.0,
               "priceRetail": 24243.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -886,7 +1252,13 @@
               "priceNet": 29493.0,
               "priceRetail": 29493.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VFS3Y",
@@ -900,7 +1272,13 @@
               "priceNet": 31232.0,
               "priceRetail": 31232.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMS39",
@@ -914,7 +1292,13 @@
               "priceNet": 29595.0,
               "priceRetail": 29595.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMS3Y",
@@ -928,7 +1312,13 @@
               "priceNet": 31336.0,
               "priceRetail": 31336.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -947,7 +1337,13 @@
               "priceNet": 40877.0,
               "priceRetail": 40877.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8VMRWY",
@@ -961,7 +1357,13 @@
               "priceNet": 40983.0,
               "priceRetail": 40983.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -980,7 +1382,13 @@
               "priceNet": 23172.0,
               "priceRetail": 23172.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BEC",
@@ -994,7 +1402,13 @@
               "priceNet": 24402.0,
               "priceRetail": 24402.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AEG",
@@ -1008,7 +1422,13 @@
               "priceNet": 24878.0,
               "priceRetail": 24878.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BEG",
@@ -1022,7 +1442,13 @@
               "priceNet": 26106.0,
               "priceRetail": 26106.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AIC",
@@ -1036,7 +1462,13 @@
               "priceNet": 25000.0,
               "priceRetail": 25000.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BIC",
@@ -1050,7 +1482,13 @@
               "priceNet": 26340.0,
               "priceRetail": 26340.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AIG",
@@ -1064,7 +1502,13 @@
               "priceNet": 26821.0,
               "priceRetail": 26821.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BIG",
@@ -1078,7 +1522,13 @@
               "priceNet": 28045.0,
               "priceRetail": 28045.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2ABC",
@@ -1092,7 +1542,13 @@
               "priceNet": 27908.0,
               "priceRetail": 27908.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BBC",
@@ -1106,7 +1562,13 @@
               "priceNet": 29141.0,
               "priceRetail": 29141.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2ABG",
@@ -1120,7 +1582,13 @@
               "priceNet": 29615.0,
               "priceRetail": 29615.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BBG",
@@ -1134,7 +1602,13 @@
               "priceNet": 30846.0,
               "priceRetail": 30846.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AFC",
@@ -1148,7 +1622,13 @@
               "priceNet": 29686.0,
               "priceRetail": 29686.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BFC",
@@ -1162,7 +1642,13 @@
               "priceNet": 31026.0,
               "priceRetail": 31026.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AFG",
@@ -1176,7 +1662,13 @@
               "priceNet": 31391.0,
               "priceRetail": 31391.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BFG",
@@ -1190,7 +1682,13 @@
               "priceNet": 32731.0,
               "priceRetail": 32731.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2AFY",
@@ -1204,7 +1702,13 @@
               "priceNet": 33224.0,
               "priceRetail": 33224.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W2BFY",
@@ -1218,7 +1722,13 @@
               "priceNet": 34199.0,
               "priceRetail": 34199.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W5AFY",
@@ -1232,7 +1742,13 @@
               "priceNet": 34487.0,
               "priceRetail": 34487.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W5BFY",
@@ -1246,7 +1762,13 @@
               "priceNet": 35462.0,
               "priceRetail": 35462.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WH0AY",
@@ -1260,7 +1782,13 @@
               "priceNet": 36089.0,
               "priceRetail": 36089.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WH0FY",
@@ -1274,7 +1802,13 @@
               "priceNet": 36809.0,
               "priceRetail": 36809.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1293,7 +1827,13 @@
               "priceNet": 51486.0,
               "priceRetail": 51486.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8W5S4A",
@@ -1307,12 +1847,18 @@
               "priceNet": 52796.0,
               "priceRetail": 52796.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "A5": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "F53BEG",
@@ -1326,7 +1872,13 @@
               "priceNet": 29278.0,
               "priceRetail": 29278.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BDC",
@@ -1340,7 +1892,13 @@
               "priceNet": 31165.0,
               "priceRetail": 31165.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BSG",
@@ -1354,7 +1912,13 @@
               "priceNet": 32874.0,
               "priceRetail": 32874.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BAY",
@@ -1368,7 +1932,13 @@
               "priceNet": 39707.0,
               "priceRetail": 39707.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BFC",
@@ -1382,7 +1952,13 @@
               "priceNet": 35936.0,
               "priceRetail": 35936.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BFG",
@@ -1396,7 +1972,13 @@
               "priceNet": 37641.0,
               "priceRetail": 37641.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F53BFY",
@@ -1410,7 +1992,13 @@
               "priceNet": 39000.0,
               "priceRetail": 39000.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABEG",
@@ -1424,7 +2012,13 @@
               "priceNet": 29278.0,
               "priceRetail": 29278.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABDC",
@@ -1438,7 +2032,13 @@
               "priceNet": 31165.0,
               "priceRetail": 31165.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABDG",
@@ -1452,7 +2052,13 @@
               "priceNet": 32867.0,
               "priceRetail": 32867.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABAY",
@@ -1466,7 +2072,13 @@
               "priceNet": 39700.0,
               "priceRetail": 39700.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABFC",
@@ -1480,7 +2092,13 @@
               "priceNet": 35936.0,
               "priceRetail": 35936.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABFG",
@@ -1494,7 +2112,13 @@
               "priceNet": 37641.0,
               "priceRetail": 37641.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5ABFY",
@@ -1508,7 +2132,13 @@
               "priceNet": 39001.0,
               "priceRetail": 39001.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F57BFG",
@@ -1522,7 +2152,13 @@
               "priceNet": 43417.0,
               "priceRetail": 43417.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F57BAY",
@@ -1536,12 +2172,18 @@
               "priceNet": 45482.0,
               "priceRetail": 45482.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "S5": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "F53S4A",
@@ -1555,7 +2197,13 @@
               "priceNet": 45193.0,
               "priceRetail": 45193.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5AS4A",
@@ -1569,12 +2217,18 @@
               "priceNet": 45193.0,
               "priceRetail": 45193.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "RS": {
-      "category": "Unknown",
+      "category": "Sedan",
       "editions": [
         {
           "factoryCode": "F53RXA",
@@ -1588,7 +2242,13 @@
               "priceNet": 70835.0,
               "priceRetail": 70835.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1607,7 +2267,13 @@
               "priceNet": 38065.0,
               "priceRetail": 38065.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC08G",
@@ -1621,7 +2287,13 @@
               "priceNet": 39322.0,
               "priceRetail": 39322.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC08Y",
@@ -1635,7 +2307,13 @@
               "priceNet": 41502.0,
               "priceRetail": 41502.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC0DG",
@@ -1649,7 +2327,13 @@
               "priceNet": 35962.0,
               "priceRetail": 35962.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC0IG",
@@ -1663,7 +2347,13 @@
               "priceNet": 37917.0,
               "priceRetail": 37917.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC0IY",
@@ -1677,7 +2367,13 @@
               "priceNet": 40107.0,
               "priceRetail": 40107.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC0TG",
@@ -1691,7 +2387,13 @@
               "priceNet": 44872.0,
               "priceRetail": 44872.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GC0TY",
@@ -1705,7 +2407,13 @@
               "priceNet": 47048.0,
               "priceRetail": 47048.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GD0TY",
@@ -1719,7 +2427,13 @@
               "priceNet": 48707.0,
               "priceRetail": 48707.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GJ0GY",
@@ -1733,7 +2447,13 @@
               "priceNet": 61176.0,
               "priceRetail": 61176.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4GJ0VA",
@@ -1747,12 +2467,18 @@
               "priceNet": 65187.0,
               "priceRetail": 65187.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "S6": {
-      "category": "Unknown",
+      "category": "Sedan",
       "editions": [
         {
           "factoryCode": "4GCSFY",
@@ -1766,12 +2492,18 @@
               "priceNet": 71604.0,
               "priceRetail": 71604.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "RS6": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "4GDRRA",
@@ -1785,12 +2517,18 @@
               "priceNet": 106975.0,
               "priceRetail": 106975.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "A7": {
-      "category": "Sportback",
+      "category": "Hatchback",
       "editions": [
         {
           "factoryCode": "4KA0GA",
@@ -1804,7 +2542,13 @@
               "priceNet": 61522.0,
               "priceRetail": 61522.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4KA02Y",
@@ -1818,7 +2562,13 @@
               "priceNet": 63966.0,
               "priceRetail": 63966.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1837,12 +2587,18 @@
               "priceNet": 81899.0,
               "priceRetail": 81899.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "TT": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "FV306C",
@@ -1856,7 +2612,13 @@
               "priceNet": 32770.0,
               "priceRetail": 32770.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV306G",
@@ -1870,7 +2632,13 @@
               "priceNet": 34391.0,
               "priceRetail": 34391.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV307L",
@@ -1884,7 +2652,13 @@
               "priceNet": 40751.0,
               "priceRetail": 40751.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV3RSY",
@@ -1898,7 +2672,13 @@
               "priceNet": 62796.0,
               "priceRetail": 62796.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV906C",
@@ -1912,7 +2692,13 @@
               "priceNet": 34058.0,
               "priceRetail": 34058.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV906G",
@@ -1926,7 +2712,13 @@
               "priceNet": 35685.0,
               "priceRetail": 35685.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV907L",
@@ -1940,12 +2732,18 @@
               "priceNet": 42038.0,
               "priceRetail": 42038.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "TTS": {
-      "category": "Unknown",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "FV3S3L",
@@ -1959,7 +2757,13 @@
               "priceNet": 54772.0,
               "priceRetail": 54772.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FV9S3L",
@@ -1973,7 +2777,13 @@
               "priceNet": 56065.0,
               "priceRetail": 56065.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1992,7 +2802,13 @@
               "priceNet": 17879.0,
               "priceRetail": 17879.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBNC",
@@ -2006,7 +2822,13 @@
               "priceNet": 19343.0,
               "priceRetail": 19343.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCNC",
@@ -2020,7 +2842,13 @@
               "priceNet": 19343.0,
               "priceRetail": 19343.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABANG",
@@ -2034,7 +2862,13 @@
               "priceNet": 19579.0,
               "priceRetail": 19579.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBNG",
@@ -2048,7 +2882,13 @@
               "priceNet": 21047.0,
               "priceRetail": 21047.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCNG",
@@ -2062,7 +2902,13 @@
               "priceNet": 21047.0,
               "priceRetail": 21047.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABACC",
@@ -2076,7 +2922,13 @@
               "priceNet": 19760.0,
               "priceRetail": 19760.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBCC",
@@ -2090,7 +2942,13 @@
               "priceNet": 21230.0,
               "priceRetail": 21230.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCCC",
@@ -2104,7 +2962,13 @@
               "priceNet": 21230.0,
               "priceRetail": 21230.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABACG",
@@ -2118,7 +2982,13 @@
               "priceNet": 21466.0,
               "priceRetail": 21466.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBCG",
@@ -2132,7 +3002,13 @@
               "priceNet": 22932.0,
               "priceRetail": 22932.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCCG",
@@ -2146,7 +3022,13 @@
               "priceNet": 22932.0,
               "priceRetail": 22932.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABAFC",
@@ -2160,7 +3042,13 @@
               "priceNet": 19771.0,
               "priceRetail": 19771.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBFC",
@@ -2174,7 +3062,13 @@
               "priceNet": 21236.0,
               "priceRetail": 21236.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCFC",
@@ -2188,7 +3082,13 @@
               "priceNet": 21236.0,
               "priceRetail": 21236.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABAFG",
@@ -2202,7 +3102,13 @@
               "priceNet": 21473.0,
               "priceRetail": 21473.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBFG",
@@ -2216,7 +3122,13 @@
               "priceNet": 22939.0,
               "priceRetail": 22939.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCFG",
@@ -2230,7 +3142,13 @@
               "priceNet": 22939.0,
               "priceRetail": 22939.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABARY",
@@ -2244,7 +3162,13 @@
               "priceNet": 24116.0,
               "priceRetail": 24116.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBRY",
@@ -2258,7 +3182,13 @@
               "priceNet": 25578.0,
               "priceRetail": 25578.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCRY",
@@ -2272,7 +3202,13 @@
               "priceNet": 25578.0,
               "priceRetail": 25578.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABATY",
@@ -2286,7 +3222,13 @@
               "priceNet": 25590.0,
               "priceRetail": 25590.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABBTY",
@@ -2300,7 +3242,13 @@
               "priceNet": 27060.0,
               "priceRetail": 27060.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GABCTY",
@@ -2314,7 +3262,13 @@
               "priceNet": 27060.0,
               "priceRetail": 27060.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -2333,7 +3287,13 @@
               "priceNet": 20000.0,
               "priceRetail": 20000.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGAKC",
@@ -2347,7 +3307,13 @@
               "priceNet": 19915.0,
               "priceRetail": 19915.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGBKC",
@@ -2361,7 +3327,13 @@
               "priceNet": 21569.0,
               "priceRetail": 21569.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGAKX",
@@ -2375,7 +3347,13 @@
               "priceNet": 21436.0,
               "priceRetail": 21436.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGBKX",
@@ -2389,7 +3367,13 @@
               "priceNet": 23098.0,
               "priceRetail": 23098.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGA6C",
@@ -2403,7 +3387,13 @@
               "priceNet": 20186.0,
               "priceRetail": 20186.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGA6X",
@@ -2417,7 +3407,13 @@
               "priceNet": 21715.0,
               "priceRetail": 21715.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGB6X",
@@ -2431,7 +3427,13 @@
               "priceNet": 23378.0,
               "priceRetail": 23378.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGBEY",
@@ -2445,7 +3447,13 @@
               "priceNet": 27555.0,
               "priceRetail": 27555.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGAGC",
@@ -2459,7 +3467,13 @@
               "priceNet": 24264.0,
               "priceRetail": 24264.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGCGC",
@@ -2473,7 +3487,13 @@
               "priceNet": 25923.0,
               "priceRetail": 25923.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGCGG",
@@ -2487,7 +3507,13 @@
               "priceNet": 27450.0,
               "priceRetail": 27450.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGBGY",
@@ -2501,7 +3527,13 @@
               "priceNet": 28775.0,
               "priceRetail": 28775.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8UGABY",
@@ -2515,7 +3547,13 @@
               "priceNet": 29604.0,
               "priceRetail": 29604.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -2534,7 +3572,13 @@
               "priceNet": 40579.0,
               "priceRetail": 40579.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBBAY",
@@ -2548,7 +3592,13 @@
               "priceNet": 42420.0,
               "priceRetail": 42420.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBCAY",
@@ -2562,7 +3612,13 @@
               "priceNet": 42420.0,
               "priceRetail": 42420.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBAKY",
@@ -2576,7 +3632,13 @@
               "priceNet": 35113.0,
               "priceRetail": 35113.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBBKY",
@@ -2590,7 +3652,13 @@
               "priceNet": 36954.0,
               "priceRetail": 36954.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBCKY",
@@ -2604,7 +3672,13 @@
               "priceNet": 36954.0,
               "priceRetail": 36954.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBAFY",
@@ -2618,7 +3692,13 @@
               "priceNet": 37626.0,
               "priceRetail": 37626.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBBFY",
@@ -2632,7 +3712,13 @@
               "priceNet": 39466.0,
               "priceRetail": 39466.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYBCFY",
@@ -2646,7 +3732,13 @@
               "priceNet": 39466.0,
               "priceRetail": 39466.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -2665,7 +3757,13 @@
               "priceNet": 57722.0,
               "priceRetail": 57722.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4MB0E3",
@@ -2679,12 +3777,18 @@
               "priceNet": 77902.0,
               "priceRetail": 77902.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "SQ7": {
-      "category": "Unknown",
+      "category": "SUV",
       "editions": [
         {
           "factoryCode": "4MBSU1",
@@ -2698,7 +3802,13 @@
               "priceNet": 85201.0,
               "priceRetail": 85201.0
             }
-          ]
+          ],
+          "co2Standard": "NEDC",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     }
