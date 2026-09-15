@@ -18,7 +18,13 @@
               "priceRetail": 16258.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBABMC",
@@ -33,7 +39,13 @@
               "priceRetail": 17342.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBACMC",
@@ -48,7 +60,13 @@
               "priceRetail": 17601.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBABMG",
@@ -63,7 +81,13 @@
               "priceRetail": 18910.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBACMG",
@@ -78,7 +102,13 @@
               "priceRetail": 19277.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBACKG",
@@ -93,7 +123,13 @@
               "priceRetail": 20737.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -113,7 +149,13 @@
               "priceRetail": 18994.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GBH0KG",
@@ -128,7 +170,13 @@
               "priceRetail": 20495.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -148,7 +196,13 @@
               "priceRetail": 17342.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YABKC",
@@ -163,7 +217,13 @@
               "priceRetail": 18117.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YACKC",
@@ -178,7 +238,13 @@
               "priceRetail": 19379.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YAAKG",
@@ -193,7 +259,13 @@
               "priceRetail": 19972.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YABKG",
@@ -208,7 +280,13 @@
               "priceRetail": 21048.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YACKG",
@@ -223,7 +301,13 @@
               "priceRetail": 21928.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YAAZG",
@@ -238,7 +322,13 @@
               "priceRetail": 22091.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YABZG",
@@ -253,7 +343,13 @@
               "priceRetail": 23036.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YACZG",
@@ -268,7 +364,13 @@
               "priceRetail": 24437.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YAADG",
@@ -283,7 +385,13 @@
               "priceRetail": 20337.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YABDG",
@@ -298,7 +406,13 @@
               "priceRetail": 21075.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YACDG",
@@ -313,7 +427,13 @@
               "priceRetail": 22360.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YAAPX",
@@ -328,7 +448,13 @@
               "priceRetail": 34175.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YABPX",
@@ -343,7 +469,13 @@
               "priceRetail": 34366.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YACPX",
@@ -358,7 +490,13 @@
               "priceRetail": 35739.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -378,7 +516,13 @@
               "priceRetail": 42810.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -398,7 +542,13 @@
               "priceRetail": 52034.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -418,7 +568,13 @@
               "priceRetail": 17744.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSBKC",
@@ -433,7 +589,13 @@
               "priceRetail": 18317.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSCKC",
@@ -448,7 +610,13 @@
               "priceRetail": 19608.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSAKG",
@@ -463,7 +631,13 @@
               "priceRetail": 20331.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSAZG",
@@ -478,7 +652,13 @@
               "priceRetail": 22840.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSBZG",
@@ -493,7 +673,13 @@
               "priceRetail": 23785.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSCZG",
@@ -508,7 +694,13 @@
               "priceRetail": 25149.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8YSADG",
@@ -523,7 +715,13 @@
               "priceRetail": 19998.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -543,7 +741,13 @@
               "priceRetail": 26307.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WCCYG",
@@ -558,7 +762,13 @@
               "priceRetail": 31229.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WCAUG",
@@ -573,7 +783,13 @@
               "priceRetail": 33065.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WCCUG",
@@ -588,7 +804,13 @@
               "priceRetail": 35187.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WCAUY",
@@ -603,7 +825,13 @@
               "priceRetail": 34396.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WCCUY",
@@ -618,7 +846,13 @@
               "priceRetail": 37669.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -638,12 +872,18 @@
               "priceRetail": 56692.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "S4 Avant": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "8WDS5A",
@@ -658,12 +898,18 @@
               "priceRetail": 58487.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "RS4 Avant": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "8WDRXA",
@@ -678,12 +924,18 @@
               "priceRetail": 70948.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "A4 Allroad": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "8WJ0AY",
@@ -698,7 +950,13 @@
               "priceRetail": 39061.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "8WJ0UY",
@@ -713,12 +971,18 @@
               "priceRetail": 38964.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "A5 Coupé": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "F5PCAY",
@@ -733,7 +997,13 @@
               "priceRetail": 48634.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5PCUY",
@@ -748,12 +1018,18 @@
               "priceRetail": 43712.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "RS5 Coupé": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "F5PRXA",
@@ -768,7 +1044,13 @@
               "priceRetail": 76163.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -788,7 +1070,13 @@
               "priceRetail": 36950.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5FCAY",
@@ -803,7 +1091,13 @@
               "priceRetail": 48599.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F5FCUY",
@@ -818,7 +1112,13 @@
               "priceRetail": 43712.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -838,7 +1138,13 @@
               "priceRetail": 52513.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4A2CIY",
@@ -853,7 +1159,13 @@
               "priceRetail": 52381.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4A2CMY",
@@ -868,12 +1180,18 @@
               "priceRetail": 59838.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "A6 Allroad": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "4AH0LA",
@@ -888,12 +1206,18 @@
               "priceRetail": 67713.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "RS6 Avant": {
-      "category": "Wagon",
+      "category": "MPV",
       "editions": [
         {
           "factoryCode": "4A5RCA",
@@ -908,7 +1232,13 @@
               "priceRetail": 108909.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -928,7 +1258,13 @@
               "priceRetail": 66321.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4KA0LA",
@@ -943,7 +1279,13 @@
               "priceRetail": 65965.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -963,7 +1305,13 @@
               "priceRetail": 112626.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -983,7 +1331,13 @@
               "priceRetail": 17687.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGBQC",
@@ -998,7 +1352,13 @@
               "priceRetail": 18797.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGAZG",
@@ -1013,7 +1373,13 @@
               "priceRetail": 20737.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGBZG",
@@ -1028,7 +1394,13 @@
               "priceRetail": 21892.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGCZG",
@@ -1043,7 +1415,13 @@
               "priceRetail": 23022.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGAEG",
@@ -1058,7 +1436,13 @@
               "priceRetail": 20829.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGBEG",
@@ -1073,7 +1457,13 @@
               "priceRetail": 21163.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGCEG",
@@ -1088,7 +1478,13 @@
               "priceRetail": 22256.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGASY",
@@ -1103,7 +1499,13 @@
               "priceRetail": 25600.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "GAGCSY",
@@ -1118,7 +1520,13 @@
               "priceRetail": 28062.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1138,7 +1546,13 @@
               "priceRetail": 40440.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1158,7 +1572,13 @@
               "priceRetail": 22780.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BBZG",
@@ -1173,7 +1593,13 @@
               "priceRetail": 26213.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BCZG",
@@ -1188,7 +1614,13 @@
               "priceRetail": 27467.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BARG",
@@ -1203,7 +1635,13 @@
               "priceRetail": 29062.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BCRG",
@@ -1218,7 +1656,13 @@
               "priceRetail": 29831.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BCLY",
@@ -1233,7 +1677,13 @@
               "priceRetail": 34785.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BBKY",
@@ -1248,7 +1698,13 @@
               "priceRetail": 32721.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BCKY",
@@ -1263,7 +1719,13 @@
               "priceRetail": 34284.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BAPX",
@@ -1278,7 +1740,13 @@
               "priceRetail": 36311.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3BCPX",
@@ -1293,7 +1761,13 @@
               "priceRetail": 39971.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1313,7 +1787,13 @@
               "priceRetail": 58771.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NAZC",
@@ -1328,7 +1808,13 @@
               "priceRetail": 24823.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NAZG",
@@ -1343,7 +1829,13 @@
               "priceRetail": 28125.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NCZG",
@@ -1358,7 +1850,13 @@
               "priceRetail": 29661.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NARG",
@@ -1373,7 +1871,13 @@
               "priceRetail": 30045.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NCRG",
@@ -1388,7 +1892,13 @@
               "priceRetail": 32578.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NALY",
@@ -1403,7 +1913,13 @@
               "priceRetail": 34116.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NCLY",
@@ -1418,7 +1934,13 @@
               "priceRetail": 37078.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NCKY",
@@ -1433,7 +1955,13 @@
               "priceRetail": 36221.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NAPX",
@@ -1448,7 +1976,13 @@
               "priceRetail": 39132.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F3NCPX",
@@ -1463,7 +1997,13 @@
               "priceRetail": 43708.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1483,7 +2023,13 @@
               "priceRetail": 60795.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F4BAI1",
@@ -1498,7 +2044,13 @@
               "priceRetail": 41855.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F4BAC3",
@@ -1513,7 +2065,13 @@
               "priceRetail": 47500.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F4BA23",
@@ -1528,7 +2086,11 @@
               "priceRetail": 53145.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         }
       ]
     },
@@ -1548,7 +2110,13 @@
               "priceRetail": 44274.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F4NAC3",
@@ -1563,7 +2131,13 @@
               "priceRetail": 49919.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F4NA23",
@@ -1578,7 +2152,11 @@
               "priceRetail": 55565.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         }
       ]
     },
@@ -1598,7 +2176,13 @@
               "priceRetail": 36806.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGBJG",
@@ -1613,7 +2197,13 @@
               "priceRetail": 38065.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGAUY",
@@ -1628,7 +2218,13 @@
               "priceRetail": 40307.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGBUY",
@@ -1643,7 +2239,13 @@
               "priceRetail": 41623.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGCUY",
@@ -1658,7 +2260,13 @@
               "priceRetail": 42940.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGAAY",
@@ -1673,7 +2281,13 @@
               "priceRetail": 44755.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGCAY",
@@ -1688,7 +2302,13 @@
               "priceRetail": 46515.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGA9Y",
@@ -1703,7 +2323,13 @@
               "priceRetail": 50724.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYGC9Y",
@@ -1718,7 +2344,13 @@
               "priceRetail": 52555.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1738,7 +2370,13 @@
               "priceRetail": 45111.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYTCUY",
@@ -1753,7 +2391,13 @@
               "priceRetail": 46428.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYTCAY",
@@ -1768,7 +2412,13 @@
               "priceRetail": 49966.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYTB9Y",
@@ -1783,7 +2433,13 @@
               "priceRetail": 54728.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FYTC9Y",
@@ -1798,7 +2454,13 @@
               "priceRetail": 56025.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1818,7 +2480,13 @@
               "priceRetail": 70957.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1838,7 +2506,13 @@
               "priceRetail": 63117.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4MGCN2",
@@ -1853,7 +2527,13 @@
               "priceRetail": 68311.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4MGCY3",
@@ -1868,7 +2548,13 @@
               "priceRetail": 70253.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1888,7 +2574,13 @@
               "priceRetail": 79030.34
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4MN0N2",
@@ -1903,7 +2595,13 @@
               "priceRetail": 74859.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "4MN0Z3",
@@ -1918,7 +2616,13 @@
               "priceRetail": 80922.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1938,12 +2642,18 @@
               "priceRetail": 112457.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
     "TT Coupé": {
-      "category": "Coupe",
+      "category": "Coupe/Roadster",
       "editions": [
         {
           "factoryCode": "FVP0CG",
@@ -1958,7 +2668,13 @@
               "priceRetail": 35922.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "FVP09Y",
@@ -1973,7 +2689,13 @@
               "priceRetail": 44116.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     },
@@ -1993,7 +2715,11 @@
               "priceRetail": 60484.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         },
         {
           "factoryCode": "GENBAE",
@@ -2008,7 +2734,11 @@
               "priceRetail": 70968.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         },
         {
           "factoryCode": "GENCAE",
@@ -2023,7 +2753,11 @@
               "priceRetail": 72581.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         }
       ]
     },
@@ -2043,7 +2777,11 @@
               "priceRetail": 65323.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         },
         {
           "factoryCode": "GEABAE",
@@ -2058,7 +2796,11 @@
               "priceRetail": 76613.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         },
         {
           "factoryCode": "GEACAE",
@@ -2073,7 +2815,11 @@
               "priceRetail": 77419.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV"
         }
       ]
     },
@@ -2093,7 +2839,13 @@
               "priceRetail": 91129.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         },
         {
           "factoryCode": "F83RH7",
@@ -2108,7 +2860,13 @@
               "priceRetail": 125000.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
         }
       ]
     }
