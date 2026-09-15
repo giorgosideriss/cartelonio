@@ -3139,3 +3139,153 @@ body.how-to-modal-open{overflow:hidden}
     max-width:128px !important;
   }
 }
+
+
+/* =========================================================
+   CARTELONIO — Three-view onboarding
+   ========================================================= */
+.cartelonio-onboarding{
+  position:fixed;inset:0;z-index:12000;
+  display:flex;align-items:center;justify-content:center;
+  padding:22px;
+}
+.cartelonio-onboarding[aria-hidden="true"]{display:none}
+.cartelonio-onboarding-backdrop{
+  position:absolute;inset:0;
+  background:rgba(8,11,9,.62);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.cartelonio-onboarding-card{
+  position:relative;z-index:1;
+  width:min(900px,100%);
+  max-height:90vh;
+  overflow:hidden;
+  border-radius:30px;
+  background:
+    radial-gradient(circle at 80% 12%,rgba(109,169,67,.12),transparent 28%),
+    #fbfaf6;
+  box-shadow:0 35px 100px rgba(0,0,0,.30);
+  border:1px solid rgba(255,255,255,.42);
+}
+.onboarding-view{
+  display:none;
+  opacity:0;
+  transform:translateY(7px);
+}
+.onboarding-view.is-active{
+  display:block;
+  animation:cartelonioViewFade .32s ease forwards;
+}
+@keyframes cartelonioViewFade{
+  from{opacity:0;transform:translateY(7px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.onboarding-welcome{
+  padding:52px 54px 25px;
+  text-align:center;
+}
+.onboarding-title-line{
+  display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:13px;
+  font-size:clamp(28px,4vw,46px);
+  line-height:1.05;letter-spacing:-.045em;
+  color:var(--ink);
+}
+.onboarding-main-logo{
+  display:block;width:auto;height:62px;max-width:320px;object-fit:contain;
+}
+.onboarding-lead{
+  max-width:610px;margin:22px auto 0;
+  color:#626961;font-size:16px;line-height:1.55;
+}
+.onboarding-benefits{
+  max-width:690px;margin:31px auto 0;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.onboarding-benefit{
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  text-align:left;color:#222722;font-size:13px;font-weight:700;line-height:1.35;
+}
+.benefit-icon{
+  width:45px;height:45px;flex:0 0 45px;border-radius:50%;
+  display:grid;place-items:center;
+  color:var(--accent-deep);background:var(--accent-soft);
+}
+.benefit-icon svg{
+  width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.onboarding-actions{
+  padding:22px 36px 34px;
+}
+.onboarding-actions-three{
+  display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:10px;align-items:center;
+}
+.onboarding-actions button,.onboarding-subview-actions button{
+  min-height:52px;border-radius:15px;padding:0 18px;cursor:pointer;font-weight:800;
+}
+.onboarding-start{
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent),var(--accent-deep));
+  box-shadow:0 12px 26px rgba(78,125,49,.22);
+  display:flex;align-items:center;justify-content:center;gap:12px;
+}
+.onboarding-start span{font-size:20px}
+.onboarding-secondary{
+  color:var(--ink);background:#fff;border:1px solid var(--line);
+}
+.onboarding-secondary:hover{border-color:rgba(109,169,67,.45);background:#f8faf5}
+.onboarding-back{
+  position:absolute;left:25px;top:23px;z-index:3;
+  background:transparent;color:#606760;cursor:pointer;font-size:12px;font-weight:800;
+}
+.onboarding-subview-scroll{
+  max-height:calc(90vh - 94px);
+  overflow:auto;
+  padding:58px 38px 20px;
+}
+.onboarding-subview-scroll>h2{
+  margin:0;padding-right:30px;font-size:30px;letter-spacing:-.04em;
+}
+.onboarding-subview-actions{
+  position:sticky;bottom:0;
+  display:flex;justify-content:center;
+  padding:13px 25px 20px;
+  background:linear-gradient(180deg,rgba(251,250,246,0),#fbfaf6 28%);
+}
+.onboarding-subview-actions .onboarding-start{min-width:230px}
+
+/* Existing old welcome content is now embedded, not a modal of its own. */
+.onboarding-existing-welcome{
+  position:relative!important;inset:auto!important;
+  display:block!important;background:transparent!important;
+}
+.onboarding-existing-welcome > *{
+  max-width:100%;
+}
+body.cartelonio-onboarding-open{overflow:hidden}
+
+@media(max-width:700px){
+  .cartelonio-onboarding{padding:10px}
+  .cartelonio-onboarding-card{border-radius:23px;max-height:92vh}
+  .onboarding-welcome{padding:37px 17px 17px}
+  .onboarding-title-line{gap:8px;font-size:29px}
+  .onboarding-main-logo{height:45px;max-width:230px}
+  .onboarding-lead{margin-top:17px;font-size:13px;max-width:420px}
+  .onboarding-benefits{margin-top:25px;grid-template-columns:repeat(3,1fr);gap:5px}
+  .onboarding-benefit{flex-direction:column;text-align:center;gap:7px;font-size:10px}
+  .benefit-icon{width:39px;height:39px;flex-basis:39px}
+  .benefit-icon svg{width:21px;height:21px}
+  .onboarding-actions{padding:15px 13px 18px}
+  .onboarding-actions-three{
+    grid-template-columns:1fr;
+  }
+  .onboarding-start{order:-1}
+  .onboarding-actions button{min-height:46px}
+  .onboarding-subview-scroll{padding:55px 16px 16px;max-height:calc(92vh - 82px)}
+  .onboarding-subview-scroll>h2{font-size:25px}
+  .onboarding-back{left:17px;top:17px}
+  .onboarding-subview-actions{padding:10px 15px 15px}
+  .onboarding-subview-actions .onboarding-start{width:100%;min-width:0}
+}

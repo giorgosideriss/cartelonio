@@ -1209,3 +1209,52 @@ document.addEventListener("DOMContentLoaded", () => {
   modal.querySelectorAll("[data-how-to-close]").forEach(el=>el.addEventListener("click",close));
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("is-open"))close();});
 })();
+
+
+/* =========================================================
+   CARTELONIO — Three-view onboarding controller
+   ========================================================= */
+(function initCartelonioOnboarding(){
+  const modal = document.getElementById("cartelonioOnboarding");
+  if(!modal) return;
+
+  const views = [...modal.querySelectorAll("[data-onboarding-view]")];
+
+  function showView(name){
+    const current = modal.querySelector(".onboarding-view.is-active");
+    const next = modal.querySelector(`[data-onboarding-view="${name}"]`);
+    if(!next || current === next) return;
+
+    if(current){
+      current.style.opacity = "0";
+      current.style.transform = "translateY(-5px)";
+      setTimeout(() => {
+        current.classList.remove("is-active");
+        current.removeAttribute("style");
+        next.classList.add("is-active");
+      }, 160);
+    } else {
+      next.classList.add("is-active");
+    }
+  }
+
+  function closeOnboarding(){
+    modal.style.opacity = "0";
+    modal.style.transition = "opacity .22s ease";
+    setTimeout(() => {
+      modal.setAttribute("aria-hidden","true");
+      modal.classList.remove("is-open");
+      modal.removeAttribute("style");
+      document.body.classList.remove("cartelonio-onboarding-open");
+    }, 220);
+  }
+
+  modal.querySelectorAll("[data-onboarding-go]").forEach(btn => {
+    btn.addEventListener("click", () => showView(btn.dataset.onboardingGo));
+  });
+  modal.querySelectorAll("[data-onboarding-start]").forEach(btn => {
+    btn.addEventListener("click", closeOnboarding);
+  });
+
+  document.body.classList.add("cartelonio-onboarding-open");
+})();
