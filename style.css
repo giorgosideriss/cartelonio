@@ -2970,3 +2970,40 @@ button.secondary{
   .vehicle-configurator-v2 .integrated-hero-wrap .hero-card{height:225px !important;padding-top:40px !important}
   .vehicle-configurator-v2 .brand-dropdown-card .brand-menu{width:100% !important;min-width:100% !important}
 }
+
+/* === Cartelonio mobile brand dropdown width hotfix ===
+   Keep the custom brand picker as a full-width flex item. This prevents
+   mobile browsers from sizing the absolutely-positioned menu from the
+   logo/content width instead of from the complete Brand card. */
+@media (max-width: 768px){
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-control-row{
+    display:flex !important;
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-picker{
+    display:block !important;
+    flex:1 1 100% !important;
+    width:100% !important;
+    min-width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+  }
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-button{
+    display:flex !important;
+    width:100% !important;
+    min-width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+  }
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu,
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu.open{
+    left:0 !important;
+    right:auto !important;
+    width:100% !important;
+    min-width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+    transform:none !important;
+  }
+}
