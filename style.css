@@ -2688,3 +2688,17 @@ button.secondary{
 @media(max-width:720px){
   .vehicle-configurator-v2 .hero-card .random-select-btn{top:0;right:0;padding:9px 12px;font-size:11px}
 }
+
+/* Cartelonio welcome / disclaimer modal */
+.cartelonio-welcome{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:22px;background:rgba(7,10,14,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.cartelonio-welcome[hidden]{display:none}
+.cartelonio-welcome-card{position:relative;width:min(620px,100%);max-height:calc(100vh - 44px);overflow:auto;background:#111820;border:1px solid rgba(255,255,255,.13);border-radius:22px;padding:34px;box-shadow:0 28px 80px rgba(0,0,0,.48);color:#f5f7f9}
+.cartelonio-welcome-kicker{display:inline-block;margin-bottom:12px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.58}
+.cartelonio-welcome-card h2{margin:0 42px 16px 0;font-size:clamp(1.65rem,4vw,2.25rem);line-height:1.08}
+.cartelonio-welcome-card p{margin:0 0 14px;color:rgba(245,247,249,.78);line-height:1.62}
+.cartelonio-welcome-card strong{color:#fff}
+.cartelonio-welcome-note{margin-top:20px!important;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);font-size:.91rem}
+.cartelonio-welcome-actions{display:flex;justify-content:flex-end;margin-top:24px}
+.cartelonio-welcome-enter{border:0;border-radius:12px;padding:12px 20px;font:inherit;font-weight:800;cursor:pointer;background:#f5f7f9;color:#111820}
+.cartelonio-welcome-close{position:absolute;right:18px;top:16px;width:38px;height:38px;border:0;border-radius:50%;cursor:pointer;background:rgba(255,255,255,.07);color:#fff;font-size:1.35rem;line-height:1}
+@media(max-width:600px){.cartelonio-welcome-card{padding:27px 22px 23px;border-radius:18px}.cartelonio-welcome-close{right:12px;top:11px}}

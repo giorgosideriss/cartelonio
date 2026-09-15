@@ -1181,3 +1181,18 @@ document.addEventListener("DOMContentLoaded", () => {
   syncToyotaColorVisibility();
 })();
 
+
+// Welcome / information modal — shown on every fresh page load.
+(() => {
+  const modal = document.getElementById("cartelonioWelcome");
+  if (!modal) return;
+  const closeButtons = [
+    document.getElementById("cartelonioWelcomeClose"),
+    document.getElementById("cartelonioWelcomeEnter")
+  ].filter(Boolean);
+  const close = () => { modal.hidden = true; document.body.style.overflow = ""; };
+  document.body.style.overflow = "hidden";
+  closeButtons.forEach(btn => btn.addEventListener("click", close));
+  modal.addEventListener("click", e => { if (e.target === modal) close(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !modal.hidden) close(); });
+})();
