@@ -431,6 +431,57 @@ function loadExtras(extrasList) {
   recalcPriceWithExtras();
 }
 
+/* ========== ΠΡΩΤΗ ΑΔΕΙΑ: ΗΜΕΡΑ / ΜΗΝΑΣ / ΑΥΤΟΜΑΤΟ ΕΤΟΣ ========== */
+
+function daysInMonth(year, month) {
+  if (!year || !month) return 31;
+  return new Date(Number(year), Number(month), 0).getDate();
+}
+
+function populateFirstRegDays() {
+  const dayEl   = document.getElementById("firstRegDay");
+  const monthEl = document.getElementById("firstRegMonth");
+  const yearEl  = document.getElementById("firstRegYear");
+  if (!dayEl || !monthEl || !yearEl) return;
+
+  const previousDay = dayEl.value;
+  const maxDays = daysInMonth(yearEl.value, monthEl.value);
+  dayEl.innerHTML = '<option value="">Ημέρα</option>';
+  for (let d = 1; d <= maxDays; d++) {
+    const opt = document.createElement("option");
+    opt.value = String(d);
+    opt.textContent = String(d);
+    dayEl.appendChild(opt);
+  }
+  if (previousDay && Number(previousDay) <= maxDays) dayEl.value = previousDay;
+}
+
+function syncFirstRegDate() {
+  const dayEl    = document.getElementById("firstRegDay");
+  const monthEl  = document.getElementById("firstRegMonth");
+  const yearEl   = document.getElementById("firstRegYear");
+  const hiddenEl = document.getElementById("firstReg");
+  if (!dayEl || !monthEl || !yearEl || !hiddenEl) return;
+
+  const y = Number(yearEl.value);
+  const m = Number(monthEl.value);
+  const d = Number(dayEl.value);
+  if (y && m && d && d <= daysInMonth(y, m)) {
+    hiddenEl.value = `${String(y).padStart(4,"0")}-${String(m).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+  } else {
+    hiddenEl.value = "";
+  }
+}
+
+function syncFirstRegYearFromModelYear() {
+  const modelYearEl = document.getElementById("yearSelect");
+  const firstYearEl = document.getElementById("firstRegYear");
+  if (!modelYearEl || !firstYearEl) return;
+  firstYearEl.value = modelYearEl.value || "";
+  populateFirstRegDays();
+  syncFirstRegDate();
+}
+
 /* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
 async function loadDatasetForSelection() {
@@ -685,8 +736,20 @@ function autoFillCarData() {
     document.getElementById("co2").value = edition.co2;
   }
 
-  if (modelObj.category && categories[modelObj.category]) {
-    document.getElementById("category").value = modelObj.category;
+  // Auto-fill tax metadata when it is available in the selected edition.
+  // The controls remain editable so the user can override them from the vehicle CoC.
+  if (edition.euro) {
+    const euroEl = document.getElementById("euroClass");
+    if (euroEl && [...euroEl.options].some(o => o.value === edition.euro)) euroEl.value = edition.euro;
+  }
+  if (edition.powertrain) {
+    const powertrainEl = document.getElementById("powertrain");
+    if (powertrainEl && [...powertrainEl.options].some(o => o.value === edition.powertrain)) powertrainEl.value = edition.powertrain;
+  }
+
+  const autoBodyType = edition.bodyType || modelObj.category;
+  if (autoBodyType && categories[autoBodyType]) {
+    document.getElementById("category").value = autoBodyType;
   }
 
   updateCarSummary();
@@ -821,12 +884,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Μάρκα / Έτος
   populateBrandSelect();
   populateYearSelect();
+  populateFirstRegDays();
+  syncFirstRegYearFromModelYear();
+
+  const firstRegDay = document.getElementById("firstRegDay");
+  const firstRegMonth = document.getElementById("firstRegMonth");
+  if (firstRegDay) firstRegDay.addEventListener("change", syncFirstRegDate);
+  if (firstRegMonth) firstRegMonth.addEventListener("change", () => {
+    populateFirstRegDays();
+    syncFirstRegDate();
+  });
 
   const brandSelect = document.getElementById("brandSelect");
 
   // Όταν αλλάζει μάρκα (μέσω του κρυφού select)
   brandSelect.addEventListener("change", () => {
     populateYearSelect();
+    syncFirstRegYearFromModelYear();
     currentDataset = null;
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
@@ -836,6 +910,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("yearSelect").addEventListener("change", () => {
+    syncFirstRegYearFromModelYear();
     loadDatasetForSelection();
     updateCarSummary();
   });

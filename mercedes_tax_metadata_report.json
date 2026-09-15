@@ -1,0 +1,168 @@
+{
+  "2015": {
+    "total": 229,
+    "euro6": 0,
+    "euro_manual": 229,
+    "fuel": {
+      "cng": 4,
+      "diesel": 81,
+      "electric": 1,
+      "petrol": 143
+    },
+    "powertrain": {
+      "ice": 217,
+      "hybrid": 11,
+      "electric": 1
+    }
+  },
+  "2016": {
+    "total": 261,
+    "euro6": 260,
+    "euro_manual": 1,
+    "fuel": {
+      "electric": 1,
+      "cng": 3,
+      "diesel": 80,
+      "petrol": 177
+    },
+    "powertrain": {
+      "electric": 1,
+      "ice": 247,
+      "hybrid": 13
+    }
+  },
+  "2017": {
+    "total": 454,
+    "euro6": 450,
+    "euro_manual": 4,
+    "fuel": {
+      "electric": 4,
+      "cng": 1,
+      "diesel": 136,
+      "petrol": 313
+    },
+    "powertrain": {
+      "electric": 4,
+      "ice": 435,
+      "hybrid": 15
+    }
+  },
+  "2018": {
+    "total": 402,
+    "euro6": 402,
+    "euro_manual": 0,
+    "fuel": {
+      "diesel": 135,
+      "petrol": 267
+    },
+    "powertrain": {
+      "hybrid": 10,
+      "ice": 392
+    }
+  },
+  "2019": {
+    "total": 362,
+    "euro6": 361,
+    "euro_manual": 1,
+    "fuel": {
+      "electric": 1,
+      "diesel": 132,
+      "petrol": 229
+    },
+    "powertrain": {
+      "electric": 1,
+      "hybrid": 11,
+      "ice": 350
+    }
+  },
+  "2020": {
+    "total": 407,
+    "euro6": 406,
+    "euro_manual": 1,
+    "fuel": {
+      "electric": 1,
+      "diesel": 153,
+      "petrol": 253
+    },
+    "powertrain": {
+      "electric": 1,
+      "hybrid": 30,
+      "ice": 376
+    }
+  },
+  "2021": {
+    "total": 315,
+    "euro6": 307,
+    "euro_manual": 8,
+    "fuel": {
+      "electric": 8,
+      "diesel": 128,
+      "petrol": 179
+    },
+    "powertrain": {
+      "electric": 8,
+      "hybrid": 27,
+      "ice": 280
+    }
+  },
+  "2022": {
+    "total": 313,
+    "euro6": 288,
+    "euro_manual": 25,
+    "fuel": {
+      "electric": 25,
+      "diesel": 106,
+      "petrol": 182
+    },
+    "powertrain": {
+      "electric": 25,
+      "hybrid": 33,
+      "ice": 255
+    }
+  },
+  "2023": {
+    "total": 378,
+    "euro6": 347,
+    "euro_manual": 31,
+    "fuel": {
+      "electric": 31,
+      "diesel": 132,
+      "petrol": 215
+    },
+    "powertrain": {
+      "electric": 31,
+      "hybrid": 59,
+      "ice": 288
+    }
+  },
+  "2024": {
+    "total": 293,
+    "euro6": 241,
+    "euro_manual": 52,
+    "fuel": {
+      "electric": 52,
+      "diesel": 78,
+      "petrol": 163
+    },
+    "powertrain": {
+      "electric": 52,
+      "hybrid": 47,
+      "ice": 194
+    }
+  },
+  "2025": {
+    "total": 252,
+    "euro6": 221,
+    "euro_manual": 31,
+    "fuel": {
+      "electric": 31,
+      "diesel": 70,
+      "petrol": 151
+    },
+    "powertrain": {
+      "electric": 31,
+      "hybrid": 42,
+      "ice": 179
+    }
+  }
+}
