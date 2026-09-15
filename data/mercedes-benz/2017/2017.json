@@ -17,7 +17,12 @@
               "priceRetail": 7805.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.342",
@@ -31,7 +36,12 @@
               "priceRetail": 9593.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.342",
@@ -45,7 +55,12 @@
               "priceRetail": 10761.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.342",
@@ -59,7 +74,12 @@
               "priceRetail": 11265.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.342",
@@ -73,7 +93,12 @@
               "priceRetail": 11517.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.344",
@@ -87,7 +112,12 @@
               "priceRetail": 10399.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.344",
@@ -101,7 +131,12 @@
               "priceRetail": 11567.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.344",
@@ -115,7 +150,12 @@
               "priceRetail": 12071.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.344",
@@ -129,7 +169,12 @@
               "priceRetail": 12323.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.362",
@@ -143,7 +188,12 @@
               "priceRetail": 16030.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.391",
@@ -157,7 +207,12 @@
               "priceRetail": 18645.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Coupe/Roadster",
+          "euro": null,
+          "euroSource": "not applicable – zero-emission powertrain"
         },
         {
           "factoryCode": "453.342",
@@ -171,7 +226,12 @@
               "priceRetail": 11013.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.344",
@@ -185,7 +245,12 @@
               "priceRetail": 11819.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/smart-fortwo-c453.png",
@@ -206,7 +271,12 @@
               "priceRetail": 12050.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.442",
@@ -220,7 +290,12 @@
               "priceRetail": 13218.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.442",
@@ -234,7 +309,12 @@
               "priceRetail": 13722.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.442",
@@ -248,7 +328,12 @@
               "priceRetail": 13974.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.444",
@@ -262,7 +347,12 @@
               "priceRetail": 12872.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.444",
@@ -276,7 +366,12 @@
               "priceRetail": 14040.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.444",
@@ -290,7 +385,12 @@
               "priceRetail": 14544.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.444",
@@ -304,7 +404,12 @@
               "priceRetail": 14796.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.462",
@@ -318,7 +423,12 @@
               "priceRetail": 18421.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.491",
@@ -332,7 +442,12 @@
               "priceRetail": 21177.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Cabrio",
+          "euro": null,
+          "euroSource": "not applicable – zero-emission powertrain"
         },
         {
           "factoryCode": "453.442",
@@ -346,7 +461,12 @@
               "priceRetail": 13470.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.444",
@@ -360,7 +480,12 @@
               "priceRetail": 14292.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/smart-fortwo-cabrio-a453.png",
@@ -381,7 +506,12 @@
               "priceRetail": 8586.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.042",
@@ -395,7 +525,12 @@
               "priceRetail": 10125.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.042",
@@ -409,7 +544,12 @@
               "priceRetail": 11293.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.042",
@@ -423,7 +563,12 @@
               "priceRetail": 11932.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.042",
@@ -437,7 +582,12 @@
               "priceRetail": 12142.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.044",
@@ -451,7 +601,12 @@
               "priceRetail": 10915.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.044",
@@ -465,7 +620,12 @@
               "priceRetail": 12084.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.044",
@@ -479,7 +639,12 @@
               "priceRetail": 12722.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.044",
@@ -493,7 +658,12 @@
               "priceRetail": 12932.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.062",
@@ -507,7 +677,12 @@
               "priceRetail": 16667.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.091",
@@ -521,7 +696,12 @@
               "priceRetail": 19202.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Hatchback",
+          "euro": null,
+          "euroSource": "not applicable – zero-emission powertrain"
         },
         {
           "factoryCode": "453.042",
@@ -535,7 +715,12 @@
               "priceRetail": 11545.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "453.044",
@@ -549,7 +734,12 @@
               "priceRetail": 12336.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/smart-forfour-w453.png",
@@ -570,7 +760,12 @@
               "priceRetail": 18079.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.042",
@@ -584,7 +779,12 @@
               "priceRetail": 18743.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.043",
@@ -598,7 +798,12 @@
               "priceRetail": 20904.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.047",
@@ -612,7 +817,12 @@
               "priceRetail": 24332.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.044",
@@ -626,7 +836,12 @@
               "priceRetail": 23789.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.046",
@@ -640,7 +855,12 @@
               "priceRetail": 26872.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.050",
@@ -654,7 +874,12 @@
               "priceRetail": 26213.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.051",
@@ -668,7 +893,12 @@
               "priceRetail": 29323.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.052",
@@ -682,7 +912,12 @@
               "priceRetail": 36485.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.011",
@@ -696,7 +931,12 @@
               "priceRetail": 18865.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.012",
@@ -710,7 +950,12 @@
               "priceRetail": 19239.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.008",
@@ -724,7 +969,12 @@
               "priceRetail": 22257.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.002",
@@ -738,7 +988,12 @@
               "priceRetail": 25427.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.003",
@@ -752,7 +1007,12 @@
               "priceRetail": 26263.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "176.005",
@@ -766,7 +1026,12 @@
               "priceRetail": 27833.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/a-class-hatch-w176.png",
@@ -787,7 +1052,12 @@
               "priceRetail": 19868.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.242",
@@ -801,7 +1071,12 @@
               "priceRetail": 20741.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.243",
@@ -815,7 +1090,12 @@
               "priceRetail": 21728.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.247",
@@ -829,7 +1109,12 @@
               "priceRetail": 25023.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.244",
@@ -843,7 +1128,12 @@
               "priceRetail": 24146.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.246",
@@ -857,7 +1147,12 @@
               "priceRetail": 27254.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.211",
@@ -871,7 +1166,12 @@
               "priceRetail": 21140.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.212",
@@ -885,7 +1185,12 @@
               "priceRetail": 21825.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.208",
@@ -899,7 +1204,12 @@
               "priceRetail": 23190.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.202",
@@ -913,7 +1223,12 @@
               "priceRetail": 25921.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.203",
@@ -927,7 +1242,12 @@
               "priceRetail": 26756.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "246.205",
@@ -941,7 +1261,12 @@
               "priceRetail": 27929.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "242.848",
@@ -955,7 +1280,12 @@
               "priceRetail": 24310.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "cng",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "242.890",
@@ -969,7 +1299,12 @@
               "priceRetail": 33714.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Hatchback",
+          "euro": null,
+          "euroSource": "not applicable – zero-emission powertrain"
         }
       ],
       "image": "images/mercedes-benz/models/b-class-w246.png",
@@ -990,7 +1325,12 @@
               "priceRetail": 20631.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.343",
@@ -1004,7 +1344,12 @@
               "priceRetail": 22696.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.347",
@@ -1018,7 +1363,12 @@
               "priceRetail": 28381.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.344",
@@ -1032,7 +1382,12 @@
               "priceRetail": 28539.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.346",
@@ -1046,7 +1401,12 @@
               "priceRetail": 31847.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.350",
@@ -1060,7 +1420,12 @@
               "priceRetail": 31339.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.351",
@@ -1074,7 +1439,12 @@
               "priceRetail": 34679.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.352",
@@ -1088,7 +1458,12 @@
               "priceRetail": 43433.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.312",
@@ -1102,7 +1477,12 @@
               "priceRetail": 22210.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.308",
@@ -1116,7 +1496,12 @@
               "priceRetail": 26239.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.302",
@@ -1130,7 +1515,12 @@
               "priceRetail": 29551.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.303",
@@ -1144,7 +1534,12 @@
               "priceRetail": 29667.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.305",
@@ -1158,7 +1553,12 @@
               "priceRetail": 31316.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.942",
@@ -1172,7 +1572,12 @@
               "priceRetail": 23246.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.943",
@@ -1186,7 +1591,12 @@
               "priceRetail": 25470.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.947",
@@ -1200,7 +1610,12 @@
               "priceRetail": 29019.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.944",
@@ -1214,7 +1629,12 @@
               "priceRetail": 29179.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.946",
@@ -1228,7 +1648,12 @@
               "priceRetail": 32437.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.951",
@@ -1242,7 +1667,12 @@
               "priceRetail": 35282.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.952",
@@ -1256,7 +1686,12 @@
               "priceRetail": 44174.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.912",
@@ -1270,7 +1705,12 @@
               "priceRetail": 24893.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.908",
@@ -1284,7 +1724,12 @@
               "priceRetail": 26817.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.902",
@@ -1298,7 +1743,12 @@
               "priceRetail": 30164.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.903",
@@ -1312,7 +1762,12 @@
               "priceRetail": 30247.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.905",
@@ -1326,7 +1781,12 @@
               "priceRetail": 31993.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/cla-coupe-c117.png",
@@ -1347,7 +1807,12 @@
               "priceRetail": 19513.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.943",
@@ -1361,7 +1826,12 @@
               "priceRetail": 22207.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.944",
@@ -1375,7 +1845,12 @@
               "priceRetail": 24961.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.946",
@@ -1389,7 +1864,12 @@
               "priceRetail": 28140.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.952",
@@ -1403,7 +1883,12 @@
               "priceRetail": 40924.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.912",
@@ -1417,7 +1902,12 @@
               "priceRetail": 23041.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.908",
@@ -1431,7 +1921,12 @@
               "priceRetail": 24264.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.902",
@@ -1445,7 +1940,12 @@
               "priceRetail": 27443.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.903",
@@ -1459,7 +1959,12 @@
               "priceRetail": 27821.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.905",
@@ -1473,7 +1978,12 @@
               "priceRetail": 29378.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/gla-x156.png",
@@ -1494,7 +2004,12 @@
               "priceRetail": 19668.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.943",
@@ -1508,7 +2023,12 @@
               "priceRetail": 22201.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.944",
@@ -1522,7 +2042,12 @@
               "priceRetail": 25068.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.946",
@@ -1536,7 +2061,12 @@
               "priceRetail": 28183.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.952",
@@ -1550,7 +2080,12 @@
               "priceRetail": 41286.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.912",
@@ -1564,7 +2099,12 @@
               "priceRetail": 23047.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.908",
@@ -1578,7 +2118,12 @@
               "priceRetail": 24250.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.902",
@@ -1592,7 +2137,12 @@
               "priceRetail": 27481.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.903",
@@ -1606,7 +2156,12 @@
               "priceRetail": 27865.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.905",
@@ -1620,7 +2175,12 @@
               "priceRetail": 29422.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "156.947",
@@ -1634,7 +2194,12 @@
               "priceRetail": 26706.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/gla-x156.png",
@@ -1655,7 +2220,12 @@
               "priceRetail": 23872.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.040",
@@ -1669,7 +2239,12 @@
               "priceRetail": 24993.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.042",
@@ -1683,7 +2258,12 @@
               "priceRetail": 27877.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.043",
@@ -1697,7 +2277,12 @@
               "priceRetail": 31022.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.045",
@@ -1711,7 +2296,12 @@
               "priceRetail": 31294.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.048",
@@ -1725,7 +2315,12 @@
               "priceRetail": 37124.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.047",
@@ -1739,7 +2334,12 @@
               "priceRetail": 43240.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.066",
@@ -1753,7 +2353,12 @@
               "priceRetail": 44076.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.064",
@@ -1767,7 +2372,12 @@
               "priceRetail": 50833.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.086",
@@ -1781,7 +2391,12 @@
               "priceRetail": 57044.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.087",
@@ -1795,7 +2410,12 @@
               "priceRetail": 64093.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.036",
@@ -1809,7 +2429,12 @@
               "priceRetail": 29527.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.037",
@@ -1823,7 +2448,12 @@
               "priceRetail": 31049.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.004",
@@ -1837,7 +2467,12 @@
               "priceRetail": 29840.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.005",
@@ -1851,7 +2486,12 @@
               "priceRetail": 33511.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.008",
@@ -1865,7 +2505,12 @@
               "priceRetail": 32404.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.009",
@@ -1879,7 +2524,12 @@
               "priceRetail": 33731.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.012",
@@ -1893,7 +2543,12 @@
               "priceRetail": 40036.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-sedan-w205.png",
@@ -1914,7 +2569,12 @@
               "priceRetail": 24953.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.240",
@@ -1928,7 +2588,12 @@
               "priceRetail": 26665.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.242",
@@ -1942,7 +2607,12 @@
               "priceRetail": 29077.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.243",
@@ -1956,7 +2626,12 @@
               "priceRetail": 32247.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.245",
@@ -1970,7 +2645,12 @@
               "priceRetail": 32519.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.248",
@@ -1984,7 +2664,12 @@
               "priceRetail": 38282.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.247",
@@ -1998,7 +2683,12 @@
               "priceRetail": 44425.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.266",
@@ -2012,7 +2702,12 @@
               "priceRetail": 45259.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.264",
@@ -2026,7 +2721,12 @@
               "priceRetail": 52014.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.286",
@@ -2040,7 +2740,12 @@
               "priceRetail": 58099.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.287",
@@ -2054,7 +2759,12 @@
               "priceRetail": 65142.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.236",
@@ -2068,7 +2778,12 @@
               "priceRetail": 30763.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.237",
@@ -2082,7 +2797,12 @@
               "priceRetail": 32276.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.204",
@@ -2096,7 +2816,12 @@
               "priceRetail": 34269.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.205",
@@ -2110,7 +2835,12 @@
               "priceRetail": 38361.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.208",
@@ -2124,7 +2854,12 @@
               "priceRetail": 33359.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.209",
@@ -2138,7 +2873,12 @@
               "priceRetail": 34711.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.212",
@@ -2152,7 +2892,12 @@
               "priceRetail": 41214.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-estate-s205.png",
@@ -2173,7 +2918,12 @@
               "priceRetail": 26749.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.342",
@@ -2187,7 +2937,12 @@
               "priceRetail": 29135.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.343",
@@ -2201,7 +2956,12 @@
               "priceRetail": 32834.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.345",
@@ -2215,7 +2975,12 @@
               "priceRetail": 33360.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.348",
@@ -2229,7 +2994,12 @@
               "priceRetail": 34860.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.366",
@@ -2243,7 +3013,12 @@
               "priceRetail": 41223.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.364",
@@ -2257,7 +3032,12 @@
               "priceRetail": 47450.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.386",
@@ -2271,7 +3051,12 @@
               "priceRetail": 62723.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.387",
@@ -2285,7 +3070,12 @@
               "priceRetail": 69319.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.304",
@@ -2299,7 +3089,12 @@
               "priceRetail": 32230.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.305",
@@ -2313,7 +3108,12 @@
               "priceRetail": 36123.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.308",
@@ -2327,7 +3127,12 @@
               "priceRetail": 36597.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.309",
@@ -2341,7 +3146,12 @@
               "priceRetail": 38496.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.340",
@@ -2355,7 +3165,12 @@
               "priceRetail": 26749.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.342",
@@ -2369,7 +3184,12 @@
               "priceRetail": 29135.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.343",
@@ -2383,7 +3203,12 @@
               "priceRetail": 32834.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.345",
@@ -2397,7 +3222,12 @@
               "priceRetail": 33360.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.348",
@@ -2411,7 +3241,12 @@
               "priceRetail": 34860.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.366",
@@ -2425,7 +3260,12 @@
               "priceRetail": 41223.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.364",
@@ -2439,7 +3279,12 @@
               "priceRetail": 47450.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.386",
@@ -2453,7 +3298,12 @@
               "priceRetail": 62723.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.387",
@@ -2467,7 +3317,12 @@
               "priceRetail": 69319.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.304",
@@ -2481,7 +3336,12 @@
               "priceRetail": 32230.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.305",
@@ -2495,7 +3355,12 @@
               "priceRetail": 36123.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.308",
@@ -2509,7 +3374,12 @@
               "priceRetail": 36597.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.309",
@@ -2523,7 +3393,12 @@
               "priceRetail": 38496.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-coupe-c205.png",
@@ -2544,7 +3419,12 @@
               "priceRetail": 30883.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.442",
@@ -2558,7 +3438,12 @@
               "priceRetail": 33239.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.443",
@@ -2572,7 +3457,12 @@
               "priceRetail": 36837.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.445",
@@ -2586,7 +3476,12 @@
               "priceRetail": 35120.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.448",
@@ -2600,7 +3495,12 @@
               "priceRetail": 36600.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.466",
@@ -2614,7 +3514,12 @@
               "priceRetail": 45249.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.464",
@@ -2628,7 +3533,12 @@
               "priceRetail": 51451.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.486",
@@ -2642,7 +3552,12 @@
               "priceRetail": 70257.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.487",
@@ -2656,7 +3571,12 @@
               "priceRetail": 76844.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.404",
@@ -2670,7 +3590,12 @@
               "priceRetail": 37233.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.405",
@@ -2684,7 +3609,12 @@
               "priceRetail": 41052.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "205.408",
@@ -2698,7 +3628,12 @@
               "priceRetail": 41585.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/c-class-cabrio-a205.png",
@@ -2719,7 +3654,12 @@
               "priceRetail": 30452.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "172.434",
@@ -2733,7 +3673,12 @@
               "priceRetail": 34593.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "172.438",
@@ -2747,7 +3692,12 @@
               "priceRetail": 40174.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "172.466",
@@ -2761,7 +3711,12 @@
               "priceRetail": 51521.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "172.404",
@@ -2775,7 +3730,12 @@
               "priceRetail": 37649.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/slc-r172.png",
@@ -2796,7 +3756,12 @@
               "priceRetail": 36558.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.042",
@@ -2810,7 +3775,12 @@
               "priceRetail": 36055.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.043",
@@ -2824,7 +3794,12 @@
               "priceRetail": 39255.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.045",
@@ -2838,7 +3813,12 @@
               "priceRetail": 41840.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.048",
@@ -2852,7 +3832,12 @@
               "priceRetail": 44945.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.050",
@@ -2866,7 +3851,12 @@
               "priceRetail": 52148.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.071",
@@ -2880,7 +3870,12 @@
               "priceRetail": 55108.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.064",
@@ -2894,7 +3889,12 @@
               "priceRetail": 65225.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.088",
@@ -2908,7 +3908,12 @@
               "priceRetail": 103590.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.089",
@@ -2922,7 +3927,12 @@
               "priceRetail": 113488.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.013",
@@ -2936,7 +3946,12 @@
               "priceRetail": 37577.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.004",
@@ -2950,7 +3965,12 @@
               "priceRetail": 39724.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.005",
@@ -2964,7 +3984,12 @@
               "priceRetail": 41840.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.033",
@@ -2978,7 +4003,12 @@
               "priceRetail": 48046.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.045",
@@ -2992,7 +4022,12 @@
               "priceRetail": 41922.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.048",
@@ -3006,7 +4041,12 @@
               "priceRetail": 45026.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.013",
@@ -3020,7 +4060,12 @@
               "priceRetail": 37655.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.004",
@@ -3034,7 +4079,12 @@
               "priceRetail": 39802.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.033",
@@ -3048,7 +4098,12 @@
               "priceRetail": 48079.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.034",
@@ -3062,7 +4117,12 @@
               "priceRetail": 50362.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-sedan-w213.png",
@@ -3083,7 +4143,12 @@
               "priceRetail": 42626.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.243",
@@ -3097,7 +4162,12 @@
               "priceRetail": 44875.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.245",
@@ -3111,7 +4181,12 @@
               "priceRetail": 46168.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.271",
@@ -3125,7 +4200,12 @@
               "priceRetail": 57089.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.264",
@@ -3139,7 +4219,12 @@
               "priceRetail": 65628.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.213",
@@ -3153,7 +4238,12 @@
               "priceRetail": 45365.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.204",
@@ -3167,7 +4257,12 @@
               "priceRetail": 47289.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.205",
@@ -3181,7 +4276,12 @@
               "priceRetail": 49705.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.217",
@@ -3195,7 +4295,12 @@
               "priceRetail": 52682.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.233",
@@ -3209,7 +4314,12 @@
               "priceRetail": 54390.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.217",
@@ -3223,7 +4333,12 @@
               "priceRetail": 52682.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.233",
@@ -3237,7 +4352,12 @@
               "priceRetail": 54480.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.234",
@@ -3251,7 +4371,12 @@
               "priceRetail": 56911.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.237",
@@ -3265,7 +4390,12 @@
               "priceRetail": 60098.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-estate-s213.png",
@@ -3286,7 +4416,12 @@
               "priceRetail": 40689.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.348",
@@ -3300,7 +4435,12 @@
               "priceRetail": 46538.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.366",
@@ -3314,7 +4454,12 @@
               "priceRetail": 56196.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.314",
@@ -3328,7 +4473,12 @@
               "priceRetail": 41436.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.342",
@@ -3342,7 +4492,12 @@
               "priceRetail": 40689.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.348",
@@ -3356,7 +4511,12 @@
               "priceRetail": 46538.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.366",
@@ -3370,7 +4530,12 @@
               "priceRetail": 56196.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.314",
@@ -3384,7 +4549,12 @@
               "priceRetail": 41436.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-coupe-c238.png",
@@ -3405,7 +4575,12 @@
               "priceRetail": 48859.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.304",
@@ -3419,7 +4594,12 @@
               "priceRetail": 50936.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.397",
@@ -3433,7 +4613,12 @@
               "priceRetail": 53216.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.326",
@@ -3447,7 +4632,12 @@
               "priceRetail": 55144.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.394",
@@ -3461,7 +4651,12 @@
               "priceRetail": 57482.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.361",
@@ -3475,7 +4670,12 @@
               "priceRetail": 56419.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.368",
@@ -3489,7 +4689,12 @@
               "priceRetail": 58762.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.373",
@@ -3503,7 +4708,12 @@
               "priceRetail": 70610.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.391",
@@ -3517,7 +4727,12 @@
               "priceRetail": 72951.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.374",
@@ -3531,7 +4746,12 @@
               "priceRetail": 100674.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.392",
@@ -3545,7 +4765,12 @@
               "priceRetail": 104024.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.376",
@@ -3559,7 +4784,12 @@
               "priceRetail": 113385.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/cls-coupe-c218.png",
@@ -3580,7 +4810,12 @@
               "priceRetail": 50478.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.904",
@@ -3594,7 +4829,12 @@
               "priceRetail": 52557.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.997",
@@ -3608,7 +4848,12 @@
               "priceRetail": 54895.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.926",
@@ -3622,7 +4867,12 @@
               "priceRetail": 56829.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.994",
@@ -3636,7 +4886,12 @@
               "priceRetail": 59161.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.961",
@@ -3650,7 +4905,12 @@
               "priceRetail": 58049.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.968",
@@ -3664,7 +4924,12 @@
               "priceRetail": 60326.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.973",
@@ -3678,7 +4943,12 @@
               "priceRetail": 71730.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.991",
@@ -3692,7 +4962,12 @@
               "priceRetail": 74070.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.992",
@@ -3706,7 +4981,12 @@
               "priceRetail": 105654.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "218.976",
@@ -3720,7 +5000,12 @@
               "priceRetail": 115011.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/cls-shooting-brake-x218.png",
@@ -3741,7 +5026,12 @@
               "priceRetail": 75114.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.032",
@@ -3755,7 +5045,12 @@
               "priceRetail": 75113.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.033",
@@ -3769,7 +5064,12 @@
               "priceRetail": 78830.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.057",
@@ -3783,7 +5083,12 @@
               "priceRetail": 79851.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.067",
@@ -3797,7 +5102,12 @@
               "priceRetail": 82613.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.082",
@@ -3811,7 +5121,12 @@
               "priceRetail": 93483.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.085",
@@ -3825,7 +5140,12 @@
               "priceRetail": 95879.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.077",
@@ -3839,7 +5159,12 @@
               "priceRetail": 133276.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-w222.png",
@@ -3860,7 +5185,12 @@
               "priceRetail": 78371.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.132",
@@ -3874,7 +5204,12 @@
               "priceRetail": 78448.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.133",
@@ -3888,7 +5223,12 @@
               "priceRetail": 81854.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.157",
@@ -3902,7 +5242,12 @@
               "priceRetail": 82570.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.167",
@@ -3916,7 +5261,12 @@
               "priceRetail": 85361.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.163",
@@ -3930,7 +5280,12 @@
               "priceRetail": 95984.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.182",
@@ -3944,7 +5299,12 @@
               "priceRetail": 95711.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.185",
@@ -3958,7 +5318,12 @@
               "priceRetail": 99326.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.176",
@@ -3972,7 +5337,12 @@
               "priceRetail": 144186.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.178",
@@ -3986,7 +5356,12 @@
               "priceRetail": 135485.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.179",
@@ -4000,7 +5375,12 @@
               "priceRetail": 204378.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-long-v222.png",
@@ -4021,7 +5401,12 @@
               "priceRetail": 117043.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.985",
@@ -4035,7 +5420,12 @@
               "priceRetail": 122357.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.976",
@@ -4049,7 +5439,12 @@
               "priceRetail": 163995.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/maybach-s-class-x222.png",
@@ -4070,7 +5465,12 @@
               "priceRetail": 86841.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.382",
@@ -4084,7 +5484,12 @@
               "priceRetail": 108153.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.385",
@@ -4098,7 +5503,12 @@
               "priceRetail": 112051.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.377",
@@ -4112,7 +5522,12 @@
               "priceRetail": 152937.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.378",
@@ -4126,7 +5541,12 @@
               "priceRetail": 151307.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.379",
@@ -4140,7 +5560,12 @@
               "priceRetail": 213221.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.364",
@@ -4154,7 +5579,12 @@
               "priceRetail": 86841.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.382",
@@ -4168,7 +5598,12 @@
               "priceRetail": 108153.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.385",
@@ -4182,7 +5617,12 @@
               "priceRetail": 112051.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.377",
@@ -4196,7 +5636,12 @@
               "priceRetail": 152937.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.378",
@@ -4210,7 +5655,12 @@
               "priceRetail": 151307.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.379",
@@ -4224,7 +5674,12 @@
               "priceRetail": 213221.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-coupe-c217.png",
@@ -4245,7 +5700,12 @@
               "priceRetail": 121692.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.478",
@@ -4259,7 +5719,12 @@
               "priceRetail": 164680.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.479",
@@ -4273,7 +5738,12 @@
               "priceRetail": 220174.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-cabrio-a217.png",
@@ -4294,7 +5764,12 @@
               "priceRetail": 86616.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "231.473",
@@ -4308,7 +5783,12 @@
               "priceRetail": 105100.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "231.474",
@@ -4322,7 +5802,12 @@
               "priceRetail": 138010.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "231.479",
@@ -4336,7 +5821,12 @@
               "priceRetail": 204021.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/sl-r231.png",
@@ -4357,7 +5847,12 @@
               "priceRetail": 34353.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.949",
@@ -4371,7 +5866,12 @@
               "priceRetail": 37675.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.954",
@@ -4385,7 +5885,12 @@
               "priceRetail": 40962.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.964",
@@ -4399,7 +5904,12 @@
               "priceRetail": 49473.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.905",
@@ -4413,7 +5923,12 @@
               "priceRetail": 35785.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.909",
@@ -4427,7 +5942,12 @@
               "priceRetail": 36062.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.925",
@@ -4441,7 +5961,12 @@
               "priceRetail": 42808.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.988",
@@ -4455,7 +5980,12 @@
               "priceRetail": 62760.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.989",
@@ -4469,7 +5999,12 @@
               "priceRetail": 69710.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/glc-x253.png",
@@ -4490,7 +6025,12 @@
               "priceRetail": 38042.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.349",
@@ -4504,7 +6044,12 @@
               "priceRetail": 42554.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.354",
@@ -4518,7 +6063,12 @@
               "priceRetail": 45165.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.364",
@@ -4532,7 +6082,12 @@
               "priceRetail": 50531.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.305",
@@ -4546,7 +6101,12 @@
               "priceRetail": 37871.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.309",
@@ -4560,7 +6120,12 @@
               "priceRetail": 38141.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.325",
@@ -4574,7 +6139,12 @@
               "priceRetail": 45024.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.349",
@@ -4588,7 +6158,12 @@
               "priceRetail": 42554.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.354",
@@ -4602,7 +6177,12 @@
               "priceRetail": 45165.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.364",
@@ -4616,7 +6196,12 @@
               "priceRetail": 50531.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.388",
@@ -4630,7 +6215,12 @@
               "priceRetail": 63860.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "253.389",
@@ -4644,7 +6234,12 @@
               "priceRetail": 70810.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/glc-coupe-c253.png",
@@ -4665,7 +6260,12 @@
               "priceRetail": 47214.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.004",
@@ -4679,7 +6279,12 @@
               "priceRetail": 49540.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.024",
@@ -4693,7 +6298,12 @@
               "priceRetail": 53044.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.056",
@@ -4707,7 +6317,12 @@
               "priceRetail": 53195.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.073",
@@ -4721,7 +6336,12 @@
               "priceRetail": 66787.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.063",
@@ -4735,7 +6355,12 @@
               "priceRetail": 64167.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.064",
@@ -4749,7 +6374,12 @@
               "priceRetail": 60686.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.074",
@@ -4763,7 +6393,12 @@
               "priceRetail": 96392.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.075",
@@ -4777,7 +6412,12 @@
               "priceRetail": 104831.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/gle-w166.png",
@@ -4798,7 +6438,12 @@
               "priceRetail": 58035.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.356",
@@ -4812,7 +6457,12 @@
               "priceRetail": 58487.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.373",
@@ -4826,7 +6476,12 @@
               "priceRetail": 72500.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.364",
@@ -4840,7 +6495,12 @@
               "priceRetail": 65745.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.374",
@@ -4854,7 +6514,12 @@
               "priceRetail": 101627.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.375",
@@ -4868,7 +6533,12 @@
               "priceRetail": 110470.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.324",
@@ -4882,7 +6552,12 @@
               "priceRetail": 58035.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.356",
@@ -4896,7 +6571,12 @@
               "priceRetail": 58487.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.373",
@@ -4910,7 +6590,12 @@
               "priceRetail": 72500.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.364",
@@ -4924,7 +6609,12 @@
               "priceRetail": 65745.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.374",
@@ -4938,7 +6628,12 @@
               "priceRetail": 101627.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "292.375",
@@ -4952,7 +6647,12 @@
               "priceRetail": 110470.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/gle-coupe-c292.png",
@@ -4973,7 +6673,12 @@
               "priceRetail": 64868.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.856",
@@ -4987,7 +6692,12 @@
               "priceRetail": 66472.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.873",
@@ -5001,7 +6711,12 @@
               "priceRetail": 83965.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "166.875",
@@ -5015,7 +6730,12 @@
               "priceRetail": 116455.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/gls-x166.png",
@@ -5036,7 +6756,12 @@
               "priceRetail": 78085.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "463.234",
@@ -5050,7 +6775,12 @@
               "priceRetail": 91271.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "463.234",
@@ -5064,7 +6794,12 @@
               "priceRetail": 198511.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "463.272",
@@ -5078,7 +6813,12 @@
               "priceRetail": 124537.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "463.274",
@@ -5092,7 +6832,12 @@
               "priceRetail": 236213.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/g-class-w463.png",
@@ -5113,7 +6858,12 @@
               "priceRetail": 98933.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "190.378",
@@ -5127,7 +6877,12 @@
               "priceRetail": 114971.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "190.379",
@@ -5141,7 +6896,12 @@
               "priceRetail": 140500.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "190.380",
@@ -5155,7 +6915,12 @@
               "priceRetail": 126376.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "190.380",
@@ -5169,7 +6934,12 @@
               "priceRetail": 126376.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/amg-gt-coupe-c190.png",
@@ -5190,7 +6960,12 @@
               "priceRetail": 109783.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "190.480",
@@ -5204,7 +6979,12 @@
               "priceRetail": 136468.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/amg-gt-roadster-r190.png",
@@ -5225,7 +7005,12 @@
               "priceRetail": 23246.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.943",
@@ -5239,7 +7024,12 @@
               "priceRetail": 25470.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.947",
@@ -5253,7 +7043,12 @@
               "priceRetail": 29019.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.944",
@@ -5267,7 +7062,12 @@
               "priceRetail": 29179.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.946",
@@ -5281,7 +7081,12 @@
               "priceRetail": 32437.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.951",
@@ -5295,7 +7100,12 @@
               "priceRetail": 35282.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.952",
@@ -5309,7 +7119,12 @@
               "priceRetail": 44174.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.912",
@@ -5323,7 +7138,12 @@
               "priceRetail": 24893.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.908",
@@ -5337,7 +7157,12 @@
               "priceRetail": 26817.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.902",
@@ -5351,7 +7176,12 @@
               "priceRetail": 30164.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.903",
@@ -5365,7 +7195,12 @@
               "priceRetail": 30247.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "117.905",
@@ -5379,7 +7214,12 @@
               "priceRetail": 31993.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/cla-shooting-brake-x117.png",
@@ -5400,7 +7240,12 @@
               "priceRetail": 84522.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.035",
@@ -5414,7 +7259,12 @@
               "priceRetail": 89226.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.086",
@@ -5428,7 +7278,12 @@
               "priceRetail": 101415.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.020",
@@ -5442,7 +7297,12 @@
               "priceRetail": 81626.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.034",
@@ -5456,7 +7316,12 @@
               "priceRetail": 85848.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.058",
@@ -5470,7 +7335,12 @@
               "priceRetail": 85875.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.059",
@@ -5484,7 +7354,12 @@
               "priceRetail": 88636.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.060",
@@ -5498,7 +7373,12 @@
               "priceRetail": 99000.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.083",
@@ -5512,7 +7392,12 @@
               "priceRetail": 98786.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-w222.png",
@@ -5533,7 +7418,12 @@
               "priceRetail": 82939.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.135",
@@ -5547,7 +7437,12 @@
               "priceRetail": 87272.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.186",
@@ -5561,7 +7456,12 @@
               "priceRetail": 101391.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.188",
@@ -5575,7 +7475,12 @@
               "priceRetail": 144220.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.986",
@@ -5589,7 +7494,12 @@
               "priceRetail": 124404.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.120",
@@ -5603,7 +7513,12 @@
               "priceRetail": 79752.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.134",
@@ -5617,7 +7532,12 @@
               "priceRetail": 84072.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.158",
@@ -5631,7 +7551,12 @@
               "priceRetail": 85286.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.159",
@@ -5645,7 +7570,12 @@
               "priceRetail": 88431.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.160",
@@ -5659,7 +7589,12 @@
               "priceRetail": 98758.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.183",
@@ -5673,7 +7608,12 @@
               "priceRetail": 98256.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.176",
@@ -5687,7 +7627,12 @@
               "priceRetail": 146016.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.179",
@@ -5701,7 +7646,12 @@
               "priceRetail": 207250.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.983",
@@ -5715,7 +7665,12 @@
               "priceRetail": 120908.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "222.980",
@@ -5729,7 +7684,12 @@
               "priceRetail": 174806.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-long-v222.png",
@@ -5750,7 +7710,12 @@
               "priceRetail": 38715.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.348",
@@ -5764,7 +7729,12 @@
               "priceRetail": 46538.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.366",
@@ -5778,7 +7748,12 @@
               "priceRetail": 56196.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.314",
@@ -5792,7 +7767,12 @@
               "priceRetail": 41436.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.315",
@@ -5806,7 +7786,12 @@
               "priceRetail": 43525.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-coupe-c238.png",
@@ -5827,7 +7812,12 @@
               "priceRetail": 46133.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.448",
@@ -5841,7 +7831,12 @@
               "priceRetail": 52044.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.466",
@@ -5855,7 +7850,12 @@
               "priceRetail": 61416.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.414",
@@ -5869,7 +7869,12 @@
               "priceRetail": 47532.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.434",
@@ -5883,7 +7888,12 @@
               "priceRetail": 57572.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-cabrio-a238.png",
@@ -5904,7 +7914,12 @@
               "priceRetail": 36772.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.042",
@@ -5918,7 +7933,12 @@
               "priceRetail": 36269.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.043",
@@ -5932,7 +7952,12 @@
               "priceRetail": 39878.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.045",
@@ -5946,7 +7971,12 @@
               "priceRetail": 42067.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.048",
@@ -5960,7 +7990,12 @@
               "priceRetail": 45169.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.050",
@@ -5974,7 +8009,12 @@
               "priceRetail": 53021.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.071",
@@ -5988,7 +8028,12 @@
               "priceRetail": 55344.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.064",
@@ -6002,7 +8047,12 @@
               "priceRetail": 65462.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.088",
@@ -6016,7 +8066,12 @@
               "priceRetail": 103176.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.089",
@@ -6030,7 +8085,12 @@
               "priceRetail": 113540.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.013",
@@ -6044,7 +8104,12 @@
               "priceRetail": 37793.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.004",
@@ -6058,7 +8123,12 @@
               "priceRetail": 39940.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.005",
@@ -6072,7 +8142,12 @@
               "priceRetail": 42058.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.033",
@@ -6086,7 +8161,12 @@
               "priceRetail": 48224.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.034",
@@ -6100,7 +8180,12 @@
               "priceRetail": 50508.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-sedan-w213.png",
@@ -6121,7 +8206,12 @@
               "priceRetail": 42855.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.243",
@@ -6135,7 +8225,12 @@
               "priceRetail": 45105.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.245",
@@ -6149,7 +8244,12 @@
               "priceRetail": 46407.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.271",
@@ -6163,7 +8263,12 @@
               "priceRetail": 57324.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.264",
@@ -6177,7 +8282,12 @@
               "priceRetail": 67903.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.213",
@@ -6191,7 +8301,12 @@
               "priceRetail": 45614.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.204",
@@ -6205,7 +8320,12 @@
               "priceRetail": 47534.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.205",
@@ -6219,7 +8339,12 @@
               "priceRetail": 49951.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.217",
@@ -6233,7 +8358,12 @@
               "priceRetail": 52525.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.233",
@@ -6247,7 +8377,12 @@
               "priceRetail": 54639.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.234",
@@ -6261,7 +8396,12 @@
               "priceRetail": 57070.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "213.237",
@@ -6275,7 +8415,12 @@
               "priceRetail": 60256.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-estate-s213.png",
@@ -6296,7 +8441,12 @@
               "priceRetail": 41169.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.343",
@@ -6310,7 +8460,12 @@
               "priceRetail": 43279.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.348",
@@ -6324,7 +8479,12 @@
               "priceRetail": 47035.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.366",
@@ -6338,7 +8498,12 @@
               "priceRetail": 56715.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.314",
@@ -6352,7 +8517,12 @@
               "priceRetail": 41913.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.315",
@@ -6366,7 +8536,12 @@
               "priceRetail": 44002.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.334",
@@ -6380,7 +8555,12 @@
               "priceRetail": 53717.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-coupe-c238.png",
@@ -6401,7 +8581,12 @@
               "priceRetail": 46527.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.443",
@@ -6415,7 +8600,12 @@
               "priceRetail": 48663.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.448",
@@ -6429,7 +8619,12 @@
               "priceRetail": 52452.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.466",
@@ -6443,7 +8638,12 @@
               "priceRetail": 61836.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.414",
@@ -6457,7 +8657,12 @@
               "priceRetail": 47925.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.415",
@@ -6471,7 +8676,12 @@
               "priceRetail": 50524.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "238.434",
@@ -6485,7 +8695,12 @@
               "priceRetail": 57982.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/e-class-cabrio-a238.png",
@@ -6506,7 +8721,12 @@
               "priceRetail": 58830.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "257.321",
@@ -6520,7 +8740,12 @@
               "priceRetail": 57606.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "257.323",
@@ -6534,7 +8759,12 @@
               "priceRetail": 60396.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/cls-coupe-c257.png",
@@ -6555,7 +8785,12 @@
               "priceRetail": 91019.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.383",
@@ -6569,7 +8804,12 @@
               "priceRetail": 114023.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.386",
@@ -6583,7 +8823,12 @@
               "priceRetail": 117921.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.388",
@@ -6597,7 +8842,12 @@
               "priceRetail": 155097.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.379",
@@ -6611,7 +8861,12 @@
               "priceRetail": 215056.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe/Roadster",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-coupe-c217.png",
@@ -6632,7 +8887,12 @@
               "priceRetail": 128354.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.488",
@@ -6646,7 +8906,12 @@
               "priceRetail": 169262.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         },
         {
           "factoryCode": "217.479",
@@ -6660,7 +8925,12 @@
               "priceRetail": 222009.0
             }
           ],
-          "extras": []
+          "extras": [],
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Cabrio",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum (Reg. EC 715/2007 Art. 10(5))"
         }
       ],
       "image": "images/mercedes-benz/models/s-class-cabrio-a217.png",
