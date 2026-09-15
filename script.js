@@ -158,32 +158,64 @@ const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
  * και ενημέρωση του <img id="carImage">
  */
 async function updateCarImage() {
-  const brand  = document.getElementById("brandSelect").value;
-  const model  = document.getElementById("modelSelect").value;
-  const year   = document.getElementById("yearSelect").value;
+  const brand    = document.getElementById("brandSelect").value;
+  const model    = document.getElementById("modelSelect").value;
+  const year     = document.getElementById("yearSelect").value;
+  const verValue = document.getElementById("versionSelect").value;
+  const carImage = document.getElementById("carImage");
 
-  if (!brand || !model || !year) return;
-  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
-    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
+  if (!carImage) return;
+
+  const edIndex = parseInt(verValue, 10);
+  const modelObj = brand && model && currentDataset && currentDataset.models
+    ? currentDataset.models[model]
+    : null;
+  const edition = modelObj && Array.isArray(modelObj.editions) && !isNaN(edIndex)
+    ? modelObj.editions[edIndex]
+    : null;
+
+  // New format: image stored on the exact edition (used by Audi datasets).
+  if (edition && edition.image) {
+    const imageValue = String(edition.image).trim();
+    const isExplicitPath = /^(https?:)?\/\//i.test(imageValue) ||
+      imageValue.startsWith("/") || imageValue.startsWith("./") ||
+      imageValue.startsWith("../") || imageValue.includes("/");
+    carImage.src = isExplicitPath
+      ? imageValue
+      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+    carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
     return;
   }
 
-  const query = `${brand} ${model} ${year} PNG`;
+  // Legacy format: image stored at model level.
+  if (modelObj && modelObj.image) {
+    const imageValue = String(modelObj.image).trim();
+    const isExplicitPath = /^(https?:)?\/\//i.test(imageValue) ||
+      imageValue.startsWith("/") || imageValue.startsWith("./") ||
+      imageValue.startsWith("../") || imageValue.includes("/");
+    carImage.src = isExplicitPath
+      ? imageValue
+      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+    carImage.alt = `${brand} ${model}`;
+    return;
+  }
 
+  // Optional online fallback only when no local JSON image exists.
+  if (!brand || !model || !year) return;
+  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") return;
+
+  const query = `${brand} ${model} ${year} PNG`;
   try {
     const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
       headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
     });
-
     if (!res.ok) throw new Error("Image API error");
-
     const data = await res.json();
     const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
-
     if (imgUrl) {
-      document.getElementById("carImage").src = imgUrl;
+      carImage.src = imgUrl;
+      carImage.alt = `${brand} ${model}`;
     }
-
   } catch (err) {
     console.warn("Image search failed:", err);
   }
