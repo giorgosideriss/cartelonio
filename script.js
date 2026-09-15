@@ -901,6 +901,140 @@ function syncFirstRegistrationDate() {
   } else { hidden.value = ""; }
 }
 
+
+/* ========== ΤΥΧΑΙΑ ΕΠΙΛΟΓΗ ========== */
+// Μόνο datasets που υπάρχουν πραγματικά στο project. Έτσι το κουμπί δεν
+// προσπαθεί να φορτώσει κενά brand/year combinations από το γενικό DATA_SOURCES.
+const RANDOM_AVAILABLE_DATASETS = [
+  ["Abarth","2017"],["Abarth","2018"],["Abarth","2019"],["Abarth","2020"],["Abarth","2021"],["Abarth","2022"],
+  ["Alfa Romeo","2015"],["Alfa Romeo","2016"],["Alfa Romeo","2017"],["Alfa Romeo","2018"],["Alfa Romeo","2019"],["Alfa Romeo","2020"],["Alfa Romeo","2022"],
+  ["Aston Martin","2018"],
+  ["Audi","2015"],["Audi","2016"],["Audi","2017"],["Audi","2018"],["Audi","2019"],["Audi","2020"],["Audi","2021"],["Audi","2022"],
+  ["Ford","2016"],
+  ["Mazda","2021"],["Mazda","2022"],
+  ["Mercedes-Benz","2015"],["Mercedes-Benz","2016"],["Mercedes-Benz","2017"],["Mercedes-Benz","2018"],["Mercedes-Benz","2019"],["Mercedes-Benz","2020"],["Mercedes-Benz","2021"],["Mercedes-Benz","2022"],["Mercedes-Benz","2023"],["Mercedes-Benz","2024"],["Mercedes-Benz","2025"],
+  ["Toyota","2020"],["Toyota","2021"]
+];
+
+function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function localISODate(date=new Date()){
+  const y=date.getFullYear(), m=String(date.getMonth()+1).padStart(2,"0"), d=String(date.getDate()).padStart(2,"0");
+  return `${y}-${m}-${d}`;
+}
+function setBrandUI(brand){
+  const label=document.getElementById("brandButtonLabel");
+  const logo=document.getElementById("brandButtonLogo");
+  if(label) label.textContent=brand;
+  if(logo){
+    if(BRAND_LOGOS[brand]){ logo.style.backgroundImage=`url('${BRAND_LOGOS[brand]}')`; logo.classList.add("has-logo"); }
+    else { logo.style.backgroundImage="none"; logo.classList.remove("has-logo"); }
+  }
+}
+function randomValidDay(year,month){
+  const maxDay=new Date(Number(year),Number(month),0).getDate();
+  return 1+Math.floor(Math.random()*maxDay);
+}
+
+async function randomSelectAndCalculate(){
+  const btn=document.getElementById("randomSelectBtn");
+  if(btn){ btn.disabled=true; btn.textContent="Επιλογή…"; }
+  try{
+    // Δοκιμάζουμε διαθέσιμα datasets μέχρι να βρούμε ένα με πραγματικές εκδόσεις/τιμή.
+    const candidates=RANDOM_AVAILABLE_DATASETS.slice().sort(()=>Math.random()-.5);
+    let picked=null;
+    for(const [brand,year] of candidates){
+      const url=DATA_SOURCES[brand]?.[year];
+      if(!url) continue;
+      try{
+        const res=await fetch(url);
+        if(!res.ok) continue;
+        const data=await res.json();
+        const models=Object.entries(data?.models||{}).filter(([,obj])=>Array.isArray(obj?.editions) && obj.editions.some(ed=>Array.isArray(ed?.variants) && ed.variants.some(v=>Number(v?.priceNet)>0)));
+        if(models.length){ picked={brand,year,data,models}; break; }
+      }catch(_){ /* δοκίμασε άλλο dataset */ }
+    }
+    if(!picked) throw new Error("Δεν βρέθηκε διαθέσιμο dataset με τιμές.");
+
+    const brandEl=document.getElementById("brandSelect");
+    const yearEl=document.getElementById("yearSelect");
+    brandEl.value=picked.brand;
+    setBrandUI(picked.brand);
+    populateYearSelect();
+    yearEl.value=picked.year;
+    currentDataset=picked.data;
+    populateModels();
+
+    const eligibleModels=picked.models.map(([name,obj])=>({name,obj}));
+    const chosenModel=randomItem(eligibleModels);
+    document.getElementById("modelSelect").value=chosenModel.name;
+    populateVersions();
+
+    const eligibleEditions=chosenModel.obj.editions
+      .map((ed,index)=>({ed,index}))
+      .filter(x=>Array.isArray(x.ed?.variants) && x.ed.variants.some(v=>Number(v?.priceNet)>0));
+    const chosenEdition=randomItem(eligibleEditions);
+    document.getElementById("versionSelect").value=String(chosenEdition.index);
+    populateColors();
+
+    const validVariants=chosenEdition.ed.variants.map((v,index)=>({v,index})).filter(x=>Number(x.v?.priceNet)>0);
+    const chosenVariant=randomItem(validVariants);
+    document.getElementById("colorSelect").value=String(chosenVariant.index);
+    autoFillCarData();
+
+    // Πρώτη άδεια: ίδιο έτος με το dataset, τυχαίος έγκυρος μήνας/ημέρα.
+    const month=1+Math.floor(Math.random()*12);
+    const day=randomValidDay(picked.year,month);
+    document.getElementById("firstRegYear").value=picked.year;
+    document.getElementById("firstRegMonth").value=String(month);
+    document.getElementById("firstRegDay").value=String(day);
+    syncFirstRegistrationDate();
+
+    // Εισαγωγή: πάντα σήμερα.
+    const importEl=document.getElementById("importDate");
+    importEl.value=localISODate();
+
+    // Ρεαλιστικά τυχαία χιλιόμετρα με βάση την ηλικία (~8k–22k km/έτος).
+    const firstReg=parseDate(document.getElementById("firstReg").value);
+    const today=parseDate(importEl.value);
+    const months=Math.max(1,completedMonths(firstReg,today));
+    const annualKm=8000+Math.floor(Math.random()*14001);
+    const mileage=Math.max(500,Math.round((annualKm*months/12)/500)*500);
+    document.getElementById("mileage").value=String(mileage);
+
+    // Αν κάποιο παλιότερο JSON δεν έχει tax metadata, συμπλήρωσε έγκυρες
+    // τυχαίες τιμές ώστε η demo επιλογή να μπορεί πάντα να υπολογιστεί.
+    const categoryEl=document.getElementById("category");
+    if(!categoryEl.value || categories[categoryEl.value]==null){
+      categoryEl.value=randomItem(Object.keys(categories).filter(k=>categories[k]!=null));
+    }
+    const co2El=document.getElementById("co2");
+    if(co2El.value.trim()==="" || !Number.isFinite(Number(co2El.value))){
+      co2El.value=String(85+Math.floor(Math.random()*176));
+    }
+    const euroEl=document.getElementById("euroClass");
+    if(!euroEl.value || euroEl.value==="modern"){
+      const preferred=Number(picked.year)>=2016 ? "euro6" : randomItem(["euro5b","euro6"]);
+      if([...euroEl.options].some(o=>o.value===preferred)) euroEl.value=preferred;
+    }
+    const powerEl=document.getElementById("powertrain");
+    if(!powerEl.value && powerEl.options.length>0) powerEl.selectedIndex=0;
+
+    // Καμία τυχαία επιλογή extra: χρησιμοποιείται η βασική ΛΤΠΦ της έκδοσης.
+    selectedExtras.clear();
+    document.querySelectorAll('#extrasPanel input[type="checkbox"]').forEach(cb=>cb.checked=false);
+    recalcPriceWithExtras();
+    updateCarSummary();
+
+    // Αυτόματος υπολογισμός — δεν χρειάζεται πάτημα στο «Υπολόγισε».
+    calculate();
+  }catch(err){
+    console.error("Σφάλμα τυχαίας επιλογής:",err);
+    document.getElementById("results").innerHTML='<p><strong>Δεν ήταν δυνατή η τυχαία επιλογή.</strong> Δοκιμάστε ξανά.</p>';
+  }finally{
+    if(btn){ btn.disabled=false; btn.textContent="Τυχαία Επιλογή"; }
+  }
+}
+
 /* ========== ΑΡΧΙΚΟΠΟΙΗΣΗ ========== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -994,6 +1128,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("calcBtn").addEventListener("click", () => {
     calculate();
   });
+
+  const randomSelectBtn = document.getElementById("randomSelectBtn");
+  if (randomSelectBtn) randomSelectBtn.addEventListener("click", randomSelectAndCalculate);
 
   document.getElementById("resetBtn").addEventListener("click", () => {
     document.getElementById("calcForm").reset();

@@ -2654,3 +2654,37 @@ button.secondary{
   color:rgba(255,255,255,.46) !important;
 }
 
+
+
+/* === Random vehicle selection === */
+.vehicle-configurator-v2 .hero-card .random-select-btn{
+  position:absolute;
+  top:4px;
+  right:2px;
+  z-index:6;
+  appearance:none;
+  border:1px solid rgba(223,235,230,.28);
+  border-radius:999px;
+  padding:10px 15px;
+  background:rgba(17,23,19,.82);
+  color:#f3f7f5;
+  font:inherit;
+  font-size:12px;
+  font-weight:750;
+  letter-spacing:.01em;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  box-shadow:0 8px 24px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.06);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,opacity .18s ease;
+}
+.vehicle-configurator-v2 .hero-card .random-select-btn:hover{
+  transform:translateY(-1px);
+  border-color:rgba(223,235,230,.48);
+  background:rgba(28,38,32,.92);
+}
+.vehicle-configurator-v2 .hero-card .random-select-btn:active{transform:translateY(0)}
+.vehicle-configurator-v2 .hero-card .random-select-btn:disabled{opacity:.55;cursor:wait;transform:none}
+@media(max-width:720px){
+  .vehicle-configurator-v2 .hero-card .random-select-btn{top:0;right:0;padding:9px 12px;font-size:11px}
+}
