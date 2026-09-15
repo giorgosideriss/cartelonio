@@ -158,106 +158,32 @@ const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
  * και ενημέρωση του <img id="carImage">
  */
 async function updateCarImage() {
-  const brand    = document.getElementById("brandSelect").value;
-  const model    = document.getElementById("modelSelect").value;
-  const year     = document.getElementById("yearSelect").value;
-  const verValue = document.getElementById("versionSelect").value;
-  const carImage = document.getElementById("carImage");
+  const brand  = document.getElementById("brandSelect").value;
+  const model  = document.getElementById("modelSelect").value;
+  const year   = document.getElementById("yearSelect").value;
 
-  if (!carImage) return;
-
-  const edIndex = parseInt(verValue, 10);
-  const modelObj =
-    brand &&
-    model &&
-    currentDataset &&
-    currentDataset.models
-      ? currentDataset.models[model]
-      : null;
-
-  const edition =
-    modelObj &&
-    Array.isArray(modelObj.editions) &&
-    !isNaN(edIndex)
-      ? modelObj.editions[edIndex]
-      : null;
-
-  /*
-   * 1) NEW FORMAT — edition-level image
-   * Used by Audi JSON files:
-   * "image": "audi-a3-8v-sportback.png"
-   */
-  if (edition && edition.image) {
-    const imageValue = String(edition.image).trim();
-
-    const isExplicitPath =
-      /^(https?:)?\/\//i.test(imageValue) ||
-      imageValue.startsWith("/") ||
-      imageValue.startsWith("./") ||
-      imageValue.startsWith("../") ||
-      imageValue.includes("/");
-
-    carImage.src = isExplicitPath
-      ? imageValue
-      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
-
-    carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
-    return;
-  }
-
-  /*
-   * 2) LEGACY FORMAT — model-level image
-   * Keeps all existing brands working, e.g.:
-   * "image": "images/aston-martin/models/db11-v12-coupe-2018.png"
-   */
-  if (modelObj && modelObj.image) {
-    const imageValue = String(modelObj.image).trim();
-
-    const isExplicitPath =
-      /^(https?:)?\/\//i.test(imageValue) ||
-      imageValue.startsWith("/") ||
-      imageValue.startsWith("./") ||
-      imageValue.startsWith("../") ||
-      imageValue.includes("/");
-
-    carImage.src = isExplicitPath
-      ? imageValue
-      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
-
-    carImage.alt = `${brand} ${model}`;
-    return;
-  }
-
-  /*
-   * 3) FALLBACK — existing Bing image search
-   * Used only when neither edition.image nor model.image exists.
-   */
   if (!brand || !model || !year) return;
-
   if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
+    // Αν δεν έχεις βάλει κλειδί, απλά μην κάνεις τίποτα
     return;
   }
 
   const query = `${brand} ${model} ${year} PNG`;
 
   try {
-    const res = await fetch(
-      `${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`,
-      {
-        headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
-      }
-    );
+    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
+      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
+    });
 
     if (!res.ok) throw new Error("Image API error");
 
     const data = await res.json();
-    const imgUrl =
-      data.value && data.value[0] ? data.value[0].contentUrl : null;
+    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
 
     if (imgUrl) {
-      carImage.src = imgUrl;
-      carImage.alt = `${brand} ${model}`;
+      document.getElementById("carImage").src = imgUrl;
     }
+
   } catch (err) {
     console.warn("Image search failed:", err);
   }
@@ -273,76 +199,139 @@ let selectedExtras   = new Set();// indexes επιλεγμένων extras
 
 /* === CATEGORY DEPRECIATION TABLES (από Excel) === */
 const categories = {
-  "Επιλέξτε Κατηγορία Αμαξώματος": [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],
-  
-  "SUV": [[0.5,0.11],[1,0.22],[1.5,0.25],[2,0.29],[2.5,0.35],[3,0.37],[3.5,0.44],[4,0.5],[4.5,0.56],[5,0.62],[5.5,0.66],[6,0.68],[6.5,0.71],[7,0.73],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
-
-  "Hatchback": [[0.5,0.09],[1,0.19],[1.5,0.24],[2,0.28],[2.5,0.32],[3,0.37],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.7],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.81],[10,0.83]],
-
-  "Sedan": [[0.5,0.15],[1,0.3],[1.5,0.33],[2,0.36],[2.5,0.4],[3,0.43],[3.5,0.5],[4,0.57],[4.5,0.64],[5,0.72],[5.5,0.74],[6,0.76],[6.5,0.78],[7,0.8],[7.5,0.81],[8,0.84],[8.5,0.85],[9,0.85],[9.5,0.86],[10,0.87]],
-
-  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.3],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.6],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7.5,0.73],[8,0.78],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82]],
-
-  "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47],[4.5,0.53],[5,0.59],[5.5,0.63],[6,0.66],[6.5,0.68],[7,0.71],[7.5,0.73],[8,0.76],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]],
-
-  "MPV": [[0.5,0.09],[1,0.19],[1.5,0.23],[2,0.27],[2.5,0.33],[3,0.36],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.7],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.8],[9.5,0.82],[10,0.83]]
+  "Επιλέξτε Κατηγορία Αμαξώματος": [],
+  "SUV": [[0.5,0.11],[1,0.22],[1.5,0.25],[2,0.29],[2.5,0.35],[3,0.37],[3.5,0.44],[4,0.50],[4.5,0.56],[5,0.62],[5.5,0.66],[6,0.68],[6.5,0.71],[7,0.73],[7.5,0.75],[8,0.77],[8.5,0.79],[9,0.80],[9.5,0.82],[10,0.83],[10.5,0.84],[11,0.85],[11.5,0.86],[12,0.87],[12.5,0.88],[13,0.88],[13.5,0.89],[14,0.90],[14.5,0.90],[15,0.90],[15.5,0.90],[16,0.95]],
+  "Hatchback": [[0.5,0.09],[1,0.19],[1.5,0.24],[2,0.28],[2.5,0.32],[3,0.37],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.70],[7,0.72],[7.5,0.74],[8,0.76],[8.5,0.78],[9,0.80],[9.5,0.81],[10,0.83],[10.5,0.83],[11,0.84],[11.5,0.85],[12,0.86],[12.5,0.87],[13,0.88],[13.5,0.89],[14,0.89],[14.5,0.90],[15,0.90],[15.5,0.90],[16,0.95]],
+  "Sedan": [[0.5,0.15],[1,0.30],[1.5,0.33],[2,0.36],[2.5,0.40],[3,0.43],[3.5,0.50],[4,0.57],[4.5,0.64],[5,0.72],[5.5,0.74],[6,0.76],[6.5,0.78],[7,0.80],[7.5,0.81],[8,0.83],[8.5,0.84],[9,0.85],[9.5,0.86],[10,0.87],[10.5,0.88],[11,0.89],[11.5,0.89],[12,0.90],[12.5,0.90],[13,0.90],[13.5,0.91],[14,0.91],[14.5,0.91],[15,0.91],[15.5,0.91],[16,0.95]],
+  "Cabrio": [[0.5,0.11],[1,0.22],[1.5,0.26],[2,0.30],[2.5,0.33],[3,0.36],[3.5,0.42],[4,0.48],[4.5,0.54],[5,0.60],[5.5,0.64],[6,0.67],[6.5,0.69],[7,0.72],[7.5,0.74],[8,0.76],[8.5,0.78],[9,0.79],[9.5,0.81],[10,0.82],[10.5,0.83],[11,0.84],[11.5,0.85],[12,0.86],[12.5,0.87],[13,0.88],[13.5,0.88],[14,0.89],[14.5,0.89],[15,0.90],[15.5,0.90],[16,0.95]],
+  "Coupe/Roadster": [[0.5,0.12],[1,0.25],[1.5,0.25],[2,0.29],[2.5,0.32],[3,0.36],[3.5,0.41],[4,0.47],[4.5,0.53],[5,0.59],[5.5,0.63],[6,0.66],[6.5,0.68],[7,0.71],[7.5,0.73],[8,0.75],[8.5,0.77],[9,0.79],[9.5,0.80],[10,0.82],[10.5,0.83],[11,0.84],[11.5,0.85],[12,0.86],[12.5,0.87],[13,0.87],[13.5,0.88],[14,0.89],[14.5,0.89],[15,0.89],[15.5,0.89],[16,0.95]],
+  "MPV": [[0.5,0.09],[1,0.19],[1.5,0.23],[2,0.27],[2.5,0.33],[3,0.36],[3.5,0.43],[4,0.49],[4.5,0.55],[5,0.61],[5.5,0.64],[6,0.67],[6.5,0.70],[7,0.72],[7.5,0.75],[8,0.77],[8.5,0.78],[9,0.80],[9.5,0.82],[10,0.83],[10.5,0.84],[11,0.85],[11.5,0.86],[12,0.87],[12.5,0.88],[13,0.89],[13.5,0.89],[14,0.90],[14.5,0.91],[15,0.91],[15.5,0.91],[16,0.95]]
 };
 
-/* === CO2 TABLE (από Excel) === */
-const coTable = {
-  "<14000": [0.038,0.04,0.044,0.048,0.052,0.056,0.064,0.08],
-  "14-17k": [0.076,0.08,0.088,0.096,0.104,0.112,0.128,0.16],
-  "17-20k": [0.152,0.16,0.176,0.192,0.208,0.224,0.256,0.32],
-  "20-25k": [0.228,0.24,0.264,0.288,0.312,0.336,0.384,0.48],
-  ">25k":   [0.304,0.32,0.352,0.384,0.416,0.448,0.512,0.64]
-};
+/* === ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ — ν. 5222/2025, άρθρα 136 & 142 === */
+const registrationTaxBrackets = [
+  [0,     14000, 0.04],
+  [14000, 17000, 0.26],
+  [17000, 20000, 0.53],
+  [20000, 25000, 0.62],
+  [25000, 30000, 0.71],
+  [30000, Infinity, 0.30]
+];
 
 /* ========== ΒΟΗΘΗΤΙΚΕΣ ΣΥΝΑΡΤΗΣΕΙΣ ========== */
+function parseDate(v){ return v ? new Date(v + (v.length === 10 ? "T12:00:00" : "")) : null; }
 
-function parseDate(v){ return v ? new Date(v) : null; }
-
-function yearsBetween(d1, d2){
-  if (!d1 || !d2) return 0;
-  return Math.floor((d2 - d1) / (1000*60*60*24*365));
+function ageInYears(d1, d2){
+  if (!d1 || !d2 || d2 < d1) return 0;
+  return (d2 - d1) / (1000*60*60*24*365.2425);
 }
 
-function autoAvgKm(years){
-  return years * 15000;
+function completedMonths(d1, d2){
+  if (!d1 || !d2 || d2 < d1) return 0;
+  let months = (d2.getFullYear()-d1.getFullYear())*12 + (d2.getMonth()-d1.getMonth());
+  if (d2.getDate() < d1.getDate()) months--;
+  return Math.max(0, months);
 }
 
-function lookupDepreciation(cat, years){
+function ageInHalfYears(d1, d2){
+  return Math.floor(completedMonths(d1,d2)/6)/2;
+}
+
+function autoAvgKmFromMonths(months){ return (months * 15000) / 12; }
+
+function lookupDepreciation(cat, ageStep){
   const table = categories[cat];
-  if (!table) return 0;
-  let result = table[0][1];
-  for(let i=0;i<table.length;i++){
-    if(years >= table[i][0]) result = table[i][1];
+  if (!table || ageStep < 0.5) return 0;
+  let result = 0;
+  for (const [age, dep] of table) {
+    if (ageStep >= age) result = dep;
+    else break;
   }
+  // Ο πίνακας φτάνει έως 10 έτη. Για μεγαλύτερη ηλικία κρατάμε το τελευταίο
+  // ποσοστό του επίσημου πίνακα και εφαρμόζουμε επιπλέον μόνο το νόμιμο mileage cap.
   return result;
 }
 
-function lookupCO2(price, co2){
-  let bracket = "<14000";
-  if(price >=14000 && price<17000) bracket = "14-17k";
-  else if(price>=17000 && price<20000) bracket="17-20k";
-  else if(price>=20000 && price<25000) bracket="20-25k";
-  else if(price>=25000) bracket=">25k";
-
-  let col = 0;
-  if(co2<=100) col=0;
-  else if(co2<=120) col=1;
-  else if(co2<=140) col=2;
-  else if(co2<=160) col=3;
-  else if(co2<=180) col=4;
-  else if(co2<=200) col=5;
-  else if(co2<=250) col=6;
-  else col=7;
-
-  return coTable[bracket][col];
+function mileageDepRate(avgKm, mileage){
+  if (!Number.isFinite(mileage) || mileage <= avgKm) return 0;
+  const extraKm = mileage - avgKm;
+  // 0,10% για κάθε πλήρη 500 επιπλέον km, με ανώτατο 10%.
+  return Math.min(0.10, Math.floor(extraKm / 500) * 0.001);
 }
 
-function mileageDep(avgKm, mileage){
-  if(mileage <= avgKm) return 0;
-  return ((mileage - avgKm)/500) * 0.001;
+function co2Adjustment(firstReg, co2){
+  if (!Number.isFinite(co2)) return { adjustment: 0, cycle: "—", band: "—" };
+  const wltp = firstReg >= new Date("2021-01-01T00:00:00");
+  if (wltp) {
+    if (co2 <= 130) return {adjustment:-0.05, cycle:"WLTP", band:"≤130 g/km"};
+    if (co2 <= 156) return {adjustment:0, cycle:"WLTP", band:"131–156 g/km"};
+    if (co2 <= 182) return {adjustment:0.10, cycle:"WLTP", band:"157–182 g/km"};
+    if (co2 <= 208) return {adjustment:0.20, cycle:"WLTP", band:"183–208 g/km"};
+    if (co2 <= 234) return {adjustment:0.30, cycle:"WLTP", band:"209–234 g/km"};
+    if (co2 <= 260) return {adjustment:0.40, cycle:"WLTP", band:"235–260 g/km"};
+    if (co2 <= 325) return {adjustment:0.60, cycle:"WLTP", band:"261–325 g/km"};
+    return {adjustment:1.00, cycle:"WLTP", band:">325 g/km"};
+  }
+  if (co2 <= 100) return {adjustment:-0.05, cycle:"NEDC", band:"≤100 g/km"};
+  if (co2 <= 120) return {adjustment:0, cycle:"NEDC", band:"101–120 g/km"};
+  if (co2 <= 140) return {adjustment:0.10, cycle:"NEDC", band:"121–140 g/km"};
+  if (co2 <= 160) return {adjustment:0.20, cycle:"NEDC", band:"141–160 g/km"};
+  if (co2 <= 180) return {adjustment:0.30, cycle:"NEDC", band:"161–180 g/km"};
+  if (co2 <= 200) return {adjustment:0.40, cycle:"NEDC", band:"181–200 g/km"};
+  if (co2 <= 250) return {adjustment:0.60, cycle:"NEDC", band:"201–250 g/km"};
+  return {adjustment:1.00, cycle:"NEDC", band:">250 g/km"};
+}
+
+function euroAdjustment(code, firstReg){
+  const d2012 = new Date("2012-12-31T23:59:59");
+  const d2015 = new Date("2015-08-31T23:59:59");
+  const d2018 = new Date("2018-08-31T23:59:59");
+  if (code === "euro6") {
+    if (firstReg <= d2015) return 1.00;
+    if (firstReg <= d2018) return 0.50;
+    return 0;
+  }
+  if (code === "euro5b") return firstReg <= d2015 ? 1.00 : 0;
+  if (code === "euro6a" || code === "euro5a" || code === "euro4") return firstReg <= d2012 ? 2.00 : 0;
+  if (["euro3","euro2","euro1"].includes(code)) return 2.00;
+  if (code === "no_euro_no_co2") return 3.00; // +200% Euro και επιπλέον +100% λόγω μη αποδεδειγμένου CO2
+  return 0;
+}
+
+function environmentalFee(code){
+  if (code === "euro4") return 3000;
+  if (code === "euro5a" || code === "euro5b") return 1000;
+  return 0;
+}
+
+function progressiveTaxBeforeDepreciation(originalPrice, rateMultiplier){
+  let tax = 0;
+  const parts = [];
+  for (const [low, high, baseRate] of registrationTaxBrackets) {
+    if (originalPrice <= low) break;
+    const amount = Math.min(originalPrice, high) - low;
+    if (amount <= 0) continue;
+    const adjustedRate = Math.max(0, baseRate * rateMultiplier);
+    const partTax = amount * adjustedRate;
+    tax += partTax;
+    parts.push({low, high, amount, baseRate, adjustedRate, partTax});
+  }
+  return {tax, parts};
+}
+
+function hybridExemption(powertrain, co2, importDate){
+  if (powertrain === "electric" || powertrain === "hydrogen") return 1;
+  if (powertrain !== "hybrid") return 0;
+
+  // Έως 31/12/2026: 75% έως 50 g/km, 50% από 51 g/km.
+  // Ειδική μεταβατική ρύθμιση: εισαγωγή 1/11/2025–31/5/2026 και CO2 έως 75 => 75%.
+  // Από 1/1/2027: 50% για όλα τα υβριδικά, ανεξαρτήτως CO2.
+  const changeDate = new Date("2027-01-01T00:00:00");
+  if (importDate >= changeDate) return 0.50;
+  const specialStart = new Date("2025-11-01T00:00:00");
+  const specialEnd   = new Date("2026-05-31T23:59:59");
+  if (importDate >= specialStart && importDate <= specialEnd && co2 <= 75) return 0.75;
+  return co2 <= 50 ? 0.75 : 0.50;
 }
 
 /* ========== EXTRAS HELPERS ========== */
@@ -444,108 +433,6 @@ function loadExtras(extrasList) {
 
   recalcPriceWithExtras();
 }
-
-
-/* ========== ΕΛΕΓΧΟΣ / ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΚΑΤΗΓΟΡΙΑΣ ΑΜΑΞΩΜΑΤΟΣ ========== */
-
-const CATEGORY_PLACEHOLDER = "Επιλέξτε Κατηγορία Αμαξώματος";
-
-function isValidVehicleCategory(value) {
-  return Boolean(value && value !== CATEGORY_PLACEHOLDER && categories[value]);
-}
-
-function setCategoryWarning(show) {
-  const wrap = document.querySelector(".category-field-wrap");
-  const warning = document.getElementById("categoryWarning");
-
-  if (wrap) wrap.classList.toggle("has-warning", Boolean(show));
-
-  if (warning) {
-    warning.setAttribute("aria-hidden", show ? "false" : "true");
-  }
-}
-
-function syncCategoryFromSelectedModel() {
-  const modelEl = document.getElementById("modelSelect");
-  const categoryEl = document.getElementById("category");
-  if (!modelEl || !categoryEl) return;
-
-  const model = modelEl.value;
-
-  // Δεν εμφανίζουμε error πριν επιλεγεί μοντέλο.
-  if (!model || !currentDataset || !currentDataset.models) {
-    categoryEl.value = CATEGORY_PLACEHOLDER;
-    setCategoryWarning(false);
-    return;
-  }
-
-  const modelObj = currentDataset.models[model];
-  const autoCategory = modelObj && modelObj.category;
-
-  if (isValidVehicleCategory(autoCategory)) {
-    categoryEl.value = autoCategory;
-    setCategoryWarning(false);
-  } else {
-    categoryEl.value = CATEGORY_PLACEHOLDER;
-    setCategoryWarning(true);
-  }
-}
-
-
-
-/* ========== ΠΡΟΕΙΔΟΠΟΙΗΣΕΙΣ ΚΕΝΩΝ ΥΠΟΧΡΕΩΤΙΚΩΝ ΠΕΔΙΩΝ ========== */
-
-const REQUIRED_CALC_FIELDS = ["price", "firstReg", "importDate", "mileage", "co2"];
-
-function setFieldWarning(fieldId, show) {
-  const wrap = document.querySelector(`.required-field-wrap[data-field="${fieldId}"]`);
-  if (!wrap) return;
-
-  wrap.classList.toggle("has-warning", Boolean(show));
-
-  const warning = wrap.querySelector(".field-warning");
-  if (warning) {
-    warning.setAttribute("aria-hidden", show ? "false" : "true");
-  }
-}
-
-function isFieldEmpty(fieldId) {
-  const el = document.getElementById(fieldId);
-  return !el || String(el.value).trim() === "";
-}
-
-function validateRequiredCalculationFields() {
-  let firstInvalid = null;
-  let hasError = false;
-
-  REQUIRED_CALC_FIELDS.forEach(fieldId => {
-    const empty = isFieldEmpty(fieldId);
-    setFieldWarning(fieldId, empty);
-
-    if (empty && !firstInvalid) {
-      firstInvalid = document.getElementById(fieldId);
-    }
-    if (empty) hasError = true;
-  });
-
-  const categoryEl = document.getElementById("category");
-  const categoryInvalid = !categoryEl || !isValidVehicleCategory(categoryEl.value);
-
-  if (categoryInvalid) {
-    setCategoryWarning(true);
-    if (!firstInvalid && categoryEl) firstInvalid = categoryEl;
-    hasError = true;
-  }
-
-  if (firstInvalid) firstInvalid.focus();
-
-  return !hasError;
-}
-
-function clearAllRequiredFieldWarnings() {
-  REQUIRED_CALC_FIELDS.forEach(fieldId => setFieldWarning(fieldId, false));
-}
-
 
 /* ========== DROPDOWNS ΜΑΡΚΑ / ΕΤΟΣ / ΜΟΝΤΕΛΟ / ΕΚΔΟΣΗ / ΛΤΠΦ ========== */
 
@@ -720,11 +607,6 @@ function populateVersions() {
   if (!currentDataset || !currentDataset.models || !model) return;
 
   const modelObj = currentDataset.models[model];
-
-  // Η κατηγορία είναι ιδιότητα του μοντέλου, οπότε ελέγχεται αμέσως
-  // μόλις ο χρήστης επιλέξει μοντέλο (δεν χρειάζεται να περιμένει την έκδοση).
-  syncCategoryFromSelectedModel();
-
   if (!modelObj || !Array.isArray(modelObj.editions)) return;
 
   modelObj.editions.forEach((ed, index) => {
@@ -806,8 +688,10 @@ function autoFillCarData() {
     document.getElementById("co2").value = edition.co2;
   }
 
-  // Η κατηγορία ελέγχεται μόνο όταν αλλάζει το μοντέλο.
-  // Αν ο χρήστης την έχει επιλέξει χειροκίνητα, δεν την πειράζουμε εδώ.
+  if (modelObj.category && categories[modelObj.category]) {
+    document.getElementById("category").value = modelObj.category;
+  }
+
   updateCarSummary();
 }
 
@@ -863,36 +747,69 @@ function calculate(){
   const importDate = parseDate(document.getElementById("importDate").value);
   const mileage    = Number(document.getElementById("mileage").value);
   const co2        = Number(document.getElementById("co2").value);
+  const euroClass  = document.getElementById("euroClass")?.value || "modern";
+  const powertrain = document.getElementById("powertrain")?.value || "ice";
 
-  // Έλεγχος όλων των απαραίτητων πεδίων μόνο όταν πατηθεί "Υπολόγισε".
-  if (!validateRequiredCalculationFields()) {
-    document.getElementById("results").innerHTML = `
-      <p class="category-error-message">
-        <strong>Συμπληρώστε τα πεδία που επισημαίνονται με κόκκινο.</strong>
-      </p>
-    `;
+  if (!(price > 0) || !firstReg || !importDate || importDate < firstReg || mileage < 0 || !Number.isFinite(co2)) {
+    document.getElementById("results").innerHTML = `<p><strong>Έλεγχος στοιχείων:</strong> Συμπλήρωσε έγκυρη ΛΤΠΦ, ημερομηνίες, χιλιόμετρα και CO₂.</p>`;
     return;
   }
 
-  const years   = yearsBetween(firstReg, importDate);
-  const yearDep = lookupDepreciation(cat, years);
-  const avgKm   = autoAvgKm(years);  
-  const kmDep   = mileageDep(avgKm, mileage);
-  const totalDep = yearDep + kmDep;
-  const finalPrice = price * (1 - totalDep);
+  const exactMonths = completedMonths(firstReg, importDate);
+  const exactYears = exactMonths / 12;
+  const ageStep = ageInHalfYears(firstReg, importDate);
+  const yearDep = lookupDepreciation(cat, ageStep);
+  const afterAgeValue = price * (1 - yearDep);
 
-  const co2coef = lookupCO2(price, co2);
-  const tax     = finalPrice * co2coef;
-  
+  const avgKm = autoAvgKmFromMonths(exactMonths);
+  let kmDepRate = mileageDepRate(avgKm, mileage);
+  let afterKmValue = afterAgeValue * (1 - kmDepRate);
+
+  // Συνολική απομείωση έως 95% της αρχικής ΛΤΠΦ.
+  const minimumTaxableValue = price * 0.05;
+  if (afterKmValue < minimumTaxableValue) {
+    afterKmValue = minimumTaxableValue;
+    kmDepRate = afterAgeValue > 0 ? 1 - (afterKmValue / afterAgeValue) : 0;
+  }
+  const finalPrice = afterKmValue;
+  const totalDep = 1 - finalPrice / price;
+  const residualFactor = finalPrice / price;
+
+  const coInfo = co2Adjustment(firstReg, co2);
+  const euroAdj = euroAdjustment(euroClass, firstReg);
+  // Οι προσαυξήσεις CO2 και Euro εφαρμόζονται στους βασικούς συντελεστές.
+  const rateMultiplier = Math.max(0, 1 + coInfo.adjustment + euroAdj);
+
+  // Για μεταχειρισμένο, η επιλογή των κλιμακίων γίνεται με την προ απομείωσης ΛΤΠΦ.
+  // Το ποσό που αναλογεί στα επιλεγμένα κλιμάκια απομειώνεται με τον ίδιο residual factor.
+  const progressive = progressiveTaxBeforeDepreciation(price, rateMultiplier);
+  const taxAfterDepreciation = progressive.tax * residualFactor;
+
+  const exemption = hybridExemption(powertrain, co2, importDate);
+  const registrationTax = taxAfterDepreciation * (1 - exemption);
+  const envFee = environmentalFee(euroClass);
+  const tax = registrationTax + envFee;
+
+  const fmtPct = x => `${(x*100).toFixed(1).replace(".0","")}%`;
+  const fmtEur = x => x.toLocaleString("el-GR", {minimumFractionDigits:2, maximumFractionDigits:2});
+  const powerLabel = ({ice:"Συμβατικό / μη υβριδικό", hybrid:"Υβριδικό", electric:"Αμιγώς ηλεκτρικό", hydrogen:"Κυψέλες υδρογόνου"})[powertrain] || powertrain;
+
   document.getElementById("results").innerHTML = `
-    <p><strong>Ηλικία:</strong> ${years} έτη</p>
-    <p><strong>Μέσος όρος χιλιομέτρων για ηλικία:</strong> ${avgKm.toLocaleString("el-GR")} km</p>
-    <p><strong>Απομείωση λόγω ηλικίας & κατηγορίας αμαξώματος:</strong> ${(yearDep*100).toFixed(0)}%</p>
-    <p><strong>Απομείωση λόγω διανυθέντων χιλιομέτρων πλέον του μέσου όρου:</strong> ${(kmDep*100).toFixed(0)}%</p>
-    <p><strong>Συνολική απομείωση:</strong> ${(totalDep*100).toFixed(0)}%</p>
-    <p><strong>Φορολογητέα αξία (μετά την απομείωση):</strong> €${finalPrice.toFixed(0)}</p>
-    <p><strong>Συντελεστής τέλους ταξινόμησης (CO₂):</strong> ${co2coef}</p>
-    <h3>ΤΕΛΟΣ ΤΑΞΙΝΟΜΗΣΗΣ: €${tax.toFixed(2)}</h3>
+    <p><strong>Ηλικία κατά την εισαγωγή:</strong> ${exactMonths} πλήρεις μήνες (${exactYears.toFixed(2)} έτη, κλιμάκιο ${ageStep.toFixed(1)} έτη)</p>
+    <p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${fmtPct(yearDep)}</p>
+    <p><strong>Αξία μετά την απομείωση ηλικίας:</strong> €${fmtEur(afterAgeValue)}</p>
+    <p><strong>Μέσος όρος χιλιομέτρων:</strong> ${Math.round(avgKm).toLocaleString("el-GR")} km</p>
+    <p><strong>Πρόσθετη απομείωση χιλιομέτρων:</strong> ${fmtPct(kmDepRate)}</p>
+    <p><strong>Συνολική απομείωση:</strong> ${fmtPct(totalDep)}</p>
+    <p><strong>Φορολογητέα αξία μετά τις απομειώσεις:</strong> €${fmtEur(finalPrice)}</p>
+    <p><strong>CO₂:</strong> ${co2} g/km — ${coInfo.cycle}, ${coInfo.band} (${coInfo.adjustment >= 0 ? "+" : ""}${fmtPct(coInfo.adjustment)})</p>
+    <p><strong>Προσαύξηση Euro:</strong> ${euroAdj ? "+"+fmtPct(euroAdj) : "0%"}</p>
+    <p><strong>Τύπος κίνησης:</strong> ${powerLabel}${exemption ? ` — απαλλαγή ${fmtPct(exemption)}` : ""}</p>
+    <p><strong>Τέλος πριν από τυχόν απαλλαγή υβριδικού:</strong> €${fmtEur(taxAfterDepreciation)}</p>
+    <p><strong>Τέλος ταξινόμησης μετά την απαλλαγή:</strong> €${fmtEur(registrationTax)}</p>
+    ${envFee ? `<p><strong>Περιβαλλοντικό τέλος:</strong> €${fmtEur(envFee)}</p>` : ""}
+    <h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${fmtEur(tax)}</h3>
+    <p class="calculation-note"><small>Εκτίμηση βάσει ν. 5222/2025 (άρθρα 136, 142) και των μεταβολών του ν. 5313/2026. Η τελική βεβαίωση γίνεται από την αρμόδια Τελωνειακή Αρχή.</small></p>
   `;
 }
 
@@ -908,8 +825,6 @@ document.addEventListener("DOMContentLoaded", () => {
     option.textContent = cat;
     categorySelect.appendChild(option);
   });
-  categorySelect.value = CATEGORY_PLACEHOLDER;
-  setCategoryWarning(false);
 
   // Μάρκα / Έτος
   populateBrandSelect();
@@ -924,8 +839,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
     document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
-    categorySelect.value = CATEGORY_PLACEHOLDER;
-    setCategoryWarning(false);
     loadExtras([]);
     updateCarSummary();
   });
@@ -945,36 +858,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("colorSelect").addEventListener("change", () => {
     autoFillCarData();
-  });
-
-  // Αν ο χρήστης επιλέξει χειροκίνητα σωστή κατηγορία,
-  // η κόκκινη προειδοποίηση εξαφανίζεται αμέσως.
-  categorySelect.addEventListener("change", () => {
-    const modelSelected = Boolean(document.getElementById("modelSelect").value);
-
-    if (isValidVehicleCategory(categorySelect.value)) {
-      setCategoryWarning(false);
-    } else {
-      // Προειδοποίηση μόνο εφόσον έχει ήδη επιλεγεί μοντέλο.
-      setCategoryWarning(modelSelected);
-    }
-  });
-
-
-  // Οι προειδοποιήσεις των υποχρεωτικών πεδίων εμφανίζονται μόνο μετά
-  // από προσπάθεια υπολογισμού και εξαφανίζονται μόλις συμπληρωθεί το πεδίο.
-  REQUIRED_CALC_FIELDS.forEach(fieldId => {
-    const el = document.getElementById(fieldId);
-    if (!el) return;
-
-    const clearIfFilled = () => {
-      if (!isFieldEmpty(fieldId)) {
-        setFieldWarning(fieldId, false);
-      }
-    };
-
-    el.addEventListener("input", clearIfFilled);
-    el.addEventListener("change", clearIfFilled);
   });
 
   // Extras dropdown toggle
@@ -1021,9 +904,6 @@ document.addEventListener("DOMContentLoaded", () => {
     currentExtras = [];
     selectedExtras.clear();
     loadExtras([]);
-    categorySelect.value = CATEGORY_PLACEHOLDER;
-    setCategoryWarning(false);
-    clearAllRequiredFieldWarnings();
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
     updateCarSummary();

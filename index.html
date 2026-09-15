@@ -242,6 +242,30 @@
 </div>
 </div>
 </div>
+<div class="field-block">
+<label for="powertrain">Τύπος Κίνησης</label>
+<select id="powertrain">
+<option value="ice">Συμβατικό / μη υβριδικό</option>
+<option value="hybrid">Υβριδικό ηλεκτρικό</option>
+<option value="electric">Αμιγώς ηλεκτρικό (BEV)</option>
+<option value="hydrogen">Κυψέλες υδρογόνου (0 CO₂)</option>
+</select>
+</div>
+<div class="field-block">
+<label for="euroClass">Κατηγορία προσαύξησης Euro</label>
+<select id="euroClass">
+<option value="euro6">Euro 6 (η προσαύξηση υπολογίζεται από την ημερομηνία 1ης ταξινόμησης)</option>
+<option value="euro5b">Euro 5b</option>
+<option value="euro6a">Euro 6a</option>
+<option value="euro5a">Euro 5a</option>
+<option value="euro4">Euro 4</option>
+<option value="euro3">Euro 3</option>
+<option value="euro2">Euro 2</option>
+<option value="euro1">Euro 1</option>
+<option value="no_euro_no_co2">Χωρίς Euro / χωρίς αποδεδειγμένο CO₂</option>
+</select>
+<small>Η ακριβής προδιαγραφή Euro πρέπει να λαμβάνεται από CoC/έγκριση τύπου. Οι χρονικές προσαυξήσεις εφαρμόζονται αυτόματα.</small>
+</div>
 <div class="actions">
 <button class="primary-action" id="calcBtn" type="button">
 <span class="calc-button-label">
