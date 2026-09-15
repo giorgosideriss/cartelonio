@@ -3093,3 +3093,49 @@ body.how-to-modal-open{overflow:hidden}
   .how-to-use-btn{padding:0 9px;font-size:10px}
   .how-to-use-icon{display:none}
 }
+
+
+/* =========================================================
+   CARTELONIO — Mobile header / welcome logo correction
+   ========================================================= */
+
+/* An older mobile rule hides .header-copy. Force the new How to use
+   control back into the header on phones. */
+@media (max-width:768px){
+  .site-header .header-inner .header-copy{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-end !important;
+    margin-left:auto !important;
+    gap:0 !important;
+  }
+  .site-header .header-inner{
+    justify-content:space-between !important;
+  }
+}
+
+/* Welcome line: text + the same Cartelonio logo, inline. */
+.cartelonio-welcome-kicker-with-logo{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.cartelonio-welcome-logo{
+  display:inline-block !important;
+  width:auto !important;
+  height:28px !important;
+  max-width:150px !important;
+  object-fit:contain !important;
+  vertical-align:middle;
+}
+@media (max-width:560px){
+  .cartelonio-welcome-kicker-with-logo{
+    gap:6px;
+  }
+  .cartelonio-welcome-logo{
+    height:24px !important;
+    max-width:128px !important;
+  }
+}
