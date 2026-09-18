@@ -198,7 +198,7 @@
           "factoryCode": "11GC",
           "code": "11GC",
           "name": "E",
-          "image": "images/mini/models/mini-j01-sedan.png",
+          "image": "images/mini/models/mini-j01-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -219,7 +219,7 @@
           "factoryCode": "21GC",
           "code": "21GC",
           "name": "SE",
-          "image": "images/mini/models/mini-j01-sedan.png",
+          "image": "images/mini/models/mini-j01-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -240,7 +240,7 @@
           "factoryCode": "11HF",
           "code": "11HF",
           "name": "JCW E",
-          "image": "images/mini/models/mini-j01-sedan.png",
+          "image": "images/mini/models/mini-j01-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -258,7 +258,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/mini/models/mini-j01-sedan.png",
+      "image": "images/mini/models/mini-j01-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "Aceman All-Electric": {
@@ -268,7 +268,7 @@
           "factoryCode": "31GC",
           "code": "31GC",
           "name": "E",
-          "image": "images/mini/models/mini-j05-sedan.png",
+          "image": "images/mini/models/mini-j05-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -289,7 +289,7 @@
           "factoryCode": "81GC",
           "code": "81GC",
           "name": "SE",
-          "image": "images/mini/models/mini-j05-sedan.png",
+          "image": "images/mini/models/mini-j05-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -310,7 +310,7 @@
           "factoryCode": "21HF",
           "code": "21HF",
           "name": "JCW E",
-          "image": "images/mini/models/mini-j05-sedan.png",
+          "image": "images/mini/models/mini-j05-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -328,7 +328,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/mini/models/mini-j05-sedan.png",
+      "image": "images/mini/models/mini-j05-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "Countryman": {
