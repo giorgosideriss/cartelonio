@@ -9,7 +9,7 @@
           "factoryCode": "XP11",
           "code": "XP11",
           "name": "One 75PS1",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 118,
           "variants": [
             {
@@ -30,7 +30,7 @@
           "factoryCode": "XN71",
           "code": "XN71",
           "name": "One 102PS",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 109,
           "variants": [
             {
@@ -51,7 +51,7 @@
           "factoryCode": "XM51",
           "code": "XM51",
           "name": "Cooper",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 105,
           "variants": [
             {
@@ -72,7 +72,7 @@
           "factoryCode": "XM71",
           "code": "XM71",
           "name": "Cooper S",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 133,
           "variants": [
             {
@@ -93,7 +93,7 @@
           "factoryCode": "XM91",
           "code": "XM91",
           "name": "Cooper S JCW",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 147,
           "variants": [
             {
@@ -114,7 +114,7 @@
           "factoryCode": "XN11",
           "code": "XN11",
           "name": "One D",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 89,
           "variants": [
             {
@@ -135,7 +135,7 @@
           "factoryCode": "XN31",
           "code": "XN31",
           "name": "Cooper D",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 92,
           "variants": [
             {
@@ -156,7 +156,7 @@
           "factoryCode": "XN91",
           "code": "XN91",
           "name": "Cooper SD",
-          "image": "images/mini/models/mini-f56-sedan.png",
+          "image": "images/mini/models/mini-f56-hatchback.png",
           "co2": 106,
           "variants": [
             {
@@ -174,7 +174,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/mini/models/mini-f56-sedan.png",
+      "image": "images/mini/models/mini-f56-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "5θυρο": {
