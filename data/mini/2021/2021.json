@@ -1,0 +1,776 @@
+{
+  "brand": "MINI",
+  "year": 2021,
+  "models": {
+    "3θυρο": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "21DH",
+          "code": "21DH",
+          "name": "One",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15249.5,
+              "priceRetail": 15249.5
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31DH",
+          "code": "31DH",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16439.82,
+              "priceRetail": 16439.82
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51DH",
+          "code": "51DH",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19338.99,
+              "priceRetail": 19338.99
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71DH",
+          "code": "71DH",
+          "name": "John Cooper Works",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22563.48,
+              "priceRetail": 22563.48
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11DJ",
+          "code": "11DJ",
+          "name": "Cooper SE",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27387.1,
+              "priceRetail": 27387.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11DJ",
+          "code": "11DJ",
+          "name": "Cooper SE Urban",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30933.33,
+              "priceRetail": 30933.33
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f56-lci-hatchback.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "5θυρο": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "21DK",
+          "code": "21DK",
+          "name": "One",
+          "image": "images/mini/models/mini-f55-lci-hatchback.png",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15747.14,
+              "priceRetail": 15747.14
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31DK",
+          "code": "31DK",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f55-lci-hatchback.png",
+          "co2": 127,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16940.82,
+              "priceRetail": 16940.82
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51DK",
+          "code": "51DK",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f55-lci-hatchback.png",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19836.16,
+              "priceRetail": 19836.16
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f55-lci-hatchback.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Clubman": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "LV11",
+          "code": "LV11",
+          "name": "One",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18494.36,
+              "priceRetail": 18494.36
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "LV31",
+          "code": "LV31",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20034.96,
+              "priceRetail": 20034.96
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "LV71",
+          "code": "LV71",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22384.42,
+              "priceRetail": 22384.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "XJ11",
+          "code": "XJ11",
+          "name": "Cooper S ALL4",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 25712.83,
+              "priceRetail": 25712.83
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "JZ91",
+          "code": "JZ91",
+          "name": "John Cooper Works ALL4",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 177,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 32154.16,
+              "priceRetail": 32154.16
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31BB",
+          "code": "31BB",
+          "name": "One D",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 122,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20544.84,
+              "priceRetail": 20544.84
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71BB",
+          "code": "71BB",
+          "name": "Cooper D",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22414.72,
+              "priceRetail": 22414.72
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31BC",
+          "code": "31BC",
+          "name": "Cooper SD",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27267.7,
+              "priceRetail": 27267.7
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51BC",
+          "code": "51BC",
+          "name": "Cooper SD ALL4",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28943.6,
+              "priceRetail": 28943.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f54-lci-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "11DL",
+          "code": "11DL",
+          "name": "One",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18949.16,
+              "priceRetail": 18949.16
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21DL",
+          "code": "21DL",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19802.27,
+              "priceRetail": 19802.27
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41DL",
+          "code": "41DL",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23005.39,
+              "priceRetail": 23005.39
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61DL",
+          "code": "61DL",
+          "name": "John Cooper Works",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26225.64,
+              "priceRetail": 26225.64
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f57-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Countryman": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "11BR",
+          "code": "11BR",
+          "name": "One",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16940.0,
+              "priceRetail": 16940.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BR",
+          "code": "21BR",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19737.29,
+              "priceRetail": 19737.29
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41BR",
+          "code": "41BR",
+          "name": "Cooper ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23104.59,
+              "priceRetail": 23104.59
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51BR",
+          "code": "51BR",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23233.88,
+              "priceRetail": 23233.88
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81BR",
+          "code": "81BR",
+          "name": "Cooper S ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26572.01,
+              "priceRetail": 26572.01
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31BS",
+          "code": "31BS",
+          "name": "John Cooper Works ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 174,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34211.48,
+              "priceRetail": 34211.48
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BS",
+          "code": "21BS",
+          "name": "Cooper SE ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 40,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30995.05,
+              "priceRetail": 30995.05
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BS",
+          "code": "21BS",
+          "name": "Cooper SE ALL4 Chili Plus",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 41,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35850.0,
+              "priceRetail": 35850.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BT",
+          "code": "21BT",
+          "name": "One D",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19963.58,
+              "priceRetail": 19963.58
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41BT",
+          "code": "41BT",
+          "name": "Cooper D",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 23595.69,
+              "priceRetail": 23595.69
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61BT",
+          "code": "61BT",
+          "name": "Cooper D ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26948.73,
+              "priceRetail": 26948.73
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81BT",
+          "code": "81BT",
+          "name": "Cooper SD",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27641.04,
+              "priceRetail": 27641.04
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BU",
+          "code": "21BU",
+          "name": "Cooper SD ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29323.09,
+              "priceRetail": 29323.09
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f60-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    }
+  }
+}
