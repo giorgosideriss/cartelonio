@@ -1,0 +1,4881 @@
+{
+  "brand": "MINI",
+  "year": 2022,
+  "models": {
+    "3θυρο": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "31DH",
+          "code": "31DH",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18684.55,
+              "priceRetail": 18684.55
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε",
+              "price": 126.05
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 588.24
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Resolute",
+              "price": 0.0
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Rebel Green",
+              "price": 756.31
+            },
+            {
+              "name": "Zesty Yellow",
+              "price": 504.2
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Enigmatic Black μεταλλικό",
+              "price": 756.31
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε κόκκινο",
+              "price": 588.24
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε λευκό",
+              "price": 588.24
+            },
+            {
+              "name": "MINI Driving Modes",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 1680.67
+            },
+            {
+              "name": "Έκδοση MINI Resolute",
+              "price": 4033.61
+            },
+            {
+              "name": "Έκδοση Camden",
+              "price": 100.0
+            },
+            {
+              "name": "Έκδοση Premium Comfort",
+              "price": 1701.73
+            },
+            {
+              "name": "Έκδοση Multitone",
+              "price": 4540.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" MINI Yours British",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Scissor Spoke, δίχρωμες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, μαύρες",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 798.32
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Circuit Spoke, δίχρωμες",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, δίχρωμες",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Roulette Spoke, δίχρωμες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Rail Spoke, δίχρωμες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Revolite Spoke, σκούρο",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Victory Spoke, μαύρες",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Track Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα Firework Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon",
+              "price": 1428.57
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Light Chequered",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Light Chequered (CB)",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1470.59
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1638.66
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black | Carbon",
+              "price": 1848.74
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια MINI Yours Aluminium",
+              "price": 252.1
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Silver Chequered",
+              "price": 252.1
+            },
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Resolute",
+              "price": 252.1
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 882.35
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης",
+              "price": 126.05
+            },
+            {
+              "name": "Ατμοσφαιρικός φωτισμός",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Αυτόματο κιβώτιο Steptronic με διπλό συμπλέκτη",
+              "price": 1512.61
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1092.44
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC) πίσω",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 672.27
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 252.1
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 126.05
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη φόρτιση",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για σύστημα πλοήγησης",
+              "price": 0.0
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Πληροφορίες κυκλοφορίας σε πραγματικό χρόνο",
+              "price": 126.05
+            },
+            {
+              "name": "MINI Connected XL",
+              "price": 0.0
+            },
+            {
+              "name": "Service Inclusive 5 έτη / 80.000 km",
+              "price": 920.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ρύθμιση πλάτους πλάτης καθίσματος",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Περιεχόμενο ACEA/CO2",
+              "price": 0.0
+            },
+            {
+              "name": "Ενεργή προστασία πεζών",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Γερμανικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ρουμάνικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων EU6 RDE II",
+              "price": 0.0
+            },
+            {
+              "name": "Πρόσθετο περιεχόμενο RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Active Guard",
+              "price": 0.0
+            },
+            {
+              "name": "Συνεισφορά CIC",
+              "price": 0.0
+            },
+            {
+              "name": "Γερμανική έκδοση",
+              "price": 0.0
+            },
+            {
+              "name": "Σχεδίαση κινητήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Ακουστική προειδοποίηση ζώνης ασφαλείας",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή λειτουργίας διασταύρωσης",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51DH",
+          "code": "51DH",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20139.79,
+              "priceRetail": 20139.79
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε",
+              "price": 126.05
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 588.24
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Resolute",
+              "price": 0.0
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Rebel Green",
+              "price": 756.31
+            },
+            {
+              "name": "Zesty Yellow",
+              "price": 504.2
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, μαύρες",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 798.32
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Circuit Spoke, δίχρωμες",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, δίχρωμες",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke, μαύρες",
+              "price": 840.34
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Resolute",
+              "price": 252.1
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 630.25
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης",
+              "price": 126.05
+            },
+            {
+              "name": "Ατμοσφαιρικός φωτισμός",
+              "price": 168.07
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71DH",
+          "code": "71DH",
+          "name": "John Cooper Works",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26738.47,
+              "priceRetail": 26738.47
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "John Coopper Works διακοσμητικές λωρίδες στο",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 588.24
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Rebel Green",
+              "price": 756.31
+            },
+            {
+              "name": "Zesty Yellow",
+              "price": 504.2
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Enigmatic Black μεταλλικό",
+              "price": 756.31
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε κόκκινο",
+              "price": 588.24
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε λευκό",
+              "price": 588.24
+            },
+            {
+              "name": "Classic Trim",
+              "price": 336.13
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 2016.81
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 2733.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" JCW Course Spoke,",
+              "price": 756.3
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon",
+              "price": 1176.47
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Light Chequered",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1218.49
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1386.55
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black | Carbon",
+              "price": 1596.64
+            },
+            {
+              "name": "Εσωτερική επιφάνεια MINI Yours Aluminium",
+              "price": 84.03
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Silver Chequered",
+              "price": 84.03
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης",
+              "price": 126.05
+            },
+            {
+              "name": "Ατμοσφαιρικός φωτισμός",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Σπορ αυτόματο κιβώτιο Steptronic",
+              "price": 1680.67
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 336.13
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 252.1
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 126.05
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη φόρτιση",
+              "price": 294.12
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Πληροφορίες κυκλοφορίας σε πραγματικό χρόνο",
+              "price": 126.05
+            },
+            {
+              "name": "MINI Connected XL",
+              "price": 0.0
+            },
+            {
+              "name": "Service Inclusive 5 έτη / 80.000 km",
+              "price": 980.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Περιεχόμενο ACEA/CO2",
+              "price": 0.0
+            },
+            {
+              "name": "Ενεργή προστασία πεζών",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Γερμανικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ρουμάνικα",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων EU6 RDE II",
+              "price": 0.0
+            },
+            {
+              "name": "Πρόσθετο περιεχόμενο RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Active Guard",
+              "price": 0.0
+            },
+            {
+              "name": "Συνεισφορά CIC",
+              "price": 0.0
+            },
+            {
+              "name": "Γερμανική έκδοση",
+              "price": 0.0
+            },
+            {
+              "name": "Σχεδίαση κινητήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Ακουστική προειδοποίηση ζώνης ασφαλείας",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή λειτουργίας διασταύρωσης",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11DJ",
+          "code": "11DJ",
+          "name": "Cooper SE",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30637.1,
+              "priceRetail": 30637.1
+            }
+          ],
+          "extras": [
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Resolute",
+              "price": 252.1
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 630.25
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης",
+              "price": 126.05
+            },
+            {
+              "name": "Ατμοσφαιρικός φωτισμός",
+              "price": 168.07
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f56-lci-hatchback.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "5θυρο": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "31DK",
+          "code": "31DK",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f55-lci-hatchback.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19086.04,
+              "priceRetail": 19086.04
+            }
+          ],
+          "extras": [
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" MINI Yours British Spoke,",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Scissor Spoke, δίχρωμες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, μαύρες",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 798.32
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Circuit Spoke, δίχρωμες",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, δίχρωμες",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, ασημί",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Roulette Spoke, δίχρωμες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Revolite Spoke, σκούρο",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Victory Spoke, μαύρες",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Track Spoke, μαύρες",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα Firework Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon Black",
+              "price": 1428.57
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Light Chequered",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Light Chequered (CB)",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1470.59
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1638.66
+            },
+            {
+              "name": "Δέρμα Chester Malt Brown | Black",
+              "price": 1638.66
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black | Carbon Black",
+              "price": 1848.74
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια MINI Yours Aluminium",
+              "price": 252.1
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Silver Chequered",
+              "price": 252.1
+            },
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Resolute",
+              "price": 252.1
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 882.35
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Πακέτο ορατότητας",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης σκίασης",
+              "price": 126.05
+            },
+            {
+              "name": "Ατμοσφαιρικός φωτισμός",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Αυτόματο κιβώτιο Steptronic με διπλό συμπλέκτη",
+              "price": 1512.61
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1092.44
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC) πίσω",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 672.27
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Πληροφορίες κυκλοφορίας σε πραγματικό χρόνο",
+              "price": 126.05
+            },
+            {
+              "name": "Ενσωμάτωση Smartphone",
+              "price": 210.08
+            },
+            {
+              "name": "MINI Connected XL",
+              "price": 0.0
+            },
+            {
+              "name": "Connected Media Plus",
+              "price": 1092.44
+            },
+            {
+              "name": "Service Inclusive 5 έτη / 80.000 km",
+              "price": 920.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ρύθμιση πλάτους πλάτης καθίσματος",
+              "price": 0.0
+            },
+            {
+              "name": "Περιεχόμενο ACEA/CO2",
+              "price": 0.0
+            },
+            {
+              "name": "Ενεργητική προστασία πεζών",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Γερμανικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Γερμανικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Τσέχικα",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51DK",
+          "code": "51DK",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f55-lci-hatchback.png",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 20569.9,
+              "priceRetail": 20569.9
+            }
+          ],
+          "extras": [
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" MINI Yours British Spoke,",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Scissor Spoke, δίχρωμες",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, μαύρες",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 798.32
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Circuit Spoke, δίχρωμες",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke, δίχρωμες",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, μαύρες",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke, μαύρες",
+              "price": 840.34
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke, ασημί",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Roulette Spoke, δίχρωμες",
+              "price": 840.34
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1092.44
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC) πίσω",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 672.27
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f55-lci-hatchback.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Clubman": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "LV31",
+          "code": "LV31",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21215.06,
+              "priceRetail": 21215.06
+            }
+          ],
+          "extras": [
+            {
+              "name": "Στήριξη παιδικού καθίσματος ISOFIX εμπρός",
+              "price": 84.03
+            },
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε ασημί",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 630.25
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Pepper White",
+              "price": 588.24
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Indian Summer Red μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Enigmatic Black μεταλλικό",
+              "price": 756.31
+            },
+            {
+              "name": "Sage Green μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε κόκκινο",
+              "price": 630.25
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε λευκό",
+              "price": 630.25
+            },
+            {
+              "name": "Πακέτο MINI Excitement",
+              "price": 168.07
+            },
+            {
+              "name": "MINI Driving Modes",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 1932.77
+            },
+            {
+              "name": "MINI Yours Trim",
+              "price": 4117.65
+            },
+            {
+              "name": "Έκδοση MINI Untold",
+              "price": 4537.82
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 3500.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Multiray Spoke, δίχρωμες",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" John Cooper Works Circuit",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" MINI Yours British Spoke,",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Multiray Spoke, δίχρωμες",
+              "price": 588.24
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Star Spoke",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Untold Spoke, δίχρωμες με",
+              "price": 0.0
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper Works Grip Spoke",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Star Spoke με ελαστικά Runflat",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Net Spoke, μαύρες",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Vent Spoke, ασημί",
+              "price": 840.34
+            },
+            {
+              "name": "Εφεδρικός τροχός ανάγκης",
+              "price": 126.05
+            },
+            {
+              "name": "Γρύλος και μπουλονόκλειδο",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα Firework Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon Black",
+              "price": 1512.61
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon Black",
+              "price": 924.37
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1596.64
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1764.71
+            },
+            {
+              "name": "Δέρμα Chester Indigo Blue | Carbon Black",
+              "price": 1764.71
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black | Carbon Black",
+              "price": 1932.77
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Sage Green",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Untold illuminated",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Frozen Blue illuminated",
+              "price": 336.13
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Piano Black illuminated",
+              "price": 336.13
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Fibre Alloy illuminated",
+              "price": 378.15
+            },
+            {
+              "name": "Εσωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 210.08
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 1008.4
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Πακέτο ορατότητας",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία αυτόματης σκίασης",
+              "price": 126.05
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Αυτόματο κιβώτιο Steptronic με διπλό συμπλέκτη",
+              "price": 1680.67
+            },
+            {
+              "name": "Σπορ ρυθμίσεις ανάρτησης",
+              "price": 210.08
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 672.27
+            },
+            {
+              "name": "Ηλεκτρική ρύθμιση καθισμάτων εμπρός",
+              "price": 1008.4
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 294.12
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Σύστημα φόρτωσης αντικειμένων μεγάλου μήκους",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη φόρτιση κινητού",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "LV71",
+          "code": "LV71",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27153.85,
+              "priceRetail": 27153.85
+            }
+          ],
+          "extras": [
+            {
+              "name": "Στήριξη παιδικού καθίσματος ISOFIX εμπρός",
+              "price": 84.03
+            },
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε ασημί",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 630.25
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Pepper White",
+              "price": 588.24
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Indian Summer Red μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Enigmatic Black μεταλλικό",
+              "price": 756.31
+            },
+            {
+              "name": "Sage Green μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε κόκκινο",
+              "price": 630.25
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε λευκό",
+              "price": 630.25
+            },
+            {
+              "name": "Πακέτο MINI Excitement",
+              "price": 168.07
+            },
+            {
+              "name": "MINI Driving Modes",
+              "price": 252.1
+            },
+            {
+              "name": "Classic Trim",
+              "price": 1512.61
+            },
+            {
+              "name": "MINI Yours Trim",
+              "price": 3361.34
+            },
+            {
+              "name": "Έκδοση MINI Untold",
+              "price": 3865.55
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 3805.96
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Multiray Spoke, δίχρωμες",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" John Cooper Works Circuit",
+              "price": 840.34
+            },
+            {
+              "name": "Εφεδρικός τροχός ανάγκης",
+              "price": 126.05
+            },
+            {
+              "name": "Γρύλος και μπουλονόκλειδο",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα Double Stripe Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon Black",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon Black",
+              "price": 672.27
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1344.54
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1512.61
+            },
+            {
+              "name": "Δέρμα Chester Indigo Blue | Carbon Black",
+              "price": 1512.61
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "JZ91",
+          "code": "JZ91",
+          "name": "John Cooper Works ALL4",
+          "image": "images/mini/models/mini-f54-lci-wagon.png",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37364.35,
+              "priceRetail": 37364.35
+            }
+          ],
+          "extras": [
+            {
+              "name": "Στήριξη παιδικού καθίσματος ISOFIX εμπρός",
+              "price": 84.03
+            },
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Μαύρες Sport διακοσμητικές λωρίδες",
+              "price": 210.08
+            },
+            {
+              "name": "Κόκκινες Sport διακοσμητικές λωρίδες",
+              "price": 210.08
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε μπλε",
+              "price": 630.25
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Pepper White",
+              "price": 588.24
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "Rebel Green",
+              "price": 756.31
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Enigmatic Black μεταλλικό",
+              "price": 756.31
+            },
+            {
+              "name": "Sage Green μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε κόκκινο",
+              "price": 630.25
+            },
+            {
+              "name": "Οροφή πολλαπλών αποχρώσεων σε λευκό",
+              "price": 630.25
+            },
+            {
+              "name": "Πακέτο MINI Excitement",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 420.17
+            },
+            {
+              "name": "Έκδοση MINI Untold",
+              "price": 2352.94
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 2521.01
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" John Cooper Works Circuit",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Untold Spoke, δίχρωμες",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Untold Spoke, δίχρωμες με",
+              "price": 0.0
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper Works Grip Spoke",
+              "price": 252.1
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper Works Grip Spoke,",
+              "price": 252.1
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper Works Grip Spoke",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black | Carbon Black",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon Black",
+              "price": 1344.54
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1512.61
+            },
+            {
+              "name": "Δέρμα Chester Indigo Blue | Carbon Black",
+              "price": 1512.61
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black | Carbon Black",
+              "price": 1680.67
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Sage Green",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Untold illuminated",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Frozen Blue illuminated",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Piano Black illuminated",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Fibre Alloy illuminated",
+              "price": 210.08
+            },
+            {
+              "name": "Εσωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο ορατότητας",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 336.13
+            },
+            {
+              "name": "Ηλεκτρική ρύθμιση καθισμάτων εμπρός",
+              "price": 1008.4
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Σύστημα συναγερμού",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Σύστημα φόρτωσης αντικειμένων μεγάλου μήκους",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη φόρτιση κινητού",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f54-lci-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "21DL",
+          "code": "21DL",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21000.0,
+              "priceRetail": 21000.0
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών στο",
+              "price": 0.0
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε ασημί",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Resolute",
+              "price": 0.0
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Zesty Yellow",
+              "price": 504.2
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Deep Laguna μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Ανεμοθραύστης",
+              "price": 294.12
+            },
+            {
+              "name": "Υφασμάτινη οροφή Sidewalk",
+              "price": 0.0
+            },
+            {
+              "name": "Υφασμάτινη οροφή MINI Yours",
+              "price": 672.27
+            },
+            {
+              "name": "Χρονόμετρο ανοικτής οροφής",
+              "price": 126.05
+            },
+            {
+              "name": "MINI Driving Modes",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 1680.67
+            },
+            {
+              "name": "MINI Yours Trim",
+              "price": 4873.95
+            },
+            {
+              "name": "Έκδοση MINI Sidewalk",
+              "price": 4033.61
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 3781.51
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 2586.03
+            },
+            {
+              "name": "Έκδοση Camden",
+              "price": 100.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" MINI Yours",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Scissor Spoke,",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke,",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke,",
+              "price": 798.32
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Circuit Spoke,",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke,",
+              "price": 1764.71
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke,",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke,",
+              "price": 1260.5
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke,",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Rail Spoke,",
+              "price": 1260.5
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Revolite Spoke,",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 16\" Victory Spoke,",
+              "price": 756.3
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Track Spoke,",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα Firework Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black |",
+              "price": 1428.57
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Light",
+              "price": 798.32
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Light Chequered (CB)",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon",
+              "price": 1470.59
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1638.66
+            },
+            {
+              "name": "Δέρμα Chester Malt Brown | Black",
+              "price": 1638.66
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black |",
+              "price": 1848.74
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Sidewalk Anthracite",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Silver Chequered",
+              "price": 252.1
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Sidewalk illuminated",
+              "price": 252.1
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Resolute",
+              "price": 252.1
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 882.35
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία",
+              "price": 126.05
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Αυτόματο κιβώτιο Steptronic με διπλό",
+              "price": 1512.61
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1092.44
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 336.13
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 126.05
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για σύστημα πλοήγησης",
+              "price": 0.0
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Πληροφορίες κυκλοφορίας σε πραγματικό",
+              "price": 126.05
+            },
+            {
+              "name": "Ενσωμάτωση Smartphone",
+              "price": 210.08
+            },
+            {
+              "name": "MINI Connected XL",
+              "price": 0.0
+            },
+            {
+              "name": "Service Inclusive 5 έτη / 80.000 km",
+              "price": 920.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων RDE",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41DL",
+          "code": "41DL",
+          "name": "Cooper S",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26205.14,
+              "priceRetail": 26205.14
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών στο",
+              "price": 0.0
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε ασημί",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Resolute",
+              "price": 0.0
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pulse Spoke,",
+              "price": 1344.54
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke,",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Pedal Spoke,",
+              "price": 840.34
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Tentacle Spoke,",
+              "price": 0.0
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 336.13
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 126.05
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61DL",
+          "code": "61DL",
+          "name": "John Cooper Works",
+          "image": "images/mini/models/mini-f57-lci-convertible.png",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30389.83,
+              "priceRetail": 30389.83
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών στο",
+              "price": 0.0
+            },
+            {
+              "name": "John Coopper Works διακοσμητικές λωρίδες",
+              "price": 126.05
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε μαύρο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε κόκκινο",
+              "price": 0.0
+            },
+            {
+              "name": "Καλύμματα εξωτερικών καθρεπτών σε λευκό",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Pepper White",
+              "price": 504.2
+            },
+            {
+              "name": "Chili Red",
+              "price": 504.2
+            },
+            {
+              "name": "Zesty Yellow",
+              "price": 504.2
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 504.2
+            },
+            {
+              "name": "Υφασμάτινη οροφή MINI Yours",
+              "price": 672.27
+            },
+            {
+              "name": "Classic Trim",
+              "price": 3697.48
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 2016.81
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 2061.64
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black |",
+              "price": 1176.47
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Light",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon",
+              "price": 1218.49
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1386.55
+            },
+            {
+              "name": "Δέρμα Chester Malt Brown | Black",
+              "price": 1386.55
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black |",
+              "price": 420.17
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Silver Chequered",
+              "price": 84.03
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία",
+              "price": 126.05
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Σπορ αυτόματο κιβώτιο Steptronic",
+              "price": 1680.67
+            },
+            {
+              "name": "Προσαρμοζόμενη ανάρτηση",
+              "price": 336.13
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Parking Assistant",
+              "price": 336.13
+            },
+            {
+              "name": "Υποβραχιόνιο εμπρός",
+              "price": 126.05
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 252.1
+            },
+            {
+              "name": "Θέρμανση στεφάνης τιμονιού",
+              "price": 168.07
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 126.05
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 294.12
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Πληροφορίες κυκλοφορίας σε πραγματικό",
+              "price": 126.05
+            },
+            {
+              "name": "Ενσωμάτωση Smartphone",
+              "price": 210.08
+            },
+            {
+              "name": "MINI Connected XL",
+              "price": 0.0
+            },
+            {
+              "name": "Service Inclusive 5 έτη / 80.000 km",
+              "price": 980.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Αγγλικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Πολωνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ουγγρικά",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Τσέχικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβάκικα",
+              "price": 0.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Σλοβένικα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων RDE",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f57-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Countryman": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21BR",
+          "code": "21BR",
+          "name": "Cooper",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 21193.56,
+              "priceRetail": 21193.56
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός MINI ALL4",
+              "price": 672.27
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Sage Green μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Momentum Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο MINI Excitement",
+              "price": 168.07
+            },
+            {
+              "name": "MINI Driving Modes",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 1932.77
+            },
+            {
+              "name": "MINI Yours Trim",
+              "price": 4537.82
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 3445.38
+            },
+            {
+              "name": "Έκδοση Premium Comfort",
+              "price": 1854.84
+            },
+            {
+              "name": "Πακέτο Design",
+              "price": 967.74
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" John Cooper",
+              "price": 2016.81
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Untamed Spoke,",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" MINI Yours",
+              "price": 2016.81
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pair Spoke με",
+              "price": 1428.57
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" Turnstile,",
+              "price": 2016.81
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Channel Spoke,",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 17\" Imprint Spoke",
+              "price": 840.34
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" Pin Spoke,",
+              "price": 1428.57
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper",
+              "price": 0.0
+            },
+            {
+              "name": "Εφεδρικός τροχός ανάγκης",
+              "price": 126.05
+            },
+            {
+              "name": "Γρύλος και μπουλονόκλειδο",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα Firework Carbon Black | Carbon",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black |",
+              "price": 1512.61
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black",
+              "price": 924.37
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon",
+              "price": 1596.64
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1764.71
+            },
+            {
+              "name": "Δέρμα Chester Indigo Blue | Carbon Black",
+              "price": 1764.71
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black |",
+              "price": 1932.77
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Highland Green",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Shaded Silver",
+              "price": 336.13
+            },
+            {
+              "name": "Εσωτερική επιφάνεια JCW Piano Black",
+              "price": 336.13
+            },
+            {
+              "name": "Εσωτερική επιφάνεια Untamed illuminated",
+              "price": 0.0
+            },
+            {
+              "name": "ALL4 Trim",
+              "price": 4369.75
+            },
+            {
+              "name": "Εσωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Eπένδυση ουρανού ανθρακί",
+              "price": 210.08
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 1008.4
+            },
+            {
+              "name": "Πακέτο εξωτερικών καθρεπτών",
+              "price": 462.18
+            },
+            {
+              "name": "Εσωτερικός καθρέπτης με λειτουργία",
+              "price": 126.05
+            },
+            {
+              "name": "Προσαρμοζόμενοι προβολείς LED",
+              "price": 420.17
+            },
+            {
+              "name": "Πακέτο φωτισμού",
+              "price": 168.07
+            },
+            {
+              "name": "Μεγαλύτερη χωρητικότητα ντεπόζιτου",
+              "price": 42.02
+            },
+            {
+              "name": "Αυτόματο κιβώτιο Steptronic με διπλό",
+              "price": 1680.67
+            },
+            {
+              "name": "Σπορ ρυθμίσεις ανάρτησης",
+              "price": 210.08
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1176.47
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC)",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Ηλεκτρική ρύθμιση καθισμάτων εμπρός",
+              "price": 1050.42
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 294.12
+            },
+            {
+              "name": "Κεντρικό υποβραχιόνιο πίσω",
+              "price": 210.08
+            },
+            {
+              "name": "Πάγκος Picnic",
+              "price": 126.05
+            },
+            {
+              "name": "Ρύθμιση πίσω καθισμάτων",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ καθίσματα John Cooper Works",
+              "price": 0.0
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Περιεχόμενο ACEA/CO2",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων EU6 RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Πρόσθετο περιεχόμενο RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Γερμανική έκδοση",
+              "price": 0.0
+            },
+            {
+              "name": "Σχεδίαση κινητήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Ακουστική προειδοποίηση ζώνης ασφαλείας",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή λειτουργίας διασταύρωσης",
+              "price": 0.0
+            },
+            {
+              "name": "Προετοιμασία για βάση πυροσβεστήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Αλλαγή λαδιών σε 24 μήνες/30.000 χλμ.",
+              "price": 0.0
+            },
+            {
+              "name": "Αλλαγή λαδιών σε 24 μήνες/25.000 χλμ.",
+              "price": 0.0
+            },
+            {
+              "name": "Ψυκτικό υγρό",
+              "price": 0.0
+            },
+            {
+              "name": "Κωδικός σήματος συναγερμού",
+              "price": 0.0
+            },
+            {
+              "name": "Αποκωδικοποίηση μεταβαλλόμενης",
+              "price": 0.0
+            },
+            {
+              "name": "VIN, ορατό από έξω",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικό αυτοκίνητο press",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικό αυτοκίνητο για έκθεση/φωτογραφία",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο προστασίας αποστολής",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικός εξοπλισμός κατόπιν παραγγελία",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερική αναβάθμιση",
+              "price": 0.0
+            },
+            {
+              "name": "Προκαταρκτικός έλεγχος σειράς",
+              "price": 0.0
+            },
+            {
+              "name": "Κωδικός έτους μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξαγωγή παρουσίασης επίσημου εμπόρου",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικό",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικό (HEA)",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερική προστασία",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή εξωτερικής προστασία",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδική αναγνώριση 6",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81BR",
+          "code": "81BR",
+          "name": "Cooper S ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 28397.84,
+              "priceRetail": 28397.84
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός MINI ALL4",
+              "price": 672.27
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Σπορ ρυθμίσεις ανάρτησης",
+              "price": 210.08
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1176.47
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC)",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31BS",
+          "code": "31BS",
+          "name": "John Cooper Works ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 174,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36166.9,
+              "priceRetail": 36166.9
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Μαύρες Sport διακοσμητικές λωρίδες",
+              "price": 210.08
+            },
+            {
+              "name": "Κόκκινες Sport διακοσμητικές λωρίδες",
+              "price": 210.08
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "Rebel Green",
+              "price": 756.31
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Sage Green μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Midnight Black II μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Πακέτο MINI Excitement",
+              "price": 168.07
+            },
+            {
+              "name": "Classic Trim",
+              "price": 420.17
+            },
+            {
+              "name": "Πακέτο John Cooper Works Trim",
+              "price": 2521.01
+            },
+            {
+              "name": "Έκδοση Premium Plus",
+              "price": 3191.08
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 19\" John Cooper",
+              "price": 840.34
+            },
+            {
+              "name": "Ελαστικά Runflat",
+              "price": 0.0
+            },
+            {
+              "name": "Ζάντες ελαφρού κράματος 18\" John Cooper",
+              "price": 0.0
+            },
+            {
+              "name": "Συνδυασμός Dinamica/Ύφασμα Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ύφασμα/Δέρμα Dinamica Carbon Black |",
+              "price": 1260.5
+            },
+            {
+              "name": "Ύφασμα/Δερματίνη Black Pearl Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Δέρμα Cross Punch Carbon Black | Carbon",
+              "price": 1344.54
+            },
+            {
+              "name": "Δέρμα Chester Satellite Grey",
+              "price": 1512.61
+            },
+            {
+              "name": "Δέρμα Chester Indigo Blue | Carbon Black",
+              "price": 1512.61
+            },
+            {
+              "name": "Δέρμα Lounge MINI Yours Carbon Black |",
+              "price": 1680.67
+            },
+            {
+              "name": "Εσωτερική σχεδίαση MINI Yours Shaded Silver",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερική επιφάνεια JCW Piano Black",
+              "price": 168.07
+            },
+            {
+              "name": "Εσωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Δερματίνη Carbon Black | Carbon Black",
+              "price": 0.0
+            },
+            {
+              "name": "Προσαρμοζόμενοι προβολείς LED",
+              "price": 420.17
+            },
+            {
+              "name": "Μεγαλύτερη χωρητικότητα ντεπόζιτου",
+              "price": 42.02
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Ηλεκτρική ρύθμιση καθισμάτων εμπρός",
+              "price": 1008.4
+            },
+            {
+              "name": "Σπορ καθίσματα οδηγού και συνοδηγού",
+              "price": 0.0
+            },
+            {
+              "name": "Θέρμανση καθισμάτων οδηγού και συνοδηγού",
+              "price": 294.12
+            },
+            {
+              "name": "Κεντρικό υποβραχιόνιο πίσω",
+              "price": 210.08
+            },
+            {
+              "name": "Πάγκος Picnic",
+              "price": 126.05
+            },
+            {
+              "name": "Ρύθμιση πίσω καθισμάτων",
+              "price": 252.1
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Σύστημα συναγερμού",
+              "price": 294.12
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα",
+              "price": 0.0
+            },
+            {
+              "name": "Επιλογή COP οχημάτων",
+              "price": 0.0
+            },
+            {
+              "name": "Περιεχόμενο ACEA/CO2",
+              "price": 0.0
+            },
+            {
+              "name": "Λειτουργία αυτόματης εκκίνησης/διακοπής",
+              "price": 0.0
+            },
+            {
+              "name": "Ανάκτηση ενέργειας πέδησης",
+              "price": 0.0
+            },
+            {
+              "name": "Προδιαγραφές εκπομπών ρύπων EU6 RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Πρόσθετο περιεχόμενο RDE",
+              "price": 0.0
+            },
+            {
+              "name": "Γερμανική έκδοση",
+              "price": 0.0
+            },
+            {
+              "name": "Σχεδίαση κινητήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Ακουστική προειδοποίηση ζώνης ασφαλείας",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή λειτουργίας διασταύρωσης",
+              "price": 0.0
+            },
+            {
+              "name": "Προετοιμασία για βάση πυροσβεστήρα",
+              "price": 0.0
+            },
+            {
+              "name": "Αλλαγή λαδιών σε 24 μήνες/30.000 χλμ.",
+              "price": 0.0
+            },
+            {
+              "name": "Αλλαγή λαδιών σε 24 μήνες/25.000 χλμ.",
+              "price": 0.0
+            },
+            {
+              "name": "Ψυκτικό υγρό",
+              "price": 0.0
+            },
+            {
+              "name": "Κωδικός σήματος συναγερμού",
+              "price": 0.0
+            },
+            {
+              "name": "Αποκωδικοποίηση μεταβαλλόμενης",
+              "price": 0.0
+            },
+            {
+              "name": "VIN, ορατό από έξω",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικό αυτοκίνητο press",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικό αυτοκίνητο για έκθεση/φωτογραφία",
+              "price": 0.0
+            },
+            {
+              "name": "Πακέτο προστασίας αποστολής",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδικός εξοπλισμός κατόπιν παραγγελία",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερική αναβάθμιση",
+              "price": 0.0
+            },
+            {
+              "name": "Προκαταρκτικός έλεγχος σειράς",
+              "price": 0.0
+            },
+            {
+              "name": "Κωδικός έτους μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξαγωγή παρουσίασης επίσημου εμπόρου",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικό",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικό (HEA)",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερική προστασία",
+              "price": 0.0
+            },
+            {
+              "name": "Διαγραφή εξωτερικής προστασία",
+              "price": 0.0
+            },
+            {
+              "name": "Ειδική αναγνώριση 6",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BS",
+          "code": "21BS",
+          "name": "Cooper SE ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 40,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34129.46,
+              "priceRetail": 34129.46
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός MINI ALL4",
+              "price": 672.27
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1176.47
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC)",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Sharing",
+              "price": 16.81
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41BT",
+          "code": "41BT",
+          "name": "Cooper D",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24419.36,
+              "priceRetail": 24419.36
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικό Chrome Line",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός MINI ALL4",
+              "price": 672.27
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BU",
+          "code": "21BU",
+          "name": "Cooper SD ALL4",
+          "image": "images/mini/models/mini-f60-lci-suv.png",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34597.42,
+              "priceRetail": 34597.42
+            }
+          ],
+          "extras": [
+            {
+              "name": "Διαγραφή αναγραφής μοντέλου",
+              "price": 0.0
+            },
+            {
+              "name": "Λευκές διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Μαύρες διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Οροφή στο χρώμα του αμαξώματος",
+              "price": 0.0
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής",
+              "price": 336.13
+            },
+            {
+              "name": "Ράγες οροφής μαύρες",
+              "price": 420.17
+            },
+            {
+              "name": "Οροφή και καλύμματα εξωτερικών καθρεπτών",
+              "price": 168.07
+            },
+            {
+              "name": "Ασημί διακοσμητικές λωρίδες στο καπό",
+              "price": 126.05
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός MINI ALL4",
+              "price": 672.27
+            },
+            {
+              "name": "Εξωτερικός σχεδιασμός Piano Black",
+              "price": 252.1
+            },
+            {
+              "name": "Chili Red",
+              "price": 588.24
+            },
+            {
+              "name": "White Silver μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Rooftop Grey μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Moonwalk Grey μεταλλικό",
+              "price": 0.0
+            },
+            {
+              "name": "Island Blue μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "British Racing Green IV μεταλλικό",
+              "price": 588.24
+            },
+            {
+              "name": "Σπορ ρυθμίσεις ανάρτησης",
+              "price": 210.08
+            },
+            {
+              "name": "Αεροδυναμικό πακέτο John Cooper Works",
+              "price": 1176.47
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας",
+              "price": 336.13
+            },
+            {
+              "name": "Έλεγχος Απόστασης Παρκαρίσματος (PDC)",
+              "price": 336.13
+            },
+            {
+              "name": "Active Cruise Control",
+              "price": 252.1
+            },
+            {
+              "name": "Driving Assistant",
+              "price": 605.04
+            },
+            {
+              "name": "Δερμάτινο τιμόνι Nappa",
+              "price": 294.12
+            },
+            {
+              "name": "Γυάλινη οροφή Panorama",
+              "price": 840.34
+            },
+            {
+              "name": "Αντιηλιακά κρύσταλλα",
+              "price": 294.12
+            },
+            {
+              "name": "Αυτόματος κλιματισμός",
+              "price": 420.17
+            },
+            {
+              "name": "Σύστημα άνετης πρόσβασης",
+              "price": 336.13
+            },
+            {
+              "name": "Προετοιμασία για Flexible Car Use",
+              "price": 75.63
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 168.07
+            },
+            {
+              "name": "Πακέτο καπνιστή",
+              "price": 42.02
+            },
+            {
+              "name": "Πακέτο αποθηκευτικών χώρων",
+              "price": 252.1
+            },
+            {
+              "name": "MINI Head-Up Display",
+              "price": 378.15
+            },
+            {
+              "name": "Σύστημα τηλεφωνίας Comfort με ασύρματη",
+              "price": 336.13
+            },
+            {
+              "name": "Σύστημα Πλοήγησης ΜΙΝΙ",
+              "price": 672.27
+            },
+            {
+              "name": "Πολυλειτουργικός πίνακας οργάνων",
+              "price": 210.08
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 672.27
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/mini/models/mini-f60-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    }
+  }
+}
