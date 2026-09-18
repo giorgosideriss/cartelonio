@@ -4930,7 +4930,7 @@
           "factoryCode": "41DU",
           "code": "41DU",
           "name": "iX3",
-          "image": "images/bmw/models/bmw-g08-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g08-lci-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -4948,7 +4948,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g08-lci-sedan.png",
+      "image": "images/bmw/models/bmw-g08-lci-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "X4": {
@@ -5399,7 +5399,7 @@
           "factoryCode": "CW21",
           "code": "CW21",
           "name": "xDrive40i",
-          "image": "images/bmw/models/bmw-g07-sedan.png",
+          "image": "images/bmw/models/bmw-g07-suv.png",
           "co2": 233,
           "variants": [
             {
@@ -5420,7 +5420,7 @@
           "factoryCode": "CX61",
           "code": "CX61",
           "name": "M50i",
-          "image": "images/bmw/models/bmw-g07-sedan.png",
+          "image": "images/bmw/models/bmw-g07-suv.png",
           "co2": 280,
           "variants": [
             {
@@ -5441,7 +5441,7 @@
           "factoryCode": "TB41",
           "code": "TB41",
           "name": "xDrive40d",
-          "image": "images/bmw/models/bmw-g07-sedan.png",
+          "image": "images/bmw/models/bmw-g07-suv.png",
           "co2": 204,
           "variants": [
             {
@@ -5459,7 +5459,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g07-sedan.png",
+      "image": "images/bmw/models/bmw-g07-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "Z4": {
@@ -5469,7 +5469,7 @@
           "factoryCode": "HF11",
           "code": "HF11",
           "name": "sDrive20i",
-          "image": "images/bmw/models/bmw-g29-sedan.png",
+          "image": "images/bmw/models/bmw-g29-convertible.png",
           "co2": 162,
           "variants": [
             {
@@ -5490,7 +5490,7 @@
           "factoryCode": "HF31",
           "code": "HF31",
           "name": "sDrive30i",
-          "image": "images/bmw/models/bmw-g29-sedan.png",
+          "image": "images/bmw/models/bmw-g29-convertible.png",
           "co2": 162,
           "variants": [
             {
@@ -5511,7 +5511,7 @@
           "factoryCode": "HF51",
           "code": "HF51",
           "name": "M40i",
-          "image": "images/bmw/models/bmw-g29-sedan.png",
+          "image": "images/bmw/models/bmw-g29-convertible.png",
           "co2": 181,
           "variants": [
             {
@@ -5529,7 +5529,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g29-sedan.png",
+      "image": "images/bmw/models/bmw-g29-convertible.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "i3": {
@@ -5539,7 +5539,7 @@
           "factoryCode": "8P21",
           "code": "8P21",
           "name": "i3 (120 Ah)",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -5741,7 +5741,7 @@
           "factoryCode": "8P21",
           "code": "8P21",
           "name": "i3 (120 Ah) Έκδοση Advanced",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -5943,7 +5943,7 @@
           "factoryCode": "8P21",
           "code": "8P21",
           "name": "i3 (120 Ah) Έκδοση Advanced/Unique Forever",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -6145,7 +6145,7 @@
           "factoryCode": "8P61",
           "code": "8P61",
           "name": "i3s (120 Ah)",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -6319,7 +6319,7 @@
           "factoryCode": "8P61",
           "code": "8P61",
           "name": "i3s (120 Ah) Έκδοση Advanced",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -6493,7 +6493,7 @@
           "factoryCode": "8P61",
           "code": "8P61",
           "name": "i3s (120 Ah) Έκδοση Advanced/Unique Forever",
-          "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+          "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -6664,7 +6664,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-i01-lci-sedan.png",
+      "image": "images/bmw/models/bmw-i01-lci-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "iX": {
@@ -6674,7 +6674,7 @@
           "factoryCode": "11CF",
           "code": "11CF",
           "name": "xDrive40",
-          "image": "images/bmw/models/bmw-i20-sedan.png",
+          "image": "images/bmw/models/bmw-i20-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -6695,7 +6695,7 @@
           "factoryCode": "21CF",
           "code": "21CF",
           "name": "xDrive50",
-          "image": "images/bmw/models/bmw-i20-sedan.png",
+          "image": "images/bmw/models/bmw-i20-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -6713,7 +6713,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-i20-sedan.png",
+      "image": "images/bmw/models/bmw-i20-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     }
   }
