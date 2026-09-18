@@ -3594,3 +3594,160 @@ body.cartelonio-onboarding-open{overflow:hidden}
   .vehicle-configurator-v2 .vehicle-image-brand-logo{height:1em !important;max-width:1.65em !important}
   .vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-image-brand-logo{height:1em !important;max-width:1.65em !important}
 }
+
+
+/* =========================================================
+   2026-09-18 — Exact brand-logo + LTPF visual correction
+   ========================================================= */
+
+/* Brand logo: force a genuinely small icon next to the brand name.
+   Explicit display/box sizing prevents intrinsic SVG/PNG dimensions
+   from taking over in Chrome. */
+.vehicle-configurator-v2 .vehicle-image-brand-row{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:8px !important;
+  width:auto !important;
+  max-width:100% !important;
+  font-size:clamp(20px,2.1vw,30px) !important;
+  line-height:1 !important;
+}
+.vehicle-configurator-v2 .vehicle-image-brand{
+  display:block !important;
+  font-size:1em !important;
+  line-height:1 !important;
+}
+.vehicle-configurator-v2 img.vehicle-image-brand-logo{
+  display:block !important;
+  flex:0 0 auto !important;
+  width:auto !important;
+  height:.82em !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  max-width:1.15em !important;
+  max-height:.82em !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+}
+
+/* Same rule when there is no vehicle image — logo stays equal to the
+   larger brand text instead of becoming an oversized emblem. */
+.vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-image-brand-row{
+  justify-content:center !important;
+  font-size:clamp(34px,4.2vw,58px) !important;
+}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image img.vehicle-image-brand-logo{
+  height:.82em !important;
+  max-height:.82em !important;
+  max-width:1.15em !important;
+}
+
+/* LTPF amount: same typography, baseline and compact € spacing as
+   the Registration Tax value; only the colour remains neutral grey. */
+.vehicle-configurator-v2 .price-dropdown-card .price-control-row{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:0 !important;
+  min-height:27px !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card .price-leading-icon{
+  width:auto !important;
+  min-width:0 !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#d7dcda !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card .price-leading-icon svg{
+  display:none !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card .price-leading-icon::after{
+  content:"€";
+  display:block;
+  margin:0 !important;
+  padding:0 !important;
+  font-family:inherit !important;
+  font-size:18px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:-.03em !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card .required-field-wrap{
+  display:block !important;
+  flex:0 1 auto !important;
+  width:auto !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card input#price{
+  display:block !important;
+  width:145px !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 0 0 1px !important;
+  padding:0 !important;
+  border:0 !important;
+  outline:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  font-family:inherit !important;
+  font-size:18px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:-.03em !important;
+  color:#d7dcda !important;
+  text-align:left !important;
+  appearance:textfield !important;
+  -moz-appearance:textfield !important;
+}
+.vehicle-configurator-v2 .price-dropdown-card input#price::-webkit-inner-spin-button,
+.vehicle-configurator-v2 .price-dropdown-card input#price::-webkit-outer-spin-button{
+  -webkit-appearance:none !important;
+  margin:0 !important;
+}
+
+/* Match the vertical placement of both values. */
+.vehicle-configurator-v2 .price-dropdown-card > label,
+.vehicle-configurator-v2 .registration-tax-mini-card > label{
+  margin-bottom:5px !important;
+}
+.vehicle-configurator-v2 .registration-tax-mini-value,
+.vehicle-configurator-v2 .price-dropdown-card .price-control-row{
+  min-height:27px !important;
+}
+.vehicle-configurator-v2 .registration-tax-mini-value strong{
+  font-family:inherit !important;
+  font-size:18px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:-.03em !important;
+}
+
+@media(max-width:820px){
+  .vehicle-configurator-v2 .vehicle-image-brand-row{
+    font-size:22px !important;
+  }
+  .vehicle-configurator-v2 img.vehicle-image-brand-logo{
+    height:.82em !important;
+    max-height:.82em !important;
+    max-width:1.15em !important;
+  }
+  .vehicle-configurator-v2 .price-dropdown-card .price-leading-icon::after,
+  .vehicle-configurator-v2 .price-dropdown-card input#price,
+  .vehicle-configurator-v2 .registration-tax-mini-value strong{
+    font-size:15px !important;
+  }
+  .vehicle-configurator-v2 .price-dropdown-card input#price{
+    width:105px !important;
+  }
+}
