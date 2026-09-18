@@ -1,0 +1,288 @@
+{
+  "brand": "Bentley",
+  "year": 2020,
+  "models": {
+    "Flying Spur": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "ZG21BB",
+          "code": "ZG21BB",
+          "name": "New Flying Spur W12",
+          "image": "bentley-flying-spur-w12-2020.png",
+          "co2": 337,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 188245.0,
+              "priceRetail": 188245.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    },
+    "Mulsanne": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "3Y212A",
+          "code": "3Y212A",
+          "name": "Mulsanne",
+          "image": "bentley-mulsanne-3y.png",
+          "co2": 365,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 270160.0,
+              "priceRetail": 270160.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "3Y213A",
+          "code": "3Y213A",
+          "name": "Mulsanne Speed",
+          "image": "bentley-mulsanne-3y-speed.png",
+          "co2": 365,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 294282.0,
+              "priceRetail": 294282.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "3Y612A",
+          "code": "3Y612A",
+          "name": "Mulsanne Extended Wheelbase",
+          "image": "bentley-mulsanne-3y-ewb.png",
+          "co2": 365,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 318989.0,
+              "priceRetail": 318989.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    },
+    "Bentayga (MY 2020)": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4V14G9",
+          "code": "4V14G9",
+          "name": "Bentayga Speed",
+          "image": "bentley-bentayga-speed-2020.png",
+          "co2": 335,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 209468.0,
+              "priceRetail": 209468.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "4V14D9",
+          "code": "4V14D9",
+          "name": "Bentayga V8",
+          "image": "bentley-bentayga-v8-2020.png",
+          "co2": 302,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 157553.0,
+              "priceRetail": 157553.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "4V14F9",
+          "code": "4V14F9",
+          "name": "Bentayga Hybrid",
+          "image": "bentley-bentayga-hybrid-2020.png",
+          "co2": 79,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 147773.0,
+              "priceRetail": 147773.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "phev",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    },
+    "Continental GT": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "3S32CB",
+          "code": "3S32CB",
+          "name": "New Continental GT V8",
+          "image": "bentley-continental-gt-v8-2020.png",
+          "co2": 268,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 171702.0,
+              "priceRetail": 171702.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "3S31BB",
+          "code": "3S31BB",
+          "name": "New Continental GT",
+          "image": "bentley-continental-gt-w12-2020.png",
+          "co2": 308,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 184787.0,
+              "priceRetail": 184787.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    },
+    "Continental GT Convertible": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "3S42CB",
+          "code": "3S42CB",
+          "name": "New Continental GT V8 Convertible",
+          "image": "bentley-continental-gt-v8-convertible-2020.png",
+          "co2": 275,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 189840.0,
+              "priceRetail": 189840.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "3S41BB",
+          "code": "3S41BB",
+          "name": "New Continental GT Convertible",
+          "image": "bentley-continental-gt-w12-convertible-2020.png",
+          "co2": 336,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 204149.0,
+              "priceRetail": 204149.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    },
+    "Bentayga (MY 2021)": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "4V14D9",
+          "code": "4V14D9",
+          "name": "Bentayga V8",
+          "image": "bentley-bentayga-v8-2021.png",
+          "co2": 302,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 164043.0,
+              "priceRetail": 164043.0
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ]
+    }
+  }
+}
