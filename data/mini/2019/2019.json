@@ -9,7 +9,7 @@
           "factoryCode": "XR11",
           "code": "XR11",
           "name": "One (102 PS)",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 117,
           "variants": [
             {
@@ -299,7 +299,7 @@
           "factoryCode": "XR31",
           "code": "XR31",
           "name": "Cooper",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 117,
           "variants": [
             {
@@ -957,7 +957,7 @@
           "factoryCode": "XR51",
           "code": "XR51",
           "name": "Cooper S",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 139,
           "variants": [
             {
@@ -1271,7 +1271,7 @@
           "factoryCode": "XR91",
           "code": "XR91",
           "name": "John Cooper Works",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 162,
           "variants": [
             {
@@ -1770,7 +1770,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/mini/models/mini-f56-lci-sedan.png",
+      "image": "images/mini/models/mini-f56-lci-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "5θυρο": {
