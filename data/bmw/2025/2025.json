@@ -1,0 +1,5873 @@
+{
+  "brand": "BMW",
+  "year": 2025,
+  "models": {
+    "Σειρά 1": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "31GE",
+          "code": "31GE",
+          "name": "116",
+          "image": "images/bmw/models/bmw-f70-hatchback.png",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 19983.06,
+              "priceRetail": 19983.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81GE",
+          "code": "81GE",
+          "name": "120",
+          "image": "images/bmw/models/bmw-f70-hatchback.png",
+          "co2": 121,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 22097.27,
+              "priceRetail": 22097.27
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61GE",
+          "code": "61GE",
+          "name": "123 xDrive",
+          "image": "images/bmw/models/bmw-f70-hatchback.png",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26633.23,
+              "priceRetail": 26633.23
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21GE",
+          "code": "21GE",
+          "name": "M135 xDrive",
+          "image": "images/bmw/models/bmw-f70-hatchback.png",
+          "co2": 173,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34956.7,
+              "priceRetail": 34956.7
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21GF",
+          "code": "21GF",
+          "name": "120d",
+          "image": "images/bmw/models/bmw-f70-hatchback.png",
+          "co2": 112,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 26531.63,
+              "priceRetail": 26531.63
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f70-hatchback.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 2 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "61CM",
+          "code": "61CM",
+          "name": "218i",
+          "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31415.6,
+              "priceRetail": 31415.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11CM",
+          "code": "11CM",
+          "name": "220i",
+          "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35389.63,
+              "priceRetail": 35389.63
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21CM",
+          "code": "21CM",
+          "name": "230i",
+          "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38474.04,
+              "priceRetail": 38474.04
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51CM",
+          "code": "51CM",
+          "name": "M240i xDrive",
+          "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+          "co2": 185,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 47108.77,
+              "priceRetail": 47108.77
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11CN",
+          "code": "11CN",
+          "name": "220d",
+          "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38701.27,
+              "priceRetail": 38701.27
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g42-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "M2 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "21DM",
+          "code": "21DM",
+          "name": "M2",
+          "image": "images/bmw/models/bmw-g87-lci-coupe.png",
+          "co2": 220,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57819.65,
+              "priceRetail": 57819.65
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31DM",
+          "code": "31DM",
+          "name": "M2 CS",
+          "image": "images/bmw/models/bmw-g87-lci-coupe.png",
+          "co2": 226,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 84629.0,
+              "priceRetail": 84629.0
+            }
+          ],
+          "extras": [
+            {
+              "name": "19\"/20\" M light alloy wheels star spokeStar-spoke style 827 M",
+              "price": 0.0
+            },
+            {
+              "name": "M Διακοσμητικές επενδύσεις εσωτερικού Fine-Brushed Aluminium",
+              "price": 0.0
+            },
+            {
+              "name": "M Διακοσμητικές επενδύσεις εσωτερικού Aluminium Rhombicle",
+              "price": 0.0
+            },
+            {
+              "name": "M Διακοσμητικές επενδύσεις εσωτερικού Cabron Fibre",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g87-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 2 Gran Coupé": {
+      "category": "Gran Coupe",
+      "editions": [
+        {
+          "factoryCode": "31GH",
+          "code": "31GH",
+          "name": "220",
+          "image": "images/bmw/models/bmw-f74-gran-coupe.png",
+          "co2": 119,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 24990.72,
+              "priceRetail": 24990.72
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71GG",
+          "code": "71GG",
+          "name": "223 xDrive",
+          "image": "images/bmw/models/bmw-f74-gran-coupe.png",
+          "co2": 137,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29630.1,
+              "priceRetail": 29630.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31GG",
+          "code": "31GG",
+          "name": "M235 xDrive",
+          "image": "images/bmw/models/bmw-f74-gran-coupe.png",
+          "co2": 170,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37937.6,
+              "priceRetail": 37937.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21GH",
+          "code": "21GH",
+          "name": "220d",
+          "image": "images/bmw/models/bmw-f74-gran-coupe.png",
+          "co2": 110,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29511.5,
+              "priceRetail": 29511.5
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f74-gran-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 2 Active Tourer": {
+      "category": "MPV",
+      "editions": [
+        {
+          "factoryCode": "21BX",
+          "code": "21BX",
+          "name": "218i",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27600.01,
+              "priceRetail": 27600.01
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71BX",
+          "code": "71BX",
+          "name": "220i",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 29188.15,
+              "priceRetail": 29188.15
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41BX",
+          "code": "41BX",
+          "name": "223i xDrive",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 139,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34611.52,
+              "priceRetail": 34611.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21EA",
+          "code": "21EA",
+          "name": "225e xDrive",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 20,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36791.04,
+              "priceRetail": 36791.04
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51BX",
+          "code": "51BX",
+          "name": "230e xDrive",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 20,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39322.98,
+              "priceRetail": 39322.98
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21BY",
+          "code": "21BY",
+          "name": "218d",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31573.13,
+              "priceRetail": 31573.13
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71BY",
+          "code": "71BY",
+          "name": "220d",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33616.28,
+              "priceRetail": 33616.28
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51BY",
+          "code": "51BY",
+          "name": "223d xDrive",
+          "image": "images/bmw/models/bmw-u06-mpv.png",
+          "co2": 123,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37449.92,
+              "priceRetail": 37449.92
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "MPV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-u06-mpv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 3 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "21FF",
+          "code": "21FF",
+          "name": "318i",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33779.23,
+              "priceRetail": 33779.23
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "28FF",
+          "code": "28FF",
+          "name": "318i",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 33779.23,
+              "priceRetail": 33779.23
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51FF",
+          "code": "51FF",
+          "name": "320i",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37142.87,
+              "priceRetail": 37142.87
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "58FF",
+          "code": "58FF",
+          "name": "320i",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 148,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37142.87,
+              "priceRetail": 37142.87
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71FF",
+          "code": "71FF",
+          "name": "320i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39233.78,
+              "priceRetail": 39233.78
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "78FF",
+          "code": "78FF",
+          "name": "320i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39233.78,
+              "priceRetail": 39233.78
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81FF",
+          "code": "81FF",
+          "name": "330i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43033.14,
+              "priceRetail": 43033.14
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "88FF",
+          "code": "88FF",
+          "name": "330i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43033.14,
+              "priceRetail": 43033.14
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41FF",
+          "code": "41FF",
+          "name": "M340i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 177,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57175.1,
+              "priceRetail": 57175.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "48FF",
+          "code": "48FF",
+          "name": "M340i xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 177,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57175.1,
+              "priceRetail": 57175.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41GK",
+          "code": "41GK",
+          "name": "330e",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 19,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42648.05,
+              "priceRetail": 42648.05
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "48GK",
+          "code": "48GK",
+          "name": "330e",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 19,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42648.05,
+              "priceRetail": 42648.05
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51GK",
+          "code": "51GK",
+          "name": "330e xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 21,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44760.54,
+              "priceRetail": 44760.54
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "58GK",
+          "code": "58GK",
+          "name": "330e xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 21,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44760.54,
+              "priceRetail": 44760.54
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21FU",
+          "code": "21FU",
+          "name": "318d",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36292.6,
+              "priceRetail": 36292.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "28FU",
+          "code": "28FU",
+          "name": "318d",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36292.6,
+              "priceRetail": 36292.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31FU",
+          "code": "31FU",
+          "name": "320d",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40256.43,
+              "priceRetail": 40256.43
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "38FU",
+          "code": "38FU",
+          "name": "320d",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 130,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 40256.43,
+              "priceRetail": 40256.43
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41FU",
+          "code": "41FU",
+          "name": "320d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42381.3,
+              "priceRetail": 42381.3
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "48FU",
+          "code": "48FU",
+          "name": "320d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 138,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42381.3,
+              "priceRetail": 42381.3
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51FU",
+          "code": "51FU",
+          "name": "330d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 147,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48280.58,
+              "priceRetail": 48280.58
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "58FU",
+          "code": "58FU",
+          "name": "330d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 147,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48280.58,
+              "priceRetail": 48280.58
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61FU",
+          "code": "61FU",
+          "name": "M340d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57780.08,
+              "priceRetail": 57780.08
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "68FU",
+          "code": "68FU",
+          "name": "M340d xDrive",
+          "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57780.08,
+              "priceRetail": 57780.08
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g20-lci-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ3 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "11HJ",
+          "code": "11HJ",
+          "name": "M3",
+          "image": "images/bmw/models/bmw-g80-lci-sedan.png",
+          "co2": 227,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 78249.1,
+              "priceRetail": 78249.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21HJ",
+          "code": "21HJ",
+          "name": "M3 Competition",
+          "image": "images/bmw/models/bmw-g80-lci-sedan.png",
+          "co2": 220,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 83463.82,
+              "priceRetail": 83463.82
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31HJ",
+          "code": "31HJ",
+          "name": "M3 Competition xDrive",
+          "image": "images/bmw/models/bmw-g80-lci-sedan.png",
+          "co2": 228,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 88574.25,
+              "priceRetail": 88574.25
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g80-lci-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 3 Touring": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "11FY",
+          "code": "11FY",
+          "name": "318i",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35376.64,
+              "priceRetail": 35376.64
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21FY",
+          "code": "21FY",
+          "name": "320i",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 155,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38727.29,
+              "priceRetail": 38727.29
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71FY",
+          "code": "71FY",
+          "name": "330i xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 165,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44625.5,
+              "priceRetail": 44625.5
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81FY",
+          "code": "81FY",
+          "name": "M340i xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 182,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58776.52,
+              "priceRetail": 58776.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41GL",
+          "code": "41GL",
+          "name": "330e",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 20,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44241.95,
+              "priceRetail": 44241.95
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51GL",
+          "code": "51GL",
+          "name": "330e xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 23,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46377.32,
+              "priceRetail": 46377.32
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11FZ",
+          "code": "11FZ",
+          "name": "318d",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37892.1,
+              "priceRetail": 37892.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21FZ",
+          "code": "21FZ",
+          "name": "320d",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41848.93,
+              "priceRetail": 41848.93
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31FZ",
+          "code": "31FZ",
+          "name": "320d xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43928.06,
+              "priceRetail": 43928.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51FZ",
+          "code": "51FZ",
+          "name": "330d xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 154,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49827.34,
+              "priceRetail": 49827.34
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61FZ",
+          "code": "61FZ",
+          "name": "M340d xDrive",
+          "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+          "co2": 161,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59353.03,
+              "priceRetail": 59353.03
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g21-lci-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ3 Touring": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "21GB",
+          "code": "21GB",
+          "name": "M3 Competition xDrive",
+          "image": "images/bmw/models/bmw-g81-lci-wagon.png",
+          "co2": 234,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 89433.15,
+              "priceRetail": 89433.15
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31GB",
+          "code": "31GB",
+          "name": "M3 CS",
+          "image": "images/bmw/models/bmw-g81-lci-wagon.png",
+          "co2": 238,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 130233.76,
+              "priceRetail": 130233.76
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g81-lci-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 4 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "11HB",
+          "code": "11HB",
+          "name": "420i",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 143,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41798.72,
+              "priceRetail": 41798.72
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51HB",
+          "code": "51HB",
+          "name": "430i xDrive",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 157,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48415.3,
+              "priceRetail": 48415.3
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71HB",
+          "code": "71HB",
+          "name": "M440i xDrive",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 175,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59950.9,
+              "priceRetail": 59950.9
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41FN",
+          "code": "41FN",
+          "name": "420d",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 126,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44466.19,
+              "priceRetail": 44466.19
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51FN",
+          "code": "51FN",
+          "name": "420d xDrive",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 135,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46625.9,
+              "priceRetail": 46625.9
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61FN",
+          "code": "61FN",
+          "name": "430d xDrive",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51985.62,
+              "priceRetail": 51985.62
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71FN",
+          "code": "71FN",
+          "name": "M440d xDrive",
+          "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+          "co2": 160,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60947.34,
+              "priceRetail": 60947.34
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g22-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ4 Coupé": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "11HK",
+          "code": "11HK",
+          "name": "M4",
+          "image": "images/bmw/models/bmw-g82-lci-coupe.png",
+          "co2": 227,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 79936.22,
+              "priceRetail": 79936.22
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21HK",
+          "code": "21HK",
+          "name": "M4 Competition",
+          "image": "images/bmw/models/bmw-g82-lci-coupe.png",
+          "co2": 220,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 85150.94,
+              "priceRetail": 85150.94
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31HK",
+          "code": "31HK",
+          "name": "M4 Competition M xDrive",
+          "image": "images/bmw/models/bmw-g82-lci-coupe.png",
+          "co2": 227,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 89261.36,
+              "priceRetail": 89261.36
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41HK",
+          "code": "41HK",
+          "name": "M4 CS",
+          "image": "images/bmw/models/bmw-g82-lci-coupe.png",
+          "co2": 232,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 133893.32,
+              "priceRetail": 133893.32
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g82-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 4 Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "81DB",
+          "code": "81DB",
+          "name": "420i",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 152,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48064.95,
+              "priceRetail": 48064.95
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41FP",
+          "code": "41FP",
+          "name": "430i xDrive",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54721.03,
+              "priceRetail": 54721.03
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61FP",
+          "code": "61FP",
+          "name": "M440i xDrive",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 182,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66285.42,
+              "priceRetail": 66285.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51AU",
+          "code": "51AU",
+          "name": "420d",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 136,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50784.18,
+              "priceRetail": 50784.18
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61AU",
+          "code": "61AU",
+          "name": "430d",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 146,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56194.25,
+              "priceRetail": 56194.25
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71AU",
+          "code": "71AU",
+          "name": "M440d xDrive",
+          "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+          "co2": 167,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 67288.98,
+              "priceRetail": 67288.98
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g23-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ4 Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "41BA",
+          "code": "41BA",
+          "name": "M4 Competition M xDrive",
+          "image": "images/bmw/models/bmw-g83-lci-convertible.png",
+          "co2": 232,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 93034.37,
+              "priceRetail": 93034.37
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g83-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 4 Gran Coupé": {
+      "category": "Gran Coupe",
+      "editions": [
+        {
+          "factoryCode": "11HC",
+          "code": "11HC",
+          "name": "420i",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41811.7,
+              "priceRetail": 41811.7
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41HC",
+          "code": "41HC",
+          "name": "430i xDrive",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48415.3,
+              "priceRetail": 48415.3
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61HC",
+          "code": "61HC",
+          "name": "M440i xDrive",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 187,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59297.19,
+              "priceRetail": 59297.19
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41FR",
+          "code": "41FR",
+          "name": "420d",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44237.42,
+              "priceRetail": 44237.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51FR",
+          "code": "51FR",
+          "name": "420d xDrive",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 140,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46625.9,
+              "priceRetail": 46625.9
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61FR",
+          "code": "61FR",
+          "name": "430d xDrive",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51985.62,
+              "priceRetail": 51985.62
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51HD",
+          "code": "51HD",
+          "name": "i4 eDrive35",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43266.13,
+              "priceRetail": 43266.13
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61HD",
+          "code": "61HD",
+          "name": "i4 eDrive40",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48306.45,
+              "priceRetail": 48306.45
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41HD",
+          "code": "41HD",
+          "name": "i4 xDrive40",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51008.06,
+              "priceRetail": 51008.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71HD",
+          "code": "71HD",
+          "name": "i4 M60 xDrive",
+          "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 61169.36,
+              "priceRetail": 61169.36
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g26-lci-gran-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 5 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "11FJ",
+          "code": "11FJ",
+          "name": "520i",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 48316.56,
+              "priceRetail": 48316.56
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71FJ",
+          "code": "71FJ",
+          "name": "530e",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 14,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 54423.07,
+              "priceRetail": 54423.07
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81FJ",
+          "code": "81FJ",
+          "name": "530e xDrive",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 18,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56634.7,
+              "priceRetail": 56634.7
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11FK",
+          "code": "11FK",
+          "name": "550e xDrive",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 19,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 64489.81,
+              "priceRetail": 64489.81
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11FL",
+          "code": "11FL",
+          "name": "520d",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 134,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50115.11,
+              "priceRetail": 50115.11
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21FL",
+          "code": "21FL",
+          "name": "520d xDrive",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 145,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 52273.39,
+              "priceRetail": 52273.39
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31FL",
+          "code": "31FL",
+          "name": "540d xDrive",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57884.9,
+              "priceRetail": 57884.9
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61HG",
+          "code": "61HG",
+          "name": "i5 eDrive40",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 60564.52,
+              "priceRetail": 60564.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31HG",
+          "code": "31HG",
+          "name": "i5 xDrive40",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 65161.29,
+              "priceRetail": 65161.29
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41HG",
+          "code": "41HG",
+          "name": "i5 M60 xDrive",
+          "image": "images/bmw/models/bmw-g60-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 86935.48,
+              "priceRetail": 86935.48
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g60-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ5 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "81FK",
+          "code": "81FK",
+          "name": "M5",
+          "image": "images/bmw/models/bmw-g90-sedan.png",
+          "co2": 38,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 116043.66,
+              "priceRetail": 116043.66
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g90-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 5 Touring": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "11GV",
+          "code": "11GV",
+          "name": "520i",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 141,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50007.2,
+              "priceRetail": 50007.2
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21GV",
+          "code": "21GV",
+          "name": "530e",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 17,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56138.99,
+              "priceRetail": 56138.99
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31GV",
+          "code": "31GV",
+          "name": "530e xDrive",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 18,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 58350.62,
+              "priceRetail": 58350.62
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41GV",
+          "code": "41GV",
+          "name": "550e xDrive",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 26,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66205.73,
+              "priceRetail": 66205.73
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11GW",
+          "code": "11GW",
+          "name": "520d",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 142,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51805.76,
+              "priceRetail": 51805.76
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21GW",
+          "code": "21GW",
+          "name": "520d xDrive",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 151,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 53964.04,
+              "priceRetail": 53964.04
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31GW",
+          "code": "31GW",
+          "name": "540d xDrive",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 159,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59559.47,
+              "priceRetail": 59559.47
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11HH",
+          "code": "11HH",
+          "name": "i5 eDrive40",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 62258.06,
+              "priceRetail": 62258.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21HH",
+          "code": "21HH",
+          "name": "i5 xDrive40",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66854.84,
+              "priceRetail": 66854.84
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31HH",
+          "code": "31HH",
+          "name": "i5 M60 xDrive",
+          "image": "images/bmw/models/bmw-g61-wagon.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 88629.03,
+              "priceRetail": 88629.03
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g61-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Μ5 Touring": {
+      "category": "Wagon",
+      "editions": [
+        {
+          "factoryCode": "81GV",
+          "code": "81GV",
+          "name": "M5 Touring",
+          "image": "images/bmw/models/bmw-g99-wagon.png",
+          "co2": 40,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 117950.24,
+              "priceRetail": 117950.24
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Wagon",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g99-wagon.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 7 Sedan": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "21EJ",
+          "code": "21EJ",
+          "name": "740d xDrive",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 160,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 104434.89,
+              "priceRetail": 104434.89
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41EH",
+          "code": "41EH",
+          "name": "750e xDrive",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 23,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 114289.61,
+              "priceRetail": 114289.61
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51EH",
+          "code": "51EH",
+          "name": "M760e xDrive",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 25,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 134079.89,
+              "priceRetail": 134079.89
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41EJ",
+          "code": "41EJ",
+          "name": "i7 eDrive50",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 107419.35,
+              "priceRetail": 107419.35
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51EJ",
+          "code": "51EJ",
+          "name": "i7 xDrive60",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 130766.13,
+              "priceRetail": 130766.13
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81EH",
+          "code": "81EH",
+          "name": "i7 M70 xDrive",
+          "image": "images/bmw/models/bmw-g70-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 140322.58,
+              "priceRetail": 140322.58
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g70-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 8 Coupé1": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "AE21",
+          "code": "AE21",
+          "name": "840i",
+          "image": "images/bmw/models/bmw-g15-lci-coupe.png",
+          "co2": 186,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 87283.77,
+              "priceRetail": 87283.77
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "AE41",
+          "code": "AE41",
+          "name": "840i xDrive",
+          "image": "images/bmw/models/bmw-g15-lci-coupe.png",
+          "co2": 195,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 90315.02,
+              "priceRetail": 90315.02
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "BC41",
+          "code": "BC41",
+          "name": "M850i xDrive",
+          "image": "images/bmw/models/bmw-g15-lci-coupe.png",
+          "co2": 240,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 107161.47,
+              "priceRetail": 107161.47
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "BC61",
+          "code": "BC61",
+          "name": "840d xDrive",
+          "image": "images/bmw/models/bmw-g15-lci-coupe.png",
+          "co2": 170,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 93545.2,
+              "priceRetail": 93545.2
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g15-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "M8 Coupé1": {
+      "category": "Coupe",
+      "editions": [
+        {
+          "factoryCode": "AE01",
+          "code": "AE01",
+          "name": "M8",
+          "image": "images/bmw/models/bmw-f92-lci-coupe.png",
+          "co2": 259,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 132010.86,
+              "priceRetail": 132010.86
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f92-lci-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 8 Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "DZ21",
+          "code": "DZ21",
+          "name": "840i",
+          "image": "images/bmw/models/bmw-g14-lci-convertible.png",
+          "co2": 191,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 94127.52,
+              "priceRetail": 94127.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "DZ41",
+          "code": "DZ41",
+          "name": "840i xDrive",
+          "image": "images/bmw/models/bmw-g14-lci-convertible.png",
+          "co2": 200,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 97127.52,
+              "priceRetail": 97127.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "FY41",
+          "code": "FY41",
+          "name": "M850i xDrive",
+          "image": "images/bmw/models/bmw-g14-lci-convertible.png",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 113968.69,
+              "priceRetail": 113968.69
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "FY61",
+          "code": "FY61",
+          "name": "840d xDrive",
+          "image": "images/bmw/models/bmw-g14-lci-convertible.png",
+          "co2": 175,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 100377.94,
+              "priceRetail": 100377.94
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g14-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "M8 Cabrio": {
+      "category": "Convertible",
+      "editions": [
+        {
+          "factoryCode": "DZ01",
+          "code": "DZ01",
+          "name": "M8",
+          "image": "images/bmw/models/bmw-f91-lci-convertible.png",
+          "co2": 263,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 138850.03,
+              "priceRetail": 138850.03
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Convertible",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f91-lci-convertible.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Σειρά 8 Gran Coupé1": {
+      "category": "Gran Coupe",
+      "editions": [
+        {
+          "factoryCode": "GV21",
+          "code": "GV21",
+          "name": "840i",
+          "image": "images/bmw/models/bmw-g16-lci-gran-coupe.png",
+          "co2": 195,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 84721.27,
+              "priceRetail": 84721.27
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "GV41",
+          "code": "GV41",
+          "name": "840i xDrive",
+          "image": "images/bmw/models/bmw-g16-lci-gran-coupe.png",
+          "co2": 203,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 87721.27,
+              "priceRetail": 87721.27
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "GV81",
+          "code": "GV81",
+          "name": "M850i xDrive",
+          "image": "images/bmw/models/bmw-g16-lci-gran-coupe.png",
+          "co2": 244,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 104601.23,
+              "priceRetail": 104601.23
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "GW01",
+          "code": "GW01",
+          "name": "840d xDrive",
+          "image": "images/bmw/models/bmw-g16-lci-gran-coupe.png",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 90947.34,
+              "priceRetail": 90947.34
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g16-lci-gran-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "M8 Gran Coupé1": {
+      "category": "Gran Coupe",
+      "editions": [
+        {
+          "factoryCode": "GV01",
+          "code": "GV01",
+          "name": "M8",
+          "image": "images/bmw/models/bmw-f93-lci-gran-coupe.png",
+          "co2": 262,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 129431.42,
+              "priceRetail": 129431.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Gran Coupe",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f93-lci-gran-coupe.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X1": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "11EE",
+          "code": "11EE",
+          "name": "sDrive18i",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 144,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 27933.35,
+              "priceRetail": 27933.35
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31EE",
+          "code": "31EE",
+          "name": "sDrive20i",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 30231.11,
+              "priceRetail": 30231.11
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61EE",
+          "code": "61EE",
+          "name": "xDrive23i",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 143,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35187.06,
+              "priceRetail": 35187.06
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11EF",
+          "code": "11EF",
+          "name": "M35i xDrive",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 175,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42759.25,
+              "priceRetail": 42759.25
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1322.06
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11EG",
+          "code": "11EG",
+          "name": "sDrive18d",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 131,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 34266.25,
+              "priceRetail": 34266.25
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31EG",
+          "code": "31EG",
+          "name": "sDrive20d",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 117,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 36220.26,
+              "priceRetail": 36220.26
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41EG",
+          "code": "41EG",
+          "name": "xDrive20d",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38824.24,
+              "priceRetail": 38824.24
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51EG",
+          "code": "51EG",
+          "name": "xDrive23d",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 124,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 41732.02,
+              "priceRetail": 41732.02
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21EF",
+          "code": "21EF",
+          "name": "xDrive25e",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 17,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39185.7,
+              "priceRetail": 39185.7
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1663.24
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            },
+            {
+              "name": "xLine",
+              "price": 804.3
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31EF",
+          "code": "31EF",
+          "name": "xDrive30e",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 18,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 42434.52,
+              "priceRetail": 42434.52
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71EG",
+          "code": "71EG",
+          "name": "iX1 eDrive20",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 38669.35,
+              "priceRetail": 38669.35
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 170.59
+            },
+            {
+              "name": "BMW Head-Up Display",
+              "price": 818.82
+            },
+            {
+              "name": "Ασύρματη φόρτιση κινητού",
+              "price": 0.0
+            },
+            {
+              "name": "BMW Live Cockpit Professional",
+              "price": 0.0
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 597.06
+            },
+            {
+              "name": "Service Inclusive - 4 έτη",
+              "price": 540.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Επιπρόσθετο περιεχόμενο στο Πακέτο M Sport Pro",
+              "price": 0.0
+            },
+            {
+              "name": "Προετοιμασία για Driving Assistant Plus",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά τμήματα M Sport",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικά τμήματα M Sport",
+              "price": 0.0
+            },
+            {
+              "name": "Επιπρόσθετο περιεχόμενο στο xLine",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61EF",
+          "code": "61EF",
+          "name": "iX1 xDrive30",
+          "image": "images/bmw/models/bmw-u11-suv.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44919.35,
+              "priceRetail": 44919.35
+            }
+          ],
+          "extras": [
+            {
+              "name": "Black Sapphire μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Mineral White μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Fire Red",
+              "price": 844.41
+            },
+            {
+              "name": "M Portimao Blue μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Dune Grey",
+              "price": 844.41
+            },
+            {
+              "name": "Cape York Green μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "Night Dusk Blue",
+              "price": 844.41
+            },
+            {
+              "name": "Space Silver μεταλλικό",
+              "price": 844.41
+            },
+            {
+              "name": "BMW Individual Storm Bay μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Frozen Pure Grey μεταλλικό",
+              "price": 2362.65
+            },
+            {
+              "name": "BMW Individual Blue Bay Lagoon μεταλλικό",
+              "price": 1603.53
+            },
+            {
+              "name": "BMW Individual Special Χρώμα Αμαξώματος",
+              "price": 3360.0
+            },
+            {
+              "name": "Alpine White",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 0.0
+            },
+            {
+              "name": "Ράγες οροφής με φινίρισμα αλουμινίου",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά διακοσμητικά στοιχεία από αλουμίνιο σατινέ",
+              "price": 0.0
+            },
+            {
+              "name": "M Πίσω αεροτομή",
+              "price": 0.0
+            },
+            {
+              "name": "M Γυαλιστερό Shadow Line με εκτεταμένο περιεχόμενο",
+              "price": 213.23
+            },
+            {
+              "name": "M Σπορ Πακέτο",
+              "price": 3198.53
+            },
+            {
+              "name": "Πακέτο M Sport Pro",
+              "price": 1748.53
+            },
+            {
+              "name": "Πακέτο Comfort",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Travel",
+              "price": 1450.0
+            },
+            {
+              "name": "Πακέτο Premium",
+              "price": 1620.55
+            },
+            {
+              "name": "Πακέτο Innovation",
+              "price": 3497.06
+            },
+            {
+              "name": "Διαχωριστικό δίκτυ χώρου αποσκευών",
+              "price": 170.59
+            },
+            {
+              "name": "BMW Head-Up Display",
+              "price": 818.82
+            },
+            {
+              "name": "Ασύρματη φόρτιση κινητού",
+              "price": 0.0
+            },
+            {
+              "name": "BMW Live Cockpit Professional",
+              "price": 0.0
+            },
+            {
+              "name": "Ηχοσύστημα HiFi Harman Kardon",
+              "price": 597.06
+            },
+            {
+              "name": "Service Inclusive - 4 έτη",
+              "price": 540.0
+            },
+            {
+              "name": "Ενδείξεις ταμπλό στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Εγχειρίδιο κατόχου και βιβλίο Service στα Ελληνικά",
+              "price": 0.0
+            },
+            {
+              "name": "Επιπρόσθετο περιεχόμενο στο Πακέτο M Sport Pro",
+              "price": 0.0
+            },
+            {
+              "name": "Προετοιμασία για Driving Assistant Plus",
+              "price": 0.0
+            },
+            {
+              "name": "Εξωτερικά τμήματα M Sport",
+              "price": 0.0
+            },
+            {
+              "name": "Εσωτερικά τμήματα M Sport",
+              "price": 0.0
+            },
+            {
+              "name": "Επιπρόσθετο περιεχόμενο στο xLine",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-u11-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X2": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21GM",
+          "code": "21GM",
+          "name": "sDrive20i",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 128,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 31533.1,
+              "priceRetail": 31533.1
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81GM",
+          "code": "81GM",
+          "name": "M35i xDrive",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 175,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 44160.53,
+              "priceRetail": 44160.53
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31GN",
+          "code": "31GN",
+          "name": "sDrive18d",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 133,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 35305.21,
+              "priceRetail": 35305.21
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41GN",
+          "code": "41GN",
+          "name": "sDrive20d",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 118,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 37305.25,
+              "priceRetail": 37305.25
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51GN",
+          "code": "51GN",
+          "name": "xDrive20d",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 125,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39873.06,
+              "priceRetail": 39873.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51GM",
+          "code": "51GM",
+          "name": "iX2 eDrive20",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 39967.74,
+              "priceRetail": 39967.74
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71GM",
+          "code": "71GM",
+          "name": "iX2 xDrive30",
+          "image": "images/bmw/models/bmw-u10-suv.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 46169.35,
+              "priceRetail": 46169.35
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "electric",
+          "powertrain": "electric",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-u10-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X3": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "31GP",
+          "code": "31GP",
+          "name": "20 xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49719.42,
+              "priceRetail": 49719.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "35GP",
+          "code": "35GP",
+          "name": "20 xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49719.42,
+              "priceRetail": 49719.42
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "71GP",
+          "code": "71GP",
+          "name": "M50 xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 177,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 69452.68,
+              "priceRetail": 69452.68
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "65GP",
+          "code": "65GP",
+          "name": "30e xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 22,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56497.43,
+              "priceRetail": 56497.43
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11GR",
+          "code": "11GR",
+          "name": "20d xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51158.28,
+              "priceRetail": 51158.28
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "15GR",
+          "code": "15GR",
+          "name": "20d xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 153,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51158.28,
+              "priceRetail": 51158.28
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "25GR",
+          "code": "25GR",
+          "name": "40d xDrive",
+          "image": "images/bmw/models/bmw-g45-suv.png",
+          "co2": 162,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57708.9,
+              "priceRetail": 57708.9
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g45-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "iX3": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "31HR",
+          "code": "31HR",
+          "name": "50 xDrive",
+          "image": "images/bmw/models/bmw-na5-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 56411.29,
+              "priceRetail": 56411.29
+            }
+          ],
+          "extras": [
+            {
+              "name": "Legal Emergency Call",
+              "price": 904.12
+            },
+            {
+              "name": "M Brooklyn Grey",
+              "price": 1074.71
+            },
+            {
+              "name": "M Sport package",
+              "price": 3411.76
+            },
+            {
+              "name": "M Sport package Pro",
+              "price": 5629.41
+            },
+            {
+              "name": "Innovation package",
+              "price": 1620.59
+            },
+            {
+              "name": "20\" aerodynamic wheels 1046 Bicolour",
+              "price": 511.76
+            },
+            {
+              "name": "20\" M aerodynamic wheels 1047 M Bicolour",
+              "price": 298.53
+            },
+            {
+              "name": "21\" aerodynamic wheels 1049 Bicolour",
+              "price": 1279.41
+            },
+            {
+              "name": "21\" M light alloy wheels Star-spoke style 1050 M Bicolour",
+              "price": 810.29
+            },
+            {
+              "name": "21\" M aerodynamic wheels 1051 M Bicolour",
+              "price": 1066.18
+            },
+            {
+              "name": "22\" BMW Individual aerodynamic wheels 1053 I Bicolour with",
+              "price": 2516.17
+            },
+            {
+              "name": "20\" M light-alloy wheels double-spoke style 1048 M Bicolour",
+              "price": 0.0
+            },
+            {
+              "name": "22\" M light alloy wheels Y-spoke style 1054 M bicolour with",
+              "price": 3155.88
+            },
+            {
+              "name": "Vivid Grey",
+              "price": 921.17
+            },
+            {
+              "name": "Castanea bicolour",
+              "price": 0.0
+            },
+            {
+              "name": "Black",
+              "price": 2635.59
+            },
+            {
+              "name": "Black bicolour",
+              "price": 1577.94
+            },
+            {
+              "name": "Adelaide Grey bicolour",
+              "price": 1407.35
+            },
+            {
+              "name": "M seat belts",
+              "price": 0.0
+            },
+            {
+              "name": "M Sport brake, Red high-gloss",
+              "price": 0.0
+            },
+            {
+              "name": "Parking Assistant Plus",
+              "price": 469.11
+            },
+            {
+              "name": "Parking Assistant Professional",
+              "price": 725.0
+            },
+            {
+              "name": "BMW Iconic Glow exterior package",
+              "price": 904.12
+            },
+            {
+              "name": "Ambient light",
+              "price": 0.0
+            },
+            {
+              "name": "Multifunctional seats for driver and front passenger",
+              "price": 733.53
+            },
+            {
+              "name": "M Sport seats for driver and front passenger",
+              "price": 1279.41
+            },
+            {
+              "name": "Steering-wheel heating",
+              "price": 230.29
+            },
+            {
+              "name": "Sports steering wheel",
+              "price": 0.0
+            },
+            {
+              "name": "M steering wheel",
+              "price": 85.29
+            },
+            {
+              "name": "Sun protection glazing",
+              "price": 494.71
+            },
+            {
+              "name": "Automatic air conditioning",
+              "price": 0.0
+            },
+            {
+              "name": "Trailer tow hitch",
+              "price": 980.89
+            },
+            {
+              "name": "Panoramic glass sunroof with climate comfort glazing",
+              "price": 1211.18
+            },
+            {
+              "name": "Luggage-compartment separating net",
+              "price": 170.59
+            },
+            {
+              "name": "BMW 3D Head-up Display",
+              "price": 0.0
+            },
+            {
+              "name": "BMW Digital Premium",
+              "price": 409.41
+            },
+            {
+              "name": "HiFi loudspeaker system Harman Kardon",
+              "price": 0.0
+            },
+            {
+              "name": "Language version English",
+              "price": 0.0
+            },
+            {
+              "name": "Greek/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Greek",
+              "price": 0.0
+            },
+            {
+              "name": "M Sport exterior parts",
+              "price": 0.0
+            },
+            {
+              "name": "M Sport interior parts",
+              "price": 0.0
+            },
+            {
+              "name": "EU-specific suplementary equipment",
+              "price": 0.0
+            },
+            {
+              "name": "Active Guard",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Romanian",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Polish",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Hungarian",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Czech",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Slovakian",
+              "price": 0.0
+            },
+            {
+              "name": "Language version Slovenian",
+              "price": 0.0
+            },
+            {
+              "name": "English/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Bulgarian / on-board literature",
+              "price": 0.0
+            },
+            {
+              "name": "Croatian / on-board literature",
+              "price": 0.0
+            },
+            {
+              "name": "Slovakian/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Czech/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Romanian/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Polish/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Hungarian/Owner's Handbook/Service Booklet",
+              "price": 0.0
+            },
+            {
+              "name": "Slovenian / on-board documentation",
+              "price": 0.0
+            },
+            {
+              "name": "COC additional contents",
+              "price": 0.0
+            },
+            {
+              "name": "Refrigerant",
+              "price": 0.0
+            },
+            {
+              "name": "VIN, visible from outside",
+              "price": 0.0
+            },
+            {
+              "name": "Decoding additional functions",
+              "price": 0.0
+            },
+            {
+              "name": "Control E",
+              "price": 0.0
+            },
+            {
+              "name": "Control of display",
+              "price": 0.0
+            },
+            {
+              "name": "Special control press car",
+              "price": 0.0
+            },
+            {
+              "name": "Special control exhibition/photo car",
+              "price": 0.0
+            },
+            {
+              "name": "Shipping protection package",
+              "price": 0.0
+            },
+            {
+              "name": "ZS INDIVIDUAL SERIES",
+              "price": 0.0
+            },
+            {
+              "name": "Special equipment on demand",
+              "price": 0.0
+            },
+            {
+              "name": "Later modification by ZS",
+              "price": 0.0
+            },
+            {
+              "name": "Preliminary series control",
+              "price": 0.0
+            },
+            {
+              "name": "internal",
+              "price": 0.0
+            },
+            {
+              "name": "Internal (HEA)",
+              "price": 0.0
+            },
+            {
+              "name": "Special identification 1",
+              "price": 0.0
+            },
+            {
+              "name": "Special identification 2",
+              "price": 0.0
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-na5-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X4": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "11DT",
+          "code": "11DT",
+          "name": "xDrive20i",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 170,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 50200.01,
+              "priceRetail": 50200.01
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31DT",
+          "code": "31DT",
+          "name": "xDrive30i",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 171,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 55751.61,
+              "priceRetail": 55751.61
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41DT",
+          "code": "41DT",
+          "name": "M40i",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 200,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66057.76,
+              "priceRetail": 66057.76
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31CA",
+          "code": "31CA",
+          "name": "xDrive20d",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 156,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 51913.68,
+              "priceRetail": 51913.68
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61CA",
+          "code": "61CA",
+          "name": "xDrive30d",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 170,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 57673.32,
+              "priceRetail": 57673.32
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "81CA",
+          "code": "81CA",
+          "name": "M40d",
+          "image": "images/bmw/models/bmw-g02-lci-suv.png",
+          "co2": 183,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 66269.02,
+              "priceRetail": 66269.02
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g02-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X4 M": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21EC",
+          "code": "21EC",
+          "name": "X4 M",
+          "image": "images/bmw/models/bmw-f98-lci-suv.png",
+          "co2": 243,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 86167.49,
+              "priceRetail": 86167.49
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f98-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X5": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21EU",
+          "code": "21EU",
+          "name": "xDrive40i",
+          "image": "images/bmw/models/bmw-g05-lci-suv.png",
+          "co2": 193,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 77135.22,
+              "priceRetail": 77135.22
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31EU",
+          "code": "31EU",
+          "name": "M60i xDrive",
+          "image": "images/bmw/models/bmw-g05-lci-suv.png",
+          "co2": 261,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 93537.85,
+              "priceRetail": 93537.85
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41EU",
+          "code": "41EU",
+          "name": "xDrive50e",
+          "image": "images/bmw/models/bmw-g05-lci-suv.png",
+          "co2": 19,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 87063.69,
+              "priceRetail": 87063.69
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11EV",
+          "code": "11EV",
+          "name": "xDrive30d",
+          "image": "images/bmw/models/bmw-g05-lci-suv.png",
+          "co2": 187,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 74459.16,
+              "priceRetail": 74459.16
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21EV",
+          "code": "21EV",
+          "name": "xDrive40d",
+          "image": "images/bmw/models/bmw-g05-lci-suv.png",
+          "co2": 191,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 78684.52,
+              "priceRetail": 78684.52
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g05-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X5 M": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "11ET",
+          "code": "11ET",
+          "name": "X5 M Competition",
+          "image": "images/bmw/models/bmw-f95-lci-suv.png",
+          "co2": 291,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 134450.02,
+              "priceRetail": 134450.02
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f95-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X6": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "31EX",
+          "code": "31EX",
+          "name": "xDrive40i",
+          "image": "images/bmw/models/bmw-g06-lci-suv.png",
+          "co2": 194,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 81114.09,
+              "priceRetail": 81114.09
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "41EX",
+          "code": "41EX",
+          "name": "M60i xDrive",
+          "image": "images/bmw/models/bmw-g06-lci-suv.png",
+          "co2": 259,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 98547.6,
+              "priceRetail": 98547.6
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "11EY",
+          "code": "11EY",
+          "name": "xDrive30d",
+          "image": "images/bmw/models/bmw-g06-lci-suv.png",
+          "co2": 187,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 78438.04,
+              "priceRetail": 78438.04
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21EY",
+          "code": "21EY",
+          "name": "xDrive40d",
+          "image": "images/bmw/models/bmw-g06-lci-suv.png",
+          "co2": 191,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 82628.17,
+              "priceRetail": 82628.17
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g06-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X6 M": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21ET",
+          "code": "21ET",
+          "name": "X6 M Competition",
+          "image": "images/bmw/models/bmw-f96-lci-suv.png",
+          "co2": 288,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 136983.8,
+              "priceRetail": 136983.8
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-f96-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "X7": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "21EM",
+          "code": "21EM",
+          "name": "xDrive40i",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
+          "co2": 220,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 93604.89,
+              "priceRetail": 93604.89
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31EM",
+          "code": "31EM",
+          "name": "M60i xDrive",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
+          "co2": 273,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 118470.28,
+              "priceRetail": 118470.28
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21EN",
+          "code": "21EN",
+          "name": "xDrive40d",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
+          "co2": 206,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 95318.32,
+              "priceRetail": 95318.32
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g07-lci-suv.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "XM1": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "11CS",
+          "code": "11CS",
+          "name": "XM 50e",
+          "image": "images/bmw/models/bmw-g09-sedan.png",
+          "co2": 34,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 106625.17,
+              "priceRetail": 106625.17
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "plug-in-hybrid",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "21CS",
+          "code": "21CS",
+          "name": "XM",
+          "image": "images/bmw/models/bmw-g09-sedan.png",
+          "co2": 39,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 145023.65,
+              "priceRetail": 145023.65
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "31CS",
+          "code": "31CS",
+          "name": "XM Label",
+          "image": "images/bmw/models/bmw-g09-sedan.png",
+          "co2": 40,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 166339.19,
+              "priceRetail": 166339.19
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g09-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "Z4": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "HF11",
+          "code": "HF11",
+          "name": "sDrive20i",
+          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "co2": 164,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 43256.06,
+              "priceRetail": 43256.06
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "HF31",
+          "code": "HF31",
+          "name": "sDrive30i",
+          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "co2": 166,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 49179.64,
+              "priceRetail": 49179.64
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "HF51",
+          "code": "HF51",
+          "name": "M40i",
+          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "co2": 179,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 59179.63,
+              "priceRetail": 59179.63
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    },
+    "iX": {
+      "category": "Sedan",
+      "editions": [
+        {
+          "factoryCode": "41CF",
+          "code": "41CF",
+          "name": "xDrive45",
+          "image": "images/bmw/models/bmw-i20-lci-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 73790.32,
+              "priceRetail": 73790.32
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "51CF",
+          "code": "51CF",
+          "name": "xDrive60",
+          "image": "images/bmw/models/bmw-i20-lci-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 88548.39,
+              "priceRetail": 88548.39
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        },
+        {
+          "factoryCode": "61CF",
+          "code": "61CF",
+          "name": "M70 xDrive",
+          "image": "images/bmw/models/bmw-i20-lci-sedan.png",
+          "co2": 0,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 110685.48,
+              "priceRetail": 110685.48
+            }
+          ],
+          "extras": [],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Sedan",
+          "euro": "euro6",
+          "euroSource": "EU regulatory minimum / model-year inference"
+        }
+      ],
+      "image": "images/bmw/models/bmw-i20-lci-sedan.png",
+      "imageSource": "Cartelonio local BMW Group model asset pack"
+    }
+  }
+}
