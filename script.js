@@ -195,6 +195,28 @@ function updateVehicleImageIdentity(hasImage = null) {
   if (hasImage !== null) overlay.classList.toggle("no-image", !hasImage);
 }
 
+function parseLocalizedNumber(value) {
+  if (typeof value === "number") return value;
+  const raw = String(value ?? "").trim();
+  if (!raw) return NaN;
+  // Greek display format: 48.600,35 -> 48600.35. Also accepts plain 48600.35.
+  if (raw.includes(",")) return Number(raw.replace(/\./g, "").replace(",", ".").replace(/[^0-9.-]/g, ""));
+  return Number(raw.replace(/[^0-9.-]/g, ""));
+}
+
+function formatGreekNumber(value, minDigits = 0, maxDigits = 2) {
+  const n = parseLocalizedNumber(value);
+  if (!Number.isFinite(n)) return "";
+  return n.toLocaleString("el-GR", { minimumFractionDigits:minDigits, maximumFractionDigits:maxDigits });
+}
+
+function formatPriceField() {
+  const input = document.getElementById("price");
+  if (!input || !input.value.trim()) return;
+  const formatted = formatGreekNumber(input.value, 0, 2);
+  if (formatted) input.value = formatted;
+}
+
 function setRegistrationTaxMiniResult(value) {
   const el = document.getElementById("registrationTaxMiniValue");
   if (!el) return;
@@ -467,7 +489,7 @@ function recalcPriceWithExtras() {
   const finalPrice  = currentBasePrice + extrasTotal;
 
   if (!isNaN(finalPrice)) {
-    priceInput.value = finalPrice.toFixed(2);
+    priceInput.value = formatGreekNumber(finalPrice, 0, 2);
   }
 
   if (!labelSpan) {
@@ -846,8 +868,9 @@ function updateCarSummary() {
   }
 
   const priceVal  = document.getElementById("price").value;
-  const priceText = priceVal
-    ? Number(priceVal).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})+" €"
+  const parsedPriceVal = parseLocalizedNumber(priceVal);
+  const priceText = priceVal && Number.isFinite(parsedPriceVal)
+    ? parsedPriceVal.toLocaleString("el-GR",{minimumFractionDigits:0,maximumFractionDigits:2})+" €"
     : "—";
 
   summaryEl.innerHTML = `
@@ -865,7 +888,7 @@ function updateCarSummary() {
 /* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
 
 function calculate(){
-  const price      = Number(document.getElementById("price").value);
+  const price      = parseLocalizedNumber(document.getElementById("price").value);
   const cat        = document.getElementById("category").value;
   const firstReg   = parseDate(document.getElementById("firstReg").value);
   const importDate = parseDate(document.getElementById("importDate").value);
@@ -1367,4 +1390,13 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("is-open");
     document.body.classList.add("cartelonio-onboarding-open");
   });
+})();
+
+
+/* 2026-09-18 — Greek thousands/decimal formatting for LTPF */
+(function initGreekPriceFormatting(){
+  const priceInput = document.getElementById("price");
+  if (!priceInput) return;
+  priceInput.addEventListener("blur", formatPriceField);
+  priceInput.addEventListener("change", formatPriceField);
 })();
