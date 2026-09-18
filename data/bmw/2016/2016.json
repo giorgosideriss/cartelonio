@@ -36984,7 +36984,7 @@
           "factoryCode": "1Z21",
           "code": "1Z21",
           "name": "i3 BEV",
-          "image": "images/bmw/models/bmw-i01-sedan.png",
+          "image": "images/bmw/models/bmw-i01-hatchback.png",
           "co2": 0,
           "variants": [
             {
@@ -37005,7 +37005,7 @@
           "factoryCode": "1Z41",
           "code": "1Z41",
           "name": "i3 REX",
-          "image": "images/bmw/models/bmw-i01-sedan.png",
+          "image": "images/bmw/models/bmw-i01-hatchback.png",
           "co2": 13,
           "variants": [
             {
@@ -37023,7 +37023,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-i01-sedan.png",
+      "image": "images/bmw/models/bmw-i01-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "i8": {
@@ -37033,7 +37033,7 @@
           "factoryCode": "2Z21",
           "code": "2Z21",
           "name": "i8",
-          "image": "images/bmw/models/bmw-i12-sedan.png",
+          "image": "images/bmw/models/bmw-i12-coupe.png",
           "co2": 49,
           "variants": [
             {
@@ -37051,7 +37051,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-i12-sedan.png",
+      "image": "images/bmw/models/bmw-i12-coupe.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     }
   }
