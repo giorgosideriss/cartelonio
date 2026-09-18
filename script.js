@@ -157,6 +157,48 @@ const BING_ENDPOINT = "https://api.bing.microsoft.com/v7.0/images/search";
  * Online αναζήτηση εικόνας για το επιλεγμένο αυτοκίνητο
  * και ενημέρωση του <img id="carImage">
  */
+
+function getSelectedVehicleIdentity() {
+  const brand = document.getElementById("brandSelect")?.value || "";
+  const year = document.getElementById("yearSelect")?.value || "";
+  const model = document.getElementById("modelSelect")?.value || "";
+  const verValue = document.getElementById("versionSelect")?.value || "";
+  let editionName = "";
+
+  const edIndex = parseInt(verValue, 10);
+  if (currentDataset && model && !isNaN(edIndex)) {
+    editionName = currentDataset.models?.[model]?.editions?.[edIndex]?.name || "";
+  }
+  return { brand, year, model, editionName };
+}
+
+function updateVehicleImageIdentity(hasImage = null) {
+  const overlay = document.getElementById("vehicleImageIdentity");
+  if (!overlay) return;
+
+  const { brand, year, editionName } = getSelectedVehicleIdentity();
+  const complete = Boolean(brand && year && editionName);
+
+  document.getElementById("vehicleImageBrand").textContent = brand;
+  document.getElementById("vehicleImageYear").textContent = year;
+  document.getElementById("vehicleImageEdition").textContent = editionName;
+
+  overlay.classList.toggle("is-visible", complete);
+  if (hasImage !== null) overlay.classList.toggle("no-image", !hasImage);
+}
+
+function setRegistrationTaxMiniResult(value) {
+  const el = document.getElementById("registrationTaxMiniValue");
+  if (!el) return;
+  if (typeof value === "number" && Number.isFinite(value)) {
+    el.classList.remove("is-empty");
+    el.innerHTML = `<strong>€${value.toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong>`;
+  } else {
+    el.classList.add("is-empty");
+    el.innerHTML = `<span class="registration-tax-mini-placeholder">Προσθέστε τα στοιχεία και κάντε υπολογισμό</span>`;
+  }
+}
+
 async function updateCarImage() {
   const brand    = document.getElementById("brandSelect").value;
   const model    = document.getElementById("modelSelect").value;
@@ -174,51 +216,70 @@ async function updateCarImage() {
     ? modelObj.editions[edIndex]
     : null;
 
-  // New format: image stored on the exact edition (used by Audi datasets).
+  let resolvedImage = "";
+
   if (edition && edition.image) {
     const imageValue = String(edition.image).trim();
     const isExplicitPath = /^(https?:)?\/\//i.test(imageValue) ||
       imageValue.startsWith("/") || imageValue.startsWith("./") ||
       imageValue.startsWith("../") || imageValue.includes("/");
-    carImage.src = isExplicitPath
-      ? imageValue
-      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
-    carImage.alt = `${brand} ${model}${edition.name ? " - " + edition.name : ""}`;
-    return;
-  }
-
-  // Legacy format: image stored at model level.
-  if (modelObj && modelObj.image) {
+    resolvedImage = isExplicitPath ? imageValue : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+  } else if (modelObj && modelObj.image) {
     const imageValue = String(modelObj.image).trim();
     const isExplicitPath = /^(https?:)?\/\//i.test(imageValue) ||
       imageValue.startsWith("/") || imageValue.startsWith("./") ||
       imageValue.startsWith("../") || imageValue.includes("/");
-    carImage.src = isExplicitPath
-      ? imageValue
-      : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
-    carImage.alt = `${brand} ${model}`;
+    resolvedImage = isExplicitPath ? imageValue : `images/cars/${slugifyBrand(brand)}/${imageValue}`;
+  }
+
+  if (resolvedImage) {
+    carImage.onload = () => {
+      carImage.classList.remove("image-unavailable");
+      updateVehicleImageIdentity(true);
+    };
+    carImage.onerror = () => {
+      carImage.removeAttribute("src");
+      carImage.classList.add("image-unavailable");
+      updateVehicleImageIdentity(false);
+    };
+    carImage.src = resolvedImage;
+    carImage.alt = `${brand} ${model}${edition?.name ? " - " + edition.name : ""}`;
+    updateVehicleImageIdentity(true);
     return;
   }
 
-  // Optional online fallback only when no local JSON image exists.
-  if (!brand || !model || !year) return;
-  if (!BING_API_KEY || BING_API_KEY === "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") return;
-
-  const query = `${brand} ${model} ${year} PNG`;
-  try {
-    const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
-      headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
-    });
-    if (!res.ok) throw new Error("Image API error");
-    const data = await res.json();
-    const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
-    if (imgUrl) {
-      carImage.src = imgUrl;
-      carImage.alt = `${brand} ${model}`;
+  if (brand && model && year && BING_API_KEY && BING_API_KEY !== "ΒΑΛΕ_ΤΟ_ΚΛΕΙΔΙ_ΣΟΥ_ΕΔΩ") {
+    const query = `${brand} ${model} ${year} PNG`;
+    try {
+      const res = await fetch(`${BING_ENDPOINT}?q=${encodeURIComponent(query)}&count=1`, {
+        headers: { "Ocp-Apim-Subscription-Key": BING_API_KEY }
+      });
+      if (!res.ok) throw new Error("Image API error");
+      const data = await res.json();
+      const imgUrl = data.value && data.value[0] ? data.value[0].contentUrl : null;
+      if (imgUrl) {
+        carImage.onload = () => {
+          carImage.classList.remove("image-unavailable");
+          updateVehicleImageIdentity(true);
+        };
+        carImage.onerror = () => {
+          carImage.removeAttribute("src");
+          carImage.classList.add("image-unavailable");
+          updateVehicleImageIdentity(false);
+        };
+        carImage.src = imgUrl;
+        carImage.alt = `${brand} ${model}`;
+        updateVehicleImageIdentity(true);
+        return;
+      }
+    } catch (err) {
+      console.warn("Image search failed:", err);
     }
-  } catch (err) {
-    console.warn("Image search failed:", err);
   }
+
+  carImage.removeAttribute("src");
+  carImage.classList.add("image-unavailable");
+  updateVehicleImageIdentity(false);
 }
 
 // Τρέχον σετ δεδομένων
@@ -832,6 +893,7 @@ function calculate(){
   document.querySelector('.required-field-wrap[data-field="co2"]')?.classList.toggle("has-warning", validation.co2);
 
   if (Object.values(validation).some(Boolean)) {
+    setRegistrationTaxMiniResult(null);
     document.getElementById("results").innerHTML = `<p><strong>Έλεγχος στοιχείων:</strong> Συμπλήρωσε τα πεδία που επισημαίνονται με κόκκινο.</p>`;
     return;
   }
@@ -869,6 +931,8 @@ function calculate(){
   const fmtPct = x => `${(x*100).toFixed(1).replace(".0","")}%`;
   const fmtEur = x => x.toLocaleString("el-GR", {minimumFractionDigits:2, maximumFractionDigits:2});
   const powerLabel = ({ice:"Συμβατικό / μη υβριδικό", hybrid:"Υβριδικό", electric:"Αμιγώς ηλεκτρικό", hydrogen:"Κυψέλες υδρογόνου"})[powertrain] || powertrain;
+
+  setRegistrationTaxMiniResult(tax);
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία κατά την εισαγωγή:</strong> ${exactMonths} πλήρεις μήνες (${exactYears.toFixed(2)} έτη — επίσημος πίνακας ${Math.min(exactMonths,192)} μηνών)</p>
@@ -1124,6 +1188,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const registrationTaxDetailsBtn = document.getElementById("registrationTaxDetailsBtn");
+  if (registrationTaxDetailsBtn) {
+    registrationTaxDetailsBtn.addEventListener("click", () => {
+      document.getElementById("resultCard")?.scrollIntoView({ behavior:"smooth", block:"start" });
+    });
+  }
+
   // Κουμπιά υπολογισμού / reset
   document.getElementById("calcBtn").addEventListener("click", () => {
     calculate();
@@ -1140,6 +1211,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadExtras([]);
     document.getElementById("results").innerHTML = 
       "<p>Συμπληρώστε τα πεδία και πατήστε <strong>Υπολόγισε</strong>.</p>";
+    setRegistrationTaxMiniResult(null);
     updateCarSummary();
   });
 

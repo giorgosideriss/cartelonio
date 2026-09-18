@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-<link href="style.css?v=20260915-5" rel="stylesheet"/>
+<link href="style.css?v=20260918-vehicle-summary-tax" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -127,8 +127,14 @@
 <div class="hero-card">
 <button type="button" id="randomSelectBtn" class="random-select-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης">Τυχαία Επιλογή</button>
 <div class="car-shadow"></div>
+<div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
+  <span class="vehicle-image-brand" id="vehicleImageBrand"></span>
+  <span class="vehicle-image-year" id="vehicleImageYear"></span>
+  <span class="vehicle-image-edition" id="vehicleImageEdition"></span>
+</div>
 <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
 </div>
+<div class="vehicle-value-cards">
 <div class="field-block dropdown-card price-dropdown-card">
 <label for="price">
   Τιμή Οχήματος - ΛΤΠΦ (€)
@@ -150,6 +156,16 @@
       <span class="field-warning-text">Παρακαλώ συμπληρώστε την Τιμή Οχήματος - ΛΤΠΦ.</span>
     </span>
   </div>
+</div>
+</div>
+<div class="field-block registration-tax-mini-card" id="registrationTaxMiniCard">
+  <label>Τέλος Ταξινόμησης</label>
+  <div class="registration-tax-mini-value is-empty" id="registrationTaxMiniValue">
+    <span class="registration-tax-mini-placeholder">Προσθέστε τα στοιχεία και κάντε υπολογισμό</span>
+  </div>
+  <button type="button" class="registration-tax-details-btn" id="registrationTaxDetailsBtn">
+    <span>Λεπτομέρειες</span><span aria-hidden="true">↓</span>
+  </button>
 </div>
 </div>
 </div>
@@ -483,7 +499,7 @@
 
   </section>
 </div>
-<script src="script.js?v=20260915-5"></script>
+<script src="script.js?v=20260918-vehicle-summary-tax"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>
