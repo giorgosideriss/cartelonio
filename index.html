@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-<link href="style.css?v=20260918-vehicle-summary-tax" rel="stylesheet"/>
+<link href="style.css?v=20260918-brand-logo-price-style" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -128,7 +128,7 @@
 <button type="button" id="randomSelectBtn" class="random-select-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης">Τυχαία Επιλογή</button>
 <div class="car-shadow"></div>
 <div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
-  <span class="vehicle-image-brand" id="vehicleImageBrand"></span>
+  <span class="vehicle-image-brand-row"><span class="vehicle-image-brand" id="vehicleImageBrand"></span><img class="vehicle-image-brand-logo" id="vehicleImageBrandLogo" alt="" aria-hidden="true"/></span>
   <span class="vehicle-image-year" id="vehicleImageYear"></span>
   <span class="vehicle-image-edition" id="vehicleImageEdition"></span>
 </div>
@@ -137,7 +137,7 @@
 <div class="vehicle-value-cards">
 <div class="field-block dropdown-card price-dropdown-card">
 <label for="price">
-  Τιμή Οχήματος - ΛΤΠΦ (€)
+  Τιμή Οχήματος ΛΤΠΦ
   <span class="tooltip">?
     <span class="tooltiptext">
       Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση.
@@ -499,7 +499,7 @@
 
   </section>
 </div>
-<script src="script.js?v=20260918-vehicle-summary-tax"></script>
+<script src="script.js?v=20260918-brand-logo-price-style"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>

@@ -180,6 +180,14 @@ function updateVehicleImageIdentity(hasImage = null) {
   const complete = Boolean(brand && year && editionName);
 
   document.getElementById("vehicleImageBrand").textContent = brand;
+  const brandLogo = document.getElementById("vehicleImageBrandLogo");
+  if (brandLogo) {
+    const logoUrl = BRAND_LOGOS[brand] || "";
+    brandLogo.src = logoUrl;
+    brandLogo.alt = brand ? `${brand} logo` : "";
+    brandLogo.style.display = logoUrl ? "block" : "none";
+    brandLogo.onerror = () => { brandLogo.style.display = "none"; };
+  }
   document.getElementById("vehicleImageYear").textContent = year;
   document.getElementById("vehicleImageEdition").textContent = editionName;
 
