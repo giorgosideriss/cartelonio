@@ -9,7 +9,7 @@
           "factoryCode": "XR11",
           "code": "XR11",
           "name": "One",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 122,
           "variants": [
             {
@@ -667,7 +667,7 @@
           "factoryCode": "XR31",
           "code": "XR31",
           "name": "Cooper",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 122,
           "variants": [
             {
@@ -1257,7 +1257,7 @@
           "factoryCode": "XR51",
           "code": "XR51",
           "name": "Cooper S",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 145,
           "variants": [
             {
@@ -1851,7 +1851,7 @@
           "factoryCode": "XY11",
           "code": "XY11",
           "name": "One D",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 99,
           "variants": [
             {
@@ -2509,7 +2509,7 @@
           "factoryCode": "XY31",
           "code": "XY31",
           "name": "Cooper D",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 102,
           "variants": [
             {
@@ -3127,7 +3127,7 @@
           "factoryCode": "XY51",
           "code": "XY51",
           "name": "Cooper SD",
-          "image": "images/mini/models/mini-f56-lci-sedan.png",
+          "image": "images/mini/models/mini-f56-lci-hatchback.png",
           "co2": 110,
           "variants": [
             {
@@ -3882,7 +3882,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/mini/models/mini-f56-lci-sedan.png",
+      "image": "images/mini/models/mini-f56-lci-hatchback.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "5θυρο": {
