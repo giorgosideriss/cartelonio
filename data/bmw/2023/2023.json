@@ -61410,7 +61410,7 @@
           "factoryCode": "41DU",
           "code": "41DU",
           "name": "iX3",
-          "image": "images/bmw/models/bmw-g08-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g08-lci-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -61505,7 +61505,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g08-lci-sedan.png",
+      "image": "images/bmw/models/bmw-g08-lci-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "X4": {
@@ -67573,7 +67573,7 @@
           "factoryCode": "21EM",
           "code": "21EM",
           "name": "xDrive40i",
-          "image": "images/bmw/models/bmw-g07-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
           "co2": 220,
           "variants": [
             {
@@ -67723,7 +67723,7 @@
           "factoryCode": "31EM",
           "code": "31EM",
           "name": "M60i xDrive",
-          "image": "images/bmw/models/bmw-g07-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
           "co2": 274,
           "variants": [
             {
@@ -67825,7 +67825,7 @@
           "factoryCode": "21EN",
           "code": "21EN",
           "name": "xDrive40d",
-          "image": "images/bmw/models/bmw-g07-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g07-lci-suv.png",
           "co2": 206,
           "variants": [
             {
@@ -67968,7 +67968,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g07-lci-sedan.png",
+      "image": "images/bmw/models/bmw-g07-lci-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "XM1": {
@@ -67978,7 +67978,7 @@
           "factoryCode": "21CS",
           "code": "21CS",
           "name": "XM",
-          "image": "images/bmw/models/bmw-g09-sedan.png",
+          "image": "images/bmw/models/bmw-g09-suv.png",
           "co2": 34,
           "variants": [
             {
@@ -68356,7 +68356,7 @@
           "factoryCode": "31CS",
           "code": "31CS",
           "name": "XM Red Label",
-          "image": "images/bmw/models/bmw-g09-sedan.png",
+          "image": "images/bmw/models/bmw-g09-suv.png",
           "co2": 40,
           "variants": [
             {
@@ -68699,7 +68699,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g09-sedan.png",
+      "image": "images/bmw/models/bmw-g09-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "Z4": {
@@ -68709,7 +68709,7 @@
           "factoryCode": "HF11",
           "code": "HF11",
           "name": "sDrive20i",
-          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g29-lci-convertible.png",
           "co2": 164,
           "variants": [
             {
@@ -68859,7 +68859,7 @@
           "factoryCode": "HF31",
           "code": "HF31",
           "name": "sDrive30i",
-          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g29-lci-convertible.png",
           "co2": 163,
           "variants": [
             {
@@ -68993,7 +68993,7 @@
           "factoryCode": "HF51",
           "code": "HF51",
           "name": "M40i",
-          "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+          "image": "images/bmw/models/bmw-g29-lci-convertible.png",
           "co2": 183,
           "variants": [
             {
@@ -69096,7 +69096,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-g29-lci-sedan.png",
+      "image": "images/bmw/models/bmw-g29-lci-convertible.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     },
     "iX": {
@@ -69106,7 +69106,7 @@
           "factoryCode": "11CF",
           "code": "11CF",
           "name": "xDrive40",
-          "image": "images/bmw/models/bmw-i20-sedan.png",
+          "image": "images/bmw/models/bmw-i20-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -69524,7 +69524,7 @@
           "factoryCode": "21CF",
           "code": "21CF",
           "name": "xDrive50",
-          "image": "images/bmw/models/bmw-i20-sedan.png",
+          "image": "images/bmw/models/bmw-i20-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -69634,7 +69634,7 @@
           "factoryCode": "31CF",
           "code": "31CF",
           "name": "M60",
-          "image": "images/bmw/models/bmw-i20-sedan.png",
+          "image": "images/bmw/models/bmw-i20-suv.png",
           "co2": 0,
           "variants": [
             {
@@ -70041,7 +70041,7 @@
           "euroSource": "EU regulatory minimum / model-year inference"
         }
       ],
-      "image": "images/bmw/models/bmw-i20-sedan.png",
+      "image": "images/bmw/models/bmw-i20-suv.png",
       "imageSource": "Cartelonio local BMW Group model asset pack"
     }
   }
