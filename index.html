@@ -503,6 +503,50 @@
 
   </section>
 </div>
+
+<!-- Critical onboarding controls live inline so the entry screen remains
+     usable even when an external application script fails to load. -->
+<script>
+(function () {
+  var modal = document.getElementById("cartelonioOnboarding");
+  if (!modal) return;
+
+  function showView(name) {
+    var views = modal.querySelectorAll("[data-onboarding-view]");
+    for (var i = 0; i < views.length; i += 1) {
+      var isTarget = views[i].getAttribute("data-onboarding-view") === name;
+      views[i].classList.toggle("is-active", isTarget);
+      views[i].removeAttribute("style");
+    }
+  }
+
+  function closeOnboarding() {
+    modal.setAttribute("aria-hidden", "true");
+    modal.classList.remove("is-open");
+    modal.style.display = "none";
+    document.body.classList.remove("cartelonio-onboarding-open");
+    document.body.style.overflow = "";
+  }
+
+  modal.addEventListener("click", function (event) {
+    var startButton = event.target.closest("[data-onboarding-start]");
+    if (startButton) {
+      event.preventDefault();
+      closeOnboarding();
+      return;
+    }
+
+    var navigationButton = event.target.closest("[data-onboarding-go]");
+    if (navigationButton) {
+      event.preventDefault();
+      showView(navigationButton.getAttribute("data-onboarding-go"));
+    }
+  });
+
+  window.closeCartelonioOnboarding = closeOnboarding;
+  document.body.classList.add("cartelonio-onboarding-open");
+}());
+</script>
 <script src="script.js?v=20260919-onboarding-close-fix"></script>
 <script src="brand-availability.js"></script>
 </body>
