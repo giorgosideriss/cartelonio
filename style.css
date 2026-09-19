@@ -4239,3 +4239,34 @@ body.cartelonio-onboarding-open{overflow:hidden}
   .vehicle-configurator-v2 .vehicle-image-brand{font-size:17px !important}
   .vehicle-configurator-v2 .vehicle-image-edition{flex-basis:130px !important;font-size:9px !important}
 }
+
+/* 2026-09-19 — Geometry correction after in-browser review. */
+@media(min-width:821px){
+  .vehicle-configurator-v2 .vehicle-image-identity{
+    top:54px !important;
+    bottom:25px !important;
+    min-height:0 !important;
+    overflow:hidden !important;
+    justify-content:center !important;
+  }
+  .vehicle-configurator-v2 .vehicle-identity-logo-wrap{margin-bottom:16px !important}
+  .vehicle-configurator-v2 .vehicle-image-brand{font-size:clamp(25px,2.5vw,36px) !important}
+  .vehicle-configurator-v2 .vehicle-identity-accent{margin:18px auto !important}
+  .vehicle-configurator-v2 .vehicle-image-year{margin:0 0 17px !important}
+  .vehicle-configurator-v2 .vehicle-image-edition{
+    display:block !important;
+    min-height:32px !important;
+    overflow:visible !important;
+    white-space:normal !important;
+    text-overflow:clip !important;
+  }
+}
+
+/* The selected transparent monochrome assets already contain the correct
+   grey tone; do not create or blend an image-sized tile behind them. */
+.vehicle-configurator-v2 img.vehicle-image-brand-logo{
+  background-color:transparent !important;
+  background-image:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
