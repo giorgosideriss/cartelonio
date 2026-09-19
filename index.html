@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
-<link href="style.css?v=20260919-identity-rail-fix-2" rel="stylesheet"/>
+<link href="style.css?v=20260918-brand-logo-price-style" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -131,9 +131,12 @@
   <div class="vehicle-identity-logo-wrap">
     <img class="vehicle-image-brand-logo" id="vehicleImageBrandLogo" alt="" aria-hidden="true"/>
   </div>
+  <span class="vehicle-identity-kicker">Επιλεγμένο όχημα</span>
   <span class="vehicle-image-brand" id="vehicleImageBrand"></span>
   <span class="vehicle-identity-accent" aria-hidden="true"></span>
+  <span class="vehicle-identity-label vehicle-identity-year-label">Χρονολογία</span>
   <span class="vehicle-image-year" id="vehicleImageYear"></span>
+  <span class="vehicle-identity-label vehicle-identity-edition-label">Έκδοση</span>
   <span class="vehicle-image-edition" id="vehicleImageEdition"></span>
 </div>
 <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
@@ -503,51 +506,7 @@
 
   </section>
 </div>
-
-<!-- Critical onboarding controls live inline so the entry screen remains
-     usable even when an external application script fails to load. -->
-<script>
-(function () {
-  var modal = document.getElementById("cartelonioOnboarding");
-  if (!modal) return;
-
-  function showView(name) {
-    var views = modal.querySelectorAll("[data-onboarding-view]");
-    for (var i = 0; i < views.length; i += 1) {
-      var isTarget = views[i].getAttribute("data-onboarding-view") === name;
-      views[i].classList.toggle("is-active", isTarget);
-      views[i].removeAttribute("style");
-    }
-  }
-
-  function closeOnboarding() {
-    modal.setAttribute("aria-hidden", "true");
-    modal.classList.remove("is-open");
-    modal.style.display = "none";
-    document.body.classList.remove("cartelonio-onboarding-open");
-    document.body.style.overflow = "";
-  }
-
-  modal.addEventListener("click", function (event) {
-    var startButton = event.target.closest("[data-onboarding-start]");
-    if (startButton) {
-      event.preventDefault();
-      closeOnboarding();
-      return;
-    }
-
-    var navigationButton = event.target.closest("[data-onboarding-go]");
-    if (navigationButton) {
-      event.preventDefault();
-      showView(navigationButton.getAttribute("data-onboarding-go"));
-    }
-  });
-
-  window.closeCartelonioOnboarding = closeOnboarding;
-  document.body.classList.add("cartelonio-onboarding-open");
-}());
-</script>
-<script src="script.js?v=20260919-onboarding-close-fix"></script>
+<script src="script.js?v=20260918-brand-logo-price-style"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>
