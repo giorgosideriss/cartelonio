@@ -196,12 +196,29 @@ function updateVehicleImageIdentity(hasImage = null) {
 }
 
 function parseLocalizedNumber(value) {
+  // Keep source JSON numbers as numbers. The input field, however, is
+  // displayed with Greek thousands separators and must be parsed accordingly.
   if (typeof value === "number") return value;
-  const raw = String(value ?? "").trim();
+  const raw = String(value ?? "").trim().replace(/[\s\u00a0\u202f€]/g, "");
   if (!raw) return NaN;
-  // Greek display format: 48.600,35 -> 48600.35. Also accepts plain 48600.35.
-  if (raw.includes(",")) return Number(raw.replace(/\./g, "").replace(",", ".").replace(/[^0-9.-]/g, ""));
-  return Number(raw.replace(/[^0-9.-]/g, ""));
+  if (!/^[+-]?[\d.,]+$/.test(raw)) return NaN;
+
+  if (raw.includes(",")) {
+    // 184.787,35 or 48600,35; also accept 48,600.35 if pasted.
+    if (/^[+-]?\d{1,3}(?:,\d{3})+\.\d{1,2}$/.test(raw)) {
+      return Number(raw.replace(/,/g, ""));
+    }
+    if (!/^[+-]?(?:\d{1,3}(?:\.\d{3})+|\d+)(?:,\d+)?$/.test(raw)) return NaN;
+    return Number(raw.replace(/\./g, "").replace(",", "."));
+  }
+  // A dot followed by exactly three digits is a Greek thousands separator:
+  // 184.787 -> 184787; 1.234.567 -> 1234567.
+  if (/^[+-]?\d{1,3}(?:\.\d{3})+$/.test(raw)) {
+    return Number(raw.replace(/\./g, ""));
+  }
+  // Unformatted decimal input (e.g. 48600.35) remains supported.
+  if (/^[+-]?\d+(?:\.\d+)?$/.test(raw)) return Number(raw);
+  return NaN;
 }
 
 function formatGreekNumber(value, minDigits = 0, maxDigits = 2) {
