@@ -3870,4 +3870,113 @@ body.cartelonio-onboarding-open{overflow:hidden}
     transform:translateY(10px) !important;
   }
 }
+
+/* =========================================================
+   2026-09-19 — Side Identity Rail
+   Isolated vehicle-preview component; no controls are affected.
+   ========================================================= */
+.vehicle-configurator-v2 .vehicle-image-identity{
+  position:absolute !important;z-index:12 !important;
+  left:0 !important;top:54px !important;bottom:25px !important;
+  width:clamp(150px,28%,210px) !important;max-width:none !important;min-height:0 !important;
+  box-sizing:border-box !important;display:flex !important;flex-direction:column !important;
+  align-items:center !important;justify-content:center !important;gap:0 !important;
+  padding:24px 20px !important;overflow:hidden !important;
+  border:0 !important;border-radius:22px !important;
+  background:radial-gradient(circle at 50% 18%,rgba(255,255,255,.05),transparent 48%),linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01)),rgba(13,20,16,.30) !important;
+  box-shadow:0 22px 46px rgba(0,0,0,.16),0 0 34px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.025) !important;
+  backdrop-filter:blur(15px) saturate(110%) !important;-webkit-backdrop-filter:blur(15px) saturate(110%) !important;
+  pointer-events:none !important;text-align:center !important;text-shadow:none !important;
+  opacity:0 !important;transform:translateX(-7px) !important;
+  transition:opacity .24s ease,transform .24s ease !important;
+}
+.vehicle-configurator-v2 .vehicle-image-identity::before{display:none !important}
+.vehicle-configurator-v2 .vehicle-image-identity.is-visible{opacity:1 !important;transform:none !important}
+.vehicle-configurator-v2 .vehicle-identity-logo-wrap{
+  display:flex !important;align-items:center !important;justify-content:center !important;
+  width:100% !important;height:34px !important;margin:0 0 16px !important;
+}
+.vehicle-configurator-v2 img.vehicle-image-brand-logo{
+  display:block !important;width:auto !important;height:29px !important;
+  min-width:0 !important;min-height:0 !important;max-width:88px !important;max-height:29px !important;
+  margin:0 auto !important;padding:0 !important;border:0 !important;border-radius:0 !important;
+  background:transparent !important;background-image:none !important;box-shadow:none !important;
+  filter:none !important;mix-blend-mode:normal !important;
+  object-fit:contain !important;object-position:center !important;
+}
+.vehicle-configurator-v2 .vehicle-image-brand{
+  display:block !important;width:100% !important;max-width:100% !important;
+  color:rgba(245,248,246,.96) !important;font-size:clamp(25px,2.5vw,36px) !important;
+  line-height:1 !important;font-weight:880 !important;letter-spacing:-.055em !important;
+  text-align:center !important;overflow-wrap:normal !important;text-shadow:none !important;
+}
+.vehicle-configurator-v2 .vehicle-identity-accent{
+  display:block !important;width:40px !important;height:2px !important;margin:18px auto !important;
+  border-radius:99px !important;background:#a9ed7c !important;box-shadow:0 0 18px rgba(169,237,124,.34) !important;
+}
+.vehicle-configurator-v2 .vehicle-image-year{
+  display:block !important;width:100% !important;margin:0 0 17px !important;
+  color:rgba(238,243,240,.88) !important;font-size:17px !important;line-height:1 !important;
+  font-weight:780 !important;letter-spacing:-.01em !important;text-align:center !important;
+}
+.vehicle-configurator-v2 .vehicle-image-edition{
+  display:block !important;width:100% !important;max-width:100% !important;min-height:32px !important;
+  margin:0 !important;overflow:visible !important;color:rgba(226,233,229,.70) !important;
+  font-size:12px !important;line-height:1.35 !important;font-weight:650 !important;
+  letter-spacing:-.012em !important;white-space:normal !important;text-align:center !important;text-overflow:clip !important;
+}
+@media(min-width:821px){
+  .vehicle-configurator-v2 .integrated-hero-wrap .hero-card #carImage{
+    width:76% !important;max-width:76% !important;margin-left:auto !important;margin-right:0 !important;
+    object-position:right center !important;
+  }
+  .vehicle-configurator-v2 .integrated-hero-wrap .car-shadow{left:29% !important;width:68% !important}
+}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image{
+  left:50% !important;top:50% !important;bottom:auto !important;
+  width:min(390px,86%) !important;max-width:86% !important;min-height:240px !important;
+  padding:30px !important;align-items:center !important;text-align:center !important;
+  transform:translate(-50%,-48%) !important;
+}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image.is-visible{transform:translate(-50%,-50%) !important}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image img.vehicle-image-brand-logo{
+  height:38px !important;max-width:105px !important;max-height:38px !important;
+}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-image-brand{font-size:clamp(34px,4.2vw,54px) !important}
+.vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-image-edition{max-width:90% !important;font-size:15px !important}
+@media(max-width:820px){
+  .vehicle-configurator-v2 .integrated-hero-wrap .hero-card{height:clamp(280px,64vw,350px) !important;padding:112px 4px 0 !important}
+  .vehicle-configurator-v2 .vehicle-image-identity{
+    left:0 !important;right:0 !important;top:40px !important;bottom:auto !important;
+    width:100% !important;max-width:100% !important;min-height:68px !important;
+    flex-direction:row !important;gap:12px !important;padding:12px 16px !important;border-radius:17px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-identity-logo-wrap{
+    flex:0 0 44px !important;width:44px !important;height:30px !important;margin:0 !important;
+  }
+  .vehicle-configurator-v2 img.vehicle-image-brand-logo{height:24px !important;max-width:44px !important;max-height:24px !important}
+  .vehicle-configurator-v2 .vehicle-image-brand{flex:0 1 auto !important;width:auto !important;font-size:20px !important}
+  .vehicle-configurator-v2 .vehicle-identity-accent{
+    flex:0 0 1px !important;width:1px !important;height:28px !important;margin:0 2px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-image-year{
+    flex:0 0 auto !important;width:auto !important;margin:0 !important;font-size:14px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-image-edition{
+    flex:0 1 190px !important;width:auto !important;min-height:0 !important;margin:0 !important;
+    font-size:10px !important;line-height:1.15 !important;text-align:left !important;
+  }
+  .vehicle-configurator-v2 .integrated-hero-wrap .hero-card #carImage{
+    width:100% !important;max-width:620px !important;height:100% !important;object-position:center bottom !important;
+  }
+  .vehicle-configurator-v2 .vehicle-image-identity.no-image{
+    left:50% !important;right:auto !important;top:54% !important;width:86% !important;min-height:190px !important;
+    flex-direction:column !important;gap:0 !important;padding:24px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-identity-logo-wrap{margin-bottom:10px !important}
+  .vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-identity-accent{
+    width:40px !important;height:2px !important;margin:15px auto !important;
+  }
+  .vehicle-configurator-v2 .vehicle-image-identity.no-image .vehicle-image-edition{text-align:center !important}
+}
 \n\n/* =========================================================\n   2026-09-18 — Exact amount baseline + Greek formatted LTPF\n   ========================================================= */\n.vehicle-configurator-v2 .vehicle-value-cards .price-dropdown-card,\n.vehicle-configurator-v2 .vehicle-value-cards .registration-tax-mini-card{\n  display:grid !important;\n  grid-template-rows:auto 28px auto !important;\n  align-content:start !important;\n}\n.vehicle-configurator-v2 .price-dropdown-card > label,\n.vehicle-configurator-v2 .registration-tax-mini-card > label{\n  min-height:20px !important;\n  margin:0 0 8px !important;\n  align-self:end !important;\n}\n.vehicle-configurator-v2 .price-dropdown-card .price-control-row,\n.vehicle-configurator-v2 .registration-tax-mini-value{\n  height:28px !important;\n  min-height:28px !important;\n  display:flex !important;\n  align-items:center !important;\n  align-self:start !important;\n  margin:0 !important;\n  padding:0 !important;\n}\n.vehicle-configurator-v2 .price-dropdown-card .price-leading-icon::after,\n.vehicle-configurator-v2 .price-dropdown-card input#price,\n.vehicle-configurator-v2 .registration-tax-mini-value strong{\n  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif !important;\n  font-size:18px !important;\n  line-height:28px !important;\n  font-weight:800 !important;\n  letter-spacing:-.03em !important;\n  font-variant-numeric:tabular-nums !important;\n}\n.vehicle-configurator-v2 .price-dropdown-card .price-leading-icon::after{\n  margin:0 !important;\n}\n.vehicle-configurator-v2 .price-dropdown-card input#price{\n  margin:0 !important;\n  width:155px !important;\n  color:#d7dcda !important;\n  caret-color:#d7dcda !important;\n}\n.vehicle-configurator-v2 .registration-tax-mini-value strong{\n  margin:0 !important;\n  padding:0 !important;\n}\n/* Reserve the third grid row on the LTPF card so the value itself remains\n   on exactly the same horizontal baseline as the tax value. */\n.vehicle-configurator-v2 .price-dropdown-card::after{\n  content:"";\n  display:block;\n  min-height:18px;\n}\n@media(max-width:820px){\n  .vehicle-configurator-v2 .price-dropdown-card .price-leading-icon::after,\n  .vehicle-configurator-v2 .price-dropdown-card input#price,\n  .vehicle-configurator-v2 .registration-tax-mini-value strong{\n    font-size:15px !important;\n    line-height:24px !important;\n  }\n  .vehicle-configurator-v2 .price-dropdown-card .price-control-row,\n  .vehicle-configurator-v2 .registration-tax-mini-value{height:24px !important;min-height:24px !important}\n  .vehicle-configurator-v2 .price-dropdown-card input#price{width:125px !important}\n}\n
