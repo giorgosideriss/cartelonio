@@ -128,8 +128,15 @@
 <button type="button" id="randomSelectBtn" class="random-select-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης">Τυχαία Επιλογή</button>
 <div class="car-shadow"></div>
 <div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
-  <span class="vehicle-image-brand-row"><span class="vehicle-image-brand" id="vehicleImageBrand"></span><img class="vehicle-image-brand-logo" id="vehicleImageBrandLogo" alt="" aria-hidden="true"/></span>
+  <div class="vehicle-identity-logo-wrap">
+    <img class="vehicle-image-brand-logo" id="vehicleImageBrandLogo" alt="" aria-hidden="true"/>
+  </div>
+  <span class="vehicle-identity-kicker">Επιλεγμένο όχημα</span>
+  <span class="vehicle-image-brand" id="vehicleImageBrand"></span>
+  <span class="vehicle-identity-accent" aria-hidden="true"></span>
+  <span class="vehicle-identity-label vehicle-identity-year-label">Χρονολογία</span>
   <span class="vehicle-image-year" id="vehicleImageYear"></span>
+  <span class="vehicle-identity-label vehicle-identity-edition-label">Έκδοση</span>
   <span class="vehicle-image-edition" id="vehicleImageEdition"></span>
 </div>
 <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
