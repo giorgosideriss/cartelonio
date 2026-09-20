@@ -4029,3 +4029,54 @@ body.cartelonio-onboarding-open{overflow:hidden}
   .account-button-icon{display:none}
   .auth-card{padding:29px 21px;border-radius:23px}
 }
+
+/* Header controls — unified sizing with How to use (2026-09-20) */
+.site-header .header-copy,
+.site-header .account-controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.site-header .header-copy > .how-to-use-btn,
+.site-header .account-controls > .token-badge,
+.site-header .account-controls > .account-button{
+  box-sizing:border-box;
+  height:42px;
+  min-height:42px;
+  max-height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  margin:0;
+  padding:0 15px;
+  border-radius:999px;
+  font-family:inherit;
+  font-size:12px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  vertical-align:middle;
+}
+.site-header .account-controls > .token-badge,
+.site-header .account-controls > .account-button{gap:9px}
+.site-header .account-button-icon,
+.site-header .how-to-use-icon{flex:0 0 22px}
+@media(max-width:720px){
+  .site-header .header-inner{align-items:center}
+  .site-header .header-copy{flex-direction:row;align-items:center;gap:6px}
+  .site-header .account-controls{gap:6px}
+  .site-header .header-copy > .how-to-use-btn,
+  .site-header .account-controls > .token-badge,
+  .site-header .account-controls > .account-button{
+    height:36px;min-height:36px;max-height:36px;
+    padding:0 10px;font-size:11px;
+  }
+  .site-header .account-button-icon{display:none}
+}
+@media(max-width:560px){
+  .site-header .header-inner{flex-wrap:wrap;justify-content:space-between;row-gap:6px;padding-block:8px}
+  .site-header .header-copy{width:100%;justify-content:space-between;flex-wrap:wrap}
+  .site-header .account-controls{flex:1 1 auto;min-width:0;flex-wrap:wrap}
+  .site-header .header-copy > .how-to-use-btn{margin-left:auto}
+}
