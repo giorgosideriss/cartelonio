@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260920-header-controls-aligned" rel="stylesheet"/>
+<link href="style.css?v=20260920-account-dropdown-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -85,10 +85,56 @@
     <span class="token-dot" aria-hidden="true"></span>
     <span id="tokenBadgeText">— tokens</span>
   </span>
-  <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal">
+  <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
     <span class="account-button-icon" aria-hidden="true">●</span>
     <span id="accountButtonText">Λογαριασμός</span>
   </button>
+<div class="auth-modal" id="authModal" hidden>
+  <section class="auth-card" role="dialog" aria-modal="false" aria-labelledby="authTitle">
+    <button class="auth-close" id="authClose" type="button" aria-label="Κλείσιμο">×</button>
+    <div class="auth-brand">CARTELONIO ACCOUNT</div>
+    <h2 id="authTitle">Ο λογαριασμός σου</h2>
+    <p class="auth-copy" id="authCopy">Συνδέσου ή δημιούργησε λογαριασμό για περισσότερους υπολογισμούς.</p>
+
+    <div class="auth-tabs" id="authTabs">
+      <button type="button" class="is-active" data-auth-view="signup">Εγγραφή</button>
+      <button type="button" data-auth-view="login">Σύνδεση</button>
+    </div>
+
+    <form class="auth-form is-active" id="signupForm" data-auth-panel="signup">
+      <label for="signupEmail">Email</label>
+      <input id="signupEmail" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+      <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης. Μετά την επιβεβαίωση θα ορίσεις τον κωδικό σου και θα πάρεις έναν ακόμη δωρεάν υπολογισμό.</p>
+      <button class="auth-primary" type="submit">Δημιουργία λογαριασμού</button>
+    </form>
+
+    <form class="auth-form" id="loginForm" data-auth-panel="login">
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" name="email" type="email" autocomplete="email" required>
+      <label for="loginPassword">Κωδικός</label>
+      <input id="loginPassword" name="password" type="password" autocomplete="current-password" minlength="8" required>
+      <button class="auth-primary" type="submit">Σύνδεση</button>
+      <button class="auth-link" id="forgotPasswordBtn" type="button">Ξέχασα τον κωδικό μου</button>
+    </form>
+
+    <form class="auth-form" id="setPasswordForm" data-auth-panel="password">
+      <label for="newPassword">Νέος κωδικός</label>
+      <input id="newPassword" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <label for="confirmPassword">Επιβεβαίωση κωδικού</label>
+      <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+      <button class="auth-primary" type="submit">Αποθήκευση κωδικού</button>
+    </form>
+
+    <div class="auth-user-panel" id="authUserPanel" hidden>
+      <span>Συνδεδεμένος ως</span>
+      <strong id="authUserEmail"></strong>
+      <div class="auth-balance"><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
+      <button class="auth-secondary" id="logoutBtn" type="button">Αποσύνδεση</button>
+    </div>
+
+    <p class="auth-status" id="authStatus" role="status" aria-live="polite"></p>
+  </section>
+</div>
 </div>
 <button class="how-to-use-btn" id="howToUseBtn" type="button" aria-haspopup="dialog" aria-controls="howToUseModal">
   <span>How to use</span>
@@ -440,52 +486,7 @@
 </div>
 </main>
 
-<div class="auth-modal" id="authModal" hidden>
-  <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
-    <button class="auth-close" id="authClose" type="button" aria-label="Κλείσιμο">×</button>
-    <div class="auth-brand">CARTELONIO ACCOUNT</div>
-    <h2 id="authTitle">Ο λογαριασμός σου</h2>
-    <p class="auth-copy" id="authCopy">Συνδέσου ή δημιούργησε λογαριασμό για περισσότερους υπολογισμούς.</p>
 
-    <div class="auth-tabs" id="authTabs">
-      <button type="button" class="is-active" data-auth-view="signup">Εγγραφή</button>
-      <button type="button" data-auth-view="login">Σύνδεση</button>
-    </div>
-
-    <form class="auth-form is-active" id="signupForm" data-auth-panel="signup">
-      <label for="signupEmail">Email</label>
-      <input id="signupEmail" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
-      <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης. Μετά την επιβεβαίωση θα ορίσεις τον κωδικό σου και θα πάρεις έναν ακόμη δωρεάν υπολογισμό.</p>
-      <button class="auth-primary" type="submit">Δημιουργία λογαριασμού</button>
-    </form>
-
-    <form class="auth-form" id="loginForm" data-auth-panel="login">
-      <label for="loginEmail">Email</label>
-      <input id="loginEmail" name="email" type="email" autocomplete="email" required>
-      <label for="loginPassword">Κωδικός</label>
-      <input id="loginPassword" name="password" type="password" autocomplete="current-password" minlength="8" required>
-      <button class="auth-primary" type="submit">Σύνδεση</button>
-      <button class="auth-link" id="forgotPasswordBtn" type="button">Ξέχασα τον κωδικό μου</button>
-    </form>
-
-    <form class="auth-form" id="setPasswordForm" data-auth-panel="password">
-      <label for="newPassword">Νέος κωδικός</label>
-      <input id="newPassword" name="password" type="password" autocomplete="new-password" minlength="8" required>
-      <label for="confirmPassword">Επιβεβαίωση κωδικού</label>
-      <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
-      <button class="auth-primary" type="submit">Αποθήκευση κωδικού</button>
-    </form>
-
-    <div class="auth-user-panel" id="authUserPanel" hidden>
-      <span>Συνδεδεμένος ως</span>
-      <strong id="authUserEmail"></strong>
-      <div class="auth-balance"><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
-      <button class="auth-secondary" id="logoutBtn" type="button">Αποσύνδεση</button>
-    </div>
-
-    <p class="auth-status" id="authStatus" role="status" aria-live="polite"></p>
-  </section>
-</div>
 
 
 <!-- CARTELONIO ONBOARDING -->
@@ -637,7 +638,7 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js?v=20260920-auth-tokens"></script>
+<script src="script.js?v=20260920-account-dropdown-1"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>

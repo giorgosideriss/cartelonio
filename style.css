@@ -4080,3 +4080,39 @@ body.cartelonio-onboarding-open{overflow:hidden}
   .site-header .account-controls{flex:1 1 auto;min-width:0;flex-wrap:wrap}
   .site-header .header-copy > .how-to-use-btn{margin-left:auto}
 }
+
+/* Account menu anchored directly below the header account button. */
+.site-header{overflow:visible!important}
+.site-header .header-inner,.site-header .header-copy,.site-header .account-controls{overflow:visible!important}
+.site-header .account-controls{position:relative!important}
+.site-header #authModal[hidden]{display:none!important}
+.site-header #authModal{
+  position:absolute!important;inset:auto 0 auto auto!important;
+  top:calc(100% + 9px)!important;z-index:10050!important;
+  display:block!important;width:min(380px,calc(100vw - 24px))!important;
+  height:auto!important;padding:0!important;margin:0!important;
+  background:transparent!important;backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;box-shadow:none!important;
+  animation:cartelonioAccountDrop .18s ease-out both;
+}
+.site-header #authModal .auth-card{
+  width:100%!important;max-height:min(72vh,640px)!important;
+  overflow-y:auto!important;overscroll-behavior:contain;
+  padding:23px!important;border:1px solid rgba(255,255,255,.16)!important;
+  border-radius:22px!important;background:linear-gradient(145deg,#262d27,#171c18)!important;
+  box-shadow:0 22px 55px rgba(0,0,0,.29),inset 0 1px rgba(255,255,255,.09)!important;
+}
+.site-header #authModal .auth-card h2{font-size:22px!important;margin-bottom:6px!important}
+.site-header #authModal .auth-copy{font-size:12px!important;line-height:1.45!important}
+.site-header #authModal .auth-brand{font-size:9px!important}
+.site-header #authModal .auth-user-panel strong#authUserEmail{overflow-wrap:anywhere}
+.site-header #authModal .auth-balance{margin-block:13px;padding:12px 14px}
+.site-header #authModal .auth-balance strong{font-size:22px}
+.site-header #authModal .auth-status:empty{display:none}
+.site-header .account-button[aria-expanded="true"]{border-color:rgba(158,243,111,.55);background:#273328}
+@keyframes cartelonioAccountDrop{from{opacity:0;transform:translateY(-7px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:560px){
+ .site-header #authModal{right:0!important;width:min(350px,calc(100vw - 24px))!important}
+ .site-header #authModal .auth-card{padding:19px!important;max-height:calc(100dvh - 125px)!important}
+}
+@media(prefers-reduced-motion:reduce){.site-header #authModal{animation:none!important}}

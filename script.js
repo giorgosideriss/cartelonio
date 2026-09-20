@@ -1464,14 +1464,14 @@ function openAuthModal(view) {
   setAuthStatus();
   showAuthView(view || (cartelonioSession?.user?.is_anonymous ? "signup" : "user"));
   modal.hidden = false;
-  document.body.style.overflow = "hidden";
+  authElement("accountButton")?.setAttribute("aria-expanded", "true");
 }
 
 function closeAuthModal() {
   const modal = authElement("authModal");
   if (!modal) return;
   modal.hidden = true;
-  document.body.style.overflow = "";
+  authElement("accountButton")?.setAttribute("aria-expanded", "false");
 }
 
 function renderAccountState() {
@@ -1586,7 +1586,14 @@ async function initializeCartelonioAuth() {
   }
 }
 
-authElement("accountButton")?.addEventListener("click", () => openAuthModal());
+authElement("accountButton")?.addEventListener("click", () => {
+  if (!authElement("authModal")?.hidden) closeAuthModal();
+  else openAuthModal();
+});
+document.addEventListener("pointerdown", event => {
+  const controls = authElement("accountControls");
+  if (controls && !controls.contains(event.target)) closeAuthModal();
+});
 authElement("authClose")?.addEventListener("click", closeAuthModal);
 authElement("authModal")?.addEventListener("click", event => {
   if (event.target === authElement("authModal")) closeAuthModal();
