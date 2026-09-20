@@ -1734,6 +1734,29 @@ const HISTORY_PAGE_SIZE = 20;
 let historyPage = 0;
 let historyBusy = false;
 let historyImageCache = new Map();
+let historyRecords = [];
+let historyVisible = HISTORY_PAGE_SIZE;
+let historyFilter = 'all';
+let historySearchTerm = '';
+let historySortMode = 'newest';
+const historyNormalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('el-GR');
+function historyFilteredRecords(){
+ const year = new Date().getFullYear();
+ const items = historyRecords.filter(r => (historyFilter !== 'favorites' || r.is_favorite) && (historyFilter !== 'year' || new Date(r.created_at).getFullYear() === year) && (!historySearchTerm || historyNormalize([r.brand,r.model,r.edition,r.year,r.variant_name,r.body_type,r.powertrain].join(' ')).includes(historySearchTerm)));
+ const modes={newest:(a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at),oldest:(a,b)=>Date.parse(a.created_at)-Date.parse(b.created_at),year_desc:(a,b)=>Number(b.year||0)-Number(a.year||0),year_asc:(a,b)=>Number(a.year||0)-Number(b.year||0),tax_desc:(a,b)=>Number(b.total_tax||0)-Number(a.total_tax||0),tax_asc:(a,b)=>Number(a.total_tax||0)-Number(b.total_tax||0)};
+ return items.sort(modes[historySortMode]||modes.newest);
+}
+function historyRenderList(){
+ const list=historyEl('historyList');if(!list)return;
+ const items=historyFilteredRecords();list.replaceChildren();
+ items.slice(0,historyVisible).forEach(record=>{const card=renderHistoryRecord(record);list.append(card);const img=card.querySelector('.history-car-image');if(img)void historyImage(record,img);});
+ historyEl('historyMore').hidden=items.length<=historyVisible;
+ historyEl('historyAllCount').textContent=`(${historyRecords.length})`;
+ historyEl('historyFavoriteCount').textContent=`(${historyRecords.filter(r=>r.is_favorite).length})`;
+ historyEl('historyYearCount').textContent=`(${historyRecords.filter(r=>new Date(r.created_at).getFullYear()===new Date().getFullYear()).length})`;
+ historyStatus(items.length?'':historyRecords.length?'Δεν βρέθηκαν υπολογισμοί για τα επιλεγμένα φίλτρα.':'Δεν υπάρχουν ακόμη αποθηκευμένοι υπολογισμοί.');
+}
+
 const historyEl = id => document.getElementById(id);
 const historyEuro = value => Number(value).toLocaleString('el-GR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const historyNumber = value => Number(value).toLocaleString('el-GR');
@@ -1844,7 +1867,11 @@ function renderHistoryRecord(record){
  const img=historyNode('img','history-car-image');img.alt='';img.loading='eager';
  visual.append(img,historyNode('span','history-car-fallback',(record.brand||'')+' '+(record.model||'')));
  const main=historyNode('div','history-entry-main');
- main.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'),
+ const titleRow=historyNode('div','history-title-row');
+ const logoPath=BRAND_LOGOS[record.brand];
+ if(logoPath){const logo=historyNode('img','history-brand-logo');logo.src=logoPath;logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
+ titleRow.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'));
+ main.append(titleRow,
   historyNode('span','history-car-version',[record.year,record.edition].filter(Boolean).join(' · ')),
   historyNode('span','history-entry-date',new Date(record.created_at).toLocaleString('el-GR',{dateStyle:'medium',timeStyle:'short'})));
  const money=historyNode('div','history-entry-money');
@@ -1852,6 +1879,9 @@ function renderHistoryRecord(record){
   historyNode('small','history-ltpf','ΛΤΠΦ €'+historyEuro(record.ltpf)));
  head.append(visual,main,money);article.append(head);
  const actions=historyNode('div','history-entry-actions');
+ const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
+ favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id);if(error)throw error;record.is_favorite=next;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
+ article.append(favorite);
  const details=historyNode('button','history-action','Λεπτομέρειες ↓');details.type='button';details.setAttribute('aria-expanded','false');
  const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
@@ -1868,23 +1898,25 @@ function renderHistoryRecord(record){
  restore.addEventListener('click',async()=>{restore.disabled=true;try{await restoreHistoryRecord(record);closeHistory();}catch(err){historyStatus('Δεν ήταν δυνατή η επαναφορά των στοιχείων.');console.warn(err);}finally{restore.disabled=false;}});
  remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
   const {error}=await cartelonioDb.from('calculation_history').delete().eq('id',record.id).eq('user_id',cartelonioSession.user.id);
-  if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{article.remove();historyStatus('Ο υπολογισμός διαγράφηκε.');}});
+  if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{historyRecords=historyRecords.filter(item=>item.id!==record.id);historyRenderList();}});
  return article;
 }
 async function loadHistory(reset=false){
  if(historyBusy || !historySignedIn())return;
  historyBusy=true;const more=historyEl('historyMore');more.disabled=true;
- if(reset){historyPage=0;historyEl('historyList').replaceChildren();}
+ if(reset){historyVisible=HISTORY_PAGE_SIZE;historyRecords=[];historyEl('historyList').replaceChildren();}
  historyStatus('Φόρτωση ιστορικού…');
- try{const {data,error}=await cartelonioDb.from('calculation_history').select('*').order('created_at',{ascending:false})
-  .range(historyPage*HISTORY_PAGE_SIZE,(historyPage+1)*HISTORY_PAGE_SIZE-1);
-  if(error)throw error;
-  data.forEach(item=>{const card=renderHistoryRecord(item);historyEl('historyList').append(card);
-   const img=card.querySelector('.history-car-image');if(img)void historyImage(item,img);});
-  historyPage++;
-  more.hidden=data.length<HISTORY_PAGE_SIZE;
-  historyStatus(historyPage===1 && !data.length?'Δεν υπάρχουν ακόμη αποθηκευμένοι υπολογισμοί.':'');
- }catch(error){console.warn('History loading failed:',error);historyStatus('Δεν ήταν δυνατή η φόρτωση. Έλεγξε ότι έχεις εκτελέσει το SQL του ιστορικού.');}
+ try{
+  // Fetch every page so searching, sorting and favorites apply to the entire history.
+  const batchSize=500;let offset=0;const rows=[];
+  while(true){
+   const {data,error}=await cartelonioDb.from('calculation_history').select('*').eq('user_id',cartelonioSession.user.id).order('created_at',{ascending:false}).range(offset,offset+batchSize-1);
+   if(error)throw error;
+   rows.push(...data);offset+=data.length;
+   if(data.length<batchSize)break;
+  }
+  historyRecords=rows;historyRenderList();
+ }catch(error){console.warn('History loading failed:',error);historyStatus('Δεν ήταν δυνατή η φόρτωση του ιστορικού.');}
  finally{historyBusy=false;more.disabled=false;}
 }
 function closeHistory(){historyEl('historyOverlay').hidden=true;document.body.classList.remove('history-open');}
@@ -1924,5 +1956,8 @@ async function restoreHistoryRecord(record){
 historyEl('openHistoryBtn')?.addEventListener('click',openHistory);
 historyEl('historyClose')?.addEventListener('click',closeHistory);
 historyEl('historyOverlay')?.addEventListener('click',event=>{if(event.target===historyEl('historyOverlay'))closeHistory();});
-historyEl('historyMore')?.addEventListener('click',()=>void loadHistory());
+historyEl('historyMore')?.addEventListener('click',()=>{historyVisible+=HISTORY_PAGE_SIZE;historyRenderList();});
+document.querySelectorAll('[data-history-filter]').forEach(button=>button.addEventListener('click',()=>{historyFilter=button.dataset.historyFilter;historyVisible=HISTORY_PAGE_SIZE;document.querySelectorAll('[data-history-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});historyRenderList();}));
+historyEl('historySort')?.addEventListener('change',event=>{historySortMode=event.target.value;historyVisible=HISTORY_PAGE_SIZE;historyRenderList();});
+historyEl('historySearch')?.addEventListener('input',event=>{historySearchTerm=historyNormalize(event.target.value.trim());historyVisible=HISTORY_PAGE_SIZE;historyRenderList();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyEl('historyOverlay')?.hidden)closeHistory();});
