@@ -904,7 +904,7 @@ function updateCarSummary() {
 
 /* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
 
-function calculate(){
+async function calculate(){
   const price      = parseLocalizedNumber(document.getElementById("price").value);
   const cat        = document.getElementById("category").value;
   const firstReg   = parseDate(document.getElementById("firstReg").value);
@@ -945,6 +945,10 @@ function calculate(){
     document.getElementById("results").innerHTML = `<p><strong>Έλεγχος στοιχείων:</strong> Συμπλήρωσε τα πεδία που επισημαίνονται με κόκκινο.</p>`;
     return;
   }
+
+  // Charge exactly one server-side token only after all required fields pass
+  // validation. If authorization fails, no result is revealed.
+  if (!(await cartelonioAuthorizeCalculation())) return;
 
   const exactMonths = completedMonths(firstReg, importDate);
   const exactYears = exactMonths / 12;
@@ -1138,7 +1142,7 @@ async function randomSelectAndCalculate(){
     updateCarSummary();
 
     // Αυτόματος υπολογισμός — δεν χρειάζεται πάτημα στο «Υπολόγισε».
-    calculate();
+    await calculate();
   }catch(err){
     console.error("Σφάλμα τυχαίας επιλογής:",err);
     document.getElementById("results").innerHTML='<p><strong>Δεν ήταν δυνατή η τυχαία επιλογή.</strong> Δοκιμάστε ξανά.</p>';
@@ -1417,3 +1421,280 @@ document.addEventListener("DOMContentLoaded", () => {
   priceInput.addEventListener("blur", formatPriceField);
   priceInput.addEventListener("change", formatPriceField);
 })();
+
+/* ================= SUPABASE AUTH + CALCULATION TOKENS ================= */
+const CARTELONIO_SUPABASE_URL = "https://ypntvpasjxsckdhffwaf.supabase.co";
+const CARTELONIO_SUPABASE_KEY = "sb_publishable_H3ehVDWPkwHN7wYg908y5Q_28zDi9dZ";
+const cartelonioDb = window.supabase?.createClient(
+  CARTELONIO_SUPABASE_URL,
+  CARTELONIO_SUPABASE_KEY,
+  { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } }
+);
+
+let cartelonioSession = null;
+let cartelonioProfile = null;
+let resolveAuthReady;
+const cartelonioAuthReady = new Promise(resolve => { resolveAuthReady = resolve; });
+
+function authElement(id) { return document.getElementById(id); }
+
+function setAuthStatus(message = "", type = "") {
+  const element = authElement("authStatus");
+  if (!element) return;
+  element.textContent = message;
+  element.className = `auth-status${type ? ` is-${type}` : ""}`;
+}
+
+function showAuthView(view) {
+  const tabs = authElement("authTabs");
+  const userPanel = authElement("authUserPanel");
+  document.querySelectorAll("[data-auth-panel]").forEach(panel => {
+    panel.classList.toggle("is-active", panel.dataset.authPanel === view);
+  });
+  document.querySelectorAll("[data-auth-view]").forEach(button => {
+    button.classList.toggle("is-active", button.dataset.authView === view);
+  });
+  if (tabs) tabs.hidden = view === "password" || view === "user";
+  if (userPanel) userPanel.hidden = view !== "user";
+}
+
+function openAuthModal(view) {
+  const modal = authElement("authModal");
+  if (!modal) return;
+  setAuthStatus();
+  showAuthView(view || (cartelonioSession?.user?.is_anonymous ? "signup" : "user"));
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeAuthModal() {
+  const modal = authElement("authModal");
+  if (!modal) return;
+  modal.hidden = true;
+  document.body.style.overflow = "";
+}
+
+function renderAccountState() {
+  const user = cartelonioSession?.user;
+  const balance = Number(cartelonioProfile?.token_balance || 0);
+  const isPermanent = Boolean(user && !user.is_anonymous);
+  const badge = authElement("tokenBadge");
+  const badgeText = authElement("tokenBadgeText");
+  if (badgeText) badgeText.textContent = `${balance} ${balance === 1 ? "token" : "tokens"}`;
+  badge?.classList.toggle("is-empty", balance < 1);
+  if (authElement("accountButtonText")) {
+    authElement("accountButtonText").textContent = isPermanent ? "Ο λογαριασμός μου" : "Εγγραφή / Σύνδεση";
+  }
+  if (authElement("authUserEmail")) authElement("authUserEmail").textContent = user?.email || "";
+  if (authElement("authTokenBalance")) authElement("authTokenBalance").textContent = String(balance);
+}
+
+async function loadCartelonioProfile() {
+  if (!cartelonioDb || !cartelonioSession?.user) return null;
+  const { data, error } = await cartelonioDb
+    .from("profiles")
+    .select("email,is_anonymous,token_balance,subscription_status,subscription_plan")
+    .eq("user_id", cartelonioSession.user.id)
+    .single();
+  if (!error) cartelonioProfile = data;
+  renderAccountState();
+  return cartelonioProfile;
+}
+
+async function claimVisitorTrial() {
+  if (!cartelonioDb || !cartelonioSession?.user?.is_anonymous) return;
+  const { error } = await cartelonioDb.functions.invoke("claim-trial", { body: {} });
+  if (error) console.warn("Visitor trial could not be checked:", error.message);
+  await loadCartelonioProfile();
+}
+
+async function ensureCartelonioSession() {
+  if (!cartelonioDb) throw new Error("Η υπηρεσία λογαριασμού δεν φορτώθηκε.");
+  let { data: { session }, error } = await cartelonioDb.auth.getSession();
+  if (error) throw error;
+  if (!session) {
+    const anonymousResult = await cartelonioDb.auth.signInAnonymously();
+    if (anonymousResult.error) throw anonymousResult.error;
+    session = anonymousResult.data.session;
+  }
+  cartelonioSession = session;
+  await loadCartelonioProfile();
+  await claimVisitorTrial();
+  return session;
+}
+
+async function cartelonioAuthorizeCalculation() {
+  const button = authElement("calcBtn");
+  try {
+    if (button) button.disabled = true;
+    await cartelonioAuthReady;
+    if (!cartelonioDb || !cartelonioSession) throw new Error("Δεν υπάρχει ενεργή σύνδεση.");
+
+    const requestId = crypto.randomUUID();
+    const { data, error } = await cartelonioDb.rpc("consume_calculation_token", {
+      p_request_id: requestId,
+    });
+    if (error) {
+      if (/insufficient_tokens/i.test(error.message || "")) {
+        await loadCartelonioProfile();
+        if (cartelonioSession.user.is_anonymous) {
+          openAuthModal("signup");
+          setAuthStatus("Ο δωρεάν υπολογισμός χρησιμοποιήθηκε. Δημιούργησε λογαριασμό για έναν ακόμη δωρεάν υπολογισμό.", "error");
+        } else {
+          openAuthModal("user");
+          setAuthStatus("Δεν υπάρχουν διαθέσιμοι υπολογισμοί. Τα πακέτα συνδρομής θα προστεθούν σύντομα.", "error");
+        }
+        return false;
+      }
+      throw error;
+    }
+    const result = Array.isArray(data) ? data[0] : data;
+    if (!cartelonioProfile) cartelonioProfile = {};
+    cartelonioProfile.token_balance = Number(result?.remaining_tokens || 0);
+    renderAccountState();
+    return true;
+  } catch (error) {
+    console.error("Calculation authorization failed:", error);
+    openAuthModal(cartelonioSession?.user?.is_anonymous ? "signup" : "user");
+    setAuthStatus("Δεν μπορέσαμε να επιβεβαιώσουμε το token. Έλεγξε τη σύνδεσή σου και δοκίμασε ξανά.", "error");
+    return false;
+  } finally {
+    if (button) button.disabled = false;
+  }
+}
+
+async function initializeCartelonioAuth() {
+  try {
+    await ensureCartelonioSession();
+
+    cartelonioDb.auth.onAuthStateChange((event, session) => {
+      cartelonioSession = session;
+      window.setTimeout(async () => {
+        if (session) await loadCartelonioProfile();
+        if ((event === "PASSWORD_RECOVERY") ||
+            (session?.user && !session.user.is_anonymous && localStorage.getItem("cartelonio_pending_password_setup") === "1")) {
+          openAuthModal("password");
+          setAuthStatus("Το email επιβεβαιώθηκε. Όρισε τώρα τον κωδικό του λογαριασμού σου.", "success");
+        }
+      }, 0);
+    });
+  } catch (error) {
+    console.error("Cartelonio auth initialization failed:", error);
+    setAuthStatus("Η υπηρεσία λογαριασμού δεν είναι προσωρινά διαθέσιμη.", "error");
+  } finally {
+    resolveAuthReady();
+  }
+}
+
+authElement("accountButton")?.addEventListener("click", () => openAuthModal());
+authElement("authClose")?.addEventListener("click", closeAuthModal);
+authElement("authModal")?.addEventListener("click", event => {
+  if (event.target === authElement("authModal")) closeAuthModal();
+});
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && !authElement("authModal")?.hidden) closeAuthModal();
+});
+
+document.querySelectorAll("[data-auth-view]").forEach(button => {
+  button.addEventListener("click", () => {
+    setAuthStatus();
+    showAuthView(button.dataset.authView);
+  });
+});
+
+authElement("signupForm")?.addEventListener("submit", async event => {
+  event.preventDefault();
+  const email = authElement("signupEmail").value.trim();
+  const submit = event.submitter;
+  try {
+    submit.disabled = true;
+    setAuthStatus("Αποστολή email επιβεβαίωσης…");
+    await cartelonioAuthReady;
+    const { error } = await cartelonioDb.auth.updateUser(
+      { email },
+      { emailRedirectTo: `${location.origin}/?account=verified` }
+    );
+    if (error) throw error;
+    localStorage.setItem("cartelonio_pending_password_setup", "1");
+    setAuthStatus("Σου στείλαμε email επιβεβαίωσης. Άνοιξε τον σύνδεσμο στο ίδιο πρόγραμμα περιήγησης.", "success");
+  } catch (error) {
+    setAuthStatus(error.message || "Η εγγραφή δεν ολοκληρώθηκε.", "error");
+  } finally {
+    submit.disabled = false;
+  }
+});
+
+authElement("loginForm")?.addEventListener("submit", async event => {
+  event.preventDefault();
+  const email = authElement("loginEmail").value.trim();
+  const password = authElement("loginPassword").value;
+  const submit = event.submitter;
+  try {
+    submit.disabled = true;
+    setAuthStatus("Σύνδεση…");
+    if (cartelonioSession?.user?.is_anonymous) await cartelonioDb.auth.signOut();
+    const { data, error } = await cartelonioDb.auth.signInWithPassword({ email, password });
+    if (error) throw error;
+    cartelonioSession = data.session;
+    await loadCartelonioProfile();
+    showAuthView("user");
+    setAuthStatus("Συνδέθηκες επιτυχώς.", "success");
+  } catch (error) {
+    setAuthStatus("Λανθασμένο email ή κωδικός.", "error");
+    if (!cartelonioSession) await ensureCartelonioSession().catch(() => {});
+  } finally {
+    submit.disabled = false;
+  }
+});
+
+authElement("setPasswordForm")?.addEventListener("submit", async event => {
+  event.preventDefault();
+  const password = authElement("newPassword").value;
+  const confirmation = authElement("confirmPassword").value;
+  const submit = event.submitter;
+  if (password !== confirmation) {
+    setAuthStatus("Οι δύο κωδικοί δεν ταιριάζουν.", "error");
+    return;
+  }
+  try {
+    submit.disabled = true;
+    const { error } = await cartelonioDb.auth.updateUser({ password });
+    if (error) throw error;
+    localStorage.removeItem("cartelonio_pending_password_setup");
+    await loadCartelonioProfile();
+    showAuthView("user");
+    setAuthStatus("Ο λογαριασμός σου είναι έτοιμος.", "success");
+    history.replaceState({}, document.title, location.pathname);
+  } catch (error) {
+    setAuthStatus(error.message || "Ο κωδικός δεν αποθηκεύτηκε.", "error");
+  } finally {
+    submit.disabled = false;
+  }
+});
+
+authElement("forgotPasswordBtn")?.addEventListener("click", async () => {
+  const email = authElement("loginEmail").value.trim();
+  if (!email) {
+    setAuthStatus("Γράψε πρώτα το email σου.", "error");
+    return;
+  }
+  const { error } = await cartelonioDb.auth.resetPasswordForEmail(email, {
+    redirectTo: `${location.origin}/?account=recovery`,
+  });
+  setAuthStatus(
+    error ? (error.message || "Δεν στάλθηκε το email.") : "Σου στείλαμε email επαναφοράς κωδικού.",
+    error ? "error" : "success"
+  );
+});
+
+authElement("logoutBtn")?.addEventListener("click", async event => {
+  event.currentTarget.disabled = true;
+  await cartelonioDb.auth.signOut();
+  cartelonioSession = null;
+  cartelonioProfile = null;
+  await ensureCartelonioSession().catch(() => {});
+  closeAuthModal();
+  event.currentTarget.disabled = false;
+});
+
+initializeCartelonioAuth();

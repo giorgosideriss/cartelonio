@@ -11,17 +11,12 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    wait_for_update: 500
+    analytics_storage: 'denied', ad_storage: 'denied',
+    ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500
   });
-
   (function () {
     const consentKey = 'cartelonioAnalyticsConsent';
     let analyticsLoaded = false;
-
     function loadAnalytics() {
       if (analyticsLoaded) return;
       analyticsLoaded = true;
@@ -32,7 +27,6 @@
       gtag('js', new Date());
       gtag('config', 'G-87E153QFQT', { anonymize_ip: true });
     }
-
     function clearAnalyticsCookies() {
       document.cookie.split(';').forEach(function (cookie) {
         const name = cookie.split('=')[0].trim();
@@ -42,59 +36,39 @@
         }
       });
     }
-
     window.addEventListener('DOMContentLoaded', function () {
       const banner = document.getElementById('cookieConsent');
       const settingsButton = document.getElementById('cookieSettingsButton');
       const acceptButton = document.getElementById('cookieAccept');
       const rejectButton = document.getElementById('cookieReject');
       const savedConsent = localStorage.getItem(consentKey);
-
-      function showBanner() {
-        banner.hidden = false;
-        settingsButton.hidden = true;
-      }
-
-      function hideBanner() {
-        banner.hidden = true;
-        settingsButton.hidden = false;
-      }
-
+      function showBanner(){ banner.hidden = false; settingsButton.hidden = true; }
+      function hideBanner(){ banner.hidden = true; settingsButton.hidden = false; }
       acceptButton.addEventListener('click', function () {
         localStorage.setItem(consentKey, 'granted');
         gtag('consent', 'update', { analytics_storage: 'granted' });
-        loadAnalytics();
-        hideBanner();
+        loadAnalytics(); hideBanner();
       });
-
       rejectButton.addEventListener('click', function () {
         localStorage.setItem(consentKey, 'denied');
         gtag('consent', 'update', { analytics_storage: 'denied' });
-        clearAnalyticsCookies();
-        hideBanner();
+        clearAnalyticsCookies(); hideBanner();
       });
-
       settingsButton.addEventListener('click', showBanner);
-
       if (savedConsent === 'granted') {
         gtag('consent', 'update', { analytics_storage: 'granted' });
-        loadAnalytics();
-        hideBanner();
-      } else if (savedConsent === 'denied') {
-        hideBanner();
-      } else {
-        showBanner();
-      }
+        loadAnalytics(); hideBanner();
+      } else if (savedConsent === 'denied') hideBanner();
+      else showBanner();
     });
   })();
 </script>
 <style>
   .cookie-consent[hidden],.cookie-settings-button[hidden]{display:none!important}
   .cookie-consent{position:fixed;z-index:100000;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(920px,calc(100% - 32px));padding:20px 22px;border:1px solid rgba(255,255,255,.13);border-radius:20px;background:rgba(17,22,19,.96);color:#f3f6f4;box-shadow:0 24px 70px rgba(0,0,0,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
-  .cookie-consent-copy{max-width:610px}.cookie-consent-copy strong{display:block;margin-bottom:7px;font-size:17px;font-weight:800;letter-spacing:-.02em}.cookie-consent-copy p{margin:0;color:rgba(236,242,238,.72);font-size:13px;line-height:1.55}
-  .cookie-consent-actions{display:flex;gap:10px;flex:0 0 auto}.cookie-choice{min-width:116px;padding:11px 17px;border:1px solid rgba(255,255,255,.2);border-radius:12px;font:inherit;font-size:13px;font-weight:780;cursor:pointer;transition:transform .18s ease,background .18s ease}.cookie-choice:hover{transform:translateY(-1px)}
-  .cookie-reject{background:transparent;color:#eef2ef}.cookie-reject:hover{background:rgba(255,255,255,.07)}.cookie-accept{border-color:#a9ed7c;background:#a9ed7c;color:#101510}.cookie-accept:hover{background:#b8f58f}
-  .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.cookie-settings-button:hover{color:#fff;background:rgba(27,34,30,.96)}
+  .cookie-consent-copy{max-width:610px}.cookie-consent-copy strong{display:block;margin-bottom:7px;font-size:17px;font-weight:800}.cookie-consent-copy p{margin:0;color:rgba(236,242,238,.72);font-size:13px;line-height:1.55}
+  .cookie-consent-actions{display:flex;gap:10px;flex:0 0 auto}.cookie-choice{min-width:116px;padding:11px 17px;border:1px solid rgba(255,255,255,.2);border-radius:12px;font:inherit;font-size:13px;font-weight:780;cursor:pointer}.cookie-reject{background:transparent;color:#eef2ef}.cookie-accept{border-color:#a9ed7c;background:#a9ed7c;color:#101510}
+  .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
 <link href="style.css?v=20260919-side-identity-rail" rel="stylesheet"/>
@@ -106,6 +80,16 @@
 <img class="site-logo" src="images/cartelonio-logo.png" alt="Cartelonio"/>
 </a>
 <div class="header-copy">
+<div class="account-controls" id="accountControls">
+  <span class="token-badge" id="tokenBadge" aria-live="polite" title="Διαθέσιμοι υπολογισμοί">
+    <span class="token-dot" aria-hidden="true"></span>
+    <span id="tokenBadgeText">— tokens</span>
+  </span>
+  <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal">
+    <span class="account-button-icon" aria-hidden="true">●</span>
+    <span id="accountButtonText">Λογαριασμός</span>
+  </button>
+</div>
 <button class="how-to-use-btn" id="howToUseBtn" type="button" aria-haspopup="dialog" aria-controls="howToUseModal">
   <span>How to use</span>
   <span class="how-to-use-icon" aria-hidden="true">?</span>
@@ -456,6 +440,53 @@
 </div>
 </main>
 
+<div class="auth-modal" id="authModal" hidden>
+  <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="auth-close" id="authClose" type="button" aria-label="Κλείσιμο">×</button>
+    <div class="auth-brand">CARTELONIO ACCOUNT</div>
+    <h2 id="authTitle">Ο λογαριασμός σου</h2>
+    <p class="auth-copy" id="authCopy">Συνδέσου ή δημιούργησε λογαριασμό για περισσότερους υπολογισμούς.</p>
+
+    <div class="auth-tabs" id="authTabs">
+      <button type="button" class="is-active" data-auth-view="signup">Εγγραφή</button>
+      <button type="button" data-auth-view="login">Σύνδεση</button>
+    </div>
+
+    <form class="auth-form is-active" id="signupForm" data-auth-panel="signup">
+      <label for="signupEmail">Email</label>
+      <input id="signupEmail" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+      <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης. Μετά την επιβεβαίωση θα ορίσεις τον κωδικό σου και θα πάρεις έναν ακόμη δωρεάν υπολογισμό.</p>
+      <button class="auth-primary" type="submit">Δημιουργία λογαριασμού</button>
+    </form>
+
+    <form class="auth-form" id="loginForm" data-auth-panel="login">
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" name="email" type="email" autocomplete="email" required>
+      <label for="loginPassword">Κωδικός</label>
+      <input id="loginPassword" name="password" type="password" autocomplete="current-password" minlength="8" required>
+      <button class="auth-primary" type="submit">Σύνδεση</button>
+      <button class="auth-link" id="forgotPasswordBtn" type="button">Ξέχασα τον κωδικό μου</button>
+    </form>
+
+    <form class="auth-form" id="setPasswordForm" data-auth-panel="password">
+      <label for="newPassword">Νέος κωδικός</label>
+      <input id="newPassword" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <label for="confirmPassword">Επιβεβαίωση κωδικού</label>
+      <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+      <button class="auth-primary" type="submit">Αποθήκευση κωδικού</button>
+    </form>
+
+    <div class="auth-user-panel" id="authUserPanel" hidden>
+      <span>Συνδεδεμένος ως</span>
+      <strong id="authUserEmail"></strong>
+      <div class="auth-balance"><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
+      <button class="auth-secondary" id="logoutBtn" type="button">Αποσύνδεση</button>
+    </div>
+
+    <p class="auth-status" id="authStatus" role="status" aria-live="polite"></p>
+  </section>
+</div>
+
 
 <!-- CARTELONIO ONBOARDING -->
 <div class="cartelonio-onboarding is-open" id="cartelonioOnboarding" aria-hidden="false">
@@ -605,7 +636,8 @@
   </div>
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
-<script src="script.js?v=20260919-side-identity-rail"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js?v=20260920-auth-tokens"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>
