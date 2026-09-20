@@ -4160,53 +4160,43 @@ body.cartelonio-onboarding-open{overflow:hidden}
   display: block !important;
 }
 
-/* Cartelonio History — Premium Dark. Presentation only; persistence and image loading unchanged. */
-.history-overlay{background:rgba(5,9,7,.79);backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px)}
-.history-dialog{width:min(960px,100%);background:radial-gradient(ellipse at 92% 0%,rgba(94,153,66,.15),transparent 46%),#151b17;color:#f3f7f1;border:1px solid rgba(194,229,180,.15);border-radius:26px;box-shadow:0 32px 110px rgba(0,0,0,.55)}
-.history-header{padding:30px 32px 24px;border-bottom:1px solid rgba(214,239,205,.12)}
-.history-header h2{font-size:34px;letter-spacing:-.045em;color:#f6f8f4}
-.history-header p{color:#98a59a;font-size:13px}
-.history-kicker{color:#a9df88;letter-spacing:.21em}
-.history-close{background:#29332b;color:#f1f5ed;border:1px solid rgba(255,255,255,.1);transition:background .2s ease,transform .2s ease}
-.history-close:hover{background:#3a483d;transform:rotate(90deg)}
-.history-content{padding:24px 30px 30px;scrollbar-color:#475849 transparent}
-.history-message{color:#b0c4ad}
-.history-list{gap:15px}
-.history-entry{padding:18px;border-radius:20px;background:linear-gradient(125deg,rgba(46,56,47,.92),rgba(28,36,30,.96));border:1px solid rgba(191,224,180,.14);box-shadow:0 12px 26px rgba(0,0,0,.13);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
-.history-entry:hover{border-color:rgba(160,224,124,.34);box-shadow:0 18px 34px rgba(0,0,0,.19)}
-.history-entry-head{grid-template-columns:142px minmax(0,1fr) auto;gap:20px}
-.history-visual{height:100px;border-radius:15px;background:radial-gradient(ellipse at 50% 80%,rgba(153,195,132,.17),transparent 72%),#202a22;border:1px solid rgba(219,242,208,.08)}
+/* Cartelonio History — Modern Cards: visual-only changes, image persistence untouched. */
+.history-overlay{background:rgba(15,22,17,.66);backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px)}
+.history-dialog{width:min(1200px,100%);max-height:min(94dvh,1040px);background:#fcfdfb;color:#202a24;border:1px solid #edf0e9;border-radius:24px;box-shadow:0 32px 100px rgba(12,25,14,.28)}
+.history-header{padding:27px 32px 22px;background:linear-gradient(115deg,#fff,#fbfdf9);border-bottom:1px solid #e7ece5}
+.history-kicker{color:#497b3a;letter-spacing:.22em;font-size:11px}
+.history-header h2{font-size:34px;letter-spacing:-.04em;color:#1b2520}
+.history-header p{font-size:14px;color:#778078}
+.history-close{width:42px;height:42px;background:#f0f4ef;color:#243028;border:1px solid #e8eee6;transition:background .2s}
+.history-close:hover{background:#e4ecdf}
+.history-content{padding:22px 28px 28px;background:#fcfdfb}
+.history-list{gap:13px}
+.history-entry{display:grid;grid-template-columns:minmax(0,1fr) 186px;align-items:center;column-gap:18px;padding:13px 16px;border:1px solid #e0e7dd;border-radius:19px;background:#fff;box-shadow:0 5px 18px rgba(25,50,24,.045);transition:box-shadow .2s,border-color .2s}
+.history-entry:hover{border-color:#c5d7be;box-shadow:0 10px 27px rgba(29,58,24,.085)}
+.history-entry-head{display:grid;grid-template-columns:174px minmax(0,1fr) minmax(150px,205px);gap:19px;align-items:center;min-width:0}
+.history-visual{height:116px;border-radius:14px;background:linear-gradient(145deg,#f2f6f0,#edf2ed);border:1px solid #eff2ed}
 .history-car-image{object-fit:contain;padding:3px}
-.history-car-fallback{color:#aab9a6}
+.history-car-fallback{color:#7d8a7a}
 .history-entry-main{gap:7px}
-.history-car-name{font-size:20px;font-weight:800;letter-spacing:-.035em;color:#f4f7f1}
-.history-car-version{color:#c2d0bf;font-size:13px}
-.history-entry-date{color:#879a89;font-size:11px}
-.history-entry-money{gap:5px;align-self:center}
-.history-entry-money small{color:#a2b2a0;font-size:11px}
-.history-entry-money strong{color:#b3ef8e;font-size:25px;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
-.history-entry-money .history-ltpf{color:#d0d9ce;font-size:12px}
-.history-entry-actions{margin-top:17px;padding-top:14px;border-top:1px solid rgba(215,239,207,.12);gap:9px}
-.history-action,.history-more{border:1px solid rgba(176,217,158,.19);border-radius:11px;padding:10px 14px;background:#344333;color:#e4f4db;font-size:12px;transition:background .2s ease,border-color .2s ease,transform .2s ease}
-.history-action:hover,.history-more:hover{background:#435941;border-color:rgba(176,235,144,.45);transform:translateY(-1px)}
-.history-action:focus-visible,.history-more:focus-visible,.history-close:focus-visible{outline:2px solid #b3ef8e;outline-offset:3px}
-.history-delete{background:transparent;color:#e8a7a7;border-color:rgba(231,158,158,.25)}
-.history-delete:hover{background:rgba(177,75,75,.16);border-color:rgba(231,158,158,.5)}
-.history-expanded{border-top:1px solid rgba(215,239,207,.12);margin-top:16px;padding-top:17px}
-.history-fields{gap:13px;padding:3px 2px 6px}
-.history-field{padding:10px 12px;border-radius:10px;background:rgba(13,21,15,.36)}
-.history-field span{color:#94a695}
-.history-field strong{color:#f0f5ed}
-@media(max-width:600px){
- .history-overlay{padding:8px}.history-dialog{border-radius:20px;max-height:95dvh}
- .history-header{padding:21px 18px 17px}.history-header h2{font-size:29px}
- .history-content{padding:13px}.history-entry{padding:12px;border-radius:16px}
- .history-entry-head{grid-template-columns:90px minmax(0,1fr);gap:12px}
- .history-visual{height:83px}.history-car-name{font-size:16px}
- .history-car-version{font-size:11px}.history-entry-money{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;text-align:right;gap:3px 10px;padding-top:9px;border-top:1px solid rgba(215,239,207,.1)}
- .history-entry-money small:first-child{grid-column:1;text-align:left}.history-entry-money strong{grid-column:2;grid-row:1;font-size:22px}
- .history-entry-money .history-ltpf{grid-column:1/-1;margin:0;text-align:right}
- .history-entry-actions{gap:7px}.history-action{padding:9px 10px;font-size:11px}.history-delete{margin-left:0}
- .history-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.history-field{padding:9px}
-}
-@media(prefers-reduced-motion:reduce){.history-entry,.history-action,.history-more,.history-close{transition:none}}
+.history-car-name{font-size:19px;font-weight:800;letter-spacing:-.025em;color:#202a24}
+.history-car-version{font-size:13px;color:#66716b}
+.history-entry-date{font-size:12px;color:#7b877e}
+.history-entry-money{align-self:stretch;align-content:center;text-align:left;gap:7px;padding:0 0 0 22px;border-left:1px solid #e7ebe5}
+.history-entry-money small{font-size:12px;color:#7c857e}
+.history-entry-money strong{font-size:26px;letter-spacing:-.045em;color:#387b35;font-variant-numeric:tabular-nums}
+.history-entry-money .history-ltpf{font-size:12px;color:#58665b}
+.history-entry-actions{display:flex;flex-direction:column;justify-content:center;gap:7px;margin:0;padding:0 0 0 15px;border-top:0;border-left:1px solid #e7ebe5}
+.history-action{width:100%;text-align:center;white-space:normal;padding:10px 9px;border:1px solid #dbe7d6;border-radius:10px;background:#f4f9f1;color:#315a2d;font-size:12px;font-weight:750;transition:background .2s,border-color .2s}
+.history-action:hover{background:#e7f2e2;border-color:#bfd8b6}
+.history-restore{background:#fff;color:#263a2b;border-color:#dce4d9}
+.history-delete{margin-left:0;background:#fff;color:#a63d43;border-color:#e8c9cb}
+.history-delete:hover{background:#fff4f4;border-color:#dca6aa}
+.history-expanded{grid-column:1/-1;margin-top:13px;padding-top:16px;border-top:1px solid #e9eee6}
+.history-fields{gap:10px}
+.history-field{padding:10px 12px;border:1px solid #edf1eb;border-radius:10px;background:#f8faf7}
+.history-field span{color:#79867b}.history-field strong{color:#27382b}
+.history-more{background:#f5f9f3;border-color:#d9e7d4;color:#365c30;border-radius:12px;padding:12px 30px}
+.history-action:focus-visible,.history-more:focus-visible,.history-close:focus-visible{outline:2px solid #5b9a48;outline-offset:2px}
+@media(max-width:900px){.history-entry{grid-template-columns:minmax(0,1fr)}.history-entry-head{grid-template-columns:125px minmax(0,1fr) minmax(120px,170px);gap:12px}.history-visual{height:95px}.history-entry-actions{margin-top:12px;padding:12px 0 0;border-left:0;border-top:1px solid #e7ebe5;flex-direction:row;flex-wrap:wrap}.history-action{width:auto;flex:1 1 auto}.history-delete{flex:0 1 auto}.history-entry-money strong{font-size:22px}}
+@media(max-width:600px){.history-overlay{padding:8px}.history-dialog{max-height:96dvh;border-radius:18px}.history-header{padding:20px 17px 15px}.history-header h2{font-size:29px}.history-content{padding:12px}.history-entry{padding:12px;border-radius:15px}.history-entry-head{grid-template-columns:96px minmax(0,1fr);gap:10px}.history-visual{height:83px}.history-car-name{font-size:16px}.history-car-version,.history-entry-date{font-size:11px}.history-entry-money{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;text-align:right;gap:3px 10px;padding:11px 0 0;border-left:0;border-top:1px solid #e7ebe5}.history-entry-money small:first-child{grid-column:1;text-align:left}.history-entry-money strong{grid-column:2;grid-row:1;font-size:22px}.history-entry-money .history-ltpf{grid-column:1/-1;text-align:right}.history-entry-actions{gap:6px}.history-action{font-size:11px;padding:9px 8px}.history-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.history-entry,.history-action,.history-close{transition:none}}
