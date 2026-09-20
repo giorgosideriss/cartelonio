@@ -1750,17 +1750,39 @@ function historySelection(){
   variant_name:variantIndex !== '' ? ed?.variants?.[Number(variantIndex)]?.color || '' : '',
   extras_indices:[...document.querySelectorAll('.extras-option input:checked')].map(input=>Number(input.value))};
 }
+// Store the exact selected image URL/path, not a reconstructed brand/model guess.
+// Only store images which have actually loaded in the configurator.
+function historyCurrentImagePath(){
+ const img=historyEl('carImage');
+ if(!img || !img.getAttribute('src') || !img.complete || !img.naturalWidth || img.classList.contains('image-unavailable')) return null;
+ const src=img.getAttribute('src').trim();
+ if(!src || /^(?:data:|blob:|javascript:)/i.test(src)) return null;
+ return src;
+}
 async function saveCalculationHistory(result){
  if(!historySignedIn() || !cartelonioDb) return;
  const selection=historySelection();
  const entry={user_id:cartelonioSession.user.id,...selection,body_type:result.cat,first_registration:historyEl('firstReg')?.value || null,
   import_date:historyEl('importDate')?.value || null,mileage:result.mileage,co2:result.co2,euro_class:result.euroClass,
   powertrain:result.powertrain,ltpf:result.price,registration_tax:result.registrationTax,environmental_fee:result.envFee,
-  total_tax:result.tax,depreciation_rate:result.totalDep,taxable_value:result.finalPrice};
+  total_tax:result.tax,depreciation_rate:result.totalDep,taxable_value:result.finalPrice,
+  image_path:historyCurrentImagePath()};
  try {const {error}=await cartelonioDb.from('calculation_history').insert(entry);if(error)throw error;}
  catch(error){console.warn('History save failed:',error);historyStatus('Ο υπολογισμός ολοκληρώθηκε, αλλά δεν αποθηκεύτηκε στο ιστορικό.');}
 }
+function historySetImage(img, path){
+ if(!path || !img.isConnected)return;
+ let url;
+ try { url=new URL(String(path),document.baseURI); } catch { return; }
+ if(!['http:','https:'].includes(url.protocol))return;
+ img.onload=()=>img.classList.add('is-loaded');
+ img.onerror=()=>{img.removeAttribute('src');img.classList.remove('is-loaded');};
+ img.src=url.href;
+}
 async function historyImage(record,img){
+ if(record.image_path){historySetImage(img,record.image_path);return;}
+ // Legacy records: try the old dataset-based image lookup.
+
  const source=DATA_SOURCES[record.brand]?.[String(record.year)];
  if(!source || !record.model || !record.edition) return;
  const cacheKey=source+'|'+record.model+'|'+record.edition;
@@ -1775,9 +1797,7 @@ async function historyImage(record,img){
   if(!raw)return;
   const path=/^(https?:)?\/\//i.test(raw)||raw.startsWith('/')||raw.startsWith('./')||raw.startsWith('../')||raw.includes('/')?raw:`images/cars/${slugifyBrand(record.brand)}/${raw}`;
   if(!img.isConnected)return;
-  img.onload=()=>img.classList.add('is-loaded');
-  img.onerror=()=>{img.removeAttribute('src');img.classList.remove('is-loaded');};
-  img.src=path;
+  historySetImage(img,path);
  }catch(err){console.warn('History image unavailable:',err);}
 }
 function renderHistoryRecord(record){
