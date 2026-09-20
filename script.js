@@ -1784,14 +1784,27 @@ async function saveCalculationHistory(result){
  try {const {error}=await cartelonioDb.from('calculation_history').insert(entry);if(error)throw error;}
  catch(error){console.warn('History save failed:',error);historyStatus('Ο υπολογισμός ολοκληρώθηκε, αλλά δεν αποθηκεύτηκε στο ιστορικό.');}
 }
-function historySetImage(img, path){
- if(!path)return;
- let url;
- try { url=new URL(String(path),document.baseURI); } catch { return; }
- if(!['http:','https:'].includes(url.protocol))return;
- img.onload=()=>img.classList.add('is-loaded');
- img.onerror=()=>{img.removeAttribute('src');img.classList.remove('is-loaded');};
- img.src=url.href;
+// Always resolve saved image paths against the site root, not the current
+// page URL (which may change with routes, refreshes or browser navigation).
+function historyImageUrl(path){
+ if(typeof path !== 'string' || !path.trim()) return null;
+ const value=path.trim().replace(/\\/g,'/');
+ if(/^(?:data:|blob:|javascript:)/i.test(value)) return null;
+ try {
+  const url=/^https?:\/\//i.test(value) ? new URL(value) :
+   new URL(value.replace(/^(?:\.\/)+/, '').replace(/^\/+/, ''), window.location.origin + '/');
+  return ['http:','https:'].includes(url.protocol) ? url.href : null;
+ }catch{return null;}
+}
+function historySetImage(img,path){
+ const url=historyImageUrl(path);
+ if(!url)return;
+ // Explicit loading state works consistently for cached images in Safari.
+ img.classList.remove('is-loaded');
+ img.onload=()=>{if(img.naturalWidth>0)img.classList.add('is-loaded');};
+ img.onerror=()=>{img.classList.remove('is-loaded');img.removeAttribute('src');};
+ img.src=url;
+ if(img.complete && img.naturalWidth>0)img.classList.add('is-loaded');
 }
 async function historyImage(record,img){
  if(record.image_path){historySetImage(img,record.image_path);return;}
