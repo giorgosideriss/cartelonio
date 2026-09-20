@@ -4159,3 +4159,54 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .history-visual .history-car-image.is-loaded {
   display: block !important;
 }
+
+/* Cartelonio History — Premium Dark. Presentation only; persistence and image loading unchanged. */
+.history-overlay{background:rgba(5,9,7,.79);backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px)}
+.history-dialog{width:min(960px,100%);background:radial-gradient(ellipse at 92% 0%,rgba(94,153,66,.15),transparent 46%),#151b17;color:#f3f7f1;border:1px solid rgba(194,229,180,.15);border-radius:26px;box-shadow:0 32px 110px rgba(0,0,0,.55)}
+.history-header{padding:30px 32px 24px;border-bottom:1px solid rgba(214,239,205,.12)}
+.history-header h2{font-size:34px;letter-spacing:-.045em;color:#f6f8f4}
+.history-header p{color:#98a59a;font-size:13px}
+.history-kicker{color:#a9df88;letter-spacing:.21em}
+.history-close{background:#29332b;color:#f1f5ed;border:1px solid rgba(255,255,255,.1);transition:background .2s ease,transform .2s ease}
+.history-close:hover{background:#3a483d;transform:rotate(90deg)}
+.history-content{padding:24px 30px 30px;scrollbar-color:#475849 transparent}
+.history-message{color:#b0c4ad}
+.history-list{gap:15px}
+.history-entry{padding:18px;border-radius:20px;background:linear-gradient(125deg,rgba(46,56,47,.92),rgba(28,36,30,.96));border:1px solid rgba(191,224,180,.14);box-shadow:0 12px 26px rgba(0,0,0,.13);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.history-entry:hover{border-color:rgba(160,224,124,.34);box-shadow:0 18px 34px rgba(0,0,0,.19)}
+.history-entry-head{grid-template-columns:142px minmax(0,1fr) auto;gap:20px}
+.history-visual{height:100px;border-radius:15px;background:radial-gradient(ellipse at 50% 80%,rgba(153,195,132,.17),transparent 72%),#202a22;border:1px solid rgba(219,242,208,.08)}
+.history-car-image{object-fit:contain;padding:3px}
+.history-car-fallback{color:#aab9a6}
+.history-entry-main{gap:7px}
+.history-car-name{font-size:20px;font-weight:800;letter-spacing:-.035em;color:#f4f7f1}
+.history-car-version{color:#c2d0bf;font-size:13px}
+.history-entry-date{color:#879a89;font-size:11px}
+.history-entry-money{gap:5px;align-self:center}
+.history-entry-money small{color:#a2b2a0;font-size:11px}
+.history-entry-money strong{color:#b3ef8e;font-size:25px;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.history-entry-money .history-ltpf{color:#d0d9ce;font-size:12px}
+.history-entry-actions{margin-top:17px;padding-top:14px;border-top:1px solid rgba(215,239,207,.12);gap:9px}
+.history-action,.history-more{border:1px solid rgba(176,217,158,.19);border-radius:11px;padding:10px 14px;background:#344333;color:#e4f4db;font-size:12px;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.history-action:hover,.history-more:hover{background:#435941;border-color:rgba(176,235,144,.45);transform:translateY(-1px)}
+.history-action:focus-visible,.history-more:focus-visible,.history-close:focus-visible{outline:2px solid #b3ef8e;outline-offset:3px}
+.history-delete{background:transparent;color:#e8a7a7;border-color:rgba(231,158,158,.25)}
+.history-delete:hover{background:rgba(177,75,75,.16);border-color:rgba(231,158,158,.5)}
+.history-expanded{border-top:1px solid rgba(215,239,207,.12);margin-top:16px;padding-top:17px}
+.history-fields{gap:13px;padding:3px 2px 6px}
+.history-field{padding:10px 12px;border-radius:10px;background:rgba(13,21,15,.36)}
+.history-field span{color:#94a695}
+.history-field strong{color:#f0f5ed}
+@media(max-width:600px){
+ .history-overlay{padding:8px}.history-dialog{border-radius:20px;max-height:95dvh}
+ .history-header{padding:21px 18px 17px}.history-header h2{font-size:29px}
+ .history-content{padding:13px}.history-entry{padding:12px;border-radius:16px}
+ .history-entry-head{grid-template-columns:90px minmax(0,1fr);gap:12px}
+ .history-visual{height:83px}.history-car-name{font-size:16px}
+ .history-car-version{font-size:11px}.history-entry-money{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;text-align:right;gap:3px 10px;padding-top:9px;border-top:1px solid rgba(215,239,207,.1)}
+ .history-entry-money small:first-child{grid-column:1;text-align:left}.history-entry-money strong{grid-column:2;grid-row:1;font-size:22px}
+ .history-entry-money .history-ltpf{grid-column:1/-1;margin:0;text-align:right}
+ .history-entry-actions{gap:7px}.history-action{padding:9px 10px;font-size:11px}.history-delete{margin-left:0}
+ .history-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.history-field{padding:9px}
+}
+@media(prefers-reduced-motion:reduce){.history-entry,.history-action,.history-more,.history-close{transition:none}}
