@@ -1781,6 +1781,8 @@ async function saveCalculationHistory(result){
   powertrain:result.powertrain,ltpf:result.price,registration_tax:result.registrationTax,environmental_fee:result.envFee,
   total_tax:result.tax,depreciation_rate:result.totalDep,taxable_value:result.finalPrice,
   image_path:historyCurrentImagePath()};
+ // image_path already includes the exact filename; image_name is a separate audit field.
+ entry.image_name=entry.image_path ? decodeURIComponent(entry.image_path.split(/[?#]/)[0].split("/").pop()) : null;
  try {const {error}=await cartelonioDb.from('calculation_history').insert(entry);if(error)throw error;}
  catch(error){console.warn('History save failed:',error);historyStatus('Ο υπολογισμός ολοκληρώθηκε, αλλά δεν αποθηκεύτηκε στο ιστορικό.');}
 }
@@ -1799,12 +1801,21 @@ function historyImageUrl(path){
 function historySetImage(img,path){
  const url=historyImageUrl(path);
  if(!url)return;
- // Explicit loading state works consistently for cached images in Safari.
- img.classList.remove('is-loaded');
- img.onload=()=>{if(img.naturalWidth>0)img.classList.add('is-loaded');};
- img.onerror=()=>{img.classList.remove('is-loaded');img.removeAttribute('src');};
+ const fallback=img.nextElementSibling;
+ // Do not rely on lazy-loading or a CSS class to start the request: Safari
+ // may defer images created while their modal is hidden.
+ img.loading='eager';
+ img.decoding='async';
+ img.onload=()=>{
+  if(img.naturalWidth>0){img.classList.add('is-loaded');if(fallback)fallback.hidden=true;}
+ };
+ img.onerror=()=>{
+  img.classList.remove('is-loaded');img.removeAttribute('src');
+  if(fallback)fallback.hidden=false;
+  console.warn('History image failed:',url);
+ };
  img.src=url;
- if(img.complete && img.naturalWidth>0)img.classList.add('is-loaded');
+ if(img.complete && img.naturalWidth>0)img.onload();
 }
 async function historyImage(record,img){
  if(record.image_path){historySetImage(img,record.image_path);return;}
@@ -1830,7 +1841,7 @@ function renderHistoryRecord(record){
  const article=historyNode('article','history-entry');
  const head=historyNode('div','history-entry-head');
  const visual=historyNode('div','history-visual');
- const img=historyNode('img','history-car-image');img.alt='';img.loading='lazy';
+ const img=historyNode('img','history-car-image');img.alt='';img.loading='eager';
  visual.append(img,historyNode('span','history-car-fallback',(record.brand||'')+' '+(record.model||'')));
  const main=historyNode('div','history-entry-main');
  main.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'),
@@ -1858,7 +1869,7 @@ function renderHistoryRecord(record){
  remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
   const {error}=await cartelonioDb.from('calculation_history').delete().eq('id',record.id).eq('user_id',cartelonioSession.user.id);
   if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{article.remove();historyStatus('Ο υπολογισμός διαγράφηκε.');}});
- void historyImage(record,img);return article;
+ return article;
 }
 async function loadHistory(reset=false){
  if(historyBusy || !historySignedIn())return;
@@ -1868,7 +1879,8 @@ async function loadHistory(reset=false){
  try{const {data,error}=await cartelonioDb.from('calculation_history').select('*').order('created_at',{ascending:false})
   .range(historyPage*HISTORY_PAGE_SIZE,(historyPage+1)*HISTORY_PAGE_SIZE-1);
   if(error)throw error;
-  data.forEach(item=>historyEl('historyList').append(renderHistoryRecord(item)));
+  data.forEach(item=>{const card=renderHistoryRecord(item);historyEl('historyList').append(card);
+   const img=card.querySelector('.history-car-image');if(img)void historyImage(item,img);});
   historyPage++;
   more.hidden=data.length<HISTORY_PAGE_SIZE;
   historyStatus(historyPage===1 && !data.length?'Δεν υπάρχουν ακόμη αποθηκευμένοι υπολογισμοί.':'');
