@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260920-account-mobile-session-fix" rel="stylesheet"/>
+<link href="style.css?v=20260920-history-v1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -129,6 +129,7 @@
       <span>Συνδεδεμένος ως</span>
       <strong id="authUserEmail"></strong>
       <div class="auth-balance"><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
+      <button class="auth-history-link" id="openHistoryBtn" type="button">▤ <span>Ιστορικό υπολογισμών</span><span aria-hidden="true">→</span></button>
       <button class="auth-secondary" id="logoutBtn" type="button">Αποσύνδεση</button>
     </div>
 
@@ -143,6 +144,13 @@
 </div>
 </div>
 </header>
+<div class="history-overlay" id="historyOverlay" hidden>
+ <section class="history-dialog" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+  <header class="history-header"><div><span class="history-kicker">CARTELONIO ACCOUNT</span><h2 id="historyTitle">Ιστορικό</h2><p>Οι προηγούμενοι υπολογισμοί σου</p></div><button type="button" id="historyClose" class="history-close" aria-label="Κλείσιμο">×</button></header>
+  <div class="history-content"><p class="history-message" id="historyMessage" role="status"></p><div id="historyList" class="history-list"></div><button type="button" id="historyMore" class="history-more" hidden>Φόρτωση περισσότερων</button></div>
+ </section>
+</div>
+
 <main class="shell page">
 <section class="intro-block">
 <span class="intro-kicker">ΥΠΟΛΟΓΙΣΤΗΣ ΤΕΛΟΥΣ ΤΑΞΙΝΟΜΗΣΗΣ</span>
@@ -638,7 +646,7 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js?v=20260920-account-mobile-session-fix"></script>
+<script src="script.js?v=20260920-history-v1"></script>
 <script src="brand-availability.js"></script>
 </body>
 </html>

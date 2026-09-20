@@ -985,6 +985,8 @@ async function calculate(){
   const powerLabel = ({ice:"Συμβατικό / μη υβριδικό", hybrid:"Υβριδικό", electric:"Αμιγώς ηλεκτρικό", hydrogen:"Κυψέλες υδρογόνου"})[powertrain] || powertrain;
 
   setRegistrationTaxMiniResult(tax);
+  // Αποθήκευση του επιτυχούς αποτελέσματος χωρίς νέα χρέωση token.
+  void saveCalculationHistory({price, cat, mileage, co2, euroClass, powertrain, registrationTax, envFee, tax, totalDep, finalPrice});
 
   document.getElementById("results").innerHTML = `
     <p><strong>Ηλικία κατά την εισαγωγή:</strong> ${exactMonths} πλήρεις μήνες (${exactYears.toFixed(2)} έτη — επίσημος πίνακας ${Math.min(exactMonths,192)} μηνών)</p>
@@ -1725,3 +1727,144 @@ authElement("logoutBtn")?.addEventListener("click", async event => {
 });
 
 initializeCartelonioAuth();
+
+
+/* ================= PERSONAL CALCULATION HISTORY ================= */
+const HISTORY_PAGE_SIZE = 20;
+let historyPage = 0;
+let historyBusy = false;
+let historyImageCache = new Map();
+const historyEl = id => document.getElementById(id);
+const historyEuro = value => Number(value).toLocaleString('el-GR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const historyNumber = value => Number(value).toLocaleString('el-GR');
+function historyStatus(message) { const el=historyEl('historyMessage'); if(el) el.textContent=message || ''; }
+function historyNode(tag, cls, value) { const el=document.createElement(tag); if(cls) el.className=cls; if(value != null) el.textContent=String(value); return el; }
+function historyField(parent,label,value){const el=historyNode('div','history-field');el.append(historyNode('span','',label),historyNode('strong','',value == null || value === '' ? '—' : value));parent.append(el);}
+function historySignedIn(){return Boolean(cartelonioSession?.user && !cartelonioSession.user.is_anonymous);}
+function historySelection(){
+ const get=id=>historyEl(id)?.value || '';
+ const brand=get('brandSelect'),year=get('yearSelect'),model=get('modelSelect');
+ const editionIndex=get('versionSelect'),variantIndex=get('colorSelect');
+ const ed=currentDataset?.models?.[model]?.editions?.[Number(editionIndex)];
+ return {brand,year,model,edition:editionIndex !== '' ? ed?.name || '' : '',edition_index:editionIndex,variant_index:variantIndex,
+  variant_name:variantIndex !== '' ? ed?.variants?.[Number(variantIndex)]?.color || '' : '',
+  extras_indices:[...document.querySelectorAll('.extras-option input:checked')].map(input=>Number(input.value))};
+}
+async function saveCalculationHistory(result){
+ if(!historySignedIn() || !cartelonioDb) return;
+ const selection=historySelection();
+ const entry={user_id:cartelonioSession.user.id,...selection,body_type:result.cat,first_registration:historyEl('firstReg')?.value || null,
+  import_date:historyEl('importDate')?.value || null,mileage:result.mileage,co2:result.co2,euro_class:result.euroClass,
+  powertrain:result.powertrain,ltpf:result.price,registration_tax:result.registrationTax,environmental_fee:result.envFee,
+  total_tax:result.tax,depreciation_rate:result.totalDep,taxable_value:result.finalPrice};
+ try {const {error}=await cartelonioDb.from('calculation_history').insert(entry);if(error)throw error;}
+ catch(error){console.warn('History save failed:',error);historyStatus('Ο υπολογισμός ολοκληρώθηκε, αλλά δεν αποθηκεύτηκε στο ιστορικό.');}
+}
+async function historyImage(record,img){
+ const source=DATA_SOURCES[record.brand]?.[String(record.year)];
+ if(!source || !record.model || !record.edition) return;
+ const cacheKey=source+'|'+record.model+'|'+record.edition;
+ try {
+  if(!historyImageCache.has(source)){
+   const response=await fetch(source);if(!response.ok)throw new Error('dataset');
+   historyImageCache.set(source,await response.json());
+  }
+  const model=historyImageCache.get(source)?.models?.[record.model];
+  const edition=model?.editions?.find(ed=>ed.name===record.edition);
+  const raw=edition?.image || model?.image;
+  if(!raw)return;
+  const path=/^(https?:)?\/\//i.test(raw)||raw.startsWith('/')||raw.startsWith('./')||raw.startsWith('../')||raw.includes('/')?raw:`images/cars/${slugifyBrand(record.brand)}/${raw}`;
+  if(!img.isConnected)return;
+  img.onload=()=>img.classList.add('is-loaded');
+  img.onerror=()=>{img.removeAttribute('src');img.classList.remove('is-loaded');};
+  img.src=path;
+ }catch(err){console.warn('History image unavailable:',err);}
+}
+function renderHistoryRecord(record){
+ const article=historyNode('article','history-entry');
+ const head=historyNode('div','history-entry-head');
+ const visual=historyNode('div','history-visual');
+ const img=historyNode('img','history-car-image');img.alt='';img.loading='lazy';
+ visual.append(img,historyNode('span','history-car-fallback',(record.brand||'')+' '+(record.model||'')));
+ const main=historyNode('div','history-entry-main');
+ main.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'),
+  historyNode('span','history-car-version',[record.year,record.edition].filter(Boolean).join(' · ')),
+  historyNode('span','history-entry-date',new Date(record.created_at).toLocaleString('el-GR',{dateStyle:'medium',timeStyle:'short'})));
+ const money=historyNode('div','history-entry-money');
+ money.append(historyNode('small','', 'Τέλος ταξινόμησης'),historyNode('strong','', '€'+historyEuro(record.total_tax)),
+  historyNode('small','history-ltpf','ΛΤΠΦ €'+historyEuro(record.ltpf)));
+ head.append(visual,main,money);article.append(head);
+ const actions=historyNode('div','history-entry-actions');
+ const details=historyNode('button','history-action','Λεπτομέρειες ↓');details.type='button';details.setAttribute('aria-expanded','false');
+ const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
+ const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
+ const expanded=historyNode('div','history-expanded');expanded.hidden=true;
+ const fields=historyNode('div','history-fields');
+ [['Μάρκα',record.brand],['Έτος',record.year],['Μοντέλο',record.model],['Έκδοση',record.edition],
+ ['Είδος αμαξώματος',record.body_type],['Πρώτη άδεια',record.first_registration],['Ημερομηνία εισαγωγής',record.import_date],
+ ['Χιλιόμετρα',historyNumber(record.mileage)+' km'],['CO₂',record.co2+' g/km'],['Προδιαγραφή Euro',record.euro_class],
+ ['Τύπος κίνησης',record.powertrain],['ΛΤΠΦ','€'+historyEuro(record.ltpf)],
+ ['Φορολογητέα αξία','€'+historyEuro(record.taxable_value)],['Τέλος ταξινόμησης','€'+historyEuro(record.registration_tax)],
+ ['Περιβαλλοντικό τέλος','€'+historyEuro(record.environmental_fee)],['Συνολικό τέλος','€'+historyEuro(record.total_tax)]].forEach(([k,v])=>historyField(fields,k,v));
+ expanded.append(fields);actions.append(details,restore,remove);article.append(actions,expanded);
+ details.addEventListener('click',()=>{expanded.hidden=!expanded.hidden;details.setAttribute('aria-expanded',String(!expanded.hidden));details.textContent=expanded.hidden?'Λεπτομέρειες ↓':'Λιγότερα ↑';});
+ restore.addEventListener('click',async()=>{restore.disabled=true;try{await restoreHistoryRecord(record);closeHistory();}catch(err){historyStatus('Δεν ήταν δυνατή η επαναφορά των στοιχείων.');console.warn(err);}finally{restore.disabled=false;}});
+ remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
+  const {error}=await cartelonioDb.from('calculation_history').delete().eq('id',record.id).eq('user_id',cartelonioSession.user.id);
+  if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{article.remove();historyStatus('Ο υπολογισμός διαγράφηκε.');}});
+ void historyImage(record,img);return article;
+}
+async function loadHistory(reset=false){
+ if(historyBusy || !historySignedIn())return;
+ historyBusy=true;const more=historyEl('historyMore');more.disabled=true;
+ if(reset){historyPage=0;historyEl('historyList').replaceChildren();}
+ historyStatus('Φόρτωση ιστορικού…');
+ try{const {data,error}=await cartelonioDb.from('calculation_history').select('*').order('created_at',{ascending:false})
+  .range(historyPage*HISTORY_PAGE_SIZE,(historyPage+1)*HISTORY_PAGE_SIZE-1);
+  if(error)throw error;
+  data.forEach(item=>historyEl('historyList').append(renderHistoryRecord(item)));
+  historyPage++;
+  more.hidden=data.length<HISTORY_PAGE_SIZE;
+  historyStatus(historyPage===1 && !data.length?'Δεν υπάρχουν ακόμη αποθηκευμένοι υπολογισμοί.':'');
+ }catch(error){console.warn('History loading failed:',error);historyStatus('Δεν ήταν δυνατή η φόρτωση. Έλεγξε ότι έχεις εκτελέσει το SQL του ιστορικού.');}
+ finally{historyBusy=false;more.disabled=false;}
+}
+function closeHistory(){historyEl('historyOverlay').hidden=true;document.body.classList.remove('history-open');}
+function openHistory(){if(!historySignedIn())return;closeAuthModal();historyEl('historyOverlay').hidden=false;document.body.classList.add('history-open');void loadHistory(true);}
+function setHistoryInput(id,value){const el=historyEl(id);if(el && value != null){el.value=String(value);el.dispatchEvent(new Event('change',{bubbles:true}));}}
+async function restoreHistoryRecord(record){
+ const brand=historyEl('brandSelect');
+ if(record.brand && DATA_SOURCES[record.brand]?.[String(record.year)]){
+  brand.value=record.brand;brand.dispatchEvent(new Event('change',{bubbles:true}));
+  setBrandUI(record.brand);
+  setHistoryInput('yearSelect',record.year);
+  await loadDatasetForSelection();
+  if([...historyEl('modelSelect').options].some(opt=>opt.value===record.model)){
+   setHistoryInput('modelSelect',record.model);populateVersions();
+   const editionOptions=[...historyEl('versionSelect').options];
+   const matching=editionOptions.find(opt=>opt.textContent.trim()===record.edition);
+   const editionValue=matching?.value ?? record.edition_index;
+   if(editionOptions.some(opt=>opt.value===String(editionValue))){
+    setHistoryInput('versionSelect',editionValue);populateColors();
+    const variantOptions=[...historyEl('colorSelect').options];
+    const matchVariant=variantOptions.find(opt=>opt.textContent.trim()===record.variant_name);
+    const variantValue=matchVariant?.value ?? record.variant_index;
+    if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();}
+    (record.extras_indices||[]).forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
+   }
+  }
+ }
+ // Preserve the historical price, even if current catalogues or extras have changed.
+ setHistoryInput('price',historyEuro(record.ltpf));formatPriceField();
+ setHistoryInput('category',record.body_type);setHistoryInput('co2',record.co2);setHistoryInput('mileage',record.mileage);
+ setHistoryInput('euroClass',record.euro_class);setHistoryInput('powertrain',record.powertrain);
+ if(record.first_registration){const [year,month,day]=record.first_registration.split('-');setHistoryInput('firstRegYear',year);setHistoryInput('firstRegMonth',String(Number(month)));setHistoryInput('firstRegDay',String(Number(day)));syncFirstRegistrationDate();}
+ setHistoryInput('importDate',record.import_date);
+ setRegistrationTaxMiniResult(null);historyEl('results').innerHTML='<p>Τα στοιχεία επαναφέρθηκαν. Πάτησε «Υπολόγισε» για νέο υπολογισμό (χρησιμοποιεί token).</p>';
+ updateCarSummary();historyEl('calcForm')?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+historyEl('openHistoryBtn')?.addEventListener('click',openHistory);
+historyEl('historyClose')?.addEventListener('click',closeHistory);
+historyEl('historyOverlay')?.addEventListener('click',event=>{if(event.target===historyEl('historyOverlay'))closeHistory();});
+historyEl('historyMore')?.addEventListener('click',()=>void loadHistory());
+document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyEl('historyOverlay')?.hidden)closeHistory();});
