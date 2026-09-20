@@ -1785,7 +1785,7 @@ async function saveCalculationHistory(result){
  catch(error){console.warn('History save failed:',error);historyStatus('Ο υπολογισμός ολοκληρώθηκε, αλλά δεν αποθηκεύτηκε στο ιστορικό.');}
 }
 function historySetImage(img, path){
- if(!path || !img.isConnected)return;
+ if(!path)return;
  let url;
  try { url=new URL(String(path),document.baseURI); } catch { return; }
  if(!['http:','https:'].includes(url.protocol))return;
@@ -1810,7 +1810,6 @@ async function historyImage(record,img){
   const raw=edition?.image || model?.image;
   if(!raw)return;
   const path=/^(https?:)?\/\//i.test(raw)||raw.startsWith('/')||raw.startsWith('./')||raw.startsWith('../')||raw.includes('/')?raw:`images/cars/${slugifyBrand(record.brand)}/${raw}`;
-  if(!img.isConnected)return;
   historySetImage(img,path);
  }catch(err){console.warn('History image unavailable:',err);}
 }
