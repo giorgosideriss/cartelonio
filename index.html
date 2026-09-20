@@ -6,6 +6,97 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογιστής Τέλους Ταξινόμησης Αυτοκινήτου — cartelonio</title>
+<!-- Google Analytics: loaded only after analytics consent. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+
+  (function () {
+    const consentKey = 'cartelonioAnalyticsConsent';
+    let analyticsLoaded = false;
+
+    function loadAnalytics() {
+      if (analyticsLoaded) return;
+      analyticsLoaded = true;
+      const tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-87E153QFQT';
+      document.head.appendChild(tag);
+      gtag('js', new Date());
+      gtag('config', 'G-87E153QFQT', { anonymize_ip: true });
+    }
+
+    function clearAnalyticsCookies() {
+      document.cookie.split(';').forEach(function (cookie) {
+        const name = cookie.split('=')[0].trim();
+        if (name === '_ga' || name.indexOf('_ga_') === 0) {
+          document.cookie = name + '=; Max-Age=0; path=/; SameSite=Lax';
+          document.cookie = name + '=; Max-Age=0; path=/; domain=.cartelonio.gr; SameSite=Lax';
+        }
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      const banner = document.getElementById('cookieConsent');
+      const settingsButton = document.getElementById('cookieSettingsButton');
+      const acceptButton = document.getElementById('cookieAccept');
+      const rejectButton = document.getElementById('cookieReject');
+      const savedConsent = localStorage.getItem(consentKey);
+
+      function showBanner() {
+        banner.hidden = false;
+        settingsButton.hidden = true;
+      }
+
+      function hideBanner() {
+        banner.hidden = true;
+        settingsButton.hidden = false;
+      }
+
+      acceptButton.addEventListener('click', function () {
+        localStorage.setItem(consentKey, 'granted');
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+        loadAnalytics();
+        hideBanner();
+      });
+
+      rejectButton.addEventListener('click', function () {
+        localStorage.setItem(consentKey, 'denied');
+        gtag('consent', 'update', { analytics_storage: 'denied' });
+        clearAnalyticsCookies();
+        hideBanner();
+      });
+
+      settingsButton.addEventListener('click', showBanner);
+
+      if (savedConsent === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+        loadAnalytics();
+        hideBanner();
+      } else if (savedConsent === 'denied') {
+        hideBanner();
+      } else {
+        showBanner();
+      }
+    });
+  })();
+</script>
+<style>
+  .cookie-consent[hidden],.cookie-settings-button[hidden]{display:none!important}
+  .cookie-consent{position:fixed;z-index:100000;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(920px,calc(100% - 32px));padding:20px 22px;border:1px solid rgba(255,255,255,.13);border-radius:20px;background:rgba(17,22,19,.96);color:#f3f6f4;box-shadow:0 24px 70px rgba(0,0,0,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .cookie-consent-copy{max-width:610px}.cookie-consent-copy strong{display:block;margin-bottom:7px;font-size:17px;font-weight:800;letter-spacing:-.02em}.cookie-consent-copy p{margin:0;color:rgba(236,242,238,.72);font-size:13px;line-height:1.55}
+  .cookie-consent-actions{display:flex;gap:10px;flex:0 0 auto}.cookie-choice{min-width:116px;padding:11px 17px;border:1px solid rgba(255,255,255,.2);border-radius:12px;font:inherit;font-size:13px;font-weight:780;cursor:pointer;transition:transform .18s ease,background .18s ease}.cookie-choice:hover{transform:translateY(-1px)}
+  .cookie-reject{background:transparent;color:#eef2ef}.cookie-reject:hover{background:rgba(255,255,255,.07)}.cookie-accept{border-color:#a9ed7c;background:#a9ed7c;color:#101510}.cookie-accept:hover{background:#b8f58f}
+  .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.cookie-settings-button:hover{color:#fff;background:rgba(27,34,30,.96)}
+  @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
+</style>
 <link href="style.css?v=20260919-side-identity-rail" rel="stylesheet"/>
 </head>
 <body>
@@ -503,6 +594,17 @@
 
   </section>
 </div>
+<section class="cookie-consent" id="cookieConsent" role="dialog" aria-modal="true" aria-labelledby="cookieConsentTitle" hidden>
+  <div class="cookie-consent-copy">
+    <strong id="cookieConsentTitle">Η επιλογή σου για τα cookies</strong>
+    <p>Χρησιμοποιούμε προαιρετικά cookies ανάλυσης για να καταλαβαίνουμε πώς χρησιμοποιείται το Cartelonio και να το βελτιώνουμε. Η απόρριψη δεν επηρεάζει τη λειτουργία του site.</p>
+  </div>
+  <div class="cookie-consent-actions">
+    <button class="cookie-choice cookie-reject" id="cookieReject" type="button">Απόρριψη</button>
+    <button class="cookie-choice cookie-accept" id="cookieAccept" type="button">Αποδοχή</button>
+  </div>
+</section>
+<button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="script.js?v=20260919-side-identity-rail"></script>
 <script src="brand-availability.js"></script>
 </body>
