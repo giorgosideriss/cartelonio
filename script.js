@@ -1448,21 +1448,36 @@ function setAuthStatus(message = "", type = "") {
 function showAuthView(view) {
   const tabs = authElement("authTabs");
   const userPanel = authElement("authUserPanel");
-  document.querySelectorAll("[data-auth-panel]").forEach(panel => {
-    panel.classList.toggle("is-active", panel.dataset.authPanel === view);
-  });
+  const signedIn = Boolean(cartelonioSession?.user && !cartelonioSession.user.is_anonymous);
+  if (signedIn && view !== "password") view = "user";
   document.querySelectorAll("[data-auth-view]").forEach(button => {
     button.classList.toggle("is-active", button.dataset.authView === view);
   });
-  if (tabs) tabs.hidden = view === "password" || view === "user";
+  // Never expose guest tabs/forms to an authenticated user.
+  document.querySelectorAll("[data-auth-panel]").forEach(panel => {
+    panel.classList.toggle("is-active", (panel.dataset.authPanel === view && !signedIn) || (panel.dataset.authPanel === "password" && view === "password"));
+  });
+  if (tabs) tabs.hidden = signedIn || view === "password" || view === "user";
   if (userPanel) userPanel.hidden = view !== "user";
 }
+
+function positionAccountDropdown() {
+  const button = authElement("accountButton");
+  const modal = authElement("authModal");
+  if (!button || !modal) return;
+  const bottom = button.getBoundingClientRect().bottom;
+  modal.style.setProperty("--account-menu-top", `${Math.ceil(bottom + 9)}px`);
+}
+window.addEventListener("resize", () => {
+  if (!authElement("authModal")?.hidden) positionAccountDropdown();
+});
 
 function openAuthModal(view) {
   const modal = authElement("authModal");
   if (!modal) return;
   setAuthStatus();
   showAuthView(view || (cartelonioSession?.user?.is_anonymous ? "signup" : "user"));
+  positionAccountDropdown();
   modal.hidden = false;
   authElement("accountButton")?.setAttribute("aria-expanded", "true");
 }
@@ -1487,6 +1502,11 @@ function renderAccountState() {
   }
   if (authElement("authUserEmail")) authElement("authUserEmail").textContent = user?.email || "";
   if (authElement("authTokenBalance")) authElement("authTokenBalance").textContent = String(balance);
+  // Reflect the real Supabase session immediately when it changes.
+  const modal = authElement("authModal");
+  if (modal && !modal.hidden && !authElement("setPasswordForm")?.classList.contains("is-active")) {
+    showAuthView(isPermanent ? "user" : "signup");
+  }
 }
 
 async function loadCartelonioProfile() {

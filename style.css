@@ -4116,3 +4116,28 @@ body.cartelonio-onboarding-open{overflow:hidden}
  .site-header #authModal .auth-card{padding:19px!important;max-height:calc(100dvh - 125px)!important}
 }
 @media(prefers-reduced-motion:reduce){.site-header #authModal{animation:none!important}}
+
+/* Auth menu: correct visibility and mobile viewport containment */
+.site-header #authModal .auth-tabs[hidden],
+.site-header #authModal .auth-user-panel[hidden],
+.site-header #authModal .auth-form[hidden]{display:none!important}
+.site-header #authModal .auth-form:not(.is-active){display:none!important}
+.site-header #authModal .auth-user-panel:not([hidden]){display:grid}
+@media(max-width:700px){
+  .site-header #authModal:not([hidden]){
+    position:fixed!important;
+    inset:var(--account-menu-top, 100px) 12px auto 12px!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    z-index:10050!important;
+  }
+  .site-header #authModal .auth-card{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    max-height:calc(100dvh - var(--account-menu-top, 100px) - 12px)!important;
+    overflow-y:auto!important;
+  }
+}
