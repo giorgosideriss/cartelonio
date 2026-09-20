@@ -1805,7 +1805,7 @@ function renderHistoryRecord(record){
  const head=historyNode('div','history-entry-head');
  const visual=historyNode('div','history-visual');
  const img=historyNode('img','history-car-image');img.alt='';img.loading='lazy';
- visual.append(img,historyNode('span','history-car-fallback',(record.brand||'')+' '+(record.model||'')));
+ visual.append(img);
  const main=historyNode('div','history-entry-main');
  main.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'),
   historyNode('span','history-car-version',[record.year,record.edition].filter(Boolean).join(' · ')),
