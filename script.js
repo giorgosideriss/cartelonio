@@ -1753,11 +1753,25 @@ function historySelection(){
 // Store the exact selected image URL/path, not a reconstructed brand/model guess.
 // Only store images which have actually loaded in the configurator.
 function historyCurrentImagePath(){
+ // Resolve the image from the exact currently selected edition/model. This
+ // does not depend on whether the browser has finished downloading the PNG.
+ const selection=historySelection();
+ const model=currentDataset?.models?.[selection.model];
+ const edition=selection.edition_index !== '' ? model?.editions?.[Number(selection.edition_index)] : null;
+ const raw=edition?.image || model?.image;
+ if(raw && selection.brand){
+  const value=String(raw).trim();
+  if(value && !/^(?:data:|blob:|javascript:)/i.test(value)){
+   return /^(https?:)?\/\//i.test(value)||value.startsWith('/')||value.startsWith('./')||value.startsWith('../')||value.includes('/')
+    ? value : `images/cars/${slugifyBrand(selection.brand)}/${value}`;
+  }
+ }
+ // Fallback for images supplied by the external search, but never capture
+ // an old car's image while a new selection is still loading.
  const img=historyEl('carImage');
- if(!img || !img.getAttribute('src') || !img.complete || !img.naturalWidth || img.classList.contains('image-unavailable')) return null;
- const src=img.getAttribute('src').trim();
- if(!src || /^(?:data:|blob:|javascript:)/i.test(src)) return null;
- return src;
+ if(!img || !img.complete || !img.naturalWidth || img.classList.contains('image-unavailable') || img.classList.contains('is-changing')) return null;
+ const src=img.getAttribute('src')?.trim();
+ return src && !/^(?:data:|blob:|javascript:)/i.test(src) ? src : null;
 }
 async function saveCalculationHistory(result){
  if(!historySignedIn() || !cartelonioDb) return;
