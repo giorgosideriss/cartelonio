@@ -23771,13 +23771,8 @@
               "name": "Μεταλλικό χρώμα",
               "price": 296.88,
               "code": "TE"
-            },
-            {
-              "name": "ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140 da ΓΚΡΙ HIGHLAND-KQA",
-              "price": 296.88,
-              "code": "KQA"
             }
-          ],
+                ],
           "co2Standard": "NEDC",
           "fuel": "diesel",
           "powertrain": "ice",
