@@ -123,7 +123,11 @@
     <form class="auth-form is-active" id="signupForm" data-auth-panel="signup">
       <label for="signupEmail">Email</label>
       <input id="signupEmail" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
-      <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης. Μετά την επιβεβαίωση θα ορίσεις τον κωδικό σου και θα πάρεις έναν ακόμη δωρεάν υπολογισμό.</p>
+      <label for="signupPassword">Κωδικός πρόσβασης</label>
+      <input id="signupPassword" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="Τουλάχιστον 8 χαρακτήρες">
+      <label for="signupPasswordConfirm">Επιβεβαίωση κωδικού</label>
+      <input id="signupPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="8" required placeholder="Επανάληψη κωδικού">
+      <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης email. Μετά την επιβεβαίωση μπορείς να συνδεθείς με το email και τον κωδικό σου.</p>
       <button class="auth-primary" type="submit">Δημιουργία λογαριασμού</button>
     </form>
 
