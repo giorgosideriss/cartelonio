@@ -4213,3 +4213,23 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .history-entry{position:relative}.history-favorite{position:absolute;right:8px;top:7px;z-index:2;width:30px;height:30px;border:1px solid #dce7d7;border-radius:50%;background:#fff;color:#39832f;font-size:21px;line-height:1;cursor:pointer}
 .history-favorite[aria-pressed="true"]{color:#3c842f;background:#f0f8eb}.history-entry-actions{padding-top:20px}
 @media(max-width:700px){.history-toolbar{align-items:stretch}.history-tabs{width:100%}.history-tab{flex:1;padding:9px 8px}.history-sort-label{flex:1}.history-sort-label select{max-width:100%}.history-search-label{max-width:none;flex:1 1 100%;margin-left:0}.history-brand-logo{width:23px;height:23px}.history-favorite{top:5px;right:5px}.history-entry-actions{padding-top:10px}}
+
+/* Cartelonio Tokens — Modern Cards dropdown, visual-only purchasing and vouchers */
+.site-header .account-controls > .token-badge{font:inherit;font-size:.82rem;font-weight:800;cursor:pointer;min-width:0;justify-content:center}
+.tokens-chevron{font-size:16px;line-height:1;margin-left:3px;opacity:.85}
+.tokens-menu[hidden]{display:none!important}
+.site-header .tokens-menu{position:absolute;top:calc(100% + 9px);right:0;z-index:10051;width:min(390px,calc(100vw - 24px));box-sizing:border-box;animation:cartelonioAccountDrop .18s ease-out both}
+.tokens-panel{position:relative;box-sizing:border-box;width:100%;max-height:min(78vh,700px);overflow:auto;padding:23px;border:1px solid #e2e9df;border-radius:22px;background:#fff;color:#19241e;box-shadow:0 22px 60px rgba(0,0,0,.2);font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.tokens-close{position:absolute;top:14px;right:14px;width:35px;height:35px;border:0;border-radius:50%;background:#f0f4ef;color:#26332a;font-size:25px;cursor:pointer}
+.tokens-eyebrow{font-size:10px;letter-spacing:.19em;font-weight:900;color:#397a30;margin:3px 40px 7px 0}
+.tokens-panel h2{font-size:24px;line-height:1.2;margin:0 40px 6px 0;color:#1d2821}
+.tokens-intro{font-size:12px;line-height:1.5;color:#778078;margin:0 0 18px}
+.tokens-overview{padding:18px;border-radius:17px;background:linear-gradient(125deg,#f1f8f0,#f8faf7);margin-bottom:15px}
+.tokens-main-number{display:flex;align-items:center;gap:16px}
+.tokens-symbol{width:60px;height:60px;flex:none;display:grid;place-items:center;border:5px solid #dcebd8;border-radius:50%;background:#fff;color:#377b32;font-size:28px}
+.tokens-main-number div{display:flex;flex-direction:column;gap:3px}.tokens-main-number strong{font-size:40px;line-height:1;font-weight:850;color:#2f7431;font-variant-numeric:tabular-nums}.tokens-main-number div span{font-size:13px;color:#59645a}
+.tokens-used{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid #dce8d9;font-size:12px;color:#536153}.tokens-used strong{font-size:20px;color:#1e2a20}.tokens-used-note{font-size:10px;line-height:1.5;color:#7a867b;margin:7px 0 0}
+.tokens-option{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #e0e7df;border-radius:14px;background:#fff}.tokens-option+.tokens-voucher{margin-top:10px}.tokens-option-icon{font-size:22px;color:#347d33}.tokens-option>span:nth-child(2){display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}.tokens-option strong{font-size:13px;color:#1e2a21}.tokens-option small{font-size:11px;color:#778178}.tokens-soon{font-size:10px;color:#68766a;border-radius:99px;padding:5px 7px;background:#eef3ec;white-space:nowrap}.tokens-option-disabled{background:#fbfcfa}
+.tokens-voucher{border:1px solid #e0e7df;border-radius:14px;padding:0 12px 12px}.tokens-voucher .tokens-option{border:0;padding:13px 0}.tokens-voucher label{display:block;font-size:11px;font-weight:750;color:#59665a;margin:2px 0 7px}.tokens-voucher input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #dce4db;border-radius:10px;background:#f7f9f6;font:inherit;font-size:12px}.tokens-redeem{width:100%;margin-top:9px;padding:11px;border:0;border-radius:10px;background:#e5eee1;color:#61785e;font:inherit;font-size:12px;font-weight:800}.tokens-voucher-note{font-size:10px;line-height:1.5;color:#7b857c;margin:9px 0 0}
+@media(max-width:700px){.site-header .tokens-menu:not([hidden]){position:fixed;inset:var(--account-menu-top,100px) 12px auto 12px;width:auto;max-width:none}.tokens-panel{max-height:calc(100dvh - var(--account-menu-top,100px) - 12px);padding:18px}.site-header .account-controls > .token-badge{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){.site-header .tokens-menu{animation:none}}

@@ -1480,6 +1480,7 @@ function openAuthModal(view) {
   setAuthStatus();
   showAuthView(view || (cartelonioSession?.user?.is_anonymous ? "signup" : "user"));
   positionAccountDropdown();
+  closeTokensMenu();
   modal.hidden = false;
   authElement("accountButton")?.setAttribute("aria-expanded", "true");
 }
@@ -1497,7 +1498,8 @@ function renderAccountState() {
   const isPermanent = Boolean(user && !user.is_anonymous);
   const badge = authElement("tokenBadge");
   const badgeText = authElement("tokenBadgeText");
-  if (badgeText) badgeText.textContent = `${balance} ${balance === 1 ? "token" : "tokens"}`;
+  if (badgeText) badgeText.textContent = `Tokens (${balance.toLocaleString("el-GR")})`;
+  if (authElement("tokensAvailable")) authElement("tokensAvailable").textContent = balance.toLocaleString("el-GR");
   badge?.classList.toggle("is-empty", balance < 1);
   if (authElement("accountButtonText")) {
     authElement("accountButtonText").textContent = isPermanent ? "Ο λογαριασμός μου" : "Εγγραφή / Σύνδεση";
@@ -1608,20 +1610,37 @@ async function initializeCartelonioAuth() {
   }
 }
 
+function closeTokensMenu() {
+  const menu = authElement("tokensMenu");
+  if (menu) menu.hidden = true;
+  authElement("tokenBadge")?.setAttribute("aria-expanded", "false");
+}
+function openTokensMenu() {
+  closeAuthModal();
+  const menu = authElement("tokensMenu");
+  if (!menu) return;
+  menu.hidden = false;
+  authElement("tokenBadge")?.setAttribute("aria-expanded", "true");
+}
+authElement("tokenBadge")?.addEventListener("click", () => {
+  if (authElement("tokensMenu")?.hidden) openTokensMenu();
+  else closeTokensMenu();
+});
+authElement("tokensClose")?.addEventListener("click", closeTokensMenu);
 authElement("accountButton")?.addEventListener("click", () => {
   if (!authElement("authModal")?.hidden) closeAuthModal();
   else openAuthModal();
 });
 document.addEventListener("pointerdown", event => {
   const controls = authElement("accountControls");
-  if (controls && !controls.contains(event.target)) closeAuthModal();
+  if (controls && !controls.contains(event.target)) { closeAuthModal(); closeTokensMenu(); }
 });
 authElement("authClose")?.addEventListener("click", closeAuthModal);
 authElement("authModal")?.addEventListener("click", event => {
   if (event.target === authElement("authModal")) closeAuthModal();
 });
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape" && !authElement("authModal")?.hidden) closeAuthModal();
+  if (event.key === "Escape") { if (!authElement("authModal")?.hidden) closeAuthModal(); closeTokensMenu(); }
 });
 
 document.querySelectorAll("[data-auth-view]").forEach(button => {
