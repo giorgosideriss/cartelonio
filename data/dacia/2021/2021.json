@@ -1,0 +1,2738 @@
+{
+  "brand": "Dacia",
+  "year": 2021,
+  "models": {
+    "Duster": {
+      "category": "SUV",
+      "editions": [
+        {
+          "factoryCode": "D12MTG6US",
+          "code": "D12MTG6US",
+          "name": "1.0 TCe AMBIANCE 100hp 4x2 LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12511.74,
+              "priceRetail": 12511.74
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D12M6M6US",
+          "code": "D12M6M6US",
+          "name": "1.0 TCe AMBIANCE 90hp 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12492.19,
+              "priceRetail": 12492.19
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D32MTG6US",
+          "code": "D32MTG6US",
+          "name": "1.0 TCe PRESTIGE 100hp 4x2 LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14065.9,
+              "priceRetail": 14065.9
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D32M6M6US",
+          "code": "D32M6M6US",
+          "name": "1.0 TCe PRESTIGE 90hp 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 14046.67,
+              "priceRetail": 14046.67
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D22MTG6US",
+          "code": "D22MTG6US",
+          "name": "1.0 TCe SPORTIVE 100hp 4x2 LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13442.88,
+              "priceRetail": 13442.88
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D22M6M6US",
+          "code": "D22M6M6US",
+          "name": "1.0 TCe SPORTIVE 90hp 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13421.88,
+              "priceRetail": 13421.88
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D32M3A6US",
+          "code": "D32M3A6US",
+          "name": "1.3 TCe PRESTIGE 150hp EDC 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16380.0,
+              "priceRetail": 16380.0
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D14ADM6US",
+          "code": "D14ADM6US",
+          "name": "1.5 Blue dCi 115hp AMBIANCE 4x4",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 16526.67,
+              "priceRetail": 16526.67
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D32ADM6US",
+          "code": "D32ADM6US",
+          "name": "1.5 Blue dCi 115hp PRESTIGE 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15973.33,
+              "priceRetail": 15973.33
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D34ADM6US",
+          "code": "D34ADM6US",
+          "name": "1.5 Blue dCi 115hp PRESTIGE 4x4",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 18259.89,
+              "priceRetail": 18259.89
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D22ADM6US",
+          "code": "D22ADM6US",
+          "name": "1.5 Blue dCi 115hp SPORTIVE 4x2",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 15353.33,
+              "priceRetail": 15353.33
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        },
+        {
+          "factoryCode": "D24ADM6US",
+          "code": "D24ADM6US",
+          "name": "1.5 Blue dCi 115hp SPORTIVE 4x4",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 17649.72,
+              "priceRetail": 17649.72
+            }
+          ],
+          "extras": [
+            {
+              "name": "Blind Spot Warning (BSW) & Multi-view camera με τέσσερις κάμερες θέασης",
+              "price": 340.0,
+              "code": "PKJD10 (DANGMO MVCAM)"
+            },
+            {
+              "name": "Media Display Σύστημα πολυμέσων με οθόνη 8\" : Κατοπτρισμός του smartphone με Apple CarPlay ή Android Auto",
+              "price": 340.0,
+              "code": "RA47D"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\", Ευρωπαϊκός χάρτης & Κάμερα οπισθοπορείας",
+              "price": 360.0,
+              "code": "PCV64 (RRCAM MAPEST SERTMC RA49D)"
+            },
+            {
+              "name": "Σύστημα εισόδου χωρίς κλειδί",
+              "price": 180.0,
+              "code": "SOP03C"
+            },
+            {
+              "name": "Κάθισμα οδηγού με ρύθμιση οσφυϊκής χώρας, Κεντρική κονσόλα με συρόμενο υποβραχιόνιο & 2 USB",
+              "price": 150.0,
+              "code": "PCV68 (SGAV05 CSRBA2)"
+            },
+            {
+              "name": "Προβολείς ομίχλης",
+              "price": 120.0,
+              "code": "PROJAB"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.67,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - (PRESTIGE)",
+              "price": 147.95,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - AMBIANCE",
+              "price": 375.59,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - SPORTIVE",
+              "price": 371.68,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα - PRESTIGE",
+              "price": 349.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369)",
+              "price": 148.4,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ)",
+              "price": 375.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (369) - PRESTIGE",
+              "price": 146.7,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) - PRESTIGE",
+              "price": 346.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (0V369 Λευκό)",
+              "price": 150.0,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα",
+              "price": 350.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Δερμάτινα καθίσματα σε μάυρη απόχρωση",
+              "price": 540.0,
+              "code": "CUIR04"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα",
+              "price": 166.7,
+              "code": "369"
+            },
+            {
+              "name": "Μη μεταλλικό χρώμα (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 141.2,
+              "code": "369"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (AMBIANCE 4x4)",
+              "price": 286.7,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            },
+            {
+              "name": "Μεταλλικό χρώμα (KQA, KNA, 676, RQH, ENZ) (SPORTIVE 4x4 & PRESTIGE 4x4)",
+              "price": 339.0,
+              "code": "KQA, KNA, 676, RQH, ENZ"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "diesel",
+          "powertrain": "ice",
+          "bodyType": "SUV",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/DUSTER 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png"
+        }
+      ],
+      "image": "images/dacia/models/dacia-duster-ii-2021-facelift.png",
+      "imageSource": "catalogue-style generated reference; generation/facelift matched to model year"
+    },
+    "Sandero": {
+      "category": "Hatchback",
+      "editions": [
+        {
+          "factoryCode": "ESTMG6US",
+          "code": "ESTMG6US",
+          "name": "Streetway 1.0 SCe 65hp Life",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 9374.02,
+              "priceRetail": 9374.02
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        },
+        {
+          "factoryCode": "ESTMT6UGS",
+          "code": "ESTMT6UGS",
+          "name": "Streetway 1.0 TCe 100hp Life LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10813.77,
+              "priceRetail": 10813.77
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        },
+        {
+          "factoryCode": "CMFMT6UGS",
+          "code": "CMFMT6UGS",
+          "name": "Streetway 1.0 TCe 100hp Style LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11173.71,
+              "priceRetail": 11173.71
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        },
+        {
+          "factoryCode": "ESTM66US",
+          "code": "ESTM66US",
+          "name": "Streetway 1.0 TCe 90hp Life",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10500.78,
+              "priceRetail": 10500.78
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        },
+        {
+          "factoryCode": "CMFM66US",
+          "code": "CMFM66US",
+          "name": "Streetway 1.0 TCe 90hp Style",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 10860.72,
+              "priceRetail": 10860.72
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        },
+        {
+          "factoryCode": "CMFM6V6US",
+          "code": "CMFM6V6US",
+          "name": "Streetway 1.0 TCe 90hp Style CVT",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12171.88,
+              "priceRetail": 12171.88
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Hatchback",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-iii-2021.png"
+        }
+      ],
+      "image": "images/dacia/models/dacia-sandero-iii-2021.png",
+      "imageSource": "catalogue-style generated reference; generation/facelift matched to model year"
+    },
+    "Sandero Stepway": {
+      "category": "Crossover",
+      "editions": [
+        {
+          "factoryCode": "SSTMT6UGS",
+          "code": "SSTMT6UGS",
+          "name": "Stepway 1.0 TCe 100hp Life LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11564.95,
+              "priceRetail": 11564.95
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "Crossover",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png"
+        },
+        {
+          "factoryCode": "SMFMT6UGS",
+          "code": "SMFMT6UGS",
+          "name": "Stepway 1.0 TCe 100hp Style LPG",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12425.67,
+              "priceRetail": 12425.67
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "lpg",
+          "powertrain": "bi-fuel",
+          "bodyType": "Crossover",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png"
+        },
+        {
+          "factoryCode": "SSTM66US",
+          "code": "SSTM66US",
+          "name": "Stepway 1.0 TCe 90hp Life",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 11234.38,
+              "priceRetail": 11234.38
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Crossover",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png"
+        },
+        {
+          "factoryCode": "SMFM66US",
+          "code": "SMFM66US",
+          "name": "Stepway 1.0 TCe 90hp Style",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 12093.75,
+              "priceRetail": 12093.75
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Crossover",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png"
+        },
+        {
+          "factoryCode": "SMFM6V6US",
+          "code": "SMFM6V6US",
+          "name": "Stepway 1.0 TCe 90hp Style CVT",
+          "co2": null,
+          "variants": [
+            {
+              "color": "Standard",
+              "priceNet": 13500.0,
+              "priceRetail": 13500.0
+            }
+          ],
+          "extras": [
+            {
+              "name": "Πίσω αισθητήρες στάθμευσης",
+              "price": 170.0,
+              "code": "ITPK1"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας και Εμπρός αισθητήρες παρκαρίσματος",
+              "price": 260.0,
+              "code": "PCV82 (ITPK4 RRCAM)"
+            },
+            {
+              "name": "Κάμερα οπισθοπορείας, Εμπρός αισθητήρες παρκαρίσματος & Προειδοποίηση τυφλού σημείου (BSW)",
+              "price": 350.0,
+              "code": "PCV96 (ITPK4 RRCAM DANGMO)"
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 360.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98 (RA49D MAPSTD)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree",
+              "price": 140.0,
+              "code": "PCV18 (SOP03C SBOUCL)"
+            },
+            {
+              "name": "Κάρτα Renault Handsfree, Κάθισμα οδηγού ρυθμιζόμενο σε ύψος, Ηλεκτρικό χειρόφρενο, Mid console με υποβραχιόνιο & κλειστή αποθήκευση",
+              "price": 230.0,
+              "code": "PCV44 (SOP03C SGAV02 FPASS CSRBA2 SBOUCL)"
+            },
+            {
+              "name": "Κάθισμα οδηγού ρυθμιζόμενο σε ύψος & Τιμόνι ρυθμιζόμενο σε μήκος",
+              "price": 140.0,
+              "code": "PCV94 (SGAV04,VOLRHP)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" \"AMARIS\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF31"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, KQF, NPI, RQH"
+            },
+            {
+              "name": "TEOREN MOTORS ΕΔΡΑ: Λ. ΤΑΤΟΪΟΥ 93 ΜΕΤΑΜΟΡΦΩΣΗ 144 51 ΓΡΑΦΕΙΑ:Λ. ΚΗΦΙΣΟΥ 138-140",
+              "price": 117.0
+            },
+            {
+              "name": "Pack Sun roof: Αυτόματος κλιματισμός & Ηλεκτρικά ανοιγόμενη οροφή",
+              "price": 350.0,
+              "code": "PCV10 (CA02 TOELEC)"
+            },
+            {
+              "name": "Medianav Σύστημα πολυμέσων με οθόνη 8\" με Ελληνική χαρτογράφηση",
+              "price": 140.0,
+              "code": "PCV98(RA49D MAPSTD)"
+            },
+            {
+              "name": "Ζάντες αλουμινίου 16\" Black Diamant \"MAHALIA\"",
+              "price": 260.0,
+              "code": "RALU16 - RDIF33"
+            },
+            {
+              "name": "Χρώμα",
+              "price": 328.6,
+              "code": "676, KNA, KQA, NPI, RQH,EPY"
+            }
+          ],
+          "co2Standard": "WLTP",
+          "fuel": "petrol",
+          "powertrain": "ice",
+          "bodyType": "Crossover",
+          "euro": "euro6",
+          "euroSource": "official price-list emissions statement",
+          "sourceDocument": "2021/Sandero 23_12_2021.pdf",
+          "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png"
+        }
+      ],
+      "image": "images/dacia/models/dacia-sandero-stepway-iii-2021.png",
+      "imageSource": "catalogue-style generated reference; generation/facelift matched to model year"
+    }
+  }
+}
