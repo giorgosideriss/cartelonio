@@ -4233,3 +4233,12 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .tokens-voucher{border:1px solid #e0e7df;border-radius:14px;padding:0 12px 12px}.tokens-voucher .tokens-option{border:0;padding:13px 0}.tokens-voucher label{display:block;font-size:11px;font-weight:750;color:#59665a;margin:2px 0 7px}.tokens-voucher input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #dce4db;border-radius:10px;background:#f7f9f6;font:inherit;font-size:12px}.tokens-redeem{width:100%;margin-top:9px;padding:11px;border:0;border-radius:10px;background:#e5eee1;color:#61785e;font:inherit;font-size:12px;font-weight:800}.tokens-voucher-note{font-size:10px;line-height:1.5;color:#7b857c;margin:9px 0 0}
 @media(max-width:700px){.site-header .tokens-menu:not([hidden]){position:fixed;inset:var(--account-menu-top,100px) 12px auto 12px;width:auto;max-width:none}.tokens-panel{max-height:calc(100dvh - var(--account-menu-top,100px) - 12px);padding:18px}.site-header .account-controls > .token-badge{font-size:.7rem}}
 @media(prefers-reduced-motion:reduce){.site-header .tokens-menu{animation:none}}
+
+/* Cartelonio signup: confirmation state */
+.auth-signup-pending[hidden],.auth-form[hidden]{display:none!important}
+.auth-signup-pending{display:grid;gap:12px;text-align:center;padding:16px 3px 5px;color:#f3f8f0}
+.auth-signup-pending h3{margin:0;font-size:1.3rem}
+.auth-signup-pending p{margin:0;font-size:.85rem;line-height:1.6;color:rgba(255,255,255,.72)}
+.auth-signup-pending strong{overflow-wrap:anywhere;border-radius:12px;padding:12px;background:rgba(158,243,111,.1);color:#baff94}
+.auth-pending-icon{font-size:2rem;color:#baff94}
+.auth-signup-pending .auth-secondary{margin-top:6px}

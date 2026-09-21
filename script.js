@@ -1435,6 +1435,25 @@ const cartelonioDb = window.supabase?.createClient(
 
 let cartelonioSession = null;
 let cartelonioProfile = null;
+let cartelonioSignupBusy = false;
+const CARTELONIO_SIGNUP_PENDING_KEY = "cartelonio_signup_pending_email";
+function showSignupPending(email) {
+  const panel = authElement("signupPendingPanel");
+  const form = authElement("signupForm");
+  if (form) { form.hidden = true; form.classList.remove("is-active"); }
+  if (panel) {
+    panel.hidden = false;
+    authElement("signupPendingEmail").textContent = email;
+  }
+  if (authElement("authTabs")) authElement("authTabs").hidden = true;
+  setAuthStatus("");
+}
+function clearSignupPending() {
+  localStorage.removeItem(CARTELONIO_SIGNUP_PENDING_KEY);
+  if (authElement("signupPendingPanel")) authElement("signupPendingPanel").hidden = true;
+  if (authElement("signupForm")) authElement("signupForm").hidden = false;
+}
+
 let resolveAuthReady;
 const cartelonioAuthReady = new Promise(resolve => { resolveAuthReady = resolve; });
 
@@ -1452,14 +1471,19 @@ function showAuthView(view) {
   const userPanel = authElement("authUserPanel");
   const signedIn = Boolean(cartelonioSession?.user && !cartelonioSession.user.is_anonymous);
   if (signedIn && view !== "password") view = "user";
+  const pendingEmail = localStorage.getItem(CARTELONIO_SIGNUP_PENDING_KEY);
+  const pendingView = view === "signup" && Boolean(pendingEmail) && !signedIn;
+  if (authElement("signupPendingPanel")) authElement("signupPendingPanel").hidden = !pendingView;
+  if (pendingView && authElement("signupPendingEmail")) authElement("signupPendingEmail").textContent = pendingEmail;
+  if (authElement("signupForm")) authElement("signupForm").hidden = pendingView;
   document.querySelectorAll("[data-auth-view]").forEach(button => {
     button.classList.toggle("is-active", button.dataset.authView === view);
   });
   // Never expose guest tabs/forms to an authenticated user.
   document.querySelectorAll("[data-auth-panel]").forEach(panel => {
-    panel.classList.toggle("is-active", (panel.dataset.authPanel === view && !signedIn) || (panel.dataset.authPanel === "password" && view === "password"));
+    panel.classList.toggle("is-active", (panel.dataset.authPanel === view && !signedIn && !pendingView) || (panel.dataset.authPanel === "password" && view === "password"));
   });
-  if (tabs) tabs.hidden = signedIn || view === "password" || view === "user";
+  if (tabs) tabs.hidden = signedIn || pendingView || view === "password" || view === "user";
   if (userPanel) userPanel.hidden = view !== "user";
 }
 
@@ -1593,6 +1617,7 @@ async function initializeCartelonioAuth() {
 
     cartelonioDb.auth.onAuthStateChange((event, session) => {
       cartelonioSession = session;
+      if (session?.user && !session.user.is_anonymous && session.user.email_confirmed_at) clearSignupPending();
       window.setTimeout(async () => {
         if (session) await loadCartelonioProfile();
         if ((event === "PASSWORD_RECOVERY") ||
@@ -1712,10 +1737,11 @@ document.querySelectorAll("[data-auth-view]").forEach(button => {
 
 authElement("signupForm")?.addEventListener("submit", async event => {
   event.preventDefault();
+  if (cartelonioSignupBusy || localStorage.getItem(CARTELONIO_SIGNUP_PENDING_KEY)) return;
   const email = authElement("signupEmail").value.trim();
   const password = authElement("signupPassword").value;
   const confirmation = authElement("signupPasswordConfirm").value;
-  const submit = event.submitter;
+  const submit = authElement("signupForm").querySelector('button[type="submit"]');
   if (password.length < 8) {
     setAuthStatus("Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες.", "error");
     return;
@@ -1724,29 +1750,40 @@ authElement("signupForm")?.addEventListener("submit", async event => {
     setAuthStatus("Οι δύο κωδικοί δεν ταιριάζουν.", "error");
     return;
   }
+  cartelonioSignupBusy = true;
+  const originalLabel = submit?.textContent;
   try {
-    submit.disabled = true;
-    setAuthStatus("Αποστολή email επιβεβαίωσης…");
+    if (submit) { submit.disabled = true; submit.textContent = "Γίνεται εγγραφή…"; }
+    setAuthStatus("Γίνεται εγγραφή και αποστολή email…");
     await cartelonioAuthReady;
-    // Upgrade the existing anonymous Supabase user, preserving its user ID,
-    // visitor tokens and associated records. Do not signUp a second user.
     if (!cartelonioSession?.user?.is_anonymous) {
       throw new Error("Έχεις ήδη λογαριασμό. Συνδέσου ή χρησιμοποίησε την επαναφορά κωδικού.");
     }
+    // Preserve the anonymous user's ID and tokens. Never retry the password
+    // update after a successful response: Supabase may treat it as a password change.
     const { error } = await cartelonioDb.auth.updateUser(
       { email, password },
       { emailRedirectTo: `${location.origin}/?account=verified` }
     );
     if (error) throw error;
-    // Password is already set; the legacy post-confirmation password prompt
-    // is reserved for users who registered under the older email-only flow.
+    localStorage.setItem(CARTELONIO_SIGNUP_PENDING_KEY, email);
     localStorage.removeItem("cartelonio_pending_password_setup");
-    setAuthStatus("Σου στείλαμε email επιβεβαίωσης. Μετά την επιβεβαίωση μπορείς να συνδεθείς με το email και τον κωδικό σου.", "success");
+    authElement("signupPassword").value = "";
+    authElement("signupPasswordConfirm").value = "";
+    showSignupPending(email);
   } catch (error) {
-    setAuthStatus(error.message || "Η εγγραφή δεν ολοκληρώθηκε.", "error");
+    console.error("Cartelonio signup failed:", error);
+    setAuthStatus(error.message || "Η εγγραφή δεν ολοκληρώθηκε. Δοκίμασε ξανά.", "error");
   } finally {
-    submit.disabled = false;
+    cartelonioSignupBusy = false;
+    if (submit) { submit.disabled = false; submit.textContent = originalLabel; }
   }
+});
+
+authElement("signupPendingLogin")?.addEventListener("click", () => {
+  clearSignupPending();
+  showAuthView("login");
+  setAuthStatus("Αφού επιβεβαιώσεις το email σου, συνδέσου με τον κωδικό σου.");
 });
 
 authElement("loginForm")?.addEventListener("submit", async event => {
