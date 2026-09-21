@@ -1713,18 +1713,35 @@ document.querySelectorAll("[data-auth-view]").forEach(button => {
 authElement("signupForm")?.addEventListener("submit", async event => {
   event.preventDefault();
   const email = authElement("signupEmail").value.trim();
+  const password = authElement("signupPassword").value;
+  const confirmation = authElement("signupPasswordConfirm").value;
   const submit = event.submitter;
+  if (password.length < 8) {
+    setAuthStatus("Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες.", "error");
+    return;
+  }
+  if (password !== confirmation) {
+    setAuthStatus("Οι δύο κωδικοί δεν ταιριάζουν.", "error");
+    return;
+  }
   try {
     submit.disabled = true;
     setAuthStatus("Αποστολή email επιβεβαίωσης…");
     await cartelonioAuthReady;
+    // Upgrade the existing anonymous Supabase user, preserving its user ID,
+    // visitor tokens and associated records. Do not signUp a second user.
+    if (!cartelonioSession?.user?.is_anonymous) {
+      throw new Error("Έχεις ήδη λογαριασμό. Συνδέσου ή χρησιμοποίησε την επαναφορά κωδικού.");
+    }
     const { error } = await cartelonioDb.auth.updateUser(
-      { email },
+      { email, password },
       { emailRedirectTo: `${location.origin}/?account=verified` }
     );
     if (error) throw error;
-    localStorage.setItem("cartelonio_pending_password_setup", "1");
-    setAuthStatus("Σου στείλαμε email επιβεβαίωσης. Άνοιξε τον σύνδεσμο στο ίδιο πρόγραμμα περιήγησης.", "success");
+    // Password is already set; the legacy post-confirmation password prompt
+    // is reserved for users who registered under the older email-only flow.
+    localStorage.removeItem("cartelonio_pending_password_setup");
+    setAuthStatus("Σου στείλαμε email επιβεβαίωσης. Μετά την επιβεβαίωση μπορείς να συνδεθείς με το email και τον κωδικό σου.", "success");
   } catch (error) {
     setAuthStatus(error.message || "Η εγγραφή δεν ολοκληρώθηκε.", "error");
   } finally {
