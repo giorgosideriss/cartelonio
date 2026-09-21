@@ -1610,6 +1610,65 @@ async function initializeCartelonioAuth() {
   }
 }
 
+async function loadUsedTokens() {
+  const used = authElement("tokensUsed");
+  if (!used) return;
+  used.textContent = "—";
+  if (!cartelonioDb || !cartelonioSession?.user) return;
+  const userId = cartelonioSession.user.id;
+  const { data, error } = await cartelonioDb.rpc("get_used_tokens");
+  if (cartelonioSession?.user?.id !== userId) return;
+  if (error) {
+    console.warn("Unable to load token usage:", error);
+    authElement("tokensUsedNote").textContent = "Δεν ήταν δυνατή η φόρτωση χρήσης. Δοκίμασε ξανά.";
+    return;
+  }
+  used.textContent = Number(data || 0).toLocaleString("el-GR");
+  authElement("tokensUsedNote").textContent = "Χρεώσεις υπολογισμών από το ιστορικό tokens.";
+}
+
+async function redeemCartelonioVoucher() {
+  const button = authElement("tokensRedeem");
+  const input = authElement("tokensVoucherCode");
+  const notice = authElement("tokensVoucherNotice");
+  if (!button || !input || !notice) return;
+  if (!cartelonioSession?.user || cartelonioSession.user.is_anonymous) {
+    notice.textContent = "Συνδέσου σε λογαριασμό για να εξαργυρώσεις κωδικό.";
+    return;
+  }
+  const code = input.value.trim().toUpperCase();
+  if (!/^[A-Z0-9_-]{3,64}$/.test(code)) {
+    notice.textContent = "Πληκτρολόγησε έναν έγκυρο κωδικό.";
+    return;
+  }
+  button.disabled = true;
+  notice.textContent = "Γίνεται εξαργύρωση…";
+  try {
+    const { data, error } = await cartelonioDb.rpc("redeem_voucher", { p_code: code });
+    if (error) throw error;
+    const result = Array.isArray(data) ? data[0] : data;
+    input.value = "";
+    notice.textContent = `Προστέθηκαν ${Number(result.awarded_tokens).toLocaleString("el-GR")} tokens!`;
+    await loadCartelonioProfile();
+    await loadUsedTokens();
+  } catch (error) {
+    const msg = String(error?.message || "");
+    const messages = {
+      invalid_voucher: "Ο κωδικός δεν είναι έγκυρος ή έχει λήξει.",
+      voucher_already_redeemed: "Έχεις ήδη εξαργυρώσει αυτόν τον κωδικό.",
+      voucher_exhausted: "Ο κωδικός έχει εξαντληθεί.",
+      discount_checkout_not_available: "Ο εκπτωτικός κωδικός θα είναι διαθέσιμος όταν ενεργοποιηθούν οι αγορές.",
+      verified_account_required: "Απαιτείται επιβεβαιωμένος λογαριασμός."
+    };
+    notice.textContent = Object.entries(messages).find(([key]) => msg.includes(key))?.[1] || "Η εξαργύρωση απέτυχε. Δοκίμασε ξανά.";
+    console.warn("Voucher redemption failed:", error);
+  } finally { button.disabled = false; }
+}
+authElement("tokensRedeem")?.addEventListener("click", redeemCartelonioVoucher);
+authElement("tokensVoucherCode")?.addEventListener("keydown", event => {
+  if (event.key === "Enter") { event.preventDefault(); redeemCartelonioVoucher(); }
+});
+
 function closeTokensMenu() {
   const menu = authElement("tokensMenu");
   if (menu) menu.hidden = true;
@@ -1621,6 +1680,7 @@ function openTokensMenu() {
   if (!menu) return;
   menu.hidden = false;
   authElement("tokenBadge")?.setAttribute("aria-expanded", "true");
+  loadUsedTokens();
 }
 authElement("tokenBadge")?.addEventListener("click", () => {
   if (authElement("tokensMenu")?.hidden) openTokensMenu();

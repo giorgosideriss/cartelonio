@@ -93,14 +93,14 @@
       <div class="tokens-overview">
         <div class="tokens-main-number"><span class="tokens-symbol" aria-hidden="true">▰</span><div><strong id="tokensAvailable">—</strong><span>Διαθέσιμα tokens</span></div></div>
         <div class="tokens-used"><span>Tokens που χρησιμοποιήθηκαν</span><strong id="tokensUsed">—</strong></div>
-        <p class="tokens-used-note" id="tokensUsedNote">Το ιστορικό συνολικής χρήσης θα εμφανιστεί όταν συνδεθεί με τα στοιχεία χρεώσεων του Supabase.</p>
+        <p class="tokens-used-note" id="tokensUsedNote">Μετράμε μόνο τις χρεώσεις για υπολογισμούς.</p>
       </div>
       <div class="tokens-option tokens-option-disabled"><span class="tokens-option-icon" aria-hidden="true">🛒</span><span><strong>Αγορά Tokens</strong><small>Επίλεξε το πακέτο που σου ταιριάζει</small></span><span class="tokens-soon">Σύντομα</span></div>
       <div class="tokens-voucher"><div class="tokens-option"><span class="tokens-option-icon" aria-hidden="true">◇</span><span><strong>Έχω κωδικό / Voucher</strong><small>Δωρεάν tokens ή έκπτωση σε πακέτο</small></span></div>
         <label for="tokensVoucherCode">Κωδικός voucher</label>
-        <input id="tokensVoucherCode" type="text" autocomplete="off" placeholder="Εισαγωγή κωδικού" disabled aria-describedby="tokensVoucherNotice" />
-        <button type="button" class="tokens-redeem" disabled>Εξαργύρωση κωδικού · Σύντομα</button>
-        <p id="tokensVoucherNotice" class="tokens-voucher-note">Η εξαργύρωση θα ενεργοποιηθεί όταν υλοποιηθεί ο ασφαλής έλεγχος κωδικών στο Supabase.</p>
+        <input id="tokensVoucherCode" type="text" autocomplete="off" placeholder="Εισαγωγή κωδικού" maxlength="64" aria-describedby="tokensVoucherNotice" />
+        <button type="button" class="tokens-redeem" id="tokensRedeem">Εξαργύρωση κωδικού</button>
+        <p id="tokensVoucherNotice" class="tokens-voucher-note">Εισήγαγε έναν έγκυρο κωδικό για δωρεάν tokens. Εκπτωτικοί κωδικοί θα ενεργοποιηθούν με τις αγορές.</p>
       </div>
     </section>
   </div>
