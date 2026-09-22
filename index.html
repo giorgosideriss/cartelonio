@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260921-signup-feedback-v2" rel="stylesheet"/>
+<link href="style.css?v=20260922-secure-production-v1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -189,7 +189,7 @@
 <h1>Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</h1>
 <p>
       Το Cartelonio είναι ένας υπολογιστής τέλους ταξινόμησης αυτοκινήτων για την Ελλάδα.
-      Επίλεξε το όχημά σου ή συμπλήρωσε χειροκίνητα τα απαραίτητα στοιχεία και δες άμεσα
+      Επίλεξε το όχημά σου, συμπλήρωσε τα στοιχεία ταξινόμησης και δες άμεσα
       μια εκτίμηση του τέλους ταξινόμησης.
     </p>
 </section>
@@ -302,12 +302,11 @@
 <div class="vehicle-value-cards">
 <div class="field-block dropdown-card price-dropdown-card">
 <label for="price">
-  Τιμή Οχήματος ΛΤΠΦ
+  Επαληθευμένη ΛΤΠΦ
   <span class="tooltip">?
     <span class="tooltiptext">
-      Συμπληρώνεται αυτόματα αφού επιλέξετε Μάρκα, Χρονολογία, Μοντέλο και Έκδοση.
-      Εάν δεν υπάρχει το αυτοκίνητο στη λίστα, μπορείτε να παρακάμψετε τη διαμόρφωση
-      και να συμπληρώσετε χειροκίνητα ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.
+      Η ΛΤΠΦ και οι τιμές εξοπλισμού δεν αποστέλλονται στον browser.
+      Επαληθεύονται στον server και εμφανίζονται μετά τον ασφαλή υπολογισμό.
     </span>
   </span>
 </label>
@@ -316,10 +315,7 @@
   <path d="M18 6.2A7 7 0 1 0 18 17.8M5 10h9M5 14h8"></path>
 </svg></span>
   <div class="required-field-wrap" data-field="price">
-    <input id="price" inputmode="decimal" placeholder="0,00" required="" type="text" value=""/>
-    <span aria-hidden="true" class="field-warning">!
-      <span class="field-warning-text">Παρακαλώ συμπληρώστε την Τιμή Οχήματος - ΛΤΠΦ.</span>
-    </span>
+    <input id="price" inputmode="decimal" placeholder="Εμφανίζεται μετά τον υπολογισμό" readonly type="text" value=""/>
   </div>
 </div>
 </div>
@@ -459,6 +455,7 @@
 <div class="field-block">
 <label for="powertrain">Τύπος Κίνησης</label>
 <select id="powertrain">
+<option value="">Επιλέξτε τύπο κίνησης</option>
 <option value="ice">Συμβατικό / μη υβριδικό</option>
 <option value="hybrid">Υβριδικό ηλεκτρικό</option>
 <option value="electric">Αμιγώς ηλεκτρικό (BEV)</option>
@@ -468,6 +465,7 @@
 <div class="field-block">
 <label for="euroClass">Κατηγορία προσαύξησης Euro</label>
 <select id="euroClass">
+<option value="">Επιλέξτε κατηγορία Euro</option>
 <option value="euro6">Euro 6 (η προσαύξηση υπολογίζεται από την ημερομηνία 1ης ταξινόμησης)</option>
 <option value="euro5b">Euro 5b</option>
 <option value="euro6a">Euro 6a</option>
@@ -653,10 +651,10 @@
         <div class="how-to-steps">
           <article class="how-to-step"><span class="how-to-step-number">01</span><div><h3>Επίλεξε το αυτοκίνητό σου</h3><p>Επίλεξε Μάρκα → Έτος → Μοντέλο → Έκδοση. Όπου υπάρχουν διαθέσιμα δεδομένα, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, CO₂, κατηγορία αμαξώματος και άλλα στοιχεία.</p></div></article>
           <article class="how-to-step"><span class="how-to-step-number">02</span><div><h3>Πρόσθεσε Extras</h3><p>Αν υπάρχουν εργοστασιακά extras για τη συγκεκριμένη έκδοση, μπορείς να τα επιλέξεις και η ΛΤΠΦ προσαρμόζεται αυτόματα.</p></div></article>
-          <article class="how-to-step"><span class="how-to-step-number">03</span><div><h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3><p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Αν κάποιο απαραίτητο στοιχείο δεν υπάρχει στη βάση, μπορείς να το συμπληρώσεις χειροκίνητα.</p></div></article>
+          <article class="how-to-step"><span class="how-to-step-number">03</span><div><h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3><p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Τα οικονομικά και τεχνικά στοιχεία του οχήματος επαληθεύονται από τον ασφαλή κατάλογο.</p></div></article>
           <article class="how-to-step"><span class="how-to-step-number">04</span><div><h3>Πάτησε «Υπολόγισε»</h3><p>Το Cartelonio υπολογίζει την απομειωμένη φορολογητέα αξία και την εκτίμηση του Τέλους Ταξινόμησης σύμφωνα με τα δεδομένα και τους κανόνες που χρησιμοποιεί η εφαρμογή.</p></div></article>
         </div>
-        <div class="how-to-manual"><strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong><p>Μπορείς να παρακάμψεις την επιλογή οχήματος και να εισαγάγεις χειροκίνητα τη ΛΤΠΦ και τα υπόλοιπα απαιτούμενα στοιχεία.</p></div>
+        <div class="how-to-manual"><strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong><p>Η χειροκίνητη ΛΤΠΦ δεν γίνεται δεκτή ως επαληθευμένο δεδομένο. Νέα μοντέλα προστίθενται στον ασφαλή κατάλογο.</p></div>
         <p class="how-to-disclaimer">Το αποτέλεσμα αποτελεί ενημερωτική εκτίμηση και όχι επίσημο τελωνειακό υπολογισμό. Η τελική αξία καθορίζεται από τις αρμόδιες τελωνειακές αρχές.</p>
       </div>
       <div class="onboarding-subview-actions">
@@ -677,8 +675,7 @@
   </div>
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js?v=20260921-signup-feedback-v2"></script>
-<script src="brand-availability.js"></script>
+<script src="supabase-client.min.js?v=20260922-secure-production-v1"></script>
+<script src="script.js?v=20260922-secure-production-v1"></script>
 </body>
 </html>
