@@ -1200,6 +1200,7 @@ const cartelonioDb = window.supabase?.createClient(
 let cartelonioSession = null;
 let cartelonioProfile = null;
 let cartelonioSignupBusy = false;
+let cartelonioRecoveryReturn = new URLSearchParams(window.location.search).get("account") === "recovery";
 const CARTELONIO_SIGNUP_PENDING_KEY = "cartelonio_signup_pending_email";
 function showSignupPending(email) {
   const panel = authElement("signupPendingPanel");
@@ -1338,20 +1339,31 @@ async function ensureCartelonioSession() {
 
 async function initializeCartelonioAuth() {
   try {
-    await ensureCartelonioSession();
-
     cartelonioDb.auth.onAuthStateChange((event, session) => {
       cartelonioSession = session;
       if (session?.user && !session.user.is_anonymous && session.user.email_confirmed_at) clearSignupPending();
       window.setTimeout(async () => {
         if (session) await loadCartelonioProfile();
-        if ((event === "PASSWORD_RECOVERY") ||
+        if ((event === "PASSWORD_RECOVERY") || cartelonioRecoveryReturn ||
             (session?.user && !session.user.is_anonymous && localStorage.getItem("cartelonio_pending_password_setup") === "1")) {
-          openAuthModal("password");
-          setAuthStatus("Το email επιβεβαιώθηκε. Όρισε τώρα τον κωδικό του λογαριασμού σου.", "success");
+          if (session?.user && !session.user.is_anonymous) {
+            openAuthModal("password");
+            setAuthStatus(
+              event === "PASSWORD_RECOVERY" || cartelonioRecoveryReturn
+                ? "Όρισε τώρα τον νέο κωδικό του λογαριασμού σου."
+                : "Το email επιβεβαιώθηκε. Όρισε τώρα τον κωδικό του λογαριασμού σου.",
+              "success"
+            );
+          }
         }
       }, 0);
     });
+
+    await ensureCartelonioSession();
+    if (cartelonioRecoveryReturn && cartelonioSession?.user && !cartelonioSession.user.is_anonymous) {
+      openAuthModal("password");
+      setAuthStatus("Όρισε τώρα τον νέο κωδικό του λογαριασμού σου.", "success");
+    }
   } catch (error) {
     console.error("Cartelonio auth initialization failed:", error);
     setAuthStatus("Η υπηρεσία λογαριασμού δεν είναι προσωρινά διαθέσιμη.", "error");
@@ -1547,6 +1559,7 @@ authElement("setPasswordForm")?.addEventListener("submit", async event => {
     submit.disabled = true;
     const { error } = await cartelonioDb.auth.updateUser({ password });
     if (error) throw error;
+    cartelonioRecoveryReturn = false;
     localStorage.removeItem("cartelonio_pending_password_setup");
     await loadCartelonioProfile();
     showAuthView("user");
