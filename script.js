@@ -1357,6 +1357,12 @@ async function ensureCartelonioSession() {
 
 async function initializeCartelonioAuth() {
   try {
+    const recoverySubmit = authElement("setPasswordForm")?.querySelector('button[type="submit"]');
+    if (cartelonioRecoveryReturn) {
+      openAuthModal("password");
+      if (recoverySubmit) recoverySubmit.disabled = true;
+      setAuthStatus("Επαληθεύουμε τον σύνδεσμο επαναφοράς…", "success");
+    }
     cartelonioDb.auth.onAuthStateChange((event, session) => {
       cartelonioSession = session;
       if (session?.user && !session.user.is_anonymous && session.user.email_confirmed_at) clearSignupPending();
@@ -1366,6 +1372,7 @@ async function initializeCartelonioAuth() {
             (session?.user && !session.user.is_anonymous && localStorage.getItem("cartelonio_pending_password_setup") === "1")) {
           if (session?.user && !session.user.is_anonymous) {
             openAuthModal("password");
+            if (recoverySubmit) recoverySubmit.disabled = false;
             setAuthStatus(
               event === "PASSWORD_RECOVERY" || cartelonioRecoveryReturn
                 ? "Όρισε τώρα τον νέο κωδικό του λογαριασμού σου."
@@ -1380,11 +1387,14 @@ async function initializeCartelonioAuth() {
     await ensureCartelonioSession();
     if (cartelonioRecoveryReturn && cartelonioSession?.user && !cartelonioSession.user.is_anonymous) {
       openAuthModal("password");
+      if (recoverySubmit) recoverySubmit.disabled = false;
       setAuthStatus("Όρισε τώρα τον νέο κωδικό του λογαριασμού σου.", "success");
     }
   } catch (error) {
     console.error("Cartelonio auth initialization failed:", error);
     setAuthStatus("Η υπηρεσία λογαριασμού δεν είναι προσωρινά διαθέσιμη.", "error");
+    const recoverySubmit = authElement("setPasswordForm")?.querySelector('button[type="submit"]');
+    if (recoverySubmit) recoverySubmit.disabled = true;
   } finally {
     resolveAuthReady();
   }
