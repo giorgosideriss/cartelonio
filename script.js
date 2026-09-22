@@ -1194,6 +1194,7 @@ const CARTELONIO_SUPABASE_KEY = "sb_publishable_lUXWzIqEGRJmaxWhCeVvqg_xq9zWcby"
 // Capture recovery markers before createClient processes and cleans the URL.
 const cartelonioInitialAuthUrl = new URL(window.location.href);
 const cartelonioInitialAuthHash = new URLSearchParams(cartelonioInitialAuthUrl.hash.replace(/^#/, ""));
+const cartelonioInitialRecoveryTokenHash = cartelonioInitialAuthUrl.searchParams.get("token_hash");
 const cartelonioInitialRecoveryReturn =
   cartelonioInitialAuthUrl.searchParams.get("account") === "recovery" ||
   cartelonioInitialAuthUrl.searchParams.get("type") === "recovery" ||
@@ -1362,6 +1363,18 @@ async function initializeCartelonioAuth() {
       openAuthModal("password");
       if (recoverySubmit) recoverySubmit.disabled = true;
       setAuthStatus("Επαληθεύουμε τον σύνδεσμο επαναφοράς…", "success");
+    }
+    if (cartelonioInitialRecoveryTokenHash &&
+        cartelonioInitialAuthUrl.searchParams.get("type") === "recovery") {
+      const recoveryVerification = await cartelonioDb.auth.verifyOtp({
+        token_hash: cartelonioInitialRecoveryTokenHash,
+        type: "recovery",
+      });
+      if (recoveryVerification.error || !recoveryVerification.data.session) {
+        throw recoveryVerification.error || new Error("recovery_session_missing");
+      }
+      cartelonioSession = recoveryVerification.data.session;
+      window.history.replaceState({}, document.title, "/?account=recovery");
     }
     cartelonioDb.auth.onAuthStateChange((event, session) => {
       cartelonioSession = session;
