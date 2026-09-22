@@ -1191,6 +1191,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ================= SUPABASE AUTH + CALCULATION TOKENS ================= */
 const CARTELONIO_SUPABASE_URL = "https://szgsqorrcktrcfmfmqaa.supabase.co";
 const CARTELONIO_SUPABASE_KEY = "sb_publishable_lUXWzIqEGRJmaxWhCeVvqg_xq9zWcby";
+// Capture recovery markers before createClient processes and cleans the URL.
+const cartelonioInitialAuthUrl = new URL(window.location.href);
+const cartelonioInitialAuthHash = new URLSearchParams(cartelonioInitialAuthUrl.hash.replace(/^#/, ""));
+const cartelonioInitialRecoveryReturn =
+  cartelonioInitialAuthUrl.searchParams.get("account") === "recovery" ||
+  cartelonioInitialAuthUrl.searchParams.get("type") === "recovery" ||
+  cartelonioInitialAuthHash.get("type") === "recovery";
 const cartelonioDb = window.supabase?.createClient(
   CARTELONIO_SUPABASE_URL,
   CARTELONIO_SUPABASE_KEY,
@@ -1200,7 +1207,7 @@ const cartelonioDb = window.supabase?.createClient(
 let cartelonioSession = null;
 let cartelonioProfile = null;
 let cartelonioSignupBusy = false;
-let cartelonioRecoveryReturn = new URLSearchParams(window.location.search).get("account") === "recovery";
+let cartelonioRecoveryReturn = cartelonioInitialRecoveryReturn;
 const CARTELONIO_SIGNUP_PENDING_KEY = "cartelonio_signup_pending_email";
 function showSignupPending(email) {
   const panel = authElement("signupPendingPanel");
@@ -1326,6 +1333,17 @@ async function ensureCartelonioSession() {
   if (!cartelonioDb) throw new Error("Η υπηρεσία λογαριασμού δεν φορτώθηκε.");
   let { data: { session }, error } = await cartelonioDb.auth.getSession();
   if (error) throw error;
+  // Supabase may still be exchanging the recovery URL when this function
+  // starts. Never replace that pending recovery session with an anonymous one.
+  if ((!session || session.user?.is_anonymous) && cartelonioRecoveryReturn) {
+    for (let attempt = 0; attempt < 30 && (!session || session.user?.is_anonymous); attempt += 1) {
+      await new Promise(resolve => window.setTimeout(resolve, 100));
+      const recoverySession = await cartelonioDb.auth.getSession();
+      if (recoverySession.error) throw recoverySession.error;
+      session = recoverySession.data.session;
+    }
+    if (!session || session.user?.is_anonymous) throw new Error("recovery_session_missing");
+  }
   if (!session) {
     const anonymousResult = await cartelonioDb.auth.signInAnonymously();
     if (anonymousResult.error) throw anonymousResult.error;
@@ -1557,6 +1575,10 @@ authElement("setPasswordForm")?.addEventListener("submit", async event => {
   }
   try {
     submit.disabled = true;
+    const { data: { session: activeSession } } = await cartelonioDb.auth.getSession();
+    if (!activeSession?.user || activeSession.user.is_anonymous) {
+      throw new Error("Ο σύνδεσμος επαναφοράς δεν είναι πλέον έγκυρος. Ζήτησε νέο email επαναφοράς.");
+    }
     const { error } = await cartelonioDb.auth.updateUser({ password });
     if (error) throw error;
     cartelonioRecoveryReturn = false;
