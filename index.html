@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260922-secure-production-v7" rel="stylesheet"/>
+<link href="style.css?v=20260922-secure-production-v8" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -82,7 +82,10 @@
 <div class="header-copy">
 <div class="account-controls" id="accountControls">
   <button class="token-badge" id="tokenBadge" type="button" aria-haspopup="dialog" aria-controls="tokensMenu" aria-expanded="false" title="Τα tokens μου">
-    <span class="token-dot" aria-hidden="true"></span><span id="tokenBadgeText">Tokens (—)</span><span class="tokens-chevron" aria-hidden="true">⌄</span>
+    <span class="token-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false"><ellipse cx="12" cy="6.5" rx="7" ry="3.5"/><path d="M5 6.5v5c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-5"/><path d="M5 11.5v5c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-5"/></svg>
+    </span>
+    <span id="tokenBadgeText">Tokens (—)</span>
   </button>
   <div class="tokens-menu" id="tokensMenu" hidden>
     <section class="tokens-panel" role="dialog" aria-modal="false" aria-labelledby="tokensTitle">
@@ -105,7 +108,9 @@
     </section>
   </div>
   <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
-    <span class="account-button-icon" aria-hidden="true">●</span>
+    <span class="account-button-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c.8-3.3 3-5 6.5-5s5.7 1.7 6.5 5"/></svg>
+    </span>
     <span id="accountButtonText">Λογαριασμός</span>
   </button>
 <div class="auth-modal" id="authModal" hidden>
@@ -675,7 +680,7 @@
   </div>
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
-<script src="supabase-client.min.js?v=20260922-secure-production-v7"></script>
-<script src="script.js?v=20260922-secure-production-v7"></script>
+<script src="supabase-client.min.js?v=20260922-secure-production-v8"></script>
+<script src="script.js?v=20260922-secure-production-v8"></script>
 </body>
 </html>
