@@ -1108,6 +1108,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   const modal = document.getElementById("cartelonioOnboarding");
   if(!modal) return;
 
+  // Password-recovery links must never compete with the introductory modal.
+  // The recovery form is the only dialog that should be visible on this URL.
+  const authUrl = new URL(window.location.href);
+  const authHash = new URLSearchParams(authUrl.hash.replace(/^#/, ""));
+  const isPasswordRecovery =
+    authUrl.searchParams.get("account") === "recovery" ||
+    authUrl.searchParams.get("type") === "recovery" ||
+    authUrl.searchParams.has("token_hash") ||
+    authHash.get("type") === "recovery";
+  if (isPasswordRecovery) {
+    modal.setAttribute("aria-hidden", "true");
+    modal.classList.remove("is-open");
+    document.body.classList.remove("cartelonio-onboarding-open");
+    return;
+  }
+
   const views = [...modal.querySelectorAll("[data-onboarding-view]")];
 
   function showView(name){
@@ -1306,7 +1322,7 @@ function renderAccountState() {
   if (authElement("authTokenBalance")) authElement("authTokenBalance").textContent = String(balance);
   // Reflect the real Supabase session immediately when it changes.
   const modal = authElement("authModal");
-  if (modal && !modal.hidden && !authElement("setPasswordForm")?.classList.contains("is-active")) {
+  if (modal && !modal.hidden && !cartelonioRecoveryReturn && !authElement("setPasswordForm")?.classList.contains("is-active")) {
     showAuthView(isPermanent ? "user" : "signup");
   }
 }
