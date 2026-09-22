@@ -761,11 +761,79 @@ function updateCarSummary() {
 
 /* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
 
+function clearCalculationWarnings() {
+  document.querySelectorAll(".required-field-wrap.has-warning,.category-field-wrap.has-warning")
+    .forEach(element => element.classList.remove("has-warning"));
+  document.querySelectorAll(".calculation-field-invalid")
+    .forEach(element => element.classList.remove("calculation-field-invalid"));
+  document.getElementById("resultCard")?.classList.remove("has-calculation-error");
+}
+
+function markCalculationWarning(field) {
+  const wrapper = document.querySelector(`[data-field="${field}"]`);
+  if (wrapper) wrapper.classList.add("has-warning");
+  const direct = document.getElementById(field);
+  if (direct && !wrapper) direct.classList.add("calculation-field-invalid");
+}
+
+function showCalculationError(message, fields = []) {
+  clearCalculationWarnings();
+  fields.forEach(markCalculationWarning);
+  document.getElementById("resultCard")?.classList.add("has-calculation-error");
+  document.getElementById("results").innerHTML = `
+    <div class="calculation-error-message" role="alert">
+      <span class="calculation-error-icon" aria-hidden="true">!</span>
+      <div><strong>Ο υπολογισμός δεν μπορεί να πραγματοποιηθεί.</strong><p>${message}</p></div>
+    </div>`;
+}
+
+function calculationErrorDetails(code) {
+  const errors = {
+    insufficient_tokens: ["Δεν υπάρχουν διαθέσιμα tokens για νέο υπολογισμό.", []],
+    invalid_co2: ["Δεν υπάρχουν πιστοποιημένα στοιχεία εκπομπών CO₂ για τη συγκεκριμένη έκδοση.", ["co2"]],
+    invalid_euro_class: ["Δεν υπάρχει πιστοποιημένη κατηγορία Euro για τη συγκεκριμένη έκδοση.", ["euroClass"]],
+    invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
+    invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
+    invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
+    invalid_extra: ["Κάποιο επιλεγμένο extra δεν υπάρχει πλέον στα επαληθευμένα δεδομένα.", []],
+  };
+  return errors[code] || ["Παρουσιάστηκε τεχνικό πρόβλημα. Δεν αφαιρέθηκε token. Δοκίμασε ξανά.", []];
+}
+
+document.addEventListener("input", event => {
+  const wrapper = event.target.closest?.(".required-field-wrap,.category-field-wrap");
+  wrapper?.classList.remove("has-warning");
+  event.target.classList?.remove("calculation-field-invalid");
+});
+document.addEventListener("change", event => {
+  const wrapper = event.target.closest?.(".required-field-wrap,.category-field-wrap");
+  wrapper?.classList.remove("has-warning");
+  event.target.classList?.remove("calculation-field-invalid");
+});
+
 async function calculate(){
+ clearCalculationWarnings();
  const firstRegistration=document.getElementById("firstReg").value,importDate=document.getElementById("importDate").value,mileageRaw=document.getElementById("mileage").value.trim(),selection=historySelection();
- if(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index===""||!firstRegistration||!importDate||importDate<firstRegistration||mileageRaw===""||!Number.isFinite(Number(mileageRaw))||Number(mileageRaw)<0||document.getElementById("co2").value===""||!document.getElementById("euroClass").value||!document.getElementById("powertrain").value||!categories[document.getElementById("category").value]){setRegistrationTaxMiniResult(null);document.getElementById("results").innerHTML="<p><strong>Έλεγχος στοιχείων:</strong> Επίλεξε όχημα και συμπλήρωσε ημερομηνίες και χιλιόμετρα.</p>";return;}
+ const missing=[];
+ if(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index==="") missing.push("vehicle");
+ if(!firstRegistration) missing.push("firstReg");
+ if(!importDate||importDate<firstRegistration) missing.push("importDate");
+ if(mileageRaw===""||!Number.isFinite(Number(mileageRaw))||Number(mileageRaw)<0) missing.push("mileage");
+ if(document.getElementById("co2").value==="") missing.push("co2");
+ if(!document.getElementById("euroClass").value) missing.push("euroClass");
+ if(!document.getElementById("powertrain").value) missing.push("powertrain");
+ if(!categories[document.getElementById("category").value]) missing.push("category");
+ if(missing.length){
+   setRegistrationTaxMiniResult(null);
+   const technical=missing.filter(field=>["co2","euroClass","powertrain","category"].includes(field));
+   const message=technical.length
+     ? "Η επιλεγμένη έκδοση δεν διαθέτει όλα τα απαραίτητα πιστοποιημένα στοιχεία (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα). Δοκίμασε άλλη έκδοση."
+     : "Έλεγξε την επιλογή οχήματος, τις ημερομηνίες και τα διανυθέντα χιλιόμετρα.";
+   showCalculationError(message,missing.filter(field=>field!=="vehicle"));
+   return;
+ }
  await cartelonioAuthReady;if(!cartelonioSession?.access_token)return;const source=DATA_SOURCES[selection.brand]?.[selection.year],requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");button.disabled=true;
- try{const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify({vehicle:{brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices},firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs:{co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value}})});const payload=await response.json();if(!response.ok)throw Error(payload.error||"calculation_failed");const r=payload.result,v=payload.vehicle;if(!cartelonioProfile)cartelonioProfile={};cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;setRegistrationTaxMiniResult(r.totalTax);const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>Επαληθευμένη ΛΤΠΦ:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο."}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;}catch(error){document.getElementById("results").innerHTML=`<p><strong>${error.message==="insufficient_tokens"?"Δεν υπάρχουν διαθέσιμα tokens.":"Ο ασφαλής υπολογισμός απέτυχε. Δεν ολοκληρώθηκε χρέωση."}</strong></p>`;await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
+ try{const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify({vehicle:{brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices},firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs:{co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value}})});const payload=await response.json();if(!response.ok)throw Error(payload.error||"calculation_failed");const r=payload.result,v=payload.vehicle;if(!cartelonioProfile)cartelonioProfile={};cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;setRegistrationTaxMiniResult(r.totalTax);const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>Επαληθευμένη ΛΤΠΦ:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο."}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;}catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
 }
 
 /* ========== ΠΡΩΤΗ ΑΔΕΙΑ (safe sync) ========== */

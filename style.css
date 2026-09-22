@@ -359,6 +359,24 @@ button.secondary{
 .category-warning-text,.field-warning-text{right:0;bottom:calc(100% + 9px)}
 .category-warning:hover .category-warning-text,.field-warning:hover .field-warning-text{visibility:visible;opacity:.97}
 .category-error-message{color:#a22121;margin:0;font-size:13px}
+.calculation-field-invalid{
+  border:1.5px solid var(--danger)!important;
+  box-shadow:0 0 0 4px rgba(198,40,40,.09)!important;
+}
+.result-panel.has-calculation-error{
+  border-color:rgba(198,40,40,.55)!important;
+  box-shadow:0 0 0 4px rgba(198,40,40,.08),var(--shadow)!important;
+}
+.calculation-error-message{
+  display:flex;align-items:flex-start;gap:12px;padding:15px 16px;border:1px solid rgba(198,40,40,.32);
+  border-radius:14px;background:rgba(198,40,40,.075);color:#6f1717;line-height:1.45;
+}
+.calculation-error-message .calculation-error-icon{
+  display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:50%;
+  background:var(--danger);color:#fff;font-weight:850;
+}
+.calculation-error-message strong{display:block;color:#7e1818!important;margin:2px 0 4px}
+#results .calculation-error-message p{display:block;border:0;margin:0;padding:0;color:#7e3030}
 
 /* Results column */
 .side-column{
