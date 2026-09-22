@@ -174,7 +174,7 @@ function updateVehicleImageIdentity(hasImage = null) {
   const brandLogo = document.getElementById("vehicleImageBrandLogo");
   if (brandLogo) {
     const logoUrl = BRAND_LOGOS[brand] || "";
-    brandLogo.src = logoUrl;
+    brandLogo.src = cartelonioPublicAssetUrl(logoUrl);
     brandLogo.alt = brand ? `${brand} logo` : "";
     brandLogo.style.display = logoUrl ? "block" : "none";
     brandLogo.onerror = () => { brandLogo.style.display = "none"; };
@@ -224,6 +224,23 @@ function formatPriceField() {
   const formatted = formatGreekNumber(input.value, 0, 2);
   if (formatted) input.value = formatted;
 }
+
+// Avoid duplicating the large public image tree in the staging repository.
+// Production keeps using its normal relative asset paths.
+function cartelonioPublicAssetUrl(value) {
+  const path = String(value || "").trim();
+  if (!path || /^(?:https?:)?\/\//i.test(path) || /^(?:data:|blob:)/i.test(path)) return path;
+  const isGithubStaging = window.location.hostname === "giorgosideriss.github.io" &&
+    window.location.pathname.startsWith("/cartelonio-staging/");
+  if (!isGithubStaging) return path;
+  const normalized = path.replace(/^\.\//, "").replace(/^\//, "");
+  return normalized.startsWith("images/")
+    ? `https://raw.githubusercontent.com/giorgosideriss/cartelonio/main/${normalized}`
+    : path;
+}
+
+const cartelonioSiteLogo = document.querySelector(".site-logo");
+if (cartelonioSiteLogo) cartelonioSiteLogo.src = cartelonioPublicAssetUrl(cartelonioSiteLogo.getAttribute("src"));
 
 function setRegistrationTaxMiniResult(value) {
   const el = document.getElementById("registrationTaxMiniValue");
@@ -280,7 +297,7 @@ async function updateCarImage() {
       carImage.classList.add("image-unavailable");
       updateVehicleImageIdentity(false);
     };
-    carImage.src = resolvedImage;
+    carImage.src = cartelonioPublicAssetUrl(resolvedImage);
     carImage.alt = `${brand} ${model}${edition?.name ? " - " + edition.name : ""}`;
     updateVehicleImageIdentity(true);
     return;
@@ -744,11 +761,79 @@ function updateCarSummary() {
 
 /* ========== ΚΥΡΙΑ ΣΥΝΑΡΤΗΣΗ ΥΠΟΛΟΓΙΣΜΟΥ ========== */
 
+function clearCalculationWarnings() {
+  document.querySelectorAll(".required-field-wrap.has-warning,.category-field-wrap.has-warning")
+    .forEach(element => element.classList.remove("has-warning"));
+  document.querySelectorAll(".calculation-field-invalid")
+    .forEach(element => element.classList.remove("calculation-field-invalid"));
+  document.getElementById("resultCard")?.classList.remove("has-calculation-error");
+}
+
+function markCalculationWarning(field) {
+  const wrapper = document.querySelector(`[data-field="${field}"]`);
+  if (wrapper) wrapper.classList.add("has-warning");
+  const direct = document.getElementById(field);
+  if (direct && !wrapper) direct.classList.add("calculation-field-invalid");
+}
+
+function showCalculationError(message, fields = []) {
+  clearCalculationWarnings();
+  fields.forEach(markCalculationWarning);
+  document.getElementById("resultCard")?.classList.add("has-calculation-error");
+  document.getElementById("results").innerHTML = `
+    <div class="calculation-error-message" role="alert">
+      <span class="calculation-error-icon" aria-hidden="true">!</span>
+      <div><strong>Ο υπολογισμός δεν μπορεί να πραγματοποιηθεί.</strong><p>${message}</p></div>
+    </div>`;
+}
+
+function calculationErrorDetails(code) {
+  const errors = {
+    insufficient_tokens: ["Δεν υπάρχουν διαθέσιμα tokens για νέο υπολογισμό.", []],
+    invalid_co2: ["Δεν υπάρχουν πιστοποιημένα στοιχεία εκπομπών CO₂ για τη συγκεκριμένη έκδοση.", ["co2"]],
+    invalid_euro_class: ["Δεν υπάρχει πιστοποιημένη κατηγορία Euro για τη συγκεκριμένη έκδοση.", ["euroClass"]],
+    invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
+    invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
+    invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
+    invalid_extra: ["Κάποιο επιλεγμένο extra δεν υπάρχει πλέον στα επαληθευμένα δεδομένα.", []],
+  };
+  return errors[code] || ["Παρουσιάστηκε τεχνικό πρόβλημα. Δεν αφαιρέθηκε token. Δοκίμασε ξανά.", []];
+}
+
+document.addEventListener("input", event => {
+  const wrapper = event.target.closest?.(".required-field-wrap,.category-field-wrap");
+  wrapper?.classList.remove("has-warning");
+  event.target.classList?.remove("calculation-field-invalid");
+});
+document.addEventListener("change", event => {
+  const wrapper = event.target.closest?.(".required-field-wrap,.category-field-wrap");
+  wrapper?.classList.remove("has-warning");
+  event.target.classList?.remove("calculation-field-invalid");
+});
+
 async function calculate(){
+ clearCalculationWarnings();
  const firstRegistration=document.getElementById("firstReg").value,importDate=document.getElementById("importDate").value,mileageRaw=document.getElementById("mileage").value.trim(),selection=historySelection();
- if(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index===""||!firstRegistration||!importDate||importDate<firstRegistration||mileageRaw===""||!Number.isFinite(Number(mileageRaw))||Number(mileageRaw)<0||document.getElementById("co2").value===""||!document.getElementById("euroClass").value||!document.getElementById("powertrain").value||!categories[document.getElementById("category").value]){setRegistrationTaxMiniResult(null);document.getElementById("results").innerHTML="<p><strong>Έλεγχος στοιχείων:</strong> Επίλεξε όχημα και συμπλήρωσε ημερομηνίες και χιλιόμετρα.</p>";return;}
+ const missing=[];
+ if(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index==="") missing.push("vehicle");
+ if(!firstRegistration) missing.push("firstReg");
+ if(!importDate||importDate<firstRegistration) missing.push("importDate");
+ if(mileageRaw===""||!Number.isFinite(Number(mileageRaw))||Number(mileageRaw)<0) missing.push("mileage");
+ if(document.getElementById("co2").value==="") missing.push("co2");
+ if(!document.getElementById("euroClass").value) missing.push("euroClass");
+ if(!document.getElementById("powertrain").value) missing.push("powertrain");
+ if(!categories[document.getElementById("category").value]) missing.push("category");
+ if(missing.length){
+   setRegistrationTaxMiniResult(null);
+   const technical=missing.filter(field=>["co2","euroClass","powertrain","category"].includes(field));
+   const message=technical.length
+     ? "Η επιλεγμένη έκδοση δεν διαθέτει όλα τα απαραίτητα πιστοποιημένα στοιχεία (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα). Δοκίμασε άλλη έκδοση."
+     : "Έλεγξε την επιλογή οχήματος, τις ημερομηνίες και τα διανυθέντα χιλιόμετρα.";
+   showCalculationError(message,missing.filter(field=>field!=="vehicle"));
+   return;
+ }
  await cartelonioAuthReady;if(!cartelonioSession?.access_token)return;const source=DATA_SOURCES[selection.brand]?.[selection.year],requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");button.disabled=true;
- try{const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify({vehicle:{brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices},firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs:{co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value}})});const payload=await response.json();if(!response.ok)throw Error(payload.error||"calculation_failed");const r=payload.result,v=payload.vehicle;if(!cartelonioProfile)cartelonioProfile={};cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;setRegistrationTaxMiniResult(r.totalTax);const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>Επαληθευμένη ΛΤΠΦ:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο."}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;}catch(error){document.getElementById("results").innerHTML=`<p><strong>${error.message==="insufficient_tokens"?"Δεν υπάρχουν διαθέσιμα tokens.":"Ο ασφαλής υπολογισμός απέτυχε. Δεν ολοκληρώθηκε χρέωση."}</strong></p>`;await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
+ try{const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify({vehicle:{brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices},firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs:{co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value}})});const payload=await response.json();if(!response.ok)throw Error(payload.error||"calculation_failed");const r=payload.result,v=payload.vehicle;if(!cartelonioProfile)cartelonioProfile={};cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;setRegistrationTaxMiniResult(r.totalTax);const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>Επαληθευμένη ΛΤΠΦ:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο."}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;}catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
 }
 
 /* ========== ΠΡΩΤΗ ΑΔΕΙΑ (safe sync) ========== */
@@ -1091,6 +1176,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   const modal = document.getElementById("cartelonioOnboarding");
   if(!modal) return;
 
+  // Password-recovery links must never compete with the introductory modal.
+  // The recovery form is the only dialog that should be visible on this URL.
+  const authUrl = new URL(window.location.href);
+  const authHash = new URLSearchParams(authUrl.hash.replace(/^#/, ""));
+  const isPasswordRecovery =
+    authUrl.searchParams.get("account") === "recovery" ||
+    authUrl.searchParams.get("type") === "recovery" ||
+    authUrl.searchParams.has("token_hash") ||
+    authHash.get("type") === "recovery";
+  if (isPasswordRecovery) {
+    modal.setAttribute("aria-hidden", "true");
+    modal.classList.remove("is-open");
+    document.body.classList.remove("cartelonio-onboarding-open");
+    return;
+  }
+
   const views = [...modal.querySelectorAll("[data-onboarding-view]")];
 
   function showView(name){
@@ -1174,6 +1275,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ================= SUPABASE AUTH + CALCULATION TOKENS ================= */
 const CARTELONIO_SUPABASE_URL = "https://szgsqorrcktrcfmfmqaa.supabase.co";
 const CARTELONIO_SUPABASE_KEY = "sb_publishable_lUXWzIqEGRJmaxWhCeVvqg_xq9zWcby";
+// Capture recovery markers before createClient processes and cleans the URL.
+const cartelonioInitialAuthUrl = new URL(window.location.href);
+const cartelonioInitialAuthHash = new URLSearchParams(cartelonioInitialAuthUrl.hash.replace(/^#/, ""));
+const cartelonioInitialRecoveryTokenHash = cartelonioInitialAuthUrl.searchParams.get("token_hash");
+const cartelonioInitialRecoveryReturn =
+  cartelonioInitialAuthUrl.searchParams.get("account") === "recovery" ||
+  cartelonioInitialAuthUrl.searchParams.get("type") === "recovery" ||
+  cartelonioInitialAuthHash.get("type") === "recovery";
 const cartelonioDb = window.supabase?.createClient(
   CARTELONIO_SUPABASE_URL,
   CARTELONIO_SUPABASE_KEY,
@@ -1183,6 +1292,7 @@ const cartelonioDb = window.supabase?.createClient(
 let cartelonioSession = null;
 let cartelonioProfile = null;
 let cartelonioSignupBusy = false;
+let cartelonioRecoveryReturn = cartelonioInitialRecoveryReturn;
 const CARTELONIO_SIGNUP_PENDING_KEY = "cartelonio_signup_pending_email";
 function showSignupPending(email) {
   const panel = authElement("signupPendingPanel");
@@ -1249,7 +1359,8 @@ function openAuthModal(view) {
   const modal = authElement("authModal");
   if (!modal) return;
   setAuthStatus();
-  showAuthView(view || (cartelonioSession?.user?.is_anonymous ? "signup" : "user"));
+  const permanentUser = Boolean(cartelonioSession?.user && !cartelonioSession.user.is_anonymous);
+  showAuthView(view || (permanentUser ? "user" : "signup"));
   positionAccountDropdown();
   closeTokensMenu();
   modal.hidden = false;
@@ -1279,7 +1390,7 @@ function renderAccountState() {
   if (authElement("authTokenBalance")) authElement("authTokenBalance").textContent = String(balance);
   // Reflect the real Supabase session immediately when it changes.
   const modal = authElement("authModal");
-  if (modal && !modal.hidden && !authElement("setPasswordForm")?.classList.contains("is-active")) {
+  if (modal && !modal.hidden && !cartelonioRecoveryReturn && !authElement("setPasswordForm")?.classList.contains("is-active")) {
     showAuthView(isPermanent ? "user" : "signup");
   }
 }
@@ -1307,6 +1418,17 @@ async function ensureCartelonioSession() {
   if (!cartelonioDb) throw new Error("Η υπηρεσία λογαριασμού δεν φορτώθηκε.");
   let { data: { session }, error } = await cartelonioDb.auth.getSession();
   if (error) throw error;
+  // Supabase may still be exchanging the recovery URL when this function
+  // starts. Never replace that pending recovery session with an anonymous one.
+  if ((!session || session.user?.is_anonymous) && cartelonioRecoveryReturn) {
+    for (let attempt = 0; attempt < 30 && (!session || session.user?.is_anonymous); attempt += 1) {
+      await new Promise(resolve => window.setTimeout(resolve, 100));
+      const recoverySession = await cartelonioDb.auth.getSession();
+      if (recoverySession.error) throw recoverySession.error;
+      session = recoverySession.data.session;
+    }
+    if (!session || session.user?.is_anonymous) throw new Error("recovery_session_missing");
+  }
   if (!session) {
     const anonymousResult = await cartelonioDb.auth.signInAnonymously();
     if (anonymousResult.error) throw anonymousResult.error;
@@ -1320,23 +1442,56 @@ async function ensureCartelonioSession() {
 
 async function initializeCartelonioAuth() {
   try {
-    await ensureCartelonioSession();
-
+    const recoverySubmit = authElement("setPasswordForm")?.querySelector('button[type="submit"]');
+    if (cartelonioRecoveryReturn) {
+      openAuthModal("password");
+      if (recoverySubmit) recoverySubmit.disabled = true;
+      setAuthStatus("Επαληθεύουμε τον σύνδεσμο επαναφοράς…", "success");
+    }
+    if (cartelonioInitialRecoveryTokenHash &&
+        cartelonioInitialAuthUrl.searchParams.get("type") === "recovery") {
+      const recoveryVerification = await cartelonioDb.auth.verifyOtp({
+        token_hash: cartelonioInitialRecoveryTokenHash,
+        type: "recovery",
+      });
+      if (recoveryVerification.error || !recoveryVerification.data.session) {
+        throw recoveryVerification.error || new Error("recovery_session_missing");
+      }
+      cartelonioSession = recoveryVerification.data.session;
+      window.history.replaceState({}, document.title, "/?account=recovery");
+    }
     cartelonioDb.auth.onAuthStateChange((event, session) => {
       cartelonioSession = session;
       if (session?.user && !session.user.is_anonymous && session.user.email_confirmed_at) clearSignupPending();
       window.setTimeout(async () => {
         if (session) await loadCartelonioProfile();
-        if ((event === "PASSWORD_RECOVERY") ||
+        if ((event === "PASSWORD_RECOVERY") || cartelonioRecoveryReturn ||
             (session?.user && !session.user.is_anonymous && localStorage.getItem("cartelonio_pending_password_setup") === "1")) {
-          openAuthModal("password");
-          setAuthStatus("Το email επιβεβαιώθηκε. Όρισε τώρα τον κωδικό του λογαριασμού σου.", "success");
+          if (session?.user && !session.user.is_anonymous) {
+            openAuthModal("password");
+            if (recoverySubmit) recoverySubmit.disabled = false;
+            setAuthStatus(
+              event === "PASSWORD_RECOVERY" || cartelonioRecoveryReturn
+                ? "Όρισε τώρα τον νέο κωδικό του λογαριασμού σου."
+                : "Το email επιβεβαιώθηκε. Όρισε τώρα τον κωδικό του λογαριασμού σου.",
+              "success"
+            );
+          }
         }
       }, 0);
     });
+
+    await ensureCartelonioSession();
+    if (cartelonioRecoveryReturn && cartelonioSession?.user && !cartelonioSession.user.is_anonymous) {
+      openAuthModal("password");
+      if (recoverySubmit) recoverySubmit.disabled = false;
+      setAuthStatus("Όρισε τώρα τον νέο κωδικό του λογαριασμού σου.", "success");
+    }
   } catch (error) {
     console.error("Cartelonio auth initialization failed:", error);
     setAuthStatus("Η υπηρεσία λογαριασμού δεν είναι προσωρινά διαθέσιμη.", "error");
+    const recoverySubmit = authElement("setPasswordForm")?.querySelector('button[type="submit"]');
+    if (recoverySubmit) recoverySubmit.disabled = true;
   } finally {
     resolveAuthReady();
   }
@@ -1527,8 +1682,13 @@ authElement("setPasswordForm")?.addEventListener("submit", async event => {
   }
   try {
     submit.disabled = true;
+    const { data: { session: activeSession } } = await cartelonioDb.auth.getSession();
+    if (!activeSession?.user || activeSession.user.is_anonymous) {
+      throw new Error("Ο σύνδεσμος επαναφοράς δεν είναι πλέον έγκυρος. Ζήτησε νέο email επαναφοράς.");
+    }
     const { error } = await cartelonioDb.auth.updateUser({ password });
     if (error) throw error;
+    cartelonioRecoveryReturn = false;
     localStorage.removeItem("cartelonio_pending_password_setup");
     await loadCartelonioProfile();
     showAuthView("user");
@@ -1641,7 +1801,7 @@ function historyCurrentImagePath(){
 // page URL (which may change with routes, refreshes or browser navigation).
 function historyImageUrl(path){
  if(typeof path !== 'string' || !path.trim()) return null;
- const value=path.trim().replace(/\\/g,'/');
+ const value=cartelonioPublicAssetUrl(path.trim().replace(/\\/g,'/'));
  if(/^(?:data:|blob:|javascript:)/i.test(value)) return null;
  try {
   const url=/^https?:\/\//i.test(value) ? new URL(value) :
@@ -1697,7 +1857,7 @@ function renderHistoryRecord(record){
  const main=historyNode('div','history-entry-main');
  const titleRow=historyNode('div','history-title-row');
  const logoPath=BRAND_LOGOS[record.brand];
- if(logoPath){const logo=historyNode('img','history-brand-logo');logo.src=logoPath;logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
+ if(logoPath){const logo=historyNode('img','history-brand-logo');logo.src=cartelonioPublicAssetUrl(logoPath);logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
  titleRow.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'));
  main.append(titleRow,
   historyNode('span','history-car-version',[record.year,record.edition].filter(Boolean).join(' · ')),
