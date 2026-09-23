@@ -4471,3 +4471,56 @@ body.welcome10-open{overflow:hidden}
 .tokens-voucher-note{font-size:11px;margin:9px 0 0}
 .tokens-footer-note{margin:7px 0 0;padding:12px 13px;border:1px solid #e7ece9;border-radius:13px;background:#f8faf9;color:#748079;font-size:11px;line-height:1.5}
 @media(max-width:700px){.tokens-panel{padding:21px 18px 17px}.tokens-panel h2{font-size:21px;margin-bottom:16px}.tokens-balance-icon{width:62px;height:62px}.tokens-overview>strong{font-size:40px}.tokens-panel .tokens-option{padding:11px 2px}.tokens-overview{padding-bottom:14px}}
+
+
+/* Header account and token controls — reference-image iOS/macOS finish */
+.site-header .account-controls{gap:14px;align-items:center}
+.site-header .account-controls > .token-badge{
+  height:54px;min-height:54px;max-height:54px;
+  padding:0 18px 0 17px;gap:12px;
+  border:1px solid #d4dcd7;border-radius:999px;
+  background:linear-gradient(135deg,#f9fcfa 0%,#edf3f0 100%);
+  color:#1c2826;box-shadow:0 9px 24px rgba(26,42,32,.09),inset 0 1px 0 #fff;
+  font-size:14px;font-weight:750;letter-spacing:0;
+  transition:background .2s,box-shadow .2s,transform .2s;
+}
+.site-header .account-controls > .token-badge:hover,
+.site-header .account-controls > .token-badge[aria-expanded="true"]{
+  background:#f3f8f5;border-color:#bdccc3;box-shadow:0 10px 27px rgba(26,42,32,.14);
+}
+.site-header .token-badge .token-icon{width:28px;height:28px;flex:0 0 28px;color:#1d3930}
+.site-header .token-badge .token-icon svg{width:27px;height:27px;stroke-width:1.85}
+.site-header .token-badge::after{
+  content:"";display:block;width:10px;height:10px;flex:0 0 10px;
+  border-right:2px solid #182824;border-bottom:2px solid #182824;
+  transform:rotate(45deg) translateY(-3px);margin:0 3px 0 8px;
+  transition:transform .18s;
+}
+.site-header .token-badge[aria-expanded="true"]::after{transform:rotate(225deg) translate(-3px,-1px)}
+.site-header .account-controls > .account-button{
+  display:inline-grid;place-items:center;flex:0 0 54px;
+  width:54px;min-width:54px;max-width:54px;height:54px;min-height:54px;max-height:54px;
+  padding:0;border:1px solid #d9dfdc;border-radius:50%;
+  background:linear-gradient(135deg,#fff,#f4f6f5);color:#45524e;
+  box-shadow:0 5px 16px rgba(25,42,33,.045);
+}
+.site-header .account-controls > .account-button:hover,
+.site-header .account-controls > .account-button[aria-expanded="true"]{
+  background:#edf5ef;border-color:#bdcec2;transform:translateY(-1px);
+}
+.site-header .account-button-icon{
+  display:grid!important;place-items:center;flex:0 0 27px;
+  width:27px;height:27px;border:0;border-radius:0;color:#46544f;
+}
+.site-header .account-button-icon svg{width:27px;height:27px;stroke-width:1.65}
+.site-header #accountButtonText{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+@media(max-width:720px){
+  .site-header .account-controls{gap:8px}
+  .site-header .account-controls > .token-badge{height:42px;min-height:42px;max-height:42px;padding:0 11px;gap:7px;font-size:11px}
+  .site-header .token-badge .token-icon{width:22px;height:22px;flex-basis:22px}
+  .site-header .token-badge .token-icon svg{width:22px;height:22px}
+  .site-header .token-badge::after{width:8px;height:8px;flex-basis:8px;margin-left:3px}
+  .site-header .account-controls > .account-button{width:42px;min-width:42px;max-width:42px;flex-basis:42px;height:42px;min-height:42px;max-height:42px;padding:0}
+  .site-header .account-button-icon,.site-header .account-button-icon svg{width:23px;height:23px}
+}
+@media(max-width:360px){.site-header .account-controls > .token-badge{padding-inline:9px;gap:5px;font-size:10px}.site-header .account-controls{gap:6px}}

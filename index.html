@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260923-tokens-minimal-1" rel="stylesheet"/>
+<link href="style.css?v=20260923-header-ios-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -109,7 +109,7 @@
       <p class="tokens-footer-note">ⓘ Οι κωδικοί προσφοράς σου δίνουν επιπλέον υπολογισμούς, εντελώς δωρεάν.</p>
     </section>
   </div>
-  <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
+  <button class="account-button" id="accountButton" type="button" aria-label="Ο λογαριασμός μου" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
     <span class="account-button-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c.8-3.3 3-5 6.5-5s5.7 1.7 6.5 5"/></svg>
     </span>
@@ -697,6 +697,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260923-tokens-minimal-1"></script>
+<script src="script.js?v=20260923-header-ios-1"></script>
 </body>
 </html>
