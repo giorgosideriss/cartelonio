@@ -1498,6 +1498,7 @@ function renderAccountState() {
     authElement("accountButtonText").textContent = isPermanent ? "Ο λογαριασμός μου" : "Εγγραφή / Σύνδεση";
   }
   if (authElement("authUserEmail")) authElement("authUserEmail").textContent = user?.email || "";
+  if (authElement("accountProfileEmail")) authElement("accountProfileEmail").textContent = user?.email || "";
   if (authElement("authTokenBalance")) authElement("authTokenBalance").textContent = String(balance);
   // Reflect the real Supabase session immediately when it changes.
   const modal = authElement("authModal");
@@ -2129,3 +2130,15 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyE
     else document.getElementById('accountButton')?.click();
   });
 })();
+
+/* Finder account: profile is local, help reserved for a future release. */
+document.getElementById('accountProfileBtn')?.addEventListener('click', () => {
+  const panel = document.getElementById('accountProfilePanel');
+  if (!panel) return;
+  panel.hidden = !panel.hidden;
+  document.getElementById('accountProfileBtn')?.setAttribute('aria-expanded', String(!panel.hidden));
+});
+document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
+  const status = document.getElementById('authStatus');
+  if (status) status.textContent = 'Η βοήθεια θα είναι διαθέσιμη σύντομα.';
+});

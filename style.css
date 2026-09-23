@@ -4524,3 +4524,30 @@ body.welcome10-open{overflow:hidden}
   .site-header .account-button-icon,.site-header .account-button-icon svg{width:23px;height:23px}
 }
 @media(max-width:360px){.site-header .account-controls > .token-badge{padding-inline:9px;gap:5px;font-size:10px}.site-header .account-controls{gap:6px}}
+
+/* Cartelonio account — Finder-inspired signed-in dropdown */
+.site-header #authModal:has(.account-finder:not([hidden])){width:min(450px,calc(100vw - 24px))!important}
+.site-header #authModal:has(.account-finder:not([hidden])) .auth-card{background:#fff!important;color:#1d2621!important;border:1px solid #e5ebe6!important;border-radius:26px!important;padding:24px!important;box-shadow:0 25px 65px rgba(0,0,0,.22)!important}
+.site-header #authModal:has(.account-finder:not([hidden])) .auth-brand,.site-header #authModal:has(.account-finder:not([hidden])) .auth-copy,.site-header #authModal:has(.account-finder:not([hidden])) #authTitle{display:none!important}
+.site-header #authModal:has(.account-finder:not([hidden])) .auth-close{color:#26332a!important;background:#f3f6f4!important;border:1px solid #e5ebe6!important}
+.site-header #authModal .account-finder:not([hidden]){display:flex!important;flex-direction:column;gap:0;margin-top:38px;color:#1d2621}
+.account-finder-identity{display:flex;align-items:center;gap:14px;padding:0 0 22px;border-bottom:1px solid #e8ece9;min-width:0}
+.account-finder-avatar{display:grid;place-items:center;flex:0 0 62px;width:62px;height:62px;border-radius:50%;background:#edf5ef;color:#32623e;font-size:35px}
+.account-finder-identity-copy{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
+.site-header #authModal .account-finder-identity-copy #authUserEmail{font-size:15px;font-weight:750;color:#202a24;overflow-wrap:anywhere;line-height:1.3}
+.account-finder-active{background:#eff7f0;border-radius:999px;padding:6px 10px;color:#396b42;font-size:11px;font-weight:650}
+.account-finder-active span{color:#52ad35;margin-right:5px}
+.site-header #authModal .account-finder-row{width:100%;min-height:72px;display:flex;align-items:center;gap:13px;padding:12px 0;border:0;border-bottom:1px solid #e8ece9;border-radius:0;background:transparent;color:#202a24;text-align:left;cursor:pointer;font:inherit;box-shadow:none}
+.site-header #authModal .account-finder-row:hover{background:#f8faf8}
+.account-finder-row-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border:1px solid #e7ece8;border-radius:13px;background:#f5f8f6;color:#486451;font-size:25px;font-weight:500}
+.account-finder-row-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}
+.site-header #authModal .account-finder-row-copy strong{color:#202a24;font-size:14px;font-weight:700}
+.account-finder-row-copy small{font-size:11px;color:#758079}
+.account-finder-chevron{color:#85938a;font-size:27px;line-height:1}
+.site-header #authModal .account-finder-logout{min-height:66px;margin-top:16px;padding:8px 12px;border:1px solid #f3e5e5;border-radius:15px;background:#fff8f8;color:#b32626}
+.site-header #authModal .account-finder-logout .account-finder-row-icon{border:0;background:transparent;color:#b32626}
+.site-header #authModal .account-finder-logout .account-finder-row-copy strong{color:#b32626}
+.account-finder-profile[hidden]{display:none!important}
+.account-finder-profile{display:grid;grid-template-columns:1fr auto;gap:9px;padding:15px 12px;background:#f6f9f6;border-radius:12px;font-size:12px;overflow-wrap:anywhere}
+.account-finder-profile span{color:#778179}.account-finder-profile strong{color:#284c31;text-align:right}
+@media(max-width:700px){.site-header #authModal:has(.account-finder:not([hidden])){width:auto!important}.site-header #authModal:has(.account-finder:not([hidden])) .auth-card{padding:18px!important}.account-finder-avatar{width:52px;height:52px;flex-basis:52px}}

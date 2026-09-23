@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260923-header-ios-1" rel="stylesheet"/>
+<link href="style.css?v=20260923-account-finder-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -164,12 +164,13 @@
       <button class="auth-primary" type="submit">Αποθήκευση κωδικού</button>
     </form>
 
-    <div class="auth-user-panel" id="authUserPanel" hidden>
-      <span>Συνδεδεμένος ως</span>
-      <strong id="authUserEmail"></strong>
-      <div class="auth-balance"><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
-      <button class="auth-history-link" id="openHistoryBtn" type="button">▤ <span>Ιστορικό υπολογισμών</span><span aria-hidden="true">→</span></button>
-      <button class="auth-secondary" id="logoutBtn" type="button">Αποσύνδεση</button>
+    <div class="auth-user-panel account-finder" id="authUserPanel" hidden>
+      <div class="account-finder-identity"><span class="account-finder-avatar" aria-hidden="true">♙</span><div class="account-finder-identity-copy"><strong id="authUserEmail"></strong><span class="account-finder-active"><span aria-hidden="true">●</span> Ενεργός λογαριασμός</span></div></div>
+      <button type="button" class="account-finder-row" id="accountProfileBtn"><span class="account-finder-row-icon" aria-hidden="true">♙</span><span class="account-finder-row-copy"><strong>Το προφίλ μου</strong><small>Προσωπικά στοιχεία</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
+      <div class="account-finder-profile" id="accountProfilePanel" hidden><span>Email λογαριασμού</span><strong id="accountProfileEmail"></strong><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
+      <button class="account-finder-row" id="openHistoryBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">◷</span><span class="account-finder-row-copy"><strong>Ιστορικό υπολογισμών</strong><small>Δες όλους τους υπολογισμούς</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
+      <button class="account-finder-row" id="accountHelpBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">?</span><span class="account-finder-row-copy"><strong>Βοήθεια</strong><small>Συχνές ερωτήσεις · Σύντομα</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
+      <button class="account-finder-row account-finder-logout" id="logoutBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">↪</span><span class="account-finder-row-copy"><strong>Αποσύνδεση</strong></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
     </div>
 
     <p class="auth-status" id="authStatus" role="status" aria-live="polite"></p>
@@ -697,6 +698,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260923-header-ios-1"></script>
+<script src="script.js?v=20260923-account-finder-1"></script>
 </body>
 </html>
