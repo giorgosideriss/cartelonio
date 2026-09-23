@@ -4408,3 +4408,16 @@ body.cartelonio-onboarding-open{overflow:hidden}
  .history-entry-actions{margin:12px 0 0!important;justify-content:stretch!important}
  .history-entry-actions .history-action{flex:1 1 0!important;white-space:normal!important;font-size:11px!important}
 }
+
+/* Finder history: keep Favorites pill compact on narrow screens. */
+@media (max-width:700px) {
+  .history-tabs { width:auto; flex:0 0 auto; }
+  .history-toolbar .history-tab-star {
+    flex:0 0 auto;
+    width:auto;
+    min-width:0;
+    padding-inline:12px;
+    white-space:nowrap;
+  }
+  .history-toolbar .history-tab-star span { flex:0 0 auto; }
+}
