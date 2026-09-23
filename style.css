@@ -4581,3 +4581,8 @@ body.welcome10-open{overflow:hidden}
 .site-header #authModal .auth-signup-pending strong{color:#26332a!important;overflow-wrap:anywhere}
 .site-header #authModal .auth-pending-icon{color:#3f704b!important;background:#edf5ef!important}
 @media(max-width:700px){.site-header #authModal:not(:has(.account-finder:not([hidden]))){width:auto!important}.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-card{padding:20px!important}}
+
+/* Voucher ticket and shopping bag icons */
+.tokens-option-icon svg{display:block;width:23px;height:23px;flex:none;stroke:currentColor}
+.tokens-gift-icon{background:#f0f7f2;color:#276a3d}
+.tokens-shop-icon{background:#f4f5f6;color:#59645e}
