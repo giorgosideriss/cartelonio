@@ -436,7 +436,7 @@ function recalcPriceWithExtras() {
   } else if (count === 0) {
     labelSpan.textContent = "Χωρίς επιπλέον extras";
   } else {
-    labelSpan.textContent = `${count} επιλεγμένα`;
+    labelSpan.textContent = `${count} επιλεγμένα extras`;
   }
 
   updateCarSummary();
@@ -450,6 +450,14 @@ function handleExtraCheckboxChange(e) {
     selectedExtras.delete(idx);
   }
   const priceInput=document.getElementById("price");priceInput.value="";priceInput.placeholder="Επαληθεύεται στον server";priceInput.readOnly=true;
+  // Refresh the extras counter immediately after every selection or deselection.
+  const extrasLabel = document.querySelector(".extras-toggle-label");
+  if (extrasLabel) {
+    const count = selectedExtras.size;
+    extrasLabel.textContent = count === 0
+      ? "Χωρίς επιπλέον extras"
+      : `${count} επιλεγμένα extras`;
+  }
 }
 
 function loadExtras(extrasList) {
