@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260923-history-apple-1" rel="stylesheet"/>
+<link href="style.css?v=20260923-welcome-gift-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -533,6 +533,22 @@
 
 
 
+<!-- One-time welcome gift -->
+<div class="gift-overlay" id="welcomeGift" hidden aria-hidden="true">
+  <section class="gift-card" role="dialog" aria-modal="true" aria-labelledby="giftTitle" aria-describedby="giftDescription">
+    <button type="button" class="gift-close" id="giftClose" aria-label="Κλείσιμο">×</button>
+    <img class="gift-logo" src="images/cartelonio-logo.png" alt="Cartelonio">
+    <div class="gift-icon" aria-hidden="true">✦</div>
+    <span class="gift-eyebrow">ΕΝΑ ΔΩΡΟ ΓΙΑ ΤΟ ΞΕΚΙΝΗΜΑ ΣΟΥ</span>
+    <h2 id="giftTitle">10 δωρεάν υπολογισμοί, για εσένα.</h2>
+    <p id="giftDescription">Δημιούργησε δωρεάν λογαριασμό και εξαργύρωσε τον κωδικό καλωσορίσματος για να δοκιμάσεις το Cartelonio.</p>
+    <div class="gift-voucher"><span>Ο ΚΩΔΙΚΟΣ ΣΟΥ</span><strong>WELCOME10</strong><button type="button" id="giftCopy">Αντιγραφή</button></div>
+    <p class="gift-hint">Μετά την εγγραφή, πήγαινε στα Tokens σου → «Έχω κωδικό / Voucher» και πληκτρολόγησε τον κωδικό.</p>
+    <button type="button" class="gift-primary" id="giftSignup">Δημιουργία λογαριασμού <span aria-hidden="true">→</span></button>
+    <button type="button" class="gift-secondary" id="giftLater">Ίσως αργότερα</button>
+  </section>
+</div>
+
 <!-- CARTELONIO ONBOARDING -->
 <div class="cartelonio-onboarding is-open" id="cartelonioOnboarding" aria-hidden="false">
   <div class="cartelonio-onboarding-backdrop"></div>
@@ -682,6 +698,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260923-history-apple-1"></script>
+<script src="script.js?v=20260923-welcome-gift-1"></script>
 </body>
 </html>
