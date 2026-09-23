@@ -244,6 +244,7 @@ if (cartelonioSiteLogo) cartelonioSiteLogo.src = cartelonioPublicAssetUrl(cartel
 
 // Bring the completed result into view without obscuring it behind the sticky header.
 let cartelonioResultHighlightTimer = null;
+let cartelonioRevealSequence = 0;
 function revealCalculatedVehicleResult() {
   const image = document.getElementById("carImage");
   const imagePanel = image?.closest(".vehicle-image-panel") || image?.parentElement;
@@ -251,25 +252,54 @@ function revealCalculatedVehicleResult() {
   const taxCard = document.getElementById("registrationTaxMiniCard");
   if (!imagePanel || !taxCard) return;
 
-  taxCard.classList.remove("tax-result-highlight");
-  void taxCard.offsetWidth; // Restart the animation on consecutive calculations.
-  taxCard.classList.add("tax-result-highlight");
+  // A new calculation supersedes any unfinished reveal from the previous one.
+  const sequence = ++cartelonioRevealSequence;
   clearTimeout(cartelonioResultHighlightTimer);
-  cartelonioResultHighlightTimer = setTimeout(() => {
-    taxCard.classList.remove("tax-result-highlight");
-  }, 2400);
+  taxCard.classList.remove("tax-result-highlight");
 
-  // Wait for the updated LTPF/tax values to be painted before measuring the layout.
+  const startHighlight = () => {
+    if (sequence !== cartelonioRevealSequence) return;
+    taxCard.classList.remove("tax-result-highlight");
+    void taxCard.offsetWidth; // Restart even on consecutive calculations.
+    taxCard.classList.add("tax-result-highlight");
+    cartelonioResultHighlightTimer = setTimeout(() => {
+      if (sequence === cartelonioRevealSequence) taxCard.classList.remove("tax-result-highlight");
+    }, 2700);
+  };
+
+  // Measure after the new result is rendered; animate only once the scroll has settled.
   requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (sequence !== cartelonioRevealSequence) return;
     const headerHeight = document.querySelector(".site-header")?.getBoundingClientRect().height || 0;
     const top = imagePanel.getBoundingClientRect().top + window.scrollY;
     const bottom = (valueCards || taxCard).getBoundingClientRect().bottom + window.scrollY;
     const availableHeight = Math.max(1, window.innerHeight - headerHeight - 20);
     const groupHeight = bottom - top;
-    // Center the image + both value cards when they fit; otherwise show their top.
     const target = Math.max(0, top - headerHeight - 10 - Math.max(0, (availableHeight - groupHeight) / 2));
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: target, behavior: reduceMotion ? "instant" : "smooth" });
+    if (reduceMotion || Math.abs(window.scrollY - target) < 3) {
+      window.scrollTo({ top: target, behavior: "instant" });
+      startHighlight();
+      return;
+    }
+    let settleTimer;
+    let safetyTimer;
+    const finish = () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scrollend", finish);
+      clearTimeout(settleTimer);
+      clearTimeout(safetyTimer);
+      startHighlight();
+    };
+    const onScroll = () => {
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(finish, 180);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scrollend", finish, { once: true });
+    // Fallback for browsers without scrollend or interrupted smooth scrolling.
+    safetyTimer = setTimeout(finish, 1500);
+    window.scrollTo({ top: target, behavior: "smooth" });
   }));
 }
 

@@ -4263,18 +4263,32 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .auth-signup-pending .auth-secondary{margin-top:6px}
 
 
-/* Result reveal after a successful calculation (mobile and desktop). */
+/* Result reveal: overlay avoids existing !important background/box-shadow rules. */
 .vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight {
-  animation: cartelonio-tax-reveal 2.35s ease-out both;
+  isolation: isolate;
+}
+.vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  background: rgba(153,230,107,.13);
+  box-shadow: inset 0 0 0 2px rgba(171,255,123,.95), inset 0 0 25px rgba(153,230,107,.32);
+  animation: cartelonio-tax-reveal 2.6s ease-out both;
 }
 @keyframes cartelonio-tax-reveal {
-  0%   { box-shadow: 0 0 0 0 rgba(153,230,107,0); background-color: rgba(153,230,107,0); }
-  16%  { box-shadow: 0 0 0 3px rgba(153,230,107,.85), 0 0 34px 8px rgba(153,230,107,.38); background-color: rgba(153,230,107,.13); }
-  55%  { box-shadow: 0 0 0 2px rgba(153,230,107,.40), 0 0 22px 4px rgba(153,230,107,.20); background-color: rgba(153,230,107,.07); }
-  100% { box-shadow: 0 0 0 0 rgba(153,230,107,0); background-color: rgba(153,230,107,0); }
+  0%   { opacity: 0; }
+  15%  { opacity: 1; }
+  48%  { opacity: .8; }
+  100% { opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight { animation: none; }
+  .vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight::after {
+    animation: none;
+    opacity: .8;
+  }
 }
 
 /* History controls: keep sorting the same height as the filter pills. */
