@@ -4261,3 +4261,18 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .auth-signup-pending strong{overflow-wrap:anywhere;border-radius:12px;padding:12px;background:rgba(158,243,111,.1);color:#baff94}
 .auth-pending-icon{font-size:2rem;color:#baff94}
 .auth-signup-pending .auth-secondary{margin-top:6px}
+
+
+/* Result reveal after a successful calculation (mobile and desktop). */
+.vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight {
+  animation: cartelonio-tax-reveal 2.35s ease-out both;
+}
+@keyframes cartelonio-tax-reveal {
+  0%   { box-shadow: 0 0 0 0 rgba(153,230,107,0); background-color: rgba(153,230,107,0); }
+  16%  { box-shadow: 0 0 0 3px rgba(153,230,107,.85), 0 0 34px 8px rgba(153,230,107,.38); background-color: rgba(153,230,107,.13); }
+  55%  { box-shadow: 0 0 0 2px rgba(153,230,107,.40), 0 0 22px 4px rgba(153,230,107,.20); background-color: rgba(153,230,107,.07); }
+  100% { box-shadow: 0 0 0 0 rgba(153,230,107,0); background-color: rgba(153,230,107,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight { animation: none; }
+}
