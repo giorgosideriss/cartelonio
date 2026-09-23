@@ -163,6 +163,45 @@ function getSelectedVehicleIdentity() {
   return { brand, year, model, editionName };
 }
 
+// Fit long manufacturer names inside the existing identity rail without changing its layout.
+function fitVehicleBrandName() {
+  const name = document.getElementById("vehicleImageBrand");
+  const rail = document.getElementById("vehicleImageIdentity");
+  if (!name || !rail || !name.textContent.trim()) return;
+  const mobile = window.matchMedia("(max-width: 820px)").matches && !rail.classList.contains("no-image");
+  // Mobile identity is a horizontal flex row: reserve room for its other items.
+  let available = name.clientWidth;
+  if (mobile) {
+    const style = getComputedStyle(rail);
+    const gap = parseFloat(style.columnGap) || 0;
+    const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
+    const others = Array.from(rail.children).filter(el => el !== name);
+    available = rail.clientWidth - padding - gap * Math.max(0, rail.children.length - 1)
+      - others.reduce((sum, el) => sum + el.getBoundingClientRect().width, 0);
+  }
+  if (available <= 0) return;
+  const baseSize = rail.classList.contains("no-image") ? (mobile ? 34 : 54) : (mobile ? 20 : 36);
+  const minSize = mobile ? 10 : 12;
+  name.style.setProperty("font-size", `${baseSize}px`, "important");
+  const computed = getComputedStyle(name);
+  const canvas = fitVehicleBrandName.canvas || (fitVehicleBrandName.canvas = document.createElement("canvas"));
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+  const fontFamily = computed.fontFamily;
+  const weight = computed.fontWeight;
+  const spacing = parseFloat(computed.letterSpacing) || 0;
+  const characters = Array.from(name.textContent);
+  let size = baseSize;
+  while (size > minSize) {
+    ctx.font = `${weight} ${size}px ${fontFamily}`;
+    const width = ctx.measureText(name.textContent).width + spacing * (characters.length - 1) * size / baseSize;
+    if (width <= available - 2) break;
+    size -= 0.5;
+  }
+  name.style.setProperty("font-size", `${size}px`, "important");
+}
+window.addEventListener("resize", () => requestAnimationFrame(fitVehicleBrandName));
+
 function updateVehicleImageIdentity(hasImage = null) {
   const overlay = document.getElementById("vehicleImageIdentity");
   if (!overlay) return;
@@ -184,6 +223,7 @@ function updateVehicleImageIdentity(hasImage = null) {
 
   overlay.classList.toggle("is-visible", complete);
   if (hasImage !== null) overlay.classList.toggle("no-image", !hasImage);
+  requestAnimationFrame(fitVehicleBrandName);
 }
 
 function parseLocalizedNumber(value) {
