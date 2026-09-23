@@ -4315,3 +4315,38 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .history-toolbar .history-search-label{box-sizing:border-box;height:42px;min-height:42px;max-height:42px;padding:0 13px;align-items:center;line-height:1.2}
 .history-toolbar .history-search-label input{box-sizing:border-box;height:100%;min-height:0;padding:0;margin:0;line-height:normal;appearance:none;-webkit-appearance:none}
 .history-toolbar .history-search-label input::-webkit-search-decoration,.history-toolbar .history-search-label input::-webkit-search-cancel-button{-webkit-appearance:none}
+
+/* Cartelonio History — Finder controls + Settings cards (v0.5) */
+.history-content{background:#f4f5f2!important}
+.history-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;margin-bottom:16px}
+.history-tabs{display:flex;gap:8px;flex-wrap:nowrap;min-width:0}
+.history-toolbar .history-tab{height:40px;min-width:0;padding:0 14px;box-shadow:0 2px 7px rgba(28,46,29,.025)}
+.history-toolbar .history-tab-star{font-size:18px;display:flex;align-items:center;gap:5px}
+.history-tab-star span{font-size:12px}
+.history-tools{display:flex;align-items:center;gap:8px;margin-left:auto}
+.history-tool-wrap{position:relative}
+.history-tool-button{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid #e0e7df;background:#fff;color:#59685b;font-size:24px;line-height:1;cursor:pointer}
+.history-tool-button[aria-expanded="true"]{background:#e8f2e5;color:#317b36;border-color:#c6ddc2}
+.history-tool-panel[hidden],.history-card-more-wrap .history-delete[hidden]{display:none!important}
+.history-tool-panel{position:absolute;z-index:20;right:0;top:calc(100% + 9px);width:min(280px,calc(100vw - 42px));padding:13px;border:1px solid #e0e7df;border-radius:15px;background:white;box-shadow:0 14px 38px rgba(20,40,20,.15);box-sizing:border-box}
+.history-tool-panel label{display:block;font-size:11px;font-weight:750;color:#7a867b;margin-bottom:8px}
+.history-tool-panel select,.history-tool-panel input{box-sizing:border-box;width:100%;min-width:0;height:40px;padding:0 10px;border:1px solid #e0e7df;border-radius:10px;background:#f7f9f6;color:#263329;font:inherit;font-size:12px}
+.history-entry{display:flex!important;flex-direction:column;align-items:stretch;gap:12px;padding:16px!important;border:1px solid #e5eae2!important;border-radius:21px!important;box-shadow:0 5px 19px rgba(30,45,30,.04)!important}
+.history-entry-head{display:grid!important;grid-template-columns:110px minmax(0,1fr)!important;gap:16px!important;align-items:center!important}
+.history-visual{width:110px;height:94px!important;border-radius:14px!important;background:#f2f6f1!important}
+.history-entry-main{display:grid;gap:5px;position:relative;min-width:0;padding-right:35px}
+.history-title-row{min-width:0}.history-car-name{overflow-wrap:anywhere;font-size:17px!important}
+.history-entry-main .history-favorite{position:absolute;right:0;top:0;width:30px;height:30px;border:0;background:transparent;font-size:23px}
+.history-entry-money{grid-column:2!important;display:flex!important;flex-direction:column;align-items:flex-start;gap:3px!important;align-self:auto!important;border:0!important;padding:0!important;text-align:left!important}
+.history-entry-money strong{font-size:24px!important;color:#317b38!important}.history-entry-money small:first-child{font-size:11px!important}
+.history-entry-money .history-ltpf{font-size:11px!important;color:#889388!important}
+.history-entry-actions{display:flex!important;flex-direction:row!important;align-items:stretch;gap:8px!important;margin:0!important;padding:0!important;border:0!important}
+.history-entry-actions .history-action{flex:1 1 0;width:auto!important;min-width:0;margin:0!important;border:0!important;border-radius:11px!important;background:#edf5eb!important;color:#347b3b!important;padding:11px 8px!important;font-size:12px!important}
+.history-entry-actions .history-restore{background:#f2f4f1!important;color:#536153!important}
+.history-card-more-wrap{position:relative;flex:0 0 40px}
+.history-card-more{width:40px;height:100%;min-height:40px;border:0;border-radius:11px;background:#f2f4f1;color:#59665a;font-size:22px;cursor:pointer}
+.history-card-more-wrap .history-delete{position:absolute;z-index:5;right:0;top:calc(100% + 6px);width:140px!important;min-height:40px;border:1px solid #efcdd0!important;background:#fff!important;color:#a43d43!important;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.history-expanded{width:100%;box-sizing:border-box;margin-top:0!important}
+.history-tool-button:focus-visible,.history-card-more:focus-visible,.history-tab:focus-visible{outline:2px solid #4b9147;outline-offset:2px}
+@media(min-width:950px){.history-list{grid-template-columns:repeat(2,minmax(0,1fr))}.history-entry-head{grid-template-columns:110px minmax(0,1fr)!important}.history-entry-money{grid-column:2!important}.history-entry{min-width:0}}
+@media(max-width:600px){.history-content{padding:12px!important}.history-toolbar{gap:6px}.history-tabs{gap:6px}.history-toolbar .history-tab{height:38px;padding:0 10px;font-size:11px}.history-tools{gap:5px}.history-tool-button{width:38px;height:38px}.history-entry{padding:12px!important}.history-entry-head{grid-template-columns:88px minmax(0,1fr)!important;gap:10px!important}.history-visual{width:88px;height:78px!important}.history-entry-main{padding-right:29px}.history-car-name{font-size:15px!important}.history-entry-money{grid-column:2!important;padding:0!important;border:0!important;text-align:left!important;align-items:flex-start!important}.history-entry-money strong{font-size:21px!important}.history-entry-actions .history-action{font-size:11px!important;padding:10px 5px!important}.history-card-more-wrap{flex-basis:36px}.history-card-more{width:36px}}

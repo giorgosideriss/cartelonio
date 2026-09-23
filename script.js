@@ -1987,7 +1987,7 @@ function renderHistoryRecord(record){
  const actions=historyNode('div','history-entry-actions');
  const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
- article.append(favorite);
+ main.append(favorite);
  const details=historyNode('button','history-action','Λεπτομέρειες ↓');details.type='button';details.setAttribute('aria-expanded','false');
  const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
@@ -1999,7 +1999,7 @@ function renderHistoryRecord(record){
  ['Τύπος κίνησης',record.powertrain],['ΛΤΠΦ','€'+historyEuro(record.ltpf)],
  ['Φορολογητέα αξία','€'+historyEuro(record.taxable_value)],['Τέλος ταξινόμησης','€'+historyEuro(record.registration_tax)],
  ['Περιβαλλοντικό τέλος','€'+historyEuro(record.environmental_fee)],['Συνολικό τέλος','€'+historyEuro(record.total_tax)]].forEach(([k,v])=>historyField(fields,k,v));
- expanded.append(fields);actions.append(details,restore,remove);article.append(actions,expanded);
+ expanded.append(fields);const moreWrap=historyNode('div','history-card-more-wrap');const moreToggle=historyNode('button','history-card-more','⋯');moreToggle.type='button';moreToggle.title='Περισσότερες ενέργειες';moreToggle.setAttribute('aria-label','Περισσότερες ενέργειες');moreToggle.setAttribute('aria-expanded','false');remove.hidden=true;moreWrap.append(moreToggle,remove);actions.append(details,restore,moreWrap);article.append(actions,expanded);moreToggle.addEventListener('click',()=>{remove.hidden=!remove.hidden;moreToggle.setAttribute('aria-expanded',String(!remove.hidden));});
  details.addEventListener('click',()=>{expanded.hidden=!expanded.hidden;details.setAttribute('aria-expanded',String(!expanded.hidden));details.textContent=expanded.hidden?'Λεπτομέρειες ↓':'Λιγότερα ↑';});
  restore.addEventListener('click',async()=>{restore.disabled=true;try{await restoreHistoryRecord(record);closeHistory();}catch(err){historyStatus('Δεν ήταν δυνατή η επαναφορά των στοιχείων.');console.warn(err);}finally{restore.disabled=false;}});
  remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
@@ -2065,5 +2065,10 @@ historyEl('historyOverlay')?.addEventListener('click',event=>{if(event.target===
 historyEl('historyMore')?.addEventListener('click',()=>{historyVisible+=HISTORY_PAGE_SIZE;historyRenderList();});
 document.querySelectorAll('[data-history-filter]').forEach(button=>button.addEventListener('click',()=>{historyFilter=button.dataset.historyFilter;historyVisible=HISTORY_PAGE_SIZE;document.querySelectorAll('[data-history-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});historyRenderList();}));
 historyEl('historySort')?.addEventListener('change',event=>{historySortMode=event.target.value;historyVisible=HISTORY_PAGE_SIZE;historyRenderList();});
+// Finder-inspired compact controls: preserve existing search/sort logic.
+function historyToggleTool(name){const panel=historyEl(name+'Panel'),button=historyEl(name+'Toggle');if(!panel||!button)return;const opening=panel.hidden;['historySort','historySearch'].forEach(id=>{const p=historyEl(id+'Panel'),b=historyEl(id+'Toggle');if(p)p.hidden=true;if(b)b.setAttribute('aria-expanded','false');});panel.hidden=!opening;button.setAttribute('aria-expanded',String(opening));if(opening&&name==='historySearch')historyEl('historySearch')?.focus();}
+['historySort','historySearch'].forEach(name=>historyEl(name+'Toggle')?.addEventListener('click',()=>historyToggleTool(name)));
+document.addEventListener('click',event=>{if(!event.target.closest('.history-tools'))['historySort','historySearch'].forEach(name=>{const p=historyEl(name+'Panel'),b=historyEl(name+'Toggle');if(p)p.hidden=true;if(b)b.setAttribute('aria-expanded','false');});});
+
 historyEl('historySearch')?.addEventListener('input',event=>{historySearchTerm=historyNormalize(event.target.value.trim());historyVisible=HISTORY_PAGE_SIZE;historyRenderList();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyEl('historyOverlay')?.hidden)closeHistory();});

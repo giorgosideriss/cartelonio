@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260923-version-label-1" rel="stylesheet"/>
+<link href="style.css?v=20260923-history-apple-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -185,7 +185,7 @@
 <div class="history-overlay" id="historyOverlay" hidden>
  <section class="history-dialog" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
   <header class="history-header"><div><span class="history-kicker">CARTELONIO ACCOUNT</span><h2 id="historyTitle">Ιστορικό</h2><p>Οι προηγούμενοι υπολογισμοί σου</p></div><button type="button" id="historyClose" class="history-close" aria-label="Κλείσιμο">×</button></header>
-  <div class="history-content"><div class="history-toolbar" aria-label="Φίλτρα ιστορικού"><div class="history-tabs"><button type="button" class="history-tab is-active" data-history-filter="all">▦ Όλα <span id="historyAllCount"></span></button><button type="button" class="history-tab" data-history-filter="favorites">☆ Αγαπημένα <span id="historyFavoriteCount"></span></button></div><label class="history-sort-label">Ταξινόμηση <select id="historySort" aria-label="Ταξινόμηση ιστορικού"><option value="newest">Πιο πρόσφατα</option><option value="oldest">Παλαιότερα</option><option value="year_desc">Έτος οχήματος: νεότερο</option><option value="year_asc">Έτος οχήματος: παλαιότερο</option><option value="tax_desc">Τέλος: μεγαλύτερο → μικρότερο</option><option value="tax_asc">Τέλος: μικρότερο → μεγαλύτερο</option></select></label><label class="history-search-label"><span aria-hidden="true">⌕</span><input id="historySearch" type="search" placeholder="Αναζήτηση μάρκας, μοντέλου, έκδοσης…" aria-label="Αναζήτηση στο ιστορικό"></label></div><p class="history-message" id="historyMessage" role="status"></p><div id="historyList" class="history-list"></div><button type="button" id="historyMore" class="history-more" hidden>Φόρτωση περισσότερων</button></div>
+  <div class="history-content"><div class="history-toolbar" aria-label="Φίλτρα ιστορικού"><div class="history-tabs"><button type="button" class="history-tab is-active" data-history-filter="all">Όλα <span id="historyAllCount"></span></button><button type="button" class="history-tab history-tab-star" data-history-filter="favorites" aria-label="Μόνο αγαπημένα" title="Αγαπημένα">☆ <span id="historyFavoriteCount"></span></button></div><div class="history-tools"><div class="history-tool-wrap"><button type="button" id="historySortToggle" class="history-tool-button" aria-label="Ταξινόμηση" title="Ταξινόμηση" aria-expanded="false" aria-controls="historySortPanel">⇅</button><div id="historySortPanel" class="history-tool-panel" hidden><label for="historySort">Ταξινόμηση</label><select id="historySort" aria-label="Ταξινόμηση ιστορικού"><option value="newest">Πιο πρόσφατα</option><option value="oldest">Παλαιότερα</option><option value="year_desc">Έτος οχήματος: νεότερο</option><option value="year_asc">Έτος οχήματος: παλαιότερο</option><option value="tax_desc">Τέλος: μεγαλύτερο → μικρότερο</option><option value="tax_asc">Τέλος: μικρότερο → μεγαλύτερο</option></select></div></div><div class="history-tool-wrap history-search-wrap"><button type="button" id="historySearchToggle" class="history-tool-button" aria-label="Αναζήτηση" title="Αναζήτηση" aria-expanded="false" aria-controls="historySearchPanel">⌕</button><div id="historySearchPanel" class="history-tool-panel history-search-panel" hidden><label for="historySearch">Αναζήτηση</label><input id="historySearch" type="search" placeholder="Μάρκα, μοντέλο, έκδοση…" aria-label="Αναζήτηση στο ιστορικό"></div></div></div></div><p class="history-message" id="historyMessage" role="status"></p><div id="historyList" class="history-list"></div><button type="button" id="historyMore" class="history-more" hidden>Φόρτωση περισσότερων</button></div>
  </section>
 </div>
 
@@ -682,6 +682,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260923-brand-autofit-1"></script>
+<script src="script.js?v=20260923-history-apple-1"></script>
 </body>
 </html>
