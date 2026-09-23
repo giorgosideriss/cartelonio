@@ -1662,6 +1662,14 @@ async function redeemCartelonioVoucher() {
     console.warn("Voucher redemption failed:", error);
   } finally { button.disabled = false; }
 }
+authElement("tokensVoucherToggle")?.addEventListener("click", () => {
+  const toggle = authElement("tokensVoucherToggle");
+  const form = authElement("tokensVoucherForm");
+  if (!toggle || !form) return;
+  form.hidden = !form.hidden;
+  toggle.setAttribute("aria-expanded", String(!form.hidden));
+  if (!form.hidden) authElement("tokensVoucherCode")?.focus();
+});
 authElement("tokensRedeem")?.addEventListener("click", redeemCartelonioVoucher);
 authElement("tokensVoucherCode")?.addEventListener("keydown", event => {
   if (event.key === "Enter") { event.preventDefault(); redeemCartelonioVoucher(); }

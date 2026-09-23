@@ -4441,3 +4441,33 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .welcome10-later{margin-top:9px;background:transparent;color:#7b857d;font-size:12px;padding:8px;cursor:pointer}
 body.welcome10-open{overflow:hidden}
 @media(max-width:480px){.welcome10-card{padding:31px 22px 19px;border-radius:21px}}
+
+/* Tokens dropdown — minimal macOS / iOS layout */
+.tokens-voucher[hidden]{display:none!important}
+.site-header .tokens-menu{width:min(410px,calc(100vw - 24px))}
+.tokens-panel{padding:25px 24px 20px;border-radius:25px;border:1px solid #e6ebe6;background:#fff;box-shadow:0 24px 65px rgba(15,30,19,.19)}
+.tokens-panel h2{font-size:23px;letter-spacing:-.045em;margin:0 42px 22px 0;font-weight:800}
+.tokens-close{width:34px;height:34px;top:18px;right:18px;font-size:23px;background:#f4f5f5;color:#303a35}
+.tokens-overview{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 0 20px;margin:0;background:none;border-radius:0}
+.tokens-balance-icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:#f0f7f2;color:#2c7040;margin-bottom:10px}
+.tokens-balance-icon svg{width:36px;height:36px}
+.tokens-overview>strong{font-size:46px;letter-spacing:-.06em;line-height:1.1;color:#18251f;font-weight:800;font-variant-numeric:tabular-nums}
+.tokens-overview>span{font-size:14px;color:#67716c;margin-top:2px}
+.tokens-overview>small{font-size:12px;color:#8b9490;margin-top:7px}
+.tokens-overview .tokens-used-note{font-size:10px;color:#8b9490;margin:7px 0 0;line-height:1.4}
+.tokens-panel .tokens-option{width:100%;display:flex;align-items:center;gap:12px;text-align:left;border:0;border-top:1px solid #e8ece9;border-radius:0;background:transparent;padding:14px 2px;font:inherit;font-size:14px;color:#26332c;box-shadow:none}
+.tokens-voucher-toggle{cursor:pointer}
+.tokens-option-icon{width:38px;height:38px;flex:0 0 38px;border-radius:11px;display:grid;place-items:center;background:#f0f7f2;color:#276a3d;font-size:23px}
+.tokens-shop-icon{background:#f4f5f6;color:#747e79}
+.tokens-option-chevron{margin-left:auto;font-size:26px;color:#8c9790;transition:transform .18s}
+.tokens-voucher-toggle[aria-expanded="true"] .tokens-option-chevron{transform:rotate(90deg)}
+.tokens-panel .tokens-option-disabled{color:#354039}
+.tokens-soon{margin-left:auto;background:#f1f3f5;color:#7c8580;font-size:11px;padding:6px 10px}
+.tokens-voucher{padding:15px 14px;margin:0 0 8px;border:1px solid #e6ece8;border-radius:16px;background:#f8fbf9}
+.tokens-voucher label{font-size:14px;color:#1e2d25;font-weight:800;margin:0 0 12px}
+.tokens-voucher input{height:46px;min-height:46px;background:#fff;border:1px solid #dce3de;border-radius:11px;font-size:13px;color:#1e2d25}
+.tokens-redeem{height:44px;margin-top:10px;border-radius:11px;background:#2d713f;color:#fff;font-size:13px;font-weight:750;cursor:pointer}
+.tokens-redeem:hover{background:#245d33}.tokens-redeem:disabled{opacity:.6;cursor:wait}
+.tokens-voucher-note{font-size:11px;margin:9px 0 0}
+.tokens-footer-note{margin:7px 0 0;padding:12px 13px;border:1px solid #e7ece9;border-radius:13px;background:#f8faf9;color:#748079;font-size:11px;line-height:1.5}
+@media(max-width:700px){.tokens-panel{padding:21px 18px 17px}.tokens-panel h2{font-size:21px;margin-bottom:16px}.tokens-balance-icon{width:62px;height:62px}.tokens-overview>strong{font-size:40px}.tokens-panel .tokens-option{padding:11px 2px}.tokens-overview{padding-bottom:14px}}

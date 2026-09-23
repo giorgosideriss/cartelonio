@@ -71,7 +71,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260923-welcome10-2" rel="stylesheet"/>
+<link href="style.css?v=20260923-tokens-minimal-1" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -91,21 +91,22 @@
   <div class="tokens-menu" id="tokensMenu" hidden>
     <section class="tokens-panel" role="dialog" aria-modal="false" aria-labelledby="tokensTitle">
       <button type="button" class="tokens-close" id="tokensClose" aria-label="Κλείσιμο">×</button>
-      <div class="tokens-eyebrow">CARTELONIO</div>
       <h2 id="tokensTitle">Τα Tokens μου</h2>
-      <p class="tokens-intro">Δες την κατάσταση και διαχειρίσου τα tokens σου.</p>
       <div class="tokens-overview">
-        <div class="tokens-main-number"><span class="tokens-symbol" aria-hidden="true">▰</span><div><strong id="tokensAvailable">—</strong><span>Διαθέσιμα tokens</span></div></div>
-        <div class="tokens-used"><span>Tokens που χρησιμοποιήθηκαν</span><strong id="tokensUsed">—</strong></div>
-        <p class="tokens-used-note" id="tokensUsedNote">Μετράμε μόνο τις χρεώσεις για υπολογισμούς.</p>
+        <div class="tokens-balance-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="3"/><path d="M5 5.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6M5 11.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div>
+        <strong id="tokensAvailable">—</strong><span>Διαθέσιμα tokens</span>
+        <small><span id="tokensUsed">—</span> χρησιμοποιημένα</small>
+        <p class="tokens-used-note" id="tokensUsedNote" role="status">Μετράμε μόνο τις χρεώσεις για υπολογισμούς.</p>
       </div>
-      <div class="tokens-option tokens-option-disabled"><span class="tokens-option-icon" aria-hidden="true">🛒</span><span><strong>Αγορά Tokens</strong><small>Επίλεξε το πακέτο που σου ταιριάζει</small></span><span class="tokens-soon">Σύντομα</span></div>
-      <div class="tokens-voucher"><div class="tokens-option"><span class="tokens-option-icon" aria-hidden="true">◇</span><span><strong>Έχω κωδικό / Voucher</strong><small>Δωρεάν tokens ή έκπτωση σε πακέτο</small></span></div>
-        <label for="tokensVoucherCode">Κωδικός voucher</label>
+      <button type="button" class="tokens-option tokens-voucher-toggle" id="tokensVoucherToggle" aria-expanded="false" aria-controls="tokensVoucherForm"><span class="tokens-option-icon tokens-gift-icon" aria-hidden="true">♧</span><span>Εξαργύρωση κωδικού</span><span class="tokens-option-chevron" aria-hidden="true">›</span></button>
+      <div class="tokens-voucher" id="tokensVoucherForm" hidden>
+        <label for="tokensVoucherCode">Εξαργύρωση Voucher</label>
         <input id="tokensVoucherCode" type="text" autocomplete="off" placeholder="Εισαγωγή κωδικού" maxlength="64" aria-describedby="tokensVoucherNotice" />
-        <button type="button" class="tokens-redeem" id="tokensRedeem">Εξαργύρωση κωδικού</button>
-        <p id="tokensVoucherNotice" class="tokens-voucher-note">Εισήγαγε έναν έγκυρο κωδικό για δωρεάν tokens. Εκπτωτικοί κωδικοί θα ενεργοποιηθούν με τις αγορές.</p>
+        <button type="button" class="tokens-redeem" id="tokensRedeem">Εξαργύρωση</button>
+        <p id="tokensVoucherNotice" class="tokens-voucher-note" role="status">Συνδέσου και εισήγαγε τον κωδικό σου για δωρεάν tokens.</p>
       </div>
+      <div class="tokens-option tokens-option-disabled"><span class="tokens-option-icon tokens-shop-icon" aria-hidden="true">♧</span><span>Αγορά Tokens</span><span class="tokens-soon">Σύντομα</span></div>
+      <p class="tokens-footer-note">ⓘ Οι κωδικοί προσφοράς σου δίνουν επιπλέον υπολογισμούς, εντελώς δωρεάν.</p>
     </section>
   </div>
   <button class="account-button" id="accountButton" type="button" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
@@ -696,6 +697,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260923-welcome10-2"></script>
+<script src="script.js?v=20260923-tokens-minimal-1"></script>
 </body>
 </html>
