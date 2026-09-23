@@ -95,7 +95,7 @@ const BRAND_LOGOS = {
   "DS": "https://logos-world.net/wp-content/uploads/2021/08/DS-Automobiles-Logo-700x394.png",
   "Dacia": "https://logos-world.net/wp-content/uploads/2021/06/Dacia-Logo.png",
   "Ferrari": "https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo-700x394.png",
-  "Fiat": "https://w7.pngwing.com/pngs/1019/724/png-transparent-fiat-automobiles-car-logo-fiat-500-fiat-logo-text-rectangle-magenta-thumbnail.png",
+  "Fiat": "https://listcarbrands.com/wp-content/uploads/2016/02/Fiat-Logo-2003.png",
   "Ford": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo-1965-present.png",
   "Geely": "https://logos-world.net/wp-content/uploads/2021/08/Geely-Logo.png",
   "Genesis": "https://logos-world.net/wp-content/uploads/2020/05/Genesis-Logo.png",
