@@ -1984,12 +1984,10 @@ function renderHistoryRecord(record){
  money.append(historyNode('small','', 'Τέλος ταξινόμησης'),historyNode('strong','', '€'+historyEuro(record.total_tax)),
   historyNode('small','history-ltpf','ΛΤΠΦ €'+historyEuro(record.ltpf)));
  head.append(visual,main,money);article.append(head);
- const actions=historyNode('div','history-entry-actions');
  const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
  main.append(favorite);
- const details=historyNode('button','history-action','Λεπτομέρειες ↓');details.type='button';details.setAttribute('aria-expanded','false');
- const restore=historyNode('button','history-action history-restore','↻ Επαναφορά');restore.type='button';
+ const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
  const expanded=historyNode('div','history-expanded');expanded.hidden=true;
  const fields=historyNode('div','history-fields');
@@ -1999,8 +1997,14 @@ function renderHistoryRecord(record){
  ['Τύπος κίνησης',record.powertrain],['ΛΤΠΦ','€'+historyEuro(record.ltpf)],
  ['Φορολογητέα αξία','€'+historyEuro(record.taxable_value)],['Τέλος ταξινόμησης','€'+historyEuro(record.registration_tax)],
  ['Περιβαλλοντικό τέλος','€'+historyEuro(record.environmental_fee)],['Συνολικό τέλος','€'+historyEuro(record.total_tax)]].forEach(([k,v])=>historyField(fields,k,v));
- expanded.append(fields);const moreWrap=historyNode('div','history-card-more-wrap');const moreToggle=historyNode('button','history-card-more','⋯');moreToggle.type='button';moreToggle.title='Περισσότερες ενέργειες';moreToggle.setAttribute('aria-label','Περισσότερες ενέργειες');moreToggle.setAttribute('aria-expanded','false');remove.hidden=true;moreWrap.append(moreToggle,remove);actions.append(details,restore,moreWrap);article.append(actions,expanded);moreToggle.addEventListener('click',()=>{remove.hidden=!remove.hidden;moreToggle.setAttribute('aria-expanded',String(!remove.hidden));});
- details.addEventListener('click',()=>{expanded.hidden=!expanded.hidden;details.setAttribute('aria-expanded',String(!expanded.hidden));details.textContent=expanded.hidden?'Λεπτομέρειες ↓':'Λιγότερα ↑';});
+ const actions=historyNode('div','history-entry-actions');actions.append(restore,remove);
+ expanded.append(fields,actions);article.append(expanded);
+ const chevron=historyNode('span','history-entry-chevron','›');chevron.setAttribute('aria-hidden','true');head.append(chevron);
+ head.classList.add('history-entry-trigger');head.setAttribute('role','button');head.tabIndex=0;
+ head.setAttribute('aria-expanded','false');head.setAttribute('aria-label','Λεπτομέρειες υπολογισμού: '+[record.brand,record.model].filter(Boolean).join(' '));
+ const toggleDetails=()=>{expanded.hidden=!expanded.hidden;head.setAttribute('aria-expanded',String(!expanded.hidden));article.classList.toggle('is-expanded',!expanded.hidden);};
+ head.addEventListener('click',event=>{if(event.target.closest('button'))return;toggleDetails();});
+ head.addEventListener('keydown',event=>{if(event.target!==head)return;if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDetails();}});
  restore.addEventListener('click',async()=>{restore.disabled=true;try{await restoreHistoryRecord(record);closeHistory();}catch(err){historyStatus('Δεν ήταν δυνατή η επαναφορά των στοιχείων.');console.warn(err);}finally{restore.disabled=false;}});
  remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
   const {error}=await cartelonioDb.from('calculation_history').delete().eq('id',record.id).eq('user_id',cartelonioSession.user.id);

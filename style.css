@@ -4390,3 +4390,21 @@ body.cartelonio-onboarding-open{overflow:hidden}
  .history-card-more-wrap{flex:0 0 32px!important}.history-card-more{width:32px!important;height:32px!important;min-height:32px!important}
 }
 @media(max-width:360px){.history-entry-head{grid-template-columns:70px minmax(0,1fr)!important}.history-visual{width:70px!important;height:60px!important}.history-entry-actions .history-action{font-size:9px!important}}
+
+/* Finder history: clickable rows; management actions live inside expanded details. */
+.history-entry-trigger{position:relative;cursor:pointer;padding-right:25px;outline-offset:-3px}
+.history-entry-trigger:hover .history-car-name{color:#317b38}
+.history-entry-trigger:focus-visible{outline:2px solid #4b9147;border-radius:9px}
+.history-entry-chevron{position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:28px;font-weight:300;line-height:1;color:#9aa49b;transition:transform .18s ease}
+.history-entry.is-expanded .history-entry-chevron{transform:translateY(-50%) rotate(90deg)}
+.history-entry-actions{margin:13px 0 0!important;padding-top:12px!important;border-top:1px solid #edf0ed!important;display:flex!important;gap:8px!important;justify-content:flex-end!important}
+.history-entry-actions .history-action{flex:0 1 auto!important;min-height:36px!important;padding:8px 12px!important;font-size:12px!important}
+.history-entry-actions .history-delete{background:#fff5f5!important;color:#a43d43!important;border:1px solid #f0d4d4!important}
+.history-expanded[hidden]{display:none!important}
+@media(max-width:600px){
+ .history-entry-head{padding-right:19px!important}
+ .history-entry-chevron{right:0;top:38px;font-size:24px}
+ .history-entry-money{margin-right:0!important}
+ .history-entry-actions{margin:12px 0 0!important;justify-content:stretch!important}
+ .history-entry-actions .history-action{flex:1 1 0!important;white-space:normal!important;font-size:11px!important}
+}
