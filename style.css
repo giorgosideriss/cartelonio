@@ -4310,3 +4310,8 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .site-header .header-copy{margin-left:auto;}
 @media(max-width:600px){.site-version-label{font-size:9px;margin-left:-18px;}}
 @media(max-width:380px){.site-version-label{font-size:8px;margin-left:-20px;}}
+
+/* History search: match the 42px height of the filter and sorting controls. */
+.history-toolbar .history-search-label{box-sizing:border-box;height:42px;min-height:42px;max-height:42px;padding:0 13px;align-items:center;line-height:1.2}
+.history-toolbar .history-search-label input{box-sizing:border-box;height:100%;min-height:0;padding:0;margin:0;line-height:normal;appearance:none;-webkit-appearance:none}
+.history-toolbar .history-search-label input::-webkit-search-decoration,.history-toolbar .history-search-label input::-webkit-search-cancel-button{-webkit-appearance:none}

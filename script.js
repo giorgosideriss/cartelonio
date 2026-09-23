@@ -1850,8 +1850,7 @@ let historySearchTerm = '';
 let historySortMode = 'newest';
 const historyNormalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('el-GR');
 function historyFilteredRecords(){
- const year = new Date().getFullYear();
- const items = historyRecords.filter(r => (historyFilter !== 'favorites' || r.is_favorite) && (historyFilter !== 'year' || new Date(r.created_at).getFullYear() === year) && (!historySearchTerm || historyNormalize([r.brand,r.model,r.edition,r.year,r.variant_name,r.body_type,r.powertrain].join(' ')).includes(historySearchTerm)));
+ const items = historyRecords.filter(r => (historyFilter !== 'favorites' || r.is_favorite) && (!historySearchTerm || historyNormalize([r.brand,r.model,r.edition,r.year,r.variant_name,r.body_type,r.powertrain].join(' ')).includes(historySearchTerm)));
  const modes={newest:(a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at),oldest:(a,b)=>Date.parse(a.created_at)-Date.parse(b.created_at),year_desc:(a,b)=>Number(b.year||0)-Number(a.year||0),year_asc:(a,b)=>Number(a.year||0)-Number(b.year||0),tax_desc:(a,b)=>Number(b.total_tax||0)-Number(a.total_tax||0),tax_asc:(a,b)=>Number(a.total_tax||0)-Number(b.total_tax||0)};
  return items.sort(modes[historySortMode]||modes.newest);
 }
@@ -1862,7 +1861,6 @@ function historyRenderList(){
  historyEl('historyMore').hidden=items.length<=historyVisible;
  historyEl('historyAllCount').textContent=`(${historyRecords.length})`;
  historyEl('historyFavoriteCount').textContent=`(${historyRecords.filter(r=>r.is_favorite).length})`;
- historyEl('historyYearCount').textContent=`(${historyRecords.filter(r=>new Date(r.created_at).getFullYear()===new Date().getFullYear()).length})`;
  historyStatus(items.length?'':historyRecords.length?'Δεν βρέθηκαν υπολογισμοί για τα επιλεγμένα φίλτρα.':'Δεν υπάρχουν ακόμη αποθηκευμένοι υπολογισμοί.');
 }
 
