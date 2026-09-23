@@ -131,10 +131,10 @@ const BRAND_LOGOS = {
   "Smart": "https://logos-world.net/wp-content/uploads/2021/06/Smart-Logo-500x281.png",
   "Subaru": "https://logos-world.net/wp-content/uploads/2021/06/Subaru-Logo-500x281.png",
   "Suzuki": "https://logos-world.net/wp-content/uploads/2021/10/Suzuki-Logo-700x394.png",
-  "Tesla": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/500px-Tesla_logo.png",
+  "Tesla": "https://logos-world.net/wp-content/uploads/2020/10/Tesla-Logo.png",
   "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png",
-  "Volkswagen": "https://logos-world.net/wp-content/uploads/2021/04/Volkswagen-Logo-700x394.png",
-  "Volvo": "https://logos-world.net/wp-content/uploads/2021/06/Volvo-Logo-500x281.png",
+  "Volkswagen": "https://logos-world.net/wp-content/uploads/2021/04/Volkswagen-Logo-1978-1989.png",
+  "Volvo": "https://logos-world.net/wp-content/uploads/2021/04/Volvo-Logo-1999-2013.png",
 };
 
 
