@@ -1989,7 +1989,7 @@ function renderHistoryRecord(record){
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
  main.append(favorite);
  const details=historyNode('button','history-action','Λεπτομέρειες ↓');details.type='button';details.setAttribute('aria-expanded','false');
- const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
+ const restore=historyNode('button','history-action history-restore','↻ Επαναφορά');restore.type='button';
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
  const expanded=historyNode('div','history-expanded');expanded.hidden=true;
  const fields=historyNode('div','history-fields');

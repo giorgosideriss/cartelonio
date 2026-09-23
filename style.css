@@ -4350,3 +4350,43 @@ body.cartelonio-onboarding-open{overflow:hidden}
 .history-tool-button:focus-visible,.history-card-more:focus-visible,.history-tab:focus-visible{outline:2px solid #4b9147;outline-offset:2px}
 @media(min-width:950px){.history-list{grid-template-columns:repeat(2,minmax(0,1fr))}.history-entry-head{grid-template-columns:110px minmax(0,1fr)!important}.history-entry-money{grid-column:2!important}.history-entry{min-width:0}}
 @media(max-width:600px){.history-content{padding:12px!important}.history-toolbar{gap:6px}.history-tabs{gap:6px}.history-toolbar .history-tab{height:38px;padding:0 10px;font-size:11px}.history-tools{gap:5px}.history-tool-button{width:38px;height:38px}.history-entry{padding:12px!important}.history-entry-head{grid-template-columns:88px minmax(0,1fr)!important;gap:10px!important}.history-visual{width:88px;height:78px!important}.history-entry-main{padding-right:29px}.history-car-name{font-size:15px!important}.history-entry-money{grid-column:2!important;padding:0!important;border:0!important;text-align:left!important;align-items:flex-start!important}.history-entry-money strong{font-size:21px!important}.history-entry-actions .history-action{font-size:11px!important;padding:10px 5px!important}.history-card-more-wrap{flex-basis:36px}.history-card-more{width:36px}}
+
+/* History v0.5.1 — Finder-inspired compact rows, including mobile. */
+.history-content{background:#f3f4f5!important}
+.history-list{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important;background:#fff;border:1px solid #e5e9e5;border-radius:17px;overflow:visible}
+.history-entry{display:block!important;min-width:0;position:relative;gap:0!important;padding:12px 15px!important;border:0!important;border-bottom:1px solid #edf0ed!important;border-radius:0!important;box-shadow:none!important;background:#fff!important}
+.history-entry:first-child{border-radius:17px 17px 0 0!important}
+.history-entry:last-child{border-bottom:0!important;border-radius:0 0 17px 17px!important}
+.history-entry:only-child{border-radius:17px!important}
+.history-entry-head{display:grid!important;grid-template-columns:92px minmax(0,1fr) minmax(116px,auto)!important;align-items:center!important;gap:12px!important}
+.history-visual{width:92px!important;height:70px!important;border-radius:10px!important;background:#f5f7f5!important}
+.history-entry-main{gap:4px!important;padding-right:29px!important;align-self:center!important}
+.history-title-row{gap:6px!important}.history-brand-logo{width:20px!important;height:20px!important}
+.history-car-name{font-size:15px!important;line-height:1.25!important}
+.history-car-version,.history-entry-date{font-size:11px!important;line-height:1.35!important}
+.history-entry-money{grid-column:3!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important;gap:2px!important;text-align:right!important;padding:0!important;margin:0!important;border:0!important;min-width:0!important}
+.history-entry-money strong{font-size:18px!important;line-height:1.2!important;color:#317b38!important;white-space:nowrap}
+.history-entry-money small:first-child{font-size:10px!important}.history-entry-money .history-ltpf{font-size:10px!important;margin:0!important}
+.history-entry-main .history-favorite{top:-5px!important;right:0!important;width:27px!important;height:27px!important;font-size:20px!important}
+.history-entry-actions{margin:8px 0 0 104px!important;padding:0!important;gap:6px!important;justify-content:flex-start!important}
+.history-entry-actions .history-action{flex:0 1 auto!important;width:auto!important;min-height:30px!important;padding:5px 10px!important;border-radius:8px!important;font-size:11px!important;font-weight:650!important}
+.history-card-more-wrap{flex:0 0 30px!important}.history-card-more{width:30px!important;min-height:30px!important;height:30px!important;border-radius:8px!important;font-size:18px!important}
+.history-expanded{margin-top:10px!important}
+@media(max-width:600px){
+ .history-content{padding:10px!important}
+ .history-list{border-radius:14px!important}
+ .history-entry{padding:11px!important}
+ .history-entry-head{grid-template-columns:82px minmax(0,1fr)!important;gap:9px!important;align-items:start!important}
+ .history-visual{width:82px!important;height:65px!important}
+ .history-entry-main{align-self:center!important;gap:3px!important;padding-right:25px!important}
+ .history-car-name{font-size:14px!important}
+ .history-brand-logo{width:18px!important;height:18px!important}
+ .history-entry-money{grid-column:1/-1!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:baseline!important;gap:2px 8px!important;margin-top:7px!important;padding:8px 9px!important;background:#f5f8f4!important;border-radius:9px!important;text-align:left!important}
+ .history-entry-money small:first-child{grid-column:1!important;grid-row:1!important;font-size:10px!important}
+ .history-entry-money strong{grid-column:2!important;grid-row:1!important;font-size:17px!important;text-align:right!important}
+ .history-entry-money .history-ltpf{grid-column:1/-1!important;grid-row:2!important;text-align:right!important;font-size:10px!important}
+ .history-entry-actions{margin:8px 0 0!important;gap:6px!important}
+ .history-entry-actions .history-action{flex:1 1 0!important;min-width:0!important;min-height:32px!important;padding:6px 5px!important;font-size:10px!important;white-space:nowrap!important}
+ .history-card-more-wrap{flex:0 0 32px!important}.history-card-more{width:32px!important;height:32px!important;min-height:32px!important}
+}
+@media(max-width:360px){.history-entry-head{grid-template-columns:70px minmax(0,1fr)!important}.history-visual{width:70px!important;height:60px!important}.history-entry-actions .history-action{font-size:9px!important}}
