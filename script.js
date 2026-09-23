@@ -1840,12 +1840,10 @@ function historyImageUrl(path){
   return ['http:','https:'].includes(url.protocol) ? url.href : null;
  }catch{return null;}
 }
-function historySetImage(img,path){
+function historySetImage(img,path,onFailure){
  const url=historyImageUrl(path);
- if(!url)return;
+ if(!url){if(onFailure)onFailure();return;}
  const fallback=img.nextElementSibling;
- // Do not rely on lazy-loading or a CSS class to start the request: Safari
- // may defer images created while their modal is hidden.
  img.loading='eager';
  img.decoding='async';
  img.onload=()=>{
@@ -1855,29 +1853,42 @@ function historySetImage(img,path){
   img.classList.remove('is-loaded');img.removeAttribute('src');
   if(fallback)fallback.hidden=false;
   console.warn('History image failed:',url);
+  if(onFailure)onFailure();
  };
  img.src=url;
  if(img.complete && img.naturalWidth>0)img.onload();
 }
-async function historyImage(record,img){
- if(record.image_path){historySetImage(img,record.image_path);return;}
- // Legacy records: try the old dataset-based image lookup.
-
+async function historyCatalogImage(record,img){
+ // Recover legacy/broken image paths from the exact catalogue edition.
  const source=DATA_SOURCES[record.brand]?.[String(record.year)];
- if(!source || !record.model || !record.edition) return;
+ if(!source || !record.model)return;
  const catalogUrl=`${CARTELONIO_API_BASE}/catalog?brand=${encodeURIComponent(source.slug)}&year=${encodeURIComponent(source.year)}`;
- try {
+ try{
   if(!historyImageCache.has(catalogUrl)){
-   const response=await fetch(catalogUrl,{cache:'no-store'});if(!response.ok)throw new Error('dataset');
+   const response=await fetch(catalogUrl,{cache:'no-store'});
+   if(!response.ok)throw new Error('catalogue unavailable');
    historyImageCache.set(catalogUrl,await response.json());
   }
-  const model=historyImageCache.get(catalogUrl)?.models?.[record.model];
-  const edition=model?.editions?.find(ed=>ed.name===record.edition);
-  const raw=edition?.image || model?.image;
+  const models=historyImageCache.get(catalogUrl)?.models;
+  const model=models?.[record.model] || Object.entries(models||{}).find(([name])=>historyNormalize(name)===historyNormalize(record.model))?.[1];
+  if(!model)return;
+  const editions=model.editions||[];
+  const index=record.edition_index === null || record.edition_index === undefined || record.edition_index === '' ? NaN : Number(record.edition_index);
+  const edition=editions.find(ed=>ed.name===record.edition) || (Number.isInteger(index)?editions[index]:null);
+  const raw=edition?.image || model.image;
   if(!raw)return;
-  const path=/^(https?:)?\/\//i.test(raw)||raw.startsWith('/')||raw.startsWith('./')||raw.startsWith('../')||raw.includes('/')?raw:`images/cars/${slugifyBrand(record.brand)}/${raw}`;
+  const value=String(raw).trim();
+  const path=/^(https?:)?\/\//i.test(value)||value.startsWith('/')||value.startsWith('./')||value.startsWith('../')||value.includes('/')?value:`images/cars/${slugifyBrand(record.brand)}/${value}`;
   historySetImage(img,path);
  }catch(err){console.warn('History image unavailable:',err);}
+}
+async function historyImage(record,img){
+ if(record.image_path){
+  // A saved path may be stale or point to a missing file; do not stop there.
+  historySetImage(img,record.image_path,()=>{void historyCatalogImage(record,img);});
+  return;
+ }
+ await historyCatalogImage(record,img);
 }
 function renderHistoryRecord(record){
  const article=historyNode('article','history-entry');
