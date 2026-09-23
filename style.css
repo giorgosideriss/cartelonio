@@ -4551,3 +4551,33 @@ body.welcome10-open{overflow:hidden}
 .account-finder-profile{display:grid;grid-template-columns:1fr auto;gap:9px;padding:15px 12px;background:#f6f9f6;border-radius:12px;font-size:12px;overflow-wrap:anywhere}
 .account-finder-profile span{color:#778179}.account-finder-profile strong{color:#284c31;text-align:right}
 @media(max-width:700px){.site-header #authModal:has(.account-finder:not([hidden])){width:auto!important}.site-header #authModal:has(.account-finder:not([hidden])) .auth-card{padding:18px!important}.account-finder-avatar{width:52px;height:52px;flex-basis:52px}}
+
+
+/* Finder-inspired account dropdown — signed-out, registration, login and recovery */
+.site-header #authModal:not(:has(.account-finder:not([hidden]))){width:min(450px,calc(100vw - 24px))!important}
+.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-card{background:#fff!important;color:#202a24!important;border:1px solid #e5ebe6!important;border-radius:26px!important;padding:26px!important;box-shadow:0 25px 65px rgba(0,0,0,.22)!important}
+.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-close{color:#26332a!important;background:#f3f6f4!important;border:1px solid #e5ebe6!important}
+.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-brand{color:#668372!important;font-size:10px!important;letter-spacing:.13em}
+.site-header #authModal:not(:has(.account-finder:not([hidden]))) #authTitle{color:#202a24!important;font-size:23px!important;letter-spacing:-.035em;margin-top:4px!important}
+.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-copy{color:#758079!important;font-size:12px!important;line-height:1.55!important;margin-bottom:20px!important}
+.site-header #authModal .auth-tabs:not([hidden]){background:#f2f5f2!important;border:1px solid #e8ece9!important;border-radius:14px!important;padding:4px!important;gap:4px!important}
+.site-header #authModal .auth-tabs button{color:#69766d!important;background:transparent!important;border-radius:11px!important;font-size:13px!important;min-height:39px!important}
+.site-header #authModal .auth-tabs button.is-active{background:#fff!important;color:#243d2b!important;box-shadow:0 2px 8px rgba(28,43,32,.09)!important}
+.site-header #authModal .auth-form label{color:#44534a!important;font-size:12px!important;margin-top:7px!important}
+.site-header #authModal .auth-form input{min-height:46px!important;background:#f8faf8!important;color:#202a24!important;border:1px solid #e0e7e1!important;border-radius:12px!important;padding:12px 14px!important;box-shadow:none!important;color-scheme:light!important}
+.site-header #authModal .auth-form input::placeholder{color:#a1aba3!important}
+.site-header #authModal .auth-form input:focus{background:#fff!important;border-color:#78aa80!important;box-shadow:0 0 0 3px rgba(90,155,101,.12)!important}
+.site-header #authModal .auth-help{color:#78847b!important;font-size:11px!important;line-height:1.6!important}
+.site-header #authModal .auth-primary{background:#263e2d!important;color:#fff!important;border-radius:13px!important;min-height:46px!important;box-shadow:none!important;font-size:13px!important}
+.site-header #authModal .auth-primary:hover:not(:disabled){background:#35563d!important}
+.site-header #authModal .auth-secondary{background:#eef5ef!important;color:#31583a!important;border:1px solid #dce9de!important;border-radius:13px!important;font-size:12px!important}
+.site-header #authModal .auth-link{color:#3f704b!important;font-size:12px!important}
+.site-header #authModal .auth-status{color:#5d6c61!important}
+.site-header #authModal .auth-status.is-error{color:#b32626!important}
+.site-header #authModal .auth-status.is-success{color:#2e7540!important}
+.site-header #authModal .auth-signup-pending{color:#26332a!important}
+.site-header #authModal .auth-signup-pending h3{color:#26332a!important}
+.site-header #authModal .auth-signup-pending p{color:#758079!important}
+.site-header #authModal .auth-signup-pending strong{color:#26332a!important;overflow-wrap:anywhere}
+.site-header #authModal .auth-pending-icon{color:#3f704b!important;background:#edf5ef!important}
+@media(max-width:700px){.site-header #authModal:not(:has(.account-finder:not([hidden]))){width:auto!important}.site-header #authModal:not(:has(.account-finder:not([hidden]))) .auth-card{padding:20px!important}}
