@@ -4276,3 +4276,8 @@ body.cartelonio-onboarding-open{overflow:hidden}
 @media (prefers-reduced-motion: reduce) {
   .vehicle-configurator-v2 .registration-tax-mini-card.tax-result-highlight { animation: none; }
 }
+
+/* History controls: keep sorting the same height as the filter pills. */
+.history-toolbar .history-sort-label{box-sizing:border-box;min-height:42px;height:42px;width:auto;max-width:100%;padding:0 12px;gap:8px;flex:0 1 auto;align-items:center;white-space:nowrap;line-height:1.2}
+.history-toolbar .history-sort-label select{box-sizing:border-box;display:block;min-height:0!important;height:38px!important;width:auto;max-width:min(190px,42vw);padding:0 22px 0 2px!important;margin:0;border:0!important;border-radius:0;box-shadow:none!important;line-height:normal;background-color:transparent}
+@media(max-width:700px){.history-toolbar .history-sort-label{flex:0 1 auto;width:auto;min-width:0}.history-toolbar .history-sort-label select{max-width:min(180px,46vw)}}
