@@ -4303,3 +4303,10 @@ body.cartelonio-onboarding-open{overflow:hidden}
   text-overflow: clip !important;
   min-width: 0 !important;
 }
+
+/* Discreet staging version label beside the header logo */
+.site-header .header-inner{justify-content:flex-start;}
+.site-version-label{display:inline-block;flex:0 0 auto;white-space:nowrap;font-size:11px;font-weight:500;letter-spacing:.02em;line-height:1.2;color:#89928b;opacity:.72;margin-left:-13px;}
+.site-header .header-copy{margin-left:auto;}
+@media(max-width:600px){.site-version-label{font-size:9px;margin-left:-18px;}}
+@media(max-width:380px){.site-version-label{font-size:8px;margin-left:-20px;}}
