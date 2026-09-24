@@ -813,9 +813,15 @@ function autoFillCarData() {
     if (euroEl && [...euroEl.options].some(o => o.value === edition.euro)) euroEl.value = edition.euro;
   }
   const powertrainEl = document.getElementById("powertrain");
-  powertrainEl.value = "";
-  if (edition.powertrain) {
-    if (powertrainEl && [...powertrainEl.options].some(o => o.value === edition.powertrain)) powertrainEl.value = edition.powertrain;
+  if (powertrainEl) {
+    // The existing form/backend uses "hybrid" for hybrid vehicles, including PHEVs.
+    // Normalize catalogue aliases without adding an unsupported API value.
+    const rawPowertrain = String(edition.powertrain ?? "").trim();
+    const normalizedPowertrain = /^(?:phev|plug[ -]?in(?:[ -]?hybrid)?|plugin[ -]?hybrid|plug[ -]?in[ -]?υβριδικό)$/i.test(rawPowertrain)
+      ? "hybrid"
+      : rawPowertrain;
+    powertrainEl.value = [...powertrainEl.options].some(o => o.value === normalizedPowertrain)
+      ? normalizedPowertrain : "";
   }
 
   const autoBodyType = edition.bodyType || modelObj.category;
@@ -970,14 +976,14 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Ford","2015"],["Ford","2016"],["Ford","2017"],["Ford","2018"],["Ford","2019"],["Ford","2020"],["Ford","2021"],["Ford","2022"],["Ford","2023"],
   ["Fiat","2017"],["Fiat","2018"],["Fiat","2019"],["Fiat","2020"],["Fiat","2021"],["Fiat","2022"],
   ["Mercedes-Benz","2015"],["Mercedes-Benz","2016"],["Mercedes-Benz","2017"],["Mercedes-Benz","2018"],["Mercedes-Benz","2019"],["Mercedes-Benz","2020"],["Mercedes-Benz","2021"],["Mercedes-Benz","2022"],["Mercedes-Benz","2023"],["Mercedes-Benz","2024"],["Mercedes-Benz","2025"],
-  ["Mini","2015"],["Mini","2016"],["Mini","2017"],["Mini","2018"],["Mini","2019"],["Mini","2020"],["Mini","2021"],["Mini","2022"],["Mini","2023"],["Mini","2024"],["Mini","2025"],
-  ["Toyota","2020"],["Toyota","2021"]
-  ["Jeep","2015"],["Jeep","2016"],["Jeep","2017"],["Jeep","2018"],["Jeep","2019"],["Jeep","2020"],["Jeep","2021"],["Jeep","2022"],["Jeep","2020"],["Jeep","2023"],
+  ["MINI","2015"],["MINI","2016"],["MINI","2017"],["MINI","2018"],["MINI","2019"],["MINI","2020"],["MINI","2021"],["MINI","2022"],["MINI","2023"],["MINI","2024"],["MINI","2025"],
+  ["Toyota","2020"],["Toyota","2021"],
+  ["Jeep","2015"],["Jeep","2016"],["Jeep","2017"],["Jeep","2018"],["Jeep","2019"],["Jeep","2020"],["Jeep","2021"],["Jeep","2022"],["Jeep","2023"],
   ["Jaguar","2015"],["Jaguar","2016"],["Jaguar","2017"],["Jaguar","2018"],["Jaguar","2019"],["Jaguar","2020"],["Jaguar","2021"],["Jaguar","2022"],
   ["Land Rover","2015"],["Land Rover","2016"],["Land Rover","2017"],["Land Rover","2018"],["Land Rover","2019"],["Land Rover","2020"],["Land Rover","2021"],["Land Rover","2022"],["Land Rover","2023"],["Land Rover","2024"],["Land Rover","2025"],
   ["Citroen","2015"],["Citroen","2016"],["Citroen","2017"],["Citroen","2018"],["Citroen","2019"],["Citroen","2020"],["Citroen","2021"],["Citroen","2022"],["Citroen","2023"],["Citroen","2024"],["Citroen","2025"],
   ["Honda","2015"],["Honda","2016"],["Honda","2017"],["Honda","2018"],["Honda","2019"],["Honda","2020"],["Honda","2021"],["Honda","2022"],["Honda","2023"],["Honda","2024"],["Honda","2025"],
-  ["Hyundai","2015"],["Hyundai","2016"],["Hyundai","2017"],["Hyundai","2018"],["Hyundai","2019"],["Hyundai","2020"],["Hyundai","2021"],["Hyundai","2022"]
+  ["Hyundai","2015"],["Hyundai","2016"],["Hyundai","2017"],["Hyundai","2018"],["Hyundai","2019"],["Hyundai","2020"],["Hyundai","2021"],["Hyundai","2022"],
   ["Dacia","2017"],["Dacia","2018"],["Dacia","2019"],["Dacia","2020"],["Dacia","2021"],["Dacia","2022"]
 ];
 
