@@ -4634,3 +4634,12 @@ body.welcome10-open{overflow:hidden}
 /* Keep the welcome actions reachable on short mobile screens. */
 .onboarding-view[data-onboarding-view="welcome"].is-active{max-height:90vh;overflow-y:auto;overscroll-behavior:contain}
 @media(max-width:700px){.onboarding-database{margin-top:18px;padding:13px 11px 12px;border-radius:17px}.onboarding-db-grid{margin-top:12px}.onboarding-db-stat{padding:2px 4px 4px}.onboarding-db-stat strong{font-size:clamp(22px,6vw,29px)}.onboarding-db-stat span{font-size:10px}.onboarding-db-update{font-size:10px;margin-top:11px;padding-top:10px}.onboarding-benefits{margin-top:19px}.onboarding-view[data-onboarding-view="welcome"].is-active{max-height:92vh}}
+
+/* Subtle monochrome marque constellation behind welcome statistics */
+.onboarding-database{position:relative;isolation:isolate;overflow:hidden}
+.onboarding-database-heading,.onboarding-db-grid,.onboarding-db-update{position:relative;z-index:1}
+.onboarding-brand-ambient{position:absolute;inset:0;z-index:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));align-items:center;justify-items:center;gap:3px 9px;padding:7px 12px;pointer-events:none;overflow:hidden;opacity:.72;mask-image:linear-gradient(90deg,transparent,black 9%,black 91%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 9%,black 91%,transparent)}
+.onboarding-brand-ambient img{display:block;width:min(100%,43px);height:30px;object-fit:contain;filter:grayscale(1) brightness(.72);opacity:.095;animation:onboarding-brand-glimmer 10s ease-in-out infinite;animation-delay:var(--brand-delay,0s)}
+@keyframes onboarding-brand-glimmer{0%,12%,32%,100%{opacity:.075;filter:grayscale(1) brightness(.72) drop-shadow(0 0 0 transparent)}18%,23%{opacity:.37;filter:grayscale(1) sepia(.35) hue-rotate(58deg) saturate(2) brightness(1.05) drop-shadow(0 0 5px rgba(91,181,100,.65))}}
+@media(max-width:700px){.onboarding-brand-ambient{grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));gap:2px 5px;padding:6px}.onboarding-brand-ambient img{width:min(100%,30px);height:24px;opacity:.065}}
+@media(prefers-reduced-motion:reduce){.onboarding-brand-ambient img{animation:none;opacity:.09}}

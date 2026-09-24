@@ -136,6 +136,24 @@ const BRAND_LOGOS = {
   "Volkswagen": "https://logos-world.net/wp-content/uploads/2021/04/Volkswagen-Logo-1978-1989.png",
   "Volvo": "https://logos-world.net/wp-content/uploads/2021/04/Volvo-Logo-1999-2013.png",
 };
+/* Welcome statistics: decorative brand logos; independent of calculation logic. */
+(function initOnboardingBrandAmbient(){
+  const ambient = document.getElementById('onboardingBrandAmbient');
+  if (!ambient || typeof BRAND_LOGOS === 'undefined') return;
+  const names = ['Abarth','Alfa Romeo','Audi','Bentley','BMW','Citroen','Dacia','Fiat','Ford','Honda','Hyundai','Jaguar','Jeep','Kia','Land Rover','Mercedes','MINI','Porsche','Toyota'];
+  names.forEach((name,index) => {
+    const source = BRAND_LOGOS[name];
+    if (!source) return;
+    const logo = document.createElement('img');
+    logo.src = source;
+    logo.alt = '';
+    logo.loading = 'lazy';
+    logo.decoding = 'async';
+    logo.style.setProperty('--brand-delay', `${-((index * 1.37) % 10).toFixed(2)}s`);
+    ambient.appendChild(logo);
+  });
+})();
+
 
 
 /* =========================================================
