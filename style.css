@@ -4619,3 +4619,18 @@ body.welcome10-open{overflow:hidden}
 @media(max-width:360px) {
   .site-header .header-copy > .how-to-use-btn {padding-inline:9px;gap:5px;font-size:10px;}
 }
+
+/* Welcome statistics — compact macOS / iOS-inspired surface */
+.onboarding-database{max-width:690px;margin:25px auto 0;padding:17px 20px 15px;border:1px solid rgba(36,61,41,.10);border-radius:22px;background:linear-gradient(150deg,rgba(255,255,255,.97),rgba(244,249,245,.91));box-shadow:0 8px 28px rgba(25,42,28,.045);text-align:left}
+.onboarding-database-heading{display:flex;align-items:center;gap:8px;color:#59675d;font-size:11px;font-weight:750;letter-spacing:.035em}
+.onboarding-db-dot{width:7px;height:7px;flex:none;border-radius:50%;background:#5a9c62;box-shadow:0 0 0 4px rgba(90,156,98,.10)}
+.onboarding-db-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:15px}
+.onboarding-db-stat{display:flex;flex-direction:column;align-items:center;gap:5px;padding:3px 8px 5px;text-align:center}
+.onboarding-db-stat+.onboarding-db-stat{border-left:1px solid rgba(32,54,37,.10)}
+.onboarding-db-stat strong{font-size:clamp(25px,3vw,34px);font-weight:780;line-height:1.08;letter-spacing:-.055em;font-variant-numeric:tabular-nums;color:#192820}
+.onboarding-db-stat span{font-size:11px;font-weight:600;color:#79847b}
+.onboarding-db-update{display:flex;align-items:flex-start;gap:8px;margin:14px 0 0;padding-top:12px;border-top:1px solid rgba(32,54,37,.08);font-size:11px;line-height:1.5;color:#617267}
+.onboarding-db-update-icon{font-size:15px;line-height:1.1;color:#4e8557}
+/* Keep the welcome actions reachable on short mobile screens. */
+.onboarding-view[data-onboarding-view="welcome"].is-active{max-height:90vh;overflow-y:auto;overscroll-behavior:contain}
+@media(max-width:700px){.onboarding-database{margin-top:18px;padding:13px 11px 12px;border-radius:17px}.onboarding-db-grid{margin-top:12px}.onboarding-db-stat{padding:2px 4px 4px}.onboarding-db-stat strong{font-size:clamp(22px,6vw,29px)}.onboarding-db-stat span{font-size:10px}.onboarding-db-update{font-size:10px;margin-top:11px;padding-top:10px}.onboarding-benefits{margin-top:19px}.onboarding-view[data-onboarding-view="welcome"].is-active{max-height:92vh}}
