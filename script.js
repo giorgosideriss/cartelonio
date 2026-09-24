@@ -965,11 +965,20 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Abarth","2017"],["Abarth","2018"],["Abarth","2019"],["Abarth","2020"],["Abarth","2021"],["Abarth","2022"],
   ["Alfa Romeo","2015"],["Alfa Romeo","2016"],["Alfa Romeo","2017"],["Alfa Romeo","2018"],["Alfa Romeo","2019"],["Alfa Romeo","2020"],["Alfa Romeo","2022"],
   ["Aston Martin","2018"],
-  ["Audi","2015"],["Audi","2016"],["Audi","2017"],["Audi","2018"],["Audi","2019"],["Audi","2020"],["Audi","2021"],["Audi","2022"],
-  ["Ford","2016"],
-  ["Mazda","2021"],["Mazda","2022"],
+  ["Audi","2015"],["Audi","2016"],["Audi","2017"],["Audi","2018"],["Audi","2019"],["Audi","2020"],["Audi","2021"],["Audi","2022"],["Audi","2023"],["Audi","2024"],["Audi","2025"],
+  ["Bentley","2017"],["Bentley","2020"],["Bentley","2022"],
+  ["Ford","2015"],["Ford","2016"],["Ford","2017"],["Ford","2018"],["Ford","2019"],["Ford","2020"],["Ford","2021"],["Ford","2022"],["Ford","2023"],
+  ["Fiat","2017"],["Fiat","2018"],["Fiat","2019"],["Fiat","2020"],["Fiat","2021"],["Fiat","2022"],
   ["Mercedes-Benz","2015"],["Mercedes-Benz","2016"],["Mercedes-Benz","2017"],["Mercedes-Benz","2018"],["Mercedes-Benz","2019"],["Mercedes-Benz","2020"],["Mercedes-Benz","2021"],["Mercedes-Benz","2022"],["Mercedes-Benz","2023"],["Mercedes-Benz","2024"],["Mercedes-Benz","2025"],
+  ["Mini","2015"],["Mini","2016"],["Mini","2017"],["Mini","2018"],["Mini","2019"],["Mini","2020"],["Mini","2021"],["Mini","2022"],["Mini","2023"],["Mini","2024"],["Mini","2025"],
   ["Toyota","2020"],["Toyota","2021"]
+  ["Jeep","2015"],["Jeep","2016"],["Jeep","2017"],["Jeep","2018"],["Jeep","2019"],["Jeep","2020"],["Jeep","2021"],["Jeep","2022"],["Jeep","2020"],["Jeep","2023"],
+  ["Jaguar","2015"],["Jaguar","2016"],["Jaguar","2017"],["Jaguar","2018"],["Jaguar","2019"],["Jaguar","2020"],["Jaguar","2021"],["Jaguar","2022"],
+  ["Land Rover","2015"],["Land Rover","2016"],["Land Rover","2017"],["Land Rover","2018"],["Land Rover","2019"],["Land Rover","2020"],["Land Rover","2021"],["Land Rover","2022"],["Land Rover","2023"],["Land Rover","2024"],["Land Rover","2025"],
+  ["Citroen","2015"],["Citroen","2016"],["Citroen","2017"],["Citroen","2018"],["Citroen","2019"],["Citroen","2020"],["Citroen","2021"],["Citroen","2022"],["Citroen","2023"],["Citroen","2024"],["Citroen","2025"],
+  ["Honda","2015"],["Honda","2016"],["Honda","2017"],["Honda","2018"],["Honda","2019"],["Honda","2020"],["Honda","2021"],["Honda","2022"],["Honda","2023"],["Honda","2024"],["Honda","2025"],
+  ["Hyundai","2015"],["Hyundai","2016"],["Hyundai","2017"],["Hyundai","2018"],["Hyundai","2019"],["Hyundai","2020"],["Hyundai","2021"],["Hyundai","2022"]
+  ["Dacia","2017"],["Dacia","2018"],["Dacia","2019"],["Dacia","2020"],["Dacia","2021"],["Dacia","2022"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
