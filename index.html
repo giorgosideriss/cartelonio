@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260924-brand-ambient-1" rel="stylesheet"/>
+<link href="style.css?v=20260925-guide-v2" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -694,25 +694,35 @@
       </div>
     </div>
 
-    <!-- View 3: How to use -->
-    <div class="onboarding-view" data-onboarding-view="howto">
-      <button type="button" class="onboarding-back" data-onboarding-go="welcome">← Πίσω</button>
-      <div class="onboarding-subview-scroll">
-        <div class="how-to-modal-kicker">CARTELONIO GUIDE</div>
-        <h2>Πώς λειτουργεί το Cartelonio</h2>
-        <p class="how-to-modal-intro">Από την επιλογή του αυτοκινήτου μέχρι την εκτίμηση του Τέλους Ταξινόμησης, η διαδικασία γίνεται σε λίγα βήματα.</p>
-        <div class="how-to-steps">
-          <article class="how-to-step"><span class="how-to-step-number">01</span><div><h3>Επίλεξε το αυτοκίνητό σου</h3><p>Επίλεξε Μάρκα → Έτος → Μοντέλο → Έκδοση. Όπου υπάρχουν διαθέσιμα δεδομένα, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, CO₂, κατηγορία αμαξώματος και άλλα στοιχεία.</p></div></article>
-          <article class="how-to-step"><span class="how-to-step-number">02</span><div><h3>Πρόσθεσε Extras</h3><p>Αν υπάρχουν εργοστασιακά extras για τη συγκεκριμένη έκδοση, μπορείς να τα επιλέξεις και η ΛΤΠΦ προσαρμόζεται αυτόματα.</p></div></article>
-          <article class="how-to-step"><span class="how-to-step-number">03</span><div><h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3><p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Τα οικονομικά και τεχνικά στοιχεία του οχήματος επαληθεύονται από τον ασφαλή κατάλογο.</p></div></article>
-          <article class="how-to-step"><span class="how-to-step-number">04</span><div><h3>Πάτησε «Υπολόγισε»</h3><p>Το Cartelonio υπολογίζει την απομειωμένη φορολογητέα αξία και την εκτίμηση του Τέλους Ταξινόμησης σύμφωνα με τα δεδομένα και τους κανόνες που χρησιμοποιεί η εφαρμογή.</p></div></article>
+    <!-- View 3: How to use — macOS-inspired guide -->
+    <div class="onboarding-view guide-v2" data-onboarding-view="howto">
+      <button type="button" class="onboarding-back guide-back" data-onboarding-go="welcome">← Πίσω</button>
+      <div class="onboarding-subview-scroll guide-scroll">
+        <div class="guide-hero">
+          <div class="guide-hero-copy"><div class="how-to-modal-kicker">CARTELONIO GUIDE</div>
+            <h2>Πώς λειτουργεί το Cartelonio</h2>
+            <p class="how-to-modal-intro">Από την επιλογή του αυτοκινήτου μέχρι την εκτίμηση του Τέλους Ταξινόμησης, η διαδικασία γίνεται σε λίγα απλά βήματα.</p>
+          </div>
+          <div class="guide-hero-visual" aria-hidden="true"><span class="guide-hero-halo"></span><span class="guide-car-symbol">🚘</span></div>
         </div>
-        <div class="how-to-manual"><strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong><p>Η χειροκίνητη ΛΤΠΦ δεν γίνεται δεκτή ως επαληθευμένο δεδομένο. Νέα μοντέλα προστίθενται στον ασφαλή κατάλογο.</p></div>
-        <p class="how-to-disclaimer">Το αποτέλεσμα αποτελεί ενημερωτική εκτίμηση και όχι επίσημο τελωνειακό υπολογισμό. Η τελική αξία καθορίζεται από τις αρμόδιες τελωνειακές αρχές.</p>
+        <div class="guide-cards">
+          <article class="guide-card"><span class="guide-number">01</span><h3>Επίλεξε το αυτοκίνητό σου</h3>
+            <div class="guide-demo guide-demo-vehicle" aria-hidden="true"><div><span>◉</span> Μάρκα <b>›</b></div><div><span>▦</span> Έτος <b>›</b></div><div><span>▰</span> Μοντέλο <b>›</b></div><div><span>▰</span> Έκδοση <b>›</b></div></div>
+            <p>Επίλεξε Μάρκα → Έτος → Μοντέλο → Έκδοση. Όπου υπάρχουν διαθέσιμα δεδομένα, το Cartelonio συμπληρώνει αυτόματα ΛΤΠΦ, CO₂, κατηγορία αμαξώματος και άλλα στοιχεία.</p></article>
+          <article class="guide-card"><span class="guide-number">02</span><h3>Πρόσθεσε Extras</h3>
+            <div class="guide-demo guide-demo-extras" aria-hidden="true"><div><span class="guide-check checked">✓</span> Εργοστασιακό extra <small>€2.800</small></div><div><span class="guide-check"></span> Επιπλέον εξοπλισμός <small>€1.200</small></div><div><span class="guide-check"></span> Πακέτο εξοπλισμού <small>€1.600</small></div></div>
+            <p>Αν υπάρχουν εργοστασιακά extras για τη συγκεκριμένη έκδοση, μπορείς να τα επιλέξεις και η ΛΤΠΦ προσαρμόζεται αυτόματα.</p></article>
+          <article class="guide-card"><span class="guide-number">03</span><h3>Συμπλήρωσε τα στοιχεία ταξινόμησης</h3>
+            <div class="guide-demo guide-demo-fields" aria-hidden="true"><div><span>▣</span><label>Πρώτη Άδεια<strong>15/06/2022　▦</strong></label></div><div><span>◷</span><label>Χιλιόμετρα<strong>35.000　km</strong></label></div></div>
+            <p>Συμπλήρωσε Πρώτη Άδεια, Ημερομηνία Εισαγωγής και Χιλιόμετρα. Τα οικονομικά και τεχνικά στοιχεία του οχήματος επαληθεύονται από τον ασφαλή κατάλογο.</p></article>
+          <article class="guide-card"><span class="guide-number">04</span><h3>Πάτησε «Υπολόγισε»</h3>
+            <div class="guide-demo guide-demo-result" aria-hidden="true"><small>Εκτιμώμενο Τέλος Ταξινόμησης</small><strong>€4.280</strong><span>Ενδεικτικό παράδειγμα</span></div>
+            <p>Το Cartelonio υπολογίζει την απομειωμένη φορολογητέα αξία και την εκτίμηση του Τέλους Ταξινόμησης σύμφωνα με τα δεδομένα και τους κανόνες που χρησιμοποιεί η εφαρμογή.</p></article>
+        </div>
+        <div class="guide-info"><span class="guide-info-icon" aria-hidden="true">ⓘ</span><div><strong>Δεν βρίσκεις το αυτοκίνητό σου;</strong><p>Η χειροκίνητη ΛΤΠΦ δεν γίνεται δεκτή ως επαληθευμένο δεδομένο. Νέα μοντέλα προστίθενται στον ασφαλή κατάλογο.</p></div></div>
+        <p class="guide-disclaimer">Το αποτέλεσμα αποτελεί ενημερωτική εκτίμηση και όχι επίσημο τελωνειακό υπολογισμό. Η τελική αξία καθορίζεται από τις αρμόδιες τελωνειακές αρχές.</p>
       </div>
-      <div class="onboarding-subview-actions">
-        <button type="button" class="onboarding-start" data-onboarding-start>Ξεκινήστε τώρα <span>→</span></button>
-      </div>
+      <div class="onboarding-subview-actions guide-actions"><button type="button" class="onboarding-start" data-onboarding-start>Ξεκινήστε τώρα <span>→</span></button></div>
     </div>
 
   </section>
@@ -729,6 +739,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260924-brand-ambient-1"></script>
+<script src="script.js?v=20260925-guide-v2"></script>
 </body>
 </html>
