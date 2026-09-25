@@ -4730,28 +4730,3 @@ body.welcome10-open{overflow:hidden}
   position:relative;z-index:1;mix-blend-mode:normal;
   filter:drop-shadow(0 13px 12px rgba(31,64,29,.30));
 }
-
-/* Cartelonio mode + preview redesign */
-.vehicle-configurator-v2 .catalog-mode-switch{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;border-radius:17px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);margin:0 0 22px}
-.vehicle-configurator-v2 .catalog-mode-switch button{min-height:48px;padding:9px 12px;border-radius:13px;background:transparent;color:rgba(255,255,255,.72);font-weight:750;cursor:pointer;transition:.2s}
-.vehicle-configurator-v2 .catalog-mode-switch button.is-active{background:linear-gradient(125deg,#f6fbf1,#e9f4e2);color:#285a25;box-shadow:0 3px 12px rgba(0,0,0,.15),inset 0 -2px #79a65e}
-.vehicle-configurator-v2 .catalog-mode-switch button:focus-visible{outline:3px solid #9fd47c;outline-offset:2px}
-.vehicle-configurator-v2 .integrated-hero-wrap{border:1px solid rgba(255,255,255,.14)!important;border-radius:27px!important;background:radial-gradient(ellipse at 88% 32%,rgba(112,177,83,.19),transparent 57%),rgba(255,255,255,.055)!important;padding:24px!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:stretch!important;min-width:0!important;overflow:hidden!important}
-.vehicle-configurator-v2 .cart-preview-heading{position:relative;z-index:4;align-self:flex-start;color:#f5f8f3;font-size:16px;line-height:1.35}
-.vehicle-configurator-v2 .cart-preview-heading span,.vehicle-configurator-v2 .cart-preview-heading strong{display:block}
-.vehicle-configurator-v2 .cart-preview-heading strong{font-size:20px;letter-spacing:-.03em}
-.vehicle-configurator-v2 .cart-preview-amount{font-size:clamp(29px,3.2vw,45px);font-weight:850;letter-spacing:-.045em;color:#b5ec95;margin-top:8px}
-.vehicle-configurator-v2 .integrated-hero-wrap .hero-card{width:100%!important;margin:0!important;min-height:190px!important;height:clamp(190px,22vw,295px)!important;align-self:center!important}
-.vehicle-configurator-v2 .integrated-hero-wrap .hero-card #carImage{width:100%!important;height:100%!important;object-fit:contain!important;object-position:right center!important}
-.vehicle-configurator-v2 .integrated-hero-wrap .vehicle-value-cards{width:100%!important;max-width:100%!important;position:relative!important;z-index:4!important;margin:0!important}
-.vehicle-configurator-v2 .cart-preview-label{grid-column:1/-1;color:rgba(255,255,255,.67);font-size:11px;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
-.vehicle-configurator-v2.is-manual-mode .vehicle-config-panel .config-heading,.vehicle-configurator-v2.is-manual-mode .vehicle-config-panel .vehicle-fields{display:none!important}
-.vehicle-configurator-v2.is-manual-mode .registration-strip{grid-column:1!important;grid-row:1!important;margin:95px 0 0!important;position:relative!important;z-index:3!important}
-.vehicle-configurator-v2.is-manual-mode .vehicle-config-intro{display:none!important}
-.vehicle-configurator-v2.is-manual-mode .integrated-form .config-upper{display:contents!important}
-.vehicle-configurator-v2.is-manual-mode .integrated-form{display:grid!important;grid-template-columns:minmax(0,1.35fr) minmax(300px,.8fr)!important;gap:18px!important}
-.vehicle-configurator-v2.is-manual-mode .vehicle-config-panel{grid-column:1!important;grid-row:1!important;position:relative!important;z-index:5!important;align-self:start!important}
-.vehicle-configurator-v2.is-manual-mode .integrated-hero-wrap{grid-column:2!important;grid-row:1 / span 2!important}
-.vehicle-configurator-v2.is-manual-mode #carImage,.vehicle-configurator-v2.is-manual-mode .vehicle-image-identity{visibility:hidden!important}
-.vehicle-configurator-v2.is-manual-mode .cart-preview-amount::after{content:'Χειροκίνητη καταχώριση';display:block;font-size:12px;font-weight:500;letter-spacing:0;color:rgba(255,255,255,.6)}
-@media(max-width:820px){.vehicle-configurator-v2.is-manual-mode .integrated-form{display:flex!important;flex-direction:column!important}.vehicle-configurator-v2.is-manual-mode .registration-strip{order:2!important;margin:0!important}.vehicle-configurator-v2.is-manual-mode .integrated-hero-wrap{order:3!important}.vehicle-configurator-v2 .integrated-hero-wrap{padding:18px!important}.vehicle-configurator-v2 .catalog-mode-switch button{font-size:12px;min-height:45px}.vehicle-configurator-v2 .integrated-hero-wrap .hero-card{height:220px!important}}
