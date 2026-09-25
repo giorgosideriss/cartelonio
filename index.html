@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260925-guide-green-halo" rel="stylesheet"/>
+<link href="style.css?v=20260925-mode-redesign" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -228,7 +228,7 @@
 <h1 id="heroVehicleName">Βρες το αυτοκίνητό σου</h1>
 <p id="heroVehicleMeta">Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.</p>
 </div>
-<div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
+<div class="catalog-mode-switch" role="group" aria-label="Τρόπος εισαγωγής οχήματος"><button type="button" class="is-active" id="catalogModeBtn" aria-pressed="true">Επιλογή από κατάλογο</button><button type="button" id="manualModeBtn" aria-pressed="false">Χειροκίνητη εισαγωγή</button></div><div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
 <div class="form-grid vehicle-fields">
 <div class="field-block dropdown-card brand-dropdown-card">
 <label>Μάρκα</label>
@@ -307,7 +307,7 @@
 </div>
 </div>
 </div>
-<div class="hero-wrap integrated-hero-wrap">
+<div class="hero-wrap integrated-hero-wrap"><div class="cart-preview-heading"><span>Εκτιμώμενο</span><strong>Τέλος Ταξινόμησης</strong><div class="cart-preview-amount" id="cartPreviewAmount">—</div></div>
 <div class="hero-card">
 <button type="button" id="randomSelectBtn" class="random-select-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης">Τυχαία Επιλογή</button>
 <div class="car-shadow"></div>
@@ -322,7 +322,7 @@
 </div>
 <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
 </div>
-<div class="vehicle-value-cards">
+<div class="vehicle-value-cards"><div class="cart-preview-label">Στοιχεία οχήματος</div>
 <div class="field-block dropdown-card price-dropdown-card">
 <label for="price">
   Επαληθευμένη ΛΤΠΦ
@@ -354,7 +354,7 @@
 </div>
 </div>
 </div>
-<div class="registration-strip">
+<div class="registration-strip" id="registrationStrip">
 <div class="registration-strip-heading">
 <div><span>02</span><strong>Στοιχεία Ταξινόμησης</strong></div>
 <small>Απαραίτητα στοιχεία για τον υπολογισμό</small>
@@ -718,5 +718,6 @@
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
 <script src="script.js?v=20260925-about-v2"></script>
+<script src="cartelonio-layout.js?v=20260925"></script>
 </body>
 </html>
