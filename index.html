@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260925-guide-v3" rel="stylesheet"/>
+<link href="style.css?v=20260925-about-v2" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -627,56 +627,34 @@
     <div class="onboarding-view" data-onboarding-view="about">
       <button type="button" class="onboarding-back" data-onboarding-go="welcome">← Πίσω</button>
       <div class="onboarding-subview-scroll">
-        <div class="about-cartelonio-view">
-          <div class="about-cartelonio-heading">
-            <span class="about-cartelonio-kicker">ΤΙ ΕΙΝΑΙ ΤΟ CARTELONIO</span>
-            <h2>
-              Η λογική πίσω από το
-              <img src="images/cartelonio-logo.png" alt="Cartelonio" class="about-cartelonio-logo">
-            </h2>
+        <div class="about-cartelonio-view about-v2">
+          <div class="about-hero">
+            <div class="about-hero-copy">
+              <span class="about-cartelonio-kicker">ΤΙ ΕΙΝΑΙ ΤΟ CARTELONIO</span>
+              <h2>Η λογική πίσω από το <img src="images/cartelonio-logo.png" alt="Cartelonio" class="about-cartelonio-logo"></h2>
+              <p class="about-cartelonio-lead">Το Cartelonio συγκεντρώνει σε ένα ενιαίο εργαλείο τα στοιχεία που απαιτούνται για μια όσο το δυνατόν πιο αξιόπιστη εκτίμηση του Τέλους Ταξινόμησης ενός εισαγόμενου μεταχειρισμένου αυτοκινήτου.</p>
+            </div>
+            <div class="about-hero-visual" aria-label="Τυχαία εικόνα αυτοκινήτου από τη συλλογή Cartelonio"><div class="about-hero-halo"></div><img id="aboutRandomCar" alt="Αυτοκίνητο από τη συλλογή Cartelonio" decoding="async" hidden></div>
           </div>
-
-          <p class="about-cartelonio-lead">
-            Το Cartelonio συγκεντρώνει σε ένα ενιαίο εργαλείο τα στοιχεία που απαιτούνται
-            για μια όσο το δυνατόν πιο αξιόπιστη εκτίμηση του Τέλους Ταξινόμησης ενός
-            εισαγόμενου μεταχειρισμένου αυτοκινήτου.
-          </p>
-
           <div class="about-cartelonio-copy">
-            <p>
-              <strong>Νομοθεσία &amp; ΑΑΔΕ</strong><br>
-              Η μεθοδολογία υπολογισμού βασίζεται στο ισχύον πλαίσιο για το Τέλος
+            <article class="about-info-card"><span class="about-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z M14 3v6h5 M10 13h6 M10 17h6"/></svg></span><div><h3>Νομοθεσία &amp; ΑΑΔΕ</h3><p>Η μεθοδολογία υπολογισμού βασίζεται στο ισχύον πλαίσιο για το Τέλος
               Ταξινόμησης και σε επίσημα στοιχεία της ΑΑΔΕ, όπως οι φορολογικοί
               συντελεστές, οι πίνακες απομείωσης λόγω ηλικίας και οι προβλεπόμενες
               προσαρμογές που σχετίζονται με τις εκπομπές CO₂ και την αντιρρυπαντική
-              τεχνολογία του οχήματος.
-            </p>
-
-            <p>
-              <strong>Επίσημοι τιμοκατάλογοι</strong><br>
-              Για τα οχήματα που υπάρχουν στη βάση δεδομένων, χρησιμοποιούνται
+              τεχνολογία του οχήματος.</p></div></article>
+            <article class="about-info-card"><span class="about-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 2 16 2 16 0V5M4 12v7c0 2 16 2 16 0v-7"/></svg></span><div><h3>Επίσημοι τιμοκατάλογοι</h3><p>Για τα οχήματα που υπάρχουν στη βάση δεδομένων, χρησιμοποιούνται
               τιμοκατάλογοι των κατασκευαστών και εισαγωγέων ώστε να αντιστοιχίζονται
               συγκεκριμένες εκδόσεις, εργοστασιακοί κωδικοί, Λιανικές Τιμές Προ Φόρων
-              (ΛΤΠΦ) και, όπου είναι διαθέσιμος, προαιρετικός εργοστασιακός εξοπλισμός.
-            </p>
-
-            <p>
-              <strong>Τεχνικά στοιχεία οχήματος</strong><br>
-              Στη βάση συνδυάζονται στοιχεία όπως κατηγορία αμαξώματος, καύσιμο,
+              (ΛΤΠΦ) και, όπου είναι διαθέσιμος, προαιρετικός εργοστασιακός εξοπλισμός.</p></div></article>
+            <article class="about-info-card"><span class="about-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l2-7h10l2 7M5 15h14v4H5z M7 8l2-3h6l2 3"/><circle cx="8" cy="18" r="1"/><circle cx="16" cy="18" r="1"/></svg></span><div><h3>Τεχνικά στοιχεία οχήματος</h3><p>Στη βάση συνδυάζονται στοιχεία όπως κατηγορία αμαξώματος, καύσιμο,
               σύστημα κίνησης, εκπομπές CO₂ και προδιαγραφή Euro. Τα δεδομένα αυτά
-              χρησιμοποιούνται όπου απαιτούνται από τη φορολογική μεθοδολογία.
-            </p>
-
-            <p>
-              <strong>Υπολογισμός &amp; διασταύρωση</strong><br>
-              Το Cartelonio συνδυάζει τη ΛΤΠΦ και τον εξοπλισμό με τους πίνακες
+              χρησιμοποιούνται όπου απαιτούνται από τη φορολογική μεθοδολογία.</p></div></article>
+            <article class="about-info-card"><span class="about-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h8"/></svg></span><div><h3>Υπολογισμός &amp; διασταύρωση</h3><p>Το Cartelonio συνδυάζει τη ΛΤΠΦ και τον εξοπλισμό με τους πίνακες
               απομείωσης, την ηλικία και τα χιλιόμετρα του οχήματος και τις σχετικές
               φορολογικές προσαρμογές, ώστε να προκύψει η εκτιμώμενη φορολογητέα αξία
-              και στη συνέχεια το εκτιμώμενο Τέλος Ταξινόμησης.
-            </p>
+              και στη συνέχεια το εκτιμώμενο Τέλος Ταξινόμησης.</p></div></article>
           </div>
-
-          <div class="about-cartelonio-note">
+          <div class="about-cartelonio-note"><span class="about-note-icon" aria-hidden="true">♢</span><div>
             <strong>Σημαντικό</strong>
             <p>
               Το Cartelonio δεν αποτελεί υπηρεσία της ΑΑΔΕ ή τελωνειακής αρχής.
@@ -686,7 +664,7 @@
               εκτίμηση· η τελική φορολογητέα αξία και το Τέλος Ταξινόμησης
               καθορίζονται αποκλειστικά από τις αρμόδιες τελωνειακές αρχές.
             </p>
-          </div>
+          </div></div>
         </div>
       </div>
       <div class="onboarding-subview-actions">
@@ -739,6 +717,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260925-guide-v3"></script>
+<script src="script.js?v=20260925-about-v2"></script>
 </body>
 </html>

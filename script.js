@@ -1311,6 +1311,39 @@ document.addEventListener("DOMContentLoaded", async () => {
 })();
 
 
+
+/* Pick an existing car image from the public Cartelonio images/cars tree.
+   The GitHub tree is used because static hosting cannot list folder contents. */
+let aboutCarImagePathsPromise;
+function getAboutCarImagePaths(){
+  if (!aboutCarImagePathsPromise) {
+    aboutCarImagePathsPromise = fetch('https://api.github.com/repos/giorgosideriss/cartelonio/git/trees/main?recursive=1', {cache:'force-cache'})
+      .then(r => { if (!r.ok) throw new Error('image_list_unavailable'); return r.json(); })
+      .then(data => {
+        if (data.truncated || !Array.isArray(data.tree)) throw new Error('image_list_incomplete');
+        return data.tree.filter(item => item.type === 'blob' && /^images\/cars\/.+\.(png|webp|jpe?g)$/i.test(item.path))
+          .map(item => item.path);
+      }).catch(() => []);
+  }
+  return aboutCarImagePathsPromise;
+}
+async function showRandomAboutCar(){
+  const image = document.getElementById('aboutRandomCar');
+  if (!image) return;
+  const paths = await getAboutCarImagePaths();
+  if (!paths.length) return; // Do not show a broken or invented car image.
+  const candidates = paths.slice();
+  const tryNext = () => {
+    if (!candidates.length) { image.hidden = true; return; }
+    const index = Math.floor(Math.random() * candidates.length);
+    const path = candidates.splice(index, 1)[0];
+    image.onload = () => { image.hidden = false; };
+    image.onerror = tryNext;
+    image.src = cartelonioPublicAssetUrl(path);
+  };
+  tryNext();
+}
+
 /* =========================================================
    CARTELONIO — Three-view onboarding controller
    ========================================================= */
@@ -1340,6 +1373,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const current = modal.querySelector(".onboarding-view.is-active");
     const next = modal.querySelector(`[data-onboarding-view="${name}"]`);
     if(!next || current === next) return;
+    if(name === "about") void showRandomAboutCar();
 
     if(current){
       current.style.opacity = "0";
