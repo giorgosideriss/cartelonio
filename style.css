@@ -4715,3 +4715,18 @@ body.welcome10-open{overflow:hidden}
 .onboarding-view[data-onboarding-view="about"] .onboarding-subview-actions .onboarding-start{border-radius:18px;background:linear-gradient(110deg,#70a943,#477c32);box-shadow:0 12px 30px rgba(67,120,46,.16)}
 @media(max-width:820px){.about-hero-visual{flex-basis:32%}.about-info-card{gap:12px;padding:17px}.about-info-icon{flex-basis:42px;width:42px;height:42px}.about-info-icon svg{width:23px;height:23px}}
 @media(max-width:620px){.onboarding-view[data-onboarding-view="about"] .onboarding-subview-scroll{padding:55px 15px 12px;max-height:calc(100dvh - 100px)}.about-hero{min-height:0}.about-hero-copy{padding:0}.about-hero-visual{display:none}.about-v2 .about-hero h2{font-size:27px}.about-v2 .about-cartelonio-logo{height:32px;max-width:170px}.about-v2 .about-cartelonio-lead{font-size:12px;margin-bottom:18px}.about-cartelonio-copy{grid-template-columns:1fr;gap:10px}.about-info-card h3{font-size:14px}.about-info-card p{font-size:12px}.about-v2 .about-cartelonio-note{padding:15px;gap:12px}.about-note-icon{flex-basis:40px;width:40px;height:40px;font-size:25px}.onboarding-view[data-onboarding-view="about"] .onboarding-subview-actions .onboarding-start{width:100%}}
+
+/* How-to hero: soft green ambient halo behind the transparent BMW PNG. */
+.guide-v2 .guide-hero-visual{isolation:isolate;overflow:visible;}
+.guide-v2 .guide-hero-visual::before{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  width:88%;height:92%;left:6%;top:4%;border-radius:50%;
+  background:radial-gradient(ellipse at 50% 52%,
+    rgba(105,174,76,.32) 0%,rgba(137,197,108,.22) 32%,
+    rgba(190,224,172,.10) 56%,rgba(190,224,172,0) 75%);
+  filter:blur(15px);
+}
+.guide-v2 .guide-hero-visual img{
+  position:relative;z-index:1;mix-blend-mode:normal;
+  filter:drop-shadow(0 13px 12px rgba(31,64,29,.16));
+}
