@@ -5132,3 +5132,103 @@ body.welcome10-open{overflow:hidden}
   .vehicle-configurator-v2 .summary-metric-label{display:flex;align-items:center;gap:8px;}
   .vehicle-configurator-v2 .summary-metric-label svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
 }
+
+/* =========================================================
+   2026-09-26 — REFERENCE IMAGE LOCK
+   Desktop geometry matched to the approved second screenshot.
+   This block is intentionally last and overrides legacy layout rules.
+   ========================================================= */
+@media (min-width:821px){
+  .shell{width:min(1460px,calc(100% - 80px)) !important;max-width:none !important;}
+  .page{padding-top:18px !important;}
+  .vehicle-configurator-v2{
+    width:100% !important;max-width:none !important;
+    padding:42px 30px 30px !important;border-radius:36px !important;
+    min-height:0 !important;
+  }
+  .vehicle-configurator-v2 .integrated-form{
+    display:block !important;width:100% !important;max-width:none !important;min-width:0 !important;
+  }
+  .vehicle-configurator-v2 .config-upper{
+    width:100% !important;max-width:none !important;
+    display:grid !important;
+    grid-template-columns:minmax(0,1.08fr) minmax(500px,.92fr) !important;
+    gap:32px !important;align-items:stretch !important;
+  }
+  .vehicle-configurator-v2 .vehicle-config-panel{width:100% !important;max-width:none !important;}
+  .vehicle-configurator-v2 .vehicle-input-modes{min-height:76px !important;border-radius:24px !important;padding:8px !important;}
+  .vehicle-configurator-v2 .vehicle-input-mode{min-height:58px !important;font-size:13px !important;}
+  .vehicle-configurator-v2 .config-heading{margin-top:14px !important;margin-bottom:14px !important;padding-bottom:14px !important;}
+  .vehicle-configurator-v2 .config-heading span,
+  .vehicle-configurator-v2 .registration-strip-heading span{font-size:12px !important;}
+  .vehicle-configurator-v2 .config-heading strong,
+  .vehicle-configurator-v2 .registration-strip-heading strong{font-size:12px !important;letter-spacing:.16em !important;}
+  .vehicle-configurator-v2 .vehicle-fields{gap:14px 18px !important;}
+  .vehicle-configurator-v2 .vehicle-fields .dropdown-card{min-height:118px !important;padding:17px 20px 15px !important;border-radius:20px !important;}
+  .vehicle-configurator-v2 .vehicle-fields .field-block-wide{min-height:104px !important;}
+  .vehicle-configurator-v2 .vehicle-fields .field-block label{font-size:16px !important;margin-bottom:9px !important;}
+  .vehicle-configurator-v2 .vehicle-fields select,
+  .vehicle-configurator-v2 .vehicle-fields .brand-button,
+  .vehicle-configurator-v2 .vehicle-fields .extras-toggle{font-size:16px !important;min-height:50px !important;height:50px !important;}
+  .vehicle-configurator-v2 .vehicle-fields .dropdown-leading-icon{width:42px !important;height:44px !important;}
+  .vehicle-configurator-v2 .vehicle-fields .dropdown-leading-icon svg{width:29px !important;height:29px !important;}
+  .vehicle-configurator-v2 .brand-button-logo{width:35px !important;height:35px !important;}
+
+  .vehicle-configurator-v2 .vehicle-summary-card{min-height:576px !important;border-radius:29px !important;overflow:hidden !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual{min-height:440px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.no-image{
+    left:30px !important;top:49% !important;width:36% !important;max-width:220px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-identity-logo-wrap{width:72px !important;height:72px !important;border-radius:18px !important;margin-bottom:16px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual img.vehicle-image-brand-logo{max-width:54px !important;max-height:48px !important;height:48px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-brand{font-size:39px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{font-size:22px !important;margin-top:14px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{font-size:13px !important;margin-top:10px !important;line-height:1.35 !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-year{font-size:13px !important;padding:8px 13px !important;margin-top:17px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;margin:0 !important;padding:0 !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card #carImage{
+    position:absolute !important;right:1.5% !important;left:auto !important;top:17% !important;
+    width:66% !important;max-width:66% !important;height:70% !important;max-height:70% !important;
+    margin:0 !important;object-fit:contain !important;object-position:right center !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .car-shadow{left:43% !important;right:5% !important;bottom:45px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-metrics{padding:13px 28px 15px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-row{min-height:46px !important;font-size:14px !important;}
+  .vehicle-configurator-v2 .summary-metric-label{font-size:14px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-row > strong,
+  .vehicle-configurator-v2 .summary-price-value,
+  .vehicle-configurator-v2 .registration-tax-mini-value{font-size:15px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-tax-row .registration-tax-mini-value strong{font-size:24px !important;}
+
+  /* Full-width lower panel, with the same 5 + 4 arrangement as the reference. */
+  .vehicle-configurator-v2 .registration-strip{
+    width:100% !important;max-width:none !important;min-width:0 !important;
+    margin:32px 0 0 !important;padding:23px 28px 28px !important;border-radius:28px !important;
+    display:grid !important;
+    grid-template-columns:1.15fr 1.45fr 1.28fr 1.18fr .92fr !important;
+    column-gap:16px !important;row-gap:20px !important;
+  }
+  .vehicle-configurator-v2 .registration-strip-heading{grid-column:1/-1 !important;margin:0 !important;}
+  .vehicle-configurator-v2 .registration-fields,
+  .vehicle-configurator-v2 .registration-secondary-fields,
+  .vehicle-configurator-v2 .actions{display:contents !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block{grid-row:2 !important;min-width:0 !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block:nth-child(1){grid-column:1 !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block:nth-child(2){grid-column:2 !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block:nth-child(3){grid-column:3 !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block:nth-child(4){grid-column:4 !important;}
+  .vehicle-configurator-v2 .registration-fields > .field-block:nth-child(5){grid-column:5 !important;}
+  .vehicle-configurator-v2 .registration-secondary-fields > .field-block:nth-child(1){grid-column:1 / span 2 !important;grid-row:3 !important;}
+  .vehicle-configurator-v2 .registration-secondary-fields > .field-block:nth-child(2){grid-column:3 !important;grid-row:3 !important;}
+  .vehicle-configurator-v2 .actions .primary-action{grid-column:4 !important;grid-row:3 !important;width:100% !important;min-width:0 !important;min-height:58px !important;margin:0 !important;}
+  .vehicle-configurator-v2 .actions .secondary{grid-column:5 !important;grid-row:3 !important;width:100% !important;min-height:58px !important;margin:0 !important;}
+  .vehicle-configurator-v2 .registration-strip .field-block label{font-size:13px !important;line-height:1.15 !important;margin-bottom:9px !important;}
+  .vehicle-configurator-v2 .registration-strip select,
+  .vehicle-configurator-v2 .registration-strip input{height:58px !important;min-height:58px !important;font-size:14px !important;border-radius:13px !important;}
+  .vehicle-configurator-v2 .registration-strip .first-reg-grid{grid-template-columns:.65fr 1.25fr .72fr !important;gap:8px !important;}
+  .vehicle-configurator-v2 .registration-strip .first-reg-grid select,
+  .vehicle-configurator-v2 .registration-strip .first-reg-grid input{padding-left:10px !important;padding-right:10px !important;}
+  .vehicle-configurator-v2 .primary-action{font-size:16px !important;padding:0 18px !important;}
+  .vehicle-configurator-v2 .secondary{font-size:15px !important;}
+}
