@@ -5818,3 +5818,140 @@ body.welcome10-open{overflow:hidden}
   .vehicle-configurator-v2 .primary-action .calc-button-label{min-width:0 !important;white-space:normal !important;line-height:1.08 !important;}
   .vehicle-configurator-v2 .primary-action .calc-button-label > span{white-space:normal !important;overflow-wrap:anywhere !important;}
 }
+
+/* =========================================================
+   2026-09-26 — MOBILE SUMMARY / RESULT REVEAL 05
+   ========================================================= */
+
+/* LTPF: visible currency sign without changing the numeric input value. */
+.vehicle-configurator-v2 .summary-price-value{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  gap:2px !important;
+}
+.vehicle-configurator-v2 .summary-price-value::before{
+  content:"€";
+  color:#eef2ef;
+  font:inherit;
+  font-weight:760;
+  line-height:1;
+}
+.vehicle-configurator-v2 .summary-price-value input#price{width:132px !important;}
+
+/* Result animation: only the amount itself glows/grows. Never the whole row/card. */
+.vehicle-configurator-v2 .vehicle-summary-tax-row.tax-result-highlight,
+.vehicle-configurator-v2 #registrationTaxMiniCard.tax-result-highlight{
+  background:transparent !important;
+  box-shadow:none !important;
+}
+.vehicle-configurator-v2 #registrationTaxMiniCard.tax-result-highlight::after{display:none !important;content:none !important;}
+.vehicle-configurator-v2 .registration-tax-mini-value.tax-amount-highlight strong{
+  display:inline-block;
+  transform-origin:center;
+  animation:cartelonio-tax-amount-reveal 2.35s cubic-bezier(.22,.8,.22,1) both;
+}
+@keyframes cartelonio-tax-amount-reveal{
+  0%{transform:scale(1);text-shadow:0 0 0 rgba(169,237,124,0);filter:brightness(1)}
+  18%{transform:scale(1.16);text-shadow:0 0 10px rgba(169,237,124,.72),0 0 24px rgba(169,237,124,.42);filter:brightness(1.2)}
+  48%{transform:scale(1.10);text-shadow:0 0 8px rgba(169,237,124,.55),0 0 18px rgba(169,237,124,.28);filter:brightness(1.12)}
+  100%{transform:scale(1);text-shadow:0 0 0 rgba(169,237,124,0);filter:brightness(1)}
+}
+@media(prefers-reduced-motion:reduce){
+  .vehicle-configurator-v2 .registration-tax-mini-value.tax-amount-highlight strong{animation:none;text-shadow:0 0 12px rgba(169,237,124,.55)}
+}
+
+/* Calculate button: icon-only, while keeping an accessible aria-label/title. */
+.vehicle-configurator-v2 #calcBtn{
+  justify-content:center !important;
+  gap:10px !important;
+  padding-inline:15px !important;
+}
+.vehicle-configurator-v2 #calcBtn .calc-button-label{flex:0 0 auto !important;justify-content:center !important;}
+.vehicle-configurator-v2 #calcBtn .calc-button-icon{margin:0 !important;}
+.vehicle-configurator-v2 #calcBtn .button-arrow{margin:0 !important;}
+
+@media(max-width:820px){
+  /* Taller, intentional mobile card: compact identity header, edition line, full-width car. */
+  .vehicle-configurator-v2 .vehicle-summary-card{
+    height:500px !important;
+    min-height:500px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual{
+    inset:0 0 126px 0 !important;
+    min-height:0 !important;
+  }
+
+  /* Header line: logo | brand | year | model. Edition is the second line. */
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.no-image,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.is-visible{
+    position:absolute !important;
+    left:16px !important;
+    right:16px !important;
+    top:15px !important;
+    width:auto !important;
+    max-width:none !important;
+    min-height:66px !important;
+    padding:0 !important;
+    display:grid !important;
+    grid-template-columns:42px minmax(0,auto) auto minmax(0,1fr) !important;
+    grid-template-rows:42px auto !important;
+    column-gap:9px !important;
+    row-gap:6px !important;
+    align-items:center !important;
+    transform:none !important;
+    text-align:left !important;
+    z-index:8 !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-identity-logo-wrap{
+    grid-column:1 !important;grid-row:1 !important;
+    width:42px !important;height:42px !important;min-width:42px !important;
+    margin:0 !important;padding:2px !important;
+    display:grid !important;place-items:center !important;
+    background:transparent !important;border:0 !important;box-shadow:none !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual img.vehicle-image-brand-logo{
+    width:100% !important;height:100% !important;max-width:38px !important;max-height:38px !important;object-fit:contain !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-identity-copy{display:contents !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-brand{
+    grid-column:2 !important;grid-row:1 !important;
+    margin:0 !important;font-size:20px !important;line-height:1 !important;font-weight:850 !important;
+    white-space:nowrap !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-year{
+    grid-column:3 !important;grid-row:1 !important;
+    margin:0 !important;padding:5px 8px !important;
+    font-size:10px !important;line-height:1 !important;white-space:nowrap !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{
+    grid-column:4 !important;grid-row:1 !important;
+    margin:0 !important;font-size:14px !important;line-height:1.05 !important;font-weight:800 !important;
+    min-width:0 !important;white-space:nowrap !important;overflow:hidden !important;text-overflow:ellipsis !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{
+    grid-column:2 / 5 !important;grid-row:2 !important;
+    margin:0 !important;max-width:none !important;
+    font-size:11px !important;line-height:1.25 !important;font-weight:600 !important;
+    color:rgba(242,246,243,.72) !important;
+    white-space:nowrap !important;overflow:hidden !important;text-overflow:ellipsis !important;
+  }
+
+  /* Car gets the full usable width underneath the two identity lines. */
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card{
+    position:absolute !important;left:0 !important;right:0 !important;top:86px !important;bottom:0 !important;
+    width:100% !important;height:auto !important;margin:0 !important;padding:0 8px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card #carImage{
+    position:absolute !important;
+    left:2% !important;right:2% !important;top:0 !important;bottom:0 !important;
+    width:96% !important;max-width:96% !important;height:100% !important;max-height:100% !important;
+    margin:0 !important;object-fit:contain !important;object-position:center bottom !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .car-shadow{left:14% !important;right:14% !important;bottom:10px !important;}
+
+  /* Keep metrics clean and legible at the bottom. */
+  .vehicle-configurator-v2 .summary-price-value input#price{width:112px !important;}
+  .vehicle-configurator-v2 #calcBtn{padding:0 13px !important;}
+}

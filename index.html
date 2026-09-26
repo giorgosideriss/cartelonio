@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260926-layout-refinement-03" rel="stylesheet"/>
+<link href="style.css?v=20260926-mobile-summary-05" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -503,14 +503,14 @@
 </div>
 </div>
 <div class="actions">
-<button class="primary-action" id="calcBtn" type="button">
+<button class="primary-action" id="calcBtn" type="button" aria-label="Υπολόγισε τέλος ταξινόμησης" title="Υπολόγισε τέλος ταξινόμησης">
 <span class="calc-button-label">
 <svg class="calc-button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
   <rect x="5" y="2.5" width="14" height="19" rx="2.25"></rect>
   <rect x="8" y="5.5" width="8" height="4" rx=".7"></rect>
   <path d="M8.5 13h1M12 13h1M15.5 13h1M8.5 17h1M12 17h1M15.5 17h1"></path>
 </svg>
-<span>Υπολόγισε τέλος ταξινόμησης</span>
+
 </span>
 <span class="button-arrow">→</span>
 </button>
@@ -718,6 +718,6 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260925-about-v2"></script>
+<script src="script.js?v=20260926-mobile-summary-05"></script>
 </body>
 </html>

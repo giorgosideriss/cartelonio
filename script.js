@@ -310,20 +310,23 @@ function revealCalculatedVehicleResult() {
   const imagePanel = image?.closest(".vehicle-image-panel") || image?.parentElement;
   const valueCards = document.querySelector(".vehicle-configurator-v2 .vehicle-value-cards");
   const taxCard = document.getElementById("registrationTaxMiniCard");
-  if (!imagePanel || !taxCard) return;
+  const taxValue = document.getElementById("registrationTaxMiniValue");
+  if (!imagePanel || !taxCard || !taxValue) return;
 
   // A new calculation supersedes any unfinished reveal from the previous one.
   const sequence = ++cartelonioRevealSequence;
   clearTimeout(cartelonioResultHighlightTimer);
   taxCard.classList.remove("tax-result-highlight");
+  taxValue.classList.remove("tax-amount-highlight");
 
   const startHighlight = () => {
     if (sequence !== cartelonioRevealSequence) return;
     taxCard.classList.remove("tax-result-highlight");
-    void taxCard.offsetWidth; // Restart even on consecutive calculations.
-    taxCard.classList.add("tax-result-highlight");
+    taxValue.classList.remove("tax-amount-highlight");
+    void taxValue.offsetWidth; // Restart even on consecutive calculations.
+    taxValue.classList.add("tax-amount-highlight");
     cartelonioResultHighlightTimer = setTimeout(() => {
-      if (sequence === cartelonioRevealSequence) taxCard.classList.remove("tax-result-highlight");
+      if (sequence === cartelonioRevealSequence) taxValue.classList.remove("tax-amount-highlight");
     }, 2700);
   };
 
