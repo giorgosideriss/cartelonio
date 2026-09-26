@@ -4778,3 +4778,16 @@ body.welcome10-open{overflow:hidden}
   .vehicle-configurator-v2 .vehicle-input-modes{gap:5px;padding:4px;}
   .vehicle-configurator-v2 .vehicle-input-mode{min-height:46px;padding:0 7px;font-size:10px;}
 }
+
+
+/* Registration secondary fields: powertrain + Euro side by side */
+.vehicle-configurator-v2 .registration-secondary-fields{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:10px;
+}
+.vehicle-configurator-v2 .registration-secondary-fields .field-block{min-width:0}
+@media(max-width:760px){
+  .vehicle-configurator-v2 .registration-secondary-fields{grid-template-columns:1fr}
+}
