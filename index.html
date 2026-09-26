@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260925-guide-green-halo" rel="stylesheet"/>
+<link href="style.css?v=20260926-input-modes" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -224,9 +224,12 @@
 <div class="config-upper">
 <div class="vehicle-config-panel">
 <div class="vehicle-config-intro">
-<div class="stage-kicker">Επιλεγμένο όχημα</div>
-<h1 id="heroVehicleName">Βρες το αυτοκίνητό σου</h1>
-<p id="heroVehicleMeta">Επίλεξε μάρκα, έτος και μοντέλο για να ξεκινήσεις.</p>
+<div class="stage-kicker">ΤΡΟΠΟΣ ΕΙΣΑΓΩΓΗΣ</div>
+<div class="vehicle-input-modes" role="tablist" aria-label="Τρόπος εισαγωγής οχήματος">
+<button class="vehicle-input-mode is-active" type="button" role="tab" aria-selected="true" data-input-mode="catalog">Επιλογή από κατάλογο</button>
+<button class="vehicle-input-mode" type="button" role="tab" aria-selected="false" data-input-mode="manual">Χειροκίνητη εισαγωγή</button>
+<button class="vehicle-input-mode" type="button" role="tab" aria-selected="false" data-input-mode="listing">Επικόλληση αγγελίας</button>
+</div>
 </div>
 <div class="config-heading"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
 <div class="form-grid vehicle-fields">
