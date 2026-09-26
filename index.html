@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260926-registration-row" rel="stylesheet"/>
+<link href="style.css?v=20260926-approved-mockup" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -321,8 +321,9 @@
       </div>
       <div class="vehicle-summary-identity-copy">
         <span class="vehicle-image-brand" id="vehicleImageBrand"></span>
-        <span class="vehicle-image-year" id="vehicleImageYear"></span>
+        <span class="vehicle-image-model" id="vehicleImageModel"></span>
         <span class="vehicle-image-edition" id="vehicleImageEdition"></span>
+        <span class="vehicle-image-year" id="vehicleImageYear"></span>
       </div>
     </div>
     <div class="hero-card">
@@ -332,17 +333,17 @@
   </div>
   <div class="vehicle-summary-metrics">
     <div class="vehicle-summary-row">
-      <span>ΛΤΠΦ οχήματος</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"></path><path d="M14 3.5v4h4M10 12h5M10 15.5h5"></path></svg>ΛΤΠΦ οχήματος</span>
       <div class="summary-price-value">
         <input id="price" inputmode="decimal" placeholder="—" readonly type="text" value="" aria-label="Επαληθευμένη ΛΤΠΦ"/>
       </div>
     </div>
     <div class="vehicle-summary-row">
-      <span>Συντελεστής CO₂</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path><path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path></svg>Συντελεστής CO₂</span>
       <strong id="vehicleSummaryCo2">—</strong>
     </div>
     <div class="vehicle-summary-row vehicle-summary-tax-row" id="registrationTaxMiniCard">
-      <span>Ποσό τέλους</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2.25"></rect><rect x="8" y="5.5" width="8" height="4" rx=".7"></rect><path d="M8.5 13h1M12 13h1M15.5 13h1M8.5 17h1M12 17h1M15.5 17h1"></path></svg>Ποσό τέλους</span>
       <div class="registration-tax-mini-value is-empty" id="registrationTaxMiniValue">
         <span class="registration-tax-mini-placeholder">—</span>
       </div>

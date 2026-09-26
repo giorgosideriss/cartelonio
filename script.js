@@ -224,7 +224,7 @@ function updateVehicleImageIdentity(hasImage = null) {
   const overlay = document.getElementById("vehicleImageIdentity");
   if (!overlay) return;
 
-  const { brand, year, editionName } = getSelectedVehicleIdentity();
+  const { brand, year, model, editionName } = getSelectedVehicleIdentity();
   const complete = Boolean(brand && year && editionName);
 
   document.getElementById("vehicleImageBrand").textContent = brand;
@@ -236,6 +236,8 @@ function updateVehicleImageIdentity(hasImage = null) {
     brandLogo.style.display = logoUrl ? "block" : "none";
     brandLogo.onerror = () => { brandLogo.style.display = "none"; };
   }
+  const modelEl = document.getElementById("vehicleImageModel");
+  if (modelEl) modelEl.textContent = model;
   document.getElementById("vehicleImageYear").textContent = year;
   document.getElementById("vehicleImageEdition").textContent = editionName;
 
