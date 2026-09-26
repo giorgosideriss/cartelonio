@@ -361,7 +361,17 @@ function revealCalculatedVehicleResult() {
   }));
 }
 
+function updateVehicleSummaryCo2() {
+  const out = document.getElementById("vehicleSummaryCo2");
+  const input = document.getElementById("co2");
+  if (!out || !input) return;
+  const raw = String(input.value || "").trim();
+  const value = Number(raw.replace(",", "."));
+  out.textContent = raw && Number.isFinite(value) ? `${value.toLocaleString("el-GR")} g/km` : "—";
+}
+
 function setRegistrationTaxMiniResult(value) {
+  updateVehicleSummaryCo2();
   const el = document.getElementById("registrationTaxMiniValue");
   if (!el) return;
   if (typeof value === "number" && Number.isFinite(value)) {
@@ -2247,3 +2257,9 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
   else setup();
 })();
+
+
+// Keep the compact catalog summary in sync with the CO2 field.
+document.addEventListener("input", (event) => { if (event.target?.id === "co2") updateVehicleSummaryCo2(); });
+document.addEventListener("change", (event) => { if (event.target?.id === "co2") updateVehicleSummaryCo2(); });
+window.addEventListener("DOMContentLoaded", updateVehicleSummaryCo2);
