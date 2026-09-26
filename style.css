@@ -4791,3 +4791,46 @@ body.welcome10-open{overflow:hidden}
 @media(max-width:760px){
   .vehicle-configurator-v2 .registration-secondary-fields{grid-template-columns:1fr}
 }
+
+
+/* =========================================================
+   2026-09-26 — Manual input mode
+   Catalog stays the default. In manual mode the vehicle catalogue and
+   vehicle preview leave the stage and Registration Details move upward.
+   ========================================================= */
+.vehicle-configurator-v2 .config-upper,
+.vehicle-configurator-v2 .registration-strip{
+  transition:opacity .28s ease,transform .38s cubic-bezier(.22,1,.36,1);
+}
+.vehicle-configurator-v2.manual-input-mode .config-upper{
+  display:block;
+}
+.vehicle-configurator-v2.manual-input-mode .vehicle-config-panel{
+  width:100%;
+}
+.vehicle-configurator-v2.manual-input-mode .catalog-only-block{
+  display:none !important;
+}
+.vehicle-configurator-v2.manual-input-mode .vehicle-config-intro{
+  margin-bottom:0;
+}
+.vehicle-configurator-v2.manual-input-mode .registration-strip{
+  margin-top:22px;
+  animation:manualRegistrationRise .46s cubic-bezier(.22,1,.36,1) both;
+}
+.vehicle-configurator-v2.manual-input-mode .registration-strip-heading > div > span{
+  font-size:0;
+}
+.vehicle-configurator-v2.manual-input-mode .registration-strip-heading > div > span::after{
+  content:"01";
+  font-size:11px;
+}
+@keyframes manualRegistrationRise{
+  from{opacity:0;transform:translateY(34px) scale(.992)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .vehicle-configurator-v2 .config-upper,
+  .vehicle-configurator-v2 .registration-strip{transition:none}
+  .vehicle-configurator-v2.manual-input-mode .registration-strip{animation:none}
+}

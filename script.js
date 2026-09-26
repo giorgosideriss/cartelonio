@@ -2209,3 +2209,41 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
   const status = document.getElementById('authStatus');
   if (status) status.textContent = 'Η βοήθεια θα είναι διαθέσιμη σύντομα.';
 });
+
+
+/* =========================================================
+   Vehicle input modes — manual entry UI
+   ========================================================= */
+(function initVehicleInputModes(){
+  function setup(){
+    const stage = document.querySelector('.vehicle-configurator-v2');
+    const modeButtons = Array.from(document.querySelectorAll('.vehicle-input-mode'));
+    if (!stage || !modeButtons.length) return;
+
+    function setMode(mode){
+      if (mode !== 'catalog' && mode !== 'manual') return;
+      stage.classList.toggle('manual-input-mode', mode === 'manual');
+      stage.dataset.inputMode = mode;
+      modeButtons.forEach(button => {
+        const active = button.dataset.inputMode === mode;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      if (mode === 'manual') {
+        document.querySelector('.brand-menu')?.classList.remove('open');
+        document.querySelector('.extras-dropdown')?.classList.remove('open');
+      }
+    }
+
+    modeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const mode = button.dataset.inputMode;
+        if (mode === 'catalog' || mode === 'manual') setMode(mode);
+      });
+    });
+
+    setMode('catalog');
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
