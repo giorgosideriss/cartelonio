@@ -5403,3 +5403,66 @@ body.welcome10-open{overflow:hidden}
     color:rgba(245,248,246,.82) !important;font-size:11px !important;font-weight:650 !important;
   }
 }
+
+/* =========================================================
+   2026-09-26 — VEHICLE CARD REFINEMENT 02
+   Identity column sits beside the car; logo is clipped inside its tile.
+   ========================================================= */
+@media (min-width:821px){
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.no-image{
+    left:30px !important;
+    top:50% !important;
+    width:34% !important;
+    max-width:205px !important;
+    transform:translateY(-54%) !important;
+    z-index:5 !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.is-visible{
+    transform:translateY(-54%) !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-identity-logo-wrap{
+    width:76px !important;
+    height:76px !important;
+    flex:0 0 76px !important;
+    padding:9px !important;
+    margin:0 0 14px !important;
+    overflow:hidden !important;
+    border-radius:18px !important;
+    box-sizing:border-box !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual img.vehicle-image-brand-logo{
+    display:block !important;
+    position:static !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
+    margin:0 !important;
+    object-fit:contain !important;
+    object-position:center !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-brand{
+    font-size:37px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{
+    margin-top:12px !important;
+    font-size:20px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{
+    margin-top:9px !important;
+    max-width:205px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-year{
+    margin-top:15px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card #carImage{
+    right:1.5% !important;
+    top:18% !important;
+    width:66% !important;
+    max-width:66% !important;
+    height:69% !important;
+    max-height:69% !important;
+    object-position:right center !important;
+  }
+}
