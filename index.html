@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260926-reference-lock" rel="stylesheet"/>
+<link href="style.css?v=20260926-layout-refinement-03" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -231,7 +231,7 @@
 <button class="vehicle-input-mode" type="button" role="tab" aria-selected="false" data-input-mode="listing">Επικόλληση αγγελίας</button>
 </div>
 </div>
-<div class="config-heading catalog-only-block"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div>
+<div class="config-heading catalog-only-block"><div class="config-heading-title"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div><button type="button" id="randomSelectBtn" class="random-select-btn random-select-heading-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης"><span class="random-select-heading-icon" aria-hidden="true">↻</span><span>Τυχαία Επιλογή</span></button></div>
 <div class="form-grid vehicle-fields catalog-only-block">
 <div class="field-block dropdown-card brand-dropdown-card">
 <label>Μάρκα</label>
@@ -313,7 +313,6 @@
 <div class="hero-wrap integrated-hero-wrap catalog-only-block">
 <div class="vehicle-summary-card">
   <div class="vehicle-summary-visual">
-    <button type="button" id="randomSelectBtn" class="random-select-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης">Τυχαία Επιλογή</button>
     <div class="vehicle-summary-glow" aria-hidden="true"></div>
     <div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
       <div class="vehicle-identity-logo-wrap">
