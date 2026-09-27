@@ -6051,3 +6051,250 @@ body.welcome10-open{overflow:hidden}
     left:-7% !important;width:114% !important;max-width:114% !important;height:116% !important;max-height:116% !important;top:-11% !important;
   }
 }
+
+/* =========================================================
+   2026-09-27 — MOBILE VEHICLE CARD / APPLE-STYLE FINAL 07
+   First row: logo + brand + year
+   Second row: model + edition
+   Contained artwork + attached LTPF currency.
+   ========================================================= */
+@media (max-width:820px){
+  .vehicle-configurator-v2 .vehicle-summary-card{
+    height:468px !important;
+    min-height:468px !important;
+    border-radius:27px !important;
+    overflow:hidden !important;
+    border:1px solid rgba(230,242,233,.28) !important;
+    background:rgba(18,29,23,.98) !important;
+    box-shadow:0 22px 52px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.11) !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual{
+    inset:0 0 132px 0 !important;
+    overflow:hidden !important;
+    border-radius:27px 27px 0 0 !important;
+  }
+
+  /* Two-line identity composition. */
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.no-image,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.is-visible{
+    left:18px !important;
+    right:18px !important;
+    top:16px !important;
+    width:auto !important;
+    min-height:58px !important;
+    display:grid !important;
+    grid-template-columns:46px minmax(0,max-content) auto minmax(0,1fr) !important;
+    grid-template-rows:38px 22px !important;
+    column-gap:9px !important;
+    row-gap:5px !important;
+    align-items:center !important;
+    padding:0 !important;
+    z-index:9 !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-identity-logo-wrap{
+    grid-column:1 !important;
+    grid-row:1 !important;
+    width:46px !important;
+    height:38px !important;
+    min-width:46px !important;
+    margin:0 !important;
+    padding:0 !important;
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual img.vehicle-image-brand-logo{
+    width:46px !important;
+    height:38px !important;
+    max-width:46px !important;
+    max-height:38px !important;
+    object-fit:contain !important;
+    object-position:left center !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-identity-copy{display:contents !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-brand{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    margin:0 !important;
+    font-size:21px !important;
+    line-height:1 !important;
+    font-weight:820 !important;
+    letter-spacing:-.035em !important;
+    white-space:nowrap !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-year{
+    grid-column:3 !important;
+    grid-row:1 !important;
+    margin:0 0 0 2px !important;
+    padding:6px 10px !important;
+    border-radius:999px !important;
+    border:1px solid rgba(255,255,255,.20) !important;
+    background:rgba(255,255,255,.085) !important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08) !important;
+    font-size:10px !important;
+    line-height:1 !important;
+    font-weight:760 !important;
+    white-space:nowrap !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{
+    grid-column:2 !important;
+    grid-row:2 !important;
+    margin:0 !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    font-size:13px !important;
+    line-height:1.1 !important;
+    font-weight:760 !important;
+    color:rgba(247,250,248,.92) !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{
+    grid-column:3 / 5 !important;
+    grid-row:2 !important;
+    margin:0 !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    font-size:11px !important;
+    line-height:1.1 !important;
+    font-weight:560 !important;
+    color:rgba(236,242,238,.68) !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+
+  /* Artwork sits fully inside the card with breathing room. */
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card{
+    left:10px !important;
+    right:10px !important;
+    top:78px !important;
+    bottom:5px !important;
+    width:auto !important;
+    height:auto !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card #carImage{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    max-width:100% !important;
+    height:100% !important;
+    max-height:100% !important;
+    margin:0 !important;
+    object-fit:contain !important;
+    object-position:center bottom !important;
+    transform:scale(.93) !important;
+    transform-origin:center bottom !important;
+    filter:drop-shadow(0 16px 14px rgba(0,0,0,.34)) !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .car-shadow{
+    left:16% !important;
+    right:16% !important;
+    bottom:7px !important;
+    height:16px !important;
+    opacity:.58 !important;
+  }
+
+  /* Floating glass result panel. */
+  .vehicle-configurator-v2 .vehicle-summary-metrics{
+    left:14px !important;
+    right:14px !important;
+    bottom:12px !important;
+    height:122px !important;
+    padding:6px 15px 14px !important;
+    border-radius:23px !important;
+    border:1px solid rgba(235,246,237,.22) !important;
+    background:linear-gradient(135deg,rgba(42,62,49,.82),rgba(25,42,32,.76)) !important;
+    backdrop-filter:blur(24px) saturate(135%) !important;
+    -webkit-backdrop-filter:blur(24px) saturate(135%) !important;
+    box-shadow:0 14px 32px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.09) !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-row{
+    height:34px !important;
+    min-height:34px !important;
+  }
+  .vehicle-configurator-v2 .summary-metric-label{
+    font-size:12px !important;
+    letter-spacing:-.01em !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-row > strong,
+  .vehicle-configurator-v2 .summary-price-value{
+    font-size:13px !important;
+    font-weight:760 !important;
+    letter-spacing:.015em !important;
+  }
+
+  /* Keep € physically attached to the LTPF amount. */
+  .vehicle-configurator-v2 .summary-price-value{
+    display:inline-grid !important;
+    grid-template-columns:auto auto !important;
+    align-items:center !important;
+    justify-content:end !important;
+    column-gap:2px !important;
+    width:auto !important;
+    margin-left:auto !important;
+    white-space:nowrap !important;
+  }
+  .vehicle-configurator-v2 .summary-price-value::before{
+    content:"€" !important;
+    position:static !important;
+    display:inline !important;
+    margin:0 !important;
+    color:#f4f7f5 !important;
+    font-size:13px !important;
+    font-weight:760 !important;
+    line-height:1 !important;
+  }
+  .vehicle-configurator-v2 .summary-price-value input#price{
+    display:inline-block !important;
+    width:88px !important;
+    min-width:0 !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    background:transparent !important;
+    box-shadow:none !important;
+    color:#f4f7f5 !important;
+    font-size:13px !important;
+    line-height:1 !important;
+    font-weight:760 !important;
+    letter-spacing:.015em !important;
+    text-align:right !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-tax-row .registration-tax-mini-value strong{
+    font-size:21px !important;
+    letter-spacing:-.035em !important;
+  }
+}
+
+@media (max-width:430px){
+  .vehicle-configurator-v2 .vehicle-summary-card{
+    height:452px !important;
+    min-height:452px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual{inset:0 0 130px 0 !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.no-image,
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-identity.is-visible{
+    grid-template-columns:43px minmax(0,max-content) auto minmax(0,1fr) !important;
+    left:15px !important;right:15px !important;
+    column-gap:7px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-identity-logo-wrap,
+  .vehicle-configurator-v2 .vehicle-summary-visual img.vehicle-image-brand-logo{
+    width:43px !important;max-width:43px !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-brand{font-size:19px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{font-size:12px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{font-size:10px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card{top:76px !important;left:8px !important;right:8px !important;}
+  .vehicle-configurator-v2 .vehicle-summary-visual .hero-card #carImage{transform:scale(.91) !important;}
+  .vehicle-configurator-v2 .vehicle-summary-metrics{left:10px !important;right:10px !important;bottom:10px !important;}
+}
