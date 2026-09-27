@@ -6338,7 +6338,7 @@ body.welcome10-open{overflow:hidden}
     display:none !important;
   }
   .vehicle-configurator-v2 .summary-price-value:has(input#price:not(:placeholder-shown))::before{
-    content:"€" !important;
+    content:"" !important;
     display:inline !important;
     position:static !important;
     margin:0 !important;
