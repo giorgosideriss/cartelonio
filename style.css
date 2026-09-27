@@ -6363,3 +6363,35 @@ body.welcome10-open{overflow:hidden}
     transform:translateY(-6px) scale(.89) !important;
   }
 }
+
+/* =========================================================
+   2026-09-27 — MOBILE MODEL + EDITION INLINE 09
+   - row 2 reads: Model - Edition
+   - compact spacing; JS removes a repeated model prefix in edition
+   ========================================================= */
+@media (max-width:820px){
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-model{
+    grid-column:2 !important;
+    grid-row:2 !important;
+    width:max-content !important;
+    max-width:none !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition{
+    grid-column:3 / 5 !important;
+    grid-row:2 !important;
+    margin:0 !important;
+    padding:0 !important;
+    min-width:0 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+  .vehicle-configurator-v2 .vehicle-summary-visual .vehicle-image-edition.has-model-separator::before{
+    content:"-";
+    display:inline-block;
+    margin:0 5px 0 0;
+    color:rgba(247,250,248,.68);
+  }
+}

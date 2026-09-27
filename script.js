@@ -237,9 +237,25 @@ function updateVehicleImageIdentity(hasImage = null) {
     brandLogo.onerror = () => { brandLogo.style.display = "none"; };
   }
   const modelEl = document.getElementById("vehicleImageModel");
-  if (modelEl) modelEl.textContent = model;
+  const editionEl = document.getElementById("vehicleImageEdition");
+
+  // Summary row 2: "Model - Edition". If the edition starts with the
+  // same model name, remove that duplicate model name from the edition.
+  // Example: "Wrangler" + "Wrangler SAHARA 2.8L" -> "Wrangler - SAHARA 2.8L".
+  let displayEdition = String(editionName || "").trim();
+  const modelText = String(model || "").trim();
+  if (modelText && displayEdition) {
+    const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const repeatedModel = new RegExp(`^${escapeRegExp(modelText)}(?:\\s+|\\s*[-–—:]\\s*)`, "i");
+    displayEdition = displayEdition.replace(repeatedModel, "").trim();
+  }
+
+  if (modelEl) modelEl.textContent = modelText;
+  if (editionEl) {
+    editionEl.textContent = displayEdition;
+    editionEl.classList.toggle("has-model-separator", Boolean(modelText && displayEdition));
+  }
   document.getElementById("vehicleImageYear").textContent = year;
-  document.getElementById("vehicleImageEdition").textContent = editionName;
 
   overlay.classList.toggle("is-visible", complete);
   if (hasImage !== null) overlay.classList.toggle("no-image", !hasImage);
