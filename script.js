@@ -1048,7 +1048,9 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Kia","2017"],["Kia","2018"],["Kia","2019"],["Kia","2020"],["Kia","2021"],["Kia","2022"],
   ["Lamborghini","2020"],["Lamborghini","2021"],["Lamborghini","2022"],["Lamborghini","2024"],["Lamborghini","2025"],["Lamborghini","2026"],
   ["Lotus","2019"],["Lotus","2022"],["Lotus","2024"],["Lotus","2025"],["Lotus","2026"],
-  ["Maserati","2018"],["Maserati","2019"],["Maserati","2020"],["Maserati","2021"],["Maserati","2022"],["Maserati","2023"],["Maserati","2024"],["Maserati","2025"],["Maserati","2026"]
+  ["Maserati","2018"],["Maserati","2019"],["Maserati","2020"],["Maserati","2021"],["Maserati","2022"],["Maserati","2023"],["Maserati","2024"],["Maserati","2025"],["Maserati","2026"],
+  ["Mazda","2020"],["Mazda","2021"],["Mazda","2022"],["Mazda","2023"],["Mazda","2024"],["Mazda","2025"],["Mazda","2026"],
+  ["MG","2023"],["MG","2024"],["MG","2025"],["MG","2026"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
