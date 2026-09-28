@@ -1046,7 +1046,8 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Hyundai","2015"],["Hyundai","2016"],["Hyundai","2017"],["Hyundai","2018"],["Hyundai","2019"],["Hyundai","2020"],["Hyundai","2021"],["Hyundai","2022"],
   ["Dacia","2017"],["Dacia","2018"],["Dacia","2019"],["Dacia","2020"],["Dacia","2021"],["Dacia","2022"],
   ["Kia","2017"],["Kia","2018"],["Kia","2019"],["Kia","2020"],["Kia","2021"],["Kia","2022"],
-  ["Lamborghini","2020"],["Lamborghini","2021"],["Lamborghini","2022"],["Lamborghini","2024"],["Lamborghini","2025"],["Lamborghini","2026"]
+  ["Lamborghini","2020"],["Lamborghini","2021"],["Lamborghini","2022"],["Lamborghini","2024"],["Lamborghini","2025"],["Lamborghini","2026"],
+  ["Lotus","2019"],["Lotus","2022"],["Lotus","2024"],["Lotus","2025"],["Lotus","2026"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
