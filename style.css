@@ -6408,3 +6408,9 @@ body.welcome10-open{overflow:hidden}
 .vehicle-configurator-v2 .summary-price-value input#price{width:132px!important}
 }
 @media(max-width:430px){.vehicle-configurator-v2 .summary-price-value input#price{width:124px!important;font-size:12px!important}}
+
+
+/* 2026-09-29 — Manual entry: LTPF + editable first-registration year */
+.vehicle-configurator-v2 .manual-only-field[hidden]{display:none!important}
+.vehicle-configurator-v2.manual-input-mode #firstRegYear:not([readonly]){background:#fff;color:var(--ink);font-weight:inherit;cursor:text}
+.vehicle-configurator-v2 #manualLtpf{font-variant-numeric:tabular-nums}

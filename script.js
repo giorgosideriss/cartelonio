@@ -1248,6 +1248,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const firstRegMonthEl = document.getElementById("firstRegMonth");
   if (firstRegDayEl) firstRegDayEl.addEventListener("change", syncFirstRegistrationDate);
   if (firstRegMonthEl) firstRegMonthEl.addEventListener("change", syncFirstRegistrationDate);
+  const firstRegYearEl = document.getElementById("firstRegYear");
+  if (firstRegYearEl) firstRegYearEl.addEventListener("input", syncFirstRegistrationDate);
 
   document.getElementById("modelSelect").addEventListener("change", () => {
     populateVersions();
@@ -2303,6 +2305,19 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
       if (mode !== 'catalog' && mode !== 'manual') return;
       stage.classList.toggle('manual-input-mode', mode === 'manual');
       stage.dataset.inputMode = mode;
+
+      const firstRegYear = document.getElementById('firstRegYear');
+      const manualLtpfRow = document.getElementById('manualLtpfRow');
+      const manualLtpf = document.getElementById('manualLtpf');
+      if (firstRegYear) {
+        firstRegYear.readOnly = mode !== 'manual';
+        firstRegYear.setAttribute('aria-label', mode === 'manual' ? 'Έτος πρώτης άδειας' : 'Έτος πρώτης άδειας (αυτόματα)');
+        if (mode === 'manual') firstRegYear.value = '';
+        else firstRegYear.value = document.getElementById('yearSelect')?.value || '';
+        syncFirstRegistrationDate();
+      }
+      if (manualLtpfRow) manualLtpfRow.hidden = mode !== 'manual';
+      if (manualLtpf && mode !== 'manual') manualLtpf.value = '';
       modeButtons.forEach(button => {
         const active = button.dataset.inputMode === mode;
         button.classList.toggle('is-active', active);
@@ -2332,3 +2347,12 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
 document.addEventListener("input", (event) => { if (event.target?.id === "co2") updateVehicleSummaryCo2(); });
 document.addEventListener("change", (event) => { if (event.target?.id === "co2") updateVehicleSummaryCo2(); });
 window.addEventListener("DOMContentLoaded", updateVehicleSummaryCo2);
+
+
+/* Manual-entry helpers: editable first-registration year + manual LTPF display.
+   Calculation submission still requires the server /calculate endpoint to accept manual LTTPF. */
+document.addEventListener("blur", (event) => {
+  if (event.target?.id !== "manualLtpf") return;
+  const n = parseLocalizedNumber(event.target.value);
+  if (Number.isFinite(n) && n > 0) event.target.value = n.toLocaleString("el-GR", {style:"currency", currency:"EUR", minimumFractionDigits:2, maximumFractionDigits:2});
+}, true);
