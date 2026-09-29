@@ -1030,6 +1030,9 @@ async function calculate(){
  const stage=document.querySelector('.vehicle-configurator-v2');
  const inputMode=stage?.dataset.inputMode==='manual'?'manual':'catalog';
  const isManual=inputMode==='manual';
+ // Always synchronize the visible first-registration control before validation/request.
+ // This is especially important in manual mode, where the user edits firstRegManualDate.
+ syncFirstRegistrationDate();
  const firstRegistration=document.getElementById("firstReg").value;
  const importDate=document.getElementById("importDate").value;
  const mileageRaw=document.getElementById("mileage").value.trim();
@@ -1078,7 +1081,14 @@ async function calculate(){
    if(!cartelonioProfile)cartelonioProfile={};
    cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();
    document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);formatPriceField();
-   document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;
+   // Catalogue mode may safely refresh the form from server-verified vehicle data.
+   // In manual mode, never overwrite the user's technical selections after Calculate.
+   if(!isManual){
+     document.getElementById("category").value=v.body_type;
+     document.getElementById("co2").value=v.co2;
+     document.getElementById("euroClass").value=v.euro_class;
+     document.getElementById("powertrain").value=v.powertrain;
+   }
    if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
    setRegistrationTaxMiniResult(r.totalTax);revealCalculatedVehicleResult();
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
