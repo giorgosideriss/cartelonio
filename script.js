@@ -220,6 +220,37 @@ function fitVehicleBrandName() {
 }
 window.addEventListener("resize", () => requestAnimationFrame(fitVehicleBrandName));
 
+// Display-only cleanup for edition names.
+// Removes the selected brand and model wherever they appear in the edition text.
+// The original JSON / option value / history record is never modified.
+function cleanEditionDisplayName(editionName, brandName = "", modelName = "") {
+  let text = String(editionName || "").trim();
+  if (!text) return "";
+
+  const escapeRegExp = value => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const terms = [brandName, modelName]
+    .map(value => String(value || "").trim())
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length);
+
+  terms.forEach(term => {
+    const escaped = escapeRegExp(term).replace(/\\[ -]/g, "[\\s-]+");
+    const pattern = new RegExp(`(^|[\\s\\-–—:|/(),])${escaped}(?=$|[\\s\\-–—:|/(),])`, "gi");
+    let previous;
+    do {
+      previous = text;
+      text = text.replace(pattern, (match, prefix) => prefix || " ");
+    } while (text !== previous && pattern.test(text));
+  });
+
+  return text
+    .replace(/\s+/g, " ")
+    .replace(/^\s*[-–—:|/,]+\s*|\s*[-–—:|/,]+\s*$/g, "")
+    .replace(/\s+([,;:)])/g, "$1")
+    .replace(/([(])\s+/g, "$1")
+    .trim();
+}
+
 function updateVehicleImageIdentity(hasImage = null) {
   const overlay = document.getElementById("vehicleImageIdentity");
   if (!overlay) return;
@@ -239,16 +270,9 @@ function updateVehicleImageIdentity(hasImage = null) {
   const modelEl = document.getElementById("vehicleImageModel");
   const editionEl = document.getElementById("vehicleImageEdition");
 
-  // Summary row 2: "Model - Edition". If the edition starts with the
-  // same model name, remove that duplicate model name from the edition.
-  // Example: "Wrangler" + "Wrangler SAHARA 2.8L" -> "Wrangler - SAHARA 2.8L".
-  let displayEdition = String(editionName || "").trim();
+  // Vehicle card: hide brand/model repetitions anywhere inside the edition label.
   const modelText = String(model || "").trim();
-  if (modelText && displayEdition) {
-    const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const repeatedModel = new RegExp(`^${escapeRegExp(modelText)}(?:\\s+|\\s*[-–—:]\\s*)`, "i");
-    displayEdition = displayEdition.replace(repeatedModel, "").trim();
-  }
+  const displayEdition = cleanEditionDisplayName(editionName, brand, modelText);
 
   if (modelEl) {
     modelEl.textContent = modelText;
@@ -792,7 +816,9 @@ function populateVersions() {
   modelObj.editions.forEach((ed, index) => {
     const opt = document.createElement("option");
     opt.value = String(index);
-    opt.textContent = ed.missingFields?.length ? `${ed.name} — απαιτεί συμπλήρωση στοιχείων` : ed.name;
+    const selectedBrand = document.getElementById("brandSelect")?.value || "";
+    const displayName = cleanEditionDisplayName(ed.name, selectedBrand, model);
+    opt.textContent = ed.missingFields?.length ? `${displayName} — απαιτεί συμπλήρωση στοιχείων` : displayName;
     verEl.appendChild(opt);
   });
 
@@ -2097,6 +2123,7 @@ async function historyImage(record,img){
  await historyCatalogImage(record,img);
 }
 function renderHistoryRecord(record){
+ const displayHistoryEdition=cleanEditionDisplayName(record.edition,record.brand,record.model);
  const article=historyNode('article','history-entry');
  const head=historyNode('div','history-entry-head');
  const visual=historyNode('div','history-visual');
@@ -2108,7 +2135,7 @@ function renderHistoryRecord(record){
  if(logoPath){const logo=historyNode('img','history-brand-logo');logo.src=cartelonioPublicAssetUrl(logoPath);logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
  titleRow.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'));
  main.append(titleRow,
-  historyNode('span','history-car-version',[record.year,record.edition].filter(Boolean).join(' · ')),
+  historyNode('span','history-car-version',[record.year,displayHistoryEdition].filter(Boolean).join(' · ')),
   historyNode('span','history-entry-date',new Date(record.created_at).toLocaleString('el-GR',{dateStyle:'medium',timeStyle:'short'})));
  const money=historyNode('div','history-entry-money');
  money.append(historyNode('small','', 'Τέλος ταξινόμησης'),historyNode('strong','', '€'+historyEuro(record.total_tax)),
@@ -2121,7 +2148,7 @@ function renderHistoryRecord(record){
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
  const expanded=historyNode('div','history-expanded');expanded.hidden=true;
  const fields=historyNode('div','history-fields');
- [['Μάρκα',record.brand],['Έτος',record.year],['Μοντέλο',record.model],['Έκδοση',record.edition],
+ [['Μάρκα',record.brand],['Έτος',record.year],['Μοντέλο',record.model],['Έκδοση',displayHistoryEdition],
  ['Είδος αμαξώματος',record.body_type],['Πρώτη άδεια',record.first_registration],['Ημερομηνία εισαγωγής',record.import_date],
  ['Χιλιόμετρα',historyNumber(record.mileage)+' km'],['CO₂',record.co2+' g/km'],['Προδιαγραφή Euro',record.euro_class],
  ['Τύπος κίνησης',record.powertrain],['ΛΤΠΦ','€'+historyEuro(record.ltpf)],
