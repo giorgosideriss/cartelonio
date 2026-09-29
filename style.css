@@ -6603,3 +6603,15 @@ body.welcome10-open{overflow:hidden}
 .tokens-purchase-note.is-error{color:#a12b2b}
 .tokens-purchase-note.is-success{color:#2d713f;font-weight:700}
 @media(max-width:420px){.token-package-grid{grid-template-columns:1fr 1fr;gap:7px}.token-package{min-height:99px;padding:12px 10px}.token-package strong{font-size:15px}.token-package-badge{font-size:7px}}
+
+
+/* Stripe purchase success toast */
+.token-purchase-toast{position:fixed;z-index:100200;top:88px;left:50%;transform:translate(-50%,-14px);display:flex;align-items:center;gap:12px;width:min(430px,calc(100% - 28px));padding:14px 16px;border:1px solid rgba(109,169,67,.28);border-radius:16px;background:rgba(251,250,246,.98);color:var(--ink);box-shadow:0 18px 48px rgba(18,21,18,.16);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .22s ease,visibility .22s ease;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.token-purchase-toast.is-visible{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.token-purchase-toast-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);font-size:18px;font-weight:900}
+.token-purchase-toast span:last-child{display:flex;flex-direction:column;gap:2px;min-width:0}
+.token-purchase-toast strong{font-size:13px;font-weight:850;letter-spacing:-.01em}
+.token-purchase-toast small{color:var(--muted);font-size:11px;line-height:1.4}
+.token-purchase-toast.is-error{border-color:rgba(198,40,40,.25)}
+.token-purchase-toast.is-error .token-purchase-toast-icon{background:rgba(198,40,40,.09);color:var(--danger)}
+@media(max-width:620px){.token-purchase-toast{top:78px;padding:13px 14px}}

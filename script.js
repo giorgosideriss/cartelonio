@@ -2048,6 +2048,29 @@ function setTokenPackageButtonsDisabled(disabled) {
   });
 }
 
+function showTokenPurchaseToast(message, type = "success") {
+  let toast = document.getElementById("tokenPurchaseToast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "tokenPurchaseToast";
+    toast.className = "token-purchase-toast";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.appendChild(toast);
+  }
+
+  toast.className = `token-purchase-toast is-${type}`;
+  toast.innerHTML = type === "success"
+    ? `<span class="token-purchase-toast-icon" aria-hidden="true">✓</span><span><strong>Η αγορά ολοκληρώθηκε!</strong><small>${message}</small></span>`
+    : `<span class="token-purchase-toast-icon" aria-hidden="true">!</span><span><strong>Ενημέρωση πληρωμής</strong><small>${message}</small></span>`;
+
+  window.clearTimeout(showTokenPurchaseToast.hideTimer);
+  requestAnimationFrame(() => toast.classList.add("is-visible"));
+  showTokenPurchaseToast.hideTimer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 4800);
+}
+
 async function startTokenCheckout(packageId) {
   const selected = CARTELONIO_TOKEN_PACKAGES[packageId];
   if (!selected) return;
@@ -2119,6 +2142,7 @@ async function handleTokenPaymentReturn() {
     const currentBalance = Number(cartelonioProfile?.token_balance || 0);
     if (currentBalance > initialBalance) {
       setTokenPurchaseNotice("Η αγορά ολοκληρώθηκε και τα tokens προστέθηκαν στον λογαριασμό σου.", "success");
+      showTokenPurchaseToast("Τα tokens προστέθηκαν στον λογαριασμό σου.", "success");
       await loadUsedTokens();
       return;
     }
