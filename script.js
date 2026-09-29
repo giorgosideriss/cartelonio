@@ -1052,7 +1052,8 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Mazda","2020"],["Mazda","2021"],["Mazda","2022"],["Mazda","2023"],["Mazda","2024"],["Mazda","2025"],["Mazda","2026"],
   ["MG","2023"],["MG","2024"],["MG","2025"],["MG","2026"],
   ["Nissan","2015"],["Nissan","2016"],["Nissan","2017"],["Nissan","2018"],["Nissan","2019"],["Nissan","2020"],["Nissan","2021"],["Nissan","2022"],["Nissan","2023"],["Nissan","2024"],["Nissan","2025"],["Nissan","2026"],
-  ["Mitsubishi","2015"],["Mitsubishi","2016"],["Mitsubishi","2017"],["Mitsubishi","2018"],["Mitsubishi","2019"],["Mitsubishi","2020"],["Mitsubishi","2021"],["Mitsubishi","2022"],["Mitsubishi","2023"],["Mitsubishi","2024"],["Mitsubishi","2025"],["Mitsubishi","2026"]
+  ["Mitsubishi","2015"],["Mitsubishi","2016"],["Mitsubishi","2017"],["Mitsubishi","2018"],["Mitsubishi","2019"],["Mitsubishi","2020"],["Mitsubishi","2021"],["Mitsubishi","2022"],["Mitsubishi","2023"],["Mitsubishi","2024"],["Mitsubishi","2025"],["Mitsubishi","2026"],
+  ["Peugeot","2015"],["Peugeot","2016"],["Peugeot","2017"],["Peugeot","2018"],["Peugeot","2019"],["Peugeot","2020"],["Peugeot","2021"],["Peugeot","2022"],["Peugeot","2023"],["Peugeot","2024"],["Peugeot","2025"],["Peugeot","2026"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
