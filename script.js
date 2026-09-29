@@ -364,6 +364,7 @@ function revealCalculatedVehicleResult() {
   const taxCard = document.getElementById("registrationTaxMiniCard");
   const taxValue = document.getElementById("registrationTaxMiniValue");
   if (!imagePanel || !taxCard || !taxValue) return;
+  const manualMode = document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode === 'manual';
 
   // A new calculation supersedes any unfinished reveal from the previous one.
   const sequence = ++cartelonioRevealSequence;
@@ -386,11 +387,21 @@ function revealCalculatedVehicleResult() {
   requestAnimationFrame(() => requestAnimationFrame(() => {
     if (sequence !== cartelonioRevealSequence) return;
     const headerHeight = document.querySelector(".site-header")?.getBoundingClientRect().height || 0;
-    const top = imagePanel.getBoundingClientRect().top + window.scrollY;
-    const bottom = (valueCards || taxCard).getBoundingClientRect().bottom + window.scrollY;
-    const availableHeight = Math.max(1, window.innerHeight - headerHeight - 20);
-    const groupHeight = bottom - top;
-    const target = Math.max(0, top - headerHeight - 10 - Math.max(0, (availableHeight - groupHeight) / 2));
+    let target;
+    if (manualMode) {
+      // Manual entry has no useful vehicle-card reveal. Keep the final total visible
+      // near the bottom of the viewport instead.
+      const resultCard = document.getElementById("resultCard");
+      if (!resultCard) return;
+      const resultBottom = resultCard.getBoundingClientRect().bottom + window.scrollY;
+      target = Math.max(0, resultBottom - window.innerHeight + 18);
+    } else {
+      const top = imagePanel.getBoundingClientRect().top + window.scrollY;
+      const bottom = (valueCards || taxCard).getBoundingClientRect().bottom + window.scrollY;
+      const availableHeight = Math.max(1, window.innerHeight - headerHeight - 20);
+      const groupHeight = bottom - top;
+      target = Math.max(0, top - headerHeight - 10 - Math.max(0, (availableHeight - groupHeight) / 2));
+    }
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduceMotion || Math.abs(window.scrollY - target) < 3) {
       window.scrollTo({ top: target, behavior: "instant" });
@@ -1079,14 +1090,26 @@ async function calculate(){
 
 /* ========== ΠΡΩΤΗ ΑΔΕΙΑ (safe sync) ========== */
 function syncFirstRegistrationDate() {
+  const stage = document.querySelector('.vehicle-configurator-v2');
+  const manualMode = stage?.dataset.inputMode === 'manual';
+  const hidden = document.getElementById("firstReg");
+  if (!hidden) return;
+
+  if (manualMode) {
+    const manualDate = document.getElementById("firstRegManualDate");
+    hidden.value = manualDate?.value || "";
+    return;
+  }
+
   const day = document.getElementById("firstRegDay");
   const month = document.getElementById("firstRegMonth");
   const year = document.getElementById("firstRegYear");
-  const hidden = document.getElementById("firstReg");
-  if (!day || !month || !year || !hidden) return;
+  if (!day || !month || !year) return;
   if (day.value && month.value && year.value) {
     hidden.value = `${year.value}-${String(month.value).padStart(2, "0")}-${String(day.value).padStart(2, "0")}`;
-  } else { hidden.value = ""; }
+  } else {
+    hidden.value = "";
+  }
 }
 
 
@@ -2346,15 +2369,23 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
       stage.dataset.inputMode = mode;
 
       const firstRegYear = document.getElementById('firstRegYear');
+      const firstRegCatalogFields = document.getElementById('firstRegCatalogFields');
+      const firstRegManualDate = document.getElementById('firstRegManualDate');
       const manualLtpfRow = document.getElementById('manualLtpfRow');
       const manualLtpf = document.getElementById('manualLtpf');
+
+      if (firstRegCatalogFields) firstRegCatalogFields.hidden = mode === 'manual';
+      if (firstRegManualDate) firstRegManualDate.hidden = mode !== 'manual';
+
       if (firstRegYear) {
-        firstRegYear.readOnly = mode !== 'manual';
-        firstRegYear.setAttribute('aria-label', mode === 'manual' ? 'Έτος πρώτης άδειας' : 'Έτος πρώτης άδειας (αυτόματα)');
-        if (mode === 'manual') firstRegYear.value = '';
-        else firstRegYear.value = document.getElementById('yearSelect')?.value || '';
-        syncFirstRegistrationDate();
+        firstRegYear.readOnly = true;
+        firstRegYear.setAttribute('aria-label', 'Έτος πρώτης άδειας (αυτόματα)');
+        if (mode !== 'manual') firstRegYear.value = document.getElementById('yearSelect')?.value || '';
       }
+      if (mode === 'manual' && firstRegManualDate) {
+        firstRegManualDate.value = '';
+      }
+      syncFirstRegistrationDate();
       if (manualLtpfRow) manualLtpfRow.hidden = mode !== 'manual';
       if (manualLtpf && mode !== 'manual') manualLtpf.value = '';
       modeButtons.forEach(button => {
@@ -2388,8 +2419,13 @@ document.addEventListener("change", (event) => { if (event.target?.id === "co2")
 window.addEventListener("DOMContentLoaded", updateVehicleSummaryCo2);
 
 
-/* Manual-entry helpers: editable first-registration year + manual LTPF display.
-   Calculation submission still requires the server /calculate endpoint to accept manual LTTPF. */
+/* Manual-entry helpers: one date field for first registration + manual LTPF display. */
+document.addEventListener("change", (event) => {
+  if (event.target?.id === "firstRegManualDate") syncFirstRegistrationDate();
+});
+document.addEventListener("input", (event) => {
+  if (event.target?.id === "firstRegManualDate") syncFirstRegistrationDate();
+});
 document.addEventListener("blur", (event) => {
   if (event.target?.id !== "manualLtpf") return;
   const n = parseLocalizedNumber(event.target.value);

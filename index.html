@@ -387,7 +387,7 @@
   <path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 16.5h3"></path>
 </svg></span>Πρώτη Άδεια</label>
 <div class="required-field-wrap first-reg-wrap" data-field="firstReg">
-<div class="first-reg-grid">
+<div class="first-reg-grid" id="firstRegCatalogFields">
 <select aria-label="Ημέρα πρώτης άδειας" id="firstRegDay">
 <option value="">Ημέρα</option>
 <option value="1">1</option>
@@ -439,6 +439,7 @@
 </select>
 <input aria-label="Έτος πρώτης άδειας (αυτόματα)" id="firstRegYear" placeholder="Έτος" readonly="" type="text" value=""/>
 </div>
+<input aria-label="Ημερομηνία πρώτης άδειας" id="firstRegManualDate" type="date" value="" hidden/>
 <input id="firstReg" type="hidden" value=""/>
 <span aria-hidden="true" class="field-warning">!
                 <span class="field-warning-text">Παρακαλώ επιλέξτε έγκυρη Ημέρα και Μήνα. Το Έτος συμπληρώνεται αυτόματα από τη Χρονολογία του μοντέλου.</span>
