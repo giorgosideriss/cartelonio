@@ -998,6 +998,7 @@ function calculationErrorDetails(code) {
     invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
     invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
     invalid_extra: ["Κάποιο επιλεγμένο extra δεν υπάρχει πλέον στα επαληθευμένα δεδομένα.", []],
+    invalid_ltpf: ["Συμπλήρωσε έγκυρη ΛΤΠΦ μεγαλύτερη από 0.", ["manualLtpf"]],
   };
   return errors[code] || ["Παρουσιάστηκε τεχνικό πρόβλημα. Δεν αφαιρέθηκε token. Δοκίμασε ξανά.", []];
 }
@@ -1015,9 +1016,18 @@ document.addEventListener("change", event => {
 
 async function calculate(){
  clearCalculationWarnings();
- const firstRegistration=document.getElementById("firstReg").value,importDate=document.getElementById("importDate").value,mileageRaw=document.getElementById("mileage").value.trim(),selection=historySelection();
+ const stage=document.querySelector('.vehicle-configurator-v2');
+ const inputMode=stage?.dataset.inputMode==='manual'?'manual':'catalog';
+ const isManual=inputMode==='manual';
+ const firstRegistration=document.getElementById("firstReg").value;
+ const importDate=document.getElementById("importDate").value;
+ const mileageRaw=document.getElementById("mileage").value.trim();
+ const selection=historySelection();
+ const manualLtpfEl=document.getElementById("manualLtpf");
+ const manualLtpf=isManual?parseLocalizedNumber(manualLtpfEl?.value):NaN;
  const missing=[];
- if(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index==="") missing.push("vehicle");
+ if(!isManual&&(!selection.brand||!selection.year||!selection.model||selection.edition_index===""||selection.variant_index==="")) missing.push("vehicle");
+ if(isManual&&(!Number.isFinite(manualLtpf)||manualLtpf<=0)) missing.push("manualLtpf");
  if(!firstRegistration) missing.push("firstReg");
  if(!importDate||importDate<firstRegistration) missing.push("importDate");
  if(mileageRaw===""||!Number.isFinite(Number(mileageRaw))||Number(mileageRaw)<0) missing.push("mileage");
@@ -1028,14 +1038,43 @@ async function calculate(){
  if(missing.length){
    setRegistrationTaxMiniResult(null);
    const technical=missing.filter(field=>["co2","euroClass","powertrain","category"].includes(field));
-   const message=technical.length
-     ? "Η επιλεγμένη έκδοση δεν διαθέτει όλα τα απαραίτητα πιστοποιημένα στοιχεία (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα). Δοκίμασε άλλη έκδοση."
-     : "Έλεγξε την επιλογή οχήματος, τις ημερομηνίες και τα διανυθέντα χιλιόμετρα.";
+   const message=isManual
+     ? "Συμπλήρωσε τη ΛΤΠΦ και όλα τα απαραίτητα τεχνικά στοιχεία του οχήματος."
+     : technical.length
+       ? "Η επιλεγμένη έκδοση δεν διαθέτει όλα τα απαραίτητα πιστοποιημένα στοιχεία (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα). Δοκίμασε άλλη έκδοση."
+       : "Έλεγξε την επιλογή οχήματος, τις ημερομηνίες και τα διανυθέντα χιλιόμετρα.";
    showCalculationError(message,missing.filter(field=>field!=="vehicle"));
    return;
  }
- await cartelonioAuthReady;if(!cartelonioSession?.access_token)return;const source=DATA_SOURCES[selection.brand]?.[selection.year],requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");button.disabled=true;
- try{const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify({vehicle:{brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices},firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs:{co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value}})});const payload=await response.json();if(!response.ok)throw Error(payload.error||"calculation_failed");const r=payload.result,v=payload.vehicle;if(!cartelonioProfile)cartelonioProfile={};cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);formatPriceField();document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;setRegistrationTaxMiniResult(r.totalTax);revealCalculatedVehicleResult();const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>Επαληθευμένη ΛΤΠΦ:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο."}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;}catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
+ await cartelonioAuthReady;
+ if(!cartelonioSession?.access_token)return;
+ const requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");
+ const technicalInputs={co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value};
+ let requestBody={inputMode,firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs};
+ if(isManual){
+   requestBody.manualLtpf=manualLtpf;
+ }else{
+   const source=DATA_SOURCES[selection.brand]?.[selection.year];
+   if(!source){showCalculationError("Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.",[]);return;}
+   requestBody.vehicle={brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices};
+ }
+ button.disabled=true;
+ try{
+   const response=await fetch(`${CARTELONIO_API_BASE}/calculate`,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${cartelonioSession.access_token}`,"Idempotency-Key":requestId},body:JSON.stringify(requestBody)});
+   const payload=await response.json();
+   if(!response.ok)throw Error(payload.error||"calculation_failed");
+   const r=payload.result,v=payload.vehicle;
+   if(!cartelonioProfile)cartelonioProfile={};
+   cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();
+   document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);formatPriceField();
+   document.getElementById("category").value=v.body_type;document.getElementById("co2").value=v.co2;document.getElementById("euroClass").value=v.euro_class;document.getElementById("powertrain").value=v.powertrain;
+   if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
+   setRegistrationTaxMiniResult(r.totalTax);revealCalculatedVehicleResult();
+   const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
+   const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":"Επαληθευμένη ΛΤΠΦ";
+   const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο.");
+   document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>${ltpfLabel}:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${provenanceNote}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;
+ }catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
 }
 
 /* ========== ΠΡΩΤΗ ΑΔΕΙΑ (safe sync) ========== */
