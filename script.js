@@ -1025,6 +1025,66 @@ document.addEventListener("change", event => {
   event.target.classList?.remove("calculation-field-invalid");
 });
 
+function renderDetailedCalculationBreakdown(serverBreakdown, ctx){
+  const {r,v,isManual,ltpfLabel,firstRegistration,importDate,mileage,technicalCategory,technicalEuro,technicalPowertrain,eur,pct,esc}=ctx;
+  const b=serverBreakdown||{};
+  const row=(label,value,note="",cls="")=>`<div class="result-detail-row ${cls}"><div><span>${label}</span>${note?`<small>${note}</small>`:""}</div><strong>${value}</strong></div>`;
+  const money=x=>Number.isFinite(Number(x))?`€${eur(Number(x))}`:"—";
+  const percent=x=>Number.isFinite(Number(x))?pct(Number(x)):"—";
+  const expectedKm=b.depreciation?.expectedMileage;
+  const mileageDelta=b.depreciation?.mileageDifference;
+  const mileageDep=b.depreciation?.mileageDepreciation;
+  const depAmount=b.depreciation?.depreciationAmount ?? (Number(v.ltpf)-Number(r.finalPrice));
+  const baseTax=b.tax?.baseRegistrationTax;
+  const co2Adj=b.tax?.co2AdjustmentPercent;
+  const euroAdj=b.tax?.euroAdjustmentPercent;
+  const hybridAdj=b.tax?.powertrainReductionPercent;
+  const brackets=Array.isArray(b.tax?.progressiveParts)?b.tax.progressiveParts:[];
+  const bracketHtml=brackets.length?`<div class="result-tax-brackets"><span class="result-detail-subtitle">Προοδευτικά κλιμάκια</span>${brackets.map((part,i)=>row(esc(part.label||`Κλιμάκιο ${i+1}`),money(part.tax),`${money(part.taxableAmount)} × ${Number(part.rate||0).toLocaleString("el-GR",{style:"percent",maximumFractionDigits:2})}`)).join("")}</div>`:"";
+  return `<div class="result-breakdown-panel result-breakdown-details" data-breakdown-panel="details" hidden>
+    <div class="result-detail-group"><span class="result-detail-kicker">01 · ΑΞΙΑ ΟΧΗΜΑΤΟΣ</span>
+      ${row(ltpfLabel,money(v.ltpf),isManual?"Τιμή που δηλώθηκε στη χειροκίνητη εισαγωγή":"Τιμή που επαληθεύτηκε από τον κατάλογο")}
+      ${b.vehicleValue?.baseLtpf!=null?row("Βασική ΛΤΠΦ",money(b.vehicleValue.baseLtpf)):""}
+      ${b.vehicleValue?.extrasTotal!=null?row("Αξία επιλεγμένων extras",money(b.vehicleValue.extrasTotal)):""}
+    </div>
+    <div class="result-detail-group"><span class="result-detail-kicker">02 · ΑΠΟΜΕΙΩΣΗ</span>
+      ${row("Ηλικία κατά την εισαγωγή",`${r.exactMonths} μήνες`,`${Number(r.exactYears).toFixed(2)} έτη · ${firstRegistration} → ${importDate}`)}
+      ${row("Απομείωση ηλικίας / αμαξώματος",`−${percent(r.yearDep)}`,`Κατηγορία: ${esc(technicalCategory)}`)}
+      ${expectedKm!=null?row("Αναμενόμενα χιλιόμετρα",`${Number(expectedKm).toLocaleString("el-GR")} km`):""}
+      ${row("Πραγματικά χιλιόμετρα",`${Number(mileage).toLocaleString("el-GR")} km`)}
+      ${mileageDelta!=null?row("Διαφορά χιλιομέτρων",`${Number(mileageDelta)>=0?"+":""}${Number(mileageDelta).toLocaleString("el-GR")} km`):""}
+      ${mileageDep!=null?row("Πρόσθετη απομείωση χιλιομέτρων",`−${percent(mileageDep)}`):""}
+      ${row("Συνολική απομείωση",`−${percent(r.totalDep)}`)}
+      ${row("Ποσό απομείωσης",`−${money(depAmount)}`)}
+      ${row("Φορολογητέα αξία",money(r.finalPrice),"ΛΤΠΦ μετά τη συνολική απομείωση","is-emphasis")}
+    </div>
+    <div class="result-detail-group"><span class="result-detail-kicker">03 · ΥΠΟΛΟΓΙΣΜΟΣ ΤΕΛΟΥΣ</span>
+      ${bracketHtml}
+      ${baseTax!=null?row("Βασικό τέλος ταξινόμησης",money(baseTax)):""}
+      ${row("Εκπομπές CO₂",`${Number(v.co2).toLocaleString("el-GR")} g/km`,b.environment?.co2Standard?`Πρότυπο: ${esc(b.environment.co2Standard)}`:"")}
+      ${co2Adj!=null?row("Προσαρμογή λόγω CO₂",`${Number(co2Adj)>=0?"+":""}${Number(co2Adj).toLocaleString("el-GR")} %`):""}
+      ${row("Κατηγορία Euro",esc(technicalEuro))}
+      ${euroAdj!=null?row("Προσαρμογή λόγω Euro",`${Number(euroAdj)>=0?"+":""}${Number(euroAdj).toLocaleString("el-GR")} %`):""}
+      ${row("Τύπος κίνησης",esc(technicalPowertrain))}
+      ${hybridAdj!=null?row("Μείωση λόγω τύπου κίνησης",`−${Number(hybridAdj).toLocaleString("el-GR")} %`):""}
+      ${row("Τέλος ταξινόμησης",money(r.registrationTax),"Μετά τις εφαρμοζόμενες προσαρμογές","is-emphasis")}
+      ${row("Περιβαλλοντικό τέλος",money(r.environmentalFee||0),b.environment?.environmentalFeeReason?esc(b.environment.environmentalFeeReason):"")}
+    </div>
+    <div class="result-detail-total"><span>Τελικό ποσό</span><strong>${money(r.totalTax)}</strong></div>
+    ${!serverBreakdown?`<p class="result-breakdown-pending">ⓘ Τα στοιχεία που απαιτούν server-side κανόνες (κλιμάκια, CO₂/Euro multipliers και mileage breakdown) θα εμφανιστούν αυτόματα μόλις το Edge Function επιστρέψει <code>calculationBreakdown</code>.</p>`:""}
+  </div>`;
+}
+
+function initResultBreakdownTabs(){
+  const root=document.getElementById("results");
+  if(!root)return;
+  root.querySelectorAll("[data-breakdown-tab]").forEach(button=>button.addEventListener("click",()=>{
+    const target=button.dataset.breakdownTab;
+    root.querySelectorAll("[data-breakdown-tab]").forEach(x=>{const active=x===button;x.classList.toggle("is-active",active);x.setAttribute("aria-selected",String(active));});
+    root.querySelectorAll("[data-breakdown-panel]").forEach(panel=>{const active=panel.dataset.breakdownPanel===target;panel.classList.toggle("is-active",active);panel.hidden=!active;});
+  }));
+}
+
 async function calculate(){
  clearCalculationWarnings();
  const stage=document.querySelector('.vehicle-configurator-v2');
@@ -1124,13 +1184,22 @@ async function calculate(){
          <small>Εκτιμώμενο ποσό με βάση ${isManual?"τα δηλωμένα":"τα επαληθευμένα"} στοιχεία</small>
        </section>
        <section class="result-breakdown-card">
-         <div class="result-section-title"><span class="result-section-icon">▤</span><strong>Ανάλυση υπολογισμού</strong></div>
-         <div class="result-data-row"><span>${ltpfLabel}</span><strong>€${eur(v.ltpf)}</strong></div>
-         <div class="result-data-row"><span>Απομείωση ηλικίας / αμαξώματος <em>${r.exactMonths} μήνες · ${r.exactYears.toFixed(2)} έτη</em></span><strong>−${pct(r.yearDep)}</strong></div>
-         <div class="result-data-row"><span>Συνολική απομείωση</span><strong>−${pct(r.totalDep)}</strong></div>
-         <div class="result-data-row result-data-row-emphasis"><span>Φορολογητέα αξία</span><strong>€${eur(r.finalPrice)}</strong></div>
-         <div class="result-data-row"><span>Τέλος ταξινόμησης</span><strong>€${eur(r.registrationTax)}</strong></div>
-         <div class="result-data-row"><span>Περιβαλλοντικό τέλος</span><strong>€${eur(envFee)}</strong></div>
+         <div class="result-breakdown-head">
+           <div class="result-section-title"><span class="result-section-icon">▤</span><strong>Ανάλυση υπολογισμού</strong></div>
+           <div class="result-breakdown-tabs" role="tablist" aria-label="Προβολή ανάλυσης">
+             <button type="button" class="is-active" data-breakdown-tab="summary" role="tab" aria-selected="true">Συνοπτικά</button>
+             <button type="button" data-breakdown-tab="details" role="tab" aria-selected="false">Αναλυτικά</button>
+           </div>
+         </div>
+         <div class="result-breakdown-panel is-active" data-breakdown-panel="summary">
+           <div class="result-data-row"><span>${ltpfLabel}</span><strong>€${eur(v.ltpf)}</strong></div>
+           <div class="result-data-row"><span>Απομείωση ηλικίας / αμαξώματος <em>${r.exactMonths} μήνες · ${r.exactYears.toFixed(2)} έτη</em></span><strong>−${pct(r.yearDep)}</strong></div>
+           <div class="result-data-row"><span>Συνολική απομείωση</span><strong>−${pct(r.totalDep)}</strong></div>
+           <div class="result-data-row result-data-row-emphasis"><span>Φορολογητέα αξία</span><strong>€${eur(r.finalPrice)}</strong></div>
+           <div class="result-data-row"><span>Τέλος ταξινόμησης</span><strong>€${eur(r.registrationTax)}</strong></div>
+           <div class="result-data-row"><span>Περιβαλλοντικό τέλος</span><strong>€${eur(envFee)}</strong></div>
+         </div>
+         ${renderDetailedCalculationBreakdown(payload.calculationBreakdown, {r,v,isManual,ltpfLabel,firstRegistration,importDate,mileage:Number(mileageRaw),technicalCategory,technicalEuro,technicalPowertrain,eur,pct,esc})}
        </section>
        <section class="result-info-card">
          <div class="result-section-title"><span class="result-section-icon">◷</span><strong>Στοιχεία εισαγωγής & υπολογισμού</strong></div>
@@ -1155,6 +1224,7 @@ async function calculate(){
        <p class="result-provenance-note">ⓘ ${esc(provenanceNote)}</p>
        <section class="result-final-bar"><div><span>Τελικό ποσό προς καταβολή</span><small>Άθροισμα τέλους ταξινόμησης και περιβαλλοντικού τέλους</small></div><strong>€${eur(r.totalTax)}</strong></section>
      </div>`;
+   initResultBreakdownTabs();
    revealCalculatedVehicleResult();
  }catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
 }
