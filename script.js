@@ -46,7 +46,7 @@ const BRANDS = [
   "Porsche",
   "Renault",
   "Rolls-Royce",
-  "SEAT",
+  "Seat",
   "Skoda",
   "Smart",
   "Subaru",
@@ -126,7 +126,7 @@ const BRAND_LOGOS = {
   "Porsche": "https://logos-world.net/wp-content/uploads/2023/06/Porsche-New-Logo-500x281.png",
   "Renault": "https://logos-world.net/wp-content/uploads/2021/02/New-Renault-Logo-700x394.png",
   "Rolls-Royce": "https://logos-world.net/wp-content/uploads/2021/04/Rolls-Royce-Logo-700x394.png",
-  "SEAT": "https://logos-world.net/wp-content/uploads/2021/03/SEAT-Logo.png",
+  "Seat": "https://logos-world.net/wp-content/uploads/2021/03/SEAT-Logo.png",
   "Skoda": "https://logos-world.net/wp-content/uploads/2021/06/Skoda-logo-500x281.png",
   "Smart": "https://logos-world.net/wp-content/uploads/2021/06/Smart-Logo-500x281.png",
   "Subaru": "https://logos-world.net/wp-content/uploads/2021/06/Subaru-Logo-500x281.png",
@@ -1284,7 +1284,8 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Mitsubishi","2015"],["Mitsubishi","2016"],["Mitsubishi","2017"],["Mitsubishi","2018"],["Mitsubishi","2019"],["Mitsubishi","2020"],["Mitsubishi","2021"],["Mitsubishi","2022"],["Mitsubishi","2023"],["Mitsubishi","2024"],["Mitsubishi","2025"],["Mitsubishi","2026"],
   ["Peugeot","2015"],["Peugeot","2016"],["Peugeot","2017"],["Peugeot","2018"],["Peugeot","2019"],["Peugeot","2020"],["Peugeot","2021"],["Peugeot","2022"],["Peugeot","2023"],["Peugeot","2024"],["Peugeot","2025"],["Peugeot","2026"],
   ["Porsche","2017"],["Porsche","2018"],["Porsche","2019"],["Porsche","2020"],["Porsche","2021"],["Porsche","2022"],["Porsche","2023"],["Porsche","2024"],["Porsche","2025"],["Porsche","2026"]
-  ["Volkswagen","2015"],["Volkswagen","2016"],["Volkswagen","2017"],["Volkswagen","2018"],["Volkswagen","2019"],["Volkswagen","2020"],["Volkswagen","2021"],["Volkswagen","2022"],["Volkswagen","2023"],["Volkswagen","2024"],["Volkswagen","2025"],["Volkswagen","2026"]
+  ["Volkswagen","2015"],["Volkswagen","2016"],["Volkswagen","2017"],["Volkswagen","2018"],["Volkswagen","2019"],["Volkswagen","2020"],["Volkswagen","2021"],["Volkswagen","2022"],["Volkswagen","2023"],["Volkswagen","2024"],["Volkswagen","2025"],["Volkswagen","2026"],
+  ["Seat","2015"],["Seat","2016"],["Seat","2017"],["Seat","2018"],["Seat","2019"],["Seat","2020"],["Seat","2021"],["Seat","2022"],["Seat","2023"],["Seat","2024"],["Seat","2025"],["Seat","2026"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
