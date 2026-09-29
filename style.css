@@ -6529,3 +6529,55 @@ body.welcome10-open{overflow:hidden}
 #results .result-breakdown-pending{margin:11px 0 0!important;padding:9px 11px!important;border:0!important;border-radius:11px;background:rgba(109,169,67,.06);color:#747c72!important;font-size:9px!important;line-height:1.45}
 #results .result-breakdown-pending code{font-size:9px;color:#4e7d31}
 @media(max-width:700px){#results .result-breakdown-head{align-items:flex-start;flex-direction:column}#results .result-breakdown-tabs{align-self:stretch}#results .result-breakdown-tabs button{flex:1}#results .result-detail-row{align-items:flex-start}#results .result-detail-row strong{max-width:42%}}
+
+/* =========================================================
+   2026-09-29 — MOBILE BRAND MENU WIDE
+   Expand the menu from the inner picker to the full Brand card width.
+   Keeps desktop unchanged and prevents long brand names wrapping.
+   ========================================================= */
+@media (max-width:768px){
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu,
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu.open{
+    left:-42px !important;
+    right:auto !important;
+    width:calc(100% + 84px) !important;
+    min-width:calc(100% + 84px) !important;
+    max-width:calc(100vw - 28px) !important;
+    box-sizing:border-box !important;
+    transform:none !important;
+    padding:9px !important;
+  }
+
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-option{
+    min-height:54px !important;
+    padding:7px 12px !important;
+    gap:12px !important;
+  }
+
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-option-logo{
+    width:46px !important;
+    height:36px !important;
+    flex:0 0 46px !important;
+    margin-right:8px !important;
+    background-size:contain !important;
+  }
+
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-option-label{
+    min-width:0 !important;
+    font-size:16px !important;
+    line-height:1.15 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+}
+
+@media (max-width:430px){
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu,
+  .vehicle-configurator-v2 .brand-dropdown-card .brand-menu.open{
+    left:-40px !important;
+    width:calc(100% + 80px) !important;
+    min-width:calc(100% + 80px) !important;
+    max-width:calc(100vw - 20px) !important;
+  }
+}
