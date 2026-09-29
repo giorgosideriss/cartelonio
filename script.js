@@ -1090,11 +1090,72 @@ async function calculate(){
      document.getElementById("powertrain").value=v.powertrain;
    }
    if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
-   setRegistrationTaxMiniResult(r.totalTax);revealCalculatedVehicleResult();
+   setRegistrationTaxMiniResult(r.totalTax);
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
    const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":"Επαληθευμένη ΛΤΠΦ";
    const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο.");
-   document.getElementById("results").innerHTML=`<p><strong>Ηλικία κατά την εισαγωγή:</strong> ${r.exactMonths} πλήρεις μήνες (${r.exactYears.toFixed(2)} έτη)</p><p><strong>Απομείωση ηλικίας / αμαξώματος:</strong> ${pct(r.yearDep)}</p><p><strong>Συνολική απομείωση:</strong> ${pct(r.totalDep)}</p><p><strong>${ltpfLabel}:</strong> €${eur(v.ltpf)}</p><p><strong>Φορολογητέα αξία:</strong> €${eur(r.finalPrice)}</p><p><strong>Τέλος ταξινόμησης:</strong> €${eur(r.registrationTax)}</p>${r.environmentalFee?`<p><strong>Περιβαλλοντικό τέλος:</strong> €${eur(r.environmentalFee)}</p>`:""}<p><small>${provenanceNote}</small></p><h3>ΣΥΝΟΛΟ Τ.Τ. + ΠΕΡΙΒΑΛΛΟΝΤΙΚΟ ΤΕΛΟΣ: €${eur(r.totalTax)}</h3>`;
+   const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+   const dateEl=value=>{if(!value)return "—";const [y,m,d]=String(value).split("-");return d&&m&&y?`${d}/${m}/${y}`:esc(value);};
+   const technicalCategory=categories[document.getElementById("category").value]||document.getElementById("category").value||"—";
+   const technicalEuro=document.getElementById("euroClass").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("euroClass").value||"—";
+   const technicalPowertrain=document.getElementById("powertrain").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("powertrain").value||"—";
+   const co2Display=Number(v.co2).toLocaleString("el-GR");
+   const mileageDisplay=Number(mileageRaw).toLocaleString("el-GR");
+   const envFee=Number(r.environmentalFee||0);
+   let vehicleResultCard="";
+   if(!isManual){
+     const identity=getSelectedVehicleIdentity();
+     const displayEdition=cleanEditionDisplayName(identity.editionName,identity.brand,identity.model);
+     const logo=BRAND_LOGOS[identity.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[identity.brand]):"";
+     const image=document.getElementById("carImage");
+     const imageSrc=image?.src||"";
+     vehicleResultCard=`<article class="result-vehicle-card">
+       <div class="result-vehicle-badge">Επιλογή από κατάλογο</div>
+       <div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc(identity.brand)} ${esc(identity.model)}</strong><span>${esc(displayEdition||identity.editionName)}${identity.year?` · ${esc(identity.year)}`:""}</span></div></div>
+       <div class="result-vehicle-image-wrap">${imageSrc?`<img src="${esc(imageSrc)}" alt="${esc(identity.brand+' '+identity.model)}">`:""}</div>
+     </article>`;
+   }
+   document.getElementById("results").innerHTML=`
+     <div class="result-dashboard ${isManual?"is-manual":"is-catalog"}">
+       ${vehicleResultCard}
+       <section class="result-total-card">
+         <span>Σύνολο Τ.Τ. + Περιβαλλοντικό Τέλος</span>
+         <strong>€${eur(r.totalTax)}</strong>
+         <small>Εκτιμώμενο ποσό με βάση ${isManual?"τα δηλωμένα":"τα επαληθευμένα"} στοιχεία</small>
+       </section>
+       <section class="result-breakdown-card">
+         <div class="result-section-title"><span class="result-section-icon">▤</span><strong>Ανάλυση υπολογισμού</strong></div>
+         <div class="result-data-row"><span>${ltpfLabel}</span><strong>€${eur(v.ltpf)}</strong></div>
+         <div class="result-data-row"><span>Απομείωση ηλικίας / αμαξώματος <em>${r.exactMonths} μήνες · ${r.exactYears.toFixed(2)} έτη</em></span><strong>−${pct(r.yearDep)}</strong></div>
+         <div class="result-data-row"><span>Συνολική απομείωση</span><strong>−${pct(r.totalDep)}</strong></div>
+         <div class="result-data-row result-data-row-emphasis"><span>Φορολογητέα αξία</span><strong>€${eur(r.finalPrice)}</strong></div>
+         <div class="result-data-row"><span>Τέλος ταξινόμησης</span><strong>€${eur(r.registrationTax)}</strong></div>
+         <div class="result-data-row"><span>Περιβαλλοντικό τέλος</span><strong>€${eur(envFee)}</strong></div>
+       </section>
+       <section class="result-info-card">
+         <div class="result-section-title"><span class="result-section-icon">◷</span><strong>Στοιχεία εισαγωγής & υπολογισμού</strong></div>
+         <div class="result-info-grid">
+           <div><span>Ημερομηνία πρώτης άδειας</span><strong>${dateEl(firstRegistration)}</strong></div>
+           <div><span>Ημερομηνία εισαγωγής</span><strong>${dateEl(importDate)}</strong></div>
+           <div><span>Διανυθέντα χιλιόμετρα</span><strong>${mileageDisplay} km</strong></div>
+           <div><span>Ηλικία οχήματος</span><strong>${r.exactMonths} μήνες (${r.exactYears.toFixed(2)} έτη)</strong></div>
+           <div><span>Κατηγορία αμαξώματος</span><strong>${esc(technicalCategory)}</strong></div>
+           <div><span>Συντελεστής απομείωσης</span><strong>${pct(r.totalDep)}</strong></div>
+         </div>
+       </section>
+       <section class="result-info-card result-technical-card">
+         <div class="result-section-title"><span class="result-section-icon">◉</span><strong>Περιβαλλοντικά & τεχνικά στοιχεία</strong></div>
+         <div class="result-info-grid">
+           <div><span>Εκπομπές CO₂</span><strong>${co2Display} g/km</strong></div>
+           <div><span>Κατηγορία Euro</span><strong>${esc(technicalEuro)}</strong></div>
+           <div><span>Τύπος κίνησης</span><strong>${esc(technicalPowertrain)}</strong></div>
+           <div><span>Πηγή στοιχείων</span><strong>${isManual?"Χειροκίνητη εισαγωγή":"Κατάλογος Cartelonio"}</strong></div>
+         </div>
+       </section>
+       <p class="result-provenance-note">ⓘ ${esc(provenanceNote)}</p>
+       <section class="result-final-bar"><div><span>Τελικό ποσό προς καταβολή</span><small>Άθροισμα τέλους ταξινόμησης και περιβαλλοντικού τέλους</small></div><strong>€${eur(r.totalTax)}</strong></section>
+     </div>`;
+   revealCalculatedVehicleResult();
  }catch(error){const [message,fields]=calculationErrorDetails(error.message);showCalculationError(message,fields);await loadCartelonioProfile().catch(()=>{});}finally{button.disabled=false;}
 }
 
