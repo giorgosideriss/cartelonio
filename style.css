@@ -6581,3 +6581,25 @@ body.welcome10-open{overflow:hidden}
     max-width:calc(100vw - 20px) !important;
   }
 }
+
+
+/* Token purchases — Stripe Checkout */
+.tokens-purchase-panel[hidden]{display:none!important}
+.tokens-purchase-toggle{cursor:pointer}
+.tokens-purchase-toggle[aria-expanded="true"] .tokens-option-chevron{transform:rotate(90deg)}
+.tokens-shop-icon{background:#eef7f0;color:#276a3d}
+.tokens-purchase-panel{padding:14px;margin:0 0 8px;border:1px solid #e3ebe5;border-radius:16px;background:#f8fbf9}
+.token-package-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.token-package{position:relative;min-width:0;min-height:105px;padding:14px 12px;border:1px solid #dfe7e1;border-radius:14px;background:#fff;color:#1d2b23;text-align:left;cursor:pointer;box-shadow:0 2px 8px rgba(18,40,25,.035);transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease}
+.token-package:hover{transform:translateY(-1px);border-color:#a9c9b0;box-shadow:0 8px 20px rgba(18,40,25,.08)}
+.token-package:focus-visible{outline:0;border-color:#5e9b6b;box-shadow:0 0 0 3px rgba(71,137,85,.13)}
+.token-package:disabled{opacity:.58;cursor:wait;transform:none}
+.token-package-name{display:block;margin-bottom:7px;font-size:11px;font-weight:800;letter-spacing:.035em;color:#708078}
+.token-package strong{display:block;font-size:17px;line-height:1.15;letter-spacing:-.025em}
+.token-package-price{display:block;margin-top:9px;font-size:13px;font-weight:800;color:#2d713f}
+.token-package-featured{border-color:#a9cdb1;background:linear-gradient(145deg,#fff,#f2f8f3)}
+.token-package-badge{position:absolute;top:8px;right:8px;padding:4px 6px;border-radius:99px;background:#e4f2e6;color:#2f7241;font-size:8px;font-weight:850;letter-spacing:.04em}
+.tokens-purchase-note{margin:11px 2px 0;color:#78837d;font-size:10.5px;line-height:1.45}
+.tokens-purchase-note.is-error{color:#a12b2b}
+.tokens-purchase-note.is-success{color:#2d713f;font-weight:700}
+@media(max-width:420px){.token-package-grid{grid-template-columns:1fr 1fr;gap:7px}.token-package{min-height:99px;padding:12px 10px}.token-package strong{font-size:15px}.token-package-badge{font-size:7px}}

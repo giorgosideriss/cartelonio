@@ -2026,6 +2026,122 @@ authElement("tokensVoucherCode")?.addEventListener("keydown", event => {
   if (event.key === "Enter") { event.preventDefault(); redeemCartelonioVoucher(); }
 });
 
+
+/* ================= STRIPE TOKEN PURCHASES ================= */
+const CARTELONIO_TOKEN_PACKAGES = Object.freeze({
+  starter: { label: "Starter", tokens: 5, price: "€1,99" },
+  standard: { label: "Standard", tokens: 15, price: "€3,99" },
+  plus: { label: "Plus", tokens: 40, price: "€7,99" },
+  pro: { label: "Pro", tokens: 150, price: "€24,99" }
+});
+
+function setTokenPurchaseNotice(message, type = "") {
+  const notice = authElement("tokensPurchaseNotice");
+  if (!notice) return;
+  notice.textContent = message;
+  notice.className = `tokens-purchase-note${type ? ` is-${type}` : ""}`;
+}
+
+function setTokenPackageButtonsDisabled(disabled) {
+  document.querySelectorAll("[data-token-package]").forEach(button => {
+    button.disabled = Boolean(disabled);
+  });
+}
+
+async function startTokenCheckout(packageId) {
+  const selected = CARTELONIO_TOKEN_PACKAGES[packageId];
+  if (!selected) return;
+
+  if (!cartelonioDb || !cartelonioSession?.user || cartelonioSession.user.is_anonymous) {
+    setTokenPurchaseNotice("Συνδέσου σε επιβεβαιωμένο λογαριασμό για να αγοράσεις tokens.", "error");
+    window.setTimeout(() => {
+      closeTokensMenu();
+      openAuthModal("login");
+    }, 650);
+    return;
+  }
+
+  setTokenPackageButtonsDisabled(true);
+  setTokenPurchaseNotice(`Δημιουργούμε ασφαλή πληρωμή για ${selected.tokens} tokens…`);
+
+  try {
+    const { data, error } = await cartelonioDb.functions.invoke("create-checkout", {
+      body: { packageId }
+    });
+    if (error) throw error;
+    const checkoutUrl = data?.checkoutUrl;
+    if (!checkoutUrl || !/^https:\/\//i.test(checkoutUrl)) throw new Error("checkout_url_missing");
+    setTokenPurchaseNotice("Μεταφορά στο ασφαλές Stripe Checkout…", "success");
+    window.location.assign(checkoutUrl);
+  } catch (error) {
+    console.error("Token checkout failed:", error);
+    const message = String(error?.message || "");
+    setTokenPurchaseNotice(
+      message.includes("verified_account_required")
+        ? "Απαιτείται επιβεβαιωμένος λογαριασμός."
+        : "Δεν ήταν δυνατή η έναρξη πληρωμής. Δοκίμασε ξανά.",
+      "error"
+    );
+    setTokenPackageButtonsDisabled(false);
+  }
+}
+
+async function handleTokenPaymentReturn() {
+  const url = new URL(window.location.href);
+  const payment = url.searchParams.get("payment");
+  if (payment !== "success" && payment !== "cancelled") return;
+
+  // Remove Stripe return parameters immediately so refresh does not replay the UI state.
+  url.searchParams.delete("payment");
+  url.searchParams.delete("session_id");
+  const cleanUrl = `${url.pathname}${url.search}${url.hash}`;
+  window.history.replaceState({}, document.title, cleanUrl || "/");
+
+  try { await cartelonioAuthReady; } catch (_) {}
+  openTokensMenu();
+
+  const purchasePanel = authElement("tokensPurchasePanel");
+  const purchaseToggle = authElement("tokensPurchaseToggle");
+  if (purchasePanel) purchasePanel.hidden = false;
+  purchaseToggle?.setAttribute("aria-expanded", "true");
+
+  if (payment === "cancelled") {
+    setTokenPurchaseNotice("Η πληρωμή ακυρώθηκε. Δεν χρεώθηκαν χρήματα και δεν προστέθηκαν tokens.");
+    return;
+  }
+
+  setTokenPurchaseNotice("Η πληρωμή ολοκληρώθηκε. Επιβεβαιώνουμε τα tokens…", "success");
+
+  // Stripe can redirect a fraction before the webhook finishes. Poll only the profile balance briefly.
+  const initialBalance = Number(cartelonioProfile?.token_balance || 0);
+  for (let attempt = 0; attempt < 8; attempt += 1) {
+    await loadCartelonioProfile();
+    const currentBalance = Number(cartelonioProfile?.token_balance || 0);
+    if (currentBalance > initialBalance) {
+      setTokenPurchaseNotice("Η αγορά ολοκληρώθηκε και τα tokens προστέθηκαν στον λογαριασμό σου.", "success");
+      await loadUsedTokens();
+      return;
+    }
+    await new Promise(resolve => window.setTimeout(resolve, 750));
+  }
+
+  setTokenPurchaseNotice("Η πληρωμή καταγράφηκε. Αν τα tokens δεν εμφανιστούν αμέσως, ανανέωσε σε λίγα δευτερόλεπτα.", "success");
+}
+
+authElement("tokensPurchaseToggle")?.addEventListener("click", () => {
+  const toggle = authElement("tokensPurchaseToggle");
+  const panel = authElement("tokensPurchasePanel");
+  if (!toggle || !panel) return;
+  panel.hidden = !panel.hidden;
+  toggle.setAttribute("aria-expanded", String(!panel.hidden));
+});
+
+document.querySelectorAll("[data-token-package]").forEach(button => {
+  button.addEventListener("click", () => startTokenCheckout(button.dataset.tokenPackage));
+});
+
+window.setTimeout(handleTokenPaymentReturn, 0);
+
 function closeTokensMenu() {
   const menu = authElement("tokensMenu");
   if (menu) menu.hidden = true;
