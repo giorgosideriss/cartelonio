@@ -1262,6 +1262,7 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Alfa Romeo","2015"],["Alfa Romeo","2016"],["Alfa Romeo","2017"],["Alfa Romeo","2018"],["Alfa Romeo","2019"],["Alfa Romeo","2020"],["Alfa Romeo","2022"],
   ["Aston Martin","2018"],
   ["Audi","2015"],["Audi","2016"],["Audi","2017"],["Audi","2018"],["Audi","2019"],["Audi","2020"],["Audi","2021"],["Audi","2022"],["Audi","2023"],["Audi","2024"],["Audi","2025"],
+  ["BMW","2015"],["BMW","2016"],["BMW","2017"],["BMW","2018"],["BMW","2019"],["BMW","2020"],["BMW","2021"],["BMW","2022"],["BMW","2023"],["BMW","2024"],["BMW","2025"]
   ["Bentley","2017"],["Bentley","2020"],["Bentley","2022"],
   ["Ford","2015"],["Ford","2016"],["Ford","2017"],["Ford","2018"],["Ford","2019"],["Ford","2020"],["Ford","2021"],["Ford","2022"],["Ford","2023"],
   ["Fiat","2017"],["Fiat","2018"],["Fiat","2019"],["Fiat","2020"],["Fiat","2021"],["Fiat","2022"],
