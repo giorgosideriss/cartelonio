@@ -1287,7 +1287,7 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Porsche","2017"],["Porsche","2018"],["Porsche","2019"],["Porsche","2020"],["Porsche","2021"],["Porsche","2022"],["Porsche","2023"],["Porsche","2024"],["Porsche","2025"],["Porsche","2026"]
   ["Volkswagen","2015"],["Volkswagen","2016"],["Volkswagen","2017"],["Volkswagen","2018"],["Volkswagen","2019"],["Volkswagen","2020"],["Volkswagen","2021"],["Volkswagen","2022"],["Volkswagen","2023"],["Volkswagen","2024"],["Volkswagen","2025"],["Volkswagen","2026"],
   ["Seat","2015"],["Seat","2016"],["Seat","2017"],["Seat","2018"],["Seat","2019"],["Seat","2020"],["Seat","2021"],["Seat","2022"],["Seat","2023"],["Seat","2024"],["Seat","2025"],["Seat","2026"],
-  ["Toyota","2015"],["Toyota","2016"],["Toyota","2017"],["Toyota","2018"],["Toyota","2019"],["Toyota","2020"],["Toyota","2021"],["Toyota","2022"],["Toyota","2023"],["Toyota","2025"],["Toyota","2026"]
+  ["Toyota","2015"],["Toyota","2016"],["Toyota","2017"],["Toyota","2018"],["Toyota","2019"],["Toyota","2020"],["Toyota","2021"],["Toyota","2022"],["Toyota","2023"]
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
