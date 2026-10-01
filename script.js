@@ -1291,7 +1291,9 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Subaru","2015"],["Subaru","2016"],["Subaru","2017"],["Subaru","2018"],["Subaru","2019"],["Subaru","2020"],["Subaru","2021"],
   ["Suzuki","2015"],["Suzuki","2016"],["Suzuki","2017"],["Suzuki","2018"],["Suzuki","2019"],["Suzuki","2020"],["Suzuki","2021"],["Suzuki","2022"],["Suzuki","2023"],["Suzuki","2024"],["Suzuki","2025"],["Suzuki","2026"],
   ["INEOS","2026"],
-  ["Volvo","2015"],["Volvo","2016"],["Volvo","2017"],["Volvo","2018"],["Volvo","2019"],["Volvo","2020"],["Volvo","2021"],["Volvo","2022"],["Volvo","2023"]
+  ["Volvo","2015"],["Volvo","2016"],["Volvo","2017"],["Volvo","2018"],["Volvo","2019"],["Volvo","2020"],["Volvo","2021"],["Volvo","2022"],["Volvo","2023"],
+  ["Cupra","2022"],["Cupra","2023"],["Cupra","2024"],["Cupra","2025"],["Cupra","2026"]
+  
 ];
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
