@@ -5,7 +5,6 @@
 const BRANDS = [
   "Abarth",
   "Alfa Romeo",
-  "Alpine",
   "Aston Martin",
   "Audi",
   "BMW",
@@ -33,7 +32,6 @@ const BRANDS = [
   "Nissan",
   "Opel",
   "Peugeot",
-  "Polestar",
   "Porsche",
   "Renault",
   "Seat",
@@ -45,6 +43,7 @@ const BRANDS = [
   "Volkswagen",
   "Volvo",
   "Alpina",
+  "Alpine",
   "BYD",
   "Chrysler",
   "DS",
@@ -53,6 +52,7 @@ const BRANDS = [
   "Lexus",
   "McLaren",
   "Morgan",
+  "Polestar",
   "Rolls-Royce",
   "Tesla"
 ];
