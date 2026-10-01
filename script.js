@@ -134,7 +134,7 @@ const BRAND_LOGOS = {
   "Tesla": "https://logos-world.net/wp-content/uploads/2020/10/Tesla-Logo.png",
   "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png",
   "Volkswagen": "https://www.freepnglogos.com/uploads/vw-png-logo/volkswagen-logo-hd-png-5.png",
-  "Volvo": "https://logos-world.net/wp-content/uploads/2021/04/Volvo-Logo-1999-2013.png",
+  "Volvo": "https://logos-world.net/wp-content/uploads/2021/05/Volvo-Logo-1959.png",
 };
 /* Welcome statistics: decorative brand logos; independent of calculation logic. */
 (function initOnboardingBrandAmbient(){
