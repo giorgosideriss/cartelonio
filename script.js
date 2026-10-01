@@ -36,7 +36,6 @@ const BRANDS = [
   "Renault",
   "Seat",
   "Skoda",
-  "Smart",
   "Subaru",
   "Suzuki",
   "Toyota",
@@ -54,6 +53,7 @@ const BRANDS = [
   "Morgan",
   "Polestar",
   "Rolls-Royce",
+  "Smart",
   "Tesla"
 ];
 
