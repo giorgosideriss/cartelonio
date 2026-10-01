@@ -703,7 +703,7 @@ function populateBrandSelect() {
   // custom menu
   if (menuEl) menuEl.innerHTML = "";
 
-sortAlpha(BRANDS).forEach(brand => {
+BRANDS.forEach(brand => {
     const available = Boolean(DATA_SOURCES[brand] && Object.keys(DATA_SOURCES[brand]).length);
     // option στο select (state)
     const opt = document.createElement("option");
