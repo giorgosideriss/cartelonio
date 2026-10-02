@@ -113,7 +113,7 @@ const BRAND_LOGOS = {
   "Lotus": "https://logos-world.net/wp-content/uploads/2021/09/Lotus-Logo-700x394.png",
   "MG": "https://logos-world.net/wp-content/uploads/2021/09/MG-Logo-700x394.png",
   "MINI": "https://cdn.simpleicons.org/mini/B8BCB9",
-  "Maserati": "https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo-2006-2020.png",
+  "Maserati": "https://freepngimg.com/download/maserati/24485-4-maserati-logo-photos.png",
   "Mazda": "https://logos-world.net/wp-content/uploads/2020/05/Mazda-Logo-700x394.png",
   "McLaren": "https://listcarbrands.com/wp-content/uploads/2016/12/McLaren-Logo-1998.png",
   "Mercedes-Benz": "https://logos-world.net/wp-content/uploads/2020/05/Mercedes-Benz-Logo-700x394.png",
