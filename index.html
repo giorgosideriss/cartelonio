@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20260929-token-purchases-01" rel="stylesheet"/>
+<link href="style.css?v=20261002-listing-01" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -240,6 +240,17 @@
 <button class="vehicle-input-mode" type="button" role="tab" aria-selected="false" data-input-mode="listing">Επικόλληση αγγελίας</button>
 </div>
 </div>
+<section id="listingPanel" class="listing-panel" hidden aria-label="Εισαγωγή αγγελίας">
+<label for="listingUrl">Σύνδεσμος αγγελίας mobile.de / AutoScout24</label>
+<input id="listingUrl" type="url" placeholder="https://suchen.mobile.de/fahrzeuge/details.html?id=…" autocomplete="off">
+<label for="listingText">Εναλλακτικά, επικόλλησε το κείμενο της αγγελίας</label>
+<textarea id="listingText" rows="5" maxlength="50000" placeholder="Τίτλος και τεχνικά στοιχεία: πρώτη άδεια, χιλιόμετρα, ισχύς, καύσιμο, κιβώτιο…"></textarea>
+<p>Η εισαγωγή δεν καταναλώνει token. Έλεγξε την αντιστοίχιση πριν από τον υπολογισμό.</p>
+<button id="listingReadBtn" type="button" class="listing-read-btn">Ανάγνωση αγγελίας</button>
+<p id="listingStatus" role="status" aria-live="polite"></p>
+<div id="listingResults"></div>
+</section>
+<p id="listingAppliedNote" class="listing-warning" hidden></p>
 <div class="config-heading catalog-only-block"><div class="config-heading-title"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div><button type="button" id="randomSelectBtn" class="random-select-btn random-select-heading-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης"><span class="random-select-heading-icon" aria-hidden="true">↻</span><span>Τυχαία Επιλογή</span></button></div>
 <div class="form-grid vehicle-fields catalog-only-block">
 <div class="field-block dropdown-card brand-dropdown-card">
@@ -735,6 +746,7 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20260929-token-purchases-01"></script>
+<script src="script.js?v=20261002-listing-01"></script>
+<script src="listing-import.js?v=20261002-1"></script>
 </body>
 </html>

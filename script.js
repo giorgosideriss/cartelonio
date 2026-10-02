@@ -113,7 +113,7 @@ const BRAND_LOGOS = {
   "Lotus": "https://logos-world.net/wp-content/uploads/2021/09/Lotus-Logo-700x394.png",
   "MG": "https://logos-world.net/wp-content/uploads/2021/09/MG-Logo-700x394.png",
   "MINI": "https://cdn.simpleicons.org/mini/B8BCB9",
-  "Maserati": "https://freepngimg.com/download/maserati/24485-4-maserati-logo-photos.png",
+  "Maserati": "https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo-2006-2020.png",
   "Mazda": "https://logos-world.net/wp-content/uploads/2020/05/Mazda-Logo-700x394.png",
   "McLaren": "https://listcarbrands.com/wp-content/uploads/2016/12/McLaren-Logo-1998.png",
   "Mercedes-Benz": "https://logos-world.net/wp-content/uploads/2020/05/Mercedes-Benz-Logo-700x394.png",
@@ -1088,6 +1088,7 @@ function initResultBreakdownTabs(){
 async function calculate(){
  clearCalculationWarnings();
  const stage=document.querySelector('.vehicle-configurator-v2');
+ if(stage?.dataset.inputMode==='listing'){showCalculationError('Διάβασε την αγγελία και επίλεξε έκδοση πριν από τον υπολογισμό.',[]);return;}
  const inputMode=stage?.dataset.inputMode==='manual'?'manual':'catalog';
  const isManual=inputMode==='manual';
  // Always synchronize the visible first-registration control before validation/request.
@@ -2655,7 +2656,8 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
     if (!stage || !modeButtons.length) return;
 
     function setMode(mode){
-      if (mode !== 'catalog' && mode !== 'manual') return;
+      if (!['catalog','manual','listing'].includes(mode)) return;
+      document.getElementById('listingPanel').hidden = mode !== 'listing';
       stage.classList.toggle('manual-input-mode', mode === 'manual');
       stage.dataset.inputMode = mode;
 
@@ -2693,7 +2695,7 @@ document.getElementById('accountHelpBtn')?.addEventListener('click', () => {
     modeButtons.forEach(button => {
       button.addEventListener('click', () => {
         const mode = button.dataset.inputMode;
-        if (mode === 'catalog' || mode === 'manual') setMode(mode);
+        if (['catalog','manual','listing'].includes(mode)) setMode(mode);
       });
     });
 
