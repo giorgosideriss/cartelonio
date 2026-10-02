@@ -128,7 +128,7 @@ const BRAND_LOGOS = {
   "Rolls-Royce": "https://logos-world.net/wp-content/uploads/2021/04/Rolls-Royce-Logo-700x394.png",
   "Seat": "https://logos-world.net/wp-content/uploads/2021/03/SEAT-Logo.png",
   "Skoda": "https://cdn.skoda-storyboard.com/2020/11/SKODA-3D-Standard-Logo_sRGB-e1478246875778.png",
-  "Smart": "https://logos-world.net/wp-content/uploads/2021/06/Smart-Logo-500x281.png",
+  "Smart": "https://logos-world.net/wp-content/uploads/2021/04/Smart-Symbol.png",
   "Subaru": "https://logos-world.net/wp-content/uploads/2021/06/Subaru-Logo-500x281.png",
   "Suzuki": "https://logos-world.net/wp-content/uploads/2021/10/Suzuki-Logo-700x394.png",
   "Tesla": "https://logos-world.net/wp-content/uploads/2020/10/Tesla-Logo.png",
