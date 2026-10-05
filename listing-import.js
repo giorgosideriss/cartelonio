@@ -1,4 +1,34 @@
 (function(){
+  function listingRequestInput(urlValue, textValue) {
+    const rawUrl = urlValue.trim();
+    const rawText = textValue.trim();
+    const extract = value => {
+      const links = value.match(/https:\/\/[^\s<>"`]+/gi) || [];
+      if (links.length !== 1) throw Error('Βάλε έναν σύνδεσμο συγκεκριμένης αγγελίας.');
+      return links[0].replace(/[).,;!]+$/, '');
+    };
+    let url = rawUrl ? extract(rawUrl) : undefined;
+    let text = rawText || undefined;
+    // App sharing is a URL request, not technical listing text.
+    if (!url && rawText && (/^https:\/\/\S+$/i.test(rawText) || /^I found an interesting offer!\s*Take a look:/i.test(rawText))) {
+      url = extract(rawText);
+      text = undefined;
+    }
+    if (url) {
+      const u = new URL(url);
+      if (['mobile.de','www.mobile.de','suchen.mobile.de','m.mobile.de'].includes(u.hostname) &&
+          u.protocol === 'https:' && !u.username && !u.password && !u.port) {
+        u.hostname = 'suchen.mobile.de';
+        const id = u.searchParams.get('id');
+        u.search = '';
+        if (id) u.searchParams.set('id', id);
+        u.hash = '';
+        url = u.href;
+      }
+    }
+    return { url, text };
+  }
+
   async function setup(){
     const panel=document.getElementById('listingPanel');if(!panel)return;
     const input=document.getElementById('listingUrl'),text=document.getElementById('listingText'),button=document.getElementById('listingReadBtn'),status=document.getElementById('listingStatus'),results=document.getElementById('listingResults');
@@ -11,7 +41,7 @@
         const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261002-1');
         await Promise.all([catalogReady,cartelonioAuthReady]);
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
-        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify({url:input.value.trim()||undefined,text:text.value.trim()||undefined}),signal:AbortSignal.timeout(90000)});
+        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(listingRequestInput(input.value,text.value)),signal:AbortSignal.timeout(90000)});
         const payload=await res.json();
         const errors={apify_token_missing:'Δεν έχει δηλωθεί το APIFY_API_TOKEN στο Supabase.',apify_auth_error:'Το Apify απέρριψε το API token ή την πρόσβαση στον scraper.',apify_credit_error:'Δεν υπάρχει διαθέσιμη πίστωση στο Apify.',apify_timeout:'Η ανάγνωση ξεπέρασε το χρονικό όριο. Δοκίμασε επικόλληση κειμένου.',apify_no_results:'Το Apify δεν επέστρεψε αγγελία. Έλεγξε αν είναι ακόμη ενεργή.',apify_listing_mismatch:'Το Apify επέστρεψε διαφορετική αγγελία. Η εισαγωγή ακυρώθηκε.',apify_request_failed:'Απέτυχε το αίτημα Apify. Έλεγξε τα Logs στο Supabase.',apify_invalid_output:'Το Apify επέστρεψε μη αναμενόμενη μορφή δεδομένων.',autoscout_provider_not_configured:'Η σύνδεση URL με Apify είναι προς το παρόν διαθέσιμη για mobile.de. Για AutoScout24 χρησιμοποίησε επικόλληση κειμένου.',quota_unavailable:'Δεν είναι διαθέσιμος ο έλεγχος ορίου εισαγωγών. Έλεγξε το SQL στο Supabase.',invalid_listing_url:'Βάλε σύνδεσμο συγκεκριμένης αγγελίας από mobile.de ή AutoScout24 (.de/.com/.ch).',rate_limited:'Έφτασες το όριο των 20 εισαγωγών ανά ώρα. Δοκίμασε αργότερα.',invalid_listing_input:'Βάλε URL ή επικόλλησε το κείμενο με τα τεχνικά στοιχεία.',unauthorized:'Ανανέωσε τη σελίδα και συνδέσου ξανά.'};
         if(!res.ok)throw Error(errors[payload.error]||`Δεν ήταν δυνατή η εισαγωγή (${payload.error||res.status}). Δοκίμασε επικόλληση κειμένου.`);
