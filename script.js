@@ -86,7 +86,7 @@ const BRAND_LOGOS = {
   "Aston Martin": "https://logos-world.net/wp-content/uploads/2022/08/Aston-Martin-New-Logo-500x281.png",
   "Audi": "https://cdn.simpleicons.org/audi/B8BCB9",
   "BMW": "https://logos-world.net/wp-content/uploads/2020/04/BMW-Logo-1997-2020.png",
-  "BYD": "https://logos-world.net/wp-content/uploads/2021/09/BYD-Logo.png",
+  "BYD": "https://1000logos.net/wp-content/uploads/2020/07/BYD-Logo.png",
   "Bentley": "https://1000logos.net/wp-content/uploads/2025/09/Emblem-Bentley.png",
   "Chery": "https://logos-world.net/wp-content/uploads/2021/09/Chery-Logo-500x281.png",
   "Chrysler": "https://logos-world.net/wp-content/uploads/2021/09/Chrysler-Logo-500x281.png",
