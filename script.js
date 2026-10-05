@@ -124,7 +124,7 @@ const BRAND_LOGOS = {
   "Peugeot": "https://logos-world.net/wp-content/uploads/2021/10/Peugeot-Logo.png",
   "Polestar": "https://logos-world.net/wp-content/uploads/2022/12/Polestar-Logo-500x281.png",
   "Porsche": "https://logos-world.net/wp-content/uploads/2023/06/Porsche-New-Logo-500x281.png",
-  "Renault": "https://logos-world.net/wp-content/uploads/2021/02/New-Renault-Logo-700x394.png",
+  "Renault": "https://logos-world.net/wp-content/uploads/2021/04/Renault-Symbol-700x394.png",
   "Rolls-Royce": "https://logos-world.net/wp-content/uploads/2021/04/Rolls-Royce-Logo-700x394.png",
   "Seat": "https://logos-world.net/wp-content/uploads/2021/03/SEAT-Logo.png",
   "Skoda": "https://cdn.skoda-storyboard.com/2020/11/SKODA-3D-Standard-Logo_sRGB-e1478246875778.png",
