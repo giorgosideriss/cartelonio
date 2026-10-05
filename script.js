@@ -922,6 +922,8 @@ function autoFillCarData() {
       ? normalizedPowertrain : "";
   }
 
+  syncElectricVehicleFields();
+
   const autoBodyType = edition.bodyType || modelObj.category;
   document.getElementById("category").value = autoBodyType && categories[autoBodyType] ? autoBodyType : "Επιλέξτε Κατηγορία Αμαξώματος";
 
@@ -2727,3 +2729,39 @@ document.addEventListener("blur", (event) => {
   const n = parseLocalizedNumber(event.target.value);
   if (Number.isFinite(n) && n > 0) event.target.value = n.toLocaleString("el-GR", {style:"currency", currency:"EUR", minimumFractionDigits:2, maximumFractionDigits:2});
 }, true);
+
+
+/* Keep BEV technical inputs consistent with the calculation backend. */
+function syncElectricVehicleFields(changedField) {
+  const power = document.getElementById("powertrain");
+  const euro = document.getElementById("euroClass");
+  const co2 = document.getElementById("co2");
+  if (!power || !euro || !co2) return;
+
+  // A deliberate change away from BEV clears its previous technical values.
+  if (changedField === "powertrain" && power.value !== "electric") {
+    if (euro.value === "Electric") {
+      euro.value = "";
+      if (co2.value === "0") co2.value = "";
+    }
+  } else if (changedField === "euroClass" && euro.value !== "Electric") {
+    if (power.value === "electric") {
+      power.value = "";
+      if (co2.value === "0") co2.value = "";
+    }
+  } else if (power.value === "electric" || euro.value === "Electric") {
+    power.value = "electric";
+    euro.value = "Electric";
+    co2.value = "0";
+  }
+  updateVehicleSummaryCo2();
+}
+document.addEventListener("change", (event) => {
+  const field = event.target?.id;
+  if (["powertrain", "euroClass", "co2"].includes(field)) {
+    syncElectricVehicleFields(field);
+  }
+});
+document.addEventListener("input", (event) => {
+  if (event.target?.id === "co2") syncElectricVehicleFields("co2");
+});
