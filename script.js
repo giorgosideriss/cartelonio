@@ -1293,7 +1293,8 @@ const RANDOM_AVAILABLE_DATASETS = [
   ["Suzuki","2015"],["Suzuki","2016"],["Suzuki","2017"],["Suzuki","2018"],["Suzuki","2019"],["Suzuki","2020"],["Suzuki","2021"],["Suzuki","2022"],["Suzuki","2023"],["Suzuki","2024"],["Suzuki","2025"],["Suzuki","2026"],
   ["INEOS","2026"],
   ["Volvo","2015"],["Volvo","2016"],["Volvo","2017"],["Volvo","2018"],["Volvo","2019"],["Volvo","2020"],["Volvo","2021"],["Volvo","2022"],["Volvo","2023"],
-  ["Cupra","2022"],["Cupra","2023"],["Cupra","2024"],["Cupra","2025"],["Cupra","2026"]
+  ["Cupra","2022"],["Cupra","2023"],["Cupra","2024"],["Cupra","2025"],["Cupra","2026"],
+  ["Renault","2017"],["Renault","2018"],["Renault","2019"],["Renault","2020"],["Renault","2021"],["Renault","2022"],["Renault","2023"],["Renault","2024"],["Renault","2025"],["Renault","2026"]
   
 ];
 
