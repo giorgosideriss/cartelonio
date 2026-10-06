@@ -6767,3 +6767,14 @@ body.welcome10-open{overflow:hidden}
 body.header-menu-open{overflow:hidden}
 }
 @media(prefers-reduced-motion:reduce){.site-header .header-navigation{transition:none}}
+
+/* A filtered sticky header becomes the containing block of fixed children.
+   Keep the mobile drawer and its backdrop anchored to the viewport instead. */
+@media(max-width:700px){
+  .site-header{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none!important;transform:none!important;background:rgba(248,250,246,.98)}
+  .site-header .header-inner,.site-header .header-copy,.site-header .account-controls{filter:none!important;transform:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;contain:none!important;will-change:auto!important}
+  .site-header .header-inner{flex-wrap:nowrap!important;align-items:center!important}
+  .site-header .header-copy{width:auto!important;flex:0 0 auto!important;margin-left:auto!important;flex-wrap:nowrap!important}
+  .site-header .account-controls{flex:0 0 auto!important;flex-wrap:nowrap!important}
+  .site-header .header-navigation{height:100dvh;max-height:100dvh;padding-top:max(23px,env(safe-area-inset-top));padding-bottom:max(23px,env(safe-area-inset-bottom))}
+}
