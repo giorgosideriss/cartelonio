@@ -2865,3 +2865,43 @@ document.addEventListener("input", (event) => {
   });
   retry.addEventListener("click",()=>void generateExamples());
 })();
+
+// The same header controls are used on desktop and inside the mobile drawer.
+(() => {
+  const nav = document.getElementById('headerNavigation');
+  const toggle = document.getElementById('mobileMenuToggle');
+  const close = document.getElementById('mobileMenuClose');
+  const backdrop = document.getElementById('mobileMenuBackdrop');
+  if (!nav || !toggle || !close || !backdrop) return;
+  const mobile = window.matchMedia('(max-width:700px)');
+  let opened = false;
+  function setOpen(value, restoreFocus = true) {
+    opened = value && mobile.matches;
+    nav.classList.toggle('is-open', opened);
+    toggle.setAttribute('aria-expanded', String(opened));
+    toggle.setAttribute('aria-label', opened ? 'Κλείσιμο μενού' : 'Άνοιγμα μενού');
+    backdrop.hidden = !opened;
+    document.body.classList.toggle('header-menu-open', opened);
+    nav.inert = mobile.matches && !opened;
+    if (opened) close.focus();
+    else if (restoreFocus && mobile.matches) toggle.focus();
+  }
+  toggle.addEventListener('click', () => setOpen(!opened));
+  close.addEventListener('click', () => setOpen(false));
+  backdrop.addEventListener('click', () => setOpen(false));
+  nav.querySelectorAll(':scope > button').forEach(button => {
+    button.addEventListener('click', () => { if (opened) setOpen(false, false); });
+  });
+  document.addEventListener('keydown', event => {
+    if (!opened) return;
+    if (event.key === 'Escape') { event.preventDefault(); setOpen(false); }
+    if (event.key === 'Tab') {
+      const buttons = [close, ...nav.querySelectorAll(':scope > button')];
+      const first = buttons[0], last = buttons[buttons.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  });
+  mobile.addEventListener('change', () => setOpen(false, false));
+  setOpen(false, false);
+})();
