@@ -1855,6 +1855,7 @@ function renderAccountState() {
   const user = cartelonioSession?.user;
   const balance = Number(cartelonioProfile?.token_balance || 0);
   const isPermanent = Boolean(user && !user.is_anonymous);
+  updateVoucherLoginNotice();
   const badge = authElement("tokenBadge");
   const badgeText = authElement("tokenBadgeText");
   if (badgeText) badgeText.textContent = `Tokens (${balance.toLocaleString("el-GR")})`;
@@ -1985,11 +1986,23 @@ async function loadUsedTokens() {
   if (cartelonioSession?.user?.id !== userId) return;
   if (error) {
     console.warn("Unable to load token usage:", error);
-    authElement("tokensUsedNote").textContent = "Δεν ήταν δυνατή η φόρτωση χρήσης. Δοκίμασε ξανά.";
+
     return;
   }
   used.textContent = Number(data || 0).toLocaleString("el-GR");
-  authElement("tokensUsedNote").textContent = "Χρεώσεις υπολογισμών από το ιστορικό tokens.";
+
+}
+
+function updateVoucherLoginNotice(reset = false) {
+  const notice = authElement("tokensVoucherNotice");
+  if (!notice) return;
+  const signedIn = Boolean(cartelonioSession?.user && !cartelonioSession.user.is_anonymous);
+  if (!signedIn) {
+    notice.textContent = "Συνδέσου και εισήγαγε τον κωδικό σου για δωρεάν tokens.";
+  } else if (reset || notice.textContent.startsWith("Συνδέσου")) {
+    notice.textContent = "";
+  }
+  notice.hidden = !notice.textContent;
 }
 
 async function redeemCartelonioVoucher() {
@@ -1997,6 +2010,7 @@ async function redeemCartelonioVoucher() {
   const input = authElement("tokensVoucherCode");
   const notice = authElement("tokensVoucherNotice");
   if (!button || !input || !notice) return;
+  notice.hidden = false;
   if (!cartelonioSession?.user || cartelonioSession.user.is_anonymous) {
     notice.textContent = "Συνδέσου σε λογαριασμό για να εξαργυρώσεις κωδικό.";
     return;
@@ -2035,7 +2049,10 @@ authElement("tokensVoucherToggle")?.addEventListener("click", () => {
   if (!toggle || !form) return;
   form.hidden = !form.hidden;
   toggle.setAttribute("aria-expanded", String(!form.hidden));
-  if (!form.hidden) authElement("tokensVoucherCode")?.focus();
+  if (!form.hidden) {
+    updateVoucherLoginNotice(true);
+    authElement("tokensVoucherCode")?.focus();
+  }
 });
 authElement("tokensRedeem")?.addEventListener("click", redeemCartelonioVoucher);
 authElement("tokensVoucherCode")?.addEventListener("keydown", event => {
@@ -2059,7 +2076,7 @@ function setTokenPurchaseNotice(message, type = "") {
 }
 
 function setTokenPackageButtonsDisabled(disabled) {
-  document.querySelectorAll("[data-token-package]").forEach(button => {
+  document.querySelectorAll("[data-token-package], #tokenCheckoutButton").forEach(button => {
     button.disabled = Boolean(disabled);
   });
 }
@@ -2176,9 +2193,29 @@ authElement("tokensPurchaseToggle")?.addEventListener("click", () => {
   toggle.setAttribute("aria-expanded", String(!panel.hidden));
 });
 
-document.querySelectorAll("[data-token-package]").forEach(button => {
-  button.addEventListener("click", () => startTokenCheckout(button.dataset.tokenPackage));
+function updateTokenCheckoutSelection() {
+  const selectedInput = document.querySelector('input[name="tokenPackage"]:checked');
+  const button = authElement("tokenCheckoutButton");
+  const selected = CARTELONIO_TOKEN_PACKAGES[selectedInput?.value];
+  if (!button) return;
+  if (!selected) {
+    button.disabled = true;
+    button.textContent = "Επίλεξε πακέτο";
+    return;
+  }
+  button.disabled = false;
+  const price = selected.price.replace("€", "").trim();
+  button.textContent = `Συνέχεια με ${selected.label} · ${price} €`;
+}
+
+document.querySelectorAll('input[name="tokenPackage"]').forEach(input => {
+  input.addEventListener("change", updateTokenCheckoutSelection);
 });
+authElement("tokenCheckoutButton")?.addEventListener("click", () => {
+  const selected = document.querySelector('input[name="tokenPackage"]:checked');
+  if (selected) startTokenCheckout(selected.value);
+});
+updateTokenCheckoutSelection();
 
 window.setTimeout(handleTokenPaymentReturn, 0);
 

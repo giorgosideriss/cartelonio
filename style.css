@@ -6638,3 +6638,27 @@ body.welcome10-open{overflow:hidden}
 .vehicle-input-mode[data-input-mode="listing"]{position:relative;overflow:visible!important}
 .listing-beta-badge{position:absolute;top:-8px;right:8px;padding:3px 7px;border-radius:6px;background:#1b2b19;color:#b9ef98;border:1px solid rgba(185,239,152,.65);font-size:9px;font-weight:800;line-height:1.2;letter-spacing:.8px;pointer-events:none;box-shadow:0 2px 6px rgba(0,0,0,.15)}
 @media(max-width:600px){.vehicle-configurator-v2 .listing-panel{padding:16px;border-radius:17px;gap:11px}.vehicle-configurator-v2 .listing-panel label{font-size:13px}.vehicle-configurator-v2 .listing-panel input,.vehicle-configurator-v2 .listing-panel textarea{font-size:16px}.listing-beta-badge{font-size:8px;padding:3px 5px;right:5px}}
+
+/* Tokens 0.9 beta: select a package, then continue to the existing checkout. */
+.token-package-selector{display:grid;gap:10px;min-width:0;margin:0;padding:0;border:0}
+.token-package-selector legend{margin:0 0 12px;padding:0;font-size:14px;font-weight:650;color:#26382d}
+.token-package-choice{display:flex;align-items:center;gap:12px;min-width:0;margin:0;padding:15px 12px;border:1px solid #dfe7e1;border-radius:12px;background:#fff;color:#203129;cursor:pointer;transition:border-color .15s ease,background .15s ease}
+.token-package-choice:has(input:checked){border-color:#347646;background:#f2f7f2}
+.token-package-choice:has(input:focus-visible){outline:3px solid #61946c;outline-offset:2px}
+.token-package-choice input[type="radio"]{appearance:auto;-webkit-appearance:radio;flex:0 0 18px;width:18px;height:18px;min-height:0;margin:0;padding:0;accent-color:#347646;box-shadow:none}
+.token-choice-copy{flex:1;min-width:0}
+.token-choice-copy strong{display:block;color:#203129;font-size:14px;font-weight:650;line-height:1.3}
+.token-choice-copy small{display:block;margin-top:4px;color:#627368;font-size:12px;line-height:1.4}
+.token-choice-price{flex:0 0 auto;color:#203129;font-size:17px;font-weight:650;letter-spacing:-.02em;white-space:nowrap}
+.token-checkout-button{display:block;width:100%;min-height:44px;margin-top:18px;padding:13px 10px;border:0;border-radius:10px;background:#2d713f;color:#fff;font:inherit;font-size:14px;font-weight:650;line-height:1.4;cursor:pointer;transition:background .15s ease}
+.token-checkout-button:hover{background:#235c33}
+.token-checkout-button:focus-visible{outline:3px solid #61946c;outline-offset:3px}
+.token-checkout-button:disabled{opacity:.58;cursor:wait}
+.token-package-choice:has(input:disabled){opacity:.58;cursor:wait}
+.tokens-purchase-panel .tokens-purchase-note{font-size:12px;line-height:1.55;margin-top:14px}
+.account-finder-avatar .account-user-icon{width:30px;height:30px;display:block}
+.account-finder-row-icon .account-user-icon{width:23px;height:23px;display:block}
+@media(max-width:380px){.token-package-choice{gap:9px;padding:13px 10px}.token-choice-price{font-size:16px}.token-choice-copy small{font-size:11px}.tokens-purchase-panel{padding:12px}}
+@media(prefers-reduced-motion:reduce){.token-package-choice,.token-checkout-button{transition:none}}
+
+.tokens-voucher-note[hidden]{display:none!important}
