@@ -6778,3 +6778,13 @@ body.header-menu-open{overflow:hidden}
   .site-header .account-controls{flex:0 0 auto!important;flex-wrap:nowrap!important}
   .site-header .header-navigation{height:100dvh;max-height:100dvh;padding-top:max(23px,env(safe-area-inset-top));padding-bottom:max(23px,env(safe-area-inset-bottom))}
 }
+
+/* Stable mobile label, independent of the signed-in account button text. */
+.site-header .header-navigation #accountButton .account-mobile-label{display:none!important}
+@media(min-width:701px){
+  .site-header .header-navigation #accountButton{width:44px;min-width:44px;padding:0}
+}
+@media(max-width:700px){
+  .site-header .header-navigation #accountButton .account-mobile-label{display:inline!important;position:static;width:auto;height:auto;margin:0;padding:0;overflow:visible;clip:auto;white-space:normal}
+  .site-header .header-navigation #accountButton #accountButtonText{display:none!important}
+}
