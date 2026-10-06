@@ -1,4 +1,3 @@
-const CARTELONIO_TOKEN_PURCHASES_ENABLED = false;
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ (AUTO-GENERATED 2015–2025) === */
 
@@ -1081,15 +1080,22 @@ function initResultBreakdownTabs(root=document.getElementById("results")){
 }
 
 function openTokenPurchaseOptions() {
-  if (!CARTELONIO_TOKEN_PURCHASES_ENABLED) return;
   openTokensMenu();
   const panel = authElement("tokensPurchasePanel");
   if (panel) panel.hidden = false;
   authElement("tokensPurchaseToggle")?.setAttribute("aria-expanded", "true");
+  setTokenPurchaseNotice("Δεν μπορείς να κάνεις νέο υπολογισμό χωρίς tokens. Επίλεξε πακέτο για να συνεχίσεις.", "error");
+  panel?.scrollIntoView?.({block:"nearest", behavior:"smooth"});
+  authElement("tokenCheckoutButton")?.focus({preventScroll:true});
 }
 function showTokensRequired() {
   setRegistrationTaxMiniResult(null);
-  showCalculationError("Δεν μπορείς να κάνεις υπολογισμό χωρίς διαθέσιμα tokens. Η αγορά tokens θα είναι σύντομα διαθέσιμη. Αν έχεις κωδικό προσφοράς, μπορείς να τον εξαργυρώσεις από το μενού tokens.");
+  showCalculationError("Δεν μπορείς να κάνεις υπολογισμό χωρίς διαθέσιμα tokens. Αγόρασε ένα πακέτο για να συνεχίσεις.");
+  const action=document.createElement("button");
+  action.type="button";action.className="calculation-buy-tokens";action.textContent="Αγορά tokens";
+  action.addEventListener("click",openTokenPurchaseOptions);
+  document.getElementById("results")?.querySelector(".calculation-error-message > div")?.append(action);
+  openTokenPurchaseOptions();
 }
 
 async function calculate(){
@@ -2042,7 +2048,7 @@ function setTokenPurchaseNotice(message, type = "") {
 
 function setTokenPackageButtonsDisabled(disabled) {
   document.querySelectorAll("[data-token-package], #tokenCheckoutButton").forEach(button => {
-    button.disabled = !CARTELONIO_TOKEN_PURCHASES_ENABLED || Boolean(disabled);
+    button.disabled = Boolean(disabled);
   });
 }
 
@@ -2070,7 +2076,6 @@ function showTokenPurchaseToast(message, type = "success") {
 }
 
 async function startTokenCheckout(packageId) {
-  if (!CARTELONIO_TOKEN_PURCHASES_ENABLED) return;
   const selected = CARTELONIO_TOKEN_PACKAGES[packageId];
   if (!selected) return;
 
@@ -2181,7 +2186,6 @@ async function handleTokenPaymentReturn() {
 }
 
 authElement("tokensPurchaseToggle")?.addEventListener("click", () => {
-  if (!CARTELONIO_TOKEN_PURCHASES_ENABLED) return;
   const toggle = authElement("tokensPurchaseToggle");
   const panel = authElement("tokensPurchasePanel");
   if (!toggle || !panel) return;
@@ -2194,11 +2198,6 @@ function updateTokenCheckoutSelection() {
   const button = authElement("tokenCheckoutButton");
   const selected = CARTELONIO_TOKEN_PACKAGES[selectedInput?.value];
   if (!button) return;
-  if (!CARTELONIO_TOKEN_PURCHASES_ENABLED) {
-    button.disabled = true;
-    button.textContent = "Σύντομα διαθέσιμο";
-    return;
-  }
   if (!selected) {
     button.disabled = true;
     button.textContent = "Επίλεξε πακέτο";
@@ -2540,9 +2539,9 @@ function renderHistoryDashboard(record) {
  const co2Display=v.co2==null?"—":historyNumber(v.co2),mileageDisplay=record.mileage==null?"—":historyNumber(record.mileage),envFee=r.environmentalFee;
  const logo=BRAND_LOGOS[record.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[record.brand]):"";
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
- const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">Αποθηκευμένος υπολογισμός</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
+ const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">${record.is_example?"Παράδειγμα υπολογισμού":"Αποθηκευμένος υπολογισμός"}</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
  const breakdown=record.calculation_breakdown||record.calculationBreakdown||stored.calculationBreakdown||stored.calculation_breakdown;
- return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:"Αποθηκευμένη ΛΤΠΦ",provenanceNote:"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
+ return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:"Αποθηκευμένη ΛΤΠΦ",provenanceNote:record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
 }
 function renderHistoryRecord(record){
  const displayHistoryEdition=cleanEditionDisplayName(record.edition,record.brand,record.model);
@@ -2565,7 +2564,7 @@ function renderHistoryRecord(record){
  head.append(visual,main,money);article.append(head);
  const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
- main.append(favorite);
+ if (!record.is_example) main.append(favorite);
  const restore=historyNode('button','history-action history-restore','↻ Επαναφορά στοιχείων');restore.type='button';
  const remove=historyNode('button','history-action history-delete','Διαγραφή');remove.type='button';
  const expanded=historyNode('div','history-expanded');expanded.hidden=true;
@@ -2573,7 +2572,7 @@ function renderHistoryRecord(record){
  dashboard.innerHTML=renderHistoryDashboard(record);
  initResultBreakdownTabs(dashboard);
  const actions=historyNode('div','history-entry-actions');actions.append(restore,remove);
- expanded.append(dashboard,actions);article.append(expanded);
+ expanded.append(dashboard);if (!record.is_example) expanded.append(actions);article.append(expanded);
  const chevron=historyNode('span','history-entry-chevron','›');chevron.setAttribute('aria-hidden','true');head.append(chevron);
  head.classList.add('history-entry-trigger');head.setAttribute('role','button');head.tabIndex=0;
  head.setAttribute('aria-expanded','false');head.setAttribute('aria-label','Λεπτομέρειες υπολογισμού: '+[record.brand,record.model].filter(Boolean).join(' '));
@@ -2822,3 +2821,47 @@ document.addEventListener("change", (event) => {
 document.addEventListener("input", (event) => {
   if (event.target?.id === "co2") syncElectricVehicleFields("co2");
 });
+
+// Examples share the history renderer but never save records or consume tokens.
+(function initCalculationExamples() {
+  const dialog=document.getElementById("examplesDialog"),button=document.getElementById("openExamplesBtn");
+  const list=document.getElementById("examplesList"),message=document.getElementById("examplesMessage"),retry=document.getElementById("examplesRetry");
+  if(!dialog||!button)return;
+  let sequence=0;
+  async function generateExamples(){
+    const current=++sequence;
+    list.replaceChildren();retry.hidden=true;
+    list.setAttribute("aria-busy","true");
+    message.textContent="Δημιουργούμε 5 νέα παραδείγματα υπολογισμών…";
+    try {
+      await cartelonioAuthReady;
+      if(current!==sequence||!dialog.open)return;
+      if(!cartelonioDb||!cartelonioSession?.access_token)throw new Error("examples_session_unavailable");
+      const {data,error}=await cartelonioDb.functions.invoke("calculation-examples",{body:{}});
+      if(current!==sequence||!dialog.open)return;
+      if(error||!Array.isArray(data?.examples)||data.examples.length!==5)throw error||new Error("examples_unavailable");
+      data.examples.forEach(record=>{
+        record.is_example=true;
+        const card=renderHistoryRecord(record);list.append(card);
+        const image=card.querySelector(".history-car-image");if(image)void historyImage(record,image);
+      });
+      message.textContent="Πάτησε ένα παράδειγμα για να δεις την εικόνα, τα στοιχεία και την πλήρη ανάλυση.";
+    }catch(error){
+      if(current!==sequence||!dialog.open)return;
+      message.textContent="Δεν ήταν δυνατή η δημιουργία των παραδειγμάτων. Δοκίμασε ξανά.";
+      retry.hidden=false;console.warn("Examples unavailable",error);
+    }finally{if(current===sequence)list.setAttribute("aria-busy","false");}
+  }
+  button.addEventListener("click",()=>{
+    closeAuthModal();closeTokensMenu();closeHistory();
+    dialog.showModal();void generateExamples();
+  });
+  document.getElementById("examplesClose")?.addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("close",()=>{sequence++;button.focus();});
+  dialog.addEventListener("click",event=>{
+    if(event.target!==dialog)return;
+    const rect=dialog.getBoundingClientRect();
+    if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();
+  });
+  retry.addEventListener("click",()=>void generateExamples());
+})();

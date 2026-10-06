@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20261006-purchase-return" rel="stylesheet"/>
+<link href="style.css?v=20261006-examples" rel="stylesheet"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
      crossorigin="anonymous"></script>
@@ -138,6 +138,7 @@
       </div>
     </section>
   </div>
+<button type="button" class="examples-button" id="openExamplesBtn" aria-haspopup="dialog" aria-controls="examplesDialog" title="Παραδείγματα υπολογισμών"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h2m4 0h2m-8 4h2m4 0h2"/></svg><span>Παραδείγματα</span></button>
   <button class="account-button" id="accountButton" type="button" aria-label="Ο λογαριασμός μου" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
     <span class="account-button-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c.8-3.3 3-5 6.5-5s5.7 1.7 6.5 5"/></svg>
@@ -749,7 +750,8 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20261006-purchase-return"></script>
+<dialog id="examplesDialog" class="examples-window" aria-labelledby="examplesTitle"><section class="history-dialog"><header class="history-header"><div><span class="history-kicker">CARTELONIO · ΠΑΡΑΔΕΙΓΜΑΤΑ</span><h2 id="examplesTitle">Παραδείγματα</h2><p>5 νέοι τυχαίοι υπολογισμοί κάθε φορά · Χωρίς χρήση tokens</p></div><button type="button" id="examplesClose" class="history-close" aria-label="Κλείσιμο παραδειγμάτων">×</button></header><div class="history-content"><p id="examplesMessage" class="history-message" role="status" aria-live="polite"></p><div id="examplesList" class="history-list"></div><button type="button" id="examplesRetry" class="history-more" hidden>Δοκίμασε ξανά</button></div></section></dialog>
+<script src="script.js?v=20261006-examples"></script>
 <script src="listing-import.js?v=20261002-apify-2"></script>
 
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
@@ -760,6 +762,7 @@
   <button type="button" id="purchaseReturnRetry" class="purchase-return-retry" hidden>Έλεγχος ξανά</button>
   <button type="button" id="purchaseReturnContinue" class="token-checkout-button">Συνέχεια στους υπολογισμούς</button>
 </dialog>
+
 
 </body>
 </html>
