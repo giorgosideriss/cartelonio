@@ -2499,14 +2499,14 @@ function renderHistoryDashboard(record) {
  const r={totalTax:number(record.total_tax??saved.totalTax),registrationTax:number(record.registration_tax??saved.registrationTax),environmentalFee:number(record.environmental_fee??saved.environmentalFee),finalPrice:number(record.taxable_value??saved.finalPrice),exactMonths:number(record.exact_months??record.age_months??saved.exactMonths),exactYears:number(record.exact_years??saved.exactYears),yearDep:number(record.year_dep??saved.yearDep),totalDep:number(record.total_dep??record.depreciation_rate??saved.totalDep)};
  const v={ltpf:number(record.ltpf),co2:number(record.co2)};
  if(r.totalDep==null&&v.ltpf>0&&r.finalPrice!=null)r.totalDep=1-r.finalPrice/v.ltpf;
- const isManual=record.input_mode==="manual"||(!record.brand&&!record.model);
+ const isManual=record.input_mode==="manual"||stored.inputMode==="manual"||record.brand==="Χειροκίνητη εισαγωγή"||(!record.brand&&!record.model);
  const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
  const eur=value=>value==null?"—":historyEuro(value);
  const pct=value=>value==null?"—":`${(Number(value)*100).toLocaleString("el-GR",{maximumFractionDigits:1})}%`;
  const dateEl=value=>{if(!value)return "—";const date=String(value).slice(0,10).split("-");return date.length===3?date.reverse().join("/"):esc(value);};
  const firstRegistration=record.first_registration||"",importDate=record.import_date||"",mileageRaw=record.mileage;
  const technicalCategory=typeof record.body_type === "string" ? record.body_type : "—";
- const technicalEuro=record.euro_class||"—",technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό"})[record.powertrain]||record.powertrain||"—";
+ const technicalEuro=record.euro_class||"—",technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
  const co2Display=v.co2==null?"—":historyNumber(v.co2),mileageDisplay=record.mileage==null?"—":historyNumber(record.mileage),envFee=r.environmentalFee;
  const logo=BRAND_LOGOS[record.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[record.brand]):"";
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
