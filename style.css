@@ -6697,3 +6697,6 @@ body.welcome10-open{overflow:hidden}
 .purchase-return-retry{margin-top:18px;padding:10px 14px;border:1px solid #b8ccbb;border-radius:9px;background:#f2f7f2;color:#2d713f;font:inherit;cursor:pointer}
 .purchase-return-retry:focus-visible{outline:3px solid #61946c;outline-offset:3px}
 @media(max-width:480px){.purchase-return-dialog{padding:24px 20px}.purchase-return-dialog h2{font-size:21px}}
+
+.tokens-purchase-toggle:disabled{opacity:.55;cursor:not-allowed;pointer-events:none}
+.tokens-coming-soon{display:block;margin-top:3px;font-size:11px;font-weight:450;color:#758078;line-height:1.3}
