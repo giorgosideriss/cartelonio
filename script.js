@@ -2033,10 +2033,10 @@ authElement("tokensVoucherCode")?.addEventListener("keydown", event => {
 
 /* ================= STRIPE TOKEN PURCHASES ================= */
 const CARTELONIO_TOKEN_PACKAGES = Object.freeze({
-  starter: { label: "Starter", tokens: 5, price: "€1,99" },
-  standard: { label: "Standard", tokens: 15, price: "€3,99" },
-  plus: { label: "Plus", tokens: 40, price: "€7,99" },
-  pro: { label: "Pro", tokens: 150, price: "€24,99" }
+  starter: { label: "Starter", tokens: 1, price: "€0,99" },
+  standard: { label: "Standard", tokens: 5, price: "€3,99" },
+  plus: { label: "Plus", tokens: 20, price: "€9,99" },
+  pro: { label: "Pro", tokens: 99, price: "€24,99" }
 });
 
 function setTokenPurchaseNotice(message, type = "") {

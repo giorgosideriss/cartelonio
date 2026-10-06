@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20261006-results-history" rel="stylesheet"/>
+<link href="style.css?v=20261006-launch-offer" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -122,13 +122,14 @@
       </div>
       <button type="button" class="tokens-option tokens-purchase-toggle" id="tokensPurchaseToggle" aria-expanded="false" aria-controls="tokensPurchasePanel"><span class="tokens-option-icon tokens-shop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></span><span>Αγορά Tokens</span><span class="tokens-option-chevron" aria-hidden="true">›</span></button>
       <div class="tokens-purchase-panel" id="tokensPurchasePanel" hidden>
-        <fieldset class="token-package-selector"><legend>Επίλεξε πακέτο</legend>
-          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="starter" data-token-package="starter"><span class="token-choice-copy"><strong>Starter</strong><small>5 Tokens</small></span><span class="token-choice-price">1,99 €</span></label>
-          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="standard" data-token-package="standard"><span class="token-choice-copy"><strong>Standard</strong><small>15 Tokens</small></span><span class="token-choice-price">3,99 €</span></label>
-          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="plus" data-token-package="plus" checked><span class="token-choice-copy"><strong>Plus</strong><small>40 Tokens · Προτεινόμενο</small></span><span class="token-choice-price">7,99 €</span></label>
-          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="pro" data-token-package="pro"><span class="token-choice-copy"><strong>Pro</strong><small>150 Tokens</small></span><span class="token-choice-price">24,99 €</span></label>
+        <div class="token-launch-offer"><span>Προσφορά έναρξης</span><p>Γνώρισε το Cartelonio με μειωμένες τιμές σε όλα τα πακέτα.</p></div>
+        <fieldset class="token-package-selector"><legend>Επιλογή Πακέτου</legend>
+          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="starter" data-token-package="starter"><span class="token-choice-copy"><strong>Starter</strong><small>1 Token</small></span><span class="token-choice-price"><span class="token-price-original"><span class="sr-only">Αρχική τιμή </span><s>1,99 €</s></span><span class="token-price-offer"><span class="sr-only">Τιμή προσφοράς </span>0,99 €</span></span></label>
+          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="standard" data-token-package="standard"><span class="token-choice-copy"><strong>Standard</strong><small>5 Tokens</small></span><span class="token-choice-price"><span class="token-price-original"><span class="sr-only">Αρχική τιμή </span><s>6,99 €</s></span><span class="token-price-offer"><span class="sr-only">Τιμή προσφοράς </span>3,99 €</span></span></label>
+          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="plus" data-token-package="plus" checked><span class="token-choice-copy"><strong>Plus</strong><small>20 Tokens · Προτεινόμενο</small></span><span class="token-choice-price"><span class="token-price-original"><span class="sr-only">Αρχική τιμή </span><s>14,99 €</s></span><span class="token-price-offer"><span class="sr-only">Τιμή προσφοράς </span>9,99 €</span></span></label>
+          <label class="token-package-choice"><input type="radio" name="tokenPackage" value="pro" data-token-package="pro"><span class="token-choice-copy"><strong>Pro</strong><small>99 Tokens</small></span><span class="token-choice-price"><span class="token-price-original"><span class="sr-only">Αρχική τιμή </span><s>44,99 €</s></span><span class="token-price-offer"><span class="sr-only">Τιμή προσφοράς </span>24,99 €</span></span></label>
         </fieldset>
-        <button type="button" class="token-checkout-button" id="tokenCheckoutButton">Συνέχεια με Plus · 7,99 €</button>
+        <button type="button" class="token-checkout-button" id="tokenCheckoutButton">Συνέχεια με Plus · 9,99 €</button>
         <p class="tokens-purchase-note" id="tokensPurchaseNotice" role="status" aria-live="polite">Ασφαλής πληρωμή μέσω Stripe. Θα μεταφερθείς στη σελίδα πληρωμής.</p>
       </div>
     </section>
@@ -744,7 +745,7 @@
 </section>
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=20260922-secure-production-v10"></script>
-<script src="script.js?v=20261006-results-history"></script>
+<script src="script.js?v=20261006-launch-offer"></script>
 <script src="listing-import.js?v=20261002-apify-2"></script>
 </body>
 </html>
