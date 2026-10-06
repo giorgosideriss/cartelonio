@@ -6818,3 +6818,5 @@ body.header-menu-open{overflow:hidden}
 @media(max-width:700px){
   .site-header .header-navigation{bottom:auto;height:auto;max-height:calc(100dvh - 16px);padding-bottom:14px}
 }
+
+@media(max-width:700px){.mobile-menu-brand-logo{display:block;width:175px;max-width:100%;height:36px;object-fit:contain}.mobile-menu-wordmark{flex:1;min-width:0}}

@@ -1,4 +1,14 @@
-Cartelonio SEO / favicon update
-Upload these files to the ROOT of the production GitHub Pages repository, preserving existing images/, supabase-client.min.js and other assets. Do not delete existing files.
-Changes: favicon assets, cache-busted icon links, WebSite structured data. CSS and JS are unchanged copies of uploaded versions.
-The image at images/cartelonio-logo.png must remain in place. Google decides when and whether to show the favicon and site name.
+Νέο λογότυπο — πρώτη επιλογή
+
+Ανέβασε τα αρχεία στη δομή που έχουν μέσα στο ZIP:
+- images/cartelonio-logo.png: πλήρες λογότυπο, διάφανο.
+- images/cartelonio-symbol.png: ξεχωριστό σήμα, διάφανο.
+- favicon.ico και τα PNG icons: στον κεντρικό φάκελο του site.
+- index.html, style.css, script.js: στον κεντρικό φάκελο.
+
+Το index και style χρησιμοποιούν το νέο λογότυπο και στο πλαϊνό μενού.
+Περιλαμβάνονται όλες οι τελευταίες αλλαγές καλωσορίσματος και μενού.
+Το script.js παραμένει ίδιο με το τελευταίο πακέτο.
+Δεν χρειάζεται αλλαγή στο Supabase.
+
+Τα αρχεία αποτελούν εξαγωγές PNG/ICO, όχι διανυσματικά SVG.
