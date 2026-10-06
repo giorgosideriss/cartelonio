@@ -1630,7 +1630,7 @@ async function showRandomAboutCar(){
     authUrl.searchParams.get("type") === "recovery" ||
     authUrl.searchParams.has("token_hash") ||
     authHash.get("type") === "recovery";
-  if (isPasswordRecovery) {
+  if (isPasswordRecovery || ["success", "cancelled"].includes(authUrl.searchParams.get("payment"))) {
     modal.setAttribute("aria-hidden", "true");
     modal.classList.remove("is-open");
     document.body.classList.remove("cartelonio-onboarding-open");
@@ -2116,44 +2116,73 @@ async function startTokenCheckout(packageId) {
 async function handleTokenPaymentReturn() {
   const url = new URL(window.location.href);
   const payment = url.searchParams.get("payment");
-  if (payment !== "success" && payment !== "cancelled") return;
-
-  // Remove Stripe return parameters immediately so refresh does not replay the UI state.
+  if (!["success", "cancelled"].includes(payment)) return;
+  const sessionId = url.searchParams.get("session_id");
   url.searchParams.delete("payment");
   url.searchParams.delete("session_id");
-  const cleanUrl = `${url.pathname}${url.search}${url.hash}`;
-  window.history.replaceState({}, document.title, cleanUrl || "/");
-
-  try { await cartelonioAuthReady; } catch (_) {}
-  openTokensMenu();
-
-  const purchasePanel = authElement("tokensPurchasePanel");
-  const purchaseToggle = authElement("tokensPurchaseToggle");
-  if (purchasePanel) purchasePanel.hidden = false;
-  purchaseToggle?.setAttribute("aria-expanded", "true");
-
+  window.history.replaceState(window.history.state, document.title, `${url.pathname}${url.search}${url.hash}`);
+  const dialog = authElement("purchaseReturnDialog");
+  if (!dialog) return;
+  const title = authElement("purchaseReturnTitle"), message = authElement("purchaseReturnMessage");
+  const icon = authElement("purchaseReturnIcon"), thanks = authElement("purchaseReturnThanks");
+  const retry = authElement("purchaseReturnRetry"), proceed = authElement("purchaseReturnContinue");
+  let checking = false;
+  function state(heading, text, symbol, success = false) {
+    title.textContent = heading;
+    message.textContent = text;
+    icon.textContent = symbol;
+    thanks.hidden = !success;
+    dialog.classList.toggle("is-success", success);
+  }
+  proceed.onclick = () => {
+    dialog.close();
+    document.getElementById("calcForm")?.scrollIntoView({behavior:"smooth",block:"start"});
+  };
+  dialog.addEventListener("close", () => {
+    window.dispatchEvent(new Event("cartelonio:onboarding-finished"));
+  }, {once:true});
+  dialog.showModal();
   if (payment === "cancelled") {
-    setTokenPurchaseNotice("Η πληρωμή ακυρώθηκε. Δεν χρεώθηκαν χρήματα και δεν προστέθηκαν tokens.");
+    state("Η αγορά δεν ολοκληρώθηκε", "Η διαδικασία πληρωμής ακυρώθηκε. Μπορείς να δοκιμάσεις ξανά από την αγορά tokens.", "↩");
     return;
   }
-
-  setTokenPurchaseNotice("Η πληρωμή ολοκληρώθηκε. Επιβεβαιώνουμε τα tokens…", "success");
-
-  // Stripe can redirect a fraction before the webhook finishes. Poll only the profile balance briefly.
-  const initialBalance = Number(cartelonioProfile?.token_balance || 0);
-  for (let attempt = 0; attempt < 8; attempt += 1) {
-    await loadCartelonioProfile();
-    const currentBalance = Number(cartelonioProfile?.token_balance || 0);
-    if (currentBalance > initialBalance) {
-      setTokenPurchaseNotice("Η αγορά ολοκληρώθηκε και τα tokens προστέθηκαν στον λογαριασμό σου.", "success");
-      showTokenPurchaseToast("Τα tokens προστέθηκαν στον λογαριασμό σου.", "success");
-      await loadUsedTokens();
-      return;
-    }
-    await new Promise(resolve => window.setTimeout(resolve, 750));
+  async function checkPurchase() {
+    if (checking) return;
+    checking = true;
+    retry.hidden = true;
+    state("Επιβεβαιώνουμε την αγορά σου…", "Περιμένουμε την επιβεβαίωση της πίστωσης των tokens.", "…");
+    try {
+      await cartelonioAuthReady;
+      if (!cartelonioSession?.user || !cartelonioDb || !sessionId) throw new Error("purchase_verification_unavailable");
+      for (let attempt = 0; attempt < 12 && dialog.open; attempt++) {
+        const {data,error} = await cartelonioDb.functions.invoke("purchase-status", {body:{sessionId}});
+        if (error) throw error;
+        if (data?.credited === true && Number.isInteger(data.tokens) && data.tokens > 0) {
+          const amount = data.tokens.toLocaleString("el-GR");
+          state("Η αγορά ολοκληρώθηκε!", data.tokens === 1 ? "Προστέθηκε 1 token στον λογαριασμό σου." : `Προστέθηκαν ${amount} tokens στον λογαριασμό σου.`, "✓", true);
+          await loadCartelonioProfile();
+          return;
+        }
+        if (["failed", "expired"].includes(data?.status)) {
+          state("Η αγορά δεν έχει επιβεβαιωθεί", "Δεν έχει επιβεβαιωθεί πίστωση tokens για αυτή την αγορά. Έλεγξε την πληρωμή πριν δοκιμάσεις ξανά.", "!");
+          return;
+        }
+        if (attempt < 11) await new Promise(resolve => window.setTimeout(resolve,1000));
+      }
+      if (dialog.open) {
+        state("Η επιβεβαίωση καθυστερεί", "Δεν έχει επιβεβαιωθεί ακόμη η πίστωση των tokens. Έλεγξε ξανά σε λίγο — δεν χρειάζεται να επαναλάβεις την αγορά.", "…");
+        retry.hidden = false;
+      }
+    } catch (error) {
+      if (dialog.open) {
+        state("Δεν μπορέσαμε να επιβεβαιώσουμε την αγορά", "Έλεγξε ότι είσαι συνδεδεμένος στον λογαριασμό της αγοράς και δοκίμασε ξανά. Δεν χρειάζεται να επαναλάβεις την πληρωμή.", "!");
+        retry.hidden = false;
+      }
+      console.warn("Purchase confirmation unavailable",error);
+    } finally { checking = false; }
   }
-
-  setTokenPurchaseNotice("Η πληρωμή καταγράφηκε. Αν τα tokens δεν εμφανιστούν αμέσως, ανανέωσε σε λίγα δευτερόλεπτα.", "success");
+  retry.onclick = checkPurchase;
+  await checkPurchase();
 }
 
 authElement("tokensPurchaseToggle")?.addEventListener("click", () => {
