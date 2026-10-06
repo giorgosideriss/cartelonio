@@ -6820,3 +6820,27 @@ body.header-menu-open{overflow:hidden}
 }
 
 @media(max-width:700px){.mobile-menu-brand-logo{display:block;width:175px;max-width:100%;height:36px;object-fit:contain}.mobile-menu-wordmark{flex:1;min-width:0}}
+
+/* Match the desktop icon treatment to the mobile menu. */
+@media(min-width:701px){
+  .site-header .header-navigation .account-button-icon,
+  .site-header .header-navigation .token-icon,
+  .site-header .header-navigation .examples-nav-icon,
+  .site-header .header-navigation .how-to-use-icon{
+    display:grid!important;place-items:center;
+    width:30px;height:30px;min-width:30px;flex:0 0 30px;
+    border-radius:9px;background:#eaf0e5;color:#17382d;
+    margin:0;
+  }
+  .site-header .header-navigation>button svg{
+    width:20px;height:20px;fill:none;
+    stroke:#17382d!important;stroke-width:1.7;
+    stroke-linecap:round;stroke-linejoin:round;
+    color:#17382d!important;
+  }
+}
+@media(max-width:700px){
+  .site-header .header-navigation #tokenBadge{background:transparent}
+  .site-header .header-navigation #tokenBadge:hover,
+  .site-header .header-navigation #tokenBadge[aria-expanded="true"]{background:#edf3e9}
+}
