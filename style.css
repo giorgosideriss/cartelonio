@@ -6788,3 +6788,33 @@ body.header-menu-open{overflow:hidden}
   .site-header .header-navigation #accountButton .account-mobile-label{display:inline!important;position:static;width:auto;height:auto;margin:0;padding:0;overflow:visible;clip:auto;white-space:normal}
   .site-header .header-navigation #accountButton #accountButtonText{display:none!important}
 }
+
+/* Selected floating macOS menu concept */
+.mobile-menu-section-title{display:none}
+.site-header .header-navigation #tokenBadge .mobile-token-label,
+.site-header .header-navigation #tokenBadge .mobile-token-balance{display:none!important}
+@media(max-width:700px){
+.site-header .header-navigation{inset:8px 8px 8px auto;width:min(340px,82vw);height:calc(100dvh - 16px);max-height:calc(100dvh - 16px);padding:22px 18px;border:1px solid rgba(255,255,255,.85);border-radius:25px;background:linear-gradient(150deg,rgba(255,255,255,.98),rgba(246,249,243,.97));box-shadow:-12px 12px 45px rgba(17,35,23,.19);gap:7px}
+.site-header .header-navigation .mobile-menu-heading{padding:0 0 20px;margin:0 5px 7px;border-bottom:1px solid #dfe5de;gap:9px}
+.mobile-menu-wordmark{display:flex;align-items:center;gap:5px;min-width:0}
+.mobile-menu-wordmark strong{font-size:clamp(20px,6vw,25px);letter-spacing:-1px;color:#18392e}
+.site-header .header-navigation .mobile-menu-leaves{width:22px;height:29px;stroke:none;flex-shrink:0}
+.site-header .header-navigation #mobileMenuClose{width:37px;height:37px;min-width:37px;background:#edf2e9;color:#193a2e;font-size:28px;font-weight:400}
+.mobile-menu-section-title{display:block;font-size:18px;color:#18392e;margin:5px 8px 10px;letter-spacing:-.3px}
+.site-header .header-navigation>button{height:auto;min-height:65px;padding:11px 8px;gap:12px;border:0;border-radius:16px;background:transparent;box-shadow:none;color:#17382d;font-size:14px;font-weight:600;flex-shrink:0;position:relative}
+.site-header .header-navigation>button:hover{background:#edf3e9;color:#17382d}
+.site-header .header-navigation #tokenBadge{background:#edf3e9}
+.site-header .header-navigation>button:after,.site-header .header-navigation #tokenBadge:after{content:'›';display:block;margin-left:auto;color:#6b766b;font-size:27px;line-height:1;font-weight:400;background:none;border:0;position:static;transform:none;width:auto;height:auto}
+.site-header .header-navigation .account-button-icon,.site-header .header-navigation .token-icon,.site-header .header-navigation .examples-nav-icon,.site-header .header-navigation .how-to-use-icon{width:40px;height:40px;min-width:40px;flex:0 0 40px;display:grid!important;place-items:center;border-radius:12px;background:#eaf0e5;color:#17382d}
+.site-header .header-navigation>button svg{color:#17382d!important;width:23px;height:23px;stroke:currentColor!important;stroke-width:1.7;fill:none}
+.site-header .header-navigation #tokenBadge #tokenBadgeText{display:none!important}
+.site-header .header-navigation #tokenBadge .mobile-token-label{display:inline!important}
+.site-header .header-navigation #tokenBadge .mobile-token-balance{display:inline-flex!important;margin-left:auto;background:#e0e9d7;color:#536c43;padding:5px 10px;border-radius:20px;font-size:13px;font-weight:650;min-width:30px;justify-content:center}
+.site-header .header-navigation #tokenBadge:after{margin-left:0}
+}
+@media(max-width:360px){.site-header .header-navigation{padding:18px 12px;width:86vw}.site-header .header-navigation>button{font-size:13px;gap:9px}}
+
+/* Size the floating sheet to its contents, with a viewport ceiling. */
+@media(max-width:700px){
+  .site-header .header-navigation{bottom:auto;height:auto;max-height:calc(100dvh - 16px);padding-bottom:14px}
+}

@@ -104,7 +104,7 @@
 <button type="button" id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="headerNavigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
 <div id="mobileMenuBackdrop" class="mobile-menu-backdrop" hidden></div>
 <nav id="headerNavigation" class="header-navigation" aria-label="Κύριο μενού">
-<div class="mobile-menu-heading"><strong>Μενού</strong><button type="button" id="mobileMenuClose" aria-label="Κλείσιμο μενού">×</button></div>
+<div class="mobile-menu-heading"><div class="mobile-menu-wordmark"><svg class="mobile-menu-leaves" viewBox="0 0 32 40" aria-hidden="true"><path d="M18 27C8 18 13 6 28 1c5 15 1 24-10 26Z" fill="#648558"/><path d="M14 36C4 36 0 27 2 21c10 1 16 6 12 15Z" fill="#476b3b"/></svg><strong>Cartelonio</strong></div><button type="button" id="mobileMenuClose" aria-label="Κλείσιμο μενού">×</button></div><h2 class="mobile-menu-section-title">Μενού</h2>
   <button class="account-button" id="accountButton" type="button" aria-label="Ο λογαριασμός μου" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
     <span class="account-button-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c.8-3.3 3-5 6.5-5s5.7 1.7 6.5 5"/></svg>
@@ -116,13 +116,10 @@
     <span class="token-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false"><ellipse cx="12" cy="6.5" rx="7" ry="3.5"/><path d="M5 6.5v5c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-5"/><path d="M5 11.5v5c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-5"/></svg>
     </span>
-    <span id="tokenBadgeText">Tokens (—)</span>
+    <span id="tokenBadgeText">Tokens (—)</span><span class="mobile-token-label">Tokens</span><span id="mobileTokenBalance" class="mobile-token-balance">—</span>
   </button>
-<button type="button" class="examples-button" id="openExamplesBtn" aria-haspopup="dialog" aria-controls="examplesDialog" title="Παραδείγματα υπολογισμών"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h2m4 0h2m-8 4h2m4 0h2"/></svg><span>Παραδείγματα</span></button>
-<button class="how-to-use-btn" id="howToUseBtn" type="button" aria-haspopup="dialog" aria-controls="howToUseModal">
-  <span>How to use</span>
-  <span class="how-to-use-icon" aria-hidden="true">?</span>
-</button>
+<button type="button" class="examples-button" id="openExamplesBtn" aria-haspopup="dialog" aria-controls="examplesDialog" title="Παραδείγματα υπολογισμών"><span class="examples-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 10h2m4 0h2m-8 4h2m4 0h2m-8 4h2m4 0h2"/></svg></span><span>Παραδείγματα</span></button>
+<button class="how-to-use-btn" id="howToUseBtn" type="button" aria-haspopup="dialog" aria-controls="howToUseModal"><span class="how-to-use-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .7-1.5 1-1.5 2M12 16h.01"/></svg></span><span>How to use</span></button>
 </nav>
 
 

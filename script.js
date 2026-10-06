@@ -2905,3 +2905,16 @@ document.addEventListener("input", (event) => {
   mobile.addEventListener('change', () => setOpen(false, false));
   setOpen(false, false);
 })();
+
+// Mirror the live token balance without changing the existing auth renderer.
+(() => {
+  const source = document.getElementById('tokenBadgeText');
+  const target = document.getElementById('mobileTokenBalance');
+  if (!source || !target) return;
+  function syncBalance() {
+    const match = source.textContent.match(/\(([^)]+)\)/);
+    target.textContent = match ? match[1] : '—';
+  }
+  new MutationObserver(syncBalance).observe(source, { childList: true, characterData: true, subtree: true });
+  syncBalance();
+})();
