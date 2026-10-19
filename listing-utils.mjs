@@ -42,7 +42,7 @@ export function parseListing(input, html = false) {
   const fuel=String(engine.fuelType||car.fuelType||labelled('Kraftstoff|Fuel type|Carburant','[^\\n]+')||'').slice(0,80);
   const transmission=String(car.vehicleTransmission||labelled('Getriebe|Transmission','[^\\n]+')||'').slice(0,80);
   const co2=labelled('CO[₂2](?:-Emissionen| emissions)?','[\\d.,]+(?=\\s*g)');
-  return { title, brand:String(car.brand?.name||car.brand||car.manufacturer?.name||'').slice(0,80),model:String(car.model||'').slice(0,120),registration:reg,mileage:Number.isFinite(mileage)&&mileage>=0&&mileage<=3000000?mileage:null,powerKw:kw?+kw[1]:null,powerPs:ps?+ps[1]:null,displacement:cc?number(cc):null,fuel,transmission,co2:co2?Number(co2.replace(',','.')):null, searchText:(title+' '+text).slice(0,30000), warnings:[...(!reg?['Δεν αναγνωρίστηκε η πρώτη άδεια.']:[]),...(reg&&!reg.day?['Η αγγελία δίνει μόνο μήνα/έτος. Συμπλήρωσε την ακριβή ημέρα.']:[]),...(!Number.isFinite(mileage)?['Δεν αναγνωρίστηκαν τα χιλιόμετρα.']:[])] };
+  return { title, brand:String(car.brand?.name||car.brand||car.manufacturer?.name||'').slice(0,80),model:String(car.model||'').slice(0,120),registration:reg,mileage:Number.isFinite(mileage)&&mileage>=0&&mileage<=3000000?mileage:null,powerKw:kw?+kw[1]:null,powerPs:ps?+ps[1]:null,displacement:cc?number(cc):null,fuel,transmission,co2:co2?Number(co2.replace(',','.')):null, searchText:(title+' '+text).slice(0,30000), warnings:[...(!reg?['Δεν αναγνωρίστηκε η πρώτη άδεια.']:[]),...(!Number.isFinite(mileage)?['Δεν αναγνωρίστηκαν τα χιλιόμετρα.']:[])] };
 }
 // Scores measure similarity, not statistical confidence. Confirmation is mandatory.
 export function rankCandidates(listing, datasets, brand) {

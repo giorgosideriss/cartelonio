@@ -38,7 +38,7 @@
     button.addEventListener('click',async()=>{
       const run=++generation;button.disabled=true;results.replaceChildren();status.textContent='Ανάγνωση αγγελίας… Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.';
       try {
-        const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261002-1');
+        const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261019-1');
         await Promise.all([catalogReady,cartelonioAuthReady]);
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
         const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(listingRequestInput(input.value,text.value)),signal:AbortSignal.timeout(90000)});
@@ -61,12 +61,12 @@
         const data=await response.json();if(run!==generation)return;
         const candidates=rankCandidates(listing,[{year,data}],brand);
         const summary=document.createElement('p');summary.textContent=`${listing.title} · ${listing.registration.month}/${year} · ${listing.mileage==null?'Χιλιόμετρα άγνωστα':listing.mileage.toLocaleString('el-GR')+' km'}`;results.append(summary);
-        for(const warning of listing.warnings){const p=document.createElement('p');p.className='listing-warning';p.textContent=warning;results.append(p);}
+        for(const warning of (listing.warnings || [])){if(warning === 'Η αγγελία δίνει μόνο μήνα/έτος. Συμπλήρωσε την ακριβή ημέρα.')continue;const p=document.createElement('p');p.className='listing-warning';p.textContent=warning;results.append(p);}
         if(!candidates.length){status.textContent='Δεν βρέθηκε αξιόπιστη αντιστοίχιση. Χρησιμοποίησε την επιλογή από κατάλογο.';return;}
         status.textContent='Επίλεξε την ακριβή έκδοση. Η ομοιότητα είναι ένδειξη αναζήτησης, όχι επιβεβαίωση ταύτισης.';
         candidates.forEach(candidate=>{
           const pick=document.createElement('button');pick.type='button';pick.className='listing-candidate';
-          pick.textContent=`${candidate.brand} → ${candidate.year} → ${candidate.model} → ${candidate.name} · Ομοιότητα ${candidate.score}/100${candidate.conflicts.length?' · Διαφορά στα τεχνικά στοιχεία':''}`;
+          pick.textContent=`${candidate.brand} → ${candidate.year} → ${candidate.model} → ${candidate.name} · Ομοιότητα ${candidate.score}%${candidate.conflicts.length?' · Διαφορά στα τεχνικά στοιχεία':''}`;
           pick.addEventListener('click',()=>{
             if(run!==generation)return;
             document.querySelector('[data-input-mode="catalog"]').click();
@@ -78,11 +78,11 @@
             populateVersions();document.getElementById('versionSelect').value=String(candidate.editionIndex);populateColors();
             document.getElementById('mileage').value=listing.mileage==null?'':String(listing.mileage);
             const reg=listing.registration,yearEl=document.getElementById('firstRegYear');yearEl.value=String(reg.year);yearEl.readOnly=false;
-            document.getElementById('firstRegMonth').value=String(reg.month);document.getElementById('firstRegDay').value=reg.day?String(reg.day):'';syncFirstRegistrationDate();updateCarSummary();
+            document.getElementById('firstRegMonth').value=String(reg.month);document.getElementById('firstRegDay').value='1';syncFirstRegistrationDate();updateCarSummary();
             // Registration tax fields remain sourced from the selected catalogue.
             // Listing price, advertised Euro/CO2 and equipment are never guessed.
             results.replaceChildren();status.textContent='Η επιλογή συμπληρώθηκε. Έλεγξε έκδοση, παραλλαγή ΛΤΠΦ, ημερομηνία και χιλιόμετρα πριν υπολογίσεις.';
-            const note=document.getElementById('listingAppliedNote');note.hidden=false;note.textContent=status.textContent+(reg.day?'':' Απαιτείται η ακριβής ημέρα πρώτης άδειας.');
+            const note=document.getElementById('listingAppliedNote');note.hidden=false;note.textContent=status.textContent+' Η ημέρα πρώτης άδειας ορίστηκε αυτόματα στην 1η του μήνα.';
           });results.append(pick);
         });
       }catch(e){if(run===generation)status.textContent=e.name==='TimeoutError'?'Η ανάγνωση καθυστέρησε. Δοκίμασε επικόλληση κειμένου.':e.message||'Δεν ήταν δυνατή η εισαγωγή.';}
