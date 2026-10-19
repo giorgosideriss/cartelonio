@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20261019-referrals-1" rel="stylesheet"/>
+<link href="style.css?v=20261019-communications-1" rel="stylesheet"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
      crossorigin="anonymous"></script>
@@ -177,6 +177,7 @@
       <label for="signupPasswordConfirm">Επιβεβαίωση κωδικού</label>
       <input id="signupPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="8" required placeholder="Επανάληψη κωδικού">
       <p class="auth-help">Θα σου στείλουμε σύνδεσμο επιβεβαίωσης email. Μετά την επιβεβαίωση μπορείς να συνδεθείς με το email και τον κωδικό σου.</p>
+      <label class="marketing-consent-label" for="signupMarketingConsent"><input type="checkbox" id="signupMarketingConsent"><span>Θέλω να λαμβάνω email από το Cartelonio για νέες λειτουργίες και προσφορές. Μπορώ να διακόψω οποιαδήποτε στιγμή από τον λογαριασμό μου.</span></label>
       <button class="auth-primary" type="submit">Δημιουργία λογαριασμού</button>
     </form>
 
@@ -212,6 +213,7 @@
       <div class="account-finder-profile" id="accountProfilePanel" hidden><span>Email λογαριασμού</span><strong id="accountProfileEmail"></strong><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
       <button class="account-finder-row" id="openHistoryBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">◷</span><span class="account-finder-row-copy"><strong>Ιστορικό υπολογισμών</strong><small>Δες όλους τους υπολογισμούς</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <button class="account-finder-row" id="accountReferralBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m4-13v6m-3-3h6"/></svg></span><span class="account-finder-row-copy"><strong>Προσκάλεσε φίλους</strong><small>Κέρδισε 5 υπολογισμούς ανά φίλο</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
+      <button type="button" class="account-finder-row" id="accountEmailPreferencesBtn"><span class="account-finder-row-icon" aria-hidden="true">✉</span><span class="account-finder-row-copy"><strong>Ενημερώσεις email</strong><small>Ενεργοποίηση ή διακοπή ενημερώσεων</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <button class="account-finder-row" id="accountHelpBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">?</span><span class="account-finder-row-copy"><strong>Βοήθεια</strong><small>Συχνές ερωτήσεις · Σύντομα</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <button class="account-finder-row account-finder-logout" id="logoutBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">↪</span><span class="account-finder-row-copy"><strong>Αποσύνδεση</strong></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
     </div>
@@ -747,7 +749,24 @@
   <p id="referralStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="referralRetry" class="referral-retry" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261019-referrals-1"></script>
+<dialog id="referralAnnouncementDialog" class="referral-dialog feature-announcement" aria-labelledby="referralAnnouncementTitle">
+  <div class="referral-dialog-heading"><span class="feature-announcement-icon" aria-hidden="true">+5</span><button type="button" id="referralAnnouncementClose" class="referral-close" aria-label="Κλείσιμο">×</button></div>
+  <span class="referral-kicker">ΝΕΑ ΛΕΙΤΟΥΡΓΙΑ</span><h2 id="referralAnnouncementTitle">Προσκάλεσε φίλους, κέρδισε υπολογισμούς</h2>
+  <p class="referral-intro" id="referralAnnouncementDescription">Για κάθε φίλο που εγγράφεται από τον σύνδεσμό σου και επιβεβαιώνει το email του, παίρνεις 5 δωρεάν υπολογισμούς.</p>
+  <p class="referral-limit" id="referralAnnouncementLimit">Έως 10 επιτυχημένες προσκλήσεις.</p>
+  <button type="button" id="referralAnnouncementInvite" class="communication-primary">Προσκάλεσε φίλο</button>
+  <button type="button" id="referralAnnouncementLater" class="communication-secondary">Όχι τώρα</button>
+  <button type="button" id="referralAnnouncementEmails" class="communication-link">Ρυθμίσεις ενημερώσεων email</button>
+</dialog>
+<dialog id="emailPreferencesDialog" class="referral-dialog" aria-labelledby="emailPreferencesTitle">
+  <div class="referral-dialog-heading"><div><span class="referral-kicker">ΛΟΓΑΡΙΑΣΜΟΣ</span><h2 id="emailPreferencesTitle">Ενημερώσεις email</h2></div><button type="button" id="emailPreferencesClose" class="referral-close" aria-label="Κλείσιμο">×</button></div>
+  <p class="referral-intro">Η επιλογή είναι προαιρετική και δεν επηρεάζει τη χρήση του site ή τους υπολογισμούς σου.</p>
+  <label class="marketing-consent-label" for="accountMarketingConsent"><input type="checkbox" id="accountMarketingConsent" disabled><span>Θέλω να λαμβάνω email από το Cartelonio για νέες λειτουργίες και προσφορές. Μπορώ να διακόψω οποιαδήποτε στιγμή από τον λογαριασμό μου.</span></label>
+  <button type="button" id="emailPreferencesSave" class="communication-primary" disabled>Αποθήκευση προτίμησης</button>
+  <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
+  <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
+</dialog>
+<script src="script.js?v=20261019-communications-1"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">

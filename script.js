@@ -1852,6 +1852,7 @@ function closeAuthModal() {
 
 function renderAccountState() {
   renderReferralAvailability();
+  scheduleFeatureAnnouncement();
   const user = cartelonioSession?.user;
   const balance = Number(cartelonioProfile?.token_balance || 0);
   const isPermanent = Boolean(user && !user.is_anonymous);
@@ -2314,6 +2315,7 @@ authElement("signupForm")?.addEventListener("submit", async event => {
       throw new Error("Έχεις ήδη λογαριασμό. Συνδέσου ή χρησιμοποίησε την επαναφορά κωδικού.");
     }
     await attachPendingReferral();
+    await saveSignupMarketingPreference();
     // Preserve the anonymous user's ID and tokens. Never retry the password
     // update after a successful response: Supabase may treat it as a password change.
     const { error } = await cartelonioDb.auth.updateUser(
@@ -3033,5 +3035,123 @@ function openReferralDialog() {
   window.addEventListener('focus',()=>{
     if(cartelonioSession?.user && !cartelonioSession.user.is_anonymous)loadCartelonioProfile().catch(()=>{});
     if(dialog.open)loadReferralDialog();
+  });
+})();
+
+// Explicit email choices and an account-scoped, once-only feature announcement.
+var cartelonioCommunicationState = { userId:null, preferences:null, timer:null, busy:false, shown:new Set() };
+var cartelonioEmailPreferencesRequest = 0;
+async function saveSignupMarketingPreference() {
+  const choice=Boolean(document.getElementById('signupMarketingConsent')?.checked);
+  const {error}=await cartelonioDb.rpc('set_my_marketing_consent',{p_opt_in:choice});
+  if(error) throw new Error('Δεν αποθηκεύτηκε η προτίμηση email. Δοκίμασε ξανά την εγγραφή.');
+}
+function scheduleFeatureAnnouncement() {
+  const state=cartelonioCommunicationState;
+  if(!state) return;
+  const user=cartelonioSession?.user;
+  if(!user || user.is_anonymous || !user.email_confirmed_at) {
+    if(state.timer)clearTimeout(state.timer);
+    state.timer=null;state.preferences=null;state.userId=null;
+    for(const id of ['referralAnnouncementDialog','emailPreferencesDialog']){
+      const d=document.getElementById(id);if(d?.open)d.close();
+    }
+    return;
+  }
+  if(state.userId!==user.id){state.userId=user.id;state.preferences=null;}
+  if(state.timer || state.busy || state.shown.has(user.id))return;
+  if(state.preferences?.referralNoticeSeen || state.preferences?.referralsEnabled===false)return;
+  state.timer=setTimeout(async()=>{
+    state.timer=null;
+    if(cartelonioSession?.user?.id!==user.id || cartelonioSession.user.is_anonymous)return;
+    // Avoid covering onboarding, recovery, payments or another open surface.
+    const blockers=['authModal','tokensMenu','historyOverlay','welcome10Overlay','howToUseModal'];
+    const blocked=Boolean(document.querySelector('dialog[open]')) ||
+      document.getElementById('cartelonioOnboarding')?.getAttribute('aria-hidden')==='false' ||
+      blockers.some(id=>{const el=document.getElementById(id);return el && !el.hidden && getComputedStyle(el).display!=='none';}) ||
+      (typeof cartelonioRecoveryReturn!=='undefined' && cartelonioRecoveryReturn);
+    if(blocked){scheduleFeatureAnnouncement();return;}
+    state.busy=true;
+    try {
+      if(!state.preferences){
+        const {data,error}=await cartelonioDb.rpc('get_my_communication_preferences');
+        if(error)throw error;
+        if(cartelonioSession?.user?.id!==user.id)return;
+        state.preferences=data;
+      }
+      const prefs=state.preferences;
+      if(prefs.referralNoticeSeen || !prefs.referralsEnabled || state.shown.has(user.id))return;
+      // An RPC may have completed while the user opened another dialog.
+      if(document.querySelector('dialog[open]') || !document.getElementById('authModal')?.hidden)return;
+      const reward=Number(prefs.rewardTokens),max=Number(prefs.maxRewards);
+      document.querySelector('#referralAnnouncementDialog .feature-announcement-icon').textContent=`+${reward}`;
+      document.getElementById('referralAnnouncementDescription').textContent=`Για κάθε φίλο που εγγράφεται από τον σύνδεσμό σου και επιβεβαιώνει το email του, παίρνεις ${reward} δωρεάν υπολογισμούς.`;
+      document.getElementById('referralAnnouncementLimit').textContent=`Έως ${max} επιτυχημένες προσκλήσεις.`;
+      document.getElementById('referralAnnouncementDialog').showModal();
+      state.shown.add(user.id);
+      const {error}=await cartelonioDb.rpc('mark_referral_notice_seen');
+      if(!error && state.userId===user.id)state.preferences.referralNoticeSeen=true;
+    } catch (_) {
+      // A missing migration/network error must never block login or calculations.
+      state.shown.add(user.id);
+    } finally {
+      state.busy=false;
+      if(cartelonioSession?.user?.id===user.id && !state.shown.has(user.id))scheduleFeatureAnnouncement();
+    }
+  },1200);
+}
+async function loadEmailPreferences() {
+  const request=++cartelonioEmailPreferencesRequest;
+  const userId=cartelonioSession?.user?.id;
+  const checkbox=document.getElementById('accountMarketingConsent');
+  const save=document.getElementById('emailPreferencesSave');
+  const status=document.getElementById('emailPreferencesStatus');
+  checkbox.checked=false;checkbox.disabled=true;save.disabled=true;
+  document.getElementById('emailPreferencesRetry').hidden=true;
+  status.textContent='Φόρτωση προτίμησης…';
+  try {
+    const {data,error}=await cartelonioDb.rpc('get_my_communication_preferences');
+    if(request!==cartelonioEmailPreferencesRequest || cartelonioSession?.user?.id!==userId)return;
+    if(error)throw error;
+    checkbox.checked=data.optedIn===true;checkbox.disabled=false;save.disabled=false;
+    status.textContent=data.optedIn?'Οι ενημερώσεις email είναι ενεργές.':'Δεν λαμβάνεις προωθητικές ενημερώσεις email.';
+  } catch (_) {
+    if(request!==cartelonioEmailPreferencesRequest)return;
+    status.textContent='Δεν φορτώθηκε η προτίμησή σου. Δοκίμασε ξανά.';
+    document.getElementById('emailPreferencesRetry').hidden=false;
+  }
+}
+function openEmailPreferences() {
+  if(!cartelonioSession?.user || cartelonioSession.user.is_anonymous){openAuthModal('signup');return;}
+  closeAuthModal();closeTokensMenu();
+  const notice=document.getElementById('referralAnnouncementDialog');if(notice.open)notice.close();
+  const dialog=document.getElementById('emailPreferencesDialog');if(!dialog.open)dialog.showModal();
+  loadEmailPreferences();
+}
+(function initCommunicationControls(){
+  const notice=document.getElementById('referralAnnouncementDialog');
+  const prefs=document.getElementById('emailPreferencesDialog');
+  document.getElementById('accountEmailPreferencesBtn')?.addEventListener('click',openEmailPreferences);
+  for(const id of ['referralAnnouncementClose','referralAnnouncementLater'])document.getElementById(id)?.addEventListener('click',()=>notice.close());
+  document.getElementById('referralAnnouncementInvite')?.addEventListener('click',()=>{notice.close();openReferralDialog();});
+  document.getElementById('referralAnnouncementEmails')?.addEventListener('click',openEmailPreferences);
+  document.getElementById('emailPreferencesClose')?.addEventListener('click',()=>prefs.close());
+  document.getElementById('emailPreferencesRetry')?.addEventListener('click',loadEmailPreferences);
+  prefs?.addEventListener('close',()=>{cartelonioEmailPreferencesRequest++;});
+  document.getElementById('emailPreferencesSave')?.addEventListener('click',async()=>{
+    const userId=cartelonioSession?.user?.id;
+    const checkbox=document.getElementById('accountMarketingConsent');
+    const button=document.getElementById('emailPreferencesSave');
+    const status=document.getElementById('emailPreferencesStatus');
+    const choice=checkbox.checked;
+    button.disabled=true;checkbox.disabled=true;status.textContent='Αποθήκευση…';
+    try {
+      const {error}=await cartelonioDb.rpc('set_my_marketing_consent',{p_opt_in:choice});
+      if(cartelonioSession?.user?.id!==userId)return;
+      if(error)throw error;
+      if(cartelonioCommunicationState.preferences)cartelonioCommunicationState.preferences.optedIn=choice;
+      status.textContent=choice?'Αποθηκεύτηκε. Οι ενημερώσεις email ενεργοποιήθηκαν.':'Αποθηκεύτηκε. Δεν θα λαμβάνεις πλέον προωθητικές ενημερώσεις email.';
+    } catch (_) {status.textContent='Η αλλαγή δεν αποθηκεύτηκε. Δοκίμασε ξανά.';}
+    finally {if(cartelonioSession?.user?.id===userId){button.disabled=false;checkbox.disabled=false;}}
   });
 })();

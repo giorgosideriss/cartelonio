@@ -6916,3 +6916,16 @@ body.header-menu-open{overflow:hidden}
 .referral-zero-card>strong{font-size:13px}.referral-zero-card p{font-size:12px;line-height:1.6;color:#66745b;margin:8px 0 11px}
 .calculation-referral-action{margin:10px 0 0 8px}
 @media(max-width:500px){.referral-dialog{padding:23px 19px}.referral-copy-row{flex-wrap:wrap}.referral-copy-row input{width:100%;flex-basis:100%;font-size:16px}.referral-copy-row button{width:100%}.calculation-referral-action{display:block;margin-left:0}}
+
+/* Optional consent and the once-per-account announcement. */
+.site-header #authModal .marketing-consent-label,.marketing-consent-label{display:flex!important;align-items:flex-start;gap:10px;margin:16px 0!important;padding:12px;border:1px solid #dfe8d7;border-radius:12px;background:#f3f7ee;font-size:11px!important;line-height:1.6;color:#5b6d53!important;cursor:pointer;font-weight:400!important}
+.site-header #authModal .marketing-consent-label input[type="checkbox"],.marketing-consent-label input[type="checkbox"]{appearance:auto!important;-webkit-appearance:checkbox!important;flex:0 0 17px;width:17px!important;min-width:17px!important;height:17px!important;min-height:17px!important;padding:0!important;margin:2px 0 0!important;border-radius:3px!important;accent-color:#51783b;box-shadow:none!important}
+.marketing-consent-label span{flex:1;min-width:0}
+.feature-announcement h2{margin-top:10px;font-size:26px;line-height:1.2;letter-spacing:-.03em}
+.feature-announcement .referral-dialog-heading{margin-bottom:18px}
+.feature-announcement-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:18px;background:#e6efdc;color:#456737;font-size:22px;font-weight:700}
+.communication-primary{display:block;width:100%;min-height:45px;padding:12px 17px;border:0;border-radius:12px;background:#436b36;color:#fff;font:inherit;font-size:13px;font-weight:650;cursor:pointer;margin-top:16px}
+.communication-primary:disabled{opacity:.5;cursor:default}
+.communication-secondary{display:block;width:100%;padding:11px;background:transparent;color:#6b7764;font:inherit;font-size:12px;cursor:pointer;margin-top:4px}
+.communication-link{display:block;padding:8px 0;border:0;background:transparent;color:#59784d;font:inherit;font-size:11px;text-decoration:underline;cursor:pointer}
+.feature-announcement .communication-link{margin:2px auto 0}
