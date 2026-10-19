@@ -1,3 +1,16 @@
+// Referral links are remembered for 30 days; crediting happens only in SQL.
+const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
+(function captureReferralLink(){
+  try {
+    const url = new URL(location.href);
+    const code = url.searchParams.get('ref');
+    if (code && /^[a-f0-9]{32}$/.test(code)) {
+      localStorage.setItem(CARTELONIO_REFERRAL_STORAGE, JSON.stringify({code,expiresAt:Date.now()+30*86400000}));
+      url.searchParams.delete('ref');
+      history.replaceState(history.state, '', url.pathname+url.search+url.hash);
+    }
+  } catch (_) { /* The page remains usable if local storage is unavailable. */ }
+})();
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ === */
 /* === ΡΥΘΜΙΣΗ ΠΗΓΩΝ ΔΕΔΟΜΕΝΩΝ (AUTO-GENERATED 2015–2025) === */
 
@@ -1090,12 +1103,27 @@ function openTokenPurchaseOptions() {
 }
 function showTokensRequired() {
   setRegistrationTaxMiniResult(null);
-  showCalculationError("Δεν μπορείς να κάνεις υπολογισμό χωρίς διαθέσιμα tokens. Αγόρασε ένα πακέτο για να συνεχίσεις.");
+  showCalculationError("Δεν μπορείς να κάνεις υπολογισμό χωρίς διαθέσιμα tokens. Αγόρασε ένα πακέτο ή κέρδισε υπολογισμούς προσκαλώντας φίλους.");
   const action=document.createElement("button");
   action.type="button";action.className="calculation-buy-tokens";action.textContent="Αγορά tokens";
   action.addEventListener("click",openTokenPurchaseOptions);
   document.getElementById("results")?.querySelector(".calculation-error-message > div")?.append(action);
+  const referralAction=document.createElement("button");
+  referralAction.type="button";referralAction.className="calculation-referral-action";
+  referralAction.textContent=cartelonioSession?.user && !cartelonioSession.user.is_anonymous ? "Προσκάλεσε φίλο · +5 υπολογισμοί" : "Εγγραφή για προσκλήσεις φίλων";
+  referralAction.addEventListener("click",()=>{
+    if(cartelonioSession?.user && !cartelonioSession.user.is_anonymous) openReferralDialog();
+    else openAuthModal("signup");
+  });
+  document.getElementById("results")?.querySelector(".calculation-error-message > div")?.append(referralAction);
   openTokenPurchaseOptions();
+  // Keep both ways to get tokens visible, rather than scrolling past referrals.
+  const tokenPanel=document.querySelector('#tokensMenu .tokens-panel');
+  if(tokenPanel) tokenPanel.scrollTop=0;
+  if(cartelonioSession?.user && !cartelonioSession.user.is_anonymous) {
+    document.getElementById('tokensReferralBtn')?.focus({preventScroll:true});
+    setTokenPurchaseNotice('Αγόρασε ένα πακέτο ή προσκάλεσε φίλους για δωρεάν υπολογισμούς.');
+  }
 }
 
 async function calculate(){
@@ -1823,6 +1851,7 @@ function closeAuthModal() {
 }
 
 function renderAccountState() {
+  renderReferralAvailability();
   const user = cartelonioSession?.user;
   const balance = Number(cartelonioProfile?.token_balance || 0);
   const isPermanent = Boolean(user && !user.is_anonymous);
@@ -2284,6 +2313,7 @@ authElement("signupForm")?.addEventListener("submit", async event => {
     if (!cartelonioSession?.user?.is_anonymous) {
       throw new Error("Έχεις ήδη λογαριασμό. Συνδέσου ή χρησιμοποίησε την επαναφορά κωδικού.");
     }
+    await attachPendingReferral();
     // Preserve the anonymous user's ID and tokens. Never retry the password
     // update after a successful response: Supabase may treat it as a password change.
     const { error } = await cartelonioDb.auth.updateUser(
@@ -2291,6 +2321,7 @@ authElement("signupForm")?.addEventListener("submit", async event => {
       { emailRedirectTo: `${location.origin}/?account=verified` }
     );
     if (error) throw error;
+    clearPendingReferral();
     localStorage.setItem(CARTELONIO_SIGNUP_PENDING_KEY, email);
     localStorage.removeItem("cartelonio_pending_password_setup");
     authElement("signupPassword").value = "";
@@ -2917,4 +2948,90 @@ document.addEventListener("input", (event) => {
   }
   new MutationObserver(syncBalance).observe(source, { childList: true, characterData: true, subtree: true });
   syncBalance();
+})();
+
+function clearPendingReferral() {
+  try { localStorage.removeItem(CARTELONIO_REFERRAL_STORAGE); } catch (_) {}
+}
+async function attachPendingReferral() {
+  let pending;
+  try { pending=JSON.parse(localStorage.getItem(CARTELONIO_REFERRAL_STORAGE)||'null'); } catch (_) { return; }
+  if (!pending || !/^[a-f0-9]{32}$/.test(pending.code) || !(pending.expiresAt>Date.now())) {clearPendingReferral();return;}
+  const {data,error}=await cartelonioDb.rpc('attach_referral',{p_code:pending.code});
+  if (error) throw new Error('Δεν αποθηκεύτηκε η πρόσκληση. Δοκίμασε ξανά την εγγραφή σε λίγο.');
+  if (!data?.attached) clearPendingReferral();
+}
+function renderReferralAvailability() {
+  const user=cartelonioSession?.user;
+  const registered=Boolean(user && !user.is_anonymous);
+  const offer=document.getElementById('tokensReferralOffer');
+  if(offer) offer.hidden=!registered || Number(cartelonioProfile?.token_balance||0)>0;
+  if(registered && user.email_confirmed_at) clearPendingReferral();
+  if(!registered) {
+    const dialog=document.getElementById('referralDialog');
+    if(dialog?.open) dialog.close();
+    const link=document.getElementById('referralLink');
+    if(link) link.value='';
+  }
+}
+let cartelonioReferralRequest=0;
+async function loadReferralDialog() {
+  const request=++cartelonioReferralRequest;
+  const userId=cartelonioSession?.user?.id;
+  const status=document.getElementById('referralStatus');
+  const copy=document.getElementById('referralCopy');
+  const retry=document.getElementById('referralRetry');
+  const link=document.getElementById('referralLink');
+  copy.disabled=true;retry.hidden=true;link.value='';
+  document.getElementById('referralCount').textContent='—';
+  document.getElementById('referralEarned').textContent='—';
+  status.textContent='Φόρτωση πρόσκλησης…';
+  try {
+    const {data,error}=await cartelonioDb.rpc('get_my_referral_status');
+    if(request!==cartelonioReferralRequest || cartelonioSession?.user?.id!==userId) return;
+    if(error) throw error;
+    const reward=Number(data.rewardTokens),max=Number(data.maxRewards);
+    if(!/^[a-f0-9]{32}$/.test(data.code) || !Number.isInteger(reward) || !Number.isInteger(max)) throw new Error('invalid_referral_response');
+    link.value=`https://cartelonio.gr/?ref=${data.code}`;
+    document.getElementById('referralCount').textContent=String(data.successfulInvites);
+    document.getElementById('referralEarned').textContent=String(data.earnedTokens);
+    document.getElementById('referralDescription').textContent=`Κέρδισε ${reward} υπολογισμούς για κάθε φίλο που εγγράφεται από τον σύνδεσμό σου και επιβεβαιώνει το email του.`;
+    document.getElementById('referralLimit').textContent=`Έως ${max} επιτυχημένες προσκλήσεις · +${reward} υπολογισμοί ανά φίλο`;
+    copy.disabled=!data.enabled || data.remainingInvites<1;
+    status.textContent=!data.enabled?'Οι προσκλήσεις δεν είναι διαθέσιμες αυτή τη στιγμή.':data.remainingInvites<1?'Έφτασες το όριο ανταμοιβών από προσκλήσεις.':`Διαθέσιμες ανταμοιβές για ${data.remainingInvites} ακόμη προσκλήσεις.`;
+  } catch (_) {
+    if(request!==cartelonioReferralRequest || cartelonioSession?.user?.id!==userId) return;
+    status.textContent='Δεν φορτώθηκαν οι προσκλήσεις. Έλεγξε ότι το email σου έχει επιβεβαιωθεί και δοκίμασε ξανά.';
+    retry.hidden=false;
+  }
+}
+function openReferralDialog() {
+  if(!cartelonioSession?.user || cartelonioSession.user.is_anonymous) {openAuthModal('signup');return;}
+  closeAuthModal();closeTokensMenu();
+  const dialog=document.getElementById('referralDialog');
+  if(!dialog.open) dialog.showModal();
+  loadReferralDialog();
+}
+(function initReferralControls(){
+  const dialog=document.getElementById('referralDialog');
+  if(!dialog) return;
+  document.getElementById('accountReferralBtn')?.addEventListener('click',openReferralDialog);
+  document.getElementById('tokensReferralBtn')?.addEventListener('click',openReferralDialog);
+  document.getElementById('referralClose').addEventListener('click',()=>dialog.close());
+  document.getElementById('referralRetry').addEventListener('click',loadReferralDialog);
+  dialog.addEventListener('close',()=>{cartelonioReferralRequest++;});
+  dialog.addEventListener('click',event=>{
+    if(event.target!==dialog)return;
+    const r=dialog.getBoundingClientRect();
+    if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();
+  });
+  document.getElementById('referralCopy').addEventListener('click',async()=>{
+    const link=document.getElementById('referralLink'),status=document.getElementById('referralStatus');
+    try {await navigator.clipboard.writeText(link.value);status.textContent='Ο σύνδεσμος αντιγράφηκε. Στείλε τον στον φίλο σου.';}
+    catch (_) {link.focus();link.select();status.textContent='Επίλεξε αντιγραφή για τον επιλεγμένο σύνδεσμο.';}
+  });
+  window.addEventListener('focus',()=>{
+    if(cartelonioSession?.user && !cartelonioSession.user.is_anonymous)loadCartelonioProfile().catch(()=>{});
+    if(dialog.open)loadReferralDialog();
+  });
 })();

@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=30261006-examples" rel="stylesheet"/>
+<link href="style.css?v=20261019-referrals-1" rel="stylesheet"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
      crossorigin="anonymous"></script>
@@ -133,6 +133,7 @@
         <small><span id="tokensUsed">—</span> χρησιμοποιημένα</small>
 
       </div>
+      <div class="referral-zero-card" id="tokensReferralOffer" hidden><strong>Κέρδισε δωρεάν υπολογισμούς</strong><p>Προσκάλεσε έναν φίλο. Όταν εγγραφεί και επιβεβαιώσει το email του, παίρνεις +5 υπολογισμούς. Έως 10 επιτυχημένες προσκλήσεις.</p><button type="button" id="tokensReferralBtn">Προσκάλεσε φίλο</button></div>
       <button type="button" class="tokens-option tokens-voucher-toggle" id="tokensVoucherToggle" aria-expanded="false" aria-controls="tokensVoucherForm"><span class="tokens-option-icon tokens-gift-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 7a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-3a2 2 0 0 0 0-4V7Z"/><path d="M14 5v2m0 3v2m0 3v2m0 2v-1"/></svg></span><span>Εξαργύρωση κωδικού</span><span class="tokens-option-chevron" aria-hidden="true">›</span></button>
       <div class="tokens-voucher" id="tokensVoucherForm" hidden>
         <label for="tokensVoucherCode">Εξαργύρωση Voucher</label>
@@ -210,6 +211,7 @@
       <button type="button" class="account-finder-row" id="accountProfileBtn"><span class="account-finder-row-icon" aria-hidden="true"><svg class="account-user-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20v-1.5a6.5 6.5 0 0 1 13 0V20"/></svg></span><span class="account-finder-row-copy"><strong>Το προφίλ μου</strong><small>Προσωπικά στοιχεία</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <div class="account-finder-profile" id="accountProfilePanel" hidden><span>Email λογαριασμού</span><strong id="accountProfileEmail"></strong><span>Διαθέσιμοι υπολογισμοί</span><strong id="authTokenBalance">0</strong></div>
       <button class="account-finder-row" id="openHistoryBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">◷</span><span class="account-finder-row-copy"><strong>Ιστορικό υπολογισμών</strong><small>Δες όλους τους υπολογισμούς</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
+      <button class="account-finder-row" id="accountReferralBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m4-13v6m-3-3h6"/></svg></span><span class="account-finder-row-copy"><strong>Προσκάλεσε φίλους</strong><small>Κέρδισε 5 υπολογισμούς ανά φίλο</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <button class="account-finder-row" id="accountHelpBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">?</span><span class="account-finder-row-copy"><strong>Βοήθεια</strong><small>Συχνές ερωτήσεις · Σύντομα</small></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
       <button class="account-finder-row account-finder-logout" id="logoutBtn" type="button"><span class="account-finder-row-icon" aria-hidden="true">↪</span><span class="account-finder-row-copy"><strong>Αποσύνδεση</strong></span><span class="account-finder-chevron" aria-hidden="true">›</span></button>
     </div>
@@ -735,7 +737,17 @@
 <button class="cookie-settings-button" id="cookieSettingsButton" type="button" hidden>Ρυθμίσεις cookies</button>
 <script src="supabase-client.min.js?v=30260922-secure-production-v10"></script>
 <dialog id="examplesDialog" class="examples-window" aria-labelledby="examplesTitle"><section class="history-dialog"><header class="history-header"><div><span class="history-kicker">CARTELONIO · ΠΑΡΑΔΕΙΓΜΑΤΑ</span><h2 id="examplesTitle">Παραδείγματα</h2><p>5 νέοι τυχαίοι υπολογισμοί κάθε φορά · Χωρίς χρήση tokens</p></div><button type="button" id="examplesClose" class="history-close" aria-label="Κλείσιμο παραδειγμάτων">×</button></header><div class="history-content"><p id="examplesMessage" class="history-message" role="status" aria-live="polite"></p><div id="examplesList" class="history-list"></div><button type="button" id="examplesRetry" class="history-more" hidden>Δοκίμασε ξανά</button></div></section></dialog>
-<script src="script.js?v=30261006-examples"></script>
+<dialog id="referralDialog" class="referral-dialog" aria-labelledby="referralTitle">
+  <div class="referral-dialog-heading"><div><span class="referral-kicker">ΠΡΟΣΚΛΗΣΕΙΣ</span><h2 id="referralTitle">Προσκάλεσε έναν φίλο</h2></div><button type="button" id="referralClose" class="referral-close" aria-label="Κλείσιμο">×</button></div>
+  <p class="referral-intro" id="referralDescription">Κέρδισε 5 υπολογισμούς για κάθε φίλο που εγγράφεται από τον σύνδεσμό σου και επιβεβαιώνει το email του.</p>
+  <div class="referral-dialog-stats"><div><strong id="referralCount">—</strong><span>Επιτυχημένες προσκλήσεις</span></div><div><strong id="referralEarned">—</strong><span>Κερδισμένοι υπολογισμοί</span></div></div>
+  <label for="referralLink">Ο προσωπικός σου σύνδεσμος</label>
+  <div class="referral-copy-row"><input id="referralLink" type="text" readonly aria-describedby="referralStatus"><button type="button" id="referralCopy" disabled>Αντιγραφή</button></div>
+  <p id="referralLimit" class="referral-limit">Έως 10 επιτυχημένες προσκλήσεις · +5 υπολογισμοί ανά φίλο</p>
+  <p id="referralStatus" class="referral-status" role="status" aria-live="polite"></p>
+  <button type="button" id="referralRetry" class="referral-retry" hidden>Δοκίμασε ξανά</button>
+</dialog>
+<script src="script.js?v=20261019-referrals-1"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
