@@ -62,11 +62,7 @@ export function rankCandidates(listing, datasets, brand) {
       const et=tokens(ed.name).filter(t=>!tokens(brand+' '+model).includes(t));
       let score=40*matched/Math.max(1,mt.length)+35*et.filter(t=>query.includes(' '+t+' ')).length/Math.max(1,et.length);
       let evidence=matched; const conflicts=[];
-      // Only compare structured fields actually present in the catalogue.
-      for(const [field,keys,tol,weight] of [['powerPs',['powerPs','horsepower','hp','ps'],5,10],['powerKw',['powerKw','kw'],4,10],['displacement',['displacement','cc','engineCapacity'],70,8]]) {
-        const key=keys.find(k=>ed[k]!=null && Number.isFinite(Number(ed[k])));
-        if(key && listing[field]!=null) { if(Math.abs(Number(ed[key])-listing[field])<=tol){score+=weight;evidence++;}else{score-=30;conflicts.push(field);} }
-      }
+      // Power and displacement do not contribute to similarity or conflicts.
       const automatic=/automatic|automatik|dsg|dct|steptronic|s tronic/i;
       if(listing.transmission && ed.transmission) {const a=automatic.test(listing.transmission),b=automatic.test(ed.transmission);if(a!==b){score-=25;conflicts.push('transmission');}else{score+=5;evidence++;}}
       if(listing.fuel && ed.fuel) { const fuel=s=>/diesel/i.test(s)?'diesel':/benzin|petrol|gasoline/i.test(s)?'petrol':/electric|elektro/i.test(s)?'electric':null; const a=fuel(listing.fuel),b=fuel(ed.fuel);if(a&&b&&a!==b){score-=35;conflicts.push('fuel');} }
