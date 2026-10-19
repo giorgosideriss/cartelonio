@@ -68,7 +68,7 @@ export function rankCandidates(listing, datasets, brand) {
       if(listing.fuel && ed.fuel) { const fuel=s=>/diesel/i.test(s)?'diesel':/benzin|petrol|gasoline/i.test(s)?'petrol':/electric|elektro/i.test(s)?'electric':null; const a=fuel(listing.fuel),b=fuel(ed.fuel);if(a&&b&&a!==b){score-=35;conflicts.push('fuel');} }
       const drive=/\b(xdrive|quattro|4matic|awd|4wd)\b/i;
       if(drive.test(listing.title) && !drive.test(ed.name)) score-=15;
-      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score))),evidence,conflicts});
+      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score * 100 / 80))),evidence,conflicts});
     }
   }
   return out.filter(x=>x.score>=30).sort((a,b)=>b.score-a.score||a.model.localeCompare(b.model)||a.editionIndex-b.editionIndex).slice(0,5);

@@ -38,7 +38,7 @@
     button.addEventListener('click',async()=>{
       const run=++generation;button.disabled=true;results.replaceChildren();status.textContent='Ανάγνωση αγγελίας… Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.';
       try {
-        const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261019-2');
+        const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261019-3');
         await Promise.all([catalogReady,cartelonioAuthReady]);
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
         const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(listingRequestInput(input.value,text.value)),signal:AbortSignal.timeout(90000)});
