@@ -6844,3 +6844,50 @@ body.header-menu-open{overflow:hidden}
   .site-header .header-navigation #tokenBadge:hover,
   .site-header .header-navigation #tokenBadge[aria-expanded="true"]{background:#edf3e9}
 }
+
+/* Compact welcome — horizontal overview, informational methods only. */
+.onboarding-compact .compact-intro{padding:27px 30px 20px;text-align:center;color:var(--ink)}
+.compact-brand{display:flex;justify-content:center;align-items:center;gap:11px}
+.compact-brand img{display:block;width:185px;height:44px;object-fit:contain}
+.compact-brand>span{font-size:11px;color:#6a756b;white-space:nowrap}
+.onboarding-compact h2{font-size:clamp(23px,3.2vw,30px);line-height:1.2;letter-spacing:-.035em;margin:17px 0 8px;color:var(--ink)}
+.compact-subtitle{margin:0;color:#657064;font-size:14px;line-height:1.5}
+.compact-database{margin-top:20px;padding:18px 20px 12px;border:1px solid rgba(91,117,75,.13);border-radius:18px;background:linear-gradient(140deg,#f0f4eb,#eaf0e3)}
+.compact-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.compact-stats>div{display:flex;flex-direction:column;gap:5px;padding:0 10px}
+.compact-stats>div+div{border-left:1px solid rgba(71,98,63,.15)}
+.compact-stats strong{font-size:clamp(27px,3.7vw,36px);line-height:1.1;letter-spacing:-.035em;color:#19392b;font-weight:750}
+.compact-stats span{font-size:12px;color:#576657;line-height:1.4}
+.compact-data-detail{margin:13px 0 0;padding-top:11px;border-top:1px solid rgba(71,98,63,.13);font-size:11px;line-height:1.6;color:#61705e}
+.compact-data-detail>span{padding:0 5px;color:#87927e}
+.compact-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:22px 0;gap:0}
+.compact-methods>section{padding:0 12px;min-width:0}
+.compact-methods>section+section{border-left:1px solid rgba(71,98,63,.13)}
+.compact-icon{position:relative;display:grid;place-items:center;width:42px;height:42px;margin:0 auto 9px;border-radius:13px;background:#eaf0e4;border:1px solid rgba(71,98,63,.08);color:#23472f}
+.compact-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.compact-beta{position:absolute;left:calc(100% + 4px);top:0;padding:3px 6px;border-radius:8px;background:#e5ebdf;color:#53664d;font-size:9px;line-height:1.3;white-space:nowrap}
+.onboarding-compact .compact-methods h3{font-size:13px;line-height:1.4;letter-spacing:-.015em;margin:0 0 5px;font-weight:700;color:var(--ink)}
+.compact-methods p{font-size:11px;line-height:1.5;color:#677263;margin:0}
+.onboarding-compact .compact-start{width:100%;min-height:46px;border-radius:13px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;background:linear-gradient(135deg,#56794a,#48643e);box-shadow:0 5px 14px rgba(58,86,44,.12)}
+.compact-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid rgba(71,98,63,.13);padding-top:12px;margin-top:16px;text-align:left}
+.compact-result-note{font-size:10px;color:#667260}
+.compact-links{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.compact-links button{background:transparent;border:0;padding:7px 0;color:#5f6b5a;font:inherit;font-size:11px;cursor:pointer;min-height:30px}
+.compact-links button:hover{color:#254c2f;text-decoration:underline}
+@media(max-width:600px){
+.onboarding-compact .compact-intro{padding:23px 18px 17px}
+.compact-brand img{width:160px;height:37px}
+.onboarding-compact h2{font-size:23px;margin-top:15px}
+.compact-subtitle{font-size:12px}
+.compact-database{padding:15px 10px 11px;margin-top:17px}
+.compact-stats>div{padding:0 4px}.compact-stats strong{font-size:27px}.compact-stats span{font-size:10px}
+.compact-data-detail{font-size:10px}.compact-data-detail>span{padding:0 2px}
+.compact-methods{grid-template-columns:1fr;gap:12px;margin:18px 0}
+.compact-methods>section{display:grid;grid-template-columns:38px 1fr;text-align:left;gap:2px 12px;padding:0 3px}
+.compact-methods>section+section{border-left:0}
+.compact-icon{width:38px;height:38px;grid-row:span 2;margin:0}
+.compact-beta{left:auto;right:-5px;top:-5px;padding:2px 4px;font-size:8px}
+.onboarding-compact .compact-methods h3{margin:0;align-self:end;font-size:12px}
+.compact-methods p{grid-column:2;font-size:11px}
+.compact-footer{justify-content:center;gap:4px;text-align:center}.compact-result-note{width:100%}.compact-links{justify-content:center;gap:22px}
+}

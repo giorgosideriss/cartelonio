@@ -615,37 +615,28 @@
   <div class="cartelonio-onboarding-backdrop"></div>
   <section class="cartelonio-onboarding-card" role="dialog" aria-modal="true" aria-label="Καλώς ήρθατε στο Cartelonio">
 
-    <!-- Welcome: presentation of the service -->
-    <div class="onboarding-view is-active" data-onboarding-view="welcome">
-      <div class="onboarding-welcome onboarding-showcase">
-        <div class="onboarding-showcase-brand"><img src="images/cartelonio-logo.png" alt="Cartelonio" class="onboarding-main-logo"><span>0.9 beta</span></div>
-        <h2 class="onboarding-showcase-title">Υπολόγισε το τέλος ταξινόμησης.</h2>
-        <p class="onboarding-lead">Βρες το αυτοκίνητό σου και δες μια αναλυτική εκτίμηση, με τα στοιχεία που χρειάζονται για τον υπολογισμό.</p>
-        <div class="onboarding-database onboarding-showcase-database" aria-label="Βάση δεδομένων Cartelonio">
-          <div class="onboarding-brand-ambient" id="onboardingBrandAmbient" aria-hidden="true"></div>
-          <h3>Η βάση δεδομένων μας</h3>
-          <div class="onboarding-db-grid">
-            <div class="onboarding-db-stat"><strong>40</strong><span>Μάρκες</span></div>
-            <div class="onboarding-db-stat"><strong>780</strong><span>Μοντέλα</span></div>
-            <div class="onboarding-db-stat"><strong>42.440</strong><span>Εκδόσεις εξοπλισμού</span></div>
+    <!-- Compact welcome: horizontal presentation -->
+    <div class="onboarding-view is-active onboarding-compact" data-onboarding-view="welcome">
+      <div class="compact-intro">
+        <div class="compact-brand"><img src="images/cartelonio-logo.png" alt="Cartelonio"><span>0.9 beta</span></div>
+        <h2>Καλώς ήρθες στο Cartelonio</h2>
+        <p class="compact-subtitle">Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</p>
+        <div class="compact-database" aria-label="Βάση δεδομένων Cartelonio">
+          <div id="onboardingBrandAmbient" hidden aria-hidden="true"></div>
+          <div class="compact-stats">
+            <div><strong>40</strong><span>Μάρκες</span></div>
+            <div><strong>780</strong><span>Μοντέλα</span></div>
+            <div><strong>42.440</strong><span>Εκδόσεις εξοπλισμού</span></div>
           </div>
-          <div class="onboarding-data-features">
-            <div><span class="onboarding-feature-symbol" aria-hidden="true">€</span><span><strong>Αξία & εξοπλισμός</strong><small>Τιμές προ φόρων και διαθέσιμα extras</small></span></div>
-            <div><span class="onboarding-feature-symbol" aria-hidden="true">CO₂</span><span><strong>Εκπομπές & Euro</strong><small>Στοιχεία για τον υπολογισμό του τέλους</small></span></div>
-            <div><span class="onboarding-feature-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 16h14l-1.5-5a2 2 0 0 0-2-1.5h-7a2 2 0 0 0-2 1.5L5 16Zm-1 0v4m16-4v4M8 13h8"/></svg></span><span><strong>Αμάξωμα & κίνηση</strong><small>Κατηγορία αμαξώματος και τύπος κίνησης</small></span></div>
-          </div>
+          <p class="compact-data-detail">Τιμές προ φόρων <span>·</span> CO₂ &amp; Euro <span>·</span> Αμάξωμα &amp; κίνηση <span>·</span> Διαθέσιμα extras</p>
         </div>
-        <h3 class="onboarding-methods-heading">Τρεις τρόποι υπολογισμού</h3>
-        <div class="onboarding-method-cards">
-          <section><span class="onboarding-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h4>Από κατάλογο</h4><p>Επιλέγεις μάρκα, έτος, μοντέλο και έκδοση. Τα καταχωρισμένα στοιχεία του οχήματος συμπληρώνονται αυτόματα.</p></section>
-          <section><span class="onboarding-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg></span><h4>Χειροκίνητα</h4><p>Συμπληρώνεις εσύ την αξία και τα τεχνικά στοιχεία του οχήματος που σε ενδιαφέρει.</p></section>
-          <section><span class="onboarding-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg></span><h4>Επικόλληση αγγελίας <span class="onboarding-method-beta">beta</span></h4><p>Επικολλάς σύνδεσμο ή κείμενο αγγελίας και ελέγχεις τα στοιχεία που αναγνωρίζονται πριν τον υπολογισμό.</p></section>
+        <div class="compact-methods" aria-label="Τρεις τρόποι υπολογισμού">
+          <section><span class="compact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></span><h3>Από κατάλογο</h3><p>Έτοιμα στοιχεία από τη βάση μας</p></section>
+          <section><span class="compact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l1-6L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L10 19l-6 1Z"/></svg></span><h3>Χειροκίνητα</h3><p>Εισαγωγή στοιχείων οχήματος</p></section>
+          <section><span class="compact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Zm8 0v5h4M9 12h6M9 16h6"/></svg><span class="compact-beta">beta</span></span><h3>Επικόλληση αγγελίας</h3><p>Αναγνώριση από URL ή κείμενο</p></section>
         </div>
-        <div class="onboarding-result-preview"><strong>Αποτελέσματα με ανάλυση</strong><p>Δες το συνολικό τέλος ταξινόμησης, την απομείωση και τη φορολογητέα αξία, σε συνοπτική ή αναλυτική προβολή.</p></div>
-      </div>
-      <div class="onboarding-actions onboarding-showcase-actions">
-        <button type="button" class="onboarding-start" data-onboarding-start>Ξεκίνα <span aria-hidden="true">→</span></button>
-        <div class="onboarding-showcase-links"><button type="button" data-onboarding-go="about">Τι είναι το Cartelonio</button><button type="button" data-onboarding-go="howto">Πώς λειτουργεί</button></div>
+        <button type="button" class="onboarding-start compact-start" data-onboarding-start>Ξεκίνα <span aria-hidden="true">→</span></button>
+        <div class="compact-footer"><span class="compact-result-note">Συνοπτικά και αναλυτικά αποτελέσματα</span><div class="compact-links"><button type="button" data-onboarding-go="about">Τι είναι το Cartelonio</button><button type="button" data-onboarding-go="howto">Πώς λειτουργεί</button></div></div>
       </div>
     </div>
 
