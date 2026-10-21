@@ -76,3 +76,21 @@ html:not([data-appearance="light"]) .site-header .appearance-control .appearance
 .site-header .appearance-control .appearance-light svg{stroke-width:2.5}
 @media(max-width:380px){.site-header .appearance-control .appearance-toggle{width:68px}.site-header .appearance-control .appearance-toggle>span{flex-basis:28px;width:28px}.site-header .appearance-control .appearance-toggle::before{width:28px;transform:translateX(32px)}.site-header .site-version-label{font-size:10px!important}.site-header .header-inner{gap:8px!important}}
 @media(prefers-reduced-motion:reduce){.site-header .appearance-control .appearance-toggle::before{transition:none}}
+
+/* Light theme: transparent vehicle identity and readable nested text/icons. */
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual .vehicle-image-identity{background:transparent!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual .vehicle-identity-logo-wrap{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual .vehicle-image-model .vehicle-inline-edition{color:#52684d!important;opacity:1!important;text-shadow:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual .vehicle-image-edition{color:#52684d!important;opacity:1!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual .vehicle-image-edition.has-model-separator::before{color:#52684d!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-metrics .summary-metric-label svg{color:#4e7d31!important;stroke:#4e7d31!important;opacity:1!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-metrics .summary-metric-label svg :is(path,rect,circle,line,polyline,ellipse){stroke:currentColor!important}
+
+/* Target the actual identity IDs directly, independently of form nesting. */
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity,
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity.is-visible,
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity.no-image{background:transparent!important;background-color:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity .vehicle-identity-logo-wrap,
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity .vehicle-summary-identity-copy{background:transparent!important;background-image:none!important;box-shadow:none!important;border-color:transparent!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity #vehicleImageModel .vehicle-inline-edition,
+html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity #vehicleImageEdition{color:#52684d!important;opacity:1!important;text-shadow:none!important}
