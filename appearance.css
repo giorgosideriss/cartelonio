@@ -61,3 +61,18 @@ html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(select:disa
 .site-header .appearance-toggle svg{width:20px;height:20px}
 html:not([data-appearance="light"]) .site-header .appearance-toggle>.appearance-dark,html[data-appearance="light"] .site-header .appearance-toggle>.appearance-light{display:flex;background:transparent;box-shadow:none}
 @media(max-width:380px){.site-header .appearance-toggle{width:36px;height:40px;min-height:40px}.site-header .appearance-toggle>span{width:34px;height:38px}.site-header .account-controls{gap:6px!important}}
+
+/* Sun/moon switch, matching the supplied pill reference. */
+.site-header .appearance-control .appearance-toggle{position:relative;display:flex;align-items:center;justify-content:space-between;width:80px;height:36px;min-height:36px;padding:4px;border:0;border-radius:999px;background:#d6d6d6;color:#929292;box-shadow:none;isolation:isolate}
+.site-header .appearance-control .appearance-toggle::before{content:"";position:absolute;z-index:0;left:4px;top:4px;width:32px;height:28px;border-radius:999px;background:#fff;transform:translateX(40px);transition:transform .2s ease;box-shadow:none}
+html[data-appearance="light"] .site-header .appearance-control .appearance-toggle::before{transform:translateX(0)}
+.site-header .appearance-control .appearance-toggle>span{position:relative;z-index:1;display:flex!important;align-items:center;justify-content:center;flex:0 0 32px;width:32px;height:28px;min-width:0;padding:0;border-radius:999px;background:transparent!important;box-shadow:none!important;color:#929292;font-size:0;gap:0}
+.site-header .appearance-control .appearance-toggle>.appearance-light{order:0}
+.site-header .appearance-control .appearance-toggle>.appearance-dark{order:1}
+.site-header .appearance-control .appearance-toggle svg{width:19px;height:19px}
+html:not([data-appearance="light"]) .site-header .appearance-control .appearance-dark,html[data-appearance="light"] .site-header .appearance-control .appearance-light{color:#4a4a4a}
+.site-header .appearance-control .appearance-dark svg{fill:currentColor;stroke:none}
+.site-header .appearance-control .appearance-light svg circle{fill:currentColor;stroke:none}
+.site-header .appearance-control .appearance-light svg{stroke-width:2.5}
+@media(max-width:380px){.site-header .appearance-control .appearance-toggle{width:68px}.site-header .appearance-control .appearance-toggle>span{flex-basis:28px;width:28px}.site-header .appearance-control .appearance-toggle::before{width:28px;transform:translateX(32px)}.site-header .site-version-label{font-size:10px!important}.site-header .header-inner{gap:8px!important}}
+@media(prefers-reduced-motion:reduce){.site-header .appearance-control .appearance-toggle::before{transition:none}}
