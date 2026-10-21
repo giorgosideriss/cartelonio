@@ -1,0 +1,63 @@
+/* Appearance affects the calculator, preserving Cartelonio's existing page. */
+.appearance-control{display:flex;align-items:center;justify-content:flex-end;gap:10px;width:min(1180px,100%);margin:0 auto 14px}
+.appearance-label{color:#657063;font-size:12px;font-weight:600}
+.appearance-toggle{display:inline-flex;align-items:center;gap:3px;padding:4px;border:1px solid #dce2d8;border-radius:999px;background:#e8ece5;box-shadow:inset 0 1px 2px rgba(18,21,18,.035);cursor:pointer;font:inherit;color:#657063;min-height:42px}
+.appearance-toggle>span{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:7px 12px;border-radius:999px;font-size:12px;line-height:1.25;font-weight:650;min-width:77px}
+.appearance-toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.appearance-toggle:focus-visible{outline:3px solid #61946c;outline-offset:3px}
+html:not([data-appearance="light"]) .appearance-dark,html[data-appearance="light"] .appearance-light{background:#fff;color:#254a32;box-shadow:0 2px 6px rgba(18,21,18,.1)}
+html[data-appearance="light"] .vehicle-stage.vehicle-configurator-v2{background:radial-gradient(circle at 93% 0%,rgba(109,169,67,.12),transparent 42%),linear-gradient(145deg,#fbfcf8,#eef2e9)!important;color:#202c22!important;border:1px solid #dce3d7!important;box-shadow:0 22px 60px rgba(24,29,24,.09),inset 0 1px 0 #fff!important;color-scheme:light}
+html[data-appearance="light"] .vehicle-stage.vehicle-configurator-v2>.stage-glow{opacity:.12!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.stage-kicker,.config-heading-title>span,.registration-strip-heading>div>span){color:#4e7d31!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(label,.config-heading strong,.registration-strip-heading strong,.vehicle-image-brand,.vehicle-image-model,.vehicle-image-edition,.summary-metric-label,.vehicle-summary-row>strong,.registration-tax-mini-value strong){color:#263b2c!important;text-shadow:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.label-note,.registration-strip-heading small,.listing-panel p,.registration-tax-details-btn,.vehicle-image-year){color:#5d6f60!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.config-heading,.vehicle-summary-row){border-color:#d7e1d2!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.dropdown-card,.registration-strip,.listing-panel){background:linear-gradient(155deg,#fff,#f5f7f1)!important;border-color:#d5dfce!important;box-shadow:inset 0 1px 0 #fff,0 5px 18px rgba(30,50,25,.035)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-input-modes{background:#e8eee2!important;border-color:#d3ddcb!important;box-shadow:inset 0 1px 2px rgba(30,50,25,.04)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-input-mode{background:rgba(255,255,255,.5)!important;color:#5a6856!important;border-color:transparent!important;box-shadow:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-input-mode:hover{background:#fff!important;color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-input-mode.is-active{background:linear-gradient(180deg,#b8f18d,#96df6b)!important;color:#10200f!important;border-color:#8dce63!important;box-shadow:0 3px 10px rgba(80,120,50,.12)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(select,input,textarea){color:#263b2c!important;caret-color:#263b2c!important;color-scheme:light!important;text-shadow:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(select,input,textarea)::placeholder{color:#74816e!important;opacity:1}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.registration-fields select,.registration-fields input,.listing-panel input,.listing-panel textarea){background:#fff!important;border-color:#cdd8c6!important;box-shadow:inset 0 1px 2px rgba(30,50,25,.035)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.vehicle-fields select,.brand-button,.extras-toggle){background:transparent!important;color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.brand-button-label,.brand-button-arrow,.dropdown-leading-icon,.dropdown-chevron-svg,.field-icon,.extras-toggle-arrow,.extras-toggle-label){color:#526e49!important;filter:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .brand-button-logo{filter:none!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(option,optgroup){background:#fff!important;color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.brand-menu,.extras-panel){background:#fbfdf8!important;color:#263b2c!important;border-color:#d5dfce!important;box-shadow:0 15px 35px rgba(24,40,20,.15)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.brand-option,.brand-option-label,.extra-option,.extras-option){color:#263b2c!important;background:transparent!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.brand-option,.extra-option,.extras-option):hover{background:#e9f2e0!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.brand-option.is-active,.brand-option.selected){background:#e1efd5!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-card{background:linear-gradient(145deg,#f2f6ec,#e3ecdc)!important;border-color:#cddbc5!important;box-shadow:inset 0 1px 0 #fff,0 12px 32px rgba(31,54,22,.07)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual{background:radial-gradient(circle at 85% 15%,rgba(125,169,83,.25),transparent 60%),linear-gradient(145deg,#f0f5e9,#e4eddd)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual::before{border-color:rgba(96,139,66,.32)!important;box-shadow:0 0 0 36px rgba(109,169,67,.04),0 0 0 72px rgba(109,169,67,.03)!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-visual::after{background:transparent!important;opacity:.2!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .vehicle-summary-glow{opacity:.18!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.vehicle-summary-metrics,.vehicle-image-identity){background:rgba(250,253,246,.88)!important;border-color:#cddbc5!important;box-shadow:inset 0 1px 0 #fff!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.vehicle-image-year,.random-select-heading-icon){background:#e2edda!important;color:#41672f!important;border-color:#cddbc5!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.summary-price-value,.summary-price-value::before,.registration-tax-mini-placeholder){color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .summary-price-value input#price{background:transparent!important;border-color:transparent!important;box-shadow:none!important;color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.config-heading .random-select-heading-btn,.secondary-action){background:#edf3e7!important;color:#426533!important;border-color:#cbdac0!important;box-shadow:inset 0 1px 0 #fff!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.primary-action,.listing-read-btn){background:linear-gradient(180deg,#b8f18d,#96df6b)!important;color:#10200f!important;border-color:#8dce63!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .listing-candidate{background:#fff!important;color:#263b2c!important;border-color:#cddbc5!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .listing-candidate:hover{background:#edf5e5!important;border-color:#7fa366!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .listing-beta-badge{background:#e6f1dc!important;color:#41672f!important;border-color:#9bb98a!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .listing-warning{background:#fff3d9!important;color:#76541b!important;border-color:#dfc78d!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(input,select,textarea):focus{outline-color:#6da943!important;border-color:#729d56!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.is-invalid,.field-error input,.field-error select,[aria-invalid="true"]){border-color:#c62828!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .field-warning-text,html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .category-warning-text{background:#fff5f3!important;color:#9d2727!important;border-color:#e6bab4!important}
+@media(max-width:600px){.appearance-control{gap:8px;margin-bottom:12px}.appearance-toggle>span{padding:7px 10px;min-width:70px}}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm #resetBtn{background:#edf3e7!important;color:#426533!important;border-color:#cbdac0!important;box-shadow:inset 0 1px 0 #fff!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm input[type="date"]::-webkit-calendar-picker-indicator{filter:none!important;opacity:.7}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .extras-option-text{color:#263b2c!important}
+html[data-appearance="light"] .vehicle-configurator-v2>.stage-index{color:#6e7e65!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(select:disabled,input:disabled,button:disabled){opacity:.55!important}
+
+/* Header placement: compact theme switch beside the mobile menu. */
+.site-header .appearance-control{display:flex;flex:0 0 auto;width:auto;margin:0;gap:0}
+.site-header .appearance-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.site-header .appearance-toggle{display:grid;place-items:center;width:42px;height:42px;min-height:42px;padding:0;gap:0;border-radius:14px;background:#f3f7f2;border:1px solid rgba(78,104,80,.17);color:#213a2f;box-shadow:none}
+.site-header .appearance-toggle>span{display:none;min-width:0;width:40px;height:40px;padding:0;font-size:0;border-radius:13px;gap:0;background:transparent;box-shadow:none;color:inherit}
+.site-header .appearance-toggle svg{width:20px;height:20px}
+html:not([data-appearance="light"]) .site-header .appearance-toggle>.appearance-dark,html[data-appearance="light"] .site-header .appearance-toggle>.appearance-light{display:flex;background:transparent;box-shadow:none}
+@media(max-width:380px){.site-header .appearance-toggle{width:36px;height:40px;min-height:40px}.site-header .appearance-toggle>span{width:34px;height:38px}.site-header .account-controls{gap:6px!important}}

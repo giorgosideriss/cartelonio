@@ -3158,3 +3158,24 @@ function openEmailPreferences() {
     finally {if(cartelonioSession?.user?.id===userId){button.disabled=false;checkbox.disabled=false;}}
   });
 })();
+
+
+// Appearance changes only the calculator card; default keeps the original theme.
+(function initCartelonioAppearance(){
+  const key='cartelonio:appearance:v1';
+  const button=document.getElementById('appearanceToggle');
+  if(!button)return;
+  function apply(value){
+    const theme=value==='light'?'light':'dark';
+    document.documentElement.dataset.appearance=theme;
+    button.setAttribute('aria-checked',String(theme==='light'));
+    button.title=theme==='light'?'Αλλαγή σε Dark':'Αλλαγή σε Light';
+  }
+  apply(document.documentElement.dataset.appearance);
+  button.addEventListener('click',function(){
+    const theme=document.documentElement.dataset.appearance==='light'?'dark':'light';
+    apply(theme);
+    try{localStorage.setItem(key,theme);}catch(_){}
+  });
+  window.addEventListener('storage',function(event){if(event.key===key)apply(event.newValue);});
+})();

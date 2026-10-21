@@ -3,6 +3,10 @@
 <html lang="el">
 <head>
 <meta charset="utf-8"/>
+<script>
+(function(){var theme='dark';try{if(localStorage.getItem('cartelonio:appearance:v1')==='light')theme='light';}catch(_){}document.documentElement.dataset.appearance=theme;})();
+</script>
+
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#101311" name="theme-color"/>
 <title>Υπολογισμός Τέλους Ταξινόμησης Αυτοκινήτου | Cartelonio</title>
@@ -87,6 +91,7 @@
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
 <link href="style.css?v=20261021-referral-ui-1" rel="stylesheet"/>
+<link href="appearance.css?v=20261021-1" rel="stylesheet"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
      crossorigin="anonymous"></script>
@@ -101,6 +106,7 @@
 <span class="site-version-label" aria-label="Έκδοση 0.9 beta">0.9 beta</span>
 <div class="header-copy">
 <div class="account-controls" id="accountControls">
+<div class="appearance-control"><span class="appearance-label" id="appearanceLabel">Εμφάνιση</span><button id="appearanceToggle" class="appearance-toggle" type="button" role="switch" aria-checked="false" aria-labelledby="appearanceLabel" aria-describedby="appearanceHint"><span class="appearance-dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg>Dark</span><span class="appearance-light"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>Light</span></button><span class="sr-only" id="appearanceHint">Ενεργοποίηση ανοιχτής εμφάνισης στο πλαίσιο υπολογισμού.</span></div>
 <button type="button" id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="headerNavigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
 <div id="mobileMenuBackdrop" class="mobile-menu-backdrop" hidden></div>
 <nav id="headerNavigation" class="header-navigation" aria-label="Κύριο μενού">
@@ -244,6 +250,7 @@
       και δες την εκτίμηση με αναλυτική παρουσίαση.
     </p>
 </section>
+
 <!-- HERO / INTEGRATED CONFIGURATOR -->
 <section class="vehicle-stage vehicle-stage-integrated vehicle-configurator-v2">
 <div class="stage-glow stage-glow-a"></div>
@@ -785,7 +792,7 @@
   <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261021-referral-ui-1"></script>
+<script src="script.js?v=20261021-appearance-1"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
