@@ -298,3 +298,27 @@ html[data-appearance="dark"] .site-header #authModal .auth-tabs button.is-active
 html[data-appearance="dark"] .site-header #authModal .auth-card input::placeholder{color:#91a18c!important}
 html[data-appearance="dark"] .result-panel .empty-state{background:#253229!important;color:#b2c0ad!important;border-color:#3a4d3e!important}
 html[data-appearance="dark"] .site-header #headerNavigation>button:after{color:#a8b99e!important}
+
+/* Calm, darker layers and restrained 180ms appearance changes. */
+html[data-appearance="dark"]{--bg:#0c110e;--surface:#141d17;--surface-2:#1c2920;--ink:#edf3ec;--muted:#b0bfaa;--line:#344837}
+html[data-appearance="dark"] body{background:radial-gradient(circle at 15% 0%,rgba(70,105,60,.065),transparent 40%),#0c110e!important}
+html[data-appearance="dark"] .site-header{background:rgba(13,20,16,.96)!important}
+html[data-appearance="dark"] :is(.result-panel,.history-dialog,.tokens-panel,.referral-dialog,.purchase-return-dialog,.cartelonio-onboarding-card,.seo-guide){background:#141d17!important;border-color:#304333!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-dashboard>article,.result-dashboard>section,.result-vehicle-card,.result-info-card,.result-breakdown-card){background:#1b2820!important;border-color:#344837!important}
+html[data-appearance="dark"] :is(.history-entry,.seo-guide-card,.token-package-choice,.history-tool-panel){background:#1c2920!important;border-color:#344837!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-total-card,.result-final-bar,.result-detail-total){background:linear-gradient(120deg,#192c1b,#233b24)!important;border-color:#3d5c36!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-vehicle-head span,.result-info-grid span,.result-data-row span,.result-detail-row span,.result-detail-row small,.result-provenance-note){color:#bac9b5!important}
+html[data-appearance="dark"] :is(.history-car-version,.history-entry-date,.history-message,.referral-limit,.tokens-purchase-note){color:#b4c3ae!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(.registration-strip-heading small,.registration-tax-details-btn,.label-note){color:#596b51!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm :is(select:disabled,input:disabled,button:disabled){opacity:.72!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 :is(select:disabled,input:disabled,button:disabled){opacity:.7!important}
+html[data-appearance="dark"] :is(input,select,textarea)::placeholder{color:#a5b59e!important;opacity:1}
+html[data-appearance="dark"] :is(.field-warning-text,.category-warning-text){background:#3b2024!important;color:#ffd4d7!important;border-color:#9b5960!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 .has-warning :is(input,select){border-color:#e88e95!important;box-shadow:0 0 0 1px #e88e95!important}
+html[data-appearance="dark"] #resultCard.has-calculation-error{border-color:#e88e95!important}
+html[data-appearance="dark"] :is(button,a,input,select,textarea,summary,[tabindex="0"]):focus-visible{outline:2px solid #b4df94!important;outline-offset:3px}
+html[data-appearance="light"] :is(button,a,input,select,textarea,summary,[tabindex="0"]):focus-visible{outline:2px solid #4e7d31!important;outline-offset:3px}
+html.appearance-changing :is(body,.site-header,.history-dialog,.history-header,.history-entry,.tokens-panel,.auth-card,.referral-dialog,.result-panel,.result-dashboard>article,.result-dashboard>section,.result-info-card,.result-breakdown-card,.seo-guide,.seo-guide-card,.vehicle-configurator-v2,.dropdown-card,.registration-strip,.vehicle-summary-card,.vehicle-summary-metrics,button,input,select,textarea,h1,h2,h3,p,label,strong,small,span){transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease!important}
+@media(prefers-reduced-motion:reduce){html.appearance-changing *{transition:none!important}}
+html[data-appearance="light"] .vehicle-configurator-v2 #randomSelectBtn span{color:#41672f!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #randomSelectBtn span{color:#b4df94!important}

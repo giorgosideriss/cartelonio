@@ -3160,22 +3160,37 @@ function openEmailPreferences() {
 })();
 
 
-// Appearance changes only the calculator card; default keeps the original theme.
 (function initCartelonioAppearance(){
   const key='cartelonio:appearance:v1';
   const button=document.getElementById('appearanceToggle');
-  if(!button)return;
-  function apply(value){
-    const theme=value==='light'?'light':'dark';
-    document.documentElement.dataset.appearance=theme;
-    button.setAttribute('aria-checked',String(theme==='light'));
-    button.title=theme==='light'?'Αλλαγή σε Dark':'Αλλαγή σε Light';
+  const root=document.documentElement;
+  const system=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+  const reduced=window.matchMedia?window.matchMedia('(prefers-reduced-motion: reduce)'):null;
+  let choice=null,timer;
+  try{const saved=localStorage.getItem(key);if(saved==='light'||saved==='dark')choice=saved;}catch(_){}
+  const systemTheme=()=>system?.matches?'dark':'light';
+  function apply(value,animate){
+    const theme=value==='dark'?'dark':'light';
+    if(animate&&!reduced?.matches&&root.dataset.appearance!==theme){
+      root.classList.add('appearance-changing');
+      clearTimeout(timer);timer=setTimeout(()=>root.classList.remove('appearance-changing'),220);
+    }
+    root.dataset.appearance=theme;
+    if(button){button.setAttribute('aria-checked',String(theme==='light'));button.title=theme==='light'?'Αλλαγή σε Dark':'Αλλαγή σε Light';}
+    const meta=document.querySelector('meta[name="theme-color"]');
+    if(meta)meta.content=theme==='dark'?'#0c110e':'#f2f1ec';
   }
-  apply(document.documentElement.dataset.appearance);
-  button.addEventListener('click',function(){
-    const theme=document.documentElement.dataset.appearance==='light'?'dark':'light';
-    apply(theme);
-    try{localStorage.setItem(key,theme);}catch(_){}
+  apply(choice||systemTheme(),false);
+  if(button)button.addEventListener('click',function(){
+    choice=root.dataset.appearance==='light'?'dark':'light';
+    apply(choice,true);try{localStorage.setItem(key,choice);}catch(_){}
   });
-  window.addEventListener('storage',function(event){if(event.key===key)apply(event.newValue);});
+  function onSystemChange(){if(!choice)apply(systemTheme(),true);}
+  if(system?.addEventListener)system.addEventListener('change',onSystemChange);
+  else if(system?.addListener)system.addListener(onSystemChange);
+  window.addEventListener('storage',function(e){
+    if(e.key!==key&&e.key!==null)return;
+    choice=e.newValue==='light'||e.newValue==='dark'?e.newValue:null;
+    apply(choice||systemTheme(),true);
+  });
 })();
