@@ -322,3 +322,63 @@ html.appearance-changing :is(body,.site-header,.history-dialog,.history-header,.
 @media(prefers-reduced-motion:reduce){html.appearance-changing *{transition:none!important}}
 html[data-appearance="light"] .vehicle-configurator-v2 #randomSelectBtn span{color:#41672f!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #randomSelectBtn span{color:#b4df94!important}
+
+/* Contrast repair: explicitly theme nested surfaces and legacy high-specificity rules. */
+html[data-appearance="dark"]{--theme-dialog:#141d17;--theme-card:#1b2820;--theme-raised:#263a2a;--theme-text:#edf3ec;--theme-secondary:#bac9b5;--theme-border:#435b46;--theme-accent:#c8e3b8}
+/* Auth has separate legacy :has() / :not(:has()) rules with !important. */
+html[data-appearance="dark"] #authModal#authModal .auth-card,
+html[data-appearance="dark"] #authModal#authModal :is(.account-finder,.account-finder-identity,.auth-form,.auth-tabs){background:var(--theme-dialog)!important;background-image:none!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] #authModal#authModal :is(h2,h3,label,strong,#authUserEmail,.account-finder-row-copy strong){color:var(--theme-text)!important}
+html[data-appearance="dark"] #authModal#authModal :is(p,small,.auth-copy,.auth-brand,.account-finder-chevron,.account-finder-profile span){color:var(--theme-secondary)!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-row{background:transparent!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-row:hover{background:var(--theme-card)!important}
+html[data-appearance="dark"] #authModal#authModal :is(.account-finder-avatar,.account-finder-row-icon,.auth-close,.account-finder-profile,.marketing-consent-label){background:var(--theme-raised)!important;color:var(--theme-accent)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-active{background:#263f2d!important;color:#d1e8bf!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-active span{color:#b4df94!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-logout{background:#342329!important;border-color:#86505a!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-logout :is(strong,.account-finder-row-icon,.account-finder-chevron){color:#ffd4d7!important;background:transparent!important}
+html[data-appearance="dark"] #authModal#authModal :is(input:not([type="checkbox"]),select){background:#101a13!important;color:var(--theme-text)!important;border-color:#647c5f!important}
+html[data-appearance="dark"] #authModal#authModal .auth-tabs button{background:transparent!important;color:var(--theme-secondary)!important}
+html[data-appearance="dark"] #authModal#authModal .auth-tabs button.is-active{background:var(--theme-raised)!important;color:var(--theme-text)!important}
+/* The dialog header and scroll area have their own opaque backgrounds. */
+html[data-appearance="dark"] #examplesDialog#examplesDialog{background:transparent!important;color:var(--theme-text)!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-dialog,.history-header,.history-content){background:var(--theme-dialog)!important;background-image:none!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog) :is(.history-kicker,.history-header p,.history-message,.history-empty,.history-entry-chevron){color:var(--theme-secondary)!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog) :is(h2,h3,.history-car-name){color:var(--theme-text)!important}
+/* Token packages: panel, legend, promotion and original price form one coherent surface. */
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.tokens-panel,.tokens-purchase-panel,.tokens-voucher){background:var(--theme-dialog)!important;background-image:none!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.tokens-overview,.token-launch-offer){background:transparent!important;color:var(--theme-text)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(legend,h2,label,.token-choice-copy strong,.token-price-offer){color:var(--theme-text)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.tokens-overview>span,.tokens-overview small,.token-choice-copy small,.token-price-original,.token-price-original s,.token-launch-offer p,.tokens-purchase-note){color:var(--theme-secondary)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .token-launch-offer>span{background:#2d4530!important;color:#d7edc8!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .token-package-choice{background:var(--theme-card)!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .token-package-choice:has(input:checked){background:#30492c!important;border-color:#a4c18b!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .token-package-choice input{accent-color:#b4df94;color-scheme:dark}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .tokens-purchase-note.is-error{color:#ffd4d7!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .tokens-purchase-note.is-success{color:#c8e8b2!important}
+/* Result headings are strong elements, rather than h2/h3. */
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog):is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog) .result-section-title strong{color:var(--theme-text)!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog):is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog) .result-section-icon{background:#2a402d!important;color:#cee8ba!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog):is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog) :is(.result-data-row em,.result-detail-row em,.result-detail-chip){background:#293c2c!important;color:#d1dfc9!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog) :is(.result-tax-brackets th,.result-tax-brackets td){color:var(--theme-text)!important;border-color:var(--theme-border)!important;background:transparent!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog,#historyComparisonDialog) :is(.result-detail-title,.result-detail-label,.result-detail-section h4){color:var(--theme-text)!important}
+/* Native scrollbars and status messages stay consistent with dark surfaces. */
+html[data-appearance="dark"] :is(.auth-card,.history-content,.tokens-panel,.tools-dialog){scrollbar-color:#63795d #141d17;color-scheme:dark}
+html[data-appearance="dark"] :is(.auth-error,.auth-message.is-error,.tokens-voucher-note.is-error){color:#ffd4d7!important}
+html[data-appearance="dark"] :is(.auth-message.is-success,.tokens-voucher-note.is-success){color:#c8e8b2!important}
+/* Visually hidden price annotations must not become visible through inherited layout rules. */
+#tokensMenu .token-choice-price .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+/* About / welcome: nested paragraph backgrounds and illustration halo. */
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-v2{color:var(--theme-text)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.about-hero,.about-hero-copy,.about-cartelonio-copy,.onboarding-subview-scroll){background:transparent!important;color:var(--theme-text)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-cartelonio-kicker{color:var(--theme-accent)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.about-cartelonio-lead,.about-info-card p){color:var(--theme-secondary)!important;background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-info-card p{padding:0!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.about-info-card,.compact-methods>section){background:var(--theme-card)!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important;box-shadow:none!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.about-info-icon,.compact-icon){background:#2a402d!important;color:#cee8ba!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-hero-halo{background:radial-gradient(circle,#30482d,rgba(34,53,33,.5) 60%,transparent 72%)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-cartelonio-note{background:#1d3022!important;color:var(--theme-text)!important;border:1px solid var(--theme-border)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-cartelonio-note p{background:transparent!important;color:#c9d8c1!important;border:0!important;padding:0!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .about-note-icon{background:#30482d!important;color:#d1e8bf!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.compact-methods p,.compact-data-detail,.compact-footer,.compact-result-note){color:var(--theme-secondary)!important}
+html[data-appearance="dark"] .cartelonio-onboarding-card .compact-links button{background:transparent!important;color:#cee8ba!important;border-color:var(--theme-border)!important}
