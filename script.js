@@ -2968,6 +2968,8 @@ function renderReferralAvailability() {
   const registered=Boolean(user && !user.is_anonymous);
   const offer=document.getElementById('tokensReferralOffer');
   if(offer) offer.hidden=!registered || Number(cartelonioProfile?.token_balance||0)>0;
+  const inviteOption=document.getElementById('tokensInviteFriendsBtn');
+  if(inviteOption) inviteOption.hidden=!registered;
   if(registered && user.email_confirmed_at) clearPendingReferral();
   if(!registered) {
     const dialog=document.getElementById('referralDialog');
@@ -3019,6 +3021,7 @@ function openReferralDialog() {
   if(!dialog) return;
   document.getElementById('accountReferralBtn')?.addEventListener('click',openReferralDialog);
   document.getElementById('tokensReferralBtn')?.addEventListener('click',openReferralDialog);
+  document.getElementById('tokensInviteFriendsBtn')?.addEventListener('click',openReferralDialog);
   document.getElementById('referralClose').addEventListener('click',()=>dialog.close());
   document.getElementById('referralRetry').addEventListener('click',loadReferralDialog);
   dialog.addEventListener('close',()=>{cartelonioReferralRequest++;});
