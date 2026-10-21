@@ -86,7 +86,7 @@
   .cookie-settings-button{position:fixed;z-index:99990;left:14px;bottom:14px;padding:8px 11px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:rgba(17,22,19,.82);color:rgba(240,245,242,.68);font:inherit;font-size:11px;cursor:pointer}
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
-<link href="style.css?v=20261019-communications-1" rel="stylesheet"/>
+<link href="style.css?v=20261021-performance-1" rel="stylesheet"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
      crossorigin="anonymous"></script>
@@ -96,7 +96,7 @@
 <header class="site-header">
 <div class="shell header-inner">
 <a aria-label="cartelonio" class="brand-mark" href="" onclick="window.location.reload(); return false;">
-<img class="site-logo" src="images/cartelonio-logo.png" alt="Cartelonio"/>
+<img class="site-logo" src="images/cartelonio-logo-web.webp" width="640" height="220" alt="Cartelonio"/>
 </a>
 <span class="site-version-label" aria-label="Έκδοση 0.9 beta">0.9 beta</span>
 <div class="header-copy">
@@ -104,7 +104,7 @@
 <button type="button" id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="headerNavigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
 <div id="mobileMenuBackdrop" class="mobile-menu-backdrop" hidden></div>
 <nav id="headerNavigation" class="header-navigation" aria-label="Κύριο μενού">
-<div class="mobile-menu-heading"><div class="mobile-menu-wordmark"><img src="images/cartelonio-logo.png" alt="Cartelonio" class="mobile-menu-brand-logo"></div><button type="button" id="mobileMenuClose" aria-label="Κλείσιμο μενού">×</button></div><h2 class="mobile-menu-section-title">Μενού</h2>
+<div class="mobile-menu-heading"><div class="mobile-menu-wordmark"><img src="images/cartelonio-logo-web.webp" width="640" height="220" alt="Cartelonio" class="mobile-menu-brand-logo"></div><button type="button" id="mobileMenuClose" aria-label="Κλείσιμο μενού">×</button></div><h2 class="mobile-menu-section-title">Μενού</h2>
   <button class="account-button" id="accountButton" type="button" aria-label="Ο λογαριασμός μου" aria-haspopup="dialog" aria-controls="authModal" aria-expanded="false">
     <span class="account-button-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c.8-3.3 3-5 6.5-5s5.7 1.7 6.5 5"/></svg>
@@ -365,7 +365,7 @@
     </div>
     <div class="hero-card">
       <div class="car-shadow"></div>
-      <img alt="Όχημα" id="carImage" src="https://cdn.pixabay.com/photo/2023/02/09/22/25/porsche-911-gt3-rs-7779707_1280.png"/>
+      <img alt="Όχημα" id="carImage" class="image-unavailable" decoding="async"/>
     </div>
   </div>
   <div class="vehicle-summary-metrics">
@@ -621,7 +621,7 @@
 <div class="welcome10-overlay" id="welcome10Overlay" hidden aria-hidden="true">
   <section class="welcome10-card" role="dialog" aria-modal="true" aria-labelledby="welcome10Title" aria-describedby="welcome10Description">
     <button type="button" class="welcome10-close" id="welcome10Close" aria-label="Κλείσιμο">×</button>
-    <img class="welcome10-logo" src="images/cartelonio-logo.png" alt="Cartelonio">
+    <img class="welcome10-logo" src="images/cartelonio-logo-web.webp" width="640" height="220" alt="Cartelonio">
     <span class="welcome10-eyebrow">ΕΝΑ ΜΙΚΡΟ ΔΩΡΟ ΓΙΑ ΤΟ ΞΕΚΙΝΗΜΑ ΣΟΥ</span>
     <h2 id="welcome10Title">10 δωρεάν υπολογισμοί, για σένα.</h2>
     <p id="welcome10Description">Δημιούργησε τον λογαριασμό σου και εξαργύρωσε τον κωδικό καλωσορίσματος για να εξερευνήσεις το Cartelonio με 10 δωρεάν υπολογισμούς τέλους ταξινόμησης.</p>
@@ -639,7 +639,7 @@
     <!-- Compact welcome: horizontal presentation -->
     <div class="onboarding-view is-active onboarding-compact" data-onboarding-view="welcome">
       <div class="compact-intro">
-        <div class="compact-brand"><img src="images/cartelonio-logo.png" alt="Cartelonio"><span>0.9 beta</span></div>
+        <div class="compact-brand"><img src="images/cartelonio-logo-web.webp" width="640" height="220" alt="Cartelonio"><span>0.9 beta</span></div>
         <h2>Καλώς ήρθες στο Cartelonio</h2>
         <p class="compact-subtitle">Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</p>
         <div class="compact-database" aria-label="Βάση δεδομένων Cartelonio">
@@ -669,7 +669,7 @@
           <div class="about-hero">
             <div class="about-hero-copy">
               <span class="about-cartelonio-kicker">ΤΙ ΕΙΝΑΙ ΤΟ CARTELONIO</span>
-              <h2>Η λογική πίσω από το <img src="images/cartelonio-logo.png" alt="Cartelonio" class="about-cartelonio-logo"></h2>
+              <h2>Η λογική πίσω από το <img src="images/cartelonio-logo-web.webp" width="640" height="220" alt="Cartelonio" class="about-cartelonio-logo"></h2>
               <p class="about-cartelonio-lead">Το Cartelonio συγκεντρώνει σε ένα ενιαίο εργαλείο τα στοιχεία που απαιτούνται για μια όσο το δυνατόν πιο αξιόπιστη εκτίμηση του Τέλους Ταξινόμησης ενός εισαγόμενου μεταχειρισμένου αυτοκινήτου.</p>
             </div>
             <div class="about-hero-visual" aria-label="Τυχαία εικόνα αυτοκινήτου από τη συλλογή Cartelonio"><div class="about-hero-halo"></div><img id="aboutRandomCar" alt="Αυτοκίνητο από τη συλλογή Cartelonio" decoding="async" hidden></div>
