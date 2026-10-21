@@ -1851,7 +1851,6 @@ function closeAuthModal() {
 }
 
 function renderAccountState() {
-  window.cartelonioOnAccountChange?.(cartelonioSession?.user?.id || null);
   renderReferralAvailability();
   scheduleFeatureAnnouncement();
   const user = cartelonioSession?.user;
@@ -2616,8 +2615,7 @@ function renderHistoryRecord(record){
  restore.addEventListener('click',async()=>{restore.disabled=true;try{await restoreHistoryRecord(record);closeHistory();}catch(err){historyStatus('Δεν ήταν δυνατή η επαναφορά των στοιχείων.');console.warn(err);}finally{restore.disabled=false;}});
  remove.addEventListener('click',async()=>{if(!confirm('Να διαγραφεί οριστικά αυτός ο υπολογισμός;'))return;remove.disabled=true;
   const {error}=await cartelonioDb.from('calculation_history').delete().eq('id',record.id).eq('user_id',cartelonioSession.user.id);
-  if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{historyRecords=historyRecords.filter(item=>item.id!==record.id);window.cartelonioForgetComparison?.(record.id);historyRenderList();}});
- window.cartelonioEnhanceHistoryCard?.(article,record);
+  if(error){historyStatus('Η διαγραφή απέτυχε.');remove.disabled=false;}else{historyRecords=historyRecords.filter(item=>item.id!==record.id);historyRenderList();}});
  return article;
 }
 async function loadHistory(reset=false){
