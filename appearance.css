@@ -94,3 +94,13 @@ html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#veh
 html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity .vehicle-summary-identity-copy{background:transparent!important;background-image:none!important;box-shadow:none!important;border-color:transparent!important}
 html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity #vehicleImageModel .vehicle-inline-edition,
 html[data-appearance="light"] .vehicle-configurator-v2 #vehicleImageIdentity#vehicleImageIdentity #vehicleImageEdition{color:#52684d!important;opacity:1!important;text-shadow:none!important}
+
+/* Same surface, outline and corner radii as the navigation buttons. */
+.site-header .appearance-control .appearance-toggle{height:44px;min-height:44px;border:1px solid rgba(78,104,80,.17);border-radius:15px;background:linear-gradient(145deg,#fbfdfb,#edf3ee);color:#78907b;box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 4px 12px rgba(30,50,35,.05)}
+.site-header .appearance-control .appearance-toggle:hover{background:#e6efdf;border-color:rgba(92,131,66,.3)}
+.site-header .appearance-control .appearance-toggle::before{height:34px;border-radius:10px;background:#eaf0e5;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 1px 3px rgba(34,64,39,.06)}
+.site-header .appearance-control .appearance-toggle>span{height:34px;border-radius:10px;color:#78907b}
+html:not([data-appearance="light"]) .site-header .appearance-control .appearance-dark,html[data-appearance="light"] .site-header .appearance-control .appearance-light{color:#17382d}
+.site-header .appearance-control .appearance-toggle:focus-visible{outline:3px solid #8aaf79;outline-offset:3px}
+@media(max-width:700px){.site-header .appearance-control .appearance-toggle{border-radius:14px;background:#f3f7f2}}
+@media(max-width:380px){.site-header .appearance-control .appearance-toggle{height:44px;min-height:44px}.site-header .appearance-control .appearance-toggle>span{height:34px}}
