@@ -113,3 +113,188 @@ html:not([data-appearance="light"]) .site-header .appearance-control .appearance
 .vehicle-configurator-v2 #brandButtonLogo.has-logo::before{content:none!important;display:none!important}
 .vehicle-configurator-v2 .vehicle-fields .dropdown-leading-icon .model-car-icon{display:block!important;width:25px!important;height:25px!important;overflow:visible!important;fill:none!important;stroke:currentColor!important;stroke-width:1.7!important;stroke-linecap:round!important;stroke-linejoin:round!important;transform:none!important}
 html[data-appearance="light"] .vehicle-configurator-v2 #brandButtonLogo{color:#526e49!important}
+
+/* The existing root appearance setting now controls the complete site. */
+html[data-appearance="dark"]{--bg:#111713;--surface:#1a231d;--surface-2:#222e25;--ink:#edf3ec;--muted:#a1b09f;--line:rgba(216,235,207,.14);--accent-deep:#a9d98a;--accent-soft:#283d27;color-scheme:dark}
+html[data-appearance="dark"] body{background:radial-gradient(circle at 12% 8%,rgba(109,169,67,.08),transparent 28%),#111713!important;color:#edf3ec!important}
+html[data-appearance="dark"] .site-header{background:rgba(20,29,23,.94)!important;border-color:#334238!important}
+html[data-appearance="dark"] :is(.intro-block h1,.result-heading-copy h2){color:#edf3ec!important}
+html[data-appearance="dark"] :is(.intro-block p,.site-version-label,.legal,.legal p,.legal strong,.legal span){color:#acb9a7!important}
+html[data-appearance="dark"] :is(.intro-kicker,.stage-kicker){color:#a9d98a!important}
+html[data-appearance="dark"] :is(.site-logo,.mobile-menu-brand-logo,.welcome10-logo,.onboarding-main-logo,.compact-brand img,.about-cartelonio-logo){filter:brightness(0) invert(1)}
+html[data-appearance="dark"] .site-header #headerNavigation{background:transparent!important}
+html[data-appearance="dark"] .site-header #headerNavigation>button,html[data-appearance="dark"] .site-header #mobileMenuToggle,html[data-appearance="dark"] .site-header #mobileMenuClose{background:linear-gradient(145deg,#26332b,#1e2a23)!important;border-color:#3c5141!important;color:#e2eddf!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 4px 12px rgba(0,0,0,.1)!important}
+html[data-appearance="dark"] .site-header #headerNavigation>button:hover{background:#30422e!important}
+html[data-appearance="dark"] .site-header #headerNavigation :is(.account-button-icon,.token-icon,.examples-nav-icon,.how-to-use-icon,.mobile-token-balance){background:#30432c!important;color:#c2e2ad!important}
+html[data-appearance="dark"] .site-header #headerNavigation>button svg{color:#c2e2ad!important;stroke:#c2e2ad!important}
+html[data-appearance="dark"] .site-header #mobileMenuToggle svg{stroke:currentColor!important}
+html[data-appearance="dark"] .site-header :is(.mobile-menu-section-title,.mobile-menu-wordmark){color:#edf3ec!important}
+html[data-appearance="dark"] .site-header .appearance-control .appearance-toggle{background:linear-gradient(145deg,#26332b,#1e2a23)!important;border-color:#3c5141!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 4px 12px rgba(0,0,0,.1)!important}
+html[data-appearance="dark"] .site-header .appearance-control .appearance-toggle::before{background:#3c5534!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)!important}
+html[data-appearance="dark"] .site-header .appearance-control .appearance-toggle>span{color:#91a38d!important}
+html[data-appearance="dark"] .site-header .appearance-control .appearance-toggle>.appearance-dark{color:#d9f0c9!important}
+@media(max-width:700px){html[data-appearance="dark"] .site-header #headerNavigation{background:rgba(26,36,29,.98)!important;border-color:#3c5141!important}html[data-appearance="dark"] .site-header #headerNavigation>button{background:transparent!important;box-shadow:none!important}html[data-appearance="dark"] .site-header #headerNavigation>button:hover{background:#30422e!important}}
+
+html[data-appearance="dark"] .history-dialog,
+html[data-appearance="dark"] .tokens-panel,
+html[data-appearance="dark"] .auth-card,
+html[data-appearance="dark"] .referral-dialog,
+html[data-appearance="dark"] .purchase-return-dialog,
+html[data-appearance="dark"] .welcome10-card,
+html[data-appearance="dark"] .cartelonio-onboarding-card,
+html[data-appearance="dark"] .seo-guide,
+html[data-appearance="dark"] .result-panel{background:#1b251e!important;color:#edf3ec!important;border-color:#344439!important;box-shadow:0 24px 70px rgba(0,0,0,.25)!important}
+
+html[data-appearance="dark"] .history-header,
+html[data-appearance="dark"] .history-toolbar,
+html[data-appearance="dark"] .history-expanded,
+html[data-appearance="dark"] .history-entry-actions,
+html[data-appearance="dark"] .seo-guide details,
+html[data-appearance="dark"] .account-finder-row,
+html[data-appearance="dark"] .result-detail-row,
+html[data-appearance="dark"] .result-data-row{border-color:#36453a!important}
+
+html[data-appearance="dark"] .history-entry,
+html[data-appearance="dark"] .history-tool-panel,
+html[data-appearance="dark"] .history-fields,
+html[data-appearance="dark"] .history-visual,
+html[data-appearance="dark"] .seo-guide-card,
+html[data-appearance="dark"] .token-package-choice,
+html[data-appearance="dark"] .referral-dialog-stats,
+html[data-appearance="dark"] .referral-zero-card,
+html[data-appearance="dark"] .feature-announcement-icon,
+html[data-appearance="dark"] .welcome10-voucher,
+html[data-appearance="dark"] .onboarding-showcase-database,
+html[data-appearance="dark"] .compact-database,
+html[data-appearance="dark"] .onboarding-method-cards>section,
+html[data-appearance="dark"] .onboarding-db-stat,
+html[data-appearance="dark"] .guide-card,
+html[data-appearance="dark"] .guide-demo,
+html[data-appearance="dark"] .onboarding-benefit{background:#253229!important;border-color:#3a4d3e!important;color:#edf3ec!important;box-shadow:none!important}
+
+html[data-appearance="dark"] .history-dialog :is(h2,h3,strong,label,.history-car-name),
+html[data-appearance="dark"] .tokens-panel :is(h2,h3,strong,label),
+html[data-appearance="dark"] .referral-dialog :is(h2,h3,strong,label),
+html[data-appearance="dark"] .purchase-return-dialog h2,
+html[data-appearance="dark"] .welcome10-card :is(h2,h3,strong),
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(h2,h3,h4,strong),
+html[data-appearance="dark"] .seo-guide :is(h2,h3,strong,summary){color:#edf3ec!important}
+
+html[data-appearance="dark"] .history-dialog :is(p,small,.history-car-version,.history-entry-date,.history-kicker,.history-field span),
+html[data-appearance="dark"] .tokens-panel :is(p,small,.tokens-option-chevron),
+html[data-appearance="dark"] .referral-dialog :is(p,span),
+html[data-appearance="dark"] .purchase-return-dialog p,
+html[data-appearance="dark"] .welcome10-card p,
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(p,small,.compact-result-note,.onboarding-db-stat span),
+html[data-appearance="dark"] .seo-guide p{color:#b2c0ad!important}
+
+html[data-appearance="dark"] .history-entry-money strong,
+html[data-appearance="dark"] .history-entry-money .history-ltpf,
+html[data-appearance="dark"] .referral-dialog-stats strong,
+html[data-appearance="dark"] .seo-guide a,
+html[data-appearance="dark"] .seo-eyebrow,
+html[data-appearance="dark"] .seo-guide-num,
+html[data-appearance="dark"] .referral-dialog .referral-kicker,
+html[data-appearance="dark"] .referral-dialog .referral-status{color:#b4e393!important}
+
+html[data-appearance="dark"] .history-dialog :is(input,select),
+html[data-appearance="dark"] .tokens-panel input:not([type="radio"]):not([type="checkbox"]),
+html[data-appearance="dark"] .referral-copy-row input{background:#142018!important;color:#edf3ec!important;border-color:#49604c!important;color-scheme:dark!important}
+
+html[data-appearance="dark"] .history-tab,
+html[data-appearance="dark"] .history-tool-button,
+html[data-appearance="dark"] .history-action,
+html[data-appearance="dark"] .history-more,
+html[data-appearance="dark"] .history-favorite,
+html[data-appearance="dark"] .history-card-more,
+html[data-appearance="dark"] .history-close,
+html[data-appearance="dark"] .tokens-close,
+html[data-appearance="dark"] .referral-close,
+html[data-appearance="dark"] .referral-copy-row button,
+html[data-appearance="dark"] .referral-zero-card button,
+html[data-appearance="dark"] .purchase-return-retry,
+html[data-appearance="dark"] .tokens-option,
+html[data-appearance="dark"] .onboarding-back,
+html[data-appearance="dark"] .onboarding-close{background:#2b3b2c!important;color:#cee7bd!important;border-color:#435d3f!important;box-shadow:none!important}
+
+html[data-appearance="dark"] .history-tab.is-active,
+html[data-appearance="dark"] .history-favorite.is-favorite,
+html[data-appearance="dark"] .token-package-choice:has(input:checked){background:#354e2c!important;border-color:#8cbb6e!important;color:#e2f6d5!important}
+
+html[data-appearance="dark"] .history-delete,
+html[data-appearance="dark"] .history-entry-actions .history-delete{background:#42262a!important;color:#ffc1c6!important;border-color:#72434a!important}
+
+html[data-appearance="dark"] .site-header #authModal .auth-card,
+html[data-appearance="dark"] .site-header #authModal .account-finder-header{background:#1b251e!important;color:#edf3ec!important;border-color:#344439!important}
+
+html[data-appearance="dark"] .site-header #authModal :is(h2,h3,strong,label,.account-finder-row-copy strong,.account-finder-email){color:#edf3ec!important}
+
+html[data-appearance="dark"] .site-header #authModal :is(p,small,.auth-copy,.account-finder-row-copy small,.account-finder-chevron){color:#b2c0ad!important}
+
+html[data-appearance="dark"] .site-header #authModal .account-finder-row{background:transparent!important;border-color:#36453a!important;color:#edf3ec!important}
+
+html[data-appearance="dark"] .site-header #authModal :is(.account-finder-row-icon,.account-finder-avatar,.account-finder-status,.auth-close){background:#2c3e2c!important;border-color:#40533f!important;color:#c8e3b8!important}
+
+html[data-appearance="dark"] .site-header #authModal .auth-form input:not([type="checkbox"]){background:#142018!important;color:#edf3ec!important;border-color:#49604c!important;color-scheme:dark!important}
+
+html[data-appearance="dark"] .site-header #authModal .marketing-consent-label{background:#253229!important;border-color:#3a4d3e!important;color:#bdcdb5!important}
+
+html[data-appearance="dark"] .site-header #tokensMenu :is(.token-choice-copy strong,.token-choice-price,.token-price-offer,.tokens-option strong){color:#edf3ec!important}
+
+html[data-appearance="dark"] .site-header #tokensMenu :is(.tokens-option-icon,.token-launch-offer,.tokens-balance-icon){background:#2c3e2c!important;color:#c8e3b8!important;border-color:#40533f!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-dashboard>article,
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-dashboard>section,
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-info-card,
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-breakdown-card,
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-vehicle-card{background:#253229!important;border-color:#3b4d3f!important;color:#edf3ec!important;box-shadow:0 10px 28px rgba(0,0,0,.12)!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-info-grid strong,.result-data-row strong,.result-vehicle-head strong,.result-detail-row strong,.result-breakdown-head h3){color:#edf3ec!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-vehicle-head span,.result-info-grid span,.result-data-row span,.result-detail-row span,.result-detail-row small,.result-provenance-note,.result-breakdown-pending){color:#b6c5b0!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-info-grid>div,.result-detail-row,.result-data-row){border-color:#3a4a3d!important;background:transparent!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-total-card,.result-final-bar,.result-detail-total){background:linear-gradient(120deg,#283f24,#344c2b)!important;color:#edfae6!important;border-color:#48613d!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-total-card strong,.result-total-card span,.result-final-bar strong,.result-final-bar span,.result-detail-total strong){color:#e4f7d8!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-total-card small,.result-final-bar small,.result-detail-total span){color:#bcd0ae!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(.result-breakdown-tabs,.result-tax-brackets,.result-data-icon,.result-vehicle-badge){background:#18271b!important;border-color:#40513e!important;color:#b4e393!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-breakdown-tabs button{color:#b8c7b0!important;background:transparent!important}
+
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-breakdown-tabs button.is-active,
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) .result-detail-row.is-emphasis{background:#354e2c!important;color:#e2f6d5!important}
+
+html[data-appearance="dark"] .onboarding-compact .compact-database,
+html[data-appearance="dark"] .onboarding-compact .compact-method,
+html[data-appearance="dark"] .about-info-card,
+html[data-appearance="dark"] .about-important,
+html[data-appearance="dark"] .guide-info,
+html[data-appearance="dark"] .guide-demo-fields>div,
+html[data-appearance="dark"] .guide-demo-result{background:#253229!important;color:#edf3ec!important;border-color:#3b4d3f!important}
+
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.compact-db-stat span,.compact-data-details,.compact-method p,.compact-subtitle,.about-info-card p,.guide-card p){color:#b2c0ad!important}
+
+html[data-appearance="dark"] .wrap article section,
+html[data-appearance="dark"] .wrap aside{background:#1b251e!important;color:#edf3ec!important;border-color:#344439!important;box-shadow:0 10px 28px rgba(0,0,0,.1)!important}
+
+html[data-appearance="dark"] .wrap :is(h1,h2,h3,th,strong){color:#edf3ec!important}
+
+html[data-appearance="dark"] .wrap :is(p,li,td,.meta,.crumb,.lead,footer){color:#b9c7b3!important}
+
+html[data-appearance="dark"] .wrap a:not(.button){color:#b4e393!important}
+
+html[data-appearance="dark"] .wrap :is(th,td,details){border-color:#3a4d3e!important}
+
+html[data-appearance="dark"] .wrap :is(.note,.cta){background:#283f24!important;color:#e4f7d8!important;border-color:#557b40!important}
+html[data-appearance="dark"] .site-header nav>a>img{filter:brightness(0) invert(1)}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog) :is(h2,h3,h4,label){color:#edf3ec!important}
+html[data-appearance="dark"] .site-header #authModal .auth-tabs{background:#142018!important;border-color:#36453a!important}
+html[data-appearance="dark"] .site-header #authModal .auth-tabs button{background:transparent!important;color:#b2c0ad!important}
+html[data-appearance="dark"] .site-header #authModal .auth-tabs button.is-active{background:#30432c!important;color:#e2eddf!important}
+html[data-appearance="dark"] .site-header #authModal .auth-card input::placeholder{color:#91a18c!important}
+html[data-appearance="dark"] .result-panel .empty-state{background:#253229!important;color:#b2c0ad!important;border-color:#3a4d3e!important}
+html[data-appearance="dark"] .site-header #headerNavigation>button:after{color:#a8b99e!important}
