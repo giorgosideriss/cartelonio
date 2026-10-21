@@ -1,17 +1,40 @@
-/* Field help only. No calculation/token writes. */
+/* Floating field help: hover, keyboard focus and touch. */
 (function(){
 'use strict';
-const byId=id=>document.getElementById(id);
-const node=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!=null)el.textContent=text;return el;};
-const button=(text,cls,fn)=>{const el=node('button',cls,text);el.type='button';if(fn)el.addEventListener('click',fn);return el;};
-function dialog(id,title){
- const d=node('dialog','tools-dialog');d.id=id;d.setAttribute('aria-labelledby',id+'Title');
- const head=node('header','tools-dialog-head');const h=node('h2','',title);h.id=id+'Title';const close=button('×','tools-close',()=>d.close());close.setAttribute('aria-label','Κλείσιμο');head.append(h,close);d.append(head);document.body.append(d);
- d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();});return d;
+const tip=document.createElement('div');tip.id='fieldHelpTooltip';tip.className='field-help-tooltip';tip.setAttribute('role','tooltip');tip.hidden=true;
+const heading=document.createElement('strong'),copy=document.createElement('p');tip.append(heading,copy);document.body.append(tip);
+let active=null,pinned=false,timer=null;
+const cancel=()=>{clearTimeout(timer);timer=null;};
+function close(){cancel();if(active){active.removeAttribute('aria-describedby');active.setAttribute('aria-expanded','false');}active=null;pinned=false;tip.hidden=true;}
+function position(){
+ if(!active||tip.hidden)return;
+ const r=active.getBoundingClientRect(),v=window.visualViewport;
+ const left=v?.offsetLeft||0,top=v?.offsetTop||0,width=v?.width||window.innerWidth,height=v?.height||window.innerHeight;
+ if(r.bottom<top||r.top>top+height||r.right<left||r.left>left+width){close();return;}
+ tip.style.maxWidth=Math.max(0,Math.min(310,width-24))+'px';tip.style.maxHeight=Math.max(80,height-24)+'px';
+ const box=tip.getBoundingClientRect();let y=r.bottom+10;
+ if(y+box.height>top+height-12&&r.top-box.height-10>=top+12)y=r.top-box.height-10;
+ tip.style.left=Math.max(left+12,Math.min(r.left,left+width-box.width-12))+'px';
+ tip.style.top=Math.max(top+12,Math.min(y,top+height-box.height-12))+'px';
 }
-const help=dialog('fieldHelpDialog','Βοήθεια πεδίου');const helpText=node('p','tools-help-text');help.append(helpText);let helpReturn=null;help.addEventListener('close',()=>helpReturn?.focus?.({preventScroll:true}));
+function open(b,title,text){cancel();if(active!==b){close();active=b;}heading.textContent=title;copy.textContent=text;tip.hidden=false;b.setAttribute('aria-describedby',tip.id);b.setAttribute('aria-expanded','true');position();}
+function later(){cancel();if(!pinned)timer=setTimeout(()=>{if(!tip.matches(':hover')&&active!==document.activeElement)close();},160);}
 const topics={manualLtpf:['ΛΤΠΦ','Η Λιανική Τιμή Προ Φόρων της συγκεκριμένης έκδοσης. Δεν είναι η τιμή πώλησης της αγγελίας. Στη χειροκίνητη εισαγωγή έλεγξε ότι καταχωρίζεις την κατάλληλη τιμή προ φόρων.'],co2:['Εκπομπές CO₂','Συμπλήρωσε τις εκπομπές σε g/km από τα έγγραφα του αυτοκινήτου, όπως το CoC. Για παράδειγμα, 129 σημαίνει 129 g/km. Έλεγξε τη μέθοδο NEDC/WLTP και μην χρησιμοποιείς στοιχεία άλλης έκδοσης.'],euroClass:['Κατηγορία Euro','Η αντιρρυπαντική προδιαγραφή του συγκεκριμένου οχήματος, όπως τεκμηριώνεται στα έγγραφά του. Δεν ταυτίζεται με το καύσιμο και δεν προκύπτει πάντα μόνο από το έτος. Για αμιγώς ηλεκτρικό επίλεξε Electric.']};
-for(const [id,[title,text]] of Object.entries(topics)){const labelEl=document.querySelector(`label[for="${id}"]`);if(!labelEl)continue;const b=button('ⓘ','field-help-button',e=>{e.preventDefault();e.stopPropagation();helpReturn=b;byId('fieldHelpDialogTitle').textContent=title;helpText.textContent=text;if(!help.open)help.showModal();});b.setAttribute('aria-label','Βοήθεια: '+title);b.setAttribute('aria-haspopup','dialog');b.setAttribute('aria-controls','fieldHelpDialog');labelEl.append(b);}
-// The catalog LTPF is displayed in the vehicle summary rather than an editable label.
-const ltpfLabel=document.querySelector('.summary-metric-label');if(ltpfLabel){const b=button('ⓘ','field-help-button',()=>{helpReturn=b;byId('fieldHelpDialogTitle').textContent=topics.manualLtpf[0];helpText.textContent=topics.manualLtpf[1];if(!help.open)help.showModal();});b.setAttribute('aria-label','Βοήθεια: ΛΤΠΦ');b.setAttribute('aria-haspopup','dialog');ltpfLabel.append(b);}
+
+function attach(target,topic){
+ if(!target)return;const [title,text]=topic,b=document.createElement('button');b.type='button';b.className='field-help-button';b.textContent='?';b.setAttribute('aria-label','Βοήθεια: '+title);b.setAttribute('aria-expanded','false');
+ b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){if(active!==b)pinned=false;open(b,title,text);}});
+ b.addEventListener('pointerleave',later);
+ b.addEventListener('focus',()=>open(b,title,text));
+ b.addEventListener('blur',()=>{if(!pinned)close();});
+ b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();if(active===b&&pinned){close();return;}open(b,title,text);pinned=true;});
+ target.append(b);
+}
+for(const [id,topic] of Object.entries(topics))attach(document.querySelector(`label[for="${id}"]`),topic);
+attach(document.querySelector('.summary-metric-label'),topics.manualLtpf);
+tip.addEventListener('pointerenter',cancel);tip.addEventListener('pointerleave',later);
+document.addEventListener('pointerdown',e=>{if(active&&!active.contains(e.target)&&!tip.contains(e.target))close();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&active){close();e.preventDefault();}});
+window.addEventListener('resize',position,{passive:true});window.addEventListener('scroll',position,{passive:true,capture:true});
+window.visualViewport?.addEventListener('resize',position,{passive:true});window.visualViewport?.addEventListener('scroll',position,{passive:true});
 })();
