@@ -409,3 +409,48 @@ html[data-appearance="dark"] .cartelonio-onboarding-card .guide-v2 .guide-result
 html[data-appearance="dark"] .cartelonio-onboarding-card .guide-v2 :is(.guide-info-icon,.guide-info){border-color:#435b46!important}
 html[data-appearance="dark"] .cartelonio-onboarding-card .guide-v2 .guide-info-icon{background:#2b432d!important;color:#d8edc8!important}
 html[data-appearance="dark"] .cartelonio-onboarding-card .guide-v2 .guide-disclaimer{color:#bac9b5!important}
+
+/* Selected dark direction: graphite calculator against a deeper green-black page. */
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2{background:linear-gradient(145deg,#2b322d,#252c28)!important;color:#edf3ec!important;border:1px solid #4b5c47!important;box-shadow:0 24px 64px rgba(0,0,0,.3),inset 0 1px 0 rgba(234,245,224,.045)!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2>.stage-glow{opacity:.1!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.dropdown-card,.registration-strip,.listing-panel){background:linear-gradient(145deg,#343d36,#303832)!important;border-color:#52634d!important;box-shadow:inset 0 1px 0 rgba(234,245,224,.035)!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.config-heading,.vehicle-summary-row){border-color:#52634d!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .vehicle-input-modes{background:#202822!important;border-color:#4b5c47!important;box-shadow:inset 0 1px 3px #0002!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .vehicle-input-mode:not(.is-active){background:#303832!important;color:#d1ddc9!important;border-color:#53634d!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.registration-fields input,.registration-fields select,.listing-panel input,.listing-panel textarea){background:#3b453c!important;color:#f0f5eb!important;border-color:#687b5e!important;box-shadow:none!important;color-scheme:dark}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-button,.extras-toggle,.vehicle-fields select){background:transparent!important;color:#f0f5eb!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(label,.brand-button-label,.extras-toggle-label,.config-heading strong,.registration-strip-heading strong){color:#edf3ec!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.label-note,.registration-strip-heading small,.registration-tax-details-btn,.listing-panel p){color:#c3cfbc!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-menu,.extras-panel){background:#27322a!important;color:#edf3ec!important;border-color:#687b5e!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option,.extras-option){color:#edf3ec!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option:not(:disabled),.extras-option):hover{background:#3a4a35!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm #resetBtn{background:#343e35!important;color:#e2ebdb!important;border-color:#627359!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 .vehicle-summary-card{border-color:#5b7051!important;box-shadow:0 10px 28px #0002!important}
+html[data-appearance="dark"] #resultCard.result-panel{background:#1d2821!important;border-color:#4b5c47!important}
+html[data-appearance="dark"] #results#results :is(.result-dashboard>article,.result-dashboard>section,.result-vehicle-card,.result-info-card,.result-breakdown-card){background:#28362b!important;border-color:#4b6045!important}
+html[data-appearance="dark"] #results#results :is(.result-total-card,.result-final-bar,.result-detail-total){background:linear-gradient(120deg,#2a3d28,#344a2c)!important;border-color:#5a7749!important}
+/* Keep validation conspicuous on the lighter graphite surfaces. */
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is([aria-invalid="true"],.calculation-field-invalid){border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .has-warning :is(input,select){border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important}
+/* Unavailable brands stay readable without fading the entire label and badge. */
+html[data-appearance] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable{opacity:1!important;filter:none!important;cursor:not-allowed!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable,
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable:hover{background:#f2f5ee!important;color:#596950!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable .brand-option-label{color:#596950!important}
+html[data-appearance="light"] .vehicle-configurator-v2 #calcForm .brand-availability-badge{background:#e4ecdd!important;color:#415a36!important;border-color:#aebfa1!important;opacity:1!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable,
+html[data-appearance="dark"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable:hover{background:#27322a!important;color:#bac9b5!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable .brand-option-label{color:#bac9b5!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #calcForm .brand-availability-badge{background:#34492e!important;color:#d0e5be!important;border-color:#728b60!important;opacity:1!important}
+html[data-appearance] .vehicle-configurator-v2 #calcForm .brand-option.brand-option-unavailable .brand-option-logo{opacity:.6!important;filter:grayscale(1)!important}
+/* Slim, rounded native scrollbars with a palette matching the current theme. */
+html{--scroll-thumb:#8e9d84;--scroll-thumb-hover:#697f5d;--scroll-track:#edf2e9}
+html[data-appearance="dark"]{--scroll-thumb:#63775a;--scroll-thumb-hover:#94aa84;--scroll-track:#202b23}
+html,html *{scrollbar-width:thin;scrollbar-color:var(--scroll-thumb) var(--scroll-track)!important}
+html::-webkit-scrollbar,html *::-webkit-scrollbar{width:9px;height:9px;background:transparent}
+html::-webkit-scrollbar-track,html *::-webkit-scrollbar-track{background:var(--scroll-track);border-radius:999px}
+html::-webkit-scrollbar-thumb,html *::-webkit-scrollbar-thumb{background-color:var(--scroll-thumb);border:2px solid var(--scroll-track);border-radius:999px;min-height:32px;background-clip:padding-box}
+html::-webkit-scrollbar-thumb:hover,html *::-webkit-scrollbar-thumb:hover{background-color:var(--scroll-thumb-hover)}
+html::-webkit-scrollbar-button,html *::-webkit-scrollbar-button{display:none;width:0;height:0}
+html::-webkit-scrollbar-corner,html *::-webkit-scrollbar-corner{background:transparent}
+@media(forced-colors:active){html,html *{scrollbar-color:auto!important;scrollbar-width:auto}}
