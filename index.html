@@ -91,7 +91,7 @@
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
 <link href="style.css?v=20261021-referral-ui-1" rel="stylesheet"/>
-<link href="appearance.css?v=20261023-preview-bottom-17" rel="stylesheet"/>
+<link href="appearance.css?v=20261023-preview-fade-18" rel="stylesheet"/>
 <link rel="stylesheet" href="calculation-tools.css?v=20261021-floating-help-3"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
@@ -376,13 +376,14 @@
   </div>
   <div class="vehicle-summary-metrics">
     <div class="vehicle-summary-row">
-      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"></path><path d="M14 3.5v4h4M10 12h5M10 15.5h5"></path></svg>ΛΤΠΦ οχήματος</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"></path><path d="M14 3.5v4h4M10 12h5M10 15.5h5"></path></svg><span>ΛΤΠΦ οχήματος</span></span>
       <div class="summary-price-value">
+        <span class="preview-pending-price">0,00 <small>Μετά τον υπολογισμό</small></span>
         <input id="price" inputmode="decimal" placeholder="μετά τον υπολογισμό" readonly type="text" value="" aria-label="Επαληθευμένη ΛΤΠΦ"/>
       </div>
     </div>
     <div class="vehicle-summary-row">
-      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path><path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path></svg>Εκπομπές CO₂</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path><path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path></svg><span>Εκπομπές CO₂</span></span>
       <strong id="vehicleSummaryCo2">—</strong>
     </div>
     <div class="vehicle-summary-row vehicle-summary-tax-row" id="registrationTaxMiniCard" hidden>
@@ -790,7 +791,7 @@
   <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261023-preview-bottom-17"></script>
+<script src="script.js?v=20261023-preview-fade-18"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">

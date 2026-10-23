@@ -379,6 +379,7 @@ function updateVehicleSummaryCo2() {
   if (!out || !input) return;
   const raw = String(input.value || "").trim();
   const value = Number(raw.replace(",", "."));
+  document.getElementById("vehiclePreviewCard")?.classList.toggle("has-preview-co2", Boolean(raw) && Number.isFinite(value));
   out.textContent = raw && Number.isFinite(value) ? `${value.toLocaleString("el-GR")} g/km` : "—";
 }
 
