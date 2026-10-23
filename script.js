@@ -536,7 +536,7 @@ function handleExtraCheckboxChange(e) {
   } else {
     selectedExtras.delete(idx);
   }
-  const priceInput=document.getElementById("price");priceInput.value="";priceInput.placeholder="Επαληθεύεται στον server";priceInput.readOnly=true;
+  const priceInput=document.getElementById("price");priceInput.value="";priceInput.placeholder="μετά τον υπολογισμό";priceInput.readOnly=true;
   // Refresh the extras counter immediately after every selection or deselection.
   const extrasLabel = document.querySelector(".extras-toggle-label");
   if (extrasLabel) {

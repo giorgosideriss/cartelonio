@@ -19,7 +19,7 @@ function position(){
 }
 function open(b,title,text){cancel();if(active!==b){close();active=b;}heading.textContent=title;copy.textContent=text;tip.hidden=false;b.setAttribute('aria-describedby',tip.id);b.setAttribute('aria-expanded','true');position();}
 function later(){cancel();if(!pinned)timer=setTimeout(()=>{if(!tip.matches(':hover')&&active!==document.activeElement)close();},160);}
-const topics={manualLtpf:['ΛΤΠΦ','Η Λιανική Τιμή Προ Φόρων της συγκεκριμένης έκδοσης. Δεν είναι η τιμή πώλησης της αγγελίας. Στη χειροκίνητη εισαγωγή έλεγξε ότι καταχωρίζεις την κατάλληλη τιμή προ φόρων.'],co2:['Εκπομπές CO₂','Συμπλήρωσε τις εκπομπές σε g/km από τα έγγραφα του αυτοκινήτου, όπως το CoC. Για παράδειγμα, 129 σημαίνει 129 g/km. Έλεγξε τη μέθοδο NEDC/WLTP και μην χρησιμοποιείς στοιχεία άλλης έκδοσης.'],euroClass:['Κατηγορία Euro','Η αντιρρυπαντική προδιαγραφή του συγκεκριμένου οχήματος, όπως τεκμηριώνεται στα έγγραφά του. Δεν ταυτίζεται με το καύσιμο και δεν προκύπτει πάντα μόνο από το έτος. Για αμιγώς ηλεκτρικό επίλεξε Electric.']};
+const topics={co2:['Εκπομπές CO₂','Συμπλήρωσε τις εκπομπές σε g/km από τα έγγραφα του αυτοκινήτου, όπως το CoC. Για παράδειγμα, 129 σημαίνει 129 g/km. Έλεγξε τη μέθοδο NEDC/WLTP και μην χρησιμοποιείς στοιχεία άλλης έκδοσης.'],euroClass:['Κατηγορία Euro','Η αντιρρυπαντική προδιαγραφή του συγκεκριμένου οχήματος, όπως τεκμηριώνεται στα έγγραφά του. Δεν ταυτίζεται με το καύσιμο και δεν προκύπτει πάντα μόνο από το έτος. Για αμιγώς ηλεκτρικό επίλεξε Electric.']};
 
 function attach(target,topic){
  if(!target)return;const [title,text]=topic,b=document.createElement('button');b.type='button';b.className='field-help-button';b.textContent='?';b.setAttribute('aria-label','Βοήθεια: '+title);b.setAttribute('aria-expanded','false');
@@ -31,7 +31,6 @@ function attach(target,topic){
  target.append(b);
 }
 for(const [id,topic] of Object.entries(topics))attach(document.querySelector(`label[for="${id}"]`),topic);
-attach(document.querySelector('.summary-metric-label'),topics.manualLtpf);
 tip.addEventListener('pointerenter',cancel);tip.addEventListener('pointerleave',later);
 document.addEventListener('pointerdown',e=>{if(active&&!active.contains(e.target)&&!tip.contains(e.target))close();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&active){close();e.preventDefault();}});

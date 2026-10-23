@@ -91,7 +91,7 @@
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
 <link href="style.css?v=20261021-referral-ui-1" rel="stylesheet"/>
-<link href="appearance.css?v=20261023-preview-15" rel="stylesheet"/>
+<link href="appearance.css?v=20261023-preview-refine-16" rel="stylesheet"/>
 <link rel="stylesheet" href="calculation-tools.css?v=20261021-floating-help-3"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
@@ -355,7 +355,7 @@
 </div>
 </div>
 <div class="hero-wrap integrated-hero-wrap catalog-only-block">
-<div class="vehicle-summary-card vehicle-preview-v3">
+<div class="vehicle-summary-card vehicle-preview-v3" id="vehiclePreviewCard">
   <div class="vehicle-summary-visual">
     <div class="vehicle-summary-glow" aria-hidden="true"></div>
     <div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
@@ -378,7 +378,7 @@
     <div class="vehicle-summary-row">
       <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"></path><path d="M14 3.5v4h4M10 12h5M10 15.5h5"></path></svg>ΛΤΠΦ οχήματος</span>
       <div class="summary-price-value">
-        <input id="price" inputmode="decimal" placeholder="—" readonly type="text" value="" aria-label="Επαληθευμένη ΛΤΠΦ"/>
+        <input id="price" inputmode="decimal" placeholder="μετά τον υπολογισμό" readonly type="text" value="" aria-label="Επαληθευμένη ΛΤΠΦ"/>
       </div>
     </div>
     <div class="vehicle-summary-row">
@@ -790,7 +790,7 @@
   <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261023-preview-15"></script>
+<script src="script.js?v=20261023-preview-refine-16"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
@@ -803,7 +803,7 @@
 </dialog>
 
 
-<script src="calculation-tools.js?v=20261021-floating-help-3"></script>
+<script src="calculation-tools.js?v=20261023-no-ltpf-help-4"></script>
 <script>
 /* Retire the explanatory paragraph once on the first page scroll. */
 (function () {
