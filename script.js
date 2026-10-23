@@ -390,6 +390,12 @@ function setRegistrationTaxMiniResult(value) {
   const valid = typeof value === "number" && Number.isFinite(value);
   const card = document.getElementById("registrationTaxMiniCard");
   const details = document.getElementById("registrationTaxDetailsBtn");
+  const preview = document.getElementById("vehiclePreviewCard");
+  const animateLayout = preview && window.matchMedia("(min-width: 821px)").matches
+    && !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    && preview.classList.contains("has-preview-result") !== valid;
+  const metricRows = animateLayout ? [...preview.querySelectorAll(".vehicle-summary-row:not(.vehicle-summary-tax-row)")] : [];
+  const oldPositions = metricRows.map(row => row.getBoundingClientRect().top);
   if (card) card.hidden = !valid;
   if (details) details.hidden = !valid;
   document.querySelector(".vehicle-preview-v3")?.classList.toggle("has-preview-result", valid);
@@ -400,6 +406,14 @@ function setRegistrationTaxMiniResult(value) {
     el.classList.add("is-empty");
     el.innerHTML = `<span class="registration-tax-mini-placeholder">Προσθέστε τα στοιχεία και κάντε υπολογισμό</span>`;
   }
+  metricRows.forEach((row, index) => {
+    const delta = oldPositions[index] - row.getBoundingClientRect().top;
+    if (Math.abs(delta) > 1 && typeof row.animate === "function") {
+      row.getAnimations().forEach(animation => animation.cancel());
+      row.animate([{ transform: `translateY(${delta}px)` }, { transform: "translateY(0)" }],
+        { duration: 380, easing: "cubic-bezier(.22,1,.36,1)" });
+    }
+  });
 }
 
 async function updateCarImage() {

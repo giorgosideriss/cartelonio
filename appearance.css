@@ -555,3 +555,16 @@ html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard #price
   color: #b2bfac !important;
   text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
 }
+
+/* Desktop: anchor metrics to the bottom, keeping room for the tax band. */
+@media (min-width: 821px) {
+ html[data-appearance] .vehicle-configurator-v2 .integrated-hero-wrap:has(#vehiclePreviewCard) {
+  display:flex !important; align-self:stretch !important; align-items:stretch !important;
+ }
+ html[data-appearance] .vehicle-configurator-v2 #vehiclePreviewCard {
+  flex:1 1 auto !important; width:100% !important; min-height:440px !important;
+ }
+ html[data-appearance] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics {
+  margin-top:auto !important; flex:0 0 auto !important;
+ }
+}
