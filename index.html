@@ -245,7 +245,7 @@
 <section class="intro-block">
 <span class="intro-kicker">ΥΠΟΛΟΓΙΣΤΗΣ ΤΕΛΟΥΣ ΤΑΞΙΝΟΜΗΣΗΣ</span>
 <h1>Υπολόγισε το τέλος ταξινόμησης του αυτοκινήτου σου.</h1>
-<p>
+<p id="introDescription">
       Υπολογισμός τέλους ταξινόμησης μεταχειρισμένου αυτοκινήτου στην Ελλάδα.
       Επίλεξε από τον κατάλογο, συμπλήρωσε χειροκίνητα ή επικόλλησε μια αγγελία
       και δες την εκτίμηση με αναλυτική παρουσίαση.
@@ -804,5 +804,34 @@
 
 
 <script src="calculation-tools.js?v=20261021-floating-help-3"></script>
+<script>
+/* Retire the explanatory paragraph once on the first page scroll. */
+(function () {
+  const description = document.getElementById('introDescription');
+  if (!description) return;
+  const initialY = window.scrollY;
+  let dismissed = false;
+  function dismissOnScroll() {
+    if (dismissed || Math.abs(window.scrollY - initialY) < 8) return;
+    dismissed = true;
+    window.removeEventListener('scroll', dismissOnScroll);
+    const finish = () => { description.hidden = true; description.style.display = 'none'; };
+    description.setAttribute('aria-hidden', 'true');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !description.animate) {
+      finish();
+      return;
+    }
+    const height = description.getBoundingClientRect().height;
+    const margin = getComputedStyle(description).marginTop;
+    description.style.overflow = 'hidden';
+    const animation = description.animate([
+      { height: height + 'px', marginTop: margin, opacity: 1, transform: 'translateY(0)' },
+      { height: '0px', marginTop: '0px', opacity: 0, transform: 'translateY(-6px)' }
+    ], { duration: 380, easing: 'cubic-bezier(.22,.61,.36,1)', fill: 'forwards' });
+    animation.finished.then(finish, finish);
+  }
+  window.addEventListener('scroll', dismissOnScroll, { passive: true });
+})();
+</script>
 </body>
 </html>
