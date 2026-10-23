@@ -196,6 +196,7 @@ function getSelectedVehicleIdentity() {
 
 // Fit long manufacturer names inside the existing identity rail without changing its layout.
 function fitVehicleBrandName() {
+  if (document.querySelector(".vehicle-preview-v3")) return;
   const name = document.getElementById("vehicleImageBrand");
   const rail = document.getElementById("vehicleImageIdentity");
   if (!name || !rail || !name.textContent.trim()) return;
@@ -287,17 +288,10 @@ function updateVehicleImageIdentity(hasImage = null) {
   const modelText = String(model || "").trim();
   const displayEdition = cleanEditionDisplayName(editionName, brand, modelText);
 
-  if (modelEl) {
-    modelEl.textContent = modelText;
-    if (modelText && displayEdition) {
-      const inlineEdition = document.createElement("span");
-      inlineEdition.className = "vehicle-inline-edition";
-      inlineEdition.textContent = ` - ${displayEdition}`;
-      modelEl.appendChild(inlineEdition);
-    }
-  }
+  document.getElementById("vehicleImageBrand").textContent = [brand, modelText].filter(Boolean).join(" ");
+  if (modelEl) { modelEl.textContent = ""; modelEl.hidden = true; }
   if (editionEl) {
-    editionEl.textContent = "";
+    editionEl.textContent = displayEdition;
     editionEl.classList.remove("has-model-separator");
   }
   document.getElementById("vehicleImageYear").textContent = year;
@@ -388,11 +382,18 @@ function updateVehicleSummaryCo2() {
   out.textContent = raw && Number.isFinite(value) ? `${value.toLocaleString("el-GR")} g/km` : "—";
 }
 
+let vehiclePreviewRevision = 0;
 function setRegistrationTaxMiniResult(value) {
   updateVehicleSummaryCo2();
   const el = document.getElementById("registrationTaxMiniValue");
   if (!el) return;
-  if (typeof value === "number" && Number.isFinite(value)) {
+  const valid = typeof value === "number" && Number.isFinite(value);
+  const card = document.getElementById("registrationTaxMiniCard");
+  const details = document.getElementById("registrationTaxDetailsBtn");
+  if (card) card.hidden = !valid;
+  if (details) details.hidden = !valid;
+  document.querySelector(".vehicle-preview-v3")?.classList.toggle("has-preview-result", valid);
+  if (valid) {
     el.classList.remove("is-empty");
     el.innerHTML = `<strong>€${value.toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong>`;
   } else {
@@ -1127,6 +1128,7 @@ function showTokensRequired() {
 }
 
 async function calculate(){
+ const previewRevisionAtStart = vehiclePreviewRevision;
  clearCalculationWarnings();
  await cartelonioAuthReady;
  // Only an authenticated, freshly read balance can stop the request early.
@@ -1200,7 +1202,7 @@ async function calculate(){
      document.getElementById("powertrain").value=v.powertrain;
    }
    if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
-   setRegistrationTaxMiniResult(r.totalTax);
+   if (previewRevisionAtStart === vehiclePreviewRevision) setRegistrationTaxMiniResult(r.totalTax);
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
    const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":"Επαληθευμένη ΛΤΠΦ";
    const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο.");
@@ -3193,4 +3195,17 @@ function openEmailPreferences() {
     choice=e.newValue==='light'||e.newValue==='dark'?e.newValue:null;
     apply(choice||systemTheme(),true);
   });
+})();
+
+// A changed input invalidates the compact result immediately.
+(function () {
+  const form = document.getElementById('calcForm');
+  if (!form) return;
+  function invalidate(event) {
+    if (!event.target.matches('input,select,textarea')) return;
+    vehiclePreviewRevision++;
+    setRegistrationTaxMiniResult(null);
+  }
+  form.addEventListener('input', invalidate, true);
+  form.addEventListener('change', invalidate, true);
 })();

@@ -91,7 +91,7 @@
   @media(max-width:700px){.cookie-consent{bottom:12px;flex-direction:column;align-items:stretch;gap:16px;padding:18px;width:calc(100% - 24px)}.cookie-consent-actions{width:100%}.cookie-choice{flex:1;min-width:0}}
 </style>
 <link href="style.css?v=20261021-referral-ui-1" rel="stylesheet"/>
-<link href="appearance.css?v=20261023-uniform-icons-14" rel="stylesheet"/>
+<link href="appearance.css?v=20261023-preview-15" rel="stylesheet"/>
 <link rel="stylesheet" href="calculation-tools.css?v=20261021-floating-help-3"/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665228750734230"
@@ -355,7 +355,7 @@
 </div>
 </div>
 <div class="hero-wrap integrated-hero-wrap catalog-only-block">
-<div class="vehicle-summary-card">
+<div class="vehicle-summary-card vehicle-preview-v3">
   <div class="vehicle-summary-visual">
     <div class="vehicle-summary-glow" aria-hidden="true"></div>
     <div class="vehicle-image-identity" id="vehicleImageIdentity" aria-live="polite">
@@ -382,17 +382,17 @@
       </div>
     </div>
     <div class="vehicle-summary-row">
-      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path><path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path></svg>Συντελεστής CO₂</span>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.3 7.8 6.5 13.5c-.5 3.5 2.2 6 5.3 5.4 5.3-1 7.7-6.3 7.7-14.4Z"></path><path d="M5 20c2.5-5.1 6-8.2 10.5-10"></path></svg>Εκπομπές CO₂</span>
       <strong id="vehicleSummaryCo2">—</strong>
     </div>
-    <div class="vehicle-summary-row vehicle-summary-tax-row" id="registrationTaxMiniCard">
-      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2.25"></rect><rect x="8" y="5.5" width="8" height="4" rx=".7"></rect><path d="M8.5 13h1M12 13h1M15.5 13h1M8.5 17h1M12 17h1M15.5 17h1"></path></svg>Τέλος Ταξινόμησης</span>
+    <div class="vehicle-summary-row vehicle-summary-tax-row" id="registrationTaxMiniCard" hidden>
+      <span class="summary-metric-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2.25"></rect><rect x="8" y="5.5" width="8" height="4" rx=".7"></rect><path d="M8.5 13h1M12 13h1M15.5 13h1M8.5 17h1M12 17h1M15.5 17h1"></path></svg>Συνολικό Τέλος Ταξινόμησης</span>
       <div class="registration-tax-mini-value is-empty" id="registrationTaxMiniValue">
         <span class="registration-tax-mini-placeholder">—</span>
       </div>
     </div>
-    <button type="button" class="registration-tax-details-btn" id="registrationTaxDetailsBtn">
-      <span>Λεπτομέρειες</span><span aria-hidden="true">↓</span>
+    <button type="button" class="registration-tax-details-btn" id="registrationTaxDetailsBtn" hidden>
+      <span>Αναλυτικά αποτελέσματα</span><span aria-hidden="true">↓</span>
     </button>
   </div>
 </div>
@@ -790,7 +790,7 @@
   <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261021-help-only-11"></script>
+<script src="script.js?v=20261023-preview-15"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
