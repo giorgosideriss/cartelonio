@@ -540,16 +540,40 @@
 </select>
 </div>
 <div class="field-block">
-<label for="euroClass">Κατηγορία προσαύξησης Euro</label>
+<label for="euroClass">Κατηγορία Euro</label>
 <select id="euroClass">
 <option value="">Επιλέξτε κατηγορία Euro</option>
 <option value="Electric">Electric — Αμιγώς ηλεκτρικό</option>
-<option value="euro6">Euro 6</option>
-<option value="euro5b">Euro 5b</option>
-<option value="euro6a">Euro 6a</option>
-<option value="euro5a">Euro 5a</option>
-<option value="euro4">Euro 4</option>
-<option value="euro3">Euro 3</option>
+<option value="zero_emission">Μηδενικών εκπομπών — Υδρογόνο</option>
+<option value="euro6e_bis_fcm">Euro 6e-bis-FCM</option>
+<option value="euro6e_bis">Euro 6e-bis</option>
+<option value="euro6e">Euro 6e</option>
+<option value="euro6d_isc_fcm">Euro 6d-ISC-FCM</option>
+<option value="euro6d_isc">Euro 6d-ISC</option>
+<option value="euro6d">Euro 6d — χωρίς προσαύξηση</option>
+<option value="euro6d_50">Euro 6d (ZJ) — +50%</option>
+<option value="euro6d_temp_evap_isc">Euro 6d-TEMP-EVAP-ISC</option>
+<option value="euro6d_temp_isc">Euro 6d-TEMP-ISC</option>
+<option value="euro6d_temp_evap">Euro 6d-TEMP-EVAP</option>
+<option value="euro6d_temp">Euro 6d-TEMP — χωρίς προσαύξηση</option>
+<option value="euro6d_temp_50">Euro 6d-TEMP (ZG) — +50%</option>
+<option value="euro6c">Euro 6c (AD) — χωρίς προσαύξηση</option>
+<option value="euro6c_evap">Euro 6c-EVAP</option>
+<option value="euro6c_50">Euro 6c (AA / ZA / ZD) — +50%</option>
+<option value="euro6b">Euro 6b (W / BA) — +50%</option>
+<option value="euro6b_100">Euro 6b (Q / T) — +100%</option>
+<option value="euro6a">Euro 6a — +200%</option>
+<option value="euro5b">Euro 5b — +100%</option>
+<option value="euro5a">Euro 5a — +200%</option>
+<option value="euro4">Euro 4 — +200%</option>
+<option value="euro3">Euro 3 — +200%</option>
+<option value="euro2">Euro 2 — +200%</option>
+<option value="euro1">Euro 1 — +200%</option>
+<option value="euro6">Euro 6 (γενική επιλογή)</option>
+<option value="euro6_unknown_50">Euro 6 (γενικό) — +50%</option>
+<option value="euro6_unknown_100">Euro 6 (γενικό) — +100%</option>
+<option value="modern">Σύγχρονο πρότυπο — χωρίς προσαύξηση</option>
+<option value="no_euro_no_co2">Χωρίς Euro / χωρίς τεκμηριωμένο CO₂</option>
 </select>
 </div>
 </div>
@@ -791,7 +815,8 @@
   <p id="emailPreferencesStatus" class="referral-status" role="status" aria-live="polite"></p>
   <button type="button" id="emailPreferencesRetry" class="communication-link" hidden>Δοκίμασε ξανά</button>
 </dialog>
-<script src="script.js?v=20261023-dark-depth-19"></script>
+<script src="euro-policy.js?v=20261027-euro-v1"></script>
+<script src="script.js?v=20261027-euro-v1"></script>
 <script src="listing-import.js?v=20261019-3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">

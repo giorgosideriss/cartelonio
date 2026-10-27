@@ -1,3 +1,4 @@
+let cartelonioEuroOverride = false;
 // Referral links are remembered for 30 days; crediting happens only in SQL.
 const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
 (function captureReferralLink(){
@@ -872,10 +873,10 @@ function autoFillCarData() {
   // Auto-fill tax metadata when it is available in the selected edition.
   // The controls remain editable so the user can override them from the vehicle CoC.
   const euroEl = document.getElementById("euroClass");
-  euroEl.value = "";
-  if (edition.euro) {
-    if (euroEl && [...euroEl.options].some(o => o.value === edition.euro)) euroEl.value = edition.euro;
-  }
+  const euroProfile = window.CartelonioEuro.valid(edition.euroTaxProfile?.code)
+    ? edition.euroTaxProfile : window.CartelonioEuro.resolve(edition,{year:currentDataset.year});
+  euroEl.value = euroProfile?.code || window.CartelonioEuro.normalize(edition.euro);
+  cartelonioEuroOverride = false;
   const powertrainEl = document.getElementById("powertrain");
   if (powertrainEl) {
     // The existing form/backend uses "hybrid" for hybrid vehicles, including PHEVs.
@@ -972,7 +973,7 @@ function calculationErrorDetails(code) {
   const errors = {
     insufficient_tokens: ["Δεν υπάρχουν διαθέσιμα tokens για νέο υπολογισμό.", []],
     invalid_co2: ["Δεν υπάρχουν πιστοποιημένα στοιχεία εκπομπών CO₂ για τη συγκεκριμένη έκδοση.", ["co2"]],
-    invalid_euro_class: ["Δεν υπάρχει πιστοποιημένη κατηγορία Euro για τη συγκεκριμένη έκδοση.", ["euroClass"]],
+    invalid_euro_class: ["Επίλεξε έγκυρη κατηγορία Euro για το όχημα.", ["euroClass"]],
     invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
     invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
     invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
@@ -1190,7 +1191,7 @@ async function calculate(){
  await cartelonioAuthReady;
  if(!cartelonioSession?.access_token)return;
  const requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");
- const technicalInputs={co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value};
+ const technicalInputs={euroOverride:!isManual&&cartelonioEuroOverride,co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value};
  let requestBody={inputMode,firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs};
  if(isManual){
    requestBody.manualLtpf=manualLtpf;
@@ -1220,7 +1221,7 @@ async function calculate(){
    if (previewRevisionAtStart === vehiclePreviewRevision) setRegistrationTaxMiniResult(r.totalTax);
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
    const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":"Επαληθευμένη ΛΤΠΦ";
-   const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(Object.values(v.input_provenance||{}).includes("user_provided")?"Τα ελλιπή τεχνικά στοιχεία δηλώθηκαν από τον χρήστη. Η ΛΤΠΦ και τα extras επαληθεύτηκαν από τον server.":"Όλα τα στοιχεία επαληθεύτηκαν από τον κατάλογο.");
+   const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(v.input_provenance?.euroResolution?.isEstimate?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Η κατηγορία Euro βασίζεται σε εκτίμηση.":Object.values(v.input_provenance||{}).includes("user_provided")?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Ορισμένα τεχνικά στοιχεία δηλώθηκαν από τον χρήστη.":"Στοιχεία οχήματος και ΛΤΠΦ από τον κατάλογο.");
    const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
    const dateEl=value=>{if(!value)return "—";const [y,m,d]=String(value).split("-");return d&&m&&y?`${d}/${m}/${y}`:esc(value);};
    const technicalCategory=document.getElementById("category").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("category").value||"—";
@@ -2585,7 +2586,7 @@ function renderHistoryDashboard(record) {
  const dateEl=value=>{if(!value)return "—";const date=String(value).slice(0,10).split("-");return date.length===3?date.reverse().join("/"):esc(value);};
  const firstRegistration=record.first_registration||"",importDate=record.import_date||"",mileageRaw=record.mileage;
  const technicalCategory=typeof record.body_type === "string" ? record.body_type : "—";
- const technicalEuro=record.euro_class||"—",technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
+ const technicalEuro=record.input_provenance?.euroResolution?.label||stored.euroProfile?.label||window.CartelonioEuro.label(record.euro_class,true),technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
  const co2Display=v.co2==null?"—":historyNumber(v.co2),mileageDisplay=record.mileage==null?"—":historyNumber(record.mileage),envFee=r.environmentalFee;
  const logo=BRAND_LOGOS[record.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[record.brand]):"";
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
@@ -2844,6 +2845,14 @@ function syncElectricVehicleFields(changedField) {
   const co2 = document.getElementById("co2");
   if (!power || !euro || !co2) return;
 
+  // Hydrogen has a separate zero-emission selection rather than being labelled BEV.
+  if (power.value === "hydrogen" && changedField !== "euroClass") {
+    euro.value = "zero_emission"; co2.value = "0"; updateVehicleSummaryCo2(); return;
+  }
+  if (euro.value === "zero_emission" && changedField === "euroClass") {
+    power.value = "hydrogen"; co2.value = "0"; updateVehicleSummaryCo2(); return;
+  }
+  if (changedField === "powertrain" && euro.value === "zero_emission" && power.value !== "hydrogen") euro.value = "";
   // A deliberate change away from BEV clears its previous technical values.
   if (changedField === "powertrain" && power.value !== "electric") {
     if (euro.value === "Electric") {
@@ -2864,6 +2873,7 @@ function syncElectricVehicleFields(changedField) {
 }
 document.addEventListener("change", (event) => {
   const field = event.target?.id;
+  if (field === "euroClass") cartelonioEuroOverride = true;
   if (["powertrain", "euroClass", "co2"].includes(field)) {
     syncElectricVehicleFields(field);
   }
