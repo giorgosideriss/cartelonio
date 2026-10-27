@@ -976,6 +976,7 @@ function calculationErrorDetails(code) {
     invalid_euro_class: ["Επίλεξε έγκυρη κατηγορία Euro για το όχημα.", ["euroClass"]],
     invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
     invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
+    invalid_catalog_revision: ["Ο κατάλογος ενημερώθηκε. Ανανέωσε τη σελίδα και επίλεξε ξανά το αυτοκίνητο. Δεν χρεώθηκε token.", []],
     invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
     invalid_extra: ["Κάποιο επιλεγμένο extra δεν υπάρχει πλέον στα επαληθευμένα δεδομένα.", []],
     invalid_ltpf: ["Συμπλήρωσε έγκυρη ΛΤΠΦ μεγαλύτερη από 0.", ["manualLtpf"]],
@@ -1198,6 +1199,7 @@ async function calculate(){
  }else{
    const source=DATA_SOURCES[selection.brand]?.[selection.year];
    if(!source){showCalculationError("Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.",[]);return;}
+   requestBody.catalogueRevision=currentDataset?.catalogueRevision??null;
    requestBody.vehicle={brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices};
  }
  button.disabled=true;
@@ -2550,12 +2552,12 @@ async function historyCatalogImage(record,img){
    if(!response.ok)throw new Error('catalogue unavailable');
    historyImageCache.set(catalogUrl,await response.json());
   }
-  const models=historyImageCache.get(catalogUrl)?.models;
-  const model=models?.[record.model] || Object.entries(models||{}).find(([name])=>historyNormalize(name)===historyNormalize(record.model))?.[1];
+  const dataset=historyImageCache.get(catalogUrl);
+  const selection=resolveCatalogueHistorySelection(record,dataset);
+  const models=dataset?.models;
+  const model=models?.[selection?.model||record.model];
   if(!model)return;
-  const editions=model.editions||[];
-  const index=record.edition_index === null || record.edition_index === undefined || record.edition_index === '' ? NaN : Number(record.edition_index);
-  const edition=editions.find(ed=>ed.name===record.edition) || (Number.isInteger(index)?editions[index]:null);
+  const edition=selection?model.editions?.[selection.editionIndex]:model.editions?.find(ed=>ed.name===record.edition);
   const raw=edition?.image || model.image;
   if(!raw)return;
   const value=String(raw).trim();
@@ -2657,32 +2659,62 @@ async function loadHistory(reset=false){
 function closeHistory(){historyEl('historyOverlay').hidden=true;document.body.classList.remove('history-open');}
 function openHistory(){if(!historySignedIn())return;closeAuthModal();historyEl('historyOverlay').hidden=false;document.body.classList.add('history-open');void loadHistory(true);}
 function setHistoryInput(id,value){const el=historyEl(id);if(el && value != null){el.value=String(value);el.dispatchEvent(new Event('change',{bubbles:true}));}}
+function resolveCatalogueHistorySelection(record, dataset) {
+ const text = value => String(value ?? "").replace(/\s+/g," ").trim().toLocaleLowerCase("el-GR");
+ const revision = record.input_provenance?.catalogueRevision;
+ const model = dataset?.models?.[record.model];
+ if (!dataset?.catalogueRevision || revision === dataset.catalogueRevision) {
+   const edition = model?.editions?.[Number(record.edition_index)];
+   if (edition && text(edition.name) === text(record.edition)) return {model:record.model,editionIndex:Number(record.edition_index),extras:record.extras_indices||[]};
+   return null;
+ }
+ if (revision) return null;
+ const migration = dataset.selectionMigration?.models?.[record.model];
+ if (!migration) return null;
+ let old = migration.editions?.[Number(record.edition_index)];
+ if (!old || text(old.name) !== text(record.edition)) {
+   const matches = (migration.editions||[]).filter(item=>text(item.name)===text(record.edition));
+   if(matches.length!==1)return null;
+   old=matches[0];
+ }
+ const target = dataset.models?.[migration.model]?.editions?.[old.editionIndex];
+ if(!target)return null;
+ const extras=[...new Set((record.extras_indices||[]).map(index=>old.extras?.[Number(index)]).filter(index=>Number.isInteger(index)&&index>=0))];
+ return {model:migration.model,editionIndex:old.editionIndex,extras};
+}
 async function restoreHistoryRecord(record){
+ let restoredFromCatalogue=false;
  const brand=historyEl('brandSelect');
  if(record.brand && DATA_SOURCES[record.brand]?.[String(record.year)]){
   brand.value=record.brand;brand.dispatchEvent(new Event('change',{bubbles:true}));
   setBrandUI(record.brand);
   setHistoryInput('yearSelect',record.year);
   await loadDatasetForSelection();
-  if([...historyEl('modelSelect').options].some(opt=>opt.value===record.model)){
-   setHistoryInput('modelSelect',record.model);populateVersions();
+  const restoredSelection=resolveCatalogueHistorySelection(record,currentDataset);
+  if(!restoredSelection){
+   showCalculationError("Ο συγκεκριμένος παλιός υπολογισμός δεν αντιστοιχίστηκε με ασφάλεια στον νέο κατάλογο. Επίλεξε ξανά μοντέλο και έκδοση.",[]);
+   return;
+  }
+  if([...historyEl('modelSelect').options].some(opt=>opt.value===restoredSelection.model)){
+   setHistoryInput('modelSelect',restoredSelection.model);populateVersions();
    const editionOptions=[...historyEl('versionSelect').options];
    const matching=editionOptions.find(opt=>opt.textContent.trim()===record.edition);
-   const editionValue=matching?.value ?? record.edition_index;
+   const editionValue=String(restoredSelection.editionIndex);
    if(editionOptions.some(opt=>opt.value===String(editionValue))){
     setHistoryInput('versionSelect',editionValue);populateColors();
     const variantOptions=[...historyEl('colorSelect').options];
     const matchVariant=variantOptions.find(opt=>opt.textContent.trim()===record.variant_name);
     const variantValue=matchVariant?.value ?? record.variant_index;
-    if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();}
-    (record.extras_indices||[]).forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
+    if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();restoredFromCatalogue=true;}
+    restoredSelection.extras.forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
    }
   }
  }
  // Preserve the historical price, even if current catalogues or extras have changed.
  setHistoryInput('price',historyEuro(record.ltpf));formatPriceField();
  setHistoryInput('category',record.body_type);setHistoryInput('co2',record.co2);setHistoryInput('mileage',record.mileage);
- setHistoryInput('euroClass',record.euro_class);setHistoryInput('powertrain',record.powertrain);
+ if(!restoredFromCatalogue || record.input_provenance?.euroClass==='user_provided')setHistoryInput('euroClass',record.euro_class);
+ setHistoryInput('powertrain',record.powertrain);
  if(record.first_registration){const [year,month,day]=record.first_registration.split('-');setHistoryInput('firstRegYear',year);setHistoryInput('firstRegMonth',String(Number(month)));setHistoryInput('firstRegDay',String(Number(day)));syncFirstRegistrationDate();}
  setHistoryInput('importDate',record.import_date);
  setRegistrationTaxMiniResult(null);historyEl('results').innerHTML='<p>Τα στοιχεία επαναφέρθηκαν. Πάτησε «Υπολόγισε» για νέο υπολογισμό (χρησιμοποιεί token).</p>';
