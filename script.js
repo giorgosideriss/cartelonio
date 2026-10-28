@@ -19,7 +19,6 @@ const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
 const BRANDS = [
   "Abarth",
   "Alfa Romeo",
-  "Alpine",
   "Aston Martin",
   "Audi",
   "BMW",
@@ -28,7 +27,6 @@ const BRANDS = [
   "Citroen",
   "Cupra",
   "Dacia",
-  "DS",
   "Fiat",
   "Ford",
   "Honda",
@@ -39,7 +37,6 @@ const BRANDS = [
   "Kia",
   "Lamborghini",
   "Land Rover",
-  "Lexus",
   "Lotus",
   "MG",
   "MINI",
@@ -50,7 +47,6 @@ const BRANDS = [
   "Nissan",
   "Opel",
   "Peugeot",
-  "Polestar",
   "Porsche",
   "Renault",
   "Seat",
@@ -58,17 +54,21 @@ const BRANDS = [
   "Smart",
   "Subaru",
   "Suzuki",
-  "Tesla",
   "Toyota",
   "Volkswagen",
   "Volvo",
   "Alpina",
+  "Alpine",
   "Chrysler",
+  "DS",
   "Ferrari",
   "Infiniti",
+  "Lexus",
   "McLaren",
   "Morgan",
-  "Rolls-Royce"
+  "Polestar",
+  "Rolls-Royce",
+  "Tesla"
 ];
 
 // 2) Έτη 2015–2025
@@ -618,6 +618,7 @@ async function loadDatasetForSelection() {
   const year  = yearEl.value;
 
   currentDataset = null;
+  window.CartelonioPriceSource?.preview(null);
   modelEl.innerHTML  = '<option value="">Επιλέξτε Μοντέλο</option>';
   verEl.innerHTML    = '<option value="">Επιλέξτε Έκδοση</option>';
   colorEl.innerHTML  = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
@@ -859,6 +860,7 @@ function autoFillCarData() {
   if (!variant) return;
 
   currentBasePrice = 0;
+  window.CartelonioPriceSource?.preview(variant.priceSource || edition.priceSource);
 
   if (Array.isArray(edition.extras)) {
     loadExtras(edition.extras);
@@ -900,6 +902,7 @@ function autoFillCarData() {
 /* ========== ΣΥΝΟΨΗ ΟΧΗΜΑΤΟΣ ========== */
 
 function updateCarSummary() {
+  updatePriceSourcePreview();
   const summaryEl = document.getElementById("carSummary");
   if (!summaryEl) return;
 
@@ -976,7 +979,6 @@ function calculationErrorDetails(code) {
     invalid_euro_class: ["Επίλεξε έγκυρη κατηγορία Euro για το όχημα.", ["euroClass"]],
     invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
     invalid_category: ["Δεν έχει προσδιοριστεί η κατηγορία αμαξώματος του οχήματος.", ["category"]],
-    invalid_catalog_revision: ["Ο κατάλογος ενημερώθηκε. Ανανέωσε τη σελίδα και επίλεξε ξανά το αυτοκίνητο. Δεν χρεώθηκε token.", []],
     invalid_catalog_selection: ["Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.", []],
     invalid_extra: ["Κάποιο επιλεγμένο extra δεν υπάρχει πλέον στα επαληθευμένα δεδομένα.", []],
     invalid_ltpf: ["Συμπλήρωσε έγκυρη ΛΤΠΦ μεγαλύτερη από 0.", ["manualLtpf"]],
@@ -1013,7 +1015,7 @@ function renderDetailedCalculationBreakdown(serverBreakdown, ctx){
   const bracketHtml=brackets.length?`<div class="result-tax-brackets"><span class="result-detail-subtitle">Προοδευτικά κλιμάκια</span>${brackets.map((part,i)=>row(esc(part.label||`Κλιμάκιο ${i+1}`),money(part.tax),`${money(part.taxableAmount)} × ${Number(part.rate||0).toLocaleString("el-GR",{style:"percent",maximumFractionDigits:2})}`)).join("")}</div>`:"";
   return `<div class="result-breakdown-panel result-breakdown-details" data-breakdown-panel="details" hidden>
     <div class="result-detail-group"><span class="result-detail-kicker">01 · ΑΞΙΑ ΟΧΗΜΑΤΟΣ</span>
-      ${row(ltpfLabel,money(v.ltpf),isManual?"Τιμή που δηλώθηκε στη χειροκίνητη εισαγωγή":"Τιμή που επαληθεύτηκε από τον κατάλογο")}
+      ${row(ltpfLabel,money(v.ltpf),isManual?"Τιμή που δηλώθηκε στη χειροκίνητη εισαγωγή":window.CartelonioPriceSource.isGerman(v)?window.CartelonioPriceSource.note(v):"Τιμή που επαληθεύτηκε από τον κατάλογο")}
       ${b.vehicleValue?.baseLtpf!=null?row("Βασική ΛΤΠΦ",money(b.vehicleValue.baseLtpf)):""}
       ${b.vehicleValue?.extrasTotal!=null?row("Αξία επιλεγμένων extras",money(b.vehicleValue.extrasTotal)):""}
     </div>
@@ -1056,7 +1058,7 @@ function renderCalculationDashboard(ctx) {
        <section class="result-total-card">
          <span>Συνολικό Τέλος Ταξινόμησης</span>
          <strong>€${eur(r.totalTax)}</strong>
-         <small>Εκτιμώμενο ποσό με βάση ${isManual?"τα δηλωμένα":"τα επαληθευμένα"} στοιχεία</small>
+         <small>Εκτιμώμενο ποσό με βάση ${window.CartelonioPriceSource.isGerman(v)?"γερμανικές τιμές αναφοράς και τα διαθέσιμα στοιχεία":isManual?"τα δηλωμένα στοιχεία":"τα στοιχεία καταλόγου"}</small>
        </section>
        <section class="result-breakdown-card">
          <div class="result-breakdown-head">
@@ -1067,7 +1069,7 @@ function renderCalculationDashboard(ctx) {
            </div>
          </div>
          <div class="result-breakdown-panel is-active" data-breakdown-panel="summary">
-           <div class="result-data-row"><span>${ltpfLabel}</span><strong>€${eur(v.ltpf)}</strong></div>
+           <div class="result-data-row"><span>${ltpfLabel} ${window.CartelonioPriceSource.badge(v)}</span><strong>€${eur(v.ltpf)}</strong></div>
            <div class="result-data-row"><span>Απομείωση ηλικίας / αμαξώματος <em>${r.exactMonths??"—"} μήνες · ${formatResultYears(r.exactYears)} έτη</em></span><strong>${r.yearDep==null?"—":`−${pct(r.yearDep)}`}</strong></div>
            <div class="result-data-row"><span>Συνολική απομείωση</span><strong>${r.totalDep==null?"—":`−${pct(r.totalDep)}`}</strong></div>
            <div class="result-data-row result-data-row-emphasis"><span>Φορολογητέα αξία</span><strong>€${eur(r.finalPrice)}</strong></div>
@@ -1199,7 +1201,6 @@ async function calculate(){
  }else{
    const source=DATA_SOURCES[selection.brand]?.[selection.year];
    if(!source){showCalculationError("Η επιλεγμένη έκδοση οχήματος δεν βρέθηκε στα επαληθευμένα δεδομένα.",[]);return;}
-   requestBody.catalogueRevision=currentDataset?.catalogueRevision??null;
    requestBody.vehicle={brandSlug:source.slug,year:selection.year,model:selection.model,editionId:selection.edition_index,variantId:selection.variant_index,extraIds:selection.extras_indices};
  }
  button.disabled=true;
@@ -1211,6 +1212,7 @@ async function calculate(){
    if(!cartelonioProfile)cartelonioProfile={};
    cartelonioProfile.token_balance=Number(payload.remainingTokens);renderAccountState();
    document.getElementById("price").value=formatGreekNumber(v.ltpf,0,2);formatPriceField();
+   window.CartelonioPriceSource.preview(isManual?null:v);
    // Catalogue mode may safely refresh the form from server-verified vehicle data.
    // In manual mode, never overwrite the user's technical selections after Calculate.
    if(!isManual){
@@ -1222,8 +1224,9 @@ async function calculate(){
    if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
    if (previewRevisionAtStart === vehiclePreviewRevision) setRegistrationTaxMiniResult(r.totalTax);
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
-   const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":"Επαληθευμένη ΛΤΠΦ";
-   const provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(v.input_provenance?.euroResolution?.isEstimate?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Η κατηγορία Euro βασίζεται σε εκτίμηση.":Object.values(v.input_provenance||{}).includes("user_provided")?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Ορισμένα τεχνικά στοιχεία δηλώθηκαν από τον χρήστη.":"Στοιχεία οχήματος και ΛΤΠΦ από τον κατάλογο.");
+   const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":window.CartelonioPriceSource.isGerman(v)?"ΛΤΠΦ Γερμανίας":"Επαληθευμένη ΛΤΠΦ";
+   let provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(v.input_provenance?.euroResolution?.isEstimate?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Η κατηγορία Euro βασίζεται σε εκτίμηση.":Object.values(v.input_provenance||{}).includes("user_provided")?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Ορισμένα τεχνικά στοιχεία δηλώθηκαν από τον χρήστη.":"Στοιχεία οχήματος και ΛΤΠΦ από τον κατάλογο.");
+   if(!isManual && window.CartelonioPriceSource.isGerman(v)) provenanceNote=window.CartelonioPriceSource.note(v)+" "+provenanceNote;
    const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
    const dateEl=value=>{if(!value)return "—";const [y,m,d]=String(value).split("-");return d&&m&&y?`${d}/${m}/${y}`:esc(value);};
    const technicalCategory=document.getElementById("category").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("category").value||"—";
@@ -1466,6 +1469,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   brandSelect.addEventListener("change", () => {
     populateYearSelect();
     currentDataset = null;
+  window.CartelonioPriceSource?.preview(null);
     document.getElementById("modelSelect").innerHTML   = '<option value="">Επιλέξτε Μοντέλο</option>';
     document.getElementById("versionSelect").innerHTML = '<option value="">Επιλέξτε Έκδοση</option>';
     document.getElementById("colorSelect").innerHTML   = '<option value="">Επιλέξτε ΛΤΠΦ</option>';
@@ -2552,12 +2556,12 @@ async function historyCatalogImage(record,img){
    if(!response.ok)throw new Error('catalogue unavailable');
    historyImageCache.set(catalogUrl,await response.json());
   }
-  const dataset=historyImageCache.get(catalogUrl);
-  const selection=resolveCatalogueHistorySelection(record,dataset);
-  const models=dataset?.models;
-  const model=models?.[selection?.model||record.model];
+  const models=historyImageCache.get(catalogUrl)?.models;
+  const model=models?.[record.model] || Object.entries(models||{}).find(([name])=>historyNormalize(name)===historyNormalize(record.model))?.[1];
   if(!model)return;
-  const edition=selection?model.editions?.[selection.editionIndex]:model.editions?.find(ed=>ed.name===record.edition);
+  const editions=model.editions||[];
+  const index=record.edition_index === null || record.edition_index === undefined || record.edition_index === '' ? NaN : Number(record.edition_index);
+  const edition=editions.find(ed=>ed.name===record.edition) || (Number.isInteger(index)?editions[index]:null);
   const raw=edition?.image || model.image;
   if(!raw)return;
   const value=String(raw).trim();
@@ -2579,7 +2583,7 @@ function renderHistoryDashboard(record) {
  const saved=stored.result||stored;
  const number=value=>value==null||value===""||!Number.isFinite(Number(value))?null:Number(value);
  const r={totalTax:number(record.total_tax??saved.totalTax),registrationTax:number(record.registration_tax??saved.registrationTax),environmentalFee:number(record.environmental_fee??saved.environmentalFee),finalPrice:number(record.taxable_value??saved.finalPrice),exactMonths:number(record.exact_months??record.age_months??saved.exactMonths),exactYears:number(record.exact_years??saved.exactYears),yearDep:number(record.year_dep??saved.yearDep),totalDep:number(record.total_dep??record.depreciation_rate??saved.totalDep)};
- const v={ltpf:number(record.ltpf),co2:number(record.co2)};
+ const v={ltpf:number(record.ltpf),co2:number(record.co2),input_provenance:unpack(record.input_provenance || unpack(record.calculation_breakdown).provenance || stored.vehicle?.input_provenance)};
  if(r.totalDep==null&&v.ltpf>0&&r.finalPrice!=null)r.totalDep=1-r.finalPrice/v.ltpf;
  const isManual=record.input_mode==="manual"||stored.inputMode==="manual"||record.brand==="Χειροκίνητη εισαγωγή"||(!record.brand&&!record.model);
  const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -2594,7 +2598,7 @@ function renderHistoryDashboard(record) {
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
  const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">${record.is_example?"Παράδειγμα υπολογισμού":"Αποθηκευμένος υπολογισμός"}</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
  const breakdown=record.calculation_breakdown||record.calculationBreakdown||stored.calculationBreakdown||stored.calculation_breakdown;
- return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:"Αποθηκευμένη ΛΤΠΦ",provenanceNote:record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
+ return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:window.CartelonioPriceSource.isGerman(v)?"ΛΤΠΦ Γερμανίας":"Αποθηκευμένη ΛΤΠΦ",provenanceNote:window.CartelonioPriceSource.isGerman(v)?window.CartelonioPriceSource.note(v):record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
 }
 function renderHistoryRecord(record){
  const displayHistoryEdition=cleanEditionDisplayName(record.edition,record.brand,record.model);
@@ -2613,7 +2617,7 @@ function renderHistoryRecord(record){
   historyNode('span','history-entry-date',new Date(record.created_at).toLocaleString('el-GR',{dateStyle:'medium',timeStyle:'short'})));
  const money=historyNode('div','history-entry-money');
  money.append(historyNode('small','', 'Τέλος ταξινόμησης'),historyNode('strong','', '€'+historyEuro(record.total_tax)),
-  historyNode('small','history-ltpf','ΛΤΠΦ €'+historyEuro(record.ltpf)));
+  historyNode('small','history-ltpf',(window.CartelonioPriceSource.isGerman(record)?'ΛΤΠΦ Γερμανίας ⓘ €':'ΛΤΠΦ €')+historyEuro(record.ltpf)));
  head.append(visual,main,money);article.append(head);
  const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
@@ -2659,66 +2663,36 @@ async function loadHistory(reset=false){
 function closeHistory(){historyEl('historyOverlay').hidden=true;document.body.classList.remove('history-open');}
 function openHistory(){if(!historySignedIn())return;closeAuthModal();historyEl('historyOverlay').hidden=false;document.body.classList.add('history-open');void loadHistory(true);}
 function setHistoryInput(id,value){const el=historyEl(id);if(el && value != null){el.value=String(value);el.dispatchEvent(new Event('change',{bubbles:true}));}}
-function resolveCatalogueHistorySelection(record, dataset) {
- const text = value => String(value ?? "").replace(/\s+/g," ").trim().toLocaleLowerCase("el-GR");
- const revision = record.input_provenance?.catalogueRevision;
- const model = dataset?.models?.[record.model];
- if (!dataset?.catalogueRevision || revision === dataset.catalogueRevision) {
-   const edition = model?.editions?.[Number(record.edition_index)];
-   if (edition && text(edition.name) === text(record.edition)) return {model:record.model,editionIndex:Number(record.edition_index),extras:record.extras_indices||[]};
-   return null;
- }
- if (revision) return null;
- const migration = dataset.selectionMigration?.models?.[record.model];
- if (!migration) return null;
- let old = migration.editions?.[Number(record.edition_index)];
- if (!old || text(old.name) !== text(record.edition)) {
-   const matches = (migration.editions||[]).filter(item=>text(item.name)===text(record.edition));
-   if(matches.length!==1)return null;
-   old=matches[0];
- }
- const target = dataset.models?.[migration.model]?.editions?.[old.editionIndex];
- if(!target)return null;
- const extras=[...new Set((record.extras_indices||[]).map(index=>old.extras?.[Number(index)]).filter(index=>Number.isInteger(index)&&index>=0))];
- return {model:migration.model,editionIndex:old.editionIndex,extras};
-}
 async function restoreHistoryRecord(record){
- let restoredFromCatalogue=false;
  const brand=historyEl('brandSelect');
  if(record.brand && DATA_SOURCES[record.brand]?.[String(record.year)]){
   brand.value=record.brand;brand.dispatchEvent(new Event('change',{bubbles:true}));
   setBrandUI(record.brand);
   setHistoryInput('yearSelect',record.year);
   await loadDatasetForSelection();
-  const restoredSelection=resolveCatalogueHistorySelection(record,currentDataset);
-  if(!restoredSelection){
-   showCalculationError("Ο συγκεκριμένος παλιός υπολογισμός δεν αντιστοιχίστηκε με ασφάλεια στον νέο κατάλογο. Επίλεξε ξανά μοντέλο και έκδοση.",[]);
-   return;
-  }
-  if([...historyEl('modelSelect').options].some(opt=>opt.value===restoredSelection.model)){
-   setHistoryInput('modelSelect',restoredSelection.model);populateVersions();
+  if([...historyEl('modelSelect').options].some(opt=>opt.value===record.model)){
+   setHistoryInput('modelSelect',record.model);populateVersions();
    const editionOptions=[...historyEl('versionSelect').options];
    const matching=editionOptions.find(opt=>opt.textContent.trim()===record.edition);
-   const editionValue=String(restoredSelection.editionIndex);
+   const editionValue=matching?.value ?? record.edition_index;
    if(editionOptions.some(opt=>opt.value===String(editionValue))){
     setHistoryInput('versionSelect',editionValue);populateColors();
     const variantOptions=[...historyEl('colorSelect').options];
     const matchVariant=variantOptions.find(opt=>opt.textContent.trim()===record.variant_name);
     const variantValue=matchVariant?.value ?? record.variant_index;
-    if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();restoredFromCatalogue=true;}
-    restoredSelection.extras.forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
+    if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();}
+    (record.extras_indices||[]).forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
    }
   }
  }
  // Preserve the historical price, even if current catalogues or extras have changed.
  setHistoryInput('price',historyEuro(record.ltpf));formatPriceField();
  setHistoryInput('category',record.body_type);setHistoryInput('co2',record.co2);setHistoryInput('mileage',record.mileage);
- if(!restoredFromCatalogue || record.input_provenance?.euroClass==='user_provided')setHistoryInput('euroClass',record.euro_class);
- setHistoryInput('powertrain',record.powertrain);
+ setHistoryInput('euroClass',record.euro_class);setHistoryInput('powertrain',record.powertrain);
  if(record.first_registration){const [year,month,day]=record.first_registration.split('-');setHistoryInput('firstRegYear',year);setHistoryInput('firstRegMonth',String(Number(month)));setHistoryInput('firstRegDay',String(Number(day)));syncFirstRegistrationDate();}
  setHistoryInput('importDate',record.import_date);
  setRegistrationTaxMiniResult(null);historyEl('results').innerHTML='<p>Τα στοιχεία επαναφέρθηκαν. Πάτησε «Υπολόγισε» για νέο υπολογισμό (χρησιμοποιεί token).</p>';
- updateCarSummary();historyEl('calcForm')?.scrollIntoView({behavior:'smooth',block:'start'});
+ updateCarSummary();window.CartelonioPriceSource.preview(record);historyEl('calcForm')?.scrollIntoView({behavior:'smooth',block:'start'});
 }
 historyEl('openHistoryBtn')?.addEventListener('click',openHistory);
 historyEl('historyClose')?.addEventListener('click',closeHistory);
@@ -3266,3 +3240,12 @@ function openEmailPreferences() {
   form.addEventListener('input', invalidate, true);
   form.addEventListener('change', invalidate, true);
 })();
+
+// Selection metadata is public; the calculation response supplies authoritative price provenance.
+function updatePriceSourcePreview() {
+ const model=currentDataset?.models?.[document.getElementById("modelSelect")?.value];
+ const edition=model?.editions?.[document.getElementById("versionSelect")?.value];
+ const variant=edition?.variants?.[document.getElementById("colorSelect")?.value];
+ const mode=document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode;
+ window.CartelonioPriceSource?.preview(mode==='manual'||mode==='listing'?null:(variant?.priceSource||edition?.priceSource));
+}

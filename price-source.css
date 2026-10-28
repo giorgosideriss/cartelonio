@@ -1,0 +1,7 @@
+#ltpfSourceIndicator[hidden],.ltpf-source-message[hidden]{display:none!important}
+.ltpf-source-chip{display:inline-flex;position:relative;vertical-align:middle;margin-inline-start:.3rem;line-height:1.35}
+.ltpf-source-toggle{appearance:none;display:inline-flex;align-items:center;gap:.25rem;border:1px solid #cfb76b;border-radius:999px;background:#fff6d9;color:#6d5010;padding:.16rem .45rem;font:inherit;font-weight:600;font-size:11px;line-height:1.3;cursor:pointer;white-space:nowrap}
+.ltpf-source-toggle:focus-visible{outline:2px solid #8c660e;outline-offset:3px}
+.ltpf-source-message{position:absolute;inset-inline-start:0;top:calc(100% + .5rem);z-index:50;width:min(300px,70vw);padding:.75rem;border:1px solid #cfb76b;border-radius:.7rem;background:#fffcf2;color:#4c3b18;font-size:12px;font-weight:400;line-height:1.5;text-align:start;white-space:normal;box-shadow:0 8px 24px #0002}
+.result-data-row .ltpf-source-message{width:min(290px,65vw)}
+@media(prefers-color-scheme:dark){.ltpf-source-toggle{background:#3b321d;color:#ffe7a2;border-color:#8e7540}.ltpf-source-message{background:#29251b;color:#ffecc3}}
