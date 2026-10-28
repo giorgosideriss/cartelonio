@@ -18,3 +18,13 @@
 .required-field-wrap[data-field="co2"]{width:100%;min-width:0}
 .required-field-wrap[data-field="co2"] input{width:100%;min-width:0;box-sizing:border-box}
 [data-appearance="dark"] .catalogue-co2-note{background:#213126;color:#bbcebb;border-color:#3c5240}
+
+/* Title + country badge form one grid item in the preview theme. */
+html[data-appearance] .vehicle-configurator-v2 #vehiclePreviewCard .summary-metric-label > .ltpf-title-group{display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:4px 6px!important;min-width:0!important;line-height:1.45!important}
+#ltpfSourceIndicator{position:static!important;transform:none!important;margin:0!important;flex:0 0 auto!important}
+#ltpfSourceIndicator .ltpf-source-chip{margin:0}
+.ltpf-source-chip>.ltpf-source-message{display:none!important}
+/* Body-level fixed portal escapes clipping and stacking contexts of vehicle cards. */
+.ltpf-source-popover{position:fixed!important;z-index:2147483000!important;box-sizing:border-box;padding:13px 15px;border:1px solid #cbd9ce;border-radius:12px;background:#f6faf7;color:#304d3a;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:12px;font-weight:400;line-height:1.65;letter-spacing:normal;text-align:left;white-space:normal;overflow:auto;overflow-wrap:anywhere;box-shadow:0 12px 32px #132b1c26;overscroll-behavior:contain}
+.ltpf-source-popover[hidden]{display:none!important}
+[data-appearance="dark"] .ltpf-source-popover{background:#1b2921;color:#d2e2d7;border-color:#425d4b;box-shadow:0 12px 32px #0005}
