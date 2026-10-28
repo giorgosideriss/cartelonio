@@ -3295,6 +3295,7 @@ function updateCatalogueCo2Note(){
  else if(range){const lo=range.min??range.gPerKm?.[0],hi=range.max??range.gPerKm?.[1];parts.push(`Δημοσιευμένο εύρος: ${lo}–${hi} g/km (${range.cycle||e.co2Standard||'κύκλος άγνωστος'}). Συμπλήρωσε την τιμή του συγκεκριμένου οχήματος.`);}
  else parts.push('Δεν έχει ταυτοποιηθεί τιμή CO₂ για αυτή την έκδοση. Συμπλήρωσε την τιμή από τα στοιχεία του οχήματος.');
  if(expected&&e.co2Standard&&e.co2Standard!==expected&&e.powertrain!=='electric'&&!e.co2ByCycle?.[expected])parts.push(`Για αυτή την πρώτη άδεια απαιτείται ${expected}. Η τιμή ${e.co2Standard} δεν μετατρέπεται αυτόματα.`);
+ if(e.co2Verification==='same_tax_band_range_midpoint_reference'&&range){const lo=range.min??range.gPerKm?.[0],hi=range.max??range.gPerKm?.[1];parts.push(`Μέση τιμή του εύρους ${lo}–${hi} g/km· όλο το εύρος βρίσκεται στην ίδια κατηγορία CO₂ του τέλους ταξινόμησης. Δεν αποτελεί ξεχωριστή μέτρηση.`);}
  if(e.co2Source&&/reference|inferred|unspecified/.test(e.co2Verification||''))parts.push('Τιμή αναφοράς· μπορείς να τη διορθώσεις σύμφωνα με την άδεια του αυτοκινήτου.');
  if(e.co2Configuration==='standard_without_HELE')parts.push('488 GTB: 277 g/km χωρίς HELE, 260 g/km με HELE. Επίλεξε την πραγματική διαμόρφωση διορθώνοντας το πεδίο.');
  if(cartelonioCo2Override)parts.push('Στον υπολογισμό θα χρησιμοποιηθεί η τιμή που συμπλήρωσες.');
