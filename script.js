@@ -19,7 +19,6 @@ const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
 const BRANDS = [
   "Abarth",
   "Alfa Romeo",
-  "Alpine",
   "Aston Martin",
   "Audi",
   "BMW",
@@ -28,7 +27,6 @@ const BRANDS = [
   "Citroen",
   "Cupra",
   "Dacia",
-  "DS",
   "Fiat",
   "Ford",
   "Honda",
@@ -39,7 +37,6 @@ const BRANDS = [
   "Kia",
   "Lamborghini",
   "Land Rover",
-  "Lexus",
   "Lotus",
   "MG",
   "MINI",
@@ -50,25 +47,28 @@ const BRANDS = [
   "Nissan",
   "Opel",
   "Peugeot",
-  "Polestar",
   "Porsche",
   "Renault",
   "Seat",
   "Skoda",
   "Smart",
   "Subaru",
-  "Suzuki"
-  "Tesla",
+  "Suzuki",
   "Toyota",
   "Volkswagen",
   "Volvo",
   "Alpina",
+  "Alpine",
   "Chrysler",
+  "DS",
   "Ferrari",
   "Infiniti",
+  "Lexus",
   "McLaren",
   "Morgan",
-  "Rolls-Royce"
+  "Polestar",
+  "Rolls-Royce",
+  "Tesla"
 ];
 
 // 2) Έτη 2015–2025
