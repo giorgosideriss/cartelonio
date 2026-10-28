@@ -20,7 +20,7 @@
  function badge(value){
   if(!isReference(value))return '';
   const market=isGerman(value)?'DE':'GR';
-  return '<span class="ltpf-source-chip"><button type="button" class="ltpf-source-toggle" aria-expanded="false" aria-label="Πληροφορίες για την προέλευση της καθαρής τιμής">'+market+' ⓘ</button><span class="ltpf-source-message" role="note" hidden>'+escapeHtml(note(value))+'</span></span>';
+  return '<span class="ltpf-source-chip"><button type="button" class="ltpf-source-toggle" aria-expanded="false" aria-label="Πληροφορίες για την προέλευση της καθαρής τιμής" data-source-note="'+escapeHtml(note(value))+'">'+market+' ⓘ</button></span>';
  }
  function preview(value){
   const el=document.getElementById('ltpfSourceIndicator');
@@ -69,7 +69,7 @@
    portal.addEventListener('pointerleave',event=>{if(!activeButton?.closest('.ltpf-source-chip')?.contains(event.relatedTarget))scheduleClose();});
   }
   closeAll();activeButton=button;
-  portal.textContent=button.nextElementSibling?.textContent||'';
+  portal.textContent=button.dataset.sourceNote||'';
   portal.hidden=false;button.setAttribute('aria-expanded','true');
   button.setAttribute('aria-controls',portal.id);button.setAttribute('aria-describedby',portal.id);
   positionPortal();
