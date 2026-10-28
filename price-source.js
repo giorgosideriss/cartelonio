@@ -29,10 +29,33 @@
   if(price)price.setAttribute('aria-label',label(value,'ΛΤΠΦ οχήματος'));
  }
  function closeAll(){document.querySelectorAll('.ltpf-source-toggle[aria-expanded="true"]').forEach(button=>{button.setAttribute('aria-expanded','false');const message=button.nextElementSibling;if(message)message.hidden=true;});}
+ function showChip(chip){
+  const button=chip?.querySelector('.ltpf-source-toggle');
+  if(!button)return;
+  closeAll();button.setAttribute('aria-expanded','true');
+  if(button.nextElementSibling)button.nextElementSibling.hidden=false;
+ }
+ document.addEventListener('pointerover',event=>{
+  if(event.pointerType==='touch')return;
+  const chip=event.target.closest?.('.ltpf-source-chip');
+  if(chip&&!chip.contains(event.relatedTarget))showChip(chip);
+ });
+ document.addEventListener('pointerout',event=>{
+  if(event.pointerType==='touch')return;
+  const chip=event.target.closest?.('.ltpf-source-chip');
+  if(chip&&!chip.contains(event.relatedTarget)&&!chip.contains(document.activeElement))closeAll();
+ });
+ document.addEventListener('focusin',event=>{
+  const chip=event.target.closest?.('.ltpf-source-chip');if(chip)showChip(chip);
+ });
+ document.addEventListener('focusout',event=>{
+  const chip=event.target.closest?.('.ltpf-source-chip');
+  if(chip&&!chip.contains(event.relatedTarget)&&!chip.matches(':hover'))closeAll();
+ });
  document.addEventListener('click',event=>{
   const button=event.target.closest?.('.ltpf-source-toggle');
   if(!button){if(!event.target.closest?.('.ltpf-source-chip'))closeAll();return;}
-  const opening=button.getAttribute('aria-expanded')!=='true';closeAll();button.setAttribute('aria-expanded',String(opening));
+  const opening=event.detail>0||button.getAttribute('aria-expanded')!=='true';closeAll();button.setAttribute('aria-expanded',String(opening));
   if(button.nextElementSibling)button.nextElementSibling.hidden=!opening;
  });
  document.addEventListener('keydown',event=>{if(event.key==='Escape'){const focused=document.activeElement;closeAll();focused?.focus?.();}});

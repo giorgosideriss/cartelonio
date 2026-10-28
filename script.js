@@ -3250,7 +3250,7 @@ function updatePriceSourcePreview() {
 function updateCatalogueCo2Note(){
  const input=document.getElementById("co2");if(!input)return;
  let note=document.getElementById("catalogueCo2Note");
- if(!note){note=document.createElement("small");note.id="catalogueCo2Note";note.setAttribute("aria-live","polite");note.style.display="block";note.style.marginTop="0.45rem";input.insertAdjacentElement("afterend",note);}
+ if(!note){note=document.createElement("small");note.id="catalogueCo2Note";note.className="catalogue-co2-note";note.setAttribute("aria-live","polite");const anchor=input.closest?.(".required-field-wrap")||input;anchor.insertAdjacentElement("afterend",note);}
  const manual=document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode==='manual';
  const e=cartelonioCo2Edition;if(manual||!e){note.textContent="";return;}
  const firstReg=document.getElementById("firstReg")?.value;
