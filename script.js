@@ -1292,49 +1292,15 @@ function syncFirstRegistrationDate() {
 
 
 /* ========== ΤΥΧΑΙΑ ΕΠΙΛΟΓΗ ========== */
-// Μόνο datasets που υπάρχουν πραγματικά στο project. Έτσι το κουμπί δεν
-// προσπαθεί να φορτώσει κενά brand/year combinations από το γενικό DATA_SOURCES.
-const RANDOM_AVAILABLE_DATASETS = [
-  ["Abarth","2017"],["Abarth","2018"],["Abarth","2019"],["Abarth","2020"],["Abarth","2021"],["Abarth","2022"],
-  ["Alfa Romeo","2015"],["Alfa Romeo","2016"],["Alfa Romeo","2017"],["Alfa Romeo","2018"],["Alfa Romeo","2019"],["Alfa Romeo","2020"],["Alfa Romeo","2022"],
-  ["Aston Martin","2018"],
-  ["Audi","2015"],["Audi","2016"],["Audi","2017"],["Audi","2018"],["Audi","2019"],["Audi","2020"],["Audi","2021"],["Audi","2022"],["Audi","2023"],["Audi","2024"],["Audi","2025"],
-  ["BMW","2015"],["BMW","2016"],["BMW","2017"],["BMW","2018"],["BMW","2019"],["BMW","2020"],["BMW","2021"],["BMW","2022"],["BMW","2023"],["BMW","2024"],["BMW","2025"],
-  ["Bentley","2017"],["Bentley","2020"],["Bentley","2022"],
-  ["Ford","2015"],["Ford","2016"],["Ford","2017"],["Ford","2018"],["Ford","2019"],["Ford","2020"],["Ford","2021"],["Ford","2022"],["Ford","2023"],
-  ["Fiat","2017"],["Fiat","2018"],["Fiat","2019"],["Fiat","2020"],["Fiat","2021"],["Fiat","2022"],
-  ["Mercedes-Benz","2015"],["Mercedes-Benz","2016"],["Mercedes-Benz","2017"],["Mercedes-Benz","2018"],["Mercedes-Benz","2019"],["Mercedes-Benz","2020"],["Mercedes-Benz","2021"],["Mercedes-Benz","2022"],["Mercedes-Benz","2023"],["Mercedes-Benz","2024"],["Mercedes-Benz","2025"],
-  ["MINI","2015"],["MINI","2016"],["MINI","2017"],["MINI","2018"],["MINI","2019"],["MINI","2020"],["MINI","2021"],["MINI","2022"],["MINI","2023"],["MINI","2024"],["MINI","2025"],
-  ["Jeep","2015"],["Jeep","2016"],["Jeep","2017"],["Jeep","2018"],["Jeep","2019"],["Jeep","2020"],["Jeep","2021"],["Jeep","2022"],["Jeep","2023"],
-  ["Jaguar","2015"],["Jaguar","2016"],["Jaguar","2017"],["Jaguar","2018"],["Jaguar","2019"],["Jaguar","2020"],["Jaguar","2021"],["Jaguar","2022"],
-  ["Land Rover","2015"],["Land Rover","2016"],["Land Rover","2017"],["Land Rover","2018"],["Land Rover","2019"],["Land Rover","2020"],["Land Rover","2021"],["Land Rover","2022"],["Land Rover","2023"],["Land Rover","2024"],["Land Rover","2025"],
-  ["Citroen","2015"],["Citroen","2016"],["Citroen","2017"],["Citroen","2018"],["Citroen","2019"],["Citroen","2020"],["Citroen","2021"],["Citroen","2022"],["Citroen","2023"],["Citroen","2024"],["Citroen","2025"],
-  ["Honda","2015"],["Honda","2016"],["Honda","2017"],["Honda","2018"],["Honda","2019"],["Honda","2020"],["Honda","2021"],["Honda","2022"],["Honda","2023"],["Honda","2024"],["Honda","2025"],
-  ["Hyundai","2015"],["Hyundai","2016"],["Hyundai","2017"],["Hyundai","2018"],["Hyundai","2019"],["Hyundai","2020"],["Hyundai","2021"],["Hyundai","2022"],
-  ["Dacia","2017"],["Dacia","2018"],["Dacia","2019"],["Dacia","2020"],["Dacia","2021"],["Dacia","2022"],
-  ["Kia","2017"],["Kia","2018"],["Kia","2019"],["Kia","2020"],["Kia","2021"],["Kia","2022"],
-  ["Lamborghini","2020"],["Lamborghini","2021"],["Lamborghini","2022"],["Lamborghini","2024"],["Lamborghini","2025"],["Lamborghini","2026"],
-  ["Lotus","2019"],["Lotus","2022"],["Lotus","2024"],["Lotus","2025"],["Lotus","2026"],
-  ["Maserati","2018"],["Maserati","2019"],["Maserati","2020"],["Maserati","2021"],["Maserati","2022"],["Maserati","2023"],["Maserati","2024"],["Maserati","2025"],["Maserati","2026"],
-  ["Mazda","2020"],["Mazda","2021"],["Mazda","2022"],["Mazda","2023"],["Mazda","2024"],["Mazda","2025"],["Mazda","2026"],
-  ["MG","2023"],["MG","2024"],["MG","2025"],["MG","2026"],
-  ["Nissan","2015"],["Nissan","2016"],["Nissan","2017"],["Nissan","2018"],["Nissan","2019"],["Nissan","2020"],["Nissan","2021"],["Nissan","2022"],["Nissan","2023"],["Nissan","2024"],["Nissan","2025"],["Nissan","2026"],
-  ["Mitsubishi","2015"],["Mitsubishi","2016"],["Mitsubishi","2017"],["Mitsubishi","2018"],["Mitsubishi","2019"],["Mitsubishi","2020"],["Mitsubishi","2021"],["Mitsubishi","2022"],["Mitsubishi","2023"],["Mitsubishi","2024"],["Mitsubishi","2025"],["Mitsubishi","2026"],
-  ["Peugeot","2015"],["Peugeot","2016"],["Peugeot","2017"],["Peugeot","2018"],["Peugeot","2019"],["Peugeot","2020"],["Peugeot","2021"],["Peugeot","2022"],["Peugeot","2023"],["Peugeot","2024"],["Peugeot","2025"],["Peugeot","2026"],
-  ["Porsche","2017"],["Porsche","2018"],["Porsche","2019"],["Porsche","2020"],["Porsche","2021"],["Porsche","2022"],["Porsche","2023"],["Porsche","2024"],["Porsche","2025"],["Porsche","2026"],
-  ["Volkswagen","2015"],["Volkswagen","2016"],["Volkswagen","2017"],["Volkswagen","2018"],["Volkswagen","2019"],["Volkswagen","2020"],["Volkswagen","2021"],["Volkswagen","2022"],["Volkswagen","2023"],["Volkswagen","2024"],["Volkswagen","2025"],["Volkswagen","2026"],
-  ["Seat","2015"],["Seat","2016"],["Seat","2017"],["Seat","2018"],["Seat","2019"],["Seat","2020"],["Seat","2021"],["Seat","2022"],["Seat","2023"],["Seat","2024"],["Seat","2025"],["Seat","2026"],
-  ["Toyota","2015"],["Toyota","2016"],["Toyota","2017"],["Toyota","2018"],["Toyota","2019"],["Toyota","2020"],["Toyota","2021"],["Toyota","2022"],["Toyota","2023"],
-  ["Subaru","2015"],["Subaru","2016"],["Subaru","2017"],["Subaru","2018"],["Subaru","2019"],["Subaru","2020"],["Subaru","2021"],
-  ["Suzuki","2015"],["Suzuki","2016"],["Suzuki","2017"],["Suzuki","2018"],["Suzuki","2019"],["Suzuki","2020"],["Suzuki","2021"],["Suzuki","2022"],["Suzuki","2023"],["Suzuki","2024"],["Suzuki","2025"],["Suzuki","2026"],
-  ["INEOS","2026"],
-  ["Volvo","2015"],["Volvo","2016"],["Volvo","2017"],["Volvo","2018"],["Volvo","2019"],["Volvo","2020"],["Volvo","2021"],["Volvo","2022"],["Volvo","2023"],
-  ["Cupra","2022"],["Cupra","2023"],["Cupra","2024"],["Cupra","2025"],["Cupra","2026"],
-  ["Renault","2017"],["Renault","2018"],["Renault","2020"],["Renault","2021"],["Renault","2022"],["Renault","2023"],["Renault","2024"],["Renault","2025"],["Renault","2026"],
-  ["BYD","2024"],["BYD","2025"],["BYD","2026"],
-  ["Opel","2015"],["Opel","2016"],["Opel","2017"],["Opel","2018"],["Opel","2019"],["Opel","2020"],["Opel","2021"],["Opel","2022"],["Opel","2023"],["Opel","2024"]
-  
-];
+// Όλες οι διαθέσιμες μάρκες/χρονιές από το πραγματικό ευρετήριο του catalog API.
+// Νέα datasets συμμετέχουν αυτόματα, χωρίς δεύτερη χειροκίνητη λίστα.
+function getRandomAvailableDatasets(){
+  return Object.entries(DATA_SOURCES)
+    .sort(([a],[b])=>a.localeCompare(b,'en',{sensitivity:'base'}))
+    .flatMap(([brand,years])=>Object.keys(years)
+      .sort((a,b)=>Number(a)-Number(b))
+      .map(year=>[brand,year]));
+}
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 function localISODate(date=new Date()){
@@ -1360,7 +1326,8 @@ async function randomSelectAndCalculate(){
   if(btn){ btn.disabled=true; btn.textContent="Επιλογή…"; }
   try{
     // Δοκιμάζουμε διαθέσιμα datasets μέχρι να βρούμε ένα με πραγματικές εκδόσεις/τιμή.
-    const candidates=RANDOM_AVAILABLE_DATASETS.slice().sort(()=>Math.random()-.5);
+    await catalogReady;
+    const candidates=getRandomAvailableDatasets().sort(()=>Math.random()-.5);
     let picked=null;
     for(const [brand,year] of candidates){
       const source=DATA_SOURCES[brand]?.[year];
