@@ -1,3 +1,5 @@
+let cartelonioCo2Override = false;
+let cartelonioCo2Edition = null;
 let cartelonioEuroOverride = false;
 // Referral links are remembered for 30 days; crediting happens only in SQL.
 const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
@@ -19,12 +21,14 @@ const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
 const BRANDS = [
   "Abarth",
   "Alfa Romeo",
+  "Alpina",
   "Alpine",
   "Aston Martin",
   "Audi",
   "Bentley",
   "BMW",
   "BYD",
+  "Chrysler",
   "Citroen",
   "Cupra",
   "Dacia",
@@ -93,6 +97,7 @@ const catalogReady = fetch(`${CARTELONIO_API_BASE}/catalog`, {cache:"no-store"})
 const BRAND_LOGOS = {
   "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
   "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2021/09/Alfa-Romeo-Logo-500x281.png",
+  "Alpina": "https://logos-world.net/wp-content/uploads/2021/03/Alpina-Logo.png",
   "Alpine": "https://logos-world.net/wp-content/uploads/2021/08/Alpine-Logo-700x394.png",
   "Aston Martin": "https://logos-world.net/wp-content/uploads/2022/08/Aston-Martin-New-Logo-500x281.png",
   "Audi": "https://cdn.simpleicons.org/audi/B8BCB9",
@@ -100,6 +105,7 @@ const BRAND_LOGOS = {
   "BYD": "https://1000logos.net/wp-content/uploads/2020/07/BYD-Logo.png",
   "Bentley": "https://1000logos.net/wp-content/uploads/2025/09/Emblem-Bentley.png",
   "Chery": "https://logos-world.net/wp-content/uploads/2021/09/Chery-Logo-500x281.png",
+  "Chrysler": "https://logos-world.net/wp-content/uploads/2021/09/Chrysler-Logo-500x281.png",
   "Citroen": "https://download.logo.wine/logo/Citro%C3%ABn/Citro%C3%ABn-Logo.wine.png",
   "Cupra": "https://brandlogos.net/wp-content/uploads/2022/10/Cupra-logo.png",
   "DS": "https://logos-world.net/wp-content/uploads/2021/08/DS-Automobiles-Logo-700x394.png",
@@ -254,12 +260,13 @@ function cleanEditionDisplayName(editionName, brandName = "", modelName = "") {
     } while (text !== previous && pattern.test(text));
   });
 
-  return text
+  const cleaned = text
     .replace(/\s+/g, " ")
     .replace(/^\s*[-–—:|/,]+\s*|\s*[-–—:|/,]+\s*$/g, "")
     .replace(/\s+([,;:)])/g, "$1")
     .replace(/([(])\s+/g, "$1")
     .trim();
+  return cleaned || "Βασική έκδοση";
 }
 
 function updateVehicleImageIdentity(hasImage = null) {
@@ -788,13 +795,17 @@ function populateVersions() {
   const modelObj = currentDataset.models[model];
   if (!modelObj || !Array.isArray(modelObj.editions)) return;
 
+  const editionGroups = new Map();
   modelObj.editions.forEach((ed, index) => {
     const opt = document.createElement("option");
     opt.value = String(index);
     const selectedBrand = document.getElementById("brandSelect")?.value || "";
     const displayName = cleanEditionDisplayName(ed.name, selectedBrand, model);
-    opt.textContent = ed.missingFields?.length ? `${displayName} — απαιτεί συμπλήρωση στοιχείων` : displayName;
-    verEl.appendChild(opt);
+    opt.textContent = displayName;
+    if(ed.selectionGroup){
+      if(!editionGroups.has(ed.selectionGroup)){const group=document.createElement("optgroup");group.label=ed.selectionGroup;editionGroups.set(ed.selectionGroup,group);verEl.appendChild(group);}
+      editionGroups.get(ed.selectionGroup).appendChild(opt);
+    }else verEl.appendChild(opt);
   });
 
   updateCarSummary();
@@ -866,7 +877,11 @@ function autoFillCarData() {
 
   recalcPriceWithExtras();
 
-  document.getElementById("co2").value = edition.co2 != null ? edition.co2 : "";
+  cartelonioCo2Edition = edition;
+  cartelonioCo2Override = false;
+  const registrationCycle = document.getElementById("firstReg")?.value >= "2021-01-01" ? "WLTP" : "NEDC";
+  document.getElementById("co2").value = edition.co2ByCycle?.[registrationCycle] ?? edition.co2 ?? "";
+  updateCatalogueCo2Note();
 
   // Auto-fill tax metadata when it is available in the selected edition.
   // The controls remain editable so the user can override them from the vehicle CoC.
@@ -971,6 +986,7 @@ function showCalculationError(message, fields = []) {
 function calculationErrorDetails(code) {
   const errors = {
     insufficient_tokens: ["Δεν υπάρχουν διαθέσιμα tokens για νέο υπολογισμό.", []],
+    invalid_co2_cycle: ["Η τιμή CO₂ του καταλόγου αφορά διαφορετικό κύκλο μέτρησης. Συμπλήρωσε την τιμή που αντιστοιχεί στην πρώτη άδεια του συγκεκριμένου οχήματος.", ["co2"]],
     invalid_co2: ["Δεν υπάρχουν πιστοποιημένα στοιχεία εκπομπών CO₂ για τη συγκεκριμένη έκδοση.", ["co2"]],
     invalid_euro_class: ["Επίλεξε έγκυρη κατηγορία Euro για το όχημα.", ["euroClass"]],
     invalid_powertrain: ["Δεν υπάρχει πιστοποιημένος τύπος κίνησης για τη συγκεκριμένη έκδοση.", ["powertrain"]],
@@ -1190,7 +1206,7 @@ async function calculate(){
  await cartelonioAuthReady;
  if(!cartelonioSession?.access_token)return;
  const requestId=crypto.randomUUID(),button=document.getElementById("calcBtn");
- const technicalInputs={euroOverride:!isManual&&cartelonioEuroOverride,co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value};
+ const technicalInputs={co2Override:!isManual&&cartelonioCo2Override,euroOverride:!isManual&&cartelonioEuroOverride,co2:Number(document.getElementById("co2").value),euroClass:document.getElementById("euroClass").value,powertrain:document.getElementById("powertrain").value,category:document.getElementById("category").value};
  let requestBody={inputMode,firstRegistration,importDate,mileage:Number(mileageRaw),technicalInputs};
  if(isManual){
    requestBody.manualLtpf=manualLtpf;
@@ -2660,6 +2676,21 @@ async function loadHistory(reset=false){
 function closeHistory(){historyEl('historyOverlay').hidden=true;document.body.classList.remove('history-open');}
 function openHistory(){if(!historySignedIn())return;closeAuthModal();historyEl('historyOverlay').hidden=false;document.body.classList.add('history-open');void loadHistory(true);}
 function setHistoryInput(id,value){const el=historyEl(id);if(el && value != null){el.value=String(value);el.dispatchEvent(new Event('change',{bubbles:true}));}}
+function historyCatalogueMatch(dataset,record){
+ const normalize=value=>String(value||'').replace(/\s*·\s*[0-9a-f]{8}$/i,'').trim();
+ let provenance=record.input_provenance||{};if(typeof provenance==='string'){try{provenance=JSON.parse(provenance);}catch{provenance={};}}
+ const candidates=[];
+ for(const [model,obj] of Object.entries(dataset?.models||{}))obj.editions.forEach((edition,index)=>{
+  if([edition.name,...(edition.nameAliases||[])].some(name=>normalize(name)===normalize(record.edition)))candidates.push({model,index,edition});
+ });
+ const code=provenance.catalogueIdentity?.factoryCode;
+ let pool=code?candidates.filter(x=>x.edition.code===code):candidates;
+ if(!pool.length&&code)return null;
+ const modelAlias=record.brand==='Polestar'?String(record.model).replace(/^Polestar\s+/,''):record.brand==='Morgan'&&record.model==='Plus Six Touring'?'Plus Six':record.model;
+ const sameModel=pool.filter(x=>x.model===modelAlias);if(sameModel.length)pool=sameModel;
+ const date=provenance.priceSource?.date;if(date){const period=pool.filter(x=>x.edition.priceSource?.date===date);if(period.length)pool=period;}
+ return pool.length===1?pool[0]:null;
+}
 async function restoreHistoryRecord(record){
  const brand=historyEl('brandSelect');
  if(record.brand && DATA_SOURCES[record.brand]?.[String(record.year)]){
@@ -2667,16 +2698,16 @@ async function restoreHistoryRecord(record){
   setBrandUI(record.brand);
   setHistoryInput('yearSelect',record.year);
   await loadDatasetForSelection();
-  if([...historyEl('modelSelect').options].some(opt=>opt.value===record.model)){
-   setHistoryInput('modelSelect',record.model);populateVersions();
+  const restoredEdition=historyCatalogueMatch(currentDataset,record);
+  if(restoredEdition){
+   setHistoryInput('modelSelect',restoredEdition.model);populateVersions();
    const editionOptions=[...historyEl('versionSelect').options];
-   const matching=editionOptions.find(opt=>opt.textContent.trim()===record.edition);
-   const editionValue=matching?.value ?? record.edition_index;
+   const editionValue=String(restoredEdition.index);
    if(editionOptions.some(opt=>opt.value===String(editionValue))){
     setHistoryInput('versionSelect',editionValue);populateColors();
     const variantOptions=[...historyEl('colorSelect').options];
     const matchVariant=variantOptions.find(opt=>opt.textContent.trim()===record.variant_name);
-    const variantValue=matchVariant?.value ?? record.variant_index;
+    const variantValue=matchVariant?.value ?? '';
     if(variantOptions.some(opt=>opt.value===String(variantValue))){setHistoryInput('colorSelect',variantValue);autoFillCarData();}
     (record.extras_indices||[]).forEach(index=>{const checkbox=document.querySelector(`.extras-option input[value="${index}"]`);if(checkbox && !checkbox.checked){checkbox.checked=true;checkbox.dispatchEvent(new Event('change',{bubbles:true}));}});
    }
@@ -3246,3 +3277,28 @@ function updatePriceSourcePreview() {
  const mode=document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode;
  window.CartelonioPriceSource?.preview(mode==='manual'||mode==='listing'?null:(variant?.priceSource||edition?.priceSource));
 }
+
+
+// CO2 source details are separate from the commercial edition name.
+function updateCatalogueCo2Note(){
+ const input=document.getElementById("co2");if(!input)return;
+ let note=document.getElementById("catalogueCo2Note");
+ if(!note){note=document.createElement("small");note.id="catalogueCo2Note";note.setAttribute("aria-live","polite");note.style.display="block";note.style.marginTop="0.45rem";input.insertAdjacentElement("afterend",note);}
+ const manual=document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode==='manual';
+ const e=cartelonioCo2Edition;if(manual||!e){note.textContent="";return;}
+ const firstReg=document.getElementById("firstReg")?.value;
+ const expected=firstReg?(firstReg>='2021-01-01'?'WLTP':'NEDC'):null;
+ const selectedValue=expected?e.co2ByCycle?.[expected]??e.co2:e.co2;
+ const selectedCycle=expected&&e.co2ByCycle?.[expected]!=null?expected:e.co2Standard;
+ const range=e.co2Range||e.sourceCo2Range;let parts=[];
+ if(selectedValue!=null)parts.push(`Τιμή καταλόγου: ${selectedValue} g/km${selectedCycle?' ('+selectedCycle+')':' — κύκλος μέτρησης μη τεκμηριωμένος'}.`);
+ else if(range){const lo=range.min??range.gPerKm?.[0],hi=range.max??range.gPerKm?.[1];parts.push(`Δημοσιευμένο εύρος: ${lo}–${hi} g/km (${range.cycle||e.co2Standard||'κύκλος άγνωστος'}). Συμπλήρωσε την τιμή του συγκεκριμένου οχήματος.`);}
+ else parts.push('Δεν έχει ταυτοποιηθεί τιμή CO₂ για αυτή την έκδοση. Συμπλήρωσε την τιμή από τα στοιχεία του οχήματος.');
+ if(expected&&e.co2Standard&&e.co2Standard!==expected&&e.powertrain!=='electric'&&!e.co2ByCycle?.[expected])parts.push(`Για αυτή την πρώτη άδεια απαιτείται ${expected}. Η τιμή ${e.co2Standard} δεν μετατρέπεται αυτόματα.`);
+ if(e.co2Source&&/reference|inferred|unspecified/.test(e.co2Verification||''))parts.push('Τιμή αναφοράς· μπορείς να τη διορθώσεις σύμφωνα με την άδεια του αυτοκινήτου.');
+ if(e.co2Configuration==='standard_without_HELE')parts.push('488 GTB: 277 g/km χωρίς HELE, 260 g/km με HELE. Επίλεξε την πραγματική διαμόρφωση διορθώνοντας το πεδίο.');
+ if(cartelonioCo2Override)parts.push('Στον υπολογισμό θα χρησιμοποιηθεί η τιμή που συμπλήρωσες.');
+ note.textContent=parts.join(' ');
+}
+document.addEventListener('input',event=>{if(event.target?.id==='co2'){cartelonioCo2Override=true;updateCatalogueCo2Note();}});
+document.addEventListener('change',event=>{if(event.target?.id==='co2'){cartelonioCo2Override=true;updateCatalogueCo2Note();}if(['firstRegDay','firstRegMonth','firstRegYear','firstRegManualDate'].includes(event.target?.id))updateCatalogueCo2Note();});
