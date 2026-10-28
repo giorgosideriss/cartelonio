@@ -1015,7 +1015,7 @@ function renderDetailedCalculationBreakdown(serverBreakdown, ctx){
   const bracketHtml=brackets.length?`<div class="result-tax-brackets"><span class="result-detail-subtitle">Προοδευτικά κλιμάκια</span>${brackets.map((part,i)=>row(esc(part.label||`Κλιμάκιο ${i+1}`),money(part.tax),`${money(part.taxableAmount)} × ${Number(part.rate||0).toLocaleString("el-GR",{style:"percent",maximumFractionDigits:2})}`)).join("")}</div>`:"";
   return `<div class="result-breakdown-panel result-breakdown-details" data-breakdown-panel="details" hidden>
     <div class="result-detail-group"><span class="result-detail-kicker">01 · ΑΞΙΑ ΟΧΗΜΑΤΟΣ</span>
-      ${row(ltpfLabel,money(v.ltpf),isManual?"Τιμή που δηλώθηκε στη χειροκίνητη εισαγωγή":window.CartelonioPriceSource.isGerman(v)?window.CartelonioPriceSource.note(v):"Τιμή που επαληθεύτηκε από τον κατάλογο")}
+      ${row(ltpfLabel,money(v.ltpf),isManual?"Τιμή που δηλώθηκε στη χειροκίνητη εισαγωγή":window.CartelonioPriceSource.isReference(v)?window.CartelonioPriceSource.note(v):"Τιμή που επαληθεύτηκε από τον κατάλογο")}
       ${b.vehicleValue?.baseLtpf!=null?row("Βασική ΛΤΠΦ",money(b.vehicleValue.baseLtpf)):""}
       ${b.vehicleValue?.extrasTotal!=null?row("Αξία επιλεγμένων extras",money(b.vehicleValue.extrasTotal)):""}
     </div>
@@ -1224,9 +1224,9 @@ async function calculate(){
    if(isManual&&manualLtpfEl){manualLtpfEl.value=Number(v.ltpf).toLocaleString("el-GR",{style:"currency",currency:"EUR",minimumFractionDigits:2,maximumFractionDigits:2});}
    if (previewRevisionAtStart === vehiclePreviewRevision) setRegistrationTaxMiniResult(r.totalTax);
    const pct=x=>`${(x*100).toFixed(1).replace(".0","")}%`,eur=x=>Number(x).toLocaleString("el-GR",{minimumFractionDigits:2,maximumFractionDigits:2});
-   const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":window.CartelonioPriceSource.isGerman(v)?"ΛΤΠΦ Γερμανίας":"Επαληθευμένη ΛΤΠΦ";
+   const ltpfLabel=isManual?"Δηλωμένη ΛΤΠΦ":window.CartelonioPriceSource.label(v,"Επαληθευμένη ΛΤΠΦ");
    let provenanceNote=isManual?"Η ΛΤΠΦ και τα τεχνικά στοιχεία δηλώθηκαν χειροκίνητα από τον χρήστη.":(v.input_provenance?.euroResolution?.isEstimate?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Η κατηγορία Euro βασίζεται σε εκτίμηση.":Object.values(v.input_provenance||{}).includes("user_provided")?"Η ΛΤΠΦ και τα extras προέρχονται από τον κατάλογο. Ορισμένα τεχνικά στοιχεία δηλώθηκαν από τον χρήστη.":"Στοιχεία οχήματος και ΛΤΠΦ από τον κατάλογο.");
-   if(!isManual && window.CartelonioPriceSource.isGerman(v)) provenanceNote=window.CartelonioPriceSource.note(v)+" "+provenanceNote;
+   if(!isManual && window.CartelonioPriceSource.isReference(v)) provenanceNote=window.CartelonioPriceSource.note(v)+" "+provenanceNote;
    const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
    const dateEl=value=>{if(!value)return "—";const [y,m,d]=String(value).split("-");return d&&m&&y?`${d}/${m}/${y}`:esc(value);};
    const technicalCategory=document.getElementById("category").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("category").value||"—";
@@ -2599,7 +2599,7 @@ function renderHistoryDashboard(record) {
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
  const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">${record.is_example?"Παράδειγμα υπολογισμού":"Αποθηκευμένος υπολογισμός"}</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
  const breakdown=record.calculation_breakdown||record.calculationBreakdown||stored.calculationBreakdown||stored.calculation_breakdown;
- return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:window.CartelonioPriceSource.isGerman(v)?"ΛΤΠΦ Γερμανίας":"Αποθηκευμένη ΛΤΠΦ",provenanceNote:window.CartelonioPriceSource.isGerman(v)?window.CartelonioPriceSource.note(v):record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
+ return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:window.CartelonioPriceSource.label(v,"Αποθηκευμένη ΛΤΠΦ"),provenanceNote:window.CartelonioPriceSource.isReference(v)?window.CartelonioPriceSource.note(v):record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
 }
 function renderHistoryRecord(record){
  const displayHistoryEdition=cleanEditionDisplayName(record.edition,record.brand,record.model);
@@ -2618,7 +2618,7 @@ function renderHistoryRecord(record){
   historyNode('span','history-entry-date',new Date(record.created_at).toLocaleString('el-GR',{dateStyle:'medium',timeStyle:'short'})));
  const money=historyNode('div','history-entry-money');
  money.append(historyNode('small','', 'Τέλος ταξινόμησης'),historyNode('strong','', '€'+historyEuro(record.total_tax)),
-  historyNode('small','history-ltpf',(window.CartelonioPriceSource.isGerman(record)?'ΛΤΠΦ Γερμανίας ⓘ €':'ΛΤΠΦ €')+historyEuro(record.ltpf)));
+  historyNode('small','history-ltpf',(window.CartelonioPriceSource.label(record,'ΛΤΠΦ')+' €')+historyEuro(record.ltpf)));
  head.append(visual,main,money);article.append(head);
  const favorite=historyNode('button','history-favorite',record.is_favorite?'★':'☆');favorite.type='button';favorite.title=record.is_favorite?'Αφαίρεση από αγαπημένα':'Προσθήκη στα αγαπημένα';favorite.setAttribute('aria-label',favorite.title);favorite.setAttribute('aria-pressed',String(Boolean(record.is_favorite)));
  favorite.addEventListener('click',async()=>{if(favorite.disabled)return;favorite.disabled=true;const next=!Boolean(record.is_favorite);try{const {data,error}=await cartelonioDb.from('calculation_history').update({is_favorite:next}).eq('id',record.id).eq('user_id',cartelonioSession.user.id).select('id,is_favorite').maybeSingle();if(error)throw error;if(!data)throw new Error('Η ενημέρωση δεν αποθηκεύτηκε. Έλεγξε τα δικαιώματα RLS.');record.is_favorite=data.is_favorite;historyRenderList();}catch(error){console.warn('Favorite update failed',error);historyStatus('Δεν αποθηκεύτηκε το αγαπημένο. Έλεγξε ότι εκτέλεσες το νέο SQL.');favorite.disabled=false;}});
