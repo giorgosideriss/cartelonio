@@ -11,7 +11,7 @@
   if(!isGerman(value))return '';
   const source=sourceOf(value);
   const origin=source.kind==='manufacturer_pricelist'?'γερμανικό τιμοκατάλογο':'δημοσιευμένες γερμανικές τιμές αναφοράς';
-  return 'Χρησιμοποιείται καθαρή αξία από '+origin+', επειδή δεν βρέθηκε διαθέσιμος ελληνικός τιμοκατάλογος. Δεν αποτελεί επίσημη ελληνική ΛΤΠΦ.';
+  return 'Χρησιμοποιείται καθαρή αξία από '+origin+', επειδή δεν βρέθηκε διαθέσιμος ελληνικός τιμοκατάλογος. Η τιμή είναι προ ΦΠΑ Γερμανίας. Δεν αποτελεί επίσημη ελληνική ΛΤΠΦ.';
  }
  function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
  function badge(value){

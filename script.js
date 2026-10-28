@@ -19,56 +19,56 @@ const CARTELONIO_REFERRAL_STORAGE = 'cartelonio:pending-referral:v1';
 const BRANDS = [
   "Abarth",
   "Alfa Romeo",
+  "Alpina",
+  "Alpine",
   "Aston Martin",
   "Audi",
+  "Bentley",
   "BMW",
   "BYD",
-  "Bentley",
+  "Chrysler",
   "Citroen",
   "Cupra",
   "Dacia",
+  "DS",
+  "Ferrari",
   "Fiat",
   "Ford",
   "Honda",
   "Hyundai",
   "INEOS",
+  "Infiniti",
   "Jaguar",
   "Jeep",
   "Kia",
   "Lamborghini",
   "Land Rover",
+  "Lexus",
   "Lotus",
-  "MG",
-  "MINI",
   "Maserati",
   "Mazda",
+  "McLaren",
   "Mercedes-Benz",
+  "MG",
+  "MINI",
   "Mitsubishi",
+  "Morgan",
   "Nissan",
   "Opel",
   "Peugeot",
+  "Polestar",
   "Porsche",
   "Renault",
+  "Rolls-Royce",
   "Seat",
   "Skoda",
   "Smart",
   "Subaru",
   "Suzuki",
+  "Tesla",
   "Toyota",
   "Volkswagen",
-  "Volvo",
-  "Alpina",
-  "Alpine",
-  "Chrysler",
-  "DS",
-  "Ferrari",
-  "Infiniti",
-  "Lexus",
-  "McLaren",
-  "Morgan",
-  "Polestar",
-  "Rolls-Royce",
-  "Tesla"
+  "Volvo"
 ];
 
 // 2) Έτη 2015–2025
@@ -1186,7 +1186,7 @@ async function calculate(){
    const message=isManual
      ? "Συμπλήρωσε τη ΛΤΠΦ και όλα τα απαραίτητα τεχνικά στοιχεία του οχήματος."
      : technical.length
-       ? "Η επιλεγμένη έκδοση δεν διαθέτει όλα τα απαραίτητα πιστοποιημένα στοιχεία (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα). Δοκίμασε άλλη έκδοση."
+       ? "Συμπλήρωσε τα τεχνικά στοιχεία που λείπουν (CO₂, κατηγορία Euro, τύπος κίνησης ή αμάξωμα) από το CoC ή τα έγγραφα του οχήματος."
        : "Έλεγξε την επιλογή οχήματος, τις ημερομηνίες και τα διανυθέντα χιλιόμετρα.";
    showCalculationError(message,missing.filter(field=>field!=="vehicle"));
    return;
@@ -1230,7 +1230,7 @@ async function calculate(){
    const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
    const dateEl=value=>{if(!value)return "—";const [y,m,d]=String(value).split("-");return d&&m&&y?`${d}/${m}/${y}`:esc(value);};
    const technicalCategory=document.getElementById("category").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("category").value||"—";
-   const technicalEuro=document.getElementById("euroClass").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("euroClass").value||"—";
+   const technicalEuro=(document.getElementById("euroClass").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("euroClass").value||"—")+(v.input_provenance?.euroResolution?.isEstimate?" (εκτίμηση)":"");
    const technicalPowertrain=document.getElementById("powertrain").selectedOptions?.[0]?.textContent?.trim()||document.getElementById("powertrain").value||"—";
    const co2Display=Number(v.co2).toLocaleString("el-GR");
    const mileageDisplay=Number(mileageRaw).toLocaleString("el-GR");
@@ -2592,7 +2592,8 @@ function renderHistoryDashboard(record) {
  const dateEl=value=>{if(!value)return "—";const date=String(value).slice(0,10).split("-");return date.length===3?date.reverse().join("/"):esc(value);};
  const firstRegistration=record.first_registration||"",importDate=record.import_date||"",mileageRaw=record.mileage;
  const technicalCategory=typeof record.body_type === "string" ? record.body_type : "—";
- const technicalEuro=record.input_provenance?.euroResolution?.label||stored.euroProfile?.label||window.CartelonioEuro.label(record.euro_class,true),technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
+ const savedEuroProfile=v.input_provenance?.euroResolution||stored.euroProfile;
+ const technicalEuro=savedEuroProfile?.label?savedEuroProfile.label+(savedEuroProfile.isEstimate?" (εκτίμηση)":""):window.CartelonioEuro.label(record.euro_class,true),technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
  const co2Display=v.co2==null?"—":historyNumber(v.co2),mileageDisplay=record.mileage==null?"—":historyNumber(record.mileage),envFee=r.environmentalFee;
  const logo=BRAND_LOGOS[record.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[record.brand]):"";
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
