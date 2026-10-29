@@ -646,19 +646,19 @@ html[data-appearance="dark"] #results#results :is(.result-total-card,.result-fin
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .has-warning :is(input,select),
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is([aria-invalid="true"],.calculation-field-invalid) {border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important}
 
-/* Deep Forest — 2026-10-29. Color/elevation only; existing geometry and light theme retained. */
+/* Muted Forest — 2026-10-29. Brighter canvas, darker cards; no geometry changes. */
 html[data-appearance="dark"] {
- --forest-canvas:#080f0c;
- --forest-shell:#132219;
- --forest-panel:#20362a;
- --forest-inset:#101e16;
+ --forest-canvas:#344d3b;
+ --forest-shell:#0b2014;
+ --forest-panel:#101d16;
+ --forest-inset:#0a170f;
  --forest-line:#3c5844;
  --forest-ink:#f0f6eb;
  --forest-muted:#b2c6b1;
  --forest-accent:#afe17c;
 }
 html[data-appearance="dark"] body {
- background:radial-gradient(ellipse at 20% 10%,#1e4c2c47,transparent 46%),radial-gradient(ellipse at 88% 42%,#22473126,transparent 52%),var(--forest-canvas)!important;
+ background:radial-gradient(ellipse at 20% 10%,#66835d24,transparent 46%),radial-gradient(ellipse at 88% 42%,#1f3f2d20,transparent 52%),var(--forest-canvas)!important;
  color:var(--forest-ink)!important;
 }
 html[data-appearance="dark"] .site-header {
@@ -676,18 +676,18 @@ html[data-appearance="dark"] .site-header #headerNavigation>button:hover {
  background:linear-gradient(160deg,#304f36,#1d3525)!important;
 }
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 {
- background:radial-gradient(ellipse at 85% 0%,#416a3f24,transparent 50%),linear-gradient(155deg,#1b3023,#122018 66%,#0e1b14)!important;
+ background:radial-gradient(ellipse at 85% 0%,#416a3f24,transparent 50%),linear-gradient(155deg,#1a3021,#112017 66%,#0d1b12)!important;
  border-color:#4e704d99!important;
  box-shadow:0 30px 74px #0008,0 8px 20px #0004,inset 0 1px 0 #c3e4b42b!important;
 }
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2>.stage-glow {opacity:.13!important}
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.dropdown-card,.registration-strip,.listing-panel) {
- background:linear-gradient(150deg,#253d2e,#1b2e22 70%,#18281e)!important;
+ background:linear-gradient(150deg,#15271b,#101e15 70%,#0d1b12)!important;
  border-color:#426144a6!important;
  box-shadow:0 10px 24px #0006,0 2px 6px #0003,inset 0 1px 0 #d6edc81c!important;
 }
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .dropdown-card .dropdown-control-row {
- background:linear-gradient(180deg,#1222199e,#101e1670)!important;
+ background:linear-gradient(180deg,#08170d9e,#0a170f70)!important;
  border-radius:11px!important;
  box-shadow:inset 0 1px 3px #0003!important;
 }
@@ -699,7 +699,7 @@ html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :i
  background:transparent!important;color:var(--forest-ink)!important;
 }
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.registration-fields input,.registration-fields select,.registration-secondary-fields select,.listing-panel input,.listing-panel textarea) {
- background:linear-gradient(180deg,#0d1b13,#14251a)!important;
+ background:linear-gradient(180deg,#08150d,#0d1b12)!important;
  color:var(--forest-ink)!important;color-scheme:dark!important;
  box-shadow:inset 0 2px 5px #0005,0 1px 0 #c7e5b50c!important;
 }
@@ -736,16 +736,16 @@ html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :i
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(option,optgroup) {background:#16291c!important;color:var(--forest-ink)!important}
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option:not(:disabled),.extras-option):hover {background:#345136!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard {
- --preview-bg:#1c3426;--preview-ink:#f0f6eb;--preview-muted:#b5cbb0;--preview-line:#57784c59;
- background:radial-gradient(ellipse at 84% 0%,#557d4059,transparent 58%),linear-gradient(155deg,#26452f,#14271c 78%)!important;
+ --preview-bg:#10291b;--preview-ink:#f0f6eb;--preview-muted:#b5cbb0;--preview-line:#57784c59;
+ background:radial-gradient(ellipse at 84% 0%,#557d4059,transparent 58%),linear-gradient(155deg,#163823,#0b2014 78%)!important;
  border-color:#628657a6!important;
  box-shadow:0 22px 45px #0008,0 4px 12px #0004,inset 0 1px 0 #d4edb93b!important;
 }
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-visual {background:transparent!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics {
- background:linear-gradient(180deg,#182f224d,#182f22e0 62%,#1c3426)!important;
+ background:linear-gradient(180deg,#1026194d,#102619e0 62%,#10291b)!important;
 }
-html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics::before {background:linear-gradient(180deg,transparent,#182f224d)!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics::before {background:linear-gradient(180deg,transparent,#1026194d)!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard :is(.vehicle-image-brand,.vehicle-image-model,.vehicle-image-edition,#price,#vehicleSummaryCo2) {color:var(--forest-ink)!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard :is(#registrationTaxMiniCard,#registrationTaxDetailsBtn) {
  background:linear-gradient(120deg,#34572c,#25452b 65%,#203b26)!important;
@@ -757,7 +757,7 @@ html[data-appearance="dark"] #resultCard.result-panel {
  box-shadow:0 25px 60px #0007,inset 0 1px 0 #cee8b726!important;
 }
 html[data-appearance="dark"] #results#results :is(.result-dashboard>article,.result-dashboard>section,.result-vehicle-card,.result-info-card,.result-breakdown-card) {
- background:linear-gradient(150deg,#243c2b,#182c20)!important;border-color:#4b6a4280!important;
+ background:linear-gradient(150deg,#13281c,#0c1c12)!important;border-color:#4b6a4280!important;
  box-shadow:0 12px 28px #0006,inset 0 1px 0 #cfe7bd24!important;
 }
 html[data-appearance="dark"] #results#results :is(.result-total-card,.result-final-bar,.result-detail-total) {
@@ -766,11 +766,11 @@ html[data-appearance="dark"] #results#results :is(.result-total-card,.result-fin
 }
 html[data-appearance="dark"] #results#results :is(.result-data-row,.result-detail-row) {border-color:#73935b30!important}
 html[data-appearance="dark"] :is(.history-dialog,.tokens-panel,.referral-dialog,.purchase-return-dialog,.welcome10-card,.cartelonio-onboarding-card) {
- background:linear-gradient(155deg,#223c2a,#102218)!important;border-color:#53724a99!important;
+ background:linear-gradient(155deg,#142c1d,#0c1d13)!important;border-color:#53724a99!important;
  box-shadow:0 28px 80px #0009,inset 0 1px 0 #c8e5b52e!important;
 }
 html[data-appearance="dark"] .site-header #authModal .auth-card {
- background:linear-gradient(155deg,#223c2a,#102218)!important;border-color:#53724a99!important;
+ background:linear-gradient(155deg,#142c1d,#0c1d13)!important;border-color:#53724a99!important;
  box-shadow:0 28px 80px #0009,inset 0 1px 0 #c8e5b52e!important;
 }
 html[data-appearance="dark"] :is(.ltpf-source-popover,.field-help-tooltip) {
@@ -782,3 +782,133 @@ html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .h
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is([aria-invalid="true"],.calculation-field-invalid) {
  border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important;
 }
+
+/* Shared surfaces used by account, examples, tokens, history and information dialogs. */
+html[data-appearance="dark"] {
+ --bg:#344d3b;--surface:#12251a;--surface-2:#101d16;--ink:#f0f6eb;--muted:#b8cbb5;--line:#3e5b42;
+ --theme-dialog:#12251a;--theme-card:#101d16;--theme-raised:#243d29;
+ --theme-text:#f0f6eb;--theme-secondary:#b8cbb5;--theme-border:#456448;--theme-accent:#c4e69e;
+ color-scheme:dark;scrollbar-color:#65805b #0d1d13;
+}
+html[data-appearance="dark"] .site-header #headerNavigation {
+ background:#102318fa!important;border-color:#486047!important;
+}
+html[data-appearance="dark"] .site-header #headerNavigation>button {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;
+}
+html[data-appearance="dark"] .site-header #headerNavigation>button:hover {background:#c7e2b412!important}
+html[data-appearance="dark"] :is(.mobile-menu-heading,.mobile-menu-section-title) {color:var(--theme-text)!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(.auth-modal,.history-overlay,.cartelonio-onboarding-backdrop,.how-to-modal-overlay) {background-color:#06120bd1!important}
+html[data-appearance="dark"] :is(dialog.examples-window,dialog.referral-dialog,dialog.purchase-return-dialog)::backdrop {background:#06120bb8;backdrop-filter:blur(5px)}
+html[data-appearance="dark"] dialog.examples-window {background:transparent!important;border-color:transparent!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-dialog,.history-content) {
+ background:var(--theme-dialog)!important;background-image:none!important;color:var(--theme-text)!important;
+ border-color:var(--theme-border)!important;
+}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) .history-dialog {
+ box-shadow:0 28px 70px #0008,inset 0 1px 0 #d9eec12b!important;
+}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-header,.history-toolbar,.history-tool-panel) {
+ background:#193020!important;background-image:none!important;color:var(--theme-text)!important;
+ border-color:var(--theme-border)!important;box-shadow:inset 0 1px 0 #d9eec114!important;
+}
+/* Menu/list choices share one transparent surface. Hover and selection alone add a tint. */
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-list,.history-entry,.history-entry-money,.history-entry-main,.history-fields,.history-field,.history-expanded,.history-entry-actions) {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;
+ color:var(--theme-text)!important;border-color:#5b795342!important;
+}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) .history-entry:hover {background:#b2d28e0a!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-car-version,.history-entry-date,.history-ltpf,.history-field span) {color:var(--theme-secondary)!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-tab,.history-tool-button,.history-action,.history-close,.history-more,.history-favorite,.history-card-more) {
+ background:transparent!important;background-image:none!important;color:#c7e0b5!important;box-shadow:none!important;border-color:#54744870!important;
+}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) :is(.history-tab.is-active,.history-favorite.is-favorite) {background:#27442a!important;color:#dbefc4!important;border-color:#76965b!important}
+html[data-appearance="dark"] :is(#historyOverlay,#examplesDialog):is(#historyOverlay,#examplesDialog) .history-delete {color:#ffc3c9!important;border-color:#9e555c99!important}
+html[data-appearance="dark"] #authModal#authModal .auth-card {
+ background:linear-gradient(155deg,#183021,#0d1e14)!important;background-image:linear-gradient(155deg,#183021,#0d1e14)!important;
+ border-color:var(--theme-border)!important;box-shadow:0 26px 70px #0009,inset 0 1px 0 #cee6b42b!important;
+}
+html[data-appearance="dark"] #authModal#authModal :is(.auth-user-panel,.account-finder,.account-finder-header,.account-finder-identity,.account-finder-profile,.auth-form,.auth-tabs,.account-finder-row,.account-finder-logout,.account-finder-active) {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;color:var(--theme-text)!important;border-color:#5b795342!important;
+}
+html[data-appearance="dark"] #authModal#authModal :is(.account-finder-row,.auth-tabs button):hover {background:#b5d6990d!important}
+html[data-appearance="dark"] #authModal#authModal :is(.account-finder-row-copy,.account-finder-row-copy strong,.account-finder-row-copy small,.account-finder-profile span,.account-finder-email) {background:transparent!important;background-image:none!important}
+html[data-appearance="dark"] #authModal#authModal .auth-tabs button {background:transparent!important;background-image:none!important;color:var(--theme-secondary)!important;box-shadow:none!important}
+html[data-appearance="dark"] #authModal#authModal .auth-tabs button.is-active {background:#27442a!important;color:var(--theme-text)!important}
+html[data-appearance="dark"] #authModal#authModal :is(.account-finder-avatar,.account-finder-row-icon,.auth-close) {background:#223b27!important;color:#c4e69e!important;border-color:#456448!important}
+html[data-appearance="dark"] #authModal#authModal .account-finder-logout :is(strong,.account-finder-row-icon,.account-finder-chevron) {background:transparent!important;color:#ffc3c9!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.tokens-panel,.tokens-purchase-panel,.tokens-voucher) {
+ background:var(--theme-dialog)!important;background-image:none!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important;
+}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .tokens-panel {box-shadow:0 26px 70px #0009,inset 0 1px 0 #cee6b42b!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.tokens-overview,.tokens-option,.tokens-option-disabled,.tokens-option-icon,.tokens-option-chevron,.tokens-balance-icon,.token-launch-offer,.token-launch-offer>span,.token-package-choice,.token-choice-copy,.token-choice-copy>*,.token-choice-price,.token-choice-price>*) {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;color:var(--theme-text)!important;border-color:#5b795342!important;
+}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .tokens-option:not(:disabled):hover {background:#b5d6990d!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu .token-package-choice:has(input:checked) {background:#27442a!important;border-color:#91b36e!important;color:#e1f1cd!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.token-choice-copy small,.token-price-original,.token-price-original s,.tokens-overview small,.token-launch-offer p) {color:var(--theme-secondary)!important}
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(input[type="radio"],input[type="checkbox"]) {accent-color:#afe17c;color-scheme:dark}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-menu,.extras-panel) {
+ background:#102318!important;background-image:none!important;color:var(--theme-text)!important;border-color:#52734a!important;
+ box-shadow:0 18px 45px #0009,inset 0 1px 0 #cce4b51c!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option,.brand-option.brand-option-unavailable,.brand-option.selected,.brand-option.is-active,.extra-option,.extras-option,.extra-option>*,.extras-option>*,.brand-option>:not(.brand-option-logo),option,optgroup) {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;color:var(--theme-text)!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option:not(:disabled):not(.brand-option-unavailable),.extra-option,.extras-option):hover {background:#b5d69910!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option.is-active,.brand-option.selected,.extra-option:has(input:checked),.extras-option:has(input:checked)) {
+ background:#203e26!important;box-shadow:inset 3px 0 0 #afe17c!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option.brand-option-unavailable,.brand-option.brand-option-unavailable:hover,.brand-option.brand-option-unavailable .brand-option-label) {background:transparent!important;color:#91a88e!important;box-shadow:none!important}
+/* Form and dialog inputs stay recessed; labels, icons and option text stay transparent. */
+html[data-appearance="dark"] :is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog):is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog) :is(input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]),select,textarea) {
+ background:#0a190f!important;background-image:none!important;color:var(--theme-text)!important;border-color:#55734d!important;color-scheme:dark!important;
+ box-shadow:inset 0 2px 4px #0005!important;
+}
+html[data-appearance="dark"] :is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog):is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog) :is(option,optgroup) {background:transparent!important;color:var(--theme-text)!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) :is(.result-dashboard>article,.result-dashboard>section,.result-vehicle-card,.result-info-card,.result-breakdown-card) {
+ background:linear-gradient(155deg,#152c1e,#0d1e14)!important;border-color:#4d714480!important;
+ box-shadow:0 12px 26px #0005,inset 0 1px 0 #cae4b11a!important;
+}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) :is(.result-data-row,.result-detail-row,.result-info-grid>div,.result-tax-brackets th,.result-tax-brackets td) {
+ background:transparent!important;background-image:none!important;box-shadow:none!important;border-color:#58784b40!important;
+}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) :is(.result-total-card,.result-final-bar,.result-detail-total) {
+ background:linear-gradient(130deg,#2d5028,#193822)!important;border-color:#69884c80!important;box-shadow:inset 0 1px 0 #d3efb529,0 8px 22px #0004!important;
+}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) :is(.result-breakdown-tabs,.result-tax-brackets) {background:#0a190f!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) .result-breakdown-tabs button {background:transparent!important;color:var(--theme-secondary)!important;box-shadow:none!important}
+html[data-appearance="dark"] :is(#results,#historyOverlay,#examplesDialog):is(#results,#historyOverlay,#examplesDialog) .result-breakdown-tabs button.is-active {background:#27442a!important;color:#e3f2d4!important}
+html[data-appearance="dark"] :is(.referral-dialog,.purchase-return-dialog,.welcome10-card,.cartelonio-onboarding-card,.seo-guide,.tools-dialog,.how-to-modal-card) {
+ background:linear-gradient(155deg,#183021,#0d1e14)!important;border-color:var(--theme-border)!important;color:var(--theme-text)!important;
+ box-shadow:0 26px 70px #0008,inset 0 1px 0 #cee6b426!important;
+}
+html[data-appearance="dark"] .cartelonio-onboarding-card :is(.onboarding-subview-actions,.guide-demo,.about-info-card,.compact-database,.compact-methods>section,.guide-card) {background:#102318!important;background-image:none!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(.referral-copy-row input,.auth-card input,.seo-guide details,.history-tool-panel) {color-scheme:dark}
+html[data-appearance="dark"] :is(.progress-line,.config-progress) {border-color:#52734a!important}
+html[data-appearance="dark"] .config-progress {background:#142a1d!important;color:var(--theme-text)!important;box-shadow:0 7px 20px #0003,inset 0 1px 0 #cee6b41a!important}
+html[data-appearance="dark"] .progress-line {background:#597a4b66!important}
+html[data-appearance="dark"] :is(.history-content,.brand-menu,.extras-panel,.tokens-panel,.auth-card,.tools-dialog,.field-help-tooltip,.ltpf-source-popover) {scrollbar-color:#68895b #102318;color-scheme:dark}
+html[data-appearance="dark"] :is(.field-help-tooltip,.ltpf-source-popover) {background:#142c1d!important;color:var(--theme-text)!important;border-color:#68895b!important}
+/* Preserve visible keyboard focus, errors, disabled choices and safe area behavior. */
+html[data-appearance="dark"] :is(button,a,input,select,textarea,summary,[tabindex="0"]):focus-visible {outline:2px solid #c1ec93!important;outline-offset:3px!important}
+html[data-appearance="dark"] :is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog):is(#authModal,#tokensMenu,#historyOverlay,#examplesDialog) :is([aria-invalid="true"],.calculation-field-invalid,.is-error input) {border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important}
+html[data-appearance="dark"] :is(.auth-error,.auth-message.is-error,.tokens-voucher-note.is-error,.tokens-purchase-note.is-error) {color:#ffd0d5!important}
+
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .brand-option-logo {background-color:transparent!important}
+/* Consistent primary/secondary actions, also inside account and payment menus. */
+html[data-appearance="dark"] #authModal#authModal .auth-primary,
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.token-checkout-button,.tokens-redeem),
+html[data-appearance="dark"] :is(.communication-primary,.welcome10-primary,.onboarding-start,.cookie-accept) {
+ background:linear-gradient(150deg,#c1ed91,#a6dc72)!important;color:#132510!important;
+ border-color:#b4da88!important;box-shadow:inset 0 1px 0 #eeffdb70,0 5px 15px #0003!important;
+}
+html[data-appearance="dark"] #authModal#authModal .auth-primary:hover:not(:disabled),
+html[data-appearance="dark"] #tokensMenu#tokensMenu :is(.token-checkout-button,.tokens-redeem):hover:not(:disabled) {background:linear-gradient(150deg,#d0f6a9,#b4e484)!important}
+html[data-appearance="dark"] :is(.how-to-modal-card,.tools-dialog) :is(h2,h3,h4,strong,label) {color:var(--theme-text)!important}
+html[data-appearance="dark"] :is(.how-to-modal-card,.tools-dialog) :is(p,small) {color:var(--theme-secondary)!important}
+html[data-appearance="dark"] :is(.how-to-step,.how-to-manual,.seo-guide-card,.referral-dialog-stats,.referral-zero-card,.welcome10-voucher) {background:#102318!important;color:var(--theme-text)!important;border-color:var(--theme-border)!important;box-shadow:inset 0 1px 0 #c8dfb512!important}
+html[data-appearance="dark"] :is(.how-to-modal-close,.how-to-step-number,.feature-announcement-icon) {background:#243d29!important;color:#c4e69e!important;border-color:var(--theme-border)!important}
+html[data-appearance="dark"] :is(.cookie-consent,.cookie-settings-button) {background:#102318f5!important;color:var(--theme-text)!important;border-color:#54744899!important;box-shadow:0 18px 45px #0007!important}
+html[data-appearance="dark"] .cookie-consent-copy p {color:var(--theme-secondary)!important}
+html[data-appearance="dark"] .cookie-reject {background:transparent!important;color:var(--theme-text)!important;border-color:#68895b!important}
