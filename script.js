@@ -164,7 +164,7 @@ const BRAND_LOGOS_DARK = {
   "Cupra": "https://upload.wikimedia.org/wikipedia/commons/0/09/Cupra_White.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
   "DS": "https://logos-world.net/wp-content/uploads/2021/08/DS-Automobiles-Logo-700x394.png",
   "Dacia": "https://logos-world.net/wp-content/uploads/2021/06/Dacia-Logo.png",
-  "Ferrari": "https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo-700x394.png",
+  "Ferrari": "https://logoeps.com/wp-content/uploads/2026/07/Scuderia-Ferrari-logoeps.com_.png",
   "Fiat": "https://listcarbrands.com/wp-content/uploads/2016/02/Fiat-Logo-2003.png",
   "Ford": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo-1965-present.png",
   "Geely": "https://logos-world.net/wp-content/uploads/2021/08/Geely-Logo.png",
