@@ -91,8 +91,8 @@ let DATA_SOURCES = {};
 const CARTELONIO_API_BASE = "https://szgsqorrcktrcfmfmqaa.supabase.co/functions/v1";
 const catalogReady = fetch(`${CARTELONIO_API_BASE}/catalog`, {cache:"no-store"}).then(r=>{if(!r.ok)throw Error("catalog_unavailable");return r.json()}).then(m=>{DATA_SOURCES=Object.fromEntries(Object.entries(m.brands||{}).map(([slug,x])=>[x.name,Object.fromEntries(x.years.map(y=>[String(y),{slug,year:String(y)}]))]))});
 
-/* Λογότυπα μαρκών */
-const BRAND_LOGOS = {
+/* Λογότυπα LIGHT theme — άλλαξε τα URLs μόνο σε αυτή τη λίστα. */
+const BRAND_LOGOS_LIGHT = {
   "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
   "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2021/09/Alfa-Romeo-Logo-500x281.png",
   "Alpine": "https://logos-world.net/wp-content/uploads/2021/08/Alpine-Logo-700x394.png",
@@ -148,16 +148,102 @@ const BRAND_LOGOS = {
   "Volkswagen": "https://www.freepnglogos.com/uploads/vw-png-logo/volkswagen-logo-hd-png-5.png",
   "Volvo": "https://logos-world.net/wp-content/uploads/2021/05/Volvo-Logo-1959.png",
 };
+
+/* Λογότυπα DARK theme — ανεξάρτητη λίστα με τα ίδια αρχικά URLs. */
+const BRAND_LOGOS_DARK = {
+  "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
+  "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2021/09/Alfa-Romeo-Logo-500x281.png",
+  "Alpine": "https://logos-world.net/wp-content/uploads/2021/08/Alpine-Logo-700x394.png",
+  "Aston Martin": "https://logos-world.net/wp-content/uploads/2022/08/Aston-Martin-New-Logo-500x281.png",
+  "Audi": "https://cdn.simpleicons.org/audi/B8BCB9",
+  "BMW": "https://logos-world.net/wp-content/uploads/2020/04/BMW-Logo-1997-2020.png",
+  "BYD": "https://1000logos.net/wp-content/uploads/2020/07/BYD-Logo.png",
+  "Bentley": "https://1000logos.net/wp-content/uploads/2025/09/Emblem-Bentley.png",
+  "Chery": "https://logos-world.net/wp-content/uploads/2021/09/Chery-Logo-500x281.png",
+  "Citroen": "https://download.logo.wine/logo/Citro%C3%ABn/Citro%C3%ABn-Logo.wine.png",
+  "Cupra": "https://brandlogos.net/wp-content/uploads/2022/10/Cupra-logo.png",
+  "DS": "https://logos-world.net/wp-content/uploads/2021/08/DS-Automobiles-Logo-700x394.png",
+  "Dacia": "https://logos-world.net/wp-content/uploads/2021/06/Dacia-Logo.png",
+  "Ferrari": "https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo-700x394.png",
+  "Fiat": "https://listcarbrands.com/wp-content/uploads/2016/02/Fiat-Logo-2003.png",
+  "Ford": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo-1965-present.png",
+  "Geely": "https://logos-world.net/wp-content/uploads/2021/08/Geely-Logo.png",
+  "Genesis": "https://logos-world.net/wp-content/uploads/2020/05/Genesis-Logo.png",
+  "Honda": "https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo-700x394.png",
+  "Hyundai": "https://logos-world.net/wp-content/uploads/2021/03/Hyundai-Logo-700x394.png",
+  "INEOS": "https://images.seeklogo.com/logo-png/49/2/ineos-grenadier-logo-png_seeklogo-495887.png",
+  "Infiniti": "https://logos-world.net/wp-content/uploads/2021/11/Infiniti-Logo-500x281.png",
+  "Jaecoo": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jaecoo_wordmark.svg",
+  "Jaguar": "https://crystalpng.com/wp-content/uploads/2025/07/Jaguar-Logo.png",
+  "Jeep": "https://logos-world.net/wp-content/uploads/2021/09/Jeep-Logo-700x394.png",
+  "Kia": "https://logos-world.net/wp-content/uploads/2021/03/Kia-Logo.png",
+  "Lamborghini": "https://api.freelogodesign.org/assets/blog/img/lamborghini-logo-1998%20(1).png",
+  "Land Rover": "https://logos-world.net/wp-content/uploads/2021/10/Land-Rover-Logo-500x281.png",
+  "Lexus": "https://1000logos.net/wp-content/uploads/2020/02/Lexus-Logo-1989.png",
+  "Lotus": "https://cdn.freebiesupply.com/logos/thumbs/2x/lotus-1-logo.png",
+  "MG": "https://logos-world.net/wp-content/uploads/2021/09/MG-Logo-700x394.png",
+  "MINI": "https://cdn.simpleicons.org/mini/B8BCB9",
+  "Maserati": "https://pngimg.com/uploads/maserati/maserati_PNG85.png",
+  "Mazda": "https://logos-world.net/wp-content/uploads/2020/05/Mazda-Logo-700x394.png",
+  "McLaren": "https://listcarbrands.com/wp-content/uploads/2016/12/McLaren-Logo-1998.png",
+  "Mercedes-Benz": "https://logos-world.net/wp-content/uploads/2020/05/Mercedes-Benz-Logo-700x394.png",
+  "Mitsubishi": "https://logos-world.net/wp-content/uploads/2021/09/Mitsubishi-Logo-700x394.png",
+  "Morgan": "https://logos-world.net/wp-content/uploads/2022/12/Morgan-Motor-Company-Logo-500x281.png",
+  "Nissan": "https://cdn.simpleicons.org/nissan/B8BCB9",
+  "Opel": "https://cdn.simpleicons.org/opel/B8BCB9",
+  "Peugeot": "https://logos-world.net/wp-content/uploads/2021/10/Peugeot-Logo.png",
+  "Polestar": "https://logos-world.net/wp-content/uploads/2022/12/Polestar-Logo-500x281.png",
+  "Porsche": "https://logos-world.net/wp-content/uploads/2023/06/Porsche-New-Logo-500x281.png",
+  "Renault": "https://logos-world.net/wp-content/uploads/2021/04/Renault-Symbol-700x394.png",
+  "Rolls-Royce": "https://logos-world.net/wp-content/uploads/2021/04/Rolls-Royce-Logo-700x394.png",
+  "Seat": "https://logos-world.net/wp-content/uploads/2021/03/SEAT-Logo.png",
+  "Skoda": "https://images.seeklogo.com/logo-png/53/2/skoda-logo-png_seeklogo-537287.png",
+  "Smart": "https://logos-world.net/wp-content/uploads/2021/04/Smart-Symbol.png",
+  "Subaru": "https://logos-world.net/wp-content/uploads/2021/06/Subaru-Logo-500x281.png",
+  "Suzuki": "https://logos-world.net/wp-content/uploads/2021/10/Suzuki-Logo-700x394.png",
+  "Tesla": "https://logos-world.net/wp-content/uploads/2020/10/Tesla-Logo.png",
+  "Toyota": "https://1000logos.net/wp-content/uploads/2018/02/Toyota-logo.png",
+  "Volkswagen": "https://www.freepnglogos.com/uploads/vw-png-logo/volkswagen-logo-hd-png-5.png",
+  "Volvo": "https://logos-world.net/wp-content/uploads/2021/05/Volvo-Logo-1959.png",
+};
+
+function getBrandLogo(brand) {
+  const logos = document.documentElement.dataset.appearance === 'dark'
+    ? BRAND_LOGOS_DARK : BRAND_LOGOS_LIGHT;
+  return logos[brand] || '';
+}
+
+// Σήμανση των logos ώστε να ενημερώνονται και όσα είναι ήδη στην οθόνη.
+function setBrandLogoElement(element, brand) {
+  if (!element) return;
+  element.dataset.brandLogo = brand || '';
+  const source = getBrandLogo(brand);
+  if (element.tagName === 'IMG') {
+    if (source) element.src = cartelonioPublicAssetUrl(source);
+    else element.removeAttribute('src');
+    element.style.display = source ? '' : 'none';
+  } else {
+    element.style.backgroundImage = source
+      ? `url(${JSON.stringify(cartelonioPublicAssetUrl(source))})` : 'none';
+    element.classList.toggle('has-logo', Boolean(source));
+  }
+}
+function refreshBrandLogos() {
+  document.querySelectorAll('[data-brand-logo]').forEach(element => {
+    setBrandLogoElement(element, element.dataset.brandLogo);
+  });
+}
+
 /* Welcome statistics: decorative brand logos; independent of calculation logic. */
 (function initOnboardingBrandAmbient(){
   const ambient = document.getElementById('onboardingBrandAmbient');
-  if (!ambient || typeof BRAND_LOGOS === 'undefined') return;
+  if (!ambient) return;
   const names = ['Abarth','Alfa Romeo','Audi','Bentley','BMW','Citroen','Dacia','Fiat','Ford','Honda','Hyundai','Jaguar','Jeep','Kia','Land Rover','Mercedes','MINI','Porsche','Toyota'];
   names.forEach((name,index) => {
-    const source = BRAND_LOGOS[name];
+    const source = getBrandLogo(name);
     if (!source) return;
     const logo = document.createElement('img');
-    logo.src = source;
+    setBrandLogoElement(logo, name);
     logo.alt = '';
     logo.loading = 'lazy';
     logo.decoding = 'async';
@@ -275,8 +361,8 @@ function updateVehicleImageIdentity(hasImage = null) {
   document.getElementById("vehicleImageBrand").textContent = brand;
   const brandLogo = document.getElementById("vehicleImageBrandLogo");
   if (brandLogo) {
-    const logoUrl = BRAND_LOGOS[brand] || "";
-    brandLogo.src = cartelonioPublicAssetUrl(logoUrl);
+    const logoUrl = getBrandLogo(brand) || "";
+    setBrandLogoElement(brandLogo, brand);
     brandLogo.alt = brand ? `${brand} logo` : "";
     brandLogo.style.display = logoUrl ? "block" : "none";
     brandLogo.onerror = () => { brandLogo.style.display = "none"; };
@@ -690,8 +776,8 @@ BRANDS.forEach(brand => {
 
       const logoSpan = document.createElement("span");
       logoSpan.className = "brand-option-logo";
-      if (BRAND_LOGOS[brand]) {
-        logoSpan.style.backgroundImage = `url('${BRAND_LOGOS[brand]}')`;
+      if (getBrandLogo(brand)) {
+        setBrandLogoElement(logoSpan, brand);
       }
 
       const textSpan = document.createElement("span");
@@ -713,11 +799,11 @@ BRANDS.forEach(brand => {
 
         if (buttonLabel) buttonLabel.textContent = brand;
         if (buttonLogo) {
-          if (BRAND_LOGOS[brand]) {
-            buttonLogo.style.backgroundImage = `url('${BRAND_LOGOS[brand]}')`;
+          if (getBrandLogo(brand)) {
+            setBrandLogoElement(buttonLogo, brand);
             buttonLogo.classList.add("has-logo");
           } else {
-            buttonLogo.style.backgroundImage = "none";
+            setBrandLogoElement(buttonLogo, "");
             buttonLogo.classList.remove("has-logo");
           }
         }
@@ -734,7 +820,7 @@ BRANDS.forEach(brand => {
 
   if (buttonLabel) buttonLabel.textContent = "Επιλέξτε μάρκα";
   if (buttonLogo) {
-    buttonLogo.style.backgroundImage = "none";
+    setBrandLogoElement(buttonLogo, "");
     buttonLogo.classList.remove("has-logo");
   }
 }
@@ -1247,12 +1333,12 @@ async function calculate(){
    if(!isManual){
      const identity=getSelectedVehicleIdentity();
      const displayEdition=cleanEditionDisplayName(identity.editionName,identity.brand,identity.model);
-     const logo=BRAND_LOGOS[identity.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[identity.brand]):"";
+     const logo=getBrandLogo(identity.brand)?cartelonioPublicAssetUrl(getBrandLogo(identity.brand)):"";
      const image=document.getElementById("carImage");
      const imageSrc=image?.src||"";
      vehicleResultCard=`<article class="result-vehicle-card">
        <div class="result-vehicle-badge">Επιλογή από κατάλογο</div>
-       <div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc(identity.brand)} ${esc(identity.model)}</strong><span>${esc(displayEdition||identity.editionName)}${identity.year?` · ${esc(identity.year)}`:""}</span></div></div>
+       <div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" data-brand-logo="${esc(identity.brand)}" src="${esc(logo)}" alt="">`:""}<div><strong>${esc(identity.brand)} ${esc(identity.model)}</strong><span>${esc(displayEdition||identity.editionName)}${identity.year?` · ${esc(identity.year)}`:""}</span></div></div>
        <div class="result-vehicle-image-wrap">${imageSrc?`<img src="${esc(imageSrc)}" alt="${esc(identity.brand+' '+identity.model)}">`:""}</div>
      </article>`;
    }
@@ -1308,8 +1394,8 @@ function setBrandUI(brand){
   const logo=document.getElementById("brandButtonLogo");
   if(label) label.textContent=brand;
   if(logo){
-    if(BRAND_LOGOS[brand]){ logo.style.backgroundImage=`url('${BRAND_LOGOS[brand]}')`; logo.classList.add("has-logo"); }
-    else { logo.style.backgroundImage="none"; logo.classList.remove("has-logo"); }
+    if(getBrandLogo(brand)){ setBrandLogoElement(logo, brand); logo.classList.add("has-logo"); }
+    else { setBrandLogoElement(logo, ""); logo.classList.remove("has-logo"); }
   }
 }
 function randomValidDay(year,month){
@@ -2570,9 +2656,9 @@ function renderHistoryDashboard(record) {
  const savedEuroProfile=v.input_provenance?.euroResolution||stored.euroProfile;
  const technicalEuro=savedEuroProfile?.label?savedEuroProfile.label+(savedEuroProfile.isEstimate?" (εκτίμηση)":""):window.CartelonioEuro.label(record.euro_class,true),technicalPowertrain=({electric:"Αμιγώς ηλεκτρικό",hybrid:"Υβριδικό",conventional:"Συμβατικό",ice:"Συμβατικό",hydrogen:"Υδρογόνο"})[record.powertrain]||record.powertrain||"—";
  const co2Display=v.co2==null?"—":historyNumber(v.co2),mileageDisplay=record.mileage==null?"—":historyNumber(record.mileage),envFee=r.environmentalFee;
- const logo=BRAND_LOGOS[record.brand]?cartelonioPublicAssetUrl(BRAND_LOGOS[record.brand]):"";
+ const logo=getBrandLogo(record.brand)?cartelonioPublicAssetUrl(getBrandLogo(record.brand)):"";
  const edition=cleanEditionDisplayName(record.edition,record.brand,record.model);
- const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">${record.is_example?"Παράδειγμα υπολογισμού":"Αποθηκευμένος υπολογισμός"}</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
+ const vehicleResultCard=isManual?"":`<article class="result-vehicle-card"><div class="result-vehicle-badge">${record.is_example?"Παράδειγμα υπολογισμού":"Αποθηκευμένος υπολογισμός"}</div><div class="result-vehicle-head">${logo?`<img class="result-vehicle-logo" data-brand-logo="${esc(record.brand)}" src="${esc(logo)}" alt="">`:""}<div><strong>${esc([record.brand,record.model].filter(Boolean).join(" "))}</strong><span>${esc(edition)}${record.year?` · ${esc(record.year)}`:""}</span></div></div><div class="result-vehicle-image-wrap"><img class="history-result-car-image" alt="${esc([record.brand,record.model].filter(Boolean).join(" "))}" hidden></div></article>`;
  const breakdown=record.calculation_breakdown||record.calculationBreakdown||stored.calculationBreakdown||stored.calculation_breakdown;
  return renderCalculationDashboard({r,v,isManual,vehicleResultCard,ltpfLabel:window.CartelonioPriceSource.label(v,"Αποθηκευμένη ΛΤΠΦ"),provenanceNote:window.CartelonioPriceSource.isReference(v)?window.CartelonioPriceSource.note(v):record.is_example?"Τυχαίο παράδειγμα με στοιχεία καταλόγου και ενδεικτική πρώτη άδεια/χιλιόμετρα. Δεν χρεώθηκαν tokens.":"Στοιχεία και ποσά από τον αποθηκευμένο υπολογισμό.",firstRegistration,importDate,mileageRaw,technicalCategory,technicalEuro,technicalPowertrain,co2Display,mileageDisplay,envFee,eur,pct,esc,dateEl,calculationBreakdown:breakdown?unpack(breakdown):null});
 }
@@ -2585,8 +2671,8 @@ function renderHistoryRecord(record){
  visual.append(img,historyNode('span','history-car-fallback',(record.brand||'')+' '+(record.model||'')));
  const main=historyNode('div','history-entry-main');
  const titleRow=historyNode('div','history-title-row');
- const logoPath=BRAND_LOGOS[record.brand];
- if(logoPath){const logo=historyNode('img','history-brand-logo');logo.src=cartelonioPublicAssetUrl(logoPath);logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
+ const logoPath=getBrandLogo(record.brand);
+ if(logoPath){const logo=historyNode('img','history-brand-logo');setBrandLogoElement(logo, record.brand);logo.alt='';logo.loading='lazy';logo.onerror=()=>logo.remove();titleRow.append(logo);}
  titleRow.append(historyNode('strong','history-car-name',[record.brand,record.model].filter(Boolean).join(' ') || 'Χειροκίνητη εισαγωγή'));
  main.append(titleRow,
   historyNode('span','history-car-version',[record.year,displayHistoryEdition].filter(Boolean).join(' · ')),
@@ -3200,6 +3286,7 @@ function openEmailPreferences() {
       clearTimeout(timer);timer=setTimeout(()=>root.classList.remove('appearance-changing'),220);
     }
     root.dataset.appearance=theme;
+    refreshBrandLogos();
     if(button){button.setAttribute('aria-checked',String(theme==='light'));button.title=theme==='light'?'Αλλαγή σε Dark':'Αλλαγή σε Light';}
     const meta=document.querySelector('meta[name="theme-color"]');
     if(meta)meta.content=theme==='dark'?'#0c110e':'#f2f1ec';
