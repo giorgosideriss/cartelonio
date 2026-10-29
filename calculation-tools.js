@@ -17,20 +17,26 @@ function position(){
  tip.style.left=Math.max(left+12,Math.min(r.left,left+width-box.width-12))+'px';
  tip.style.top=Math.max(top+12,Math.min(y,top+height-box.height-12))+'px';
 }
-function open(b,title,text){cancel();if(active!==b){close();active=b;}heading.textContent=title;copy.textContent=text;tip.hidden=false;b.setAttribute('aria-describedby',tip.id);b.setAttribute('aria-expanded','true');position();}
+function open(b,title,text){cancel();if(active!==b){close();active=b;}heading.textContent=title;copy.textContent=text;copy.style.whiteSpace='pre-line';tip.hidden=false;b.setAttribute('aria-describedby',tip.id);b.setAttribute('aria-expanded','true');position();}
 function later(){cancel();if(!pinned)timer=setTimeout(()=>{if(!tip.matches(':hover')&&active!==document.activeElement)close();},160);}
-const topics={co2:['Εκπομπές CO₂','Συμπλήρωσε τις εκπομπές σε g/km από τα έγγραφα του αυτοκινήτου, όπως το CoC. Για παράδειγμα, 129 σημαίνει 129 g/km. Έλεγξε τη μέθοδο NEDC/WLTP και μην χρησιμοποιείς στοιχεία άλλης έκδοσης.'],euroClass:['Κατηγορία Euro','Η αντιρρυπαντική προδιαγραφή του συγκεκριμένου οχήματος, όπως τεκμηριώνεται στα έγγραφά του. Δεν ταυτίζεται με το καύσιμο και δεν προκύπτει πάντα μόνο από το έτος. Για αμιγώς ηλεκτρικό επίλεξε Electric.']};
+const topics={co2:()=>['Στοιχεία CO₂ της έκδοσης',window.CartelonioCo2Help||''],euroClass:['Κατηγορία Euro','Η αντιρρυπαντική προδιαγραφή του συγκεκριμένου οχήματος, όπως τεκμηριώνεται στα έγγραφά του. Δεν ταυτίζεται με το καύσιμο και δεν προκύπτει πάντα μόνο από το έτος. Για αμιγώς ηλεκτρικό επίλεξε Electric.']};
 
-function attach(target,topic){
- if(!target)return;const [title,text]=topic,b=document.createElement('button');b.type='button';b.className='field-help-button';b.textContent='?';b.setAttribute('aria-label','Βοήθεια: '+title);b.setAttribute('aria-expanded','false');
- b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){if(active!==b)pinned=false;open(b,title,text);}});
+function attach(target,topic,id){
+ if(!target)return;
+ const content=()=>typeof topic==='function'?topic():topic;
+ const [title]=content(),b=document.createElement('button');b.type='button';b.className='field-help-button';b.textContent='?';b.setAttribute('aria-label','Βοήθεια: '+title);b.setAttribute('aria-expanded','false');
+ const reveal=()=>{const [heading,text]=content();if(!text){close();return;}open(b,heading,text);};
+ const refresh=()=>{const [,text]=content();b.hidden=!text;if(!text)b.style.setProperty('display','none','important');else b.style.removeProperty('display');if(!text&&active===b)close();else if(active===b)reveal();};
+ b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){if(active!==b)pinned=false;reveal();}});
  b.addEventListener('pointerleave',later);
- b.addEventListener('focus',()=>open(b,title,text));
+ b.addEventListener('focus',reveal);
  b.addEventListener('blur',()=>{if(!pinned)close();});
- b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();if(active===b&&pinned){close();return;}open(b,title,text);pinned=true;});
- target.append(b);
+ b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();if(active===b&&pinned){close();return;}reveal();if(active===b)pinned=true;});
+ target.append(b);refresh();
+ if(id==='co2')document.addEventListener('cartelonio:co2-help-updated',refresh);
 }
-for(const [id,topic] of Object.entries(topics))attach(document.querySelector(`label[for="${id}"]`),topic);
+for(const [id,topic] of Object.entries(topics))attach(document.querySelector(`label[for="${id}"]`),topic,id);
+window.updateCatalogueCo2Note?.();
 tip.addEventListener('pointerenter',cancel);tip.addEventListener('pointerleave',later);
 document.addEventListener('pointerdown',e=>{if(active&&!active.contains(e.target)&&!tip.contains(e.target))close();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&active){close();e.preventDefault();}});

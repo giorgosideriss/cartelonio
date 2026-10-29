@@ -95,7 +95,6 @@ const catalogReady = fetch(`${CARTELONIO_API_BASE}/catalog`, {cache:"no-store"})
 const BRAND_LOGOS = {
   "Abarth": "https://logos-world.net/wp-content/uploads/2021/08/Abarth-Logo-2007-present.png",
   "Alfa Romeo": "https://logos-world.net/wp-content/uploads/2021/09/Alfa-Romeo-Logo-500x281.png",
-  "Alpina": "https://logos-world.net/wp-content/uploads/2021/03/Alpina-Logo.png",
   "Alpine": "https://logos-world.net/wp-content/uploads/2021/08/Alpine-Logo-700x394.png",
   "Aston Martin": "https://logos-world.net/wp-content/uploads/2022/08/Aston-Martin-New-Logo-500x281.png",
   "Audi": "https://cdn.simpleicons.org/audi/B8BCB9",
@@ -103,7 +102,6 @@ const BRAND_LOGOS = {
   "BYD": "https://1000logos.net/wp-content/uploads/2020/07/BYD-Logo.png",
   "Bentley": "https://1000logos.net/wp-content/uploads/2025/09/Emblem-Bentley.png",
   "Chery": "https://logos-world.net/wp-content/uploads/2021/09/Chery-Logo-500x281.png",
-  "Chrysler": "https://logos-world.net/wp-content/uploads/2021/09/Chrysler-Logo-500x281.png",
   "Citroen": "https://download.logo.wine/logo/Citro%C3%ABn/Citro%C3%ABn-Logo.wine.png",
   "Cupra": "https://brandlogos.net/wp-content/uploads/2022/10/Cupra-logo.png",
   "DS": "https://logos-world.net/wp-content/uploads/2021/08/DS-Automobiles-Logo-700x394.png",
@@ -3246,11 +3244,9 @@ function updatePriceSourcePreview() {
 
 // CO2 source details are separate from the commercial edition name.
 function updateCatalogueCo2Note(){
- const input=document.getElementById("co2");if(!input)return;
- let note=document.getElementById("catalogueCo2Note");
- if(!note){note=document.createElement("small");note.id="catalogueCo2Note";note.className="catalogue-co2-note";note.setAttribute("aria-live","polite");const anchor=input.closest?.(".required-field-wrap")||input;anchor.insertAdjacentElement("afterend",note);}
+ const publish=text=>{window.CartelonioCo2Help=text;document.dispatchEvent(new CustomEvent('cartelonio:co2-help-updated'));};
  const manual=document.querySelector('.vehicle-configurator-v2')?.dataset.inputMode==='manual';
- const e=cartelonioCo2Edition;if(manual||!e){note.textContent="";return;}
+ const e=cartelonioCo2Edition;if(manual||!e){publish('');return;}
  const firstReg=document.getElementById("firstReg")?.value;
  const expected=firstReg?(firstReg>='2021-01-01'?'WLTP':'NEDC'):null;
  const selectedValue=expected?e.co2ByCycle?.[expected]??e.co2:e.co2;
@@ -3264,7 +3260,7 @@ function updateCatalogueCo2Note(){
  if(e.co2Source&&/reference|inferred|unspecified/.test(e.co2Verification||''))parts.push('Τιμή αναφοράς· μπορείς να τη διορθώσεις σύμφωνα με την άδεια του αυτοκινήτου.');
  if(e.co2Configuration==='standard_without_HELE')parts.push('488 GTB: 277 g/km χωρίς HELE, 260 g/km με HELE. Επίλεξε την πραγματική διαμόρφωση διορθώνοντας το πεδίο.');
  if(cartelonioCo2Override)parts.push('Στον υπολογισμό θα χρησιμοποιηθεί η τιμή που συμπλήρωσες.');
- note.textContent=parts.join(' ');
+ publish(parts.join('\n\n')); 
 }
 document.addEventListener('input',event=>{if(event.target?.id==='co2'){cartelonioCo2Override=true;updateCatalogueCo2Note();}});
 document.addEventListener('change',event=>{if(event.target?.id==='co2'){cartelonioCo2Override=true;updateCatalogueCo2Note();}if(['firstRegDay','firstRegMonth','firstRegYear','firstRegManualDate'].includes(event.target?.id))updateCatalogueCo2Note();});
