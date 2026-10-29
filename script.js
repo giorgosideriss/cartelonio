@@ -104,7 +104,7 @@ const BRAND_LOGOS_LIGHT = {
   "Chery": "https://logos-world.net/wp-content/uploads/2021/09/Chery-Logo-500x281.png",
   "Citroen": "https://download.logo.wine/logo/Citro%C3%ABn/Citro%C3%ABn-Logo.wine.png",
   "Cupra": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Cupra_symbol.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
-  "DS": "hhttps://upload.wikimedia.org/wikipedia/commons/9/99/DS_Automobiles_2009_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "DS": "https://upload.wikimedia.org/wikipedia/commons/9/99/DS_Automobiles_2009_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
   "Dacia": "https://logos-world.net/wp-content/uploads/2021/06/Dacia-Logo.png",
   "Ferrari": "https://logoeps.com/wp-content/uploads/2026/07/Scuderia-Ferrari-logoeps.com_.png",
   "Fiat": "https://crystalpng.com/wp-content/uploads/2025/07/Fiat-Logo.png",
