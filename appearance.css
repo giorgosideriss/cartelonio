@@ -645,3 +645,140 @@ html[data-appearance="dark"] #results#results :is(.result-total-card,.result-fin
 /* Keep keyboard focus and validation distinct from decorative borders. */
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .has-warning :is(input,select),
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is([aria-invalid="true"],.calculation-field-invalid) {border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important}
+
+/* Deep Forest — 2026-10-29. Color/elevation only; existing geometry and light theme retained. */
+html[data-appearance="dark"] {
+ --forest-canvas:#080f0c;
+ --forest-shell:#132219;
+ --forest-panel:#20362a;
+ --forest-inset:#101e16;
+ --forest-line:#3c5844;
+ --forest-ink:#f0f6eb;
+ --forest-muted:#b2c6b1;
+ --forest-accent:#afe17c;
+}
+html[data-appearance="dark"] body {
+ background:radial-gradient(ellipse at 20% 10%,#1e4c2c47,transparent 46%),radial-gradient(ellipse at 88% 42%,#22473126,transparent 52%),var(--forest-canvas)!important;
+ color:var(--forest-ink)!important;
+}
+html[data-appearance="dark"] .site-header {
+ background:linear-gradient(110deg,#0b1711f5,#102219f2)!important;
+ border-bottom-color:#35513b80!important;
+ box-shadow:0 6px 22px #0004,inset 0 1px 0 #bfd9ae0a!important;
+}
+html[data-appearance="dark"] .site-header #headerNavigation>button,
+html[data-appearance="dark"] .site-header .appearance-control .appearance-toggle {
+ background:linear-gradient(160deg,#25402d,#15271d)!important;
+ border-color:#486046!important;
+ box-shadow:inset 0 1px 0 #d1e7c215,0 4px 12px #0004!important;
+}
+html[data-appearance="dark"] .site-header #headerNavigation>button:hover {
+ background:linear-gradient(160deg,#304f36,#1d3525)!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 {
+ background:radial-gradient(ellipse at 85% 0%,#416a3f24,transparent 50%),linear-gradient(155deg,#1b3023,#122018 66%,#0e1b14)!important;
+ border-color:#4e704d99!important;
+ box-shadow:0 30px 74px #0008,0 8px 20px #0004,inset 0 1px 0 #c3e4b42b!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2>.stage-glow {opacity:.13!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.dropdown-card,.registration-strip,.listing-panel) {
+ background:linear-gradient(150deg,#253d2e,#1b2e22 70%,#18281e)!important;
+ border-color:#426144a6!important;
+ box-shadow:0 10px 24px #0006,0 2px 6px #0003,inset 0 1px 0 #d6edc81c!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .dropdown-card .dropdown-control-row {
+ background:linear-gradient(180deg,#1222199e,#101e1670)!important;
+ border-radius:11px!important;
+ box-shadow:inset 0 1px 3px #0003!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .dropdown-card:focus-within {
+ border-color:#88ae6d!important;
+ box-shadow:0 9px 24px #0006,inset 0 1px 0 #e7f5db24,0 0 0 2px #afe17c16!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-button,.extras-toggle,.vehicle-fields select) {
+ background:transparent!important;color:var(--forest-ink)!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.registration-fields input,.registration-fields select,.registration-secondary-fields select,.listing-panel input,.listing-panel textarea) {
+ background:linear-gradient(180deg,#0d1b13,#14251a)!important;
+ color:var(--forest-ink)!important;color-scheme:dark!important;
+ box-shadow:inset 0 2px 5px #0005,0 1px 0 #c7e5b50c!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.registration-fields input,.registration-fields select,.registration-secondary-fields select,.listing-panel input,.listing-panel textarea):not(:focus):not([aria-invalid="true"]):not(.calculation-field-invalid) {
+ border-color:#4d694b!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(input,select,textarea):focus-visible {
+ outline:2px solid #afe17c!important;outline-offset:2px!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(label,.config-heading strong,.registration-strip-heading strong,.brand-button-label,.extras-toggle-label) {color:var(--forest-ink)!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.label-note,.registration-strip-heading small,.listing-panel p) {color:var(--forest-muted)!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.config-heading-title>span,.registration-strip-heading>div>span) {color:#b3e388!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.config-heading,.vehicle-summary-row) {border-color:#56774b45!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .vehicle-input-modes {
+ background:#0c1b13!important;border-color:#3c583a99!important;
+ box-shadow:inset 0 2px 6px #0005,0 1px 0 #b9d7a412!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .vehicle-input-mode:not(.is-active) {
+ background:linear-gradient(160deg,#263d2c,#192d20)!important;color:#d1dfc9!important;
+ border-color:#47623f80!important;box-shadow:inset 0 1px 0 #ddf4cb12,0 3px 8px #0004!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.vehicle-input-mode.is-active,#calcBtn,.listing-read-btn) {
+ background:linear-gradient(160deg,#c7f39c,#a6dc72)!important;color:#132510!important;
+ border-color:#b2df85!important;box-shadow:inset 0 1px 0 #edffd78c,0 6px 19px #78b34429,0 3px 8px #0004!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(#resetBtn,.random-select-heading-btn) {
+ background:linear-gradient(150deg,#2a402d,#1a2d20)!important;color:#d7e5cb!important;
+ border-color:#4d6846!important;box-shadow:inset 0 1px 0 #daefc91a,0 4px 10px #0003!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-menu,.extras-panel) {
+ background:linear-gradient(160deg,#233c2a,#12231a)!important;border-color:#5b7950!important;
+ color:var(--forest-ink)!important;box-shadow:0 18px 45px #0009,inset 0 1px 0 #c3e1b51a!important;
+}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(option,optgroup) {background:#16291c!important;color:var(--forest-ink)!important}
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is(.brand-option:not(:disabled),.extras-option):hover {background:#345136!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard {
+ --preview-bg:#1c3426;--preview-ink:#f0f6eb;--preview-muted:#b5cbb0;--preview-line:#57784c59;
+ background:radial-gradient(ellipse at 84% 0%,#557d4059,transparent 58%),linear-gradient(155deg,#26452f,#14271c 78%)!important;
+ border-color:#628657a6!important;
+ box-shadow:0 22px 45px #0008,0 4px 12px #0004,inset 0 1px 0 #d4edb93b!important;
+}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-visual {background:transparent!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics {
+ background:linear-gradient(180deg,#182f224d,#182f22e0 62%,#1c3426)!important;
+}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics::before {background:linear-gradient(180deg,transparent,#182f224d)!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard :is(.vehicle-image-brand,.vehicle-image-model,.vehicle-image-edition,#price,#vehicleSummaryCo2) {color:var(--forest-ink)!important}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard :is(#registrationTaxMiniCard,#registrationTaxDetailsBtn) {
+ background:linear-gradient(120deg,#34572c,#25452b 65%,#203b26)!important;
+ border-color:#719b545e!important;box-shadow:inset 0 1px 0 #daefb624,0 5px 14px #0003!important;
+}
+html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard #registrationTaxMiniValue strong {color:#e0f7bc!important;text-shadow:0 1px 4px #0005!important}
+html[data-appearance="dark"] #resultCard.result-panel {
+ background:linear-gradient(155deg,#1a2f21,#102017)!important;border-color:#476a4399!important;
+ box-shadow:0 25px 60px #0007,inset 0 1px 0 #cee8b726!important;
+}
+html[data-appearance="dark"] #results#results :is(.result-dashboard>article,.result-dashboard>section,.result-vehicle-card,.result-info-card,.result-breakdown-card) {
+ background:linear-gradient(150deg,#243c2b,#182c20)!important;border-color:#4b6a4280!important;
+ box-shadow:0 12px 28px #0006,inset 0 1px 0 #cfe7bd24!important;
+}
+html[data-appearance="dark"] #results#results :is(.result-total-card,.result-final-bar,.result-detail-total) {
+ background:linear-gradient(130deg,#35582b,#203d26)!important;border-color:#70944e80!important;
+ box-shadow:0 12px 25px #0005,inset 0 1px 0 #d3efb52b!important;
+}
+html[data-appearance="dark"] #results#results :is(.result-data-row,.result-detail-row) {border-color:#73935b30!important}
+html[data-appearance="dark"] :is(.history-dialog,.tokens-panel,.referral-dialog,.purchase-return-dialog,.welcome10-card,.cartelonio-onboarding-card) {
+ background:linear-gradient(155deg,#223c2a,#102218)!important;border-color:#53724a99!important;
+ box-shadow:0 28px 80px #0009,inset 0 1px 0 #c8e5b52e!important;
+}
+html[data-appearance="dark"] .site-header #authModal .auth-card {
+ background:linear-gradient(155deg,#223c2a,#102218)!important;border-color:#53724a99!important;
+ box-shadow:0 28px 80px #0009,inset 0 1px 0 #c8e5b52e!important;
+}
+html[data-appearance="dark"] :is(.ltpf-source-popover,.field-help-tooltip) {
+ background:linear-gradient(150deg,#294331,#14281c)!important;color:#e9f2e0!important;
+ border-color:#6c8b5799!important;box-shadow:0 15px 38px #0008,inset 0 1px 0 #d5e9c521!important;
+}
+/* Validation remains stronger than the decorative depth styling. */
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm .has-warning :is(input,select),
+html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm :is([aria-invalid="true"],.calculation-field-invalid) {
+ border-color:#f0a1a8!important;box-shadow:0 0 0 1px #f0a1a8!important;
+}
