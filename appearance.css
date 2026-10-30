@@ -743,7 +743,7 @@ html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard {
 }
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-visual {background:transparent!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics {
- background:linear-gradient(180deg,#1026194d,#102619e0 62%,#10291b)!important;
+ background:linear-gradient(180deg,#a9ed7c00,#a9ed7c5c 62%,#53733f94)!important;
 }
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard .vehicle-summary-metrics::before {background:linear-gradient(180deg,transparent,#1026194d)!important}
 html[data-appearance="dark"] .vehicle-configurator-v2 #vehiclePreviewCard :is(.vehicle-image-brand,.vehicle-image-model,.vehicle-image-edition,#price,#vehicleSummaryCo2) {color:var(--forest-ink)!important}
