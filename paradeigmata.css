@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+  --bg: #f2f1ec;
+  --card: #fbfaf6;
+  --surface: #e7f1df;
+  --ink: #17382d;
+  --muted: #465e50;
+  --line: #cbd8ca;
+  --accent: #4e7d31;
+  --shadow: 0 16px 48px #21382f12;
+}
+:root[data-appearance="dark"] {
+  color-scheme: dark;
+  --bg: #172a1f;
+  --card: #12251a;
+  --surface: #243d29;
+  --ink: #f0f6eb;
+  --muted: #b8cbb5;
+  --line: #456448;
+  --accent: #c4e69e;
+  --shadow: 0 16px 48px #0004;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.55 system-ui, sans-serif; }
+.page { width: min(calc(100% - 2rem), 65rem); margin: clamp(1.5rem, 5vw, 4rem) auto; }
+.page-header { margin-bottom: 1.5rem; }
+h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 5.5vw, 3.7rem); margin: .55em 0 .25em; letter-spacing: -.04em; }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin: 0 0 1.15rem; }
+h3 { font-size: 1.13rem; margin: 0 0 1rem; }
+p { margin: .6em 0; }
+a { color: var(--accent); text-underline-offset: .22em; }
+.back { font-size: .9rem; font-weight: 700; }
+.page-header p, footer, .calculation { color: var(--muted); }
+.example-overview, .scenario { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.9fr); gap: 1rem; }
+.scenario { margin-block: 1rem; align-items: start; }
+.comparison { grid-column: 2; grid-row: 1; }
+.assumptions { grid-column: 1; grid-row: 1; }
+.card, .scenario-choice { background: var(--card); border: 1px solid var(--line); border-radius: 1.2rem; box-shadow: var(--shadow); }
+.card { padding: clamp(1rem, 3vw, 1.65rem); }
+.vehicle { margin: 0; padding: 0; overflow: hidden; }
+.vehicle img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 46%; }
+.vehicle figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .75rem 1rem; }
+.vehicle figcaption span, .scenario-choice span, dt { color: var(--muted); font-size: .85rem; }
+.scenario-picker, .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+.scenario-choice {
+  display: flex; flex-direction: column; justify-content: center; min-height: 5rem;
+  padding: clamp(.7rem, 2vw, 1.15rem); color: var(--ink); text-decoration: none; gap: .25rem;
+}
+.scenario-choice strong { font-size: clamp(.95rem, 2.4vw, 1.2rem); overflow-wrap: anywhere; }
+.scenario-choice:hover, .scenario-choice[aria-current="true"] { background: var(--surface); border-color: var(--accent); }
+.scenario-choice[aria-current="true"] { box-shadow: inset 0 0 0 1px var(--accent); }
+label { display: block; margin-bottom: .35rem; font-weight: 650; }
+input, button { font: inherit; }
+input { width: 100%; padding: .68rem .75rem; border-radius: .7rem; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+button { cursor: pointer; }
+.preset, .reset {
+  padding: .4rem .65rem; margin-top: .45rem; border: 1px solid var(--line);
+  border-radius: .65rem; background: var(--card); color: var(--accent); font-size: .82rem; font-weight: 700;
+}
+.preset:hover, .reset:hover { background: var(--surface); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+dl { margin: 0; }
+dd { margin: 0 0 .65rem; }
+dd:last-child { margin-bottom: 0; }
+.totals {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem;
+  margin: 1rem 0 .6rem; padding: .8rem; border-radius: .8rem; background: var(--surface);
+}
+.totals dd { font-size: clamp(.94rem, 2.55vw, 1.45rem); font-weight: 750; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.calculation, .input-error { font-size: .86rem; }
+details { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .85rem; }
+summary { font-weight: 700; cursor: pointer; }
+ol { padding-inline-start: 1.25rem; margin-bottom: 0; }
+li + li { margin-top: .5rem; }
+footer { font-size: .85rem; margin-top: 1.5rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+@media (max-width: 720px) {
+  .example-overview, .scenario { grid-template-columns: minmax(0, 1fr); }
+  .comparison, .assumptions { grid-area: auto; }
+}
+@media (max-width: 390px) {
+  .totals { grid-template-columns: 1fr; }
+  .totals div { display: flex; justify-content: space-between; gap: .5rem; }
+}

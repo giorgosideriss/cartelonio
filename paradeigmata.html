@@ -2,85 +2,120 @@
 <html lang="el">
 <head>
   <meta charset="utf-8">
+  <script>
+(function(){var theme='light';try{if(window.matchMedia('(prefers-color-scheme: dark)').matches)theme='dark';}catch(_){}try{var saved=localStorage.getItem('cartelonio:appearance:v1');if(saved==='light'||saved==='dark')theme=saved;}catch(_){}document.documentElement.dataset.appearance=theme;})();
+</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Παραδείγματα υπολογισμού τέλους ταξινόμησης | Cartelonio</title>
-  <meta name="description" content="Δύο αναλυτικά παραδείγματα τέλους ταξινόμησης, με υπολογισμούς για καινούργιο και μεταχειρισμένο αυτοκίνητο και σύγκριση CO₂ και χιλιομέτρων.">
+  <title>Αναλυτικά παραδείγματα τέλους ταξινόμησης | Cartelonio</title>
+  <meta name="description" content="Σύγκρινε σε δύο διαδραστικά παραδείγματα πώς τα CO₂ και τα χιλιόμετρα επηρεάζουν το τέλος ταξινόμησης.">
   <link rel="canonical" href="https://cartelonio.gr/paradeigmata.html">
-  <style>
-    :root { color-scheme: light dark; --bg: #f3f6f0; --card: #fff; --ink: #202b23; --link: #24583b; --border: #d6e1d5; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #141d18; --card: #202c24; --ink: #eaf3ea; --link: #a6e2b8; --border: #405649; }
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
-    main { width: min(100% - 2rem, 52rem); margin: 2rem auto 4rem; }
-    header { margin-bottom: 2rem; }
-    h1, h2, h3 { line-height: 1.2; }
-    h1 { font-size: clamp(2rem, 6vw, 3.25rem); }
-    article { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1rem, 4vw, 2rem); margin-block: 1rem; }
-    article h2 { margin-top: 0; }
-    a { color: var(--link); text-underline-offset: .2em; }
-    nav ul { padding-inline-start: 1.2rem; }
-    dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .5rem 1rem; }
-    dt { font-weight: 600; }
-    dd { margin: 0; overflow-wrap: anywhere; }
-    li + li { margin-top: .4rem; }
-    .result { border-inline-start: .25rem solid var(--link); padding-inline-start: 1rem; }
-  </style>
+  <link rel="stylesheet" href="paradeigmata.css">
+  <script src="paradeigmata.js" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <a href="./">← Υπολογιστής Cartelonio</a>
-    <h1>Παραδείγματα υπολογισμού τέλους ταξινόμησης</h1>
-    <p>Δύο υποθετικές εισαγωγές στην Ελλάδα δείχνουν πώς η λιανική τιμή προ φόρων, οι εκπομπές CO₂ και τα χιλιόμετρα επηρεάζουν την εκτίμηση. Τα ποσά αφορούν μόνο το τέλος ταξινόμησης.</p>
-    <nav aria-label="Παραδείγματα">
-      <ul>
-        <li><a href="#new-car">Καινούργιο αυτοκίνητο · επίδραση CO₂</a></li>
-        <li><a href="#used-car">Μεταχειρισμένο αυτοκίνητο · επίδραση χιλιομέτρων</a></li>
-      </ul>
-    </nav>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="./">← Υπολογιστής Cartelonio</a>
+    <h1>Αναλυτικά παραδείγματα</h1>
+    <p>Δες πόσο αλλάζει το τέλος ταξινόμησης όταν αλλάζουν οι εκπομπές CO₂ ή τα χιλιόμετρα.</p>
   </header>
+  <section class="example-overview" aria-labelledby="vehicle-model">
+    <figure class="card vehicle">
+      <img src="images/examples-polo.webp" width="1050" height="788" alt="Μπροστινή όψη Volkswagen Polo έκτης γενιάς μετά την ανανέωση του 2021">
+      <figcaption><strong id="vehicle-model">Volkswagen Polo VI</strong><span>Facelift 2021</span></figcaption>
+    </figure>
+    <nav aria-label="Επιλογή παραδείγματος" class="scenario-picker">
+    <a class="scenario-choice" href="#new-car" data-example="new-car">
+      <strong>Καινούργιο</strong>
+      <span>Σύγκρινε εκπομπές CO₂</span>
+    </a>
+    <a class="scenario-choice" href="#used-car" data-example="used-car">
+      <strong>Μεταχειρισμένο</strong>
+      <span>Σύγκρινε CO₂ και χιλιόμετρα</span>
+    </a>
+    </nav>
+  </section>
+  <article id="new-car" class="scenario" aria-labelledby="new-car-title">
+    <section class="card comparison">
+      <h2 id="new-car-title">Καινούργιο Volkswagen Polo</h2>
+      <form hidden>
+        <div class="fields">
+          <div class="field">
+            <label for="new-car-co2">CO₂ WLTP (g/km)</label>
+            <input id="new-car-co2" name="co2" type="number" min="1" step="1" value="125" required>
+            <button type="button" class="preset" data-field="co2" data-value="165">Δοκίμασε 165 g/km</button>
+          </div>
 
-  <article id="new-car">
-    <h2>Καινούργιο βενζινοκίνητο hatchback</h2>
-    <dl>
-      <dt>Λιανική τιμή προ φόρων (ΛΤΠΦ)</dt><dd>16.000 € με τον εξοπλισμό</dd>
-      <dt>Κατάσταση</dt><dd>Καινούργιο, χωρίς προηγούμενη ταξινόμηση</dd>
-      <dt>Εκπομπές CO₂</dt><dd>125 g/km WLTP</dd>
-      <dt>Προδιαγραφή Euro</dt><dd>Euro 6e-bis, χωρίς προσαύξηση Euro στο σενάριο</dd>
-    </dl>
-    <ol>
-      <li>Για τα πρώτα 14.000 €, ο συντελεστής είναι 4% και δίνει 560 €.</li>
-      <li>Στα υπόλοιπα 2.000 € εφαρμόζεται 26%, δηλαδή 520 €. Το άθροισμα πριν από την προσαρμογή CO₂ είναι 1.080 €.</li>
-      <li>Στα 125 g/km WLTP εφαρμόζεται μείωση 5% στους συντελεστές. Το ποσό γίνεται 1.080 € × 0,95.</li>
-    </ol>
-    <p class="result"><strong>Ενδεικτικό τέλος ταξινόμησης 1.026 €.</strong></p>
-    <h3>Αν η έκδοση εκπέμπει 165 g/km</h3>
-    <p>Με ίδια ΛΤΠΦ και εξοπλισμό, η προσαρμογή CO₂ γίνεται +10%. Το ποσό είναι 1.080 € × 1,10 = <strong>1.188 €</strong>, δηλαδή 162 € παραπάνω. Όταν συγκρίνεις εκδόσεις, έλεγξε την τιμή CO₂ της συγκεκριμένης έκδοσης στο πιστοποιητικό συμμόρφωσης.</p>
+        </div>
+        <p class="input-error" hidden>Συμπλήρωσε έγκυρες ακέραιες τιμές για να δεις τη σύγκριση.</p>
+        <dl class="totals">
+          <div><dt>Αρχικό τέλος</dt><dd data-result="base">1.026,00 €</dd></div>
+          <div><dt>Νέο τέλος</dt><dd data-result="total">1.026,00 €</dd></div>
+          <div><dt>Διαφορά</dt><dd data-result="change">0,00 €</dd></div>
+        </dl>
+        <p class="calculation" data-result="factors"></p>
+        <p class="sr-only" role="status" data-result="announcement"></p>
+        <button type="reset" class="reset">Επαναφορά τιμών</button>
+      </form>
+      <details open>
+        <summary>Ανάλυση αρχικού παραδείγματος</summary>
+        <ol><li>Στα πρώτα 14.000 € εφαρμόζουμε 4% και στα επόμενα 2.000 € εφαρμόζουμε 26%. Το τέλος πριν από την προσαρμογή CO₂ είναι 560 € + 520 € = 1.080 €.</li><li>Στα 125 g/km WLTP ο συντελεστής μειώνεται κατά 5%. Το τέλος είναι 1.080 € × 0,95 = 1.026 €.</li><li>Στα 165 g/km WLTP ο συντελεστής αυξάνεται κατά 10%. Το τέλος γίνεται 1.188 €, δηλαδή 162 € παραπάνω.</li></ol>
+      </details>
+    </section>
+    <section class="card assumptions">
+      <h3>Στοιχεία παραδείγματος</h3>
+      <dl>
+        <dt>ΛΤΠΦ με εξοπλισμό</dt><dd>16.000 €</dd>
+        <dt>Κατάσταση</dt><dd>Πρώτη ταξινόμηση</dd>
+        <dt>Προδιαγραφή Euro</dt><dd>Euro 6e-bis (0% προσαύξηση στο σενάριο)</dd>
+      </dl>
+    </section>
   </article>
-
-  <article id="used-car">
-    <h2>Μεταχειρισμένο βενζινοκίνητο hatchback</h2>
-    <dl>
-      <dt>ΛΤΠΦ όταν ήταν καινούργιο</dt><dd>13.000 € με τον ίδιο εξοπλισμό</dd>
-      <dt>Πρώτη άδεια / εισαγωγή</dt><dd>Νοέμβριος 2023 / Νοέμβριος 2026</dd>
-      <dt>Χιλιόμετρα</dt><dd>45.000 km</dd>
-      <dt>CO₂ / Euro</dt><dd>165 g/km WLTP / Euro 6d, χωρίς προσαύξηση Euro στο σενάριο</dd>
-    </dl>
-    <ol>
-      <li>Υποθέτουμε απομείωση ηλικίας και αμαξώματος 40% για τις ανάγκες του παραδείγματος. Απομένουν 13.000 € × 0,60 = 7.800 €.</li>
-      <li>Στα τρία έτη, ο μέσος όρος αναφοράς είναι 45.000 km. Με 45.000 km δεν εφαρμόζεται επιπλέον απομείωση χιλιομέτρων.</li>
-      <li>Η αρχική αξία των 13.000 € εμπίπτει στο κλιμάκιο 4%. Εφαρμόζουμε τον συντελεστή στην απομειωμένη αξία και προσαύξηση CO₂ 10%. Ο υπολογισμός είναι 7.800 € × 4% × 1,10.</li>
-    </ol>
-    <p class="result"><strong>Ενδεικτικό τέλος ταξινόμησης 343,20 €.</strong></p>
-    <h3>Αν έχει 55.000 km</h3>
-    <p>Τα 10.000 km πάνω από τον μέσο όρο αντιστοιχούν σε 20 ομάδες των 500 km και δίνουν επιπλέον απομείωση 2%. Η αξία γίνεται 7.800 € × 0,98 = 7.644 € και το τέλος <strong>336,34 €</strong> μετά τη στρογγυλοποίηση.</p>
+  <article id="used-car" class="scenario" aria-labelledby="used-car-title">
+    <section class="card comparison">
+      <h2 id="used-car-title">Μεταχειρισμένο Volkswagen Polo</h2>
+      <form hidden>
+        <div class="fields">
+          <div class="field">
+            <label for="used-car-co2">CO₂ WLTP (g/km)</label>
+            <input id="used-car-co2" name="co2" type="number" min="1" step="1" value="165" required>
+            <button type="button" class="preset" data-field="co2" data-value="125">Δοκίμασε 125 g/km</button>
+          </div>
+          <div class="field">
+            <label for="used-car-km">Χιλιόμετρα (km)</label>
+            <input id="used-car-km" name="mileage" type="number" min="0" step="1" value="45000" required>
+            <button type="button" class="preset" data-field="mileage" data-value="55000">Δοκίμασε 55.000 km</button>
+          </div>
+        </div>
+        <p class="input-error" hidden>Συμπλήρωσε έγκυρες ακέραιες τιμές για να δεις τη σύγκριση.</p>
+        <dl class="totals">
+          <div><dt>Αρχικό τέλος</dt><dd data-result="base">343,20 €</dd></div>
+          <div><dt>Νέο τέλος</dt><dd data-result="total">343,20 €</dd></div>
+          <div><dt>Διαφορά</dt><dd data-result="change">0,00 €</dd></div>
+        </dl>
+        <p class="calculation" data-result="factors"></p>
+        <p class="sr-only" role="status" data-result="announcement"></p>
+        <button type="reset" class="reset">Επαναφορά τιμών</button>
+      </form>
+      <details open>
+        <summary>Ανάλυση αρχικού παραδείγματος</summary>
+        <ol><li>Με υποθετική απομείωση 40% λόγω ηλικίας και αμαξώματος, η αξία μειώνεται από 13.000 € σε 7.800 €.</li><li>Στα τρία έτη τα χιλιόμετρα αναφοράς είναι 45.000. Στα 45.000 km και 165 g/km WLTP, το τέλος είναι 7.800 € × 4% × 1,10 = 343,20 €.</li><li>Στα 55.000 km, οι 20 πλήρεις ομάδες των 500 επιπλέον km δίνουν 2% απομείωση χιλιομέτρων. Η αξία γίνεται 7.644 € και με το ίδιο CO₂ το τέλος γίνεται 336,34 €.</li></ol>
+      </details>
+    </section>
+    <section class="card assumptions">
+      <h3>Στοιχεία παραδείγματος</h3>
+      <dl>
+        <dt>ΛΤΠΦ με εξοπλισμό</dt><dd>13.000 €</dd>
+        <dt>Πρώτη άδεια / εισαγωγή</dt><dd>Νοέμ. 2023 / Νοέμ. 2026</dd><dt>Απομείωση ηλικίας και αμαξώματος</dt><dd>40% (παραδοχή)</dd>
+        <dt>Προδιαγραφή Euro</dt><dd>Euro 6d (0% προσαύξηση στο σενάριο)</dd>
+      </dl>
+    </section>
   </article>
-
-  <p>Για πραγματικό όχημα, χρησιμοποίησε τη ΛΤΠΦ της συγκεκριμένης έκδοσης με τον εξοπλισμό της, την πραγματική ημερομηνία πρώτης άδειας, τα χιλιόμετρα και τις εκπομπές του πιστοποιητικού συμμόρφωσης. Η απομείωση ηλικίας του δεύτερου σεναρίου είναι παραδοχή. Τα παραδείγματα δεν αποτελούν εκκαθάριση τελωνείου.</p>
-  <p><a href="https://www.aade.gr/sites/default/files/2026-01/gr-act-2025-5222-5222_2025.pdf">Εθνικός Τελωνειακός Κώδικας, άρθρα 136 και 142 (ΑΑΔΕ)</a></p>
-  <p><a href="./">Υπολόγισε το τέλος για το δικό σου αυτοκίνητο</a></p>
+  <footer>
+    <p>Η φωτογραφία δείχνει το μοντέλο αναφοράς. Οι τιμές, οι εκπομπές και οι λοιπές παράμετροι είναι υποθετικές. Τα ποσά είναι ενδεικτικά και αφορούν μόνο το τέλος ταξινόμησης.</p>
+    <p><a href="https://www.aade.gr/sites/default/files/2026-01/gr-act-2025-5222-5222_2025.pdf">Εθνικός Τελωνειακός Κώδικας, άρθρα 136 και 142 (ΑΑΔΕ)</a></p>
+    <p>Φωτογραφία <a href="https://commons.wikimedia.org/wiki/File:Vw-polo-front.png">Saro96, Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · αλλαγή μεγέθους και μετατροπή σε WebP.</p>
+  </footer>
 </main>
 </body>
 </html>
