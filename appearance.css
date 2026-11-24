@@ -921,3 +921,22 @@ html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm se
 html[data-appearance="dark"] .vehicle-stage.vehicle-configurator-v2 #calcForm select :is(option,optgroup) {
  background:#102318!important;background-image:none!important;color:#f0f6eb!important;
 }
+
+/* Social links and email support — 24 November 2026. */
+.community-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:32px;padding:26px 8px 8px;border-top:1px solid #d7e1d2;color:#263b2c}
+.community-footer-copy>strong{font-size:15px;font-weight:700;letter-spacing:-.02em}
+.community-footer-copy>p{margin:7px 0 0;font-size:12px;line-height:1.6;color:#5d6f60}
+.community-footer-actions,.community-socials{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.community-footer a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:11px 14px;border:1px solid #d5dfce;border-radius:14px;background:rgba(251,252,248,.8);color:#355b3d;text-decoration:none;font-size:12px;line-height:1.4;transition:background .18s ease,border-color .18s ease}
+.community-footer a:hover{background:#e7f1df;border-color:#91ae80}
+.community-footer a:focus-visible{outline:3px solid #6da943;outline-offset:4px}
+.community-footer svg{flex-shrink:0;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.community-footer a.community-help{justify-content:flex-start;margin-left:6px;padding:10px 15px}
+.community-help strong,.community-help small{display:block}.community-help strong{font-size:12px;font-weight:650}.community-help small{font-size:11px;opacity:.8;margin-top:3px}
+html[data-appearance="dark"] .community-footer{border-color:rgba(174,204,157,.18);color:#e5eddf}
+html[data-appearance="dark"] .community-footer-copy>p{color:#b9c7b3}
+html[data-appearance="dark"] .community-footer a{background:#12251a;border-color:rgba(174,204,157,.22);color:#c5ddaE}
+html[data-appearance="dark"] .community-footer a:hover{background:#203b28;border-color:#84a56f}
+@media(max-width:640px){.community-footer{align-items:flex-start;gap:18px;padding-top:22px}.community-footer-actions{width:100%;gap:12px}.community-footer a.community-help{margin-left:0}.community-footer-copy>strong{font-size:14px}}
+@media(max-width:380px){.community-footer-actions{align-items:stretch;flex-direction:column}.community-socials>a{flex:1}.community-footer a.community-help{width:100%}}
+@media(prefers-reduced-motion:reduce){.community-footer a{transition:none}}
