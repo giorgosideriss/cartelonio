@@ -7,114 +7,101 @@
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Αναλυτικά παραδείγματα τέλους ταξινόμησης | Cartelonio</title>
-  <meta name="description" content="Σύγκρινε σε δύο διαδραστικά παραδείγματα πώς τα CO₂ και τα χιλιόμετρα επηρεάζουν το τέλος ταξινόμησης.">
+  <meta name="description" content="Σύγκρινε εκδόσεις και εργοστασιακά extras για Renault Clio και Porsche 911. Δες πώς αλλάζει το εκτιμώμενο τέλος ταξινόμησης.">
   <link rel="canonical" href="https://cartelonio.gr/paradeigmata.html">
-  <link rel="stylesheet" href="paradeigmata.css">
-  <script src="paradeigmata.js" defer></script>
+  <link rel="stylesheet" href="paradeigmata.css?v=3">
+  <script src="paradeigmata-data.js?v=3" defer></script>
+  <script src="paradeigmata.js?v=3" defer></script>
 </head>
 <body>
 <main class="page">
   <header class="page-header">
     <a class="back" href="./">← Υπολογιστής Cartelonio</a>
     <h1>Αναλυτικά παραδείγματα</h1>
-    <p>Δες πόσο αλλάζει το τέλος ταξινόμησης όταν αλλάζουν οι εκπομπές CO₂ ή τα χιλιόμετρα.</p>
+    <p>Διάλεξε μοντέλο, κινητήρα και εξοπλισμό και δες πώς αλλάζει το τέλος ταξινόμησης.</p>
   </header>
-  <section class="example-overview" aria-labelledby="vehicle-model">
-    <figure class="card vehicle">
-      <img src="images/examples-polo.webp" width="1050" height="788" alt="Μπροστινή όψη Volkswagen Polo έκτης γενιάς μετά την ανανέωση του 2021">
-      <figcaption><strong id="vehicle-model">Volkswagen Polo VI</strong><span>Facelift 2021</span></figcaption>
+  <nav class="model-picker" aria-label="Επιλογή μοντέλου">
+    <a href="#clio" data-model="clio" aria-current="true">
+      <img src="images/examples/renault-clio-v-2023-standard.webp" width="168" height="112" alt="">
+      <span><strong>Renault Clio</strong><small>Hatchback πόλης</small></span>
+    </a>
+    <a href="#911" data-model="911">
+      <img src="images/examples/porsche-911-carrera-coupe.webp" width="168" height="112" alt="">
+      <span><strong>Porsche 911</strong><small>Σπορ coupé</small></span>
+    </a>
+  </nav>
+  <section class="card vehicle" aria-labelledby="vehicle-title">
+    <div class="vehicle-copy">
+      <p class="vehicle-edition" id="vehicle-edition">Evolution TCe 90</p>
+      <h2 id="vehicle-title">Renault Clio</h2>
+      <dl class="vehicle-facts">
+        <div><dt>Κινητήρας</dt><dd id="vehicle-fuel">Βενζίνη · 90 PS</dd></div>
+        <div><dt>CO₂ WLTP</dt><dd id="vehicle-co2">118 g/km</dd></div>
+        <div><dt>ΛΤΠΦ έκδοσης</dt><dd id="vehicle-price">15.014,12 €</dd></div>
+      </dl>
+    </div>
+    <figure>
+      <img id="vehicle-image" src="images/examples/renault-clio-v-2023-standard.webp" width="950" height="633" alt="Renault Clio Evolution TCe 90">
     </figure>
-    <nav aria-label="Επιλογή παραδείγματος" class="scenario-picker">
-    <a class="scenario-choice" href="#new-car" data-example="new-car">
-      <strong>Καινούργιο</strong>
-      <span>Σύγκρινε εκπομπές CO₂</span>
-    </a>
-    <a class="scenario-choice" href="#used-car" data-example="used-car">
-      <strong>Μεταχειρισμένο</strong>
-      <span>Σύγκρινε CO₂ και χιλιόμετρα</span>
-    </a>
-    </nav>
   </section>
-  <article id="new-car" class="scenario" aria-labelledby="new-car-title">
-    <section class="card comparison">
-      <h2 id="new-car-title">Καινούργιο Volkswagen Polo</h2>
-      <form hidden>
-        <div class="fields">
-          <div class="field">
-            <label for="new-car-co2">CO₂ WLTP (g/km)</label>
-            <input id="new-car-co2" name="co2" type="number" min="1" step="1" value="125" required>
-            <button type="button" class="preset" data-field="co2" data-value="165">Δοκίμασε 165 g/km</button>
-          </div>
 
+  <div class="configurator" id="configurator" hidden>
+    <button type="button" class="mobile-total" id="jump-to-results">Τέλος ταξινόμησης <strong id="mobile-amount"></strong></button>
+    <div class="options">
+      <fieldset class="card">
+        <legend>Έκδοση και κινητήρας</legend>
+        <div class="editions" id="editions"></div>
+      </fieldset>
+      <fieldset class="card">
+        <legend>Προαιρετικός εξοπλισμός</legend>
+        <p class="field-note">Οι τιμές είναι προ φόρων. Κάθε επιλογή δείχνει και την επίδρασή της στο τέλος.</p>
+        <div class="extras" id="extras"></div>
+      </fieldset>
+      <section class="card mileage">
+        <label for="mileage">Χιλιόμετρα οχήματος</label>
+        <div class="mileage-controls">
+          <input id="mileage" type="number" min="0" max="999999" step="1" value="45000" required inputmode="numeric" aria-describedby="reference">
+          <button type="button" id="more-mileage">Δοκίμασε 65.000 km</button>
         </div>
-        <p class="input-error" hidden>Συμπλήρωσε έγκυρες ακέραιες τιμές για να δεις τη σύγκριση.</p>
-        <dl class="totals">
-          <div><dt>Αρχικό τέλος</dt><dd data-result="base">1.026,00 €</dd></div>
-          <div><dt>Νέο τέλος</dt><dd data-result="total">1.026,00 €</dd></div>
-          <div><dt>Διαφορά</dt><dd data-result="change">0,00 €</dd></div>
-        </dl>
-        <p class="calculation" data-result="factors"></p>
-        <p class="sr-only" role="status" data-result="announcement"></p>
-        <button type="reset" class="reset">Επαναφορά τιμών</button>
-      </form>
-      <details open>
-        <summary>Ανάλυση αρχικού παραδείγματος</summary>
-        <ol><li>Στα πρώτα 14.000 € εφαρμόζουμε 4% και στα επόμενα 2.000 € εφαρμόζουμε 26%. Το τέλος πριν από την προσαρμογή CO₂ είναι 560 € + 520 € = 1.080 €.</li><li>Στα 125 g/km WLTP ο συντελεστής μειώνεται κατά 5%. Το τέλος είναι 1.080 € × 0,95 = 1.026 €.</li><li>Στα 165 g/km WLTP ο συντελεστής αυξάνεται κατά 10%. Το τέλος γίνεται 1.188 €, δηλαδή 162 € παραπάνω.</li></ol>
-      </details>
-    </section>
-    <section class="card assumptions">
-      <h3>Στοιχεία παραδείγματος</h3>
-      <dl>
-        <dt>ΛΤΠΦ με εξοπλισμό</dt><dd>16.000 €</dd>
-        <dt>Κατάσταση</dt><dd>Πρώτη ταξινόμηση</dd>
-        <dt>Προδιαγραφή Euro</dt><dd>Euro 6e-bis (0% προσαύξηση στο σενάριο)</dd>
+        <p class="field-note" id="reference"></p>
+      </section>
+    </div>
+    <aside class="card results" aria-labelledby="results-title">
+      <h2 id="results-title" tabindex="-1">Τέλος ταξινόμησης</h2>
+      <p class="total" id="total"></p>
+      <p class="comparison" id="comparison"></p>
+      <dl class="breakdown">
+        <div><dt id="baseline-label">Τέλος βασικής έκδοσης</dt><dd id="baseline"></dd></div>
+        <div><dt>Διαφορά έκδοσης</dt><dd id="edition-effect"></dd></div>
+        <div><dt>Επιπλέον τέλος από extras</dt><dd id="extras-effect"></dd></div>
+        <div><dt>Διαφορά χιλιομέτρων</dt><dd id="mileage-effect"></dd></div>
       </dl>
-    </section>
-  </article>
-  <article id="used-car" class="scenario" aria-labelledby="used-car-title">
-    <section class="card comparison">
-      <h2 id="used-car-title">Μεταχειρισμένο Volkswagen Polo</h2>
-      <form hidden>
-        <div class="fields">
-          <div class="field">
-            <label for="used-car-co2">CO₂ WLTP (g/km)</label>
-            <input id="used-car-co2" name="co2" type="number" min="1" step="1" value="165" required>
-            <button type="button" class="preset" data-field="co2" data-value="125">Δοκίμασε 125 g/km</button>
-          </div>
-          <div class="field">
-            <label for="used-car-km">Χιλιόμετρα (km)</label>
-            <input id="used-car-km" name="mileage" type="number" min="0" step="1" value="45000" required>
-            <button type="button" class="preset" data-field="mileage" data-value="55000">Δοκίμασε 55.000 km</button>
-          </div>
-        </div>
-        <p class="input-error" hidden>Συμπλήρωσε έγκυρες ακέραιες τιμές για να δεις τη σύγκριση.</p>
-        <dl class="totals">
-          <div><dt>Αρχικό τέλος</dt><dd data-result="base">343,20 €</dd></div>
-          <div><dt>Νέο τέλος</dt><dd data-result="total">343,20 €</dd></div>
-          <div><dt>Διαφορά</dt><dd data-result="change">0,00 €</dd></div>
+      <details>
+        <summary>Ανάλυση υπολογισμού</summary>
+        <dl class="breakdown">
+          <div><dt>Προ φόρων αξία extras</dt><dd id="extras-price"></dd></div>
+          <div><dt>Συνολική ΛΤΠΦ</dt><dd id="combined-price"></dd></div>
+          <div><dt>Απομείωση ηλικίας / αμαξώματος</dt><dd id="body-factor"></dd></div>
+          <div><dt>Απομείωση χιλιομέτρων</dt><dd id="km-factor"></dd></div>
+          <div><dt>Απομειωμένη αξία</dt><dd id="taxable-price"></dd></div>
+          <div><dt>Προσαρμογή CO₂</dt><dd id="co2-factor"></dd></div>
+          <div id="hybrid-row" hidden><dt>Απαλλαγή υβριδικού</dt><dd>50%</dd></div>
         </dl>
-        <p class="calculation" data-result="factors"></p>
-        <p class="sr-only" role="status" data-result="announcement"></p>
-        <button type="reset" class="reset">Επαναφορά τιμών</button>
-      </form>
-      <details open>
-        <summary>Ανάλυση αρχικού παραδείγματος</summary>
-        <ol><li>Με υποθετική απομείωση 40% λόγω ηλικίας και αμαξώματος, η αξία μειώνεται από 13.000 € σε 7.800 €.</li><li>Στα τρία έτη τα χιλιόμετρα αναφοράς είναι 45.000. Στα 45.000 km και 165 g/km WLTP, το τέλος είναι 7.800 € × 4% × 1,10 = 343,20 €.</li><li>Στα 55.000 km, οι 20 πλήρεις ομάδες των 500 επιπλέον km δίνουν 2% απομείωση χιλιομέτρων. Η αξία γίνεται 7.644 € και με το ίδιο CO₂ το τέλος γίνεται 336,34 €.</li></ol>
       </details>
-    </section>
-    <section class="card assumptions">
-      <h3>Στοιχεία παραδείγματος</h3>
-      <dl>
-        <dt>ΛΤΠΦ με εξοπλισμό</dt><dd>13.000 €</dd>
-        <dt>Πρώτη άδεια / εισαγωγή</dt><dd>Νοέμ. 2023 / Νοέμ. 2026</dd><dt>Απομείωση ηλικίας και αμαξώματος</dt><dd>40% (παραδοχή)</dd>
-        <dt>Προδιαγραφή Euro</dt><dd>Euro 6d (0% προσαύξηση στο σενάριο)</dd>
-      </dl>
-    </section>
-  </article>
+      <button type="button" id="reset">Επαναφορά παραδείγματος</button>
+      <p class="sr-only" id="announcement" role="status"></p>
+    </aside>
+  </div>
+
+  <noscript><p>Ενεργοποίησε τη JavaScript για να συγκρίνεις εκδόσεις και extras.</p></noscript>
   <footer>
-    <p>Η φωτογραφία δείχνει το μοντέλο αναφοράς. Οι τιμές, οι εκπομπές και οι λοιπές παράμετροι είναι υποθετικές. Τα ποσά είναι ενδεικτικά και αφορούν μόνο το τέλος ταξινόμησης.</p>
-    <p><a href="https://www.aade.gr/sites/default/files/2026-01/gr-act-2025-5222-5222_2025.pdf">Εθνικός Τελωνειακός Κώδικας, άρθρα 136 και 142 (ΑΑΔΕ)</a></p>
-    <p>Φωτογραφία <a href="https://commons.wikimedia.org/wiki/File:Vw-polo-front.png">Saro96, Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · αλλαγή μεγέθους και μετατροπή σε WebP.</p>
+    <p>Ενδεικτικά σενάρια εισαγωγής από ΕΕ, με ηλικία 3 ετών, χιλιόμετρα αναφοράς 45.000 km και μηδενική προσαύξηση Euro. Τα ποσοστά απομείωσης ηλικίας και αμαξώματος είναι παραδοχές. Οι ΛΤΠΦ είναι τιμές αναφοράς από τους αναγραφόμενους τιμοκαταλόγους. Τα CO₂ μένουν σταθερά ανά έκδοση στο παράδειγμα. Στον εκτελωνισμό λαμβάνεται υπόψη το πιστοποιητικό συμμόρφωσης του συγκεκριμένου οχήματος.</p>
+    <ul>
+      <li><a href="https://www.aade.gr/sites/default/files/timokatalogoi-2025-04/timokatalogos_renault.pdf">Τιμοκατάλογος Renault και εξοπλισμού, 09.04.2025 (ΑΑΔΕ)</a></li>
+      <li><a href="https://www.aade.gr/teloneia/aytokinita-ohimata-timokatalogoi/porsche-palaioteroi-timokatalogoi">Τιμοκατάλογοι Porsche MY23, 05.09.2022 (ΑΑΔΕ)</a></li>
+      <li><a href="https://www.aade.gr/sites/default/files/2026-01/gr-act-2025-5222-5222_2025.pdf">Εθνικός Τελωνειακός Κώδικας, άρθρα 136 και 142</a> · <a href="https://mylex.aade.gr/eli/pri/law/2026/06/25/5313">Ν. 5313/2026, άρθρο 10</a></li>
+      <li><a href="https://www.tempus.sk/vozidlo/VF1RJA00374011344-renault-clio-lpg-techno-eco-g-100">Φωτογραφία Clio Techno · TEMPUS</a></li>
+    </ul>
   </footer>
 </main>
 </body>

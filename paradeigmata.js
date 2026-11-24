@@ -1,94 +1,197 @@
 'use strict';
 
-const examples = {
-  'new-car': { baseDuty: 14000 * 0.04 + 2000 * 0.26 },
-  'used-car': { baseDuty: 13000 * 0.60 * 0.04, referenceKm: 45000 },
-};
+const valueBrackets = [[14000, 4], [17000, 26], [20000, 53], [25000, 62], [30000, 71], [Infinity, 30]];
+const wltpBrackets = [[130, -5], [156, 0], [182, 10], [208, 20], [234, 30], [260, 40], [325, 60], [Infinity, 100]];
 
-const co2Brackets = [
-  [130, -5], [156, 0], [182, 10], [208, 20],
-  [234, 30], [260, 40], [325, 50], [Infinity, 100],
-];
-const currency = new Intl.NumberFormat('el-GR', { style: 'currency', currency: 'EUR' });
-const signedCurrency = new Intl.NumberFormat('el-GR', {
+function registrationDuty(model, edition, extrasPrice, mileage) {
+  const price = edition.price + extrasPrice;
+  const mileageReduction = Math.min(.10, Math.max(0, mileage - model.km) / 500 * .001);
+  const remaining = Math.max(.05, (1 - model.depreciation) * (1 - mileageReduction));
+  const [, co2Adjustment] = wltpBrackets.find(([limit]) => edition.co2 <= limit);
+  let baseDuty = 0;
+  let lower = 0;
+  for (const [upper, rate] of valueBrackets) {
+    const end = Math.min(upper * 100, price);
+    baseDuty += (end - lower) * rate / 100;
+    if (end === price) break;
+    lower = end;
+  }
+  const hybridFactor = edition.hybrid ? .5 : 1;
+  return {
+    cents: Math.round(baseDuty * remaining * (1 + co2Adjustment / 100) * hybridFactor),
+    taxable: Math.round(price * remaining),
+    co2Adjustment,
+    mileageReduction,
+  };
+}
+
+const byId = id => document.getElementById(id);
+const display = (id, value) => { byId(id).textContent = value; };
+const formatter = new Intl.NumberFormat('el-GR', { style: 'currency', currency: 'EUR' });
+const signedFormatter = new Intl.NumberFormat('el-GR', {
   style: 'currency', currency: 'EUR', signDisplay: 'exceptZero',
 });
-const percentages = new Intl.NumberFormat('el-GR', { maximumFractionDigits: 1 });
-const choices = document.querySelectorAll('[data-example]');
+const percentage = new Intl.NumberFormat('el-GR', { style: 'percent', maximumFractionDigits: 2 });
+const integer = new Intl.NumberFormat('el-GR');
+const euro = cents => formatter.format(cents / 100);
+const difference = cents => signedFormatter.format(cents / 100);
+const modelLinks = document.querySelectorAll('[data-model]');
+const mileageInput = byId('mileage');
+const selections = new Map();
+let model;
+let selection;
+let edition;
+let extraRows = [];
 
-function calculate(example, co2, mileage) {
-  const [, co2Adjustment] = co2Brackets.find(([limit]) => co2 <= limit);
-  const extraKm = Math.max(0, mileage - (example.referenceKm ?? 0));
-  const mileageReduction = Math.min(100, Math.floor(extraKm / 500)) / 10;
-  const amount = example.baseDuty * (1 + co2Adjustment / 100) * (1 - mileageReduction / 100);
-  return { cents: Math.round(amount * 100), co2Adjustment, mileageReduction };
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  node.className = className;
+  if (text) node.textContent = text;
+  return node;
 }
 
-for (const [id, example] of Object.entries(examples)) {
-  const panel = document.getElementById(id);
-  const form = panel.querySelector('form');
-  const co2 = form.elements.co2;
-  const mileage = form.elements.mileage;
-  const results = Object.fromEntries(
-    Array.from(form.querySelectorAll('[data-result]'), node => [node.dataset.result, node])
-  );
-  const error = form.querySelector('.input-error');
-  const base = calculate(example, Number(co2.defaultValue), Number(mileage?.defaultValue ?? 0));
-  results.base.textContent = currency.format(base.cents / 100);
-
-  function update() {
-    const valid = co2.validity.valid && (!mileage || mileage.validity.valid);
-    error.hidden = valid;
-    if (!valid) {
-      results.total.textContent = '—';
-      results.change.textContent = '—';
-      results.factors.textContent = '';
-      results.announcement.textContent = error.textContent;
-      return;
-    }
-
-    const current = calculate(example, co2.valueAsNumber, mileage?.valueAsNumber ?? 0);
-    results.total.textContent = currency.format(current.cents / 100);
-    results.change.textContent = signedCurrency.format((current.cents - base.cents) / 100);
-
-    const sign = current.co2Adjustment > 0 ? '+' : '';
-    const factors = [`Προσαρμογή CO₂ ${sign}${current.co2Adjustment}%`];
-    if (mileage) factors.push(`Απομείωση χιλιομέτρων ${percentages.format(current.mileageReduction)}%`);
-    results.factors.textContent = factors.join(' · ');
-    results.announcement.textContent = `Νέο τέλος ${results.total.textContent}. Διαφορά ${results.change.textContent}.`;
+function selectModel() {
+  const requested = location.hash.slice(1);
+  const key = Object.hasOwn(exampleCars, requested) ? requested : 'clio';
+  model = exampleCars[key];
+  if (!selections.has(key)) selections.set(key, { edition: 0, mileage: String(model.km), extras: new Set() });
+  selection = selections.get(key);
+  mileageInput.value = selection.mileage;
+  for (const link of modelLinks) {
+    if (link.dataset.model === key) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
   }
-
-  form.addEventListener('input', update);
-  form.addEventListener('submit', event => event.preventDefault());
-  form.addEventListener('reset', () => queueMicrotask(update));
-  for (const button of form.querySelectorAll('[data-field]')) {
-    button.addEventListener('click', () => {
-      form.elements[button.dataset.field].value = button.dataset.value;
-      update();
+  byId('editions').replaceChildren(...model.editions.map((entry, index) => {
+    const label = element('label', 'edition-option');
+    const radio = element('input', 'edition-radio');
+    radio.type = 'radio';
+    radio.name = 'edition';
+    radio.value = String(index);
+    radio.checked = index === selection.edition;
+    radio.addEventListener('change', () => {
+      selection.edition = index;
+      selection.extras.clear();
+      showEdition();
     });
-  }
-  panel.querySelector('details').open = false;
-  form.hidden = false;
-  update();
+    const copy = element('span', 'edition-copy');
+    copy.append(
+      element('strong', '', entry.name),
+      element('small', '', entry.fuel),
+      element('small', 'edition-metrics', `${entry.co2} g/km · ${euro(entry.price)}`),
+    );
+    label.append(radio, copy);
+    return label;
+  }));
+  display('reference', `Ηλικία ${model.age} ετών · αναφορά ${integer.format(model.km)} km`);
+  showEdition();
 }
 
-function selectExample(id) {
-  const selected = Object.hasOwn(examples, id) ? id : 'new-car';
-  for (const choice of choices) {
-    const active = choice.dataset.example === selected;
-    if (active) choice.setAttribute('aria-current', 'true');
-    else choice.removeAttribute('aria-current');
-    document.getElementById(choice.dataset.example).hidden = !active;
+function showEdition() {
+  edition = model.editions[selection.edition];
+  display('vehicle-title', model.name);
+  display('vehicle-edition', edition.name);
+  display('vehicle-fuel', edition.fuel);
+  display('vehicle-co2', `${edition.co2} g/km`);
+  display('vehicle-price', euro(edition.price));
+  const image = byId('vehicle-image');
+  image.src = `images/examples/${edition.image}.webp`;
+  image.alt = `${model.name} ${edition.name}`;
+  extraRows = edition.extras.map(extra => {
+    const label = element('label', 'extra-option');
+    const input = element('input', 'extra-check');
+    input.type = 'checkbox';
+    const copy = element('span', 'extra-copy');
+    const impact = element('small', 'extra-impact');
+    copy.append(element('strong', '', extra.label), element('small', '', euro(extra.price)), impact);
+    label.append(input, copy);
+    input.addEventListener('change', () => {
+      if (input.checked) {
+        for (const other of edition.extras) {
+          if (extra.group && other.group === extra.group) selection.extras.delete(other.key);
+        }
+        selection.extras.add(extra.key);
+      } else {
+        selection.extras.delete(extra.key);
+      }
+      updateResults();
+    });
+    return { extra, label, input, impact };
+  });
+  byId('extras').replaceChildren(...extraRows.map(row => row.label));
+  updateResults();
+}
+
+function updateResults() {
+  const valid = mileageInput.validity.valid;
+  const mileage = valid ? mileageInput.valueAsNumber : model.km;
+  const activeExtras = edition.extras.filter(extra => selection.extras.has(extra.key));
+  const extrasPrice = activeExtras.reduce((sum, extra) => sum + extra.price, 0);
+  const baseline = registrationDuty(model, model.editions[0], 0, model.km).cents;
+  const editionOnly = registrationDuty(model, edition, 0, model.km).cents;
+  const withExtras = registrationDuty(model, edition, extrasPrice, model.km).cents;
+  const current = registrationDuty(model, edition, extrasPrice, mileage);
+
+  display('baseline-label', `Βάση · ${model.editions[0].name}`);
+  display('baseline', euro(baseline));
+  display('edition-effect', difference(editionOnly - baseline));
+  display('extras-effect', difference(withExtras - editionOnly));
+  display('mileage-effect', valid ? difference(current.cents - withExtras) : '—');
+  const total = valid ? euro(current.cents) : '—';
+  display('total', total);
+  display('mobile-amount', total);
+  const delta = current.cents - baseline;
+  const message = valid
+    ? (delta === 0 ? 'Ίδιο τέλος με τη βασική έκδοση' : `${difference(delta)} σε σχέση με τη βασική έκδοση`)
+    : 'Συμπλήρωσε έγκυρα χιλιόμετρα.';
+  display('comparison', message);
+  display('announcement', valid ? `Τέλος ταξινόμησης ${euro(current.cents)}. ${message}.` : message);
+  display('extras-price', euro(extrasPrice));
+  display('combined-price', euro(edition.price + extrasPrice));
+  display('body-factor', percentage.format(model.depreciation));
+  display('km-factor', valid ? percentage.format(current.mileageReduction) : '—');
+  display('taxable-price', valid ? euro(current.taxable) : '—');
+  display('co2-factor', `${current.co2Adjustment > 0 ? '+' : ''}${percentage.format(current.co2Adjustment / 100)}`);
+  byId('hybrid-row').hidden = !edition.hybrid;
+
+  for (const { extra, input, impact } of extraRows) {
+    const selected = selection.extras.has(extra.key);
+    input.checked = selected;
+    const replaced = extra.group && activeExtras.find(other => other.group === extra.group);
+    const withoutOption = extrasPrice - (selected ? extra.price : 0);
+    const withOption = selected ? extrasPrice : extrasPrice - (replaced ? replaced.price : 0) + extra.price;
+    const effect = registrationDuty(model, edition, withOption, mileage).cents
+      - registrationDuty(model, edition, withoutOption, mileage).cents;
+    impact.textContent = valid ? `${difference(effect)} στο τέλος${!selected && replaced ? ' με αντικατάσταση' : ''}` : '';
   }
 }
 
-for (const choice of choices) {
-  choice.addEventListener('click', event => {
+function setMileage(value) {
+  mileageInput.value = value;
+  selection.mileage = mileageInput.value;
+  updateResults();
+}
+
+for (const link of modelLinks) {
+  link.addEventListener('click', event => {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
-    if (location.hash !== choice.hash) history.pushState(null, '', choice.hash);
-    selectExample(choice.dataset.example);
+    if (location.hash !== link.hash) history.pushState(null, '', link.hash);
+    selectModel();
   });
 }
-window.addEventListener('hashchange', () => selectExample(location.hash.slice(1)));
-selectExample(location.hash.slice(1));
+window.addEventListener('hashchange', selectModel);
+mileageInput.addEventListener('input', () => {
+  selection.mileage = mileageInput.value;
+  updateResults();
+});
+byId('jump-to-results').addEventListener('click', () => byId('results-title').focus());
+byId('more-mileage').addEventListener('click', () => setMileage(model.km + 20000));
+byId('reset').addEventListener('click', () => {
+  selection.edition = 0;
+  selection.extras.clear();
+  selection.mileage = String(model.km);
+  selectModel();
+});
+
+selectModel();
+byId('configurator').hidden = false;
