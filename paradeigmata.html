@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Παραδείγματα υπολογισμού τέλους ταξινόμησης | Cartelonio</title>
+  <meta name="description" content="Δύο αναλυτικά παραδείγματα τέλους ταξινόμησης, με υπολογισμούς για καινούργιο και μεταχειρισμένο αυτοκίνητο και σύγκριση CO₂ και χιλιομέτρων.">
+  <link rel="canonical" href="https://cartelonio.gr/paradeigmata.html">
+  <style>
+    :root { color-scheme: light dark; --bg: #f3f6f0; --card: #fff; --ink: #202b23; --link: #24583b; --border: #d6e1d5; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #141d18; --card: #202c24; --ink: #eaf3ea; --link: #a6e2b8; --border: #405649; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+    main { width: min(100% - 2rem, 52rem); margin: 2rem auto 4rem; }
+    header { margin-bottom: 2rem; }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 6vw, 3.25rem); }
+    article { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1rem, 4vw, 2rem); margin-block: 1rem; }
+    article h2 { margin-top: 0; }
+    a { color: var(--link); text-underline-offset: .2em; }
+    nav ul { padding-inline-start: 1.2rem; }
+    dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .5rem 1rem; }
+    dt { font-weight: 600; }
+    dd { margin: 0; overflow-wrap: anywhere; }
+    li + li { margin-top: .4rem; }
+    .result { border-inline-start: .25rem solid var(--link); padding-inline-start: 1rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a href="./">← Υπολογιστής Cartelonio</a>
+    <h1>Παραδείγματα υπολογισμού τέλους ταξινόμησης</h1>
+    <p>Δύο υποθετικές εισαγωγές στην Ελλάδα δείχνουν πώς η λιανική τιμή προ φόρων, οι εκπομπές CO₂ και τα χιλιόμετρα επηρεάζουν την εκτίμηση. Τα ποσά αφορούν μόνο το τέλος ταξινόμησης.</p>
+    <nav aria-label="Παραδείγματα">
+      <ul>
+        <li><a href="#new-car">Καινούργιο αυτοκίνητο · επίδραση CO₂</a></li>
+        <li><a href="#used-car">Μεταχειρισμένο αυτοκίνητο · επίδραση χιλιομέτρων</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article id="new-car">
+    <h2>Καινούργιο βενζινοκίνητο hatchback</h2>
+    <dl>
+      <dt>Λιανική τιμή προ φόρων (ΛΤΠΦ)</dt><dd>16.000 € με τον εξοπλισμό</dd>
+      <dt>Κατάσταση</dt><dd>Καινούργιο, χωρίς προηγούμενη ταξινόμηση</dd>
+      <dt>Εκπομπές CO₂</dt><dd>125 g/km WLTP</dd>
+      <dt>Προδιαγραφή Euro</dt><dd>Euro 6e-bis, χωρίς προσαύξηση Euro στο σενάριο</dd>
+    </dl>
+    <ol>
+      <li>Για τα πρώτα 14.000 €, ο συντελεστής είναι 4% και δίνει 560 €.</li>
+      <li>Στα υπόλοιπα 2.000 € εφαρμόζεται 26%, δηλαδή 520 €. Το άθροισμα πριν από την προσαρμογή CO₂ είναι 1.080 €.</li>
+      <li>Στα 125 g/km WLTP εφαρμόζεται μείωση 5% στους συντελεστές. Το ποσό γίνεται 1.080 € × 0,95.</li>
+    </ol>
+    <p class="result"><strong>Ενδεικτικό τέλος ταξινόμησης 1.026 €.</strong></p>
+    <h3>Αν η έκδοση εκπέμπει 165 g/km</h3>
+    <p>Με ίδια ΛΤΠΦ και εξοπλισμό, η προσαρμογή CO₂ γίνεται +10%. Το ποσό είναι 1.080 € × 1,10 = <strong>1.188 €</strong>, δηλαδή 162 € παραπάνω. Όταν συγκρίνεις εκδόσεις, έλεγξε την τιμή CO₂ της συγκεκριμένης έκδοσης στο πιστοποιητικό συμμόρφωσης.</p>
+  </article>
+
+  <article id="used-car">
+    <h2>Μεταχειρισμένο βενζινοκίνητο hatchback</h2>
+    <dl>
+      <dt>ΛΤΠΦ όταν ήταν καινούργιο</dt><dd>13.000 € με τον ίδιο εξοπλισμό</dd>
+      <dt>Πρώτη άδεια / εισαγωγή</dt><dd>Νοέμβριος 2023 / Νοέμβριος 2026</dd>
+      <dt>Χιλιόμετρα</dt><dd>45.000 km</dd>
+      <dt>CO₂ / Euro</dt><dd>165 g/km WLTP / Euro 6d, χωρίς προσαύξηση Euro στο σενάριο</dd>
+    </dl>
+    <ol>
+      <li>Υποθέτουμε απομείωση ηλικίας και αμαξώματος 40% για τις ανάγκες του παραδείγματος. Απομένουν 13.000 € × 0,60 = 7.800 €.</li>
+      <li>Στα τρία έτη, ο μέσος όρος αναφοράς είναι 45.000 km. Με 45.000 km δεν εφαρμόζεται επιπλέον απομείωση χιλιομέτρων.</li>
+      <li>Η αρχική αξία των 13.000 € εμπίπτει στο κλιμάκιο 4%. Εφαρμόζουμε τον συντελεστή στην απομειωμένη αξία και προσαύξηση CO₂ 10%. Ο υπολογισμός είναι 7.800 € × 4% × 1,10.</li>
+    </ol>
+    <p class="result"><strong>Ενδεικτικό τέλος ταξινόμησης 343,20 €.</strong></p>
+    <h3>Αν έχει 55.000 km</h3>
+    <p>Τα 10.000 km πάνω από τον μέσο όρο αντιστοιχούν σε 20 ομάδες των 500 km και δίνουν επιπλέον απομείωση 2%. Η αξία γίνεται 7.800 € × 0,98 = 7.644 € και το τέλος <strong>336,34 €</strong> μετά τη στρογγυλοποίηση.</p>
+  </article>
+
+  <p>Για πραγματικό όχημα, χρησιμοποίησε τη ΛΤΠΦ της συγκεκριμένης έκδοσης με τον εξοπλισμό της, την πραγματική ημερομηνία πρώτης άδειας, τα χιλιόμετρα και τις εκπομπές του πιστοποιητικού συμμόρφωσης. Η απομείωση ηλικίας του δεύτερου σεναρίου είναι παραδοχή. Τα παραδείγματα δεν αποτελούν εκκαθάριση τελωνείου.</p>
+  <p><a href="https://www.aade.gr/sites/default/files/2026-01/gr-act-2025-5222-5222_2025.pdf">Εθνικός Τελωνειακός Κώδικας, άρθρα 136 και 142 (ΑΑΔΕ)</a></p>
+  <p><a href="./">Υπολόγισε το τέλος για το δικό σου αυτοκίνητο</a></p>
+</main>
+</body>
+</html>
