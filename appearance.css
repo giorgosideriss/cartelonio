@@ -980,3 +980,12 @@ html[data-appearance="dark"] .community-footer a:hover{background:#203b28;border
  .site-header .header-copy, .site-header .account-controls, .site-header #headerNavigation {min-width:0}
  .site-header #headerNavigation {flex-wrap:wrap}
 }
+
+html[data-appearance="dark"] .welcome5-card :is(.welcome5-eyebrow, .welcome5-voucher span) {
+ color:var(--theme-accent,#c1ed91);
+}
+html[data-appearance="dark"] .welcome5-card :is(.welcome5-close,.welcome5-voucher button) {
+ background:#294731;
+ color:#edf3ec;
+}
+html[data-appearance="dark"] .welcome5-card .welcome5-later {color:#b2c0ad}

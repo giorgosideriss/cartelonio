@@ -2818,8 +2818,14 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyE
   modal.addEventListener('click',e => { if(e.target === modal) close(); });
   document.addEventListener('keydown',e => { if(e.key === 'Escape' && !modal.hidden) close(); });
   document.getElementById('welcome5Copy')?.addEventListener('click',async e => {
-    try { await navigator.clipboard.writeText('WELCOME5'); e.currentTarget.textContent='Αντιγράφηκε ✓'; }
-    catch (_) { e.currentTarget.textContent='WELCOME5'; }
+    const button = e.currentTarget;
+    const code = modal.querySelector('.welcome5-voucher strong').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(code);
+      button.textContent = 'Αντιγράφηκε ✓';
+    } catch (_) {
+      button.textContent = 'Αντίγραψέ το χειροκίνητα';
+    }
   });
   document.getElementById('welcome5Signup')?.addEventListener('click',() => {
     close();
