@@ -234,7 +234,7 @@ function refreshBrandLogos() {
   });
 }
 
-/* Welcome statistics: decorative brand logos; independent of calculation logic. */
+/*  statistics: decorative brand logos; independent of calculation logic. */
 (function initOnboardingBrandAmbient(){
   const ambient = document.getElementById('onboardingBrandAmbient');
   if (!ambient) return;
@@ -2785,11 +2785,11 @@ document.addEventListener('click',event=>{if(!event.target.closest('.history-too
 historyEl('historySearch')?.addEventListener('input',event=>{historySearchTerm=historyNormalize(event.target.value.trim());historyVisible=HISTORY_PAGE_SIZE;historyRenderList();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyEl('historyOverlay')?.hidden)closeHistory();});
 
-/* WELCOME10 — one display per browser profile, after onboarding. */
-(function initWelcome10(){
-  const modal = document.getElementById('welcome10Overlay');
+/* WELCOME5 — one display per browser profile, after onboarding. */
+(function initWelcome5(){
+  const modal = document.getElementById('welcome5Overlay');
   if (!modal) return;
-  const key = 'cartelonio:welcome10:shown:v1';
+  const key = 'cartelonio:welcome5:shown:v1';
   let shown = false;
   let pending = null;
   function previouslyShown(){ try { return localStorage.getItem(key) === '1'; } catch (_) { return shown; } }
@@ -2809,17 +2809,17 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyE
       markShown();
       modal.hidden = false;
       modal.setAttribute('aria-hidden','false');
-      document.body.classList.add('welcome10-open');
-      document.getElementById('welcome10Close')?.focus();
+      document.body.classList.add('welcome5-open');
+      document.getElementById('welcome5Close')?.focus();
     }, 1000);
   });
-  document.getElementById('welcome10Close')?.addEventListener('click',close);
-  document.getElementById('welcome10Later')?.addEventListener('click',close);
+  document.getElementById('welcome5Close')?.addEventListener('click',close);
+  document.getElementById('welcome5Later')?.addEventListener('click',close);
   modal.addEventListener('click',e => { if(e.target === modal) close(); });
   document.addEventListener('keydown',e => { if(e.key === 'Escape' && !modal.hidden) close(); });
   document.getElementById('welcome10Copy')?.addEventListener('click',async e => {
-    try { await navigator.clipboard.writeText('WELCOME10'); e.currentTarget.textContent='Αντιγράφηκε ✓'; }
-    catch (_) { e.currentTarget.textContent='WELCOME10'; }
+    try { await navigator.clipboard.writeText('WELCOME5'); e.currentTarget.textContent='Αντιγράφηκε ✓'; }
+    catch (_) { e.currentTarget.textContent='WELCOME5'; }
   });
   document.getElementById('welcome10Signup')?.addEventListener('click',() => {
     close();
