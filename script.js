@@ -2798,7 +2798,7 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyE
     if (pending !== null) { clearTimeout(pending); pending = null; }
     modal.hidden = true;
     modal.setAttribute('aria-hidden','true');
-    document.body.classList.remove('welcome10-open');
+    document.body.classList.remove('welcome5-open');
   }
   window.addEventListener('cartelonio:onboarding-finished', () => {
     if (shown || previouslyShown() || pending !== null) return;
@@ -2817,11 +2817,11 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape' && !historyE
   document.getElementById('welcome5Later')?.addEventListener('click',close);
   modal.addEventListener('click',e => { if(e.target === modal) close(); });
   document.addEventListener('keydown',e => { if(e.key === 'Escape' && !modal.hidden) close(); });
-  document.getElementById('welcome10Copy')?.addEventListener('click',async e => {
+  document.getElementById('welcome5Copy')?.addEventListener('click',async e => {
     try { await navigator.clipboard.writeText('WELCOME5'); e.currentTarget.textContent='Αντιγράφηκε ✓'; }
     catch (_) { e.currentTarget.textContent='WELCOME5'; }
   });
-  document.getElementById('welcome10Signup')?.addEventListener('click',() => {
+  document.getElementById('welcome5Signup')?.addEventListener('click',() => {
     close();
     if(typeof openAuthModal === 'function') openAuthModal('signup');
     else document.getElementById('accountButton')?.click();
@@ -3178,7 +3178,7 @@ function scheduleFeatureAnnouncement() {
     state.timer=null;
     if(cartelonioSession?.user?.id!==user.id || cartelonioSession.user.is_anonymous)return;
     // Avoid covering onboarding, recovery, payments or another open surface.
-    const blockers=['authModal','tokensMenu','historyOverlay','welcome10Overlay','howToUseModal'];
+    const blockers=['authModal','tokensMenu','historyOverlay','welcome5Overlay','howToUseModal'];
     const blocked=Boolean(document.querySelector('dialog[open]')) ||
       document.getElementById('cartelonioOnboarding')?.getAttribute('aria-hidden')==='false' ||
       blockers.some(id=>{const el=document.getElementById(id);return el && !el.hidden && getComputedStyle(el).display!=='none';}) ||
