@@ -86,6 +86,7 @@
       if (/\bm[\s-]*sport\b/i.test(listing.title) && !candidate.trimMatch) {
         preview.append(make('p', 'listing-match-note', 'Η αγγελία αναφέρει M Sport. Έλεγξε την παραλλαγή και τον εξοπλισμό στον κατάλογο.'));
       }
+      if (candidate.editionApproximation) preview.append(make('p', 'listing-match-note', 'Η Jarama Racetrack Edition δεν υπάρχει ως ξεχωριστή έκδοση στον κατάλογο. Έλεγξε αν η προτεινόμενη έκδοση και η ΛΤΠΦ καλύπτουν το όχημα.'));
       if (candidate.conflicts.length) preview.append(make('p', 'listing-match-note', 'Υπάρχει διαφορά στα στοιχεία της αγγελίας και της έκδοσης.'));
       preview.append(pick);
     }
@@ -106,16 +107,17 @@
     button.addEventListener('click',async()=>{
       const run=++generation;button.disabled=true;resetPreview();status.textContent='Ανάγνωση αγγελίας… Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.';
       try {
-        const {rankCandidates,normalize}=await import('./listing-utils.mjs?v=20261126-match');
+        const {rankCandidates,normalize,listingSlug}=await import('./listing-utils.mjs?v=20261126-smart-match');
         await Promise.all([catalogReady,cartelonioAuthReady]);
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
-        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(listingRequestInput(input.value,text.value)),signal:AbortSignal.timeout(90000)});
+        const request = listingRequestInput(input.value,text.value);
+        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(request),signal:AbortSignal.timeout(90000)});
         const payload=await res.json();
         const errors={apify_token_missing:'Δεν έχει δηλωθεί το APIFY_API_TOKEN στο Supabase.',apify_auth_error:'Το Apify απέρριψε το API token ή την πρόσβαση στον scraper.',apify_credit_error:'Δεν υπάρχει διαθέσιμη πίστωση στο Apify.',apify_timeout:'Η ανάγνωση ξεπέρασε το χρονικό όριο. Δοκίμασε επικόλληση κειμένου.',apify_no_results:'Το Apify δεν επέστρεψε αγγελία. Έλεγξε αν είναι ακόμη ενεργή.',apify_listing_mismatch:'Το Apify επέστρεψε διαφορετική αγγελία. Η εισαγωγή ακυρώθηκε.',apify_request_failed:'Απέτυχε το αίτημα Apify. Έλεγξε τα Logs στο Supabase.',apify_invalid_output:'Το Apify επέστρεψε μη αναμενόμενη μορφή δεδομένων.',autoscout_provider_not_configured:'Η σύνδεση URL με Apify είναι προς το παρόν διαθέσιμη για mobile.de. Για AutoScout24 χρησιμοποίησε επικόλληση κειμένου.',quota_unavailable:'Δεν είναι διαθέσιμος ο έλεγχος ορίου εισαγωγών. Έλεγξε το SQL στο Supabase.',invalid_listing_url:'Βάλε σύνδεσμο συγκεκριμένης αγγελίας από mobile.de ή AutoScout24 (.de/.com/.ch).',rate_limited:'Έφτασες το όριο των 20 εισαγωγών ανά ώρα. Δοκίμασε αργότερα.',invalid_listing_input:'Βάλε URL ή επικόλλησε το κείμενο με τα τεχνικά στοιχεία.',unauthorized:'Ανανέωσε τη σελίδα και συνδέσου ξανά.'};
         if(!res.ok)throw Error(errors[payload.error]||`Δεν ήταν δυνατή η εισαγωγή (${payload.error||res.status}). Δοκίμασε επικόλληση κειμένου.`);
         if(run!==generation)return;
-        const listing=payload.listing;
-        const query=' '+normalize(listing.brand+' '+listing.title)+' ';
+        const listing={...payload.listing, slug:listingSlug(request.url)};
+        const query=' '+normalize([listing.brand,listing.title,listing.slug].filter(Boolean).join(' '))+' ';
         const aliases={'VW':'Volkswagen','Mercedes':'Mercedes-Benz'};
         let brands=Object.keys(DATA_SOURCES).filter(b=>query.includes(' '+normalize(b)+' '));
         if(!brands.length)brands=Object.entries(aliases).filter(([a])=>query.includes(' '+normalize(a)+' ')).map(([,b])=>b).filter(b=>DATA_SOURCES[b]);

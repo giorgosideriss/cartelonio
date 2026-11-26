@@ -44,14 +44,50 @@ export function parseListing(input, html = false) {
   const co2=labelled('CO[₂2](?:-Emissionen| emissions)?','[\\d.,]+(?=\\s*g)');
   return { title, brand:String(car.brand?.name||car.brand||car.manufacturer?.name||'').slice(0,80),model:String(car.model||'').slice(0,120),registration:reg,mileage:Number.isFinite(mileage)&&mileage>=0&&mileage<=3000000?mileage:null,powerKw:kw?+kw[1]:null,powerPs:ps?+ps[1]:null,displacement:cc?number(cc):null,fuel,transmission,co2:co2?Number(co2.replace(',','.')):null, searchText:(title+' '+text).slice(0,30000), warnings:[...(!reg?['Δεν αναγνωρίστηκε η πρώτη άδεια.']:[]),...(!Number.isFinite(mileage)?['Δεν αναγνωρίστηκαν τα χιλιόμετρα.']:[])] };
 }
+// Paths are supplemental naming evidence, never a source of dates or mileage.
+export function listingSlug(url) {
+  if (!url) return '';
+  try {
+    const path = new URL(validateListingUrl(url)).pathname;
+    return decodeURIComponent(path.match(/^\/auto-inserat\/([^/]+)\//)?.[1]
+      || path.match(/^\/(?:offers|angebote|offres|annunci)\/([^/]+)/)?.[1] || '');
+  } catch {
+    return '';
+  }
+}
+
+const optionalModelWords = new Set(['gr', 'amg', 'facelift', 'coupe', 'sedan', 'cabrio', 'sportback', 'touring']);
+function engineLitres(value) {
+  const match = String(value ?? '').match(/\b([1-8])[.,](\d)(?:t|tsi|tfsi|tdi|d|l)?\b/i);
+  return match ? match[1] + '.' + match[2] : undefined;
+}
+
+function gearbox(value) {
+  const text = ' ' + normalize(value) + ' ';
+  if (/\b(?:[4-9]\s*)?a t\b|\b(?:automatic|automatik|dsg|dct|steptronic|tiptronic|cvt|s tronic)\b/.test(text)) return 'auto';
+  if (/\bm t\b|\b(?:manual|schaltgetriebe|handschaltung|manuell)\b/.test(text)) return 'manual';
+  return '';
+}
+
+// Toyota Europe identifies the Jarama Racetrack Edition as a 3.0-litre automatic.
+function jaramaSignature(query, brand) {
+  return normalize(brand) === 'toyota' && /\bsupra\b/.test(query) && /\bjarama(?: racetrack)?\b/.test(query)
+    ? { litres: '3.0', gearbox: 'auto' } : null;
+}
+
 // Scores measure similarity, not statistical confidence. Confirmation is mandatory.
 export function rankCandidates(listing, datasets, brand) {
   // BMW advertisements separate the drivetrain, engine number and fuel suffix.
   const editionText = value => normalize(value).replace(/\b([xs]drive)\s*(\d{2})\s*(de|d|i|e)\b/g, '$1$2$3');
-  const query=' '+editionText(listing.title+' '+listing.model)+' ';
+  const fullTitle = [listing.title, listing.model, listing.slug].filter(Boolean).join(' ');
+  const query=' '+editionText(fullTitle)+' ';
+  const signature = jaramaSignature(query, brand);
+  const cc = Number(listing.displacement);
+  const litres = cc >= 600 && cc <= 8500 ? (Math.round(cc / 100) / 10).toFixed(1) : engineLitres(listing.title) || signature?.litres;
+  const transmission = gearbox(listing.transmission) || gearbox(listing.title) || signature?.gearbox;
   const tokens=s=>editionText(s).split(' ').filter(t=>t.length>1);
   const driveCode = value => editionText(value).match(/\b[xs]drive\d{2}(?:de|d|i|e)\b/)?.[0];
-  const advertisedCode = driveCode(listing.title) || driveCode(listing.model);
+  const advertisedCode = driveCode(listing.title) || driveCode(listing.model) || driveCode(listing.slug);
   const out=[];
   for(const {year,data} of datasets) for(const [model,value] of Object.entries(data.models||{})) {
     const mt=tokens(model); let matched=mt.filter(t=>query.includes(' '+t+' ')).length;
@@ -62,13 +98,35 @@ export function rankCandidates(listing, datasets, brand) {
     if(!matched && family) {const f=family[1]||family[2]||family[3];if(new RegExp('\\b'+f+'\\s?\\d{2}[a-z]*\\b','i').test(listing.title))matched=mt.length;}
     if(!matched && /mercedes/i.test(brand)){const cls=normalize(model).match(/^([a-z])(?: class| klasse|$)/);if(cls&&new RegExp('\\b'+cls[1]+'\\s?\\d{2,3}\\b','i').test(listing.title))matched=mt.length;}
     if(!matched)continue;
+    const distinctive = mt.filter(token => !optionalModelWords.has(token));
+    const fullModel = query.includes(' ' + editionText(model) + ' ');
+    const coreMatch = distinctive.length && distinctive.every(token => query.includes(' ' + token + ' '));
+    const modelScore = fullModel ? 46 : coreMatch ? 40 : 40 * matched / Math.max(1, mt.length);
+    if (!coreMatch && mt.some(token => optionalModelWords.has(token)) && mt.every(token => optionalModelWords.has(token) || !query.includes(' ' + token + ' '))) continue;
     for(const [editionIndex,ed] of (value.editions||[]).entries()) {
       const et=tokens(ed.name).filter(t=>!tokens(brand+' '+model).includes(t));
-      let score=40*matched/Math.max(1,mt.length)+35*et.filter(t=>query.includes(' '+t+' ')).length/Math.max(1,et.length);
+      const aliasMatch = (ed.nameAliases || []).some(alias => {
+        const words = tokens(alias).filter(t => !tokens(brand+' '+model).includes(t));
+        return words.length && query.includes(' ' + words.join(' ') + ' ');
+      });
+      let score=modelScore+35*et.filter(t=>query.includes(' '+t+' ')).length/Math.max(1,et.length);
+      if (aliasMatch) score += 22;
       let evidence=matched; const conflicts=[];
-      // Power and displacement do not contribute to similarity or conflicts.
-      const automatic=/automatic|automatik|dsg|dct|steptronic|s tronic/i;
-      if(listing.transmission && ed.transmission) {const a=automatic.test(listing.transmission),b=automatic.test(ed.transmission);if(a!==b){score-=25;conflicts.push('transmission');}else{score+=5;evidence++;}}
+      const candidateLitres = engineLitres(ed.name);
+      const candidateGearbox = gearbox(ed.transmission) || gearbox(ed.name);
+      const engineMatch = Boolean(litres && candidateLitres === litres);
+      if (engineMatch) { score += 24; evidence++; }
+      else if (litres && candidateLitres) { score -= 24; conflicts.push('displacement'); }
+      if (transmission && candidateGearbox) {
+        if (transmission === candidateGearbox) { score += 13; evidence++; }
+        else { score -= 22; conflicts.push('transmission'); }
+      }
+      const power = Number(listing.powerPs) || (Number(listing.powerKw) ? Number(listing.powerKw) * 1.36 : 0);
+      const cataloguePower = Number(String(ed.name).match(/\b(\d{2,4})\s*(?:ps|hp)\b/i)?.[1]);
+      if (power && cataloguePower) {
+        if (Math.abs(power - cataloguePower) <= 3) score += 9;
+        else if (Math.abs(power - cataloguePower) >= 12) { score -= 12; conflicts.push('power'); }
+      }
       if(listing.fuel && ed.fuel) { const fuel=s=>/diesel/i.test(s)?'diesel':/benzin|petrol|gasoline/i.test(s)?'petrol':/electric|elektro/i.test(s)?'electric':null; const a=fuel(listing.fuel),b=fuel(ed.fuel);if(a&&b&&a!==b){score-=35;conflicts.push('fuel');} }
       const candidateCode = driveCode(ed.name);
       const exactCode = Boolean(advertisedCode && advertisedCode === candidateCode);
@@ -83,7 +141,7 @@ export function rankCandidates(listing, datasets, brand) {
       if (trimMatch) score += 8;
       const drive=/\b(?:xdrive(?:\d{2}[a-z]+)?|quattro|4matic|awd|4wd)\b/i;
       if(!advertisedCode && drive.test(editionText(listing.title)) && !drive.test(editionText(ed.name))) score-=15;
-      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score * 100 / 80))),evidence,conflicts,exactCode,trimMatch,rank:score});
+      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score * 100 / 80))),evidence,conflicts,exactCode,trimMatch,editionApproximation:Boolean(signature && /\bsupra\b/i.test(model) && !/\bjarama\b/i.test(ed.name)),rank:score});
     }
   }
   return out.filter(x=>x.score>=30).sort((a,b)=>b.rank-a.rank||a.model.localeCompare(b.model)||a.editionIndex-b.editionIndex).slice(0,5);
