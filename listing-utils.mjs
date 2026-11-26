@@ -46,8 +46,12 @@ export function parseListing(input, html = false) {
 }
 // Scores measure similarity, not statistical confidence. Confirmation is mandatory.
 export function rankCandidates(listing, datasets, brand) {
-  const query=' '+normalize(listing.title+' '+listing.model)+' ';
-  const tokens=s=>normalize(s).split(' ').filter(t=>t.length>1);
+  // BMW advertisements separate the drivetrain, engine number and fuel suffix.
+  const editionText = value => normalize(value).replace(/\b([xs]drive)\s*(\d{2})\s*(de|d|i|e)\b/g, '$1$2$3');
+  const query=' '+editionText(listing.title+' '+listing.model)+' ';
+  const tokens=s=>editionText(s).split(' ').filter(t=>t.length>1);
+  const driveCode = value => editionText(value).match(/\b[xs]drive\d{2}(?:de|d|i|e)\b/)?.[0];
+  const advertisedCode = driveCode(listing.title) || driveCode(listing.model);
   const out=[];
   for(const {year,data} of datasets) for(const [model,value] of Object.entries(data.models||{})) {
     const mt=tokens(model); let matched=mt.filter(t=>query.includes(' '+t+' ')).length;
@@ -66,10 +70,21 @@ export function rankCandidates(listing, datasets, brand) {
       const automatic=/automatic|automatik|dsg|dct|steptronic|s tronic/i;
       if(listing.transmission && ed.transmission) {const a=automatic.test(listing.transmission),b=automatic.test(ed.transmission);if(a!==b){score-=25;conflicts.push('transmission');}else{score+=5;evidence++;}}
       if(listing.fuel && ed.fuel) { const fuel=s=>/diesel/i.test(s)?'diesel':/benzin|petrol|gasoline/i.test(s)?'petrol':/electric|elektro/i.test(s)?'electric':null; const a=fuel(listing.fuel),b=fuel(ed.fuel);if(a&&b&&a!==b){score-=35;conflicts.push('fuel');} }
-      const drive=/\b(xdrive|quattro|4matic|awd|4wd)\b/i;
-      if(drive.test(listing.title) && !drive.test(ed.name)) score-=15;
-      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score * 100 / 80))),evidence,conflicts});
+      const candidateCode = driveCode(ed.name);
+      const exactCode = Boolean(advertisedCode && advertisedCode === candidateCode);
+      if (exactCode) { score += 20; evidence++; }
+      else if (advertisedCode && candidateCode) {
+        score -= 16;
+        if (advertisedCode.slice(6) === candidateCode.slice(6)) score += 7;
+        if (advertisedCode[0] === candidateCode[0]) score += 5;
+        conflicts.push('engine');
+      }
+      const trimMatch = /\bm sport\b/.test(query) && /\bm sport\b/.test(editionText(ed.name));
+      if (trimMatch) score += 8;
+      const drive=/\b(?:xdrive(?:\d{2}[a-z]+)?|quattro|4matic|awd|4wd)\b/i;
+      if(!advertisedCode && drive.test(editionText(listing.title)) && !drive.test(editionText(ed.name))) score-=15;
+      out.push({brand,year,model,editionIndex,name:ed.name,score:Math.max(0,Math.min(100,Math.round(score * 100 / 80))),evidence,conflicts,exactCode,trimMatch,rank:score});
     }
   }
-  return out.filter(x=>x.score>=30).sort((a,b)=>b.score-a.score||a.model.localeCompare(b.model)||a.editionIndex-b.editionIndex).slice(0,5);
+  return out.filter(x=>x.score>=30).sort((a,b)=>b.rank-a.rank||a.model.localeCompare(b.model)||a.editionIndex-b.editionIndex).slice(0,5);
 }

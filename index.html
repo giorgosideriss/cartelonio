@@ -98,6 +98,7 @@
      crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="price-source.css?v=20261028-portal-v4">
+<link rel="stylesheet" href="listing-match.css?v=20261126">
 </head>
 <body>
 <header class="site-header">
@@ -277,7 +278,7 @@
 <p>Η εισαγωγή δεν καταναλώνει token. Έλεγξε την αντιστοίχιση πριν από τον υπολογισμό.</p>
 <button id="listingReadBtn" type="button" class="listing-read-btn">Ανάγνωση αγγελίας</button>
 <p id="listingStatus" role="status" aria-live="polite"></p>
-<div id="listingResults"></div>
+
 </section>
 <p id="listingAppliedNote" class="listing-warning" hidden></p>
 <div class="config-heading catalog-only-block"><div class="config-heading-title"><span>01</span><strong>Διαμόρφωση Οχήματος</strong></div><button type="button" id="randomSelectBtn" class="random-select-btn random-select-heading-btn" title="Επίλεξε τυχαίο διαθέσιμο αυτοκίνητο και υπολόγισε αυτόματα το τέλος ταξινόμησης"><span class="random-select-heading-icon" aria-hidden="true">↻</span><span>Τυχαία Επιλογή</span></button></div>
@@ -356,6 +357,11 @@
 </div>
 </div>
 </div>
+<section class="listing-match-workspace" aria-label="Αντιστοίχιση αγγελίας">
+  <h2>Αντιστοίχιση αγγελίας</h2>
+  <p id="listingEmpty">Οι πιθανές εκδόσεις και η προεπισκόπησή τους θα εμφανιστούν εδώ.</p>
+  <div id="listingResults"></div>
+</section>
 <div class="hero-wrap integrated-hero-wrap catalog-only-block">
 <div class="vehicle-summary-card vehicle-preview-v3" id="vehiclePreviewCard">
   <div class="vehicle-summary-visual">
@@ -831,7 +837,7 @@
 <script src="euro-policy.js?v=20261027-euro-v1"></script>
 <script src="price-source.js?v=20261028-single-popup-v5"></script>
 <script src="script.js?v=20261125-welcome5-fix"></script>
-<script src="listing-import.js?v=20261019-3"></script>
+<script src="listing-import.js?v=20261126-match"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
   <div class="purchase-return-icon" id="purchaseReturnIcon" aria-hidden="true">…</div>
