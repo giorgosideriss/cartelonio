@@ -66,9 +66,9 @@
   pointer-events:none;
 }
 .listing-progress-card {
-  display:flex;
-  align-items:center;
-  gap:15px;
+  display:grid;
+  gap:14px;
+  box-sizing:border-box;
   width:min(100%,390px);
   padding:18px;
   border:1px solid var(--line,#cfdbc8);
@@ -77,6 +77,26 @@
   color:var(--ink,#17382d);
   box-shadow:0 16px 55px rgb(15 35 20 / 24%);
 }
+.listing-progress-card [hidden] { display:none; }
+.listing-progress-preview {
+  display:grid;
+  gap:10px;
+  border-bottom:1px solid var(--line,#cfdbc8);
+  padding-bottom:14px;
+}
+.listing-progress-preview img {
+  display:block;
+  width:100%;
+  height:clamp(84px,22vh,164px);
+  object-fit:contain;
+  background:var(--surface-2,#f3f6ef);
+  border-radius:12px;
+}
+.listing-progress-details { min-width:0; overflow-wrap:anywhere; }
+.listing-progress-details dl { display:flex; flex-wrap:wrap; gap:8px 20px; margin:8px 0 0; }
+.listing-progress-details dt { color:var(--muted,#506351); font-size:.78rem; }
+.listing-progress-details dd { margin:2px 0 0; font-size:.9rem; font-weight:600; }
+.listing-progress-state { display:flex; align-items:center; gap:12px; }
 .listing-progress-card strong { font-size:1rem; }
 .listing-progress-card p { margin:4px 0 0; color:var(--muted,#506351); font-size:.84rem; }
 .listing-progress-icon {
@@ -102,8 +122,16 @@
   from { transform:translateY(0); opacity:.45; }
   to { transform:translateY(24px); opacity:1; }
 }
-#listingResults { scroll-margin-top:7rem; }
+/* Keep the applied vehicle preview directly after the catalogue controls. */
+.vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper {
+  grid-template-columns:minmax(0,1fr)!important;
+}
+#listingResults,#listingCatalogAnchor { scroll-margin-top:7rem; }
 #listingResults:focus-visible { outline:2px solid var(--accent-deep,#4e7d31); outline-offset:5px; }
 @media (prefers-reduced-motion:reduce) {
   .listing-progress-scan { animation:none; }
+}
+.vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper > :is(.vehicle-config-panel,.integrated-hero-wrap) {
+  grid-column:1 / -1;
+  grid-row:auto;
 }

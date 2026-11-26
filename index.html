@@ -98,7 +98,7 @@
      crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="price-source.css?v=20261028-portal-v4">
-<link rel="stylesheet" href="listing-match.css?v=20261126-flow">
+<link rel="stylesheet" href="listing-match.css?v=20261126-wait-card">
 </head>
 <body>
 <header class="site-header">
@@ -309,7 +309,7 @@
 <select id="yearSelect"></select>
 </div>
 </div>
-<div class="field-block dropdown-card">
+<div class="field-block dropdown-card" id="listingCatalogAnchor" tabindex="-1">
 <label for="modelSelect">Μοντέλο</label>
 <div class="dropdown-control-row">
 <span aria-hidden="true" class="dropdown-leading-icon"><svg class="ui-svg-icon model-car-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 10.5 6.6 6.8A2 2 0 0 1 8.4 5.5h7.2a2 2 0 0 1 1.8 1.3l1.6 3.7M5 10.5h14a1.5 1.5 0 0 1 1.5 1.5v5.5h-17V12A1.5 1.5 0 0 1 5 10.5ZM5.5 17.5v2m13-2v2M7 13.5h2m6 0h2M2.5 9.5l2.5 1m16.5-1-2.5 1"/></svg></span>
@@ -838,20 +838,23 @@
 <script src="price-source.js?v=20261028-single-popup-v5"></script>
 <script src="script.js?v=20261125-welcome5-fix"></script>
 <div id="listingProgress" class="listing-progress" hidden>
-  <div class="listing-progress-card" role="status" aria-live="polite" aria-atomic="true">
-    <div class="listing-progress-icon" aria-hidden="true">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M14 7h14l7 7v26H14zM28 7v8h7M20 21h9M20 27h9M20 33h6"/>
-      </svg>
-      <span class="listing-progress-scan"></span>
-    </div>
-    <div>
-      <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
-      <p>Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
+  <div class="listing-progress-card">
+    <div id="listingProgressPreview" class="listing-progress-preview" hidden></div>
+    <div class="listing-progress-state">
+      <div class="listing-progress-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 7h14l7 7v26H14zM28 7v8h7M20 21h9M20 27h9M20 33h6"/>
+        </svg>
+        <span class="listing-progress-scan"></span>
+      </div>
+      <div role="status" aria-live="polite" aria-atomic="true">
+        <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
+        <p id="listingProgressHint">Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
+      </div>
     </div>
   </div>
 </div>
-<script src="listing-import.js?v=20261126-flow"></script>
+<script src="listing-import.js?v=20261126-wait-card"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
   <div class="purchase-return-icon" id="purchaseReturnIcon" aria-hidden="true">…</div>
