@@ -98,7 +98,7 @@
      crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="price-source.css?v=20261028-portal-v4">
-<link rel="stylesheet" href="listing-match.css?v=20261126-hide-empty-preview">
+<link rel="stylesheet" href="listing-match.css?v=20261126-flow">
 </head>
 <body>
 <header class="site-header">
@@ -360,7 +360,7 @@
 <section class="listing-match-workspace" aria-label="Αντιστοίχιση αγγελίας">
   <h2>Αντιστοίχιση αγγελίας</h2>
   <p id="listingEmpty">Οι πιθανές εκδόσεις και η προεπισκόπησή τους θα εμφανιστούν εδώ.</p>
-  <div id="listingResults"></div>
+  <div id="listingResults" tabindex="-1"></div>
 </section>
 <div class="hero-wrap integrated-hero-wrap catalog-only-block">
 <div class="vehicle-summary-card vehicle-preview-v3" id="vehiclePreviewCard">
@@ -837,7 +837,21 @@
 <script src="euro-policy.js?v=20261027-euro-v1"></script>
 <script src="price-source.js?v=20261028-single-popup-v5"></script>
 <script src="script.js?v=20261125-welcome5-fix"></script>
-<script src="listing-import.js?v=20261126-smart-match"></script>
+<div id="listingProgress" class="listing-progress" hidden>
+  <div class="listing-progress-card" role="status" aria-live="polite" aria-atomic="true">
+    <div class="listing-progress-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 7h14l7 7v26H14zM28 7v8h7M20 21h9M20 27h9M20 33h6"/>
+      </svg>
+      <span class="listing-progress-scan"></span>
+    </div>
+    <div>
+      <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
+      <p>Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
+    </div>
+  </div>
+</div>
+<script src="listing-import.js?v=20261126-flow"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
   <div class="purchase-return-icon" id="purchaseReturnIcon" aria-hidden="true">…</div>

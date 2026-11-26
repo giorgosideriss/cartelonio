@@ -100,12 +100,32 @@
     const panel=document.getElementById('listingPanel');if(!panel)return;
     const input=document.getElementById('listingUrl'),text=document.getElementById('listingText'),button=document.getElementById('listingReadBtn'),status=document.getElementById('listingStatus'),results=document.getElementById('listingResults');
     const empty = document.getElementById('listingEmpty');
+    const progress = document.getElementById('listingProgress');
+    const progressTitle = document.getElementById('listingProgressTitle');
+    const mobile = window.matchMedia('(max-width: 820px)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const stage = panel.closest('.vehicle-configurator-v2');
+    const calculate = document.getElementById('calcBtn');
+    function reveal(target, block, expectedMode) {
+      requestAnimationFrame(() => {
+        if (stage.dataset.inputMode !== expectedMode || !target.getClientRects().length) return;
+        target.focus({preventScroll:true});
+        target.scrollIntoView({behavior: reducedMotion.matches ? 'instant' : 'smooth', block});
+      });
+    }
+    const closeProgress = () => { progress.hidden = true; };
+
     const resetPreview = () => { results.replaceChildren(); empty.hidden = false; };
     let generation=0;
-    function clear(){generation++;resetPreview();status.textContent='';}
+    function clear(){generation++;closeProgress();resetPreview();status.textContent='';}
     input.addEventListener('input',clear);text.addEventListener('input',clear);
     button.addEventListener('click',async()=>{
-      const run=++generation;button.disabled=true;resetPreview();status.textContent='Ανάγνωση αγγελίας… Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.';
+      const run=++generation;
+      button.disabled=true;
+      resetPreview();
+      status.textContent='';
+      progressTitle.textContent='Ανάγνωση αγγελίας…';
+      progress.hidden=false;
       try {
         const {rankCandidates,normalize,listingSlug}=await import('./listing-utils.mjs?v=20261126-smart-match');
         await Promise.all([catalogReady,cartelonioAuthReady]);
@@ -125,7 +145,7 @@
         if(!listing.registration)throw Error('Δεν αναγνωρίστηκε η πρώτη άδεια. Πρόσθεσε το σχετικό πεδίο στο κείμενο της αγγελίας.');
         const brand=brands[0],year=String(listing.registration.year),source=DATA_SOURCES[brand][year];
         if(!source)throw Error(`Δεν υπάρχει κατάλογος ${brand} για το ${year}. Επίλεξε χειροκίνητα το κατάλληλο έτος καταλόγου.`);
-        status.textContent='Αναζήτηση πιθανών εκδόσεων…';
+        progressTitle.textContent='Αναζήτηση πιθανών εκδόσεων…';
         const response=await fetch(`${CARTELONIO_API_BASE}/catalog?brand=${encodeURIComponent(source.slug)}&year=${encodeURIComponent(source.year)}`,{signal:AbortSignal.timeout(15000)});
         if(!response.ok)throw Error('Ο κατάλογος δεν είναι διαθέσιμος αυτή τη στιγμή.');
         const data=await response.json();if(run!==generation)return;
@@ -145,15 +165,19 @@
             currentDataset=data;populateModels();document.getElementById('modelSelect').value=candidate.model;
             populateVersions();document.getElementById('versionSelect').value=String(candidate.editionIndex);populateColors();
             document.getElementById('mileage').value=listing.mileage==null?'':String(listing.mileage);
+            const importDate = document.getElementById('importDate');
+            if (!importDate.value) importDate.value = localISODate();
             const reg=listing.registration,yearEl=document.getElementById('firstRegYear');yearEl.value=String(reg.year);yearEl.readOnly=false;
             document.getElementById('firstRegMonth').value=String(reg.month);document.getElementById('firstRegDay').value='1';syncFirstRegistrationDate();updateCarSummary();
             // Registration tax fields remain sourced from the selected catalogue.
             // Listing price, advertised Euro/CO2 and equipment are never guessed.
             resetPreview();status.textContent='Η επιλογή συμπληρώθηκε. Έλεγξε έκδοση, παραλλαγή ΛΤΠΦ, ημερομηνία και χιλιόμετρα πριν υπολογίσεις.';
             const note=document.getElementById('listingAppliedNote');note.hidden=false;note.textContent=status.textContent+' Η ημέρα πρώτης άδειας ορίστηκε αυτόματα στην 1η του μήνα.';
+            reveal(calculate, 'center', 'catalog');
         });
+        if (mobile.matches) reveal(results, 'start', 'listing');
       }catch(e){if(run===generation)status.textContent=e.name==='TimeoutError'?'Η ανάγνωση καθυστέρησε. Δοκίμασε επικόλληση κειμένου.':e.message||'Δεν ήταν δυνατή η εισαγωγή.';}
-      finally{button.disabled=false;}
+      finally{closeProgress();button.disabled=false;}
     });
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
