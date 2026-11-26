@@ -46,3 +46,11 @@
   .listing-match-detail { border-left:0; border-top:1px solid var(--line,#cfdbc8); padding:12px 0 0; }
   .listing-match-photo { max-height:215px; }
 }
+
+/* The catalogue preview must not create a grid item in other input modes. */
+.vehicle-configurator-v2:is([data-input-mode="listing"], [data-input-mode="manual"]) #calcForm .config-upper > .integrated-hero-wrap {
+  display: none !important;
+}
+.vehicle-configurator-v2[data-input-mode="manual"] #calcForm .config-upper {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
