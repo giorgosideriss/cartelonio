@@ -55,7 +55,7 @@
   grid-template-columns: minmax(0, 1fr) !important;
 }
 
-.listing-progress[hidden] { display:none; }
+.listing-progress[hidden], .listing-progress-card [hidden] { display:none; }
 .listing-progress {
   position:fixed;
   inset:0;
@@ -63,65 +63,67 @@
   display:grid;
   place-items:center;
   padding:16px;
+  background:rgb(13 25 20 / 32%);
+  backdrop-filter:blur(4px);
   pointer-events:none;
 }
 .listing-progress-card {
   display:grid;
-  gap:14px;
+  gap:16px;
   box-sizing:border-box;
-  width:min(100%,390px);
-  padding:18px;
+  width:min(100%,430px);
+  max-height:calc(100dvh - 32px);
+  overflow:auto;
+  padding:clamp(16px,5vw,24px);
   border:1px solid var(--line,#cfdbc8);
-  border-radius:20px;
+  border-radius:26px;
   background:var(--surface,#fbfaf6);
   color:var(--ink,#17382d);
-  box-shadow:0 16px 55px rgb(15 35 20 / 24%);
+  box-shadow:0 22px 70px rgb(12 29 20 / 30%);
 }
-.listing-progress-card [hidden] { display:none; }
-.listing-progress-preview {
-  display:grid;
-  gap:10px;
-  border-bottom:1px solid var(--line,#cfdbc8);
-  padding-bottom:14px;
-}
+.listing-progress-state strong { font-size:clamp(1.1rem,4vw,1.35rem); }
+.listing-progress-state p { margin:5px 0 0; color:var(--muted,#506351); font-size:.85rem; }
+.listing-progress-preview { display:grid; gap:12px; }
 .listing-progress-preview img {
   display:block;
   width:100%;
-  height:clamp(84px,22vh,164px);
+  height:clamp(88px,25vh,180px);
   object-fit:contain;
   background:var(--surface-2,#f3f6ef);
-  border-radius:12px;
+  border-radius:15px;
 }
 .listing-progress-details { min-width:0; overflow-wrap:anywhere; }
-.listing-progress-details dl { display:flex; flex-wrap:wrap; gap:8px 20px; margin:8px 0 0; }
+.listing-progress-details dl { display:flex; flex-wrap:wrap; gap:8px 24px; margin:8px 0 0; }
 .listing-progress-details dt { color:var(--muted,#506351); font-size:.78rem; }
-.listing-progress-details dd { margin:2px 0 0; font-size:.9rem; font-weight:600; }
-.listing-progress-state { display:flex; align-items:center; gap:12px; }
-.listing-progress-card strong { font-size:1rem; }
-.listing-progress-card p { margin:4px 0 0; color:var(--muted,#506351); font-size:.84rem; }
-.listing-progress-icon {
-  position:relative;
-  width:52px;
-  height:52px;
-  flex:none;
-  border-radius:14px;
+.listing-progress-details dd { margin:2px 0 0; font-size:.92rem; font-weight:600; }
+.listing-progress-skeleton { display:grid; gap:12px; }
+.listing-progress[data-phase="matching"] .listing-progress-skeleton,
+.listing-progress-preview:not([hidden]) + .listing-progress-skeleton { display:none; }
+.listing-progress-placeholder, .listing-progress-lines span {
   background:var(--accent-soft,#e7f1df);
-  color:var(--accent-deep,#4e7d31);
+  animation:listing-progress-pulse 1.45s ease-in-out infinite alternate;
 }
-.listing-progress-icon svg { width:100%; height:100%; }
-.listing-progress-scan {
-  position:absolute;
-  inset:13px 7px auto;
-  height:2px;
-  border-radius:2px;
-  background:currentColor;
-  box-shadow:0 0 8px currentColor;
-  animation:listing-document-scan 1.5s ease-in-out infinite alternate;
+.listing-progress-placeholder { height:clamp(88px,23vh,154px); border-radius:15px; }
+.listing-progress-lines { display:grid; gap:8px; }
+.listing-progress-lines span { width:66%; height:11px; border-radius:6px; }
+.listing-progress-lines span:nth-child(2) { width:46%; }
+.listing-progress-lines span:nth-child(3) { width:34%; }
+.listing-progress-track {
+  height:5px;
+  overflow:hidden;
+  border-radius:8px;
+  background:var(--accent-soft,#e7f1df);
 }
-@keyframes listing-document-scan {
-  from { transform:translateY(0); opacity:.45; }
-  to { transform:translateY(24px); opacity:1; }
+.listing-progress-track span {
+  display:block;
+  width:38%;
+  height:100%;
+  border-radius:inherit;
+  background:var(--accent-deep,#4e7d31);
+  animation:listing-progress-sweep 1.55s ease-in-out infinite;
 }
+@keyframes listing-progress-pulse { from { opacity:.5; } to { opacity:1; } }
+@keyframes listing-progress-sweep { from { transform:translateX(-100%); } to { transform:translateX(265%); } }
 /* Keep the applied vehicle preview directly after the catalogue controls. */
 .vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper {
   grid-template-columns:minmax(0,1fr)!important;
@@ -129,7 +131,8 @@
 #listingResults,#listingCatalogAnchor { scroll-margin-top:7rem; }
 #listingResults:focus-visible { outline:2px solid var(--accent-deep,#4e7d31); outline-offset:5px; }
 @media (prefers-reduced-motion:reduce) {
-  .listing-progress-scan { animation:none; }
+  .listing-progress-placeholder, .listing-progress-lines span,
+  .listing-progress-track span { animation:none; }
 }
 .vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper > :is(.vehicle-config-panel,.integrated-hero-wrap) {
   grid-column:1 / -1;

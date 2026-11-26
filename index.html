@@ -98,7 +98,7 @@
      crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="price-source.css?v=20261028-portal-v4">
-<link rel="stylesheet" href="listing-match.css?v=20261126-wait-card">
+<link rel="stylesheet" href="listing-match.css?v=20261126-listing-preview-v3">
 </head>
 <body>
 <header class="site-header">
@@ -837,24 +837,21 @@
 <script src="euro-policy.js?v=20261027-euro-v1"></script>
 <script src="price-source.js?v=20261028-single-popup-v5"></script>
 <script src="script.js?v=20261125-welcome5-fix"></script>
-<div id="listingProgress" class="listing-progress" hidden>
+<div id="listingProgress" class="listing-progress" data-phase="reading" hidden>
   <div class="listing-progress-card">
-    <div id="listingProgressPreview" class="listing-progress-preview" hidden></div>
-    <div class="listing-progress-state">
-      <div class="listing-progress-icon" aria-hidden="true">
-        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 7h14l7 7v26H14zM28 7v8h7M20 21h9M20 27h9M20 33h6"/>
-        </svg>
-        <span class="listing-progress-scan"></span>
-      </div>
-      <div role="status" aria-live="polite" aria-atomic="true">
-        <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
-        <p id="listingProgressHint">Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
-      </div>
+    <div class="listing-progress-state" role="status" aria-live="polite" aria-atomic="true">
+      <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
+      <p id="listingProgressHint">Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
     </div>
+    <div id="listingProgressPreview" class="listing-progress-preview" hidden></div>
+    <div class="listing-progress-skeleton" aria-hidden="true">
+      <div class="listing-progress-placeholder"></div>
+      <div class="listing-progress-lines"><span></span><span></span><span></span></div>
+    </div>
+    <div class="listing-progress-track" aria-hidden="true"><span></span></div>
   </div>
 </div>
-<script src="listing-import.js?v=20261126-wait-card"></script>
+<script src="listing-import.js?v=20261126-listing-preview-v3"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
   <div class="purchase-return-icon" id="purchaseReturnIcon" aria-hidden="true">…</div>

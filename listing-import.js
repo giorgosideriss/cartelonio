@@ -192,6 +192,7 @@
       status.textContent='';
       progressTitle.textContent='Ανάγνωση αγγελίας…';
       progressHint.hidden=false;
+      progress.dataset.phase='reading';
       progress.hidden=false;
       try {
         const request = listingRequestInput(input.value,text.value);
@@ -208,7 +209,9 @@
         if(run!==generation)return;
         const listing={...payload.listing, slug:listingSlug(request.url)};
         showListingPreview(progressPreview, listing);
+        progress.dataset.phase='matching';
         progressTitle.textContent='Αναζήτηση πιθανών εκδόσεων…';
+        const previewReady = new Promise(resolve => setTimeout(resolve, 750));
         progressHint.hidden=true;
         await catalogReady;
         if(run!==generation)return;
@@ -224,6 +227,8 @@
         if(!response.ok)throw Error('Ο κατάλογος δεν είναι διαθέσιμος αυτή τη στιγμή.');
         const data=await response.json();if(run!==generation)return;
         const candidates=rankCandidates(listing,[{year,data}],brand);
+        await previewReady;
+        if(run!==generation)return;
         empty.hidden=true;
         const summary=document.createElement('p');summary.className='listing-match-source';summary.textContent=`${listing.title} · ${listing.registration.month}/${year} · ${listing.mileage==null?'Χιλιόμετρα άγνωστα':listing.mileage.toLocaleString('el-GR')+' km'}`;results.append(summary);
         for(const warning of (listing.warnings || [])){if(warning === 'Η αγγελία δίνει μόνο μήνα/έτος. Συμπλήρωσε την ακριβή ημέρα.')continue;const p=document.createElement('p');p.className='listing-warning';p.textContent=warning;results.append(p);}
