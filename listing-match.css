@@ -172,3 +172,11 @@
   grid-column:1 / -1;
   grid-row:auto;
 }
+
+.listing-result-source {
+  margin-bottom:14px;
+  padding:12px;
+  border:1px solid var(--line,#cfdbc8);
+  border-radius:14px;
+}
+.listing-result-source[hidden] { display:none; }

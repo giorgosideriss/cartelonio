@@ -156,6 +156,32 @@
     image.src = photo;
   }
 
+  async function readListingResponse(response, onPreview) {
+    if (!response.headers?.get('Content-Type')?.includes('application/x-ndjson')) {
+      return response.json();
+    }
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) throw Error('Η σύνδεση διακόπηκε πριν ολοκληρωθεί η ανάγνωση.');
+        buffer += decoder.decode(value, {stream:true});
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          const event = JSON.parse(line);
+          if (event.type === 'preview') onPreview(event.listing);
+          if (event.type === 'result' || event.type === 'error') return event;
+        }
+      }
+    } finally {
+      await reader.cancel().catch(() => {});
+    }
+  }
+
   async function setup(){
     const panel=document.getElementById('listingPanel');if(!panel)return;
     const input=document.getElementById('listingUrl'),text=document.getElementById('listingText'),button=document.getElementById('listingReadBtn'),status=document.getElementById('listingStatus'),results=document.getElementById('listingResults');
@@ -208,19 +234,24 @@
         await cartelonioAuthReady;
         if(run!==generation)return;
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
-        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify(request),signal:AbortSignal.timeout(90000)});
-        const payload=await res.json();
+        const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify({...request, preview:Boolean(request.url)}),signal:AbortSignal.timeout(90000)});
+        let earlyPreview;
+        const payload=await readListingResponse(res, preview => {
+          if (run !== generation) return;
+          earlyPreview = preview;
+          showListingPreview(progressPreview, preview);
+        });
         const errors={apify_token_missing:'Δεν έχει δηλωθεί το APIFY_API_TOKEN στο Supabase.',apify_auth_error:'Το Apify απέρριψε το API token ή την πρόσβαση στον scraper.',apify_credit_error:'Δεν υπάρχει διαθέσιμη πίστωση στο Apify.',apify_timeout:'Η ανάγνωση ξεπέρασε το χρονικό όριο. Δοκίμασε επικόλληση κειμένου.',apify_no_results:'Το Apify δεν επέστρεψε αγγελία. Έλεγξε αν είναι ακόμη ενεργή.',apify_listing_mismatch:'Το Apify επέστρεψε διαφορετική αγγελία. Η εισαγωγή ακυρώθηκε.',apify_request_failed:'Απέτυχε το αίτημα Apify. Έλεγξε τα Logs στο Supabase.',apify_invalid_output:'Το Apify επέστρεψε μη αναμενόμενη μορφή δεδομένων.',autoscout_provider_not_configured:'Η σύνδεση URL με Apify είναι προς το παρόν διαθέσιμη για mobile.de. Για AutoScout24 χρησιμοποίησε επικόλληση κειμένου.',quota_unavailable:'Δεν είναι διαθέσιμος ο έλεγχος ορίου εισαγωγών. Έλεγξε το SQL στο Supabase.',invalid_listing_url:'Βάλε σύνδεσμο συγκεκριμένης αγγελίας από mobile.de ή AutoScout24 (.de/.com/.ch).',rate_limited:'Έφτασες το όριο των 20 εισαγωγών ανά ώρα. Δοκίμασε αργότερα.',invalid_listing_input:'Βάλε URL ή επικόλλησε το κείμενο με τα τεχνικά στοιχεία.',unauthorized:'Ανανέωσε τη σελίδα και συνδέσου ξανά.'};
-        if(!res.ok)throw Error(errors[payload.error]||`Δεν ήταν δυνατή η εισαγωγή (${payload.error||res.status}). Δοκίμασε επικόλληση κειμένου.`);
+        if(!res.ok || payload.error)throw Error(errors[payload.error]||`Δεν ήταν δυνατή η εισαγωγή (${payload.error||res.status}). Δοκίμασε επικόλληση κειμένου.`);
         if(run!==generation)return;
         const listing={...payload.listing, slug:listingSlug(request.url)};
+        listing.photoUrl = listingPhotoUrl(listing) || earlyPreview?.photoUrl;
         showListingPreview(progressPreview, listing);
         progress.dataset.phase='matching';
         readingStage.dataset.state='complete';
         matchingStage.dataset.state='active';
         progressTitle.textContent='Στοιχεία αγγελίας αναγνώστηκαν';
         matchingLabel.textContent='Αντιστοίχιση έκδοσης…';
-        const previewReady = new Promise(resolve => setTimeout(resolve, 750));
         progressHint.hidden=true;
         await catalogReady;
         if(run!==generation)return;
@@ -236,10 +267,11 @@
         if(!response.ok)throw Error('Ο κατάλογος δεν είναι διαθέσιμος αυτή τη στιγμή.');
         const data=await response.json();if(run!==generation)return;
         const candidates=rankCandidates(listing,[{year,data}],brand);
-        await previewReady;
-        if(run!==generation)return;
         empty.hidden=true;
-        const summary=document.createElement('p');summary.className='listing-match-source';summary.textContent=`${listing.title} · ${listing.registration.month}/${year} · ${listing.mileage==null?'Χιλιόμετρα άγνωστα':listing.mileage.toLocaleString('el-GR')+' km'}`;results.append(summary);
+        const summary = document.createElement('div');
+        summary.className = 'listing-progress-preview listing-result-source';
+        showListingPreview(summary, listing);
+        results.append(summary);
         for(const warning of (listing.warnings || [])){if(warning === 'Η αγγελία δίνει μόνο μήνα/έτος. Συμπλήρωσε την ακριβή ημέρα.')continue;const p=document.createElement('p');p.className='listing-warning';p.textContent=warning;results.append(p);}
         if(!candidates.length){status.textContent='Δεν βρέθηκε αξιόπιστη αντιστοίχιση. Χρησιμοποίησε την επιλογή από κατάλογο.';return;}
         status.textContent='Έλεγξε τα στοιχεία και επιβεβαίωσε την έκδοση.';
