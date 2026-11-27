@@ -160,6 +160,24 @@
     image.addEventListener('error', () => { image.remove(); }, {once:true});
     preview.prepend(image);
     image.src = photo;
+    return image;
+  }
+
+  function waitForPreviewPaint() {
+    if (document.hidden) return;
+    return new Promise(resolve => {
+      // A frame between callbacks lets the browser paint the progress card.
+      let frame = requestAnimationFrame(() => {
+        frame = requestAnimationFrame(() => {
+          clearTimeout(fallback);
+          resolve();
+        });
+      });
+      const fallback = setTimeout(() => {
+        cancelAnimationFrame(frame);
+        resolve();
+      }, 100);
+    });
   }
 
   async function readListingResponse(response, onPreview) {
@@ -252,13 +270,15 @@
         if(run!==generation)return;
         const listing={...payload.listing, slug:listingSlug(request.url)};
         listing.photoUrl = listingPhotoUrl(listing) || earlyPreview?.photoUrl;
-        showListingPreview(progressPreview, listing);
+        const progressPhoto = showListingPreview(progressPreview, listing);
         progress.dataset.phase='matching';
         readingStage.dataset.state='complete';
         matchingStage.dataset.state='active';
         progressTitle.textContent='Στοιχεία αγγελίας αναγνώστηκαν';
         matchingLabel.textContent='Αντιστοίχιση έκδοσης…';
         progressHint.hidden=true;
+        await waitForPreviewPaint();
+        if(run!==generation)return;
         await catalogReady;
         if(run!==generation)return;
         const query=' '+normalize([listing.brand,listing.title,listing.slug].filter(Boolean).join(' '))+' ';
@@ -272,6 +292,27 @@
         const response=await fetch(`${CARTELONIO_API_BASE}/catalog?brand=${encodeURIComponent(source.slug)}&year=${encodeURIComponent(source.year)}`,{signal:AbortSignal.timeout(15000)});
         if(!response.ok)throw Error('Ο κατάλογος δεν είναι διαθέσιμος αυτή τη στιγμή.');
         const data=await response.json();if(run!==generation)return;
+        if (progressPhoto && !document.hidden) {
+          // Give a pending CDN image a short chance to appear on fast catalogue responses.
+          if (!progressPhoto.complete) {
+            let deadline;
+            try {
+              await Promise.race([
+                progressPhoto.decode().catch(() => {}),
+                new Promise(resolve => { deadline = setTimeout(resolve, 800); })
+              ]);
+            } finally {
+              clearTimeout(deadline);
+            }
+          }
+          if(run!==generation)return;
+          if (progressPhoto.naturalWidth) {
+            progressPhoto.hidden = false;
+            progressPreview.hidden = false;
+            await waitForPreviewPaint();
+            if(run!==generation)return;
+          }
+        }
         const candidates=rankCandidates(listing,[{year,data}],brand);
         empty.hidden=true;
         const summary = document.createElement('div');
