@@ -168,6 +168,9 @@
     const catalogAnchor = document.getElementById('listingCatalogAnchor');
     const progressPreview = document.getElementById('listingProgressPreview');
     const progressHint = document.getElementById('listingProgressHint');
+    const readingStage = document.getElementById('listingReadingStage');
+    const matchingStage = document.getElementById('listingMatchingStage');
+    const matchingLabel = document.getElementById('listingMatchingLabel');
     function reveal(target, block, expectedMode) {
       requestAnimationFrame(() => {
         if (stage.dataset.inputMode !== expectedMode || !target.getClientRects().length) return;
@@ -190,7 +193,10 @@
       button.disabled=true;
       resetPreview();
       status.textContent='';
+      readingStage.dataset.state='active';
+      matchingStage.dataset.state='pending';
       progressTitle.textContent='Ανάγνωση αγγελίας…';
+      matchingLabel.textContent='Αντιστοίχιση έκδοσης';
       progressHint.hidden=false;
       progress.dataset.phase='reading';
       progress.hidden=false;
@@ -210,7 +216,10 @@
         const listing={...payload.listing, slug:listingSlug(request.url)};
         showListingPreview(progressPreview, listing);
         progress.dataset.phase='matching';
-        progressTitle.textContent='Αναζήτηση πιθανών εκδόσεων…';
+        readingStage.dataset.state='complete';
+        matchingStage.dataset.state='active';
+        progressTitle.textContent='Στοιχεία αγγελίας αναγνώστηκαν';
+        matchingLabel.textContent='Αντιστοίχιση έκδοσης…';
         const previewReady = new Promise(resolve => setTimeout(resolve, 750));
         progressHint.hidden=true;
         await catalogReady;

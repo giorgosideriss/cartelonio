@@ -81,8 +81,7 @@
   color:var(--ink,#17382d);
   box-shadow:0 22px 70px rgb(12 29 20 / 30%);
 }
-.listing-progress-state strong { font-size:clamp(1.1rem,4vw,1.35rem); }
-.listing-progress-state p { margin:5px 0 0; color:var(--muted,#506351); font-size:.85rem; }
+.listing-progress-title { margin:0; font-size:clamp(1.2rem,5vw,1.5rem); }
 .listing-progress-preview { display:grid; gap:12px; }
 .listing-progress-preview img {
   display:block;
@@ -93,9 +92,18 @@
   border-radius:15px;
 }
 .listing-progress-details { min-width:0; overflow-wrap:anywhere; }
-.listing-progress-details dl { display:flex; flex-wrap:wrap; gap:8px 24px; margin:8px 0 0; }
-.listing-progress-details dt { color:var(--muted,#506351); font-size:.78rem; }
-.listing-progress-details dd { margin:2px 0 0; font-size:.92rem; font-weight:600; }
+.listing-progress-details dl { display:grid; gap:5px; margin:10px 0 0; }
+.listing-progress-details dl > div {
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:12px;
+  padding:7px 10px;
+  border-radius:9px;
+  background:var(--surface-2,#f3f6ef);
+}
+.listing-progress-details dt { color:var(--muted,#506351); font-size:.85rem; }
+.listing-progress-details dd { margin:0; font-size:.92rem; font-weight:650; text-align:right; }
 .listing-progress-skeleton { display:grid; gap:12px; }
 .listing-progress[data-phase="matching"] .listing-progress-skeleton,
 .listing-progress-preview:not([hidden]) + .listing-progress-skeleton { display:none; }
@@ -108,22 +116,48 @@
 .listing-progress-lines span { width:66%; height:11px; border-radius:6px; }
 .listing-progress-lines span:nth-child(2) { width:46%; }
 .listing-progress-lines span:nth-child(3) { width:34%; }
-.listing-progress-track {
-  height:5px;
-  overflow:hidden;
-  border-radius:8px;
-  background:var(--accent-soft,#e7f1df);
+.listing-progress-stages { display:grid; gap:6px; }
+.listing-progress-step {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 11px;
+  border-radius:11px;
+  background:var(--surface-2,#f3f6ef);
+  font-size:.9rem;
 }
-.listing-progress-track span {
-  display:block;
-  width:38%;
-  height:100%;
-  border-radius:inherit;
-  background:var(--accent-deep,#4e7d31);
-  animation:listing-progress-sweep 1.55s ease-in-out infinite;
+.listing-progress-step small { display:block; margin-top:3px; color:var(--muted,#506351); }
+.listing-progress-step[data-state="pending"] { color:var(--muted,#506351); }
+.listing-progress-step[data-state="active"] { background:var(--accent-soft,#e7f1df); }
+.listing-progress-step-icon {
+  display:grid;
+  place-items:center;
+  box-sizing:border-box;
+  flex:0 0 22px;
+  height:22px;
+  border:2px solid var(--line,#cfdbc8);
+  border-radius:50%;
+}
+.listing-progress-step[data-state="active"] .listing-progress-step-icon {
+  border-color:var(--line,#cfdbc8);
+  border-top-color:var(--accent-deep,#4e7d31);
+  border-right-color:var(--accent-deep,#4e7d31);
+  animation:listing-progress-spin .85s linear infinite;
+}
+.listing-progress-step[data-state="complete"] .listing-progress-step-icon {
+  border-color:#3b7732;
+  background:#3b7732;
+}
+.listing-progress-step[data-state="complete"] .listing-progress-step-icon::before {
+  content:"";
+  width:9px;
+  height:5px;
+  border:solid white;
+  border-width:0 0 2px 2px;
+  transform:translateY(-1px) rotate(-45deg);
 }
 @keyframes listing-progress-pulse { from { opacity:.5; } to { opacity:1; } }
-@keyframes listing-progress-sweep { from { transform:translateX(-100%); } to { transform:translateX(265%); } }
+@keyframes listing-progress-spin { to { transform:rotate(360deg); } }
 /* Keep the applied vehicle preview directly after the catalogue controls. */
 .vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper {
   grid-template-columns:minmax(0,1fr)!important;
@@ -132,7 +166,7 @@
 #listingResults:focus-visible { outline:2px solid var(--accent-deep,#4e7d31); outline-offset:5px; }
 @media (prefers-reduced-motion:reduce) {
   .listing-progress-placeholder, .listing-progress-lines span,
-  .listing-progress-track span { animation:none; }
+  .listing-progress-step[data-state="active"] .listing-progress-step-icon { animation:none; }
 }
 .vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper > :is(.vehicle-config-panel,.integrated-hero-wrap) {
   grid-column:1 / -1;

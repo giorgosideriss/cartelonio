@@ -98,7 +98,7 @@
      crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="price-source.css?v=20261028-portal-v4">
-<link rel="stylesheet" href="listing-match.css?v=20261126-listing-preview-v3">
+<link rel="stylesheet" href="listing-match.css?v=20261127-listing-stages">
 </head>
 <body>
 <header class="site-header">
@@ -839,19 +839,28 @@
 <script src="script.js?v=20261125-welcome5-fix"></script>
 <div id="listingProgress" class="listing-progress" data-phase="reading" hidden>
   <div class="listing-progress-card">
-    <div class="listing-progress-state" role="status" aria-live="polite" aria-atomic="true">
-      <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
-      <p id="listingProgressHint">Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</p>
-    </div>
+    <h2 class="listing-progress-title">Επικόλληση αγγελίας</h2>
     <div id="listingProgressPreview" class="listing-progress-preview" hidden></div>
     <div class="listing-progress-skeleton" aria-hidden="true">
       <div class="listing-progress-placeholder"></div>
       <div class="listing-progress-lines"><span></span><span></span><span></span></div>
     </div>
-    <div class="listing-progress-track" aria-hidden="true"><span></span></div>
+    <div class="listing-progress-stages" role="status" aria-live="polite" aria-atomic="true">
+      <div id="listingReadingStage" class="listing-progress-step" data-state="active">
+        <span class="listing-progress-step-icon" aria-hidden="true"></span>
+        <span>
+          <strong id="listingProgressTitle">Ανάγνωση αγγελίας…</strong>
+          <small id="listingProgressHint">Μπορεί να χρειαστούν έως 60–75 δευτερόλεπτα.</small>
+        </span>
+      </div>
+      <div id="listingMatchingStage" class="listing-progress-step" data-state="pending">
+        <span class="listing-progress-step-icon" aria-hidden="true"></span>
+        <span id="listingMatchingLabel">Αντιστοίχιση έκδοσης</span>
+      </div>
+    </div>
   </div>
 </div>
-<script src="listing-import.js?v=20261126-listing-preview-v3"></script>
+<script src="listing-import.js?v=20261127-listing-stages"></script>
   
 <dialog id="purchaseReturnDialog" class="purchase-return-dialog" aria-labelledby="purchaseReturnTitle" aria-describedby="purchaseReturnMessage">
   <div class="purchase-return-icon" id="purchaseReturnIcon" aria-hidden="true">…</div>
