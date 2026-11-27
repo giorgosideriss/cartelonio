@@ -104,7 +104,13 @@
       if (typeof value !== 'string') continue;
       try {
         const url = new URL(value.startsWith('//') ? 'https:' + value : value);
-        if (url.protocol === 'https:' && !url.username && !url.password) return url.href;
+        if (url.protocol !== 'https:' || url.username || url.password) continue;
+        if (url.hostname === 'img.classistatic.de' &&
+            /^\/api\/v1\/mo-prod\/images\/[a-f0-9]{2}\/[a-f0-9-]{36}$/i.test(url.pathname) &&
+            !url.searchParams.get('rule')) {
+          url.searchParams.set('rule', 'mo-640.jpg');
+        }
+        return url.href;
       } catch { /* Skip malformed image URLs. */ }
     }
     return '';
