@@ -83,14 +83,6 @@
 }
 .listing-progress-title { margin:0; font-size:clamp(1.2rem,5vw,1.5rem); }
 .listing-progress-preview { display:grid; gap:12px; }
-.listing-progress-preview img {
-  display:block;
-  width:100%;
-  height:clamp(88px,25vh,180px);
-  object-fit:contain;
-  background:var(--surface-2,#f3f6ef);
-  border-radius:15px;
-}
 .listing-progress-details { min-width:0; overflow-wrap:anywhere; }
 .listing-progress-details dl { display:grid; gap:5px; margin:10px 0 0; }
 .listing-progress-details dl > div {
@@ -107,11 +99,10 @@
 .listing-progress-skeleton { display:grid; gap:12px; }
 .listing-progress[data-phase="matching"] .listing-progress-skeleton,
 .listing-progress-preview:not([hidden]) + .listing-progress-skeleton { display:none; }
-.listing-progress-placeholder, .listing-progress-lines span {
+.listing-progress-lines span {
   background:var(--accent-soft,#e7f1df);
   animation:listing-progress-pulse 1.45s ease-in-out infinite alternate;
 }
-.listing-progress-placeholder { height:clamp(88px,23vh,154px); border-radius:15px; }
 .listing-progress-lines { display:grid; gap:8px; }
 .listing-progress-lines span { width:66%; height:11px; border-radius:6px; }
 .listing-progress-lines span:nth-child(2) { width:46%; }
@@ -165,7 +156,7 @@
 #listingResults,#listingCatalogAnchor { scroll-margin-top:7rem; }
 #listingResults:focus-visible { outline:2px solid var(--accent-deep,#4e7d31); outline-offset:5px; }
 @media (prefers-reduced-motion:reduce) {
-  .listing-progress-placeholder, .listing-progress-lines span,
+  .listing-progress-lines span,
   .listing-progress-step[data-state="active"] .listing-progress-step-icon { animation:none; }
 }
 .vehicle-configurator-v2.listing-catalog-applied[data-input-mode="catalog"] #calcForm .config-upper > :is(.vehicle-config-panel,.integrated-hero-wrap) {

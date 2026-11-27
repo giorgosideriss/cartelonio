@@ -96,26 +96,6 @@
     select(0);
   }
 
-  function listingPhotoUrl(listing) {
-    const sources = [listing.photoUrl, listing.imageUrl, listing.thumbnailUrl,
-      listing.photo, listing.image, listing.images, listing.photos, listing.imageUrls].flat();
-    for (const source of sources) {
-      const value = typeof source === 'string' ? source : source?.url || source?.contentUrl || source?.src;
-      if (typeof value !== 'string') continue;
-      try {
-        const url = new URL(value.startsWith('//') ? 'https:' + value : value);
-        if (url.protocol !== 'https:' || url.username || url.password) continue;
-        if (url.hostname === 'img.classistatic.de' &&
-            /^\/api\/v1\/mo-prod\/images\/[a-f0-9]{2}\/[a-f0-9-]{36}$/i.test(url.pathname) &&
-            !url.searchParams.get('rule')) {
-          url.searchParams.set('rule', 'mo-640.jpg');
-        }
-        return url.href;
-      } catch { /* Skip malformed image URLs. */ }
-    }
-    return '';
-  }
-
   function showListingPreview(preview, listing) {
     const details = document.createElement('div');
     details.className = 'listing-progress-details';
@@ -145,22 +125,6 @@
     preview.replaceChildren();
     if (details.childElementCount) preview.append(details);
     preview.hidden = !preview.childElementCount;
-    const photo = listingPhotoUrl(listing);
-    if (!photo) return;
-    const image = document.createElement('img');
-    image.alt = 'Φωτογραφία αγγελίας';
-    image.decoding = 'async';
-    image.referrerPolicy = 'no-referrer';
-    image.hidden = true;
-    image.addEventListener('load', () => {
-      if (image.parentNode !== preview) return;
-      image.hidden = false;
-      preview.hidden = false;
-    }, {once:true});
-    image.addEventListener('error', () => { image.remove(); }, {once:true});
-    preview.prepend(image);
-    image.src = photo;
-    return image;
   }
 
   function waitForPreviewPaint() {
@@ -259,18 +223,15 @@
         if(run!==generation)return;
         if(!cartelonioSession?.access_token)throw Error('Χρειάζεται ενεργή σύνδεση για την εισαγωγή.');
         const res=await fetch(`${CARTELONIO_API_BASE}/listing-import`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${cartelonioSession.access_token}`},body:JSON.stringify({...request, preview:Boolean(request.url)}),signal:AbortSignal.timeout(90000)});
-        let earlyPreview;
         const payload=await readListingResponse(res, preview => {
           if (run !== generation) return;
-          earlyPreview = preview;
           showListingPreview(progressPreview, preview);
         });
         const errors={apify_token_missing:'Δεν έχει δηλωθεί το APIFY_API_TOKEN στο Supabase.',apify_auth_error:'Το Apify απέρριψε το API token ή την πρόσβαση στον scraper.',apify_credit_error:'Δεν υπάρχει διαθέσιμη πίστωση στο Apify.',apify_timeout:'Η ανάγνωση ξεπέρασε το χρονικό όριο. Δοκίμασε επικόλληση κειμένου.',apify_no_results:'Το Apify δεν επέστρεψε αγγελία. Έλεγξε αν είναι ακόμη ενεργή.',apify_listing_mismatch:'Το Apify επέστρεψε διαφορετική αγγελία. Η εισαγωγή ακυρώθηκε.',apify_request_failed:'Απέτυχε το αίτημα Apify. Έλεγξε τα Logs στο Supabase.',apify_invalid_output:'Το Apify επέστρεψε μη αναμενόμενη μορφή δεδομένων.',autoscout_provider_not_configured:'Η σύνδεση URL με Apify είναι προς το παρόν διαθέσιμη για mobile.de. Για AutoScout24 χρησιμοποίησε επικόλληση κειμένου.',quota_unavailable:'Δεν είναι διαθέσιμος ο έλεγχος ορίου εισαγωγών. Έλεγξε το SQL στο Supabase.',invalid_listing_url:'Βάλε σύνδεσμο συγκεκριμένης αγγελίας από mobile.de ή AutoScout24 (.de/.com/.ch).',rate_limited:'Έφτασες το όριο των 20 εισαγωγών ανά ώρα. Δοκίμασε αργότερα.',invalid_listing_input:'Βάλε URL ή επικόλλησε το κείμενο με τα τεχνικά στοιχεία.',unauthorized:'Ανανέωσε τη σελίδα και συνδέσου ξανά.'};
         if(!res.ok || payload.error)throw Error(errors[payload.error]||`Δεν ήταν δυνατή η εισαγωγή (${payload.error||res.status}). Δοκίμασε επικόλληση κειμένου.`);
         if(run!==generation)return;
         const listing={...payload.listing, slug:listingSlug(request.url)};
-        listing.photoUrl = listingPhotoUrl(listing) || earlyPreview?.photoUrl;
-        const progressPhoto = showListingPreview(progressPreview, listing);
+        showListingPreview(progressPreview, listing);
         progress.dataset.phase='matching';
         readingStage.dataset.state='complete';
         matchingStage.dataset.state='active';
@@ -292,27 +253,6 @@
         const response=await fetch(`${CARTELONIO_API_BASE}/catalog?brand=${encodeURIComponent(source.slug)}&year=${encodeURIComponent(source.year)}`,{signal:AbortSignal.timeout(15000)});
         if(!response.ok)throw Error('Ο κατάλογος δεν είναι διαθέσιμος αυτή τη στιγμή.');
         const data=await response.json();if(run!==generation)return;
-        if (progressPhoto && !document.hidden) {
-          // Give a pending CDN image a short chance to appear on fast catalogue responses.
-          if (!progressPhoto.complete) {
-            let deadline;
-            try {
-              await Promise.race([
-                progressPhoto.decode().catch(() => {}),
-                new Promise(resolve => { deadline = setTimeout(resolve, 800); })
-              ]);
-            } finally {
-              clearTimeout(deadline);
-            }
-          }
-          if(run!==generation)return;
-          if (progressPhoto.naturalWidth) {
-            progressPhoto.hidden = false;
-            progressPreview.hidden = false;
-            await waitForPreviewPaint();
-            if(run!==generation)return;
-          }
-        }
         const candidates=rankCandidates(listing,[{year,data}],brand);
         empty.hidden=true;
         const summary = document.createElement('div');
